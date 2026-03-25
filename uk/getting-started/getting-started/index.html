@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Початок роботи - Початок роботи - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Покрокова інструкція зі створення першого проекту в Ingantt, включаючи додавання завдань, налаштування залежностей, призначення ресурсів та налаштування календарів.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/getting-started/getting-started/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Початок роботи">
+  <meta property="og:description" content="Покрокова інструкція зі створення першого проекту в Ingantt, включаючи додавання завдань, налаштування залежностей, призначення ресурсів та налаштування календарів.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/getting-started/getting-started/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Початок роботи">
+  <meta name="twitter:description" content="Покрокова інструкція зі створення першого проекту в Ingantt, включаючи додавання завдань, налаштування залежностей, призначення ресурсів та налаштування календарів.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/getting-started/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/getting-started/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/getting-started/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/" class="active" aria-current="page">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="початок-роботи">Початок роботи <a href="#початок-роботи" class="heading-anchor">#</a></h1>
+<p>Почніть тут, щоб створити свій перший розклад проекту. За кілька хвилин у вас будуть завдання на часовій шкалі, пов'язані між собою, з призначеними ресурсами — достатньо, щоб побачити, коли ваш проект має завершитись.</p>
+<blockquote>
+<p>На мобільних пристроях використовуйте натискання замість клацань, подвійне натискання замість подвійних клацань і довге натискання замість клацання правою кнопкою миші.</p>
+</blockquote>
+<h2 id="відео">Відео <a href="#відео" class="heading-anchor">#</a></h2>
+<p>Перегляньте відео, що демонструє всі кроки цього посібника.</p>
+<div class="video-embed"><iframe src="https://www.youtube.com/embed/Tv27PyyIjJ4" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h2 id="створення-базового-розкладу">Створення базового розкладу <a href="#створення-базового-розкладу" class="heading-anchor">#</a></h2>
+<p>Припустімо, у вас є невеликий проект ремонту будинку з двома завданнями, одне за іншим.</p>
+<p>Після натискання <strong>Створити новий</strong> ви потрапляєте на розділений екран зі списком завдань ліворуч та діаграмою Ганта праворуч. Додайте свої завдання одне за одним, натискаючи велику кнопку <strong>+</strong> у правому нижньому куті. У діалозі <strong>Додати завдання</strong> вкажіть <strong>Назву</strong> та прогнозовану <strong>Тривалість</strong> кожного завдання.</p>
+<p><img src="/images/getting-started/add_task.png" alt="Додати завдання" / data-dark-src="/images/getting-started/add_task_d.png"></p>
+<p>Виберіть обидва завдання у списку ліворуч, а потім натисніть кнопку <strong>Зв'язати завдання</strong> на панелі інструментів. Це зв'яже завдання та оновить діаграму Ганта.</p>
+<ul>
+<li>Щоб вибрати кілька завдань на Android та iOS, утримуйте палець трохи довше під час натискання на кожне завдання у списку або на діаграмі Ганта.</li>
+<li>На інших платформах клацайте на завданнях у списку або на діаграмі Ганта, утримуючи <code>Ctrl</code> або <code>Shift</code> на клавіатурі.</li>
+</ul>
+<p><img src="/images/getting-started/link.png" alt="Зв'язати" / data-dark-src="/images/getting-started/link_d.png"></p>
+<p>Тепер, коли завдання зв'язані, спробуйте оновити тривалість першого завдання. Двічі клацніть на ньому у списку або на діаграмі Ганта та змініть поле <strong>Тривалість</strong> у діалозі <strong>Властивості завдання</strong>. Ви побачите, як ця зміна впливає на розклад, зсуваючи друге завдання.</p>
+<p><img src="/images/getting-started/gantt.png" alt="Діаграма Ганта" / data-dark-src="/images/getting-started/gantt_d.png"></p>
+<h2 id="налаштування-назви-та-дати-початку-проекту">Налаштування назви та дати початку проекту <a href="#налаштування-назви-та-дати-початку-проекту" class="heading-anchor">#</a></h2>
+<p>Ваш проект може починатися в інший день, ніж стандартний день, який використовує Ingantt.</p>
+<p>Відкрийте <strong>Властивості проекту</strong> через навігаційну панель або, у веб-версії та на Windows, клацнувши на назві проекту в заголовку.</p>
+<p>Встановіть нову дату початку проекту в полі <strong>Дата початку проекту</strong> та змініть <strong>Назву</strong> проекту.</p>
+<p><img src="/images/getting-started/project_name.png" alt="Назва проекту" / data-dark-src="/images/getting-started/project_name_d.png"></p>
+<blockquote>
+<p>З простотою базового розкладу ви вже можете визначити, коли проект має завершитись, поглянувши на діаграму Ганта.</p>
+</blockquote>
+<h2 id="додавання-та-призначення-ресурсів">Додавання та призначення ресурсів <a href="#додавання-та-призначення-ресурсів" class="heading-anchor">#</a></h2>
+<p>Припустімо, кожне завдання у вашому проекті виконуватиме інша людина.</p>
+<p>Відкрийте навігаційну панель та переключіться на подання <strong>Ресурси</strong>.</p>
+<p><img src="/images/getting-started/nav.png" alt="Навігація" / data-dark-src="/images/getting-started/nav_d.png"></p>
+<p>Натисніть велику кнопку <strong>+</strong>, щоб відкрити діалог <strong>Додати ресурс</strong>, введіть <strong>Назву</strong> ресурсу та збережіть. Повторіть ці кроки, щоб додати ще один робочий ресурс.</p>
+<p><img src="/images/getting-started/add_resource.png" alt="Додати ресурс" / data-dark-src="/images/getting-started/add_resource_d.png"></p>
+<p><img src="/images/getting-started/resources.png" alt="Ресурси" / data-dark-src="/images/getting-started/resources_d.png"></p>
+<p>Через навігаційну панель переключіться назад на подання <strong>Завдання</strong>. Двічі клацніть на першому завданні у списку або на діаграмі Ганта, щоб відкрити діалог <strong>Властивості завдання</strong>.</p>
+<p>Переключіться на вкладку <strong>Ресурси</strong>, позначте перший ресурс, щоб призначити цю людину на завдання, та збережіть.</p>
+<p><img src="/images/getting-started/assignments.png" alt="Призначення" / data-dark-src="/images/getting-started/assignments_d.png"></p>
+<p>Повторіть ті самі кроки для другого завдання та другого ресурсу.</p>
+<p><img src="/images/getting-started/resources_gantt.png" alt="Ресурси на діаграмі Ганта" / data-dark-src="/images/getting-started/resources_gantt_d.png"></p>
+<h2 id="налаштування-відпусток">Налаштування відпусток <a href="#налаштування-відпусток" class="heading-anchor">#</a></h2>
+<p>Люди можуть мати різні події протягом проекту, які впливають на його часову шкалу.</p>
+<p>Припустімо, ресурсу, який виконує перше завдання у вашому проекті, потрібен вихідний день під час цього завдання.</p>
+<p>Щоб це налаштувати, використовуйте навігаційну панель, щоб перейти до подання <strong>Ресурси</strong>.</p>
+<p>Двічі клацніть на ресурсі, щоб побачити <strong>Властивості ресурсу</strong>. Перейдіть на вкладку <strong>Календар</strong> та натисніть кнопку <strong>Додати виняток</strong>. Виберіть один із днів протягом вашого проекту, залиште список робочого часу порожнім та збережіть.</p>
+<p><img src="/images/getting-started/day_off.png" alt="Вихідний" / data-dark-src="/images/getting-started/day_off_d.png"></p>
+<p>Через навігаційну панель поверніться до подання <strong>Завдання</strong> та подивіться, як змінився ваш розклад. Друге завдання зсунулось через залежність від першого.</p>
+<p><img src="/images/getting-started/vacation.png" alt="Відпустка" / data-dark-src="/images/getting-started/vacation_d.png"></p>
+<blockquote>
+<p>Ви можете налаштувати не лише відпустки, а й інші зміни в розкладі людини. Наприклад, додавши робочий час до винятку, ви можете вказати, що ресурс працює лише у певні години в цей конкретний день.</p>
+</blockquote>
+<h2 id="налаштування-свят">Налаштування свят <a href="#налаштування-свят" class="heading-anchor">#</a></h2>
+<p>Уявіть, що під час вашого проекту є свято — день, коли ніхто не працює.</p>
+<p>Відпустки налаштовуються через календар кожного ресурсу. Дні, що стосуються всіх, налаштовуються в календарі проекту. Стандартний календар проекту називається <strong>Стандартний</strong> і вже вказує, що робота не виконується у вихідні дні.</p>
+<p>Щоб налаштувати свята, використовуйте навігаційну панель, щоб перейти до подання <strong>Календарі</strong>. Двічі клацніть на <strong>Стандартний</strong>, щоб побачити <strong>Властивості календаря</strong>. Натисніть кнопку <strong>Додати виняток</strong>. Виберіть один із днів під час вашого проекту, залиште список робочого часу порожнім та збережіть.</p>
+<p><img src="/images/getting-started/holiday.png" alt="Свято" / data-dark-src="/images/getting-started/holiday_d.png"></p>
+<p>Через навігаційну панель поверніться до подання <strong>Завдання</strong> та подивіться, як змінився ваш проект. Завдання зсунулись, і свято відображається так само, як вихідні дні на діаграмі Ганта.</p>
+<p><img src="/images/getting-started/final.png" alt="Фінальний вигляд" / data-dark-src="/images/getting-started/final_d.png"></p>
+<blockquote>
+<p>Використовуючи такий самий підхід, ви можете налаштувати не лише свята, а й інші зміни в загальному розкладі. Наприклад, додавши робочий час до винятку, ви можете вказати, що всі працюють лише у певні години в цей конкретний день.</p>
+<p>Ви також можете перевірити вкладки, що представляють кожен день тижня, у <strong>Властивостях календаря</strong>. Якщо вся команда іде раніше у п'ятницю або працює у суботу, ви можете налаштувати це на відповідних вкладках.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

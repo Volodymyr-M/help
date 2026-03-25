@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resource Leveling - Analyzing &amp; Adjusting - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Detect and resolve resource overallocation with automatic leveling, priority-based scheduling, and the Leveling Gantt view.">
+  <link rel="canonical" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Resource Leveling">
+  <meta property="og:description" content="Detect and resolve resource overallocation with automatic leveling, priority-based scheduling, and the Leveling Gantt view.">
+  <meta property="og:url" content="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Resource Leveling">
+  <meta name="twitter:description" content="Detect and resolve resource overallocation with automatic leveling, priority-based scheduling, and the Leveling Gantt view.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/" class="active" aria-current="page">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="resource-leveling">Resource Leveling <a href="#resource-leveling" class="heading-anchor">#</a></h1>
+<p>It's easy to accidentally assign more work than a person can handle in a day. Leveling automatically shifts tasks so no one is overloaded, though it may extend your project's finish date.</p>
+<h2 id="overallocated-resources">Overallocated Resources <a href="#overallocated-resources" class="heading-anchor">#</a></h2>
+<p>A work resource can be <strong>overallocated</strong>, meaning it has more work assigned than it can complete based on its calendar and availability. For example, if your project has two tasks, each with a duration of one day and no <a href="/en/building-schedule/dependencies/#predecessors-and-dependencies">dependency</a> between them, both assigned to the same work resource, the resource is overallocated. The resource has to do two days of work in one calendar day. To resolve this, simply link the two tasks with a dependency.</p>
+<p>If a task has overallocated resources assigned, Ingantt shows a special icon for it in the list of tasks.</p>
+<p>If a resource is overallocated, Ingantt shows a special icon for it in the <strong>Resources</strong> view and the <strong>Resource Usage</strong> view.</p>
+<p>Additionally, Ingantt counts such tasks and resources and shows the numbers in the navigation drawer.</p>
+<h2 id="auto-leveling">Auto-Leveling <a href="#auto-leveling" class="heading-anchor">#</a></h2>
+<p>Dependencies between tasks control their position on the timeline. In larger projects, it's easy to miss a dependency — resulting in multiple tasks assigned to the same work resource being scheduled at the same time. The resource becomes overallocated, and Ingantt notifies you with special icons in the task and resource lists.</p>
+<p>You can resolve overallocation manually by setting dependencies or constraints to move some tasks so that work is not done simultaneously.</p>
+<p>An alternative way to resolve overallocation is auto-leveling. If you choose to <strong>Auto-level resources</strong> in the <strong>Project</strong> menu, Ingantt automatically shifts some tasks further on the timeline to prevent resource overallocation. You can clear these automatic adjustments by choosing <strong>Clear leveling</strong> in the <strong>Project</strong> menu.</p>
+<p>The auto-level command offers three scope options:</p>
+<ul>
+<li><strong>All tasks</strong> — Levels all tasks in the project</li>
+<li><strong>Selected tasks</strong> — Levels only the currently selected tasks</li>
+<li><strong>Selected resources</strong> — Levels only the overallocation conflicts for the selected resources (available in Resources and Resource Usage views)</li>
+</ul>
+<h3 id="how-auto-leveling-works">How Auto-Leveling Works <a href="#how-auto-leveling-works" class="heading-anchor">#</a></h3>
+<p>When you run <strong>Auto-level resources</strong>, Ingantt resolves overallocations by <strong>delaying or splitting tasks</strong>. It does not reassign resources or change assignment units.</p>
+<p>The algorithm identifies days where a resource has more assigned work than its capacity allows, then decides which competing tasks to delay. Each task is scored based on several factors — tasks with higher scores are protected from delay:</p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dependencies</strong></td>
+<td>Tasks that are predecessors to other tasks are protected</td>
+</tr>
+<tr>
+<td><strong>Slack</strong></td>
+<td>Critical or near-critical tasks (less slack) are protected</td>
+</tr>
+<tr>
+<td><strong>Priority</strong></td>
+<td>Tasks with a higher Priority value are protected</td>
+</tr>
+<tr>
+<td><strong>Constraints</strong></td>
+<td>Tasks with scheduling constraints are protected</td>
+</tr>
+<tr>
+<td><strong>Start Date</strong></td>
+<td>Earlier tasks are somewhat protected</td>
+</tr>
+<tr>
+<td><strong>Duration</strong></td>
+<td>Longer tasks are somewhat protected</td>
+</tr>
+</tbody>
+</table>
+<p>The task with the lowest score is delayed to resolve each conflict. The process repeats until all overallocations are resolved or no further delays can be applied.</p>
+<blockquote>
+<p>Auto-leveling may extend the project's finish date. It resolves as many overallocations as possible, but some may remain if constraints prevent further delays.</p>
+</blockquote>
+<h3 id="leveling-options">Leveling Options <a href="#leveling-options" class="heading-anchor">#</a></h3>
+<p>Configure leveling behavior in the <strong>Leveling Options</strong> dialog, accessible from the <strong>Project</strong> menu:</p>
+<ul>
+<li><strong>Leveling order</strong> — Controls how tasks are prioritized: ID Only (ascending ID), Standard (multi-factor scoring), or Priority Standard (priority first, then standard factors; the default)</li>
+<li><strong>Overallocation basis</strong> — Controls detection granularity: minute, hour, day, week, or month. The minute and hour settings detect conflicts even when daily totals are within capacity but tasks overlap within a day.</li>
+<li><strong>Adjust individual assignments</strong> — When enabled and a task has multiple resource assignments, only the overallocated resource's assignment is delayed instead of the entire task</li>
+<li><strong>Create splits in remaining work</strong> — When enabled, the leveling algorithm can split work around conflicts instead of delaying entire tasks</li>
+<li><strong>Level only within available slack</strong> — Restricts leveling delays to not exceed a task's total slack, preventing project finish date extension</li>
+<li><strong>Leveling range</strong> — Restricts leveling to tasks within a specific date window</li>
+</ul>
+<h3 id="exempt-from-leveling">Exempt from Leveling <a href="#exempt-from-leveling" class="heading-anchor">#</a></h3>
+<p>The following tasks and resources are never affected by auto-leveling:</p>
+<ul>
+<li>Tasks with <a href="#priority">Priority</a> set to <strong>1000</strong></li>
+<li>Tasks with <strong>Can Level</strong> set to <strong>false</strong> (on the <strong>Leveling</strong> tab of the Task Properties dialog)</li>
+<li>Tasks with a <strong>Must start on</strong> or <strong>Must finish on</strong> <a href="/en/building-schedule/constraints/#constraints">constraint</a></li>
+<li><a href="/en/building-schedule/tasks/#summary-tasks">Summary tasks</a></li>
+<li>Milestones with zero duration</li>
+<li>Fully complete tasks (100%)</li>
+<li>Resources with <strong>Can Level</strong> set to <strong>false</strong> in the Resource Properties dialog</li>
+<li>Resources with <strong>Proposed</strong> <a href="/en/building-schedule/resources/#booking-type">booking type</a> (unless the leveling option to include proposed resources is enabled)</li>
+</ul>
+<h3 id="re-leveling-and-clearing">Re-Leveling and Clearing <a href="#re-leveling-and-clearing" class="heading-anchor">#</a></h3>
+<p>Each time you run <strong>Auto-level resources</strong>, any previous leveling is automatically cleared first. Leveling always starts from a clean, unleveled schedule to prevent delays from stacking.</p>
+<p>If you modify the schedule after leveling (add tasks, change dependencies, etc.), the existing leveling delays are preserved but may no longer resolve all overallocations. Run <strong>Auto-level resources</strong> again to re-level the updated schedule.</p>
+<p>To remove all leveling delays and return to the original CPM-calculated schedule, choose <strong>Clear leveling</strong> from the <strong>Project</strong> menu.</p>
+<h3 id="leveling-gantt">Leveling Gantt <a href="#leveling-gantt" class="heading-anchor">#</a></h3>
+<p>After you run auto-leveling, a <strong>Leveling Gantt</strong> toggle button appears in the Gantt chart area. When enabled, it draws green bars at the pre-leveled positions — where tasks were before leveling — while the standard task bars remain at their current leveled positions. This lets you compare the original schedule with the leveled schedule to see how much each task was delayed.</p>
+<p>The toggle is only visible when the project has leveling data and is automatically hidden when you clear leveling.</p>
+<h2 id="priority">Priority <a href="#priority" class="heading-anchor">#</a></h2>
+<p>The <strong>Priority</strong> field is available on the <strong>Leveling</strong> tab of the <strong>Task Properties</strong> dialog. It accepts an integer value from 0 to 1000, with a default of 500.</p>
+<p>Priority is used by the <a href="#auto-leveling">auto-leveling</a> algorithm to decide which tasks to delay when resolving resource overallocations. Tasks with a higher priority are less likely to be delayed:</p>
+<ul>
+<li><strong>0</strong> — Lowest priority, most likely to be delayed</li>
+<li><strong>500</strong> — Default priority</li>
+<li><strong>1000</strong> — &quot;Do Not Level&quot; — the task is never delayed by auto-leveling</li>
+</ul>
+<blockquote>
+<p>Set Priority to <strong>1000</strong> for tasks that must never be moved by auto-leveling, such as tasks tied to external deadlines or fixed commitments.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

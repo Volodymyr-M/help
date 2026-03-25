@@ -1,0 +1,55 @@
+# Ingantt Help — Українська
+
+> Documentation for Ingantt, a project scheduling application.
+
+## Початок роботи
+
+- [Огляд](https://help.ingantt.com/uk/getting-started/overview/index.md)
+- [Початок роботи](https://help.ingantt.com/uk/getting-started/getting-started/index.md)
+- [Створення за допомогою ШІ](https://help.ingantt.com/uk/getting-started/create-with-ai/index.md)
+- [Імпорт та експорт](https://help.ingantt.com/uk/getting-started/import-export/index.md)
+
+## Налаштування проекту
+
+- [Властивості проекту](https://help.ingantt.com/uk/setting-up-project/project/index.md)
+- [Календарі](https://help.ingantt.com/uk/setting-up-project/calendars/index.md)
+
+## Побудова розкладу
+
+- [Завдання](https://help.ingantt.com/uk/building-schedule/tasks/index.md)
+- [Властивості завдання](https://help.ingantt.com/uk/building-schedule/task-properties/index.md)
+- [Залежності](https://help.ingantt.com/uk/building-schedule/dependencies/index.md)
+- [Обмеження](https://help.ingantt.com/uk/building-schedule/constraints/index.md)
+- [Ресурси](https://help.ingantt.com/uk/building-schedule/resources/index.md)
+- [Призначення](https://help.ingantt.com/uk/building-schedule/assignments/index.md)
+
+## Аналіз та коригування
+
+- [Критичний шлях](https://help.ingantt.com/uk/adjusting-schedule/critical-path/index.md)
+- [Вирівнювання ресурсів](https://help.ingantt.com/uk/adjusting-schedule/leveling/index.md)
+- [Настроювані поля](https://help.ingantt.com/uk/adjusting-schedule/custom-fields/index.md)
+
+## Планування витрат
+
+- [Розуміння витрат](https://help.ingantt.com/uk/planning-costs/planning-costs/index.md)
+- [Налаштування витрат](https://help.ingantt.com/uk/planning-costs/setting-up-costs/index.md)
+
+## Відстеження прогресу
+
+- [Базові плани](https://help.ingantt.com/uk/tracking/baselines/index.md)
+- [Відстеження прогресу](https://help.ingantt.com/uk/tracking/progress/index.md)
+- [Фактичні дані](https://help.ingantt.com/uk/tracking/actuals/index.md)
+- [Освоєний обсяг](https://help.ingantt.com/uk/tracking/earned-value/index.md)
+
+## Подання
+
+- [Діаграма Ганта](https://help.ingantt.com/uk/views/gantt/index.md)
+- [Подання завдань](https://help.ingantt.com/uk/views/task-views/index.md)
+- [Подання ресурсів](https://help.ingantt.com/uk/views/resource-views/index.md)
+- [Фільтрація завдань](https://help.ingantt.com/uk/views/filtering/index.md)
+
+## Інтерфейс користувача
+
+- [Додавання та вибір](https://help.ingantt.com/uk/ui/ui/index.md)
+- [Інтеграція з Google Drive](https://help.ingantt.com/uk/ui/files/index.md)
+- [Клавіатурні скорочення](https://help.ingantt.com/uk/ui/shortcuts/index.md)

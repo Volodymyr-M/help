@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Залежності - Побудова розкладу - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Зв'язування завдань залежностями «Завершення-початок», «Завершення-завершення», «Початок-початок» та «Початок-завершення», а також налаштування запізнення та випередження.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/building-schedule/dependencies/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Залежності">
+  <meta property="og:description" content="Зв'язування завдань залежностями «Завершення-початок», «Завершення-завершення», «Початок-початок» та «Початок-завершення», а також налаштування запізнення та випередження.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/building-schedule/dependencies/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Залежності">
+  <meta name="twitter:description" content="Зв'язування завдань залежностями «Завершення-початок», «Завершення-завершення», «Початок-початок» та «Початок-завершення», а також налаштування запізнення та випередження.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/" class="active" aria-current="page">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="залежності">Залежності <a href="#залежності" class="heading-anchor">#</a></h1>
+<p>Реальні проекти мають порядок — не можна тестувати до того, як побудуєш. Зв'яжіть завдання між собою, щоб Ingantt розрахував правильну послідовність та автоматично зсув усе, коли одне завдання змінюється.</p>
+<h2 id="попередники-та-залежності">Попередники та залежності <a href="#попередники-та-залежності" class="heading-anchor">#</a></h2>
+<p>Коли ви зв'язуєте завдання за допомогою кнопки <strong>Зв'язати вибрані завдання</strong> на панелі інструментів, ви створюєте залежність між завданнями. Ця залежність називається <strong>Завершення-початок</strong> і є однією з чотирьох доступних залежностей:</p>
+<table>
+<thead>
+<tr>
+<th>Тип</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Завершення-початок</strong></td>
+<td>Друге завдання може початися після завершення першого.</td>
+</tr>
+<tr>
+<td><strong>Завершення-завершення</strong></td>
+<td>Друге завдання завершується, коли завершується перше.</td>
+</tr>
+<tr>
+<td><strong>Початок-завершення</strong></td>
+<td>Друге завдання завершується, коли починається перше.</td>
+</tr>
+<tr>
+<td><strong>Початок-початок</strong></td>
+<td>Друге завдання починається, коли починається перше.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/building-schedule/tasks/dependencies.png" alt="Залежності" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
+<p>Щоб призначити попередників та редагувати залежності, використовуйте вкладку <strong>Попередники</strong> діалогу <strong>Властивості завдання</strong>.</p>
+<h2 id="запізнення-та-випередження">Запізнення та випередження <a href="#запізнення-та-випередження" class="heading-anchor">#</a></h2>
+<p>Іноді може знадобитися встановити час очікування між двома залежними завданнями.</p>
+<p>Припустімо, ваше перше завдання — «Пофарбувати стіну», а друге — «Повісити картини на стіну». Ці завдання зв'язані (мають залежність <strong>Завершення-початок</strong>). Не можна повісити картини, поки фарба не висохне, тому потрібно зачекати. Щоб відобразити це у вашому розкладі, встановіть <strong>Запізнення</strong> (наприклад, 2 дні) для залежності між двома завданнями.</p>
+<p><img src="/images/building-schedule/tasks/lag.png" alt="Запізнення" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
+<p>Запізнення також може відображати протилежну ситуацію — коли залежне завдання повинно розпочатися до завершення попередника. Для цього зробіть <strong>Запізнення</strong> від'ємним (наприклад, -1 день). Це називається <em>випередженням</em>.</p>
+<p>Щоб встановити запізнення або випередження, виберіть попередника на вкладці <strong>Попередники</strong> діалогу <strong>Властивості завдання</strong> та натисніть кнопку <strong>Редагувати</strong>.</p>
+<blockquote>
+<p>Запізнення можна встановити в годинах, днях, тижнях, місяцях або як частку тривалості завдання-попередника (наприклад, 50%).</p>
+</blockquote>
+<h2 id="циклічні-залежності">Циклічні залежності <a href="#циклічні-залежності" class="heading-anchor">#</a></h2>
+<p>Якщо ви випадково створите циклічну залежність — наприклад, зробивши два завдання попередниками одне одного — Ingantt виявить це та скасує останню дію. Це стосується й складних циклічних ланцюжків.</p>
+<p>Коли ви відкриваєте файл проекту, що містить циклічні залежності, Ingantt автоматично видаляє проблемні зв'язки, щоб проект міг бути заплановано. Попередження показує, скільки циклічних залежностей було видалено під час імпорту.</p>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+{
+  "getting-started/overview": [
+    "en",
+    "uk"
+  ],
+  "getting-started/getting-started": [
+    "en",
+    "uk"
+  ],
+  "getting-started/create-with-ai": [
+    "en",
+    "uk"
+  ],
+  "getting-started/import-export": [
+    "en",
+    "uk"
+  ],
+  "setting-up-project/project": [
+    "en",
+    "uk"
+  ],
+  "setting-up-project/calendars": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/tasks": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/task-properties": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/dependencies": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/constraints": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/resources": [
+    "en",
+    "uk"
+  ],
+  "building-schedule/assignments": [
+    "en",
+    "uk"
+  ],
+  "adjusting-schedule/critical-path": [
+    "en",
+    "uk"
+  ],
+  "adjusting-schedule/leveling": [
+    "en",
+    "uk"
+  ],
+  "adjusting-schedule/custom-fields": [
+    "en",
+    "uk"
+  ],
+  "planning-costs/planning-costs": [
+    "en",
+    "uk"
+  ],
+  "planning-costs/setting-up-costs": [
+    "en",
+    "uk"
+  ],
+  "tracking/baselines": [
+    "en",
+    "uk"
+  ],
+  "tracking/progress": [
+    "en",
+    "uk"
+  ],
+  "tracking/actuals": [
+    "en",
+    "uk"
+  ],
+  "tracking/earned-value": [
+    "en",
+    "uk"
+  ],
+  "views/gantt": [
+    "en",
+    "uk"
+  ],
+  "views/task-views": [
+    "en",
+    "uk"
+  ],
+  "views/resource-views": [
+    "en",
+    "uk"
+  ],
+  "views/filtering": [
+    "en",
+    "uk"
+  ],
+  "ui/ui": [
+    "en",
+    "uk"
+  ],
+  "ui/files": [
+    "en",
+    "uk"
+  ],
+  "ui/shortcuts": [
+    "en",
+    "uk"
+  ]
+}

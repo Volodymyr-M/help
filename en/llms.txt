@@ -1,0 +1,55 @@
+# Ingantt Help — English
+
+> Documentation for Ingantt, a project scheduling application.
+
+## Getting Started
+
+- [Overview](https://help.ingantt.com/en/getting-started/overview/index.md)
+- [Getting Started](https://help.ingantt.com/en/getting-started/getting-started/index.md)
+- [Create with AI](https://help.ingantt.com/en/getting-started/create-with-ai/index.md)
+- [Import & Export](https://help.ingantt.com/en/getting-started/import-export/index.md)
+
+## Setting Up Your Project
+
+- [Project Properties](https://help.ingantt.com/en/setting-up-project/project/index.md)
+- [Calendars](https://help.ingantt.com/en/setting-up-project/calendars/index.md)
+
+## Building a Schedule
+
+- [Tasks](https://help.ingantt.com/en/building-schedule/tasks/index.md)
+- [Task Properties](https://help.ingantt.com/en/building-schedule/task-properties/index.md)
+- [Dependencies](https://help.ingantt.com/en/building-schedule/dependencies/index.md)
+- [Constraints](https://help.ingantt.com/en/building-schedule/constraints/index.md)
+- [Resources](https://help.ingantt.com/en/building-schedule/resources/index.md)
+- [Assignments](https://help.ingantt.com/en/building-schedule/assignments/index.md)
+
+## Analyzing & Adjusting
+
+- [Critical Path](https://help.ingantt.com/en/adjusting-schedule/critical-path/index.md)
+- [Resource Leveling](https://help.ingantt.com/en/adjusting-schedule/leveling/index.md)
+- [Custom Fields](https://help.ingantt.com/en/adjusting-schedule/custom-fields/index.md)
+
+## Planning Costs
+
+- [Understanding Costs](https://help.ingantt.com/en/planning-costs/planning-costs/index.md)
+- [Setting Up Costs](https://help.ingantt.com/en/planning-costs/setting-up-costs/index.md)
+
+## Tracking Progress
+
+- [Baselines](https://help.ingantt.com/en/tracking/baselines/index.md)
+- [Tracking Progress](https://help.ingantt.com/en/tracking/progress/index.md)
+- [Actuals](https://help.ingantt.com/en/tracking/actuals/index.md)
+- [Earned Value](https://help.ingantt.com/en/tracking/earned-value/index.md)
+
+## Views
+
+- [Gantt Chart](https://help.ingantt.com/en/views/gantt/index.md)
+- [Task Views](https://help.ingantt.com/en/views/task-views/index.md)
+- [Resource Views](https://help.ingantt.com/en/views/resource-views/index.md)
+- [Filtering Tasks](https://help.ingantt.com/en/views/filtering/index.md)
+
+## User Interface
+
+- [Adding and Selecting](https://help.ingantt.com/en/ui/ui/index.md)
+- [Google Drive Integration](https://help.ingantt.com/en/ui/files/index.md)
+- [Keyboard Shortcuts](https://help.ingantt.com/en/ui/shortcuts/index.md)

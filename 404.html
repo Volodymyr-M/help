@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="page-title">Page not found - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header">
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title" id="site-title-text">Ingantt Help</span>
+    </a>
+  </header>
+  <main id="main-content" class="content content--404">
+    <h1 id="heading-404">Page not found</h1>
+    <p id="message-404">The page you are looking for does not exist or has been moved.</p>
+    <p><a id="home-link" href="/en/">Go to home page</a></p>
+  </main>
+  <script>
+    (function() {
+      var i18n = {"en":{"site_title":"Ingantt Help","page_not_found":"Page not found","page_not_found_message":"The page you are looking for does not exist or has been moved.","go_home":"Go to home page"},"uk":{"site_title":"Довідка Ingantt","page_not_found":"Сторінку не знайдено","page_not_found_message":"Сторінка, яку ви шукаєте, не існує або була переміщена.","go_home":"Перейти на головну"}};
+      var parts = window.location.pathname.split('/').filter(Boolean);
+      var lang = (parts.length > 0 && /^[a-z]{2}$/.test(parts[0]) && i18n[parts[0]]) ? parts[0] : 'en';
+      var t = i18n[lang] || i18n['en'];
+      document.documentElement.lang = lang;
+      document.getElementById('page-title').textContent = t.page_not_found + ' - ' + t.site_title;
+      document.getElementById('site-title-text').textContent = t.site_title;
+      document.getElementById('heading-404').textContent = t.page_not_found;
+      document.getElementById('message-404').textContent = t.page_not_found_message;
+      var link = document.getElementById('home-link');
+      link.textContent = t.go_home;
+      link.href = '/' + lang + '/';
+      var logoLink = document.querySelector('.logo-link');
+      if (logoLink) logoLink.href = '/' + lang + '/';
+    })();
+  </script>
+</body>
+</html>

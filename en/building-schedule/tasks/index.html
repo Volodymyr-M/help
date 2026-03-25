@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tasks - Building a Schedule - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Learn about task types in Ingantt, including summary tasks, manually scheduled tasks, recurring tasks, split tasks, and inactive tasks.">
+  <link rel="canonical" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tasks">
+  <meta property="og:description" content="Learn about task types in Ingantt, including summary tasks, manually scheduled tasks, recurring tasks, split tasks, and inactive tasks.">
+  <meta property="og:url" content="https://help.ingantt.com/en/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tasks">
+  <meta name="twitter:description" content="Learn about task types in Ingantt, including summary tasks, manually scheduled tasks, recurring tasks, split tasks, and inactive tasks.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/" class="active" aria-current="page">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="tasks">Tasks <a href="#tasks" class="heading-anchor">#</a></h1>
+<p>Every schedule starts with tasks. Define what needs to be done, how long it will take, and when it's due. Once your tasks are in place, you'll see your project timeline take shape in the Gantt chart.</p>
+<h2 id="summary-tasks">Summary Tasks <a href="#summary-tasks" class="heading-anchor">#</a></h2>
+<p>Summary tasks help you organize your tasks by grouping them together. To create a summary task, select the tasks you want to group, then click the <strong>Increase Indent</strong> button on the toolbar to indent them. To convert a summary task back to a regular task, select all its subtasks and click the <strong>Decrease Indent</strong> button to remove their indentation.</p>
+<p>Since summary tasks group other tasks, their properties are derived from their subtasks rather than set directly. Their duration represents the overall duration of all the tasks within the group: the finish date of a summary task is the latest finish date among its subtasks.</p>
+<p>A summary task also displays the overall percent complete, total cost, and total work of its subtasks.</p>
+<p>In the Gantt chart, summary tasks are shown as black bars. In the task list, you can <strong>expand</strong> or <strong>collapse</strong> summary tasks to show or hide their subtasks.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Summary" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="root-summary-task">Root Summary Task <a href="#root-summary-task" class="heading-anchor">#</a></h2>
+<p>In Ingantt, there's always a summary task for your entire project. This task is task number 0, above all of your tasks.</p>
+<p>The root summary task might not be visible by default. To change this, check <strong>Show root summary task</strong> in the <strong>View</strong> menu or the <strong>Options</strong> dialog.</p>
+<p>Just like any other summary task, the root summary task shows the overall data of its subtasks. Since all tasks in your schedule are its subtasks, the root summary task shows the overall data of your entire project.</p>
+<p>The name of the root summary task is the same as the name of the project.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Root Summary Task" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="manually-scheduled-tasks">Manually Scheduled Tasks <a href="#manually-scheduled-tasks" class="heading-anchor">#</a></h2>
+<p>By default, all tasks in Ingantt are <strong>auto-scheduled</strong> — their start and finish dates are calculated by the scheduling algorithm based on dependencies, constraints, and calendars.</p>
+<p>You can switch a task to <strong>Manually scheduled</strong> mode using the checkbox in the <strong>Task Properties</strong> dialog. When a task is manually scheduled:</p>
+<ul>
+<li>It is <strong>not affected by the scheduling algorithm</strong> — its dates are set by you</li>
+<li>You can enter <strong>Start</strong> and <strong>Finish</strong> dates using the date fields or the date picker</li>
+<li>You can type <strong>text values</strong> (such as &quot;TBD&quot;, &quot;early March&quot;, or &quot;2-3 weeks&quot;) instead of actual dates when you are not yet sure about the timing</li>
+<li>A pin icon is shown for manually scheduled tasks in the task list</li>
+</ul>
+<blockquote>
+<p>Use manually scheduled tasks as placeholders when the exact timing is unknown, or when dates are fixed by external factors.</p>
+</blockquote>
+<h2 id="recurring-tasks">Recurring Tasks <a href="#recurring-tasks" class="heading-anchor">#</a></h2>
+<p>Recurring tasks represent activities that repeat on a regular schedule, such as daily standup meetings, weekly reviews, or monthly reports. You can create recurring tasks via the <strong>Insert</strong> menu by choosing <strong>Add recurring task</strong>.</p>
+<p>When creating a recurring task, you specify:</p>
+<ul>
+<li><strong>Occurrence duration</strong> — The duration of each individual occurrence</li>
+<li><strong>Recurrence pattern</strong> — Daily, weekly, monthly, or yearly pattern with a start date and end condition (no end, end by date, or end after N occurrences)</li>
+<li><strong>Working days only</strong> — Limits occurrences to working days</li>
+</ul>
+<p>Recurring tasks appear as a summary task containing the individual occurrences. Each occurrence can be completed independently. Deleting a recurring task prompts you to choose whether to delete the entire series or just the selected occurrence.</p>
+<h2 id="split-tasks">Split Tasks <a href="#split-tasks" class="heading-anchor">#</a></h2>
+<p>A task can be split into non-contiguous parts, representing interruptions in work. To split a task, select it and choose <strong>Split task</strong> from the toolbar or the right-click context menu. The <strong>Split Task</strong> dialog offers two modes:</p>
+<ul>
+<li><strong>By duration</strong> — Specify a gap offset from the task start and a split duration</li>
+<li><strong>By dates</strong> — Specify the stop and resume dates for the split</li>
+</ul>
+<p>Split tasks display as separate bars with dotted connectors between parts in the Gantt chart. Each split part has its own resize handle, and dragging a part so that it meets an adjacent part merges the two. To remove a split, select the task and choose <strong>Remove split</strong> from the toolbar.</p>
+<h2 id="inactive-tasks">Inactive Tasks <a href="#inactive-tasks" class="heading-anchor">#</a></h2>
+<p>A task can be marked as <strong>inactive</strong> by unchecking the <strong>Active</strong> checkbox on the <strong>General</strong> tab of the <strong>Task Properties</strong> dialog, or by using the <strong>Inactivate task</strong> option in the <strong>Edit &gt; Display</strong> submenu or the right-click context menu.</p>
+<p>Inactive tasks are:</p>
+<ul>
+<li>Excluded from scheduling — they do not affect the critical path or other tasks</li>
+<li>Excluded from summary task rollups for duration, work, cost, and % Complete</li>
+<li>Excluded from resource overallocation detection and auto-leveling</li>
+<li>Excluded from Earned Value calculations</li>
+</ul>
+<p>Inactive tasks remain visible in the task list and Gantt chart but appear at reduced opacity with strikethrough text. Their dates are preserved for reference.</p>
+<p>Inactivating a summary task cascades to all its subtasks. Reactivating a subtask automatically reactivates its parent summary if needed. Tasks with actual progress (% Complete &gt; 0) cannot be inactivated.</p>
+<blockquote>
+<p>Use inactive tasks to keep &quot;what-if&quot; scenarios in your schedule without affecting the active plan.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

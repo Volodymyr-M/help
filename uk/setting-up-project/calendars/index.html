@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Календарі - Налаштування проекту - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Налаштування календарів проекту, ресурсів та завдань із власними робочими тижнями, святами та повторюваними винятками.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Календарі">
+  <meta property="og:description" content="Налаштування календарів проекту, ресурсів та завдань із власними робочими тижнями, святами та повторюваними винятками.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Календарі">
+  <meta name="twitter:description" content="Налаштування календарів проекту, ресурсів та завдань із власними робочими тижнями, святами та повторюваними винятками.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/" class="active" aria-current="page">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="календарі">Календарі <a href="#календарі" class="heading-anchor">#</a></h1>
+<p>Свята, відпустки, скорочені дні, нічні зміни — ваш розклад має відображати, коли робота фактично виконується. Налаштуйте календарі, щоб Ingantt пропускав неробочий час та давав вам реалістичні дати.</p>
+<p>Календарі визначають дні та час, коли можна виконувати роботу. Календарі використовують два типи даних:</p>
+<ul>
+<li><strong>Дні тижня</strong>: Робочий час, встановлений для кожного дня тижня — визначає типовий, повсякденний розклад.</li>
+<li><strong>Винятки</strong>: Дати, коли робота не виконується або виконується в інший час, ніж визначає розклад днів тижня.</li>
+</ul>
+<h2 id="календар-проекту">Календар проекту <a href="#календар-проекту" class="heading-anchor">#</a></h2>
+<p>Проект має <strong>Календар</strong>, пов'язаний з ним, як вказано в діалозі <strong>Властивості проекту</strong>. Цей календар визначає, як плануються завдання, які не призначені робочим ресурсам. Вихідні дні також відображаються на діаграмі Ганта на основі цього календаря.</p>
+<h2 id="календар-ресурсу">Календар ресурсу <a href="#календар-ресурсу" class="heading-anchor">#</a></h2>
+<p>Кожен <a href="/uk/building-schedule/resources/#%D1%82%D0%B8%D0%BF-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%83">робочий ресурс</a> має календар, пов'язаний з ним, як вказано в полі <strong>Базовий календар</strong> діалогу <strong>Властивості ресурсу</strong>. Після <a href="/uk/building-schedule/assignments/#%D0%BF%D1%80%D0%B8%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%BD%D1%8F-%D1%80%D0%B5%D1%81%D1%83%D1%80%D1%81%D1%96%D0%B2-%D1%82%D0%B0-%D0%BE%D0%B4%D0%B8%D0%BD%D0%B8%D1%86%D1%96">призначення</a> робочого ресурсу на завдання його календар впливає на планування завдання.</p>
+<p>Коли кілька робочих ресурсів призначені на завдання, їхні календарі <strong>перетинаються</strong> — це означає, що робота планується лише в ті години, коли <strong>всі</strong> призначені ресурси доступні. Наприклад, якщо Ресурс А працює Пн–Ср, а Ресурс Б працює Ср–Пт, завдання, призначене обом, планується лише на середу.</p>
+<blockquote>
+<p>Якщо кілька ресурсів мають подібний робочий розклад, створіть один календар та призначте його всім. Ви все ще можете вказати винятки для кожного ресурсу окремо у <strong>Властивостях ресурсу</strong> — наприклад, відпустки або змінений робочий час у конкретні дні.</p>
+</blockquote>
+<h2 id="календар-завдання">Календар завдання <a href="#календар-завдання" class="heading-anchor">#</a></h2>
+<p>Кожне завдання має властивість <strong>Календар</strong> у діалозі <strong>Властивості завдання</strong>, за замовчуванням встановлену на <strong>НЕМАЄ</strong>. Коли встановлено <strong>НЕМАЄ</strong>:</p>
+<ul>
+<li>Якщо завдання не призначене жодному робочому ресурсу, воно планується за календарем проекту.</li>
+<li>Якщо завдання призначене робочим ресурсам, воно планується за їхніми календарями.</li>
+</ul>
+<p>Якщо властивість <strong>Календар</strong> завдання встановлена на конкретний календар замість <strong>НЕМАЄ</strong>:</p>
+<ul>
+<li>Якщо завдання не призначене жодному робочому ресурсу, воно планується за вказаним календарем.</li>
+<li>Якщо завдання призначене робочим ресурсам, календар завдання <strong>ігнорується</strong> і завдання планується за перетином календарів ресурсів. Щоб використовувати календар завдання замість календарів ресурсів, позначте прапорець <strong>Ігнорувати календарі ресурсів</strong>.</li>
+</ul>
+<h2 id="попередньо-визначені-календарі">Попередньо визначені календарі <a href="#попередньо-визначені-календарі" class="heading-anchor">#</a></h2>
+<p>Ingantt має 3 попередньо визначені календарі, один з яких (<strong>Стандартний</strong>) призначений проекту за замовчуванням.</p>
+<table>
+<thead>
+<tr>
+<th>Календар</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Стандартний</strong></td>
+<td>Робота виконується щодня з понеділка по п'ятницю, з 8:00 до 17:00 з перервою на 1 годину (з 12:00 до 13:00).</td>
+</tr>
+<tr>
+<td><strong>Нічна зміна</strong></td>
+<td>Робота виконується з ночі понеділка до ранку суботи, з 23:00 до 8:00 з перервою на 1 годину (з 3:00 до 4:00).</td>
+</tr>
+<tr>
+<td><strong>Цілодобовий</strong></td>
+<td>Робота виконується 24 години на добу, щодня.</td>
+</tr>
+</tbody>
+</table>
+<p>Ви можете редагувати будь-який із попередньо визначених календарів у діалозі <strong>Властивості календаря</strong> або створювати власні календарі на їхній основі за допомогою діалогу <strong>Додати календар</strong>.</p>
+<h2 id="робочі-тижні">Робочі тижні <a href="#робочі-тижні" class="heading-anchor">#</a></h2>
+<p>Робочі тижні дозволяють визначити зміни в тижневому розкладі для конкретного діапазону дат. Наприклад, у вас може бути період, коли всі працюють 4-годинні дні замість стандартних 8, або період, коли субота стає робочим днем.</p>
+<p>Робочі тижні налаштовуються на вкладці <strong>Робочі тижні</strong> діалогу <strong>Властивості календаря</strong>. Кожен робочий тиждень має назву, дати початку та завершення, а також визначення робочого часу для кожного дня тижня.</p>
+<blockquote>
+<p>Винятки календаря мають пріоритет над робочими тижнями, які мають пріоритет над стандартним розкладом днів тижня.</p>
+</blockquote>
+<h2 id="винятки-календаря">Винятки календаря <a href="#винятки-календаря" class="heading-anchor">#</a></h2>
+<p>Винятки календаря — це дати, коли робота відрізняється від звичайного розкладу днів тижня, включаючи вихідні дні.</p>
+<p>Винятки календаря можна вказати:</p>
+<ul>
+<li>У діалозі <strong>Властивості ресурсу</strong> для конкретного ресурсу.</li>
+<li>У діалозі <strong>Властивості календаря</strong> для конкретного календаря, щоб проекти, ресурси або завдання, що використовують цей календар, мали цей виняток.</li>
+</ul>
+<p>Наприклад, якщо ви хочете налаштувати відпустку для людини, додайте її як виняток для цього ресурсу. Якщо ви хочете налаштувати свято для всіх, додайте його як виняток до календаря, який використовують усі.</p>
+<p>Під час додавання або редагування винятків календаря ви вказуєте періоди робочого часу для винятку. Якщо ви не вказуєте жодного, виняток не має робочого часу, тобто визначає вихідний день.</p>
+<p>Кожному винятку можна дати описову <strong>Назву</strong> (наприклад, «Різдво» або «Офіс закритий»), яка відображається в списку винятків.</p>
+<h3 id="повторювані-винятки">Повторювані винятки <a href="#повторювані-винятки" class="heading-anchor">#</a></h3>
+<p>Винятки календаря можуть повторюватись за шаблоном, а не лише для однієї дати. Доступні шаблони повторення включають:</p>
+<ul>
+<li><strong>Щоденний</strong> — Кожні N днів або кожні N робочих днів</li>
+<li><strong>Щотижневий</strong> — Кожні N тижнів у зазначені дні тижня</li>
+<li><strong>Щомісячний</strong> — За днем місяця або за позицією (наприклад, другий вівторок)</li>
+<li><strong>Щорічний</strong> — За датою або за позицією (наприклад, остання п'ятниця листопада)</li>
+</ul>
+<p>Повторювані винятки мають умову завершення: без завершення, завершення за датою або завершення після N повторень.</p>
+<h2 id="порожні-та-часткові-календарі">Порожні та часткові календарі <a href="#порожні-та-часткові-календарі" class="heading-anchor">#</a></h2>
+<p>Якщо ви не додасте жодного робочого часу до календаря, він буде порожнім і не зможе використовуватись для планування. Такі календарі позначаються іконкою попередження у списку календарів, а кількість таких календарів відображається на навігаційній панелі.</p>
+<p>Однак бувають ситуації, коли ваш календар не порожній, але все ж не має достатньо робочого часу для планування конкретного завдання. Такі ситуації можна виявити лише під час планування.</p>
+<p>Якщо ви призначите порожній календар — або календар без достатнього робочого часу — проекту, ресурсу чи завданню, і планування не може бути виконане, з'являється повідомлення про помилку, а остання дія скасовується.</p>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

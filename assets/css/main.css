@@ -1,0 +1,805 @@
+/* ==========================================================================
+   1. CSS Custom Properties — Light & Dark Themes
+   ========================================================================== */
+
+:root {
+  --bg: #faf9f7;
+  --surface: #f2f0ec;
+  --surface-card: #ffffff;
+  --text: #1a1a2e;
+  --text-secondary: #5a5a72;
+  --text-muted: #8e8ea0;
+  --accent: #d97706;
+  --accent-hover: #b45309;
+  --accent-subtle: #fef3c7;
+  --border: #e4e2dd;
+  --border-light: #eceae5;
+  --code-bg: #f2f0ec;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+[data-theme="dark"] {
+  --bg: #0f0f1a;
+  --surface: #161625;
+  --surface-card: #1c1c30;
+  --text: #e8e8f0;
+  --text-secondary: #a0a0b8;
+  --text-muted: #6e6e88;
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --accent-subtle: rgba(245, 158, 11, 0.1);
+  --border: #2a2a42;
+  --border-light: #222238;
+  --code-bg: #1c1c30;
+}
+
+/* ==========================================================================
+   2. Reset & Base
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   3. Skip-to-Content Link
+   ========================================================================== */
+
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 16px;
+  z-index: 1000;
+  padding: 0.75rem 1.5rem;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 12px;
+}
+
+/* ==========================================================================
+   4. Header
+   ========================================================================== */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo-icon {
+  display: block;
+}
+
+.site-title {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.hamburger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+}
+
+.hamburger span {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: currentColor;
+  border-radius: 1px;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.search-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text-secondary);
+}
+
+/* ==========================================================================
+   5. Three-Column Layout
+   ========================================================================== */
+
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr 200px;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+/* ==========================================================================
+   6. Sidebar
+   ========================================================================== */
+
+.sidebar {
+  height: calc(100vh - 60px);
+  position: sticky;
+  top: 60px;
+  display: flex;
+  flex-direction: column;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+}
+
+.sidebar-nav {
+  flex: 1;
+  overflow-y: auto;
+  padding: 1rem 0;
+}
+
+.sidebar-controls {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-top: 1px solid var(--border);
+}
+
+.theme-group {
+  margin-bottom: 0.25rem;
+}
+
+.theme-header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-align: left;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: var(--text);
+  font-family: inherit;
+  gap: 0.5rem;
+}
+
+.theme-header .chevron {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+
+.theme-header[aria-expanded="true"] .chevron {
+  transform: rotate(90deg);
+}
+
+.theme-header[aria-expanded="false"] + .theme-pages {
+  display: none;
+}
+
+.theme-pages {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-pages a {
+  display: block;
+  padding: 0.35rem 1rem 0.35rem 2.25rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  border-left: 3px solid transparent;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.theme-pages a:hover {
+  background: rgba(0, 0, 0, 0.04);
+  color: var(--text);
+}
+
+[data-theme="dark"] .theme-pages a:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.theme-pages a.active {
+  border-left-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-subtle);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   7. Main Content & Typography
+   ========================================================================== */
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 2.5rem;
+  width: 100%;
+  min-width: 0;
+}
+
+.content h1 {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.content h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
+  line-height: 1.4;
+}
+
+.content h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.content h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content h5 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.content h6 {
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+}
+
+.content p {
+  margin-bottom: 1rem;
+}
+
+.content ul,
+.content ol {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+}
+
+.content li {
+  margin-bottom: 0.25rem;
+}
+
+.content blockquote {
+  border-left: 4px solid var(--accent);
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--surface);
+  border-radius: 0 8px 8px 0;
+}
+
+.content blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+.content hr {
+  border: none;
+  height: 1px;
+  background: var(--border);
+  margin: 2rem 0;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+}
+
+.content th,
+.content td {
+  padding: 0.75rem;
+  border: 1px solid var(--border);
+  text-align: left;
+}
+
+.content th {
+  background: var(--surface);
+  font-weight: 600;
+}
+
+.content tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.015);
+}
+
+[data-theme="dark"] .content tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.content code {
+  background: var(--code-bg);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+}
+
+.content pre {
+  background: var(--code-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+}
+
+.content pre code {
+  padding: 0;
+  background: none;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08), 0 1px 3px rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border);
+  margin: 0.5rem 0;
+}
+
+[data-theme="dark"] .content img {
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.content .video-embed {
+  margin-bottom: 1rem;
+}
+
+.content .video-embed iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+}
+
+.content a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   8. Heading Anchors
+   ========================================================================== */
+
+.heading-anchor {
+  opacity: 0;
+  text-decoration: none;
+  color: var(--text-secondary);
+  padding-left: 0.5rem;
+  font-weight: 400;
+  transition: opacity 0.2s;
+}
+
+.content h1:hover .heading-anchor,
+.content h2:hover .heading-anchor,
+.content h3:hover .heading-anchor,
+.content h4:hover .heading-anchor,
+.content h5:hover .heading-anchor,
+.content h6:hover .heading-anchor {
+  opacity: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 80px;
+}
+
+/* ==========================================================================
+   9. TOC Panel (Right Sidebar)
+   ========================================================================== */
+
+.toc {
+  position: sticky;
+  top: 80px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  font-size: 0.875rem;
+  padding: 2rem 1rem 2rem 0;
+}
+
+.toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.toc ul ul {
+  padding-left: 0.75rem;
+}
+
+.toc a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 0.25rem 0.5rem;
+  border-left: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.toc a:hover {
+  color: var(--text);
+}
+
+.toc a.active {
+  color: var(--accent);
+  border-left-color: var(--accent);
+  font-weight: 500;
+}
+
+/* ==========================================================================
+   10. Sidebar Controls (Language Switcher & Theme Toggle)
+   ========================================================================== */
+
+.lang-select {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  color: var(--text);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+}
+
+.lang-select:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0.4rem;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+
+.theme-toggle:hover {
+  color: var(--text);
+}
+
+.email-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem;
+  color: var(--text-secondary);
+  border-radius: 6px;
+  transition: color 0.2s;
+}
+
+.email-link:hover {
+  color: var(--text);
+}
+
+/* ==========================================================================
+   11. Search
+   ========================================================================== */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-input {
+  width: 250px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: var(--bg);
+  color: var(--text);
+  font-family: inherit;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.search-input:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.15);
+}
+
+[data-theme="dark"] .search-input:focus {
+  box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.15);
+}
+
+.search-results {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 400px;
+  max-height: 400px;
+  overflow-y: auto;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+  z-index: 200;
+  margin-top: 0.5rem;
+}
+
+.search-results[hidden] {
+  display: none;
+}
+
+.search-result-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+  cursor: pointer;
+  transition: background 0.15s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.search-result-item:last-child {
+  border-bottom: none;
+}
+
+.search-result-item:hover,
+.search-result-item.selected {
+  background: var(--surface);
+}
+
+.search-result-title {
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.15rem;
+}
+
+.search-result-theme {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.search-result-snippet {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.search-result-snippet mark {
+  background: var(--accent-subtle);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+mark.search-highlight {
+  background: var(--accent-subtle);
+  color: var(--text);
+  border-radius: 2px;
+  padding: 0 2px;
+}
+
+[data-theme="dark"] mark.search-highlight,
+[data-theme="dark"] .search-result-snippet mark {
+  background: rgba(245, 158, 11, 0.3);
+}
+
+/* ==========================================================================
+   12. Responsive Breakpoints
+   ========================================================================== */
+
+/* Hide TOC on narrower screens */
+@media (max-width: 1199px) {
+  .toc {
+    display: none;
+  }
+
+  .layout {
+    grid-template-columns: 240px 1fr;
+  }
+}
+
+/* Mobile: hide sidebar, single column */
+@media (max-width: 991px) {
+  .sidebar {
+    display: none;
+  }
+
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .search-input {
+    display: none;
+  }
+
+  .search-toggle {
+    display: flex;
+  }
+
+  .content {
+    padding: 1.5rem 1rem;
+  }
+}
+
+/* ==========================================================================
+   13. Mobile Sidebar Overlay
+   ========================================================================== */
+
+.sidebar-backdrop[hidden] {
+  display: none;
+}
+
+.sidebar-open .sidebar {
+  display: flex;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 0;
+  width: 280px;
+  z-index: 150;
+  background: var(--surface);
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.sidebar-open .sidebar-backdrop {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 140;
+}
+
+/* ==========================================================================
+   14. Mobile Search Overlay
+   ========================================================================== */
+
+.search-overlay-open .search-input {
+  display: block;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 160;
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.search-overlay-open .search-results {
+  position: fixed;
+  top: calc(60px + 42px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+
+/* ==========================================================================
+   15. Theme Toggle Icon Visibility
+   ========================================================================== */
+
+[data-theme="light"] .icon-moon {
+  display: none;
+}
+
+[data-theme="dark"] .icon-sun {
+  display: none;
+}
+
+/* ==========================================================================
+   Utilities & Print
+   ========================================================================== */
+
+@media print {
+  .header,
+  .sidebar,
+  .toc,
+  .skip-link,
+  .sidebar-backdrop {
+    display: none;
+  }
+
+  .layout {
+    display: block;
+    padding-top: 0;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 0;
+  }
+}

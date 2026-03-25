@@ -1,0 +1,105 @@
+/*
+ * highlight.js — Monokai-Inspired Dark Theme
+ * For use with highlight.js on dark backgrounds.
+ */
+
+.hljs {
+  color: #f8f8f2;
+  background: transparent;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #75715e;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #f92672;
+  font-weight: 600;
+}
+
+.hljs-literal {
+  color: #ae81ff;
+}
+
+.hljs-built_in {
+  color: #66d9ef;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #e6db74;
+}
+
+.hljs-number {
+  color: #ae81ff;
+}
+
+.hljs-title,
+.hljs-section,
+.hljs-selector-id {
+  color: #a6e22e;
+  font-weight: 600;
+}
+
+.hljs-function {
+  color: #f8f8f2;
+}
+
+.hljs-type,
+.hljs-selector-class {
+  color: #66d9ef;
+  font-style: italic;
+}
+
+.hljs-attr,
+.hljs-attribute {
+  color: #a6e22e;
+}
+
+.hljs-params {
+  color: #fd971f;
+}
+
+.hljs-variable,
+.hljs-template-variable {
+  color: #fd971f;
+}
+
+.hljs-regexp {
+  color: #e6db74;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #ae81ff;
+}
+
+.hljs-meta {
+  color: #75715e;
+}
+
+.hljs-addition {
+  color: #a6e22e;
+  background: rgba(166, 226, 46, 0.1);
+}
+
+.hljs-deletion {
+  color: #f92672;
+  background: rgba(249, 38, 114, 0.1);
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: 700;
+}
+
+.hljs-link {
+  color: #66d9ef;
+  text-decoration: underline;
+}

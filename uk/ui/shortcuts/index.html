@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Клавіатурні скорочення - Інтерфейс користувача - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Повний довідник клавіатурних скорочень для навігації, редагування, подань, масштабування та операцій із завданнями в Ingantt.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/ui/shortcuts/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Клавіатурні скорочення">
+  <meta property="og:description" content="Повний довідник клавіатурних скорочень для навігації, редагування, подань, масштабування та операцій із завданнями в Ingantt.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/ui/shortcuts/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Клавіатурні скорочення">
+  <meta name="twitter:description" content="Повний довідник клавіатурних скорочень для навігації, редагування, подань, масштабування та операцій із завданнями в Ingantt.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/shortcuts/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/" class="active" aria-current="page">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="клавіатурні-скорочення">Клавіатурні скорочення <a href="#клавіатурні-скорочення" class="heading-anchor">#</a></h1>
+<p>Прискоріть свою роботу за допомогою клавіатурних скорочень для поширених дій, таких як редагування, навігація та перемикання подань.</p>
+<blockquote>
+<p>Клавіатурні скорочення недоступні на <strong>Android</strong> та <strong>iOS</strong>.</p>
+<p>На <strong>macOS</strong> використовуйте <code>Cmd</code> замість <code>Ctrl</code>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Скорочення</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + X</code></td>
+<td>Вирізати вибрані елементи до буфера обміну.</td>
+</tr>
+<tr>
+<td><code>Ctrl + C</code></td>
+<td>Копіювати вибрані елементи до буфера обміну.</td>
+</tr>
+<tr>
+<td><code>Ctrl + V</code></td>
+<td>Вставити елементи з буфера обміну під вибраним елементом або в кінець списку, якщо нічого не вибрано.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Z</code></td>
+<td>Скасувати останню дію.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Y</code></td>
+<td>Повторити останню скасовану дію.</td>
+</tr>
+<tr>
+<td><code>Ctrl + S</code></td>
+<td>Зберегти зміни у файл.</td>
+</tr>
+<tr>
+<td><code>Ctrl + O</code></td>
+<td>Відкрити файл (стандартний вибір файлу на десктопі, діалог <strong>Відкрити файл</strong> у <strong>веб-версії</strong>).</td>
+</tr>
+<tr>
+<td><code>Ctrl + P</code></td>
+<td>Друк поточного проекту.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Shift + F</code></td>
+<td>Перемкнути видимість <strong>заголовка/рядка меню</strong>.</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>Додати новий елемент.</td>
+</tr>
+<tr>
+<td><code>Del</code></td>
+<td>Видалити вибрані елементи.</td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td>Показати діалог <strong>Властивості</strong> для вибраного елемента. Якщо вибрано кілька елементів, діалог показується для верхнього.</td>
+</tr>
+<tr>
+<td><code>Стрілка вгору</code></td>
+<td>Вибрати попередній елемент.</td>
+</tr>
+<tr>
+<td><code>Стрілка вниз</code></td>
+<td>Вибрати наступний елемент.</td>
+</tr>
+<tr>
+<td><code>Shift + Стрілка вгору/вниз</code></td>
+<td>Розширити вибір вгору або вниз у будь-якому поданні списку.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Стрілка вгору</code></td>
+<td>Перемістити вибрані завдання вгору.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Стрілка вниз</code></td>
+<td>Перемістити вибрані завдання вниз.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Стрілка вліво</code></td>
+<td>Зменшити відступ вибраних завдань.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Стрілка вправо</code></td>
+<td>Збільшити відступ вибраних завдань.</td>
+</tr>
+<tr>
+<td><code>Tab / Shift + Tab</code></td>
+<td>Перейти до наступної або попередньої комірки для редагування. Зберігає поточне редагування перед переходом.</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>Переключитись на подання <strong>Ресурси</strong>.</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>Переключитись на подання <strong>Календарі</strong>.</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>Переключитись на подання <strong>Завдання</strong>.</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Показати діалог <strong>Властивості проекту</strong>.</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>Збільшити масштаб діаграми Ганта.</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>Зменшити масштаб діаграми Ганта.</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>Зв'язати вибрані завдання.</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>Роз'єднати вибрані завдання (видалити залежність між ними).</td>
+</tr>
+<tr>
+<td><code>Numpad +</code></td>
+<td>Збільшити масштаб діаграми Ганта.</td>
+</tr>
+<tr>
+<td><code>Numpad -</code></td>
+<td>Зменшити масштаб діаграми Ганта.</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>Вийти з повноекранного режиму; скасувати діалоги.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Enter</code></td>
+<td>Підтвердити поточний діалог.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Alt + Shift + H</code></td>
+<td>Показати історію версій.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

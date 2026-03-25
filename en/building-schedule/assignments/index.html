@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignments - Building a Schedule - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Assign resources to tasks, configure assignment units, work contours, assignment delay, and overtime work.">
+  <link rel="canonical" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Assignments">
+  <meta property="og:description" content="Assign resources to tasks, configure assignment units, work contours, assignment delay, and overtime work.">
+  <meta property="og:url" content="https://help.ingantt.com/en/building-schedule/assignments/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Assignments">
+  <meta name="twitter:description" content="Assign resources to tasks, configure assignment units, work contours, assignment delay, and overtime work.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/assignments/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/" class="active" aria-current="page">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="assignments">Assignments <a href="#assignments" class="heading-anchor">#</a></h1>
+<p>Control how resources are allocated to tasks — who works on what, how much of their time, and how the effort is distributed. Adjust units, work contours, and overtime to match how your team actually works.</p>
+<h2 id="resource-assignments-and-units">Resource Assignments and Units <a href="#resource-assignments-and-units" class="heading-anchor">#</a></h2>
+<p>Resources can be assigned to a task on the <strong>Resources</strong> tab of the <strong>Task Properties</strong> dialog.</p>
+<p>To assign a resource, check the checkbox in the row with the resource. To unassign a resource, uncheck the checkbox.</p>
+<p>Assignments of work or material resources have <strong>Units</strong>, shown in the corresponding column. Click the <strong>Edit</strong> button to change the default <strong>Units</strong> value for the assignment.</p>
+<p>By default, work resources are assigned with units matching the resource's <a href="/en/building-schedule/resources/#max-units">Max Units</a> (100% for a full-time resource). This means the resource will dedicate all of its available calendar time to the task. You can change the value to any number.</p>
+<p>By default, material resources are assigned with 1 unit. This means 1 unit of that material will be used when completing the task. The unit represents whatever you defined for the material (box, gallon, ton, etc.). You can change the default value and set any number of units.</p>
+<h2 id="work-contours">Work Contours <a href="#work-contours" class="heading-anchor">#</a></h2>
+<p>When a work resource is assigned to a task, the effort (work) is distributed across the task's duration according to a <strong>work contour</strong>. By default, work is spread evenly (Flat contour), but Ingantt supports several contour patterns that change how effort is distributed over time:</p>
+<table>
+<thead>
+<tr>
+<th>Contour</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flat</strong></td>
+<td>Uniform effort across the entire duration (default)</td>
+</tr>
+<tr>
+<td><strong>Back Loaded</strong></td>
+<td>Effort increases toward the end of the task</td>
+</tr>
+<tr>
+<td><strong>Front Loaded</strong></td>
+<td>Effort is heaviest at the beginning and decreases</td>
+</tr>
+<tr>
+<td><strong>Double Peak</strong></td>
+<td>Two peaks of intensity during the task</td>
+</tr>
+<tr>
+<td><strong>Early Peak</strong></td>
+<td>Peaks early, then tapers off</td>
+</tr>
+<tr>
+<td><strong>Late Peak</strong></td>
+<td>Builds to a peak near the end</td>
+</tr>
+<tr>
+<td><strong>Bell</strong></td>
+<td>Bell curve — peaks in the middle</td>
+</tr>
+<tr>
+<td><strong>Turtle</strong></td>
+<td>Flatter bell curve — smoother distribution</td>
+</tr>
+</tbody>
+</table>
+<p>Work contours affect how work is distributed across time periods and are preserved when opening and saving project files.</p>
+<h2 id="assignment-delay">Assignment Delay <a href="#assignment-delay" class="heading-anchor">#</a></h2>
+<p>Each resource assignment on a task has a <strong>Delay</strong> property that offsets when the resource begins work relative to the task start date. For example, if a task starts on Monday and a resource has a 2-day delay, that resource begins work on Wednesday.</p>
+<p>The delay is set in the <strong>Edit Resource Assignment</strong> dialog and only applies to work resource assignments. It can be used to stagger resource start times on a task.</p>
+<h2 id="overtime-work">Overtime Work <a href="#overtime-work" class="heading-anchor">#</a></h2>
+<p>For work resources, you can designate a portion of an assignment's total work as overtime. Overtime work is a subset of total work, not additive: <strong>Work = Regular Work + Overtime Work</strong>.</p>
+<p>Task cost is calculated using the regular and overtime portions separately:
+<strong>Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use</strong></p>
+<p>For Fixed Units and Fixed Work tasks, entering overtime work reduces the task duration because duration is based on regular work only.</p>
+<p>Set overtime work in the <strong>Edit Resource Assignment</strong> dialog. Three optional columns are available in the task table: <strong>Overtime Work</strong>, <strong>Overtime Cost</strong>, and <strong>Regular Work</strong>.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

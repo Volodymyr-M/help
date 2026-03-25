@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Завдання - Побудова розкладу - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Дізнайтеся про типи завдань в Ingantt, включаючи сумарні завдання, завдання з ручним плануванням, повторювані завдання, розділені завдання та неактивні завдання.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Завдання">
+  <meta property="og:description" content="Дізнайтеся про типи завдань в Ingantt, включаючи сумарні завдання, завдання з ручним плануванням, повторювані завдання, розділені завдання та неактивні завдання.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Завдання">
+  <meta name="twitter:description" content="Дізнайтеся про типи завдань в Ingantt, включаючи сумарні завдання, завдання з ручним плануванням, повторювані завдання, розділені завдання та неактивні завдання.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/" class="active" aria-current="page">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="завдання">Завдання <a href="#завдання" class="heading-anchor">#</a></h1>
+<p>Кожен розклад починається із завдань. Визначте, що потрібно зробити, скільки це займе часу та коли це має бути готове. Після додавання завдань ви побачите, як часова шкала вашого проекту формується на діаграмі Ганта.</p>
+<h2 id="сумарні-завдання">Сумарні завдання <a href="#сумарні-завдання" class="heading-anchor">#</a></h2>
+<p>Сумарні завдання допомагають організувати ваші завдання, групуючи їх разом. Щоб створити сумарне завдання, виберіть завдання, які хочете згрупувати, а потім натисніть кнопку <strong>Збільшити відступ</strong> на панелі інструментів, щоб зробити їх підпорядкованими. Щоб перетворити сумарне завдання назад на звичайне, виберіть усі його підзавдання та натисніть кнопку <strong>Зменшити відступ</strong>, щоб прибрати відступ.</p>
+<p>Оскільки сумарні завдання групують інші завдання, їхні властивості розраховуються на основі підзавдань, а не встановлюються безпосередньо. Їхня тривалість відображає загальну тривалість усіх завдань у групі: дата завершення сумарного завдання — це найпізніша дата завершення серед його підзавдань.</p>
+<p>Сумарне завдання також відображає загальний відсоток виконання, загальну вартість та загальні трудовитрати своїх підзавдань.</p>
+<p>На діаграмі Ганта сумарні завдання показуються як чорні смуги. У списку завдань ви можете <strong>розгорнути</strong> або <strong>згорнути</strong> сумарні завдання, щоб показати або приховати їхні підзавдання.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Сумарне" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="кореневе-сумарне-завдання">Кореневе сумарне завдання <a href="#кореневе-сумарне-завдання" class="heading-anchor">#</a></h2>
+<p>В Ingantt завжди існує сумарне завдання для всього проекту. Це завдання має номер 0 і розташоване над усіма вашими завданнями.</p>
+<p>Кореневе сумарне завдання може бути невидимим за замовчуванням. Щоб змінити це, позначте <strong>Показати кореневе сумарне завдання</strong> в меню <strong>Подання</strong> або в діалозі <strong>Параметри</strong>.</p>
+<p>Як і будь-яке інше сумарне завдання, кореневе сумарне завдання показує загальні дані своїх підзавдань. Оскільки всі завдання у вашому розкладі є його підзавданнями, кореневе сумарне завдання показує загальні дані всього вашого проекту.</p>
+<p>Назва кореневого сумарного завдання збігається з назвою проекту.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Кореневе сумарне завдання" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="завдання-з-ручним-плануванням">Завдання з ручним плануванням <a href="#завдання-з-ручним-плануванням" class="heading-anchor">#</a></h2>
+<p>За замовчуванням усі завдання в Ingantt <strong>плануються автоматично</strong> — їхні дати початку та завершення розраховуються алгоритмом планування на основі залежностей, обмежень та календарів.</p>
+<p>Ви можете переключити завдання в режим <strong>Ручне планування</strong> за допомогою прапорця в діалозі <strong>Властивості завдання</strong>. Коли завдання має ручне планування:</p>
+<ul>
+<li>Воно <strong>не підпадає під алгоритм планування</strong> — його дати встановлюєте ви</li>
+<li>Ви можете вводити дати <strong>Початку</strong> та <strong>Завершення</strong> за допомогою полів дати або вибору дати</li>
+<li>Ви можете вводити <strong>текстові значення</strong> (наприклад, «Уточнити», «початок березня» або «2–3 тижні») замість фактичних дат, коли ви ще не впевнені в термінах</li>
+<li>Для завдань з ручним плануванням у списку завдань відображається іконка шпильки</li>
+</ul>
+<blockquote>
+<p>Використовуйте завдання з ручним плануванням як заповнювачі, коли точні терміни невідомі, або коли дати визначені зовнішніми факторами.</p>
+</blockquote>
+<h2 id="повторювані-завдання">Повторювані завдання <a href="#повторювані-завдання" class="heading-anchor">#</a></h2>
+<p>Повторювані завдання представляють дії, які повторюються за регулярним розкладом, наприклад, щоденні стендапи, щотижневі огляди або щомісячні звіти. Ви можете створити повторювані завдання через меню <strong>Вставка</strong>, обравши <strong>Додати повторюване завдання</strong>.</p>
+<p>Під час створення повторюваного завдання ви вказуєте:</p>
+<ul>
+<li><strong>Тривалість одного повторення</strong> — Тривалість кожного окремого повторення</li>
+<li><strong>Шаблон повторення</strong> — Щоденний, щотижневий, щомісячний або щорічний шаблон з датою початку та умовою завершення (без завершення, завершення за датою або завершення після N повторень)</li>
+<li><strong>Лише робочі дні</strong> — Обмежує повторення робочими днями</li>
+</ul>
+<p>Повторювані завдання відображаються як сумарне завдання, що містить окремі повторення. Кожне повторення може бути завершене незалежно. Видалення повторюваного завдання пропонує вам обрати, чи видалити всю серію, чи лише вибране повторення.</p>
+<h2 id="розділені-завдання">Розділені завдання <a href="#розділені-завдання" class="heading-anchor">#</a></h2>
+<p>Завдання можна розділити на несуміжні частини, що представляє перерви в роботі. Щоб розділити завдання, виберіть його та оберіть <strong>Розділити завдання</strong> з панелі інструментів або контекстного меню (правий клік). Діалог <strong>Розділити завдання</strong> пропонує два режими:</p>
+<ul>
+<li><strong>За тривалістю</strong> — Вкажіть відступ розриву від початку завдання та тривалість розділення</li>
+<li><strong>За датами</strong> — Вкажіть дати зупинки та відновлення розділення</li>
+</ul>
+<p>Розділені завдання відображаються як окремі смуги з пунктирними з'єднувачами між частинами на діаграмі Ганта. Кожна розділена частина має власний маркер зміни розміру, а перетягування частини так, щоб вона з'єдналась із сусідньою, об'єднує їх. Щоб видалити розділення, виберіть завдання та оберіть <strong>Видалити розділення</strong> з панелі інструментів.</p>
+<h2 id="неактивні-завдання">Неактивні завдання <a href="#неактивні-завдання" class="heading-anchor">#</a></h2>
+<p>Завдання можна позначити як <strong>неактивне</strong>, знявши прапорець <strong>Активне</strong> на вкладці <strong>Загальне</strong> діалогу <strong>Властивості завдання</strong> або за допомогою пункту <strong>Деактивувати завдання</strong> в підменю <strong>Редагування &gt; Відображення</strong> чи контекстного меню (правий клік).</p>
+<p>Неактивні завдання:</p>
+<ul>
+<li>Виключені з планування — вони не впливають на критичний шлях або інші завдання</li>
+<li>Виключені із підсумків сумарних завдань для тривалості, трудовитрат, вартості та % виконання</li>
+<li>Виключені з виявлення перевантаження ресурсів та автовирівнювання</li>
+<li>Виключені з розрахунків освоєного обсягу</li>
+</ul>
+<p>Неактивні завдання залишаються видимими у списку завдань та на діаграмі Ганта, але відображаються зі зниженою прозорістю та закресленим текстом. Їхні дати зберігаються для довідки.</p>
+<p>Деактивація сумарного завдання поширюється на всі його підзавдання. Реактивація підзавдання автоматично реактивує його батьківське сумарне завдання за потреби. Завдання з фактичним прогресом (% виконання &gt; 0) не можуть бути деактивовані.</p>
+<blockquote>
+<p>Використовуйте неактивні завдання, щоб зберігати сценарії «що якщо» у вашому розкладі, не впливаючи на активний план.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

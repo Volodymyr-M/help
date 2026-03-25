@@ -1,0 +1,8 @@
+# Ingantt Help
+
+> Documentation for Ingantt, a project scheduling application.
+
+## Languages
+
+- [English](https://help.ingantt.com/en/llms.txt)
+- [Українська](https://help.ingantt.com/uk/llms.txt)

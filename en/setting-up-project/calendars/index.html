@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Calendars - Setting Up Your Project - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Set up project, resource, and task calendars with custom work weeks, holidays, and recurring exceptions.">
+  <link rel="canonical" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Calendars">
+  <meta property="og:description" content="Set up project, resource, and task calendars with custom work weeks, holidays, and recurring exceptions.">
+  <meta property="og:url" content="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Calendars">
+  <meta name="twitter:description" content="Set up project, resource, and task calendars with custom work weeks, holidays, and recurring exceptions.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/" class="active" aria-current="page">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="calendars">Calendars <a href="#calendars" class="heading-anchor">#</a></h1>
+<p>Holidays, vacations, half-days, night shifts — your schedule needs to reflect when work actually happens. Set up calendars so Ingantt skips non-working time and gives you realistic dates.</p>
+<p>Calendars define days and times when work can be done. Calendars use two types of data:</p>
+<ul>
+<li><strong>Weekdays</strong>: Working time set for each day of the week — defining the typical, routine schedule.</li>
+<li><strong>Exceptions</strong>: Dates where work is not done or is done at different times than the weekday schedule defines.</li>
+</ul>
+<h2 id="project-calendar">Project Calendar <a href="#project-calendar" class="heading-anchor">#</a></h2>
+<p>A project has a <strong>Calendar</strong> associated with it as specified in the <strong>Project Properties</strong> dialog. This calendar defines how tasks that are not assigned to work resources are scheduled. Days off such as weekends are also shown in the Gantt chart based on this calendar.</p>
+<h2 id="resource-calendar">Resource Calendar <a href="#resource-calendar" class="heading-anchor">#</a></h2>
+<p>Each <a href="/en/building-schedule/resources/#resource-type">work resource</a> has a calendar associated with it as specified in the <strong>Base Calendar</strong> field of the <strong>Resource Properties</strong> dialog. Once the work resource is <a href="/en/building-schedule/assignments/#resource-assignments-and-units">assigned</a> to a task, its calendar affects the scheduling of the task.</p>
+<p>When multiple work resources are assigned to a task, their calendars are <strong>intersected</strong> - meaning work is only scheduled during times when <strong>all</strong> assigned resources are available. For example, if Resource A works Mon-Wed and Resource B works Wed-Fri, a task assigned to both will only be scheduled on Wednesdays.</p>
+<blockquote>
+<p>If multiple resources share a similar work schedule, create a single calendar and assign it to all of them. You can still specify exceptions for each resource separately in <strong>Resource Properties</strong> — for example, vacations or adjusted work periods on specific dates.</p>
+</blockquote>
+<h2 id="task-calendar">Task Calendar <a href="#task-calendar" class="heading-anchor">#</a></h2>
+<p>Each task has a <strong>Calendar</strong> property in the <strong>Task Properties</strong> dialog, set to <strong>NONE</strong> by default. When set to <strong>NONE</strong>:</p>
+<ul>
+<li>If a task is not assigned to any work resources, the task is scheduled according to the project's calendar.</li>
+<li>If a task is assigned to work resources, the task is scheduled according to their calendars.</li>
+</ul>
+<p>If the task's <strong>Calendar</strong> property is set to a calendar instead of <strong>NONE</strong>:</p>
+<ul>
+<li>If a task is not assigned to any work resources, the task is scheduled according to the specified calendar.</li>
+<li>If a task is assigned to work resources, the task calendar is <strong>ignored</strong> and the task is scheduled according to the intersection of the resource calendars only. To use the task calendar instead of resource calendars, check the <strong>Ignore resource calendars</strong> flag.</li>
+</ul>
+<h2 id="predefined-calendars">Predefined Calendars <a href="#predefined-calendars" class="heading-anchor">#</a></h2>
+<p>Ingantt has 3 predefined calendars, one of which (<strong>Standard</strong>) is assigned to the project by default.</p>
+<table>
+<thead>
+<tr>
+<th>Calendar</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>Work is done each day Monday to Friday, 8 AM to 5 PM with a 1-hour (12 PM to 1 PM) break.</td>
+</tr>
+<tr>
+<td><strong>Night Shift</strong></td>
+<td>Work is done Monday night through Saturday morning, 11 PM to 8 AM with a 1-hour (3 AM to 4 AM) break.</td>
+</tr>
+<tr>
+<td><strong>24 Hours</strong></td>
+<td>Work is done 24 hours a day, every day.</td>
+</tr>
+</tbody>
+</table>
+<p>You can edit any of the predefined calendars using the <strong>Calendar Properties</strong> dialog or create your own calendars based on them using the <strong>Add Calendar</strong> dialog.</p>
+<h2 id="work-weeks">Work Weeks <a href="#work-weeks" class="heading-anchor">#</a></h2>
+<p>Work weeks let you define date-range-specific changes to the weekly schedule. For example, you might have a period where everyone works 4-hour days instead of the standard 8, or a period where Saturday becomes a working day.</p>
+<p>Work weeks are configured on the <strong>Work Weeks</strong> tab of the <strong>Calendar Properties</strong> dialog. Each work week has a name, a start and end date, and per-weekday working time definitions.</p>
+<blockquote>
+<p>Calendar exceptions take priority over work weeks, which take priority over the default weekday schedule.</p>
+</blockquote>
+<h2 id="calendar-exceptions">Calendar Exceptions <a href="#calendar-exceptions" class="heading-anchor">#</a></h2>
+<p>Calendar exceptions are dates where work differs from the regular weekday schedule — including days off.</p>
+<p>Calendar exceptions can be specified:</p>
+<ul>
+<li>In the <strong>Resource Properties</strong> dialog for a particular resource.</li>
+<li>In the <strong>Calendar Properties</strong> for a particular calendar to make projects, resources, or tasks using this calendar have this exception.</li>
+</ul>
+<p>For example, if you want to configure a vacation for a person, add it as an exception for this resource. If you want to configure a holiday for everyone, add it as an exception to a calendar that everyone uses.</p>
+<p>When adding or editing calendar exceptions, you specify working time periods for the exception. If you don't specify any, the exception has no working time, meaning it defines a day off.</p>
+<p>Each exception can be given a descriptive <strong>Name</strong> (such as &quot;Christmas Holiday&quot; or &quot;Office Closed&quot;) which is shown in the exceptions list.</p>
+<h3 id="recurring-exceptions">Recurring Exceptions <a href="#recurring-exceptions" class="heading-anchor">#</a></h3>
+<p>Calendar exceptions can be set to recur on a pattern rather than just a single date. Available recurrence patterns include:</p>
+<ul>
+<li><strong>Daily</strong> — Every N days or every N weekdays</li>
+<li><strong>Weekly</strong> — Every N weeks on specified weekdays</li>
+<li><strong>Monthly</strong> — By day of month or by position (e.g., second Tuesday)</li>
+<li><strong>Yearly</strong> — By date or by position (e.g., last Friday of November)</li>
+</ul>
+<p>Recurring exceptions have an end condition: no end, end by date, or end after N occurrences.</p>
+<h2 id="empty-and-partial-calendars">Empty and Partial Calendars <a href="#empty-and-partial-calendars" class="heading-anchor">#</a></h2>
+<p>If you do not add any working time to a calendar, it is empty and cannot be used for scheduling. Such calendars are marked with a warning icon in the list of calendars, and the number of such calendars is shown in the navigation drawer.</p>
+<p>However, there are situations when your calendar is not empty but still doesn't have enough working time to schedule a particular task. These situations can only be detected when scheduling is done.</p>
+<p>If you assign an empty calendar — or one without enough working time — to a project, resource, or task and scheduling cannot proceed, an error is shown and the last action is reverted.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

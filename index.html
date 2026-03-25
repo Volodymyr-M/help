@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="refresh" content="0;url=/en/getting-started/overview/">
+  <title>Redirecting...</title>
+  <script>
+    (function() {
+      var supported = { 'en': '/en/getting-started/overview/', 'uk': '/uk/getting-started/overview/' };
+      var langs = navigator.languages || [navigator.language];
+      for (var i = 0; i < langs.length; i++) {
+        var code = langs[i].split('-')[0].toLowerCase();
+        if (supported[code]) { window.location.replace(supported[code]); return; }
+      }
+      window.location.replace('/en/getting-started/overview/');
+    })();
+  </script>
+</head>
+<body>
+  <p>Redirecting to <a href="/en/getting-started/overview/">/en/getting-started/overview/</a>...</p>
+</body>
+</html>

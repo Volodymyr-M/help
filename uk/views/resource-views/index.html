@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Подання ресурсів - Подання - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Аналіз навантаження за допомогою подань «Використання ресурсів», «Використання завдань», «Планувальник команди» та «Графік ресурсів».">
+  <link rel="canonical" href="https://help.ingantt.com/uk/views/resource-views/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Подання ресурсів">
+  <meta property="og:description" content="Аналіз навантаження за допомогою подань «Використання ресурсів», «Використання завдань», «Планувальник команди» та «Графік ресурсів».">
+  <meta property="og:url" content="https://help.ingantt.com/uk/views/resource-views/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Подання ресурсів">
+  <meta name="twitter:description" content="Аналіз навантаження за допомогою подань «Використання ресурсів», «Використання завдань», «Планувальник команди» та «Графік ресурсів».">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/resource-views/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/" class="active" aria-current="page">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="подання-ресурсів">Подання ресурсів <a href="#подання-ресурсів" class="heading-anchor">#</a></h1>
+<p>Переглядайте розподіл навантаження вашої команди. Подання використання показують, хто що робить і коли, Планувальник команди дозволяє перетягувати для перепризначення, а Графік ресурсів показує потужність на одному екрані.</p>
+<h2 id="використання-ресурсів">Використання ресурсів <a href="#використання-ресурсів" class="heading-anchor">#</a></h2>
+<p>Подання <strong>Використання ресурсів</strong> дозволяє бачити всі призначення ресурсів та обсяг <a href="/uk/building-schedule/task-properties/#%D1%82%D1%80%D1%83%D0%B4%D0%BE%D0%B2%D0%B8%D1%82%D1%80%D0%B0%D1%82%D0%B8">трудовитрат</a>, які кожен робочий ресурс виконує протягом кожного періоду на часовій шкалі.</p>
+<p>Подібно до діаграми Ганта, ви можете масштабувати часову шкалу для більш або менш детального подання.</p>
+<p>Якщо ресурс має виконати більше роботи, ніж дозволяють календарі за даний період, відповідні <strong>Трудовитрати</strong> виділяються червоним.</p>
+<p>У поданні «Використання ресурсів» ви можете двічі клацнути на комірках трудовитрат рівня призначення для безпосереднього редагування розподілу роботи. Коли ви редагуєте комірку трудовитрат, контур трудовитрат призначення автоматично змінюється на «Контурний», і дані власного поденного розподілу зберігаються.</p>
+<h2 id="використання-завдань">Використання завдань <a href="#використання-завдань" class="heading-anchor">#</a></h2>
+<p>Подання <strong>Використання завдань</strong> є зворотним до «Використання ресурсів» — воно показує розподіл роботи з точки зору завдань. Кожне завдання відображається як рядок верхнього рівня з призначеннями ресурсів, розташованими нижче з відступом.</p>
+<p>Ліва панель показує деталі завдань та призначень, тоді як права панель показує значення трудовитрат, розподілені за часовими періодами. Трудовитрати на рівні завдання показані жирним шрифтом. Перевантажені значення трудовитрат призначень виділяються червоним.</p>
+<h2 id="планувальник-команди">Планувальник команди <a href="#планувальник-команди" class="heading-anchor">#</a></h2>
+<p>Подання <strong>Планувальник команди</strong> — це подання планування, орієнтоване на ресурси, де кожен рядок представляє робочий ресурс. Смуги завдань розташовуються на рядку кожного ресурсу вздовж спільної часової шкали.</p>
+<p>Ключові можливості:</p>
+<ul>
+<li><strong>Перетягуйте горизонтально</strong>, щоб перепланувати завдання — завдання отримує обмеження «Почати не раніше ніж» на новій позиції</li>
+<li><strong>Перетягуйте вертикально</strong>, щоб перепризначити завдання іншому ресурсу</li>
+<li><strong>Перетягуйте діагонально</strong>, щоб перепланувати та перепризначити одночасно</li>
+<li>Перетягуйте до або з розділу <strong>Непризначені завдання</strong>, щоб додати або видалити призначення ресурсів</li>
+<li>Перевантажені ресурси показуються червоним текстом на лівій панелі</li>
+<li>Завдання, виконані на 100%, не можна перетягувати</li>
+</ul>
+<h2 id="графік-ресурсів">Графік ресурсів <a href="#графік-ресурсів" class="heading-anchor">#</a></h2>
+<p>Подання <strong>Графік ресурсів</strong> показує гістограму навантаження для кожного ресурсу за часом. Воно відображає один робочий ресурс за раз із вертикальними стовпцями для кожного часового періоду. Переходьте між ресурсами за допомогою кнопок зі стрілками на лівій панелі.</p>
+<p>Доступні сім типів графіків:</p>
+<table>
+<thead>
+<tr>
+<th>Тип графіка</th>
+<th>Опис</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Пікові одиниці</strong></td>
+<td>Відсоток використання потужності ресурсу за період (за замовчуванням)</td>
+</tr>
+<tr>
+<td><strong>Трудовитрати</strong></td>
+<td>Години роботи за період</td>
+</tr>
+<tr>
+<td><strong>Перевантаження</strong></td>
+<td>Лише надлишкові години понад потужність</td>
+</tr>
+<tr>
+<td><strong>Відсоток розподілу</strong></td>
+<td>Те саме, що Пікові одиниці, з відображенням у відсотках</td>
+</tr>
+<tr>
+<td><strong>Залишкова доступність</strong></td>
+<td>Невикористана потужність у годинах</td>
+</tr>
+<tr>
+<td><strong>Доступність за трудовитратами</strong></td>
+<td>Загальна календарна потужність у годинах</td>
+</tr>
+<tr>
+<td><strong>Доступність за одиницями</strong></td>
+<td>Ефективний відсоток максимальних одиниць</td>
+</tr>
+</tbody>
+</table>
+<p>Сині стовпці представляють роботу в межах потужності; червоні стовпці представляють перевантажену частину, що перевищує потужність.</p>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>
