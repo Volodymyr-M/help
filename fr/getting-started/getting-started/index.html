@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Premiers pas - Premiers pas - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Guide pas à pas pour créer votre premier projet dans Ingantt, incluant l'ajout de tâches, la définition des dépendances, l'affectation des ressources et la configuration des calendriers.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/getting-started/getting-started/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Premiers pas">
+  <meta property="og:description" content="Guide pas à pas pour créer votre premier projet dans Ingantt, incluant l'ajout de tâches, la définition des dépendances, l'affectation des ressources et la configuration des calendriers.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/getting-started/getting-started/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Premiers pas">
+  <meta name="twitter:description" content="Guide pas à pas pour créer votre premier projet dans Ingantt, incluant l'ajout de tâches, la définition des dépendances, l'affectation des ressources et la configuration des calendriers.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/getting-started/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/getting-started/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/getting-started/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/getting-started/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/getting-started/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/getting-started/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/" class="active" aria-current="page">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="premiers-pas">Premiers pas <a href="#premiers-pas" class="heading-anchor">#</a></h1>
+<p>Commencez ici pour créer votre premier planning de projet. En quelques minutes, vous aurez des tâches sur une ligne temporelle, reliées entre elles, avec des ressources affectées — suffisamment pour savoir quand votre projet devrait se terminer.</p>
+<blockquote>
+<p>Sur les appareils mobiles, utilisez des appuis au lieu de clics, des doubles appuis au lieu de doubles clics, et un appui prolongé au lieu du clic droit.</p>
+</blockquote>
+<h2 id="créer-un-planning-de-base">Créer un planning de base <a href="#créer-un-planning-de-base" class="heading-anchor">#</a></h2>
+<p>Supposons que vous ayez un petit projet de rénovation avec deux tâches, l'une à la suite de l'autre.</p>
+<p>Après avoir cliqué sur <strong>Create new</strong>, vous accédez à un écran divisé avec la liste des tâches à gauche et le diagramme de Gantt à droite. Ajoutez vos tâches l'une après l'autre en cliquant sur le gros bouton <strong>+</strong> en bas à droite. Dans la boîte de dialogue <strong>Add Task</strong>, indiquez le <strong>Name</strong> et la <strong>Duration</strong> estimée de chaque tâche.</p>
+<p><img src="/images/getting-started/add_task.png" alt="Ajouter une tâche" / data-dark-src="/images/getting-started/add_task_d.png"></p>
+<p>Sélectionnez les deux tâches dans la liste à gauche, puis cliquez sur le bouton <strong>Link tasks</strong> dans la barre d'outils. Cela relie les tâches et met à jour le diagramme de Gantt.</p>
+<ul>
+<li>Pour sélectionner plusieurs tâches sur Android et iOS, maintenez votre doigt un peu plus longtemps en appuyant sur chaque tâche dans la liste ou le diagramme de Gantt.</li>
+<li>Sur les autres plateformes, cliquez sur les tâches dans la liste ou le diagramme de Gantt tout en maintenant <code>Ctrl</code> ou <code>Shift</code> sur le clavier.</li>
+</ul>
+<p><img src="/images/getting-started/link.png" alt="Lier" / data-dark-src="/images/getting-started/link_d.png"></p>
+<p>Maintenant que les tâches sont liées, essayez de modifier la durée de la première tâche. Double-cliquez dessus dans la liste ou le diagramme de Gantt et modifiez le champ <strong>Duration</strong> dans la boîte de dialogue <strong>Task Properties</strong>. Vous verrez comment ce changement affecte le planning en décalant la seconde tâche.</p>
+<p><img src="/images/getting-started/gantt.png" alt="Gantt" / data-dark-src="/images/getting-started/gantt_d.png"></p>
+<h2 id="définir-le-nom-et-la-date-de-début-du-projet">Définir le nom et la date de début du projet <a href="#définir-le-nom-et-la-date-de-début-du-projet" class="heading-anchor">#</a></h2>
+<p>Votre projet peut commencer un jour différent de la date par défaut utilisée par Ingantt.</p>
+<p>Ouvrez <strong>Project Properties</strong> via le tiroir de navigation ou, sur le web et Windows, en cliquant sur le nom du projet dans l'en-tête.</p>
+<p>Définissez la nouvelle date de début du projet dans le champ <strong>Project Start Date</strong> et modifiez le <strong>Name</strong> du projet par la même occasion.</p>
+<p><img src="/images/getting-started/project_name.png" alt="Nom du projet" / data-dark-src="/images/getting-started/project_name_d.png"></p>
+<blockquote>
+<p>Avec la simplicité du planning de base, vous pouvez déjà savoir quand le projet devrait se terminer en regardant le diagramme de Gantt.</p>
+</blockquote>
+<h2 id="ajouter-et-affecter-des-ressources">Ajouter et affecter des ressources <a href="#ajouter-et-affecter-des-ressources" class="heading-anchor">#</a></h2>
+<p>Supposons qu'une personne différente se charge de chaque tâche de votre projet.</p>
+<p>Ouvrez le tiroir de navigation et passez à la vue <strong>Resources</strong>.</p>
+<p><img src="/images/getting-started/nav.png" alt="Nav" / data-dark-src="/images/getting-started/nav_d.png"></p>
+<p>Cliquez sur le gros bouton <strong>+</strong> pour ouvrir la boîte de dialogue <strong>Add Resource</strong>, saisissez un <strong>Name</strong> pour la ressource, et enregistrez. Répétez ces étapes pour ajouter une autre ressource de travail.</p>
+<p><img src="/images/getting-started/add_resource.png" alt="Ajouter une ressource" / data-dark-src="/images/getting-started/add_resource_d.png"></p>
+<p><img src="/images/getting-started/resources.png" alt="Ressources" / data-dark-src="/images/getting-started/resources_d.png"></p>
+<p>Via le tiroir de navigation, revenez à la vue <strong>Tasks</strong>. Double-cliquez sur votre première tâche dans la liste ou le diagramme de Gantt pour ouvrir la boîte de dialogue <strong>Task Properties</strong>.</p>
+<p>Passez à l'onglet <strong>Resources</strong>, cochez la première ressource pour affecter cette personne à la tâche, et enregistrez.</p>
+<p><img src="/images/getting-started/assignments.png" alt="Affectations" / data-dark-src="/images/getting-started/assignments_d.png"></p>
+<p>Répétez les mêmes étapes pour votre seconde tâche et la seconde ressource.</p>
+<p><img src="/images/getting-started/resources_gantt.png" alt="Gantt des ressources" / data-dark-src="/images/getting-started/resources_gantt_d.png"></p>
+<h2 id="configurer-les-congés">Configurer les congés <a href="#configurer-les-congés" class="heading-anchor">#</a></h2>
+<p>Les personnes peuvent avoir différents événements au cours de votre projet qui affectent son calendrier.</p>
+<p>Supposons que la ressource effectuant la première tâche de votre projet ait besoin d'un jour de repos pendant cette tâche.</p>
+<p>Pour configurer cela, utilisez le tiroir de navigation pour accéder à la vue <strong>Resources</strong>.</p>
+<p>Double-cliquez sur la ressource pour afficher <strong>Resource Properties</strong>. Allez dans l'onglet <strong>Calendar</strong> et cliquez sur le bouton <strong>Add exception</strong>. Choisissez l'un des jours pendant votre projet, laissez la liste des horaires de travail vide, et enregistrez.</p>
+<p><img src="/images/getting-started/day_off.png" alt="Jour de repos" / data-dark-src="/images/getting-started/day_off_d.png"></p>
+<p>Via le tiroir de navigation, retournez à <strong>Tasks</strong> et observez comment votre planning a changé. La seconde tâche s'est décalée en raison de sa dépendance à la première.</p>
+<p><img src="/images/getting-started/vacation.png" alt="Congé" / data-dark-src="/images/getting-started/vacation_d.png"></p>
+<blockquote>
+<p>Vous pouvez configurer non seulement les congés, mais aussi d'autres modifications de l'emploi du temps d'une personne. Par exemple, en ajoutant des horaires de travail à l'exception, vous pouvez spécifier que la ressource ne travaille que pendant certaines heures ce jour-là.</p>
+</blockquote>
+<h2 id="configurer-les-jours-fériés">Configurer les jours fériés <a href="#configurer-les-jours-fériés" class="heading-anchor">#</a></h2>
+<p>Imaginez qu'un jour férié tombe pendant votre projet, un jour où aucun travail n'est effectué.</p>
+<p>Les congés sont configurés via le calendrier de chaque ressource. Les jours qui concernent tout le monde, en revanche, sont configurés dans le calendrier du projet. Le calendrier par défaut du projet s'appelle <strong>Standard</strong> et indique déjà que le travail n'est pas effectué les week-ends.</p>
+<p>Pour configurer les jours fériés, utilisez le tiroir de navigation pour accéder à la vue <strong>Calendars</strong>. Double-cliquez sur <strong>Standard</strong> pour afficher <strong>Calendar Properties</strong>. Cliquez sur le bouton <strong>Add exception</strong>. Choisissez l'un des jours pendant votre projet, laissez la liste des horaires de travail vide, et enregistrez.</p>
+<p><img src="/images/getting-started/holiday.png" alt="Jour férié" / data-dark-src="/images/getting-started/holiday_d.png"></p>
+<p>Via le tiroir de navigation, retournez à la vue <strong>Tasks</strong> et observez comment votre projet a changé. Les tâches sont décalées, et le jour férié est affiché de manière similaire aux week-ends dans le diagramme de Gantt.</p>
+<p><img src="/images/getting-started/final.png" alt="Final" / data-dark-src="/images/getting-started/final_d.png"></p>
+<blockquote>
+<p>En utilisant la même approche, vous pouvez configurer non seulement les jours fériés, mais aussi d'autres modifications de l'emploi du temps de toute l'équipe. Par exemple, en ajoutant des horaires de travail à l'exception, vous pouvez spécifier que tout le monde ne travaille que pendant certaines heures ce jour-là.</p>
+<p>Vous pouvez également consulter les onglets représentant chaque jour de la semaine dans <strong>Calendar Properties</strong>. Si toute votre équipe part plus tôt le vendredi ou travaille le samedi, vous pouvez le configurer dans les onglets correspondants.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

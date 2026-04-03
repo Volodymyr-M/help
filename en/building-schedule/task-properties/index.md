@@ -40,7 +40,7 @@ Deadlines are shown in the Gantt chart as special icons.
 
 > If your schedule shows that a task finishes later than its specified deadline, Ingantt shows an icon in the task list and counts such tasks in the navigation drawer.
 
-![Deadline](images/tasks/deadline.png)
+![Deadline](/images/building-schedule/tasks/deadline.png)
 
 > You can set a deadline for the entire project by setting the deadline for the root summary task. Just make sure the root summary task is set to visible in the **Options** dialog.
 
@@ -48,7 +48,7 @@ Deadlines are shown in the Gantt chart as special icons.
 
 Any task can be marked as a milestone by checking the **Milestone** checkbox in the **Task Properties** dialog. This doesn't change its duration or affect scheduling, but the task is shown in the Gantt chart as an icon.
 
-![Milestone](images/tasks/milestone.png)
+![Milestone](/images/building-schedule/tasks/milestone.png)
 
 If you specify 0 as the **Duration** of a task, the task is automatically marked as a **Milestone** once you save the change.
 

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contraintes - Construction d'un planning - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Contrôlez la planification des tâches avec huit types de contraintes, des plus flexibles (Dès que possible) aux plus strictes (Doit commencer le, Doit finir le).">
+  <link rel="canonical" href="https://help.ingantt.com/fr/building-schedule/constraints/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Contraintes">
+  <meta property="og:description" content="Contrôlez la planification des tâches avec huit types de contraintes, des plus flexibles (Dès que possible) aux plus strictes (Doit commencer le, Doit finir le).">
+  <meta property="og:url" content="https://help.ingantt.com/fr/building-schedule/constraints/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contraintes">
+  <meta name="twitter:description" content="Contrôlez la planification des tâches avec huit types de contraintes, des plus flexibles (Dès que possible) aux plus strictes (Doit commencer le, Doit finir le).">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/constraints/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/constraints/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/constraints/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/" class="active" aria-current="page">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="contraintes">Contraintes <a href="#contraintes" class="heading-anchor">#</a></h1>
+<p>Certaines tâches doivent commencer ou se terminer à des dates précises — une livraison arrive mardi, un permis expire vendredi. Les contraintes vous permettent de verrouiller les dates là où c'est nécessaire tout en gardant le reste du planning flexible.</p>
+<h2 id="fonctionnement-des-contraintes">Fonctionnement des contraintes <a href="#fonctionnement-des-contraintes" class="heading-anchor">#</a></h2>
+<p>Conjointement avec les dépendances entre tâches (liens de prédécesseurs), la contrainte d'une tâche définit comment celle-ci est planifiée.</p>
+<p>Les contraintes sont définies dans l'onglet <strong>Advanced</strong> de la boîte de dialogue <strong>Task Properties</strong>. La contrainte par défaut est <strong>As soon as possible</strong>. Cela signifie que la tâche est placée aussi près que possible de la date de début du projet, en tenant compte des dépendances avec les autres tâches. Pour les projets planifiés à partir de la date de fin, la contrainte par défaut est <strong>As late as possible</strong>.</p>
+<p>Il existe deux contraintes qui forcent la tâche à commencer ou à se terminer à la date spécifiée, indépendamment des dépendances. Ces contraintes sont appelées <em>contraintes strictes</em> et sont <strong>Must start on</strong> et <strong>Must finish on</strong>. N'utilisez ces contraintes que si vous êtes certain qu'elles sont nécessaires.</p>
+<p>Les autres contraintes (<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong> et <strong>Finish no later than</strong>) sont dites <em>flexibles</em>, car elles respectent les dépendances entre tâches. Si les dépendances repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut.</p>
+<table>
+<thead>
+<tr>
+<th>Contrainte</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>As soon as possible</strong></td>
+<td>La tâche est planifiée dès que les prédécesseurs le permettent. Si aucun prédécesseur n'est lié, la tâche commence au début de sa tâche récapitulative parente.</td>
+</tr>
+<tr>
+<td><strong>As late as possible</strong></td>
+<td>La tâche est planifiée aussi tard que les prédécesseurs le permettent. Si aucun prédécesseur n'est lié, la tâche se termine à la fin de sa tâche récapitulative parente.</td>
+</tr>
+<tr>
+<td><strong>Start no earlier than</strong></td>
+<td>Si la tâche commence plus tard que la date spécifiée en raison des prédécesseurs, rien ne change. Sinon, la tâche est planifiée pour commencer à la date spécifiée.</td>
+</tr>
+<tr>
+<td><strong>Start no later than</strong></td>
+<td>Si les prédécesseurs repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut. Sinon, la tâche est planifiée pour commencer au plus tard à la date spécifiée.</td>
+</tr>
+<tr>
+<td><strong>Finish no earlier than</strong></td>
+<td>Si la tâche se termine plus tard que la date spécifiée en raison des prédécesseurs, rien ne change. Sinon, la tâche est planifiée pour se terminer à la date spécifiée.</td>
+</tr>
+<tr>
+<td><strong>Finish no later than</strong></td>
+<td>Si les prédécesseurs repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut. Sinon, la tâche est planifiée pour se terminer au plus tard à la date spécifiée.</td>
+</tr>
+<tr>
+<td><strong>Must start on</strong></td>
+<td>La date de début de la tâche est planifiée exactement comme spécifié, indépendamment des prédécesseurs.</td>
+</tr>
+<tr>
+<td><strong>Must finish on</strong></td>
+<td>La date de fin de la tâche est planifiée exactement comme spécifié, indépendamment des prédécesseurs.</td>
+</tr>
+</tbody>
+</table>
+<p>Les tâches avec une contrainte flexible ou stricte affichent une icône spéciale dans la liste des tâches.</p>
+<blockquote>
+<p>Conservez la plupart des tâches avec la contrainte <strong>As soon as possible</strong> et n'utilisez les contraintes flexibles que pour les tâches qui doivent commencer ou se terminer à proximité d'une date précise.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

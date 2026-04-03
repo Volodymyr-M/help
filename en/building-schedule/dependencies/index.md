@@ -13,7 +13,7 @@ When you link tasks using the **Link selected tasks** button on the toolbar, you
 | **Start to Finish** | The second task finishes when the first task starts.                          |
 | **Start to Start**  | The second task starts when the first task starts.                            |
 
-![Dependencies](images/tasks/dependencies.png)
+![Dependencies](/images/building-schedule/tasks/dependencies.png)
 
 To assign predecessors and edit dependencies, use the **Predecessors** tab of the **Task Properties** dialog.
 
@@ -23,7 +23,7 @@ Sometimes you might need to set some waiting time between two dependent tasks.
 
 Let's say your first task is "Paint the wall" and your second task is "Hang pictures on the wall." These tasks are linked (have a **Finish to Start** dependency). It's not possible to hang pictures until the paint is dry, so you need to wait. To reflect this in your schedule, set the **Lag** (for example, 2 days) for the dependency between the two tasks.
 
-![Lag](images/tasks/lag.png)
+![Lag](/images/building-schedule/tasks/lag.png)
 
 Lags can also represent the opposite scenario — when a dependent task should start before its predecessor finishes. To set this, make the **Lag** negative (for example, -1 day). This is called _lead time_.
 

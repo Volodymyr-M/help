@@ -12,7 +12,7 @@ A summary task also displays the overall percent complete, total cost, and total
 
 In the Gantt chart, summary tasks are shown as black bars. In the task list, you can **expand** or **collapse** summary tasks to show or hide their subtasks.
 
-![Summary](images/tasks/summary.png)
+![Summary](/images/building-schedule/tasks/summary.png)
 
 ## Root Summary Task
 
@@ -24,7 +24,7 @@ Just like any other summary task, the root summary task shows the overall data o
 
 The name of the root summary task is the same as the name of the project.
 
-![Root Summary Task](images/tasks/root_summary.png)
+![Root Summary Task](/images/building-schedule/tasks/root_summary.png)
 
 ## Manually Scheduled Tasks
 

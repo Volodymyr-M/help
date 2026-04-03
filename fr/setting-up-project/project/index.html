@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propriétés du projet - Configuration de votre projet - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Configurez la date de début du projet, les horaires de travail par défaut, les formats de durée et les options de planification.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/setting-up-project/project/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Propriétés du projet">
+  <meta property="og:description" content="Configurez la date de début du projet, les horaires de travail par défaut, les formats de durée et les options de planification.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/setting-up-project/project/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Propriétés du projet">
+  <meta name="twitter:description" content="Configurez la date de début du projet, les horaires de travail par défaut, les formats de durée et les options de planification.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/project/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/setting-up-project/project/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/setting-up-project/project/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/setting-up-project/project/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/project/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/project/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/" class="active" aria-current="page">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="propriétés-du-projet">Propriétés du projet <a href="#propriétés-du-projet" class="heading-anchor">#</a></h1>
+<p>Configurez la date de début de votre projet, les horaires de travail et les règles de planification. Ces paramètres déterminent la manière dont chaque tâche de votre projet est calculée et affichée.</p>
+<h2 id="nom-du-projet">Nom du projet <a href="#nom-du-projet" class="heading-anchor">#</a></h2>
+<p>Définissez le nom de votre projet dans le champ <strong>Name</strong> de l'onglet <strong>General</strong> de la boîte de dialogue <strong>Project Properties</strong>. Ce nom est également utilisé par la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a> de votre projet.</p>
+<p>Sur le web et Windows, cliquer sur le nom du projet dans l'en-tête ouvre également la boîte de dialogue <strong>Project Properties</strong>.</p>
+<h2 id="date-de-début-et-sens-de-planification">Date de début et sens de planification <a href="#date-de-début-et-sens-de-planification" class="heading-anchor">#</a></h2>
+<p>Par défaut, votre projet est planifié à partir de la date de début, que vous pouvez définir dans le champ <strong>Project Start Date</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
+<p>Pour planifier votre projet à partir de la date de fin, basculez vers <strong>Plan from Finish date</strong> dans la boîte de dialogue <strong>Project Properties</strong> et définissez la <strong>Project Finish Date</strong>.</p>
+<p>L'onglet <strong>General</strong> de la boîte de dialogue <strong>Project Properties</strong> affiche à la fois la date de début et la date de fin. Lors de la planification depuis le début, la date de début est modifiable et la date de fin affiche la valeur calculée. Lors de la planification depuis la fin, la date de fin est modifiable et la date de début affiche la valeur calculée.</p>
+<p>Points importants :</p>
+<ul>
+<li>Pour les projets planifiés depuis la date de début, la <a href="/fr/building-schedule/constraints/#constraints">contrainte</a> par défaut des tâches nouvellement créées est <strong>As soon as possible</strong>.</li>
+<li>Pour les projets planifiés depuis la date de fin, la contrainte par défaut des tâches nouvellement créées est <strong>As late as possible</strong>.</li>
+</ul>
+<p>Lors du basculement entre la planification depuis le début et depuis la fin, les contraintes des tâches existantes ne sont pas modifiées, à l'exception des <a href="/fr/building-schedule/tasks/#summary-tasks">tâches récapitulatives</a>, y compris la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a>.</p>
+<p>Pour les tâches récapitulatives :</p>
+<ul>
+<li>La contrainte <strong>As soon as possible</strong> est remplacée par <strong>As late as possible</strong> lors du passage de la planification depuis le début à la planification depuis la fin.</li>
+<li>La contrainte <strong>As late as possible</strong> est remplacée par <strong>As soon as possible</strong> lors du passage de la planification depuis la fin à la planification depuis le début.</li>
+</ul>
+<h2 id="premier-jour-de-la-semaine">Premier jour de la semaine <a href="#premier-jour-de-la-semaine" class="heading-anchor">#</a></h2>
+<p>Selon votre pays, la semaine peut commencer le dimanche ou le lundi. Vous pouvez modifier le champ <strong>First Day of Week</strong> dans l'onglet <strong>Regional</strong> de la boîte de dialogue <strong>Project Properties</strong> pour changer le paramètre par défaut de votre projet.</p>
+<p>La modification de cette propriété met à jour l'interface utilisateur, y compris le diagramme de Gantt à certains niveaux de zoom, mais n'affecte pas la planification. Pour ajuster le planning en conséquence, mettez à jour vos <a href="/fr/setting-up-project/calendars/">calendriers</a>.</p>
+<h2 id="heures-par-jour-jours-par-semaine-jours-par-mois">Heures par jour, jours par semaine, jours par mois <a href="#heures-par-jour-jours-par-semaine-jours-par-mois" class="heading-anchor">#</a></h2>
+<p>Dans Ingantt, vous pouvez spécifier la <a href="/fr/building-schedule/task-properties/#duration">durée</a>, le <a href="/fr/building-schedule/task-properties/#work">travail</a> ou le <a href="/fr/building-schedule/dependencies/#lag-and-lead-time">décalage</a> en heures, jours, semaines et mois.</p>
+<p>Par exemple, définir la durée d'une tâche à 2 jours signifie 16 heures avec les paramètres par défaut.</p>
+<p>Par défaut :</p>
+<ul>
+<li>1 jour équivaut à 8 heures.</li>
+<li>1 semaine équivaut à 5 jours (40 heures).</li>
+<li>1 mois équivaut à 20 jours (160 heures).</li>
+</ul>
+<p>Vous pouvez modifier ces paramètres par défaut dans l'onglet <strong>Duration</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
+<blockquote>
+<p>La plupart des projets devraient utiliser les valeurs par défaut. Ne modifiez ces paramètres que si votre projet nécessite des conversions différentes.</p>
+</blockquote>
+<h2 id="format-daffichage-de-la-durée-et-du-travail">Format d'affichage de la durée et du travail <a href="#format-daffichage-de-la-durée-et-du-travail" class="heading-anchor">#</a></h2>
+<p>Par défaut, les durées sont affichées en jours et les valeurs de travail en heures. Vous pouvez modifier le format d'affichage de ces deux grandeurs dans l'onglet <strong>Time</strong> de la boîte de dialogue <strong>Project Properties</strong>. Les unités disponibles sont les minutes, les heures, les jours, les semaines et les mois.</p>
+<p>Lorsque vous changez l'un ou l'autre format, toutes les valeurs existantes sont mises à jour pour s'afficher dans la nouvelle unité.</p>
+<h2 id="heure-de-début-et-de-fin-par-défaut">Heure de début et de fin par défaut <a href="#heure-de-début-et-de-fin-par-défaut" class="heading-anchor">#</a></h2>
+<p>L'heure de début par défaut (8 h 00) et l'heure de fin par défaut (17 h 00) définissent quand le travail commence et se termine chaque jour. Vous pouvez les modifier dans l'onglet <strong>Time</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
+<h2 id="options-de-planification">Options de planification <a href="#options-de-planification" class="heading-anchor">#</a></h2>
+<p>L'onglet <strong>Scheduling</strong> de la boîte de dialogue <strong>Project Properties</strong> contient des options qui contrôlent la planification des tâches :</p>
+<ul>
+<li><strong>Honor constraint dates</strong> — Lorsque cette option est activée, les contraintes semi-flexibles (comme Start No Later Than) ont la priorité sur les dépendances, pouvant créer une marge négative. Lorsqu'elle est désactivée (par défaut), les dépendances ont toujours la priorité.</li>
+<li><strong>Split in-progress tasks</strong> — Lorsque cette option est activée (par défaut), le planificateur peut automatiquement fractionner les tâches dont l'avancement est hors séquence.</li>
+<li><strong>Move completed/remaining parts</strong> — Quatre options qui contrôlent la manière dont les parties terminées et restantes du travail sont repositionnées par rapport à la date d'état. Elles permettent de maintenir votre planning à jour en déplaçant le travail terminé avant la date d'état ou en repoussant le travail restant après celle-ci.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

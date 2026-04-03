@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vue d'ensemble - Premiers pas - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Ce que vous pouvez faire avec Ingantt — le cycle complet de gestion de projet, de la mise en place au suivi, et où trouver chaque sujet dans ce guide.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/getting-started/overview/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Vue d'ensemble">
+  <meta property="og:description" content="Ce que vous pouvez faire avec Ingantt — le cycle complet de gestion de projet, de la mise en place au suivi, et où trouver chaque sujet dans ce guide.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/getting-started/overview/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vue d'ensemble">
+  <meta name="twitter:description" content="Ce que vous pouvez faire avec Ingantt — le cycle complet de gestion de projet, de la mise en place au suivi, et où trouver chaque sujet dans ce guide.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/overview/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/overview/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/overview/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/overview/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/overview/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/overview/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/" class="active" aria-current="page">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="ce-que-vous-pouvez-faire-avec-ingantt">Ce que vous pouvez faire avec Ingantt <a href="#ce-que-vous-pouvez-faire-avec-ingantt" class="heading-anchor">#</a></h1>
+<p><a href="https://ingantt.com" target="_blank" rel="noopener noreferrer">Ingantt</a> est une application de planification et de suivi de projets. Vous saisissez les données de votre projet — tâches, durées, dépendances, ressources — et Ingantt vous fournit les réponses.</p>
+<h4 id="lors-de-la-planification-du-projet">Lors de la planification du projet <a href="#lors-de-la-planification-du-projet" class="heading-anchor">#</a></h4>
+<ul>
+<li><strong>Quand se terminera-t-il ?</strong> — calculé automatiquement à partir des dépendances entre les tâches, sans estimation approximative.</li>
+<li><strong>Quelles ressources sont nécessaires ?</strong> — les personnes, équipements et matériaux requis pour chaque tâche.</li>
+<li><strong>Qui est surchargé ?</strong> — quelles ressources ont plus de travail qu'elles ne peuvent en absorber, et quand.</li>
+<li><strong>Combien cela coûtera-t-il ?</strong> — le coût total du projet basé sur les taux des ressources et les coûts fixes.</li>
+<li><strong>Quelles tâches sont les plus importantes ?</strong> — le chemin critique montre où un retard repoussera l'ensemble du projet.</li>
+</ul>
+<h4 id="une-fois-les-travaux-lancés">Une fois les travaux lancés <a href="#une-fois-les-travaux-lancés" class="heading-anchor">#</a></h4>
+<ul>
+<li><strong>Sommes-nous dans les temps ?</strong> — comparez l'avancement actuel du planning par rapport au plan initial.</li>
+<li><strong>Respectons-nous le budget ?</strong> — comparez les coûts réels aux coûts prévus grâce aux indicateurs de valeur acquise.</li>
+<li><strong>Où en sommes-nous réellement ?</strong> — pourcentage d'avancement global du projet, pondéré par la durée des tâches, pas par l'intuition.</li>
+<li><strong>Qu'a-t-on dépensé et que reste-t-il ?</strong> — coûts réels vs. restants, travail et durée.</li>
+</ul>
+<p>Modifiez la durée d'une tâche ou ajoutez une dépendance, et l'ensemble du planning se recalcule instantanément — chaque date, chaque charge de ressource, chaque coût.</p>
+<hr />
+<p>Prêt à commencer ? Suivez le tutoriel pratique <a href="/fr/getting-started/getting-started/">Premiers pas</a>, <a href="/fr/getting-started/create-with-ai/">créez un projet avec l'IA</a> ou <a href="/fr/getting-started/import-export/">importez un fichier existant</a>.</p>
+<blockquote>
+<p>Des commentaires, questions ou suggestions ? <a href="mailto:support@ingantt.com">Contactez-nous</a> pour obtenir de l'aide !</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

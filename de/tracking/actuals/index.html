@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ist-Werte - Fortschritt verfolgen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Verstehen Sie Ist- und Restwerte für Dauer, Arbeit, Kosten, Termine und wie Sie Vorgangsspalten konfigurieren.">
+  <link rel="canonical" href="https://help.ingantt.com/de/tracking/actuals/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ist-Werte">
+  <meta property="og:description" content="Verstehen Sie Ist- und Restwerte für Dauer, Arbeit, Kosten, Termine und wie Sie Vorgangsspalten konfigurieren.">
+  <meta property="og:url" content="https://help.ingantt.com/de/tracking/actuals/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ist-Werte">
+  <meta name="twitter:description" content="Verstehen Sie Ist- und Restwerte für Dauer, Arbeit, Kosten, Termine und wie Sie Vorgangsspalten konfigurieren.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/actuals/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/actuals/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/actuals/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/actuals/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/" class="active" aria-current="page">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="ist-werte">Ist-Werte <a href="#ist-werte" class="heading-anchor">#</a></h1>
+<p>Während die Arbeit fortschreitet und Sie <a href="/de/tracking/progress/#-abgeschlossen">% Abgeschlossen</a> aktualisieren, berechnet Ingantt automatisch Ist- und Restwerte für Dauer, Arbeit, Kosten und Termine. Diese Felder zeigen Ihnen genau, was ausgegeben wurde, was übrig ist und wie das Projekt im Vergleich zum Plan steht.</p>
+<p>Die häufigsten Ist- und Restspalten sind <strong>Ist-Kosten</strong> / <strong>Verbleibende Kosten</strong>, <strong>Ist-Arbeit</strong> / <strong>Verbleibende Arbeit</strong> und <strong>Ist-Dauer</strong> / <strong>Verbleibende Dauer</strong>. Wenn Sie diese Werte am <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgang</a> betrachten, sehen Sie die Gesamtwerte für das gesamte Projekt auf einen Blick — wie viel ausgegeben wurde, wie viel Aufwand investiert wurde und wie viel noch übrig ist. Stellen Sie sicher, dass der Projektsammelvorgang sichtbar ist: Aktivieren Sie <strong>Projektsammelvorgang anzeigen</strong> im Menü <strong>Ansicht</strong> oder im Dialog <strong>Optionen</strong>.</p>
+<h2 id="ist-und-restspalten-anzeigen">Ist- und Restspalten anzeigen <a href="#ist-und-restspalten-anzeigen" class="heading-anchor">#</a></h2>
+<p>Ist- und Restspalten sind standardmäßig nicht sichtbar. Um sie zur Vorgangsliste hinzuzufügen, öffnen Sie den Dialog <strong>Optionen</strong> (Reiter <strong>Vorgangsspalten</strong>) und aktivieren Sie die benötigten Spalten. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
+<h3 id="dauer">Dauer <a href="#dauer" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Ist-Dauer</strong> — Die bisher für einen Vorgang aufgewendete Arbeitszeit. Berechnet als Dauer des Vorgangs multipliziert mit seinem % Abgeschlossen.</li>
+<li><strong>Verbleibende Dauer</strong> — Die noch benötigte Arbeitszeit, um den Vorgang abzuschließen: Dauer − Ist-Dauer.</li>
+</ul>
+<p>Beispiel: Ein 10-Tage-Vorgang bei 40 % abgeschlossen hat eine Ist-Dauer von 4 Tagen und eine Verbleibende Dauer von 6 Tagen.</p>
+<h3 id="arbeit">Arbeit <a href="#arbeit" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Ist-Arbeit</strong> — Der gesamte Aufwand (in Stunden), den Ressourcen für einen Vorgang aufgewendet haben. Wenn <strong>Vorgangsstatus aktualisiert Ressourcenstatus</strong> in den Projekteinstellungen aktiviert ist (die Standardeinstellung), wird die Ist-Arbeit proportional aktualisiert, wenn Sie % Abgeschlossen ändern.</li>
+<li><strong>Verbleibende Arbeit</strong> — Der noch erforderliche Aufwand, um den Vorgang abzuschließen: Arbeit − Ist-Arbeit.</li>
+</ul>
+<h3 id="kosten">Kosten <a href="#kosten" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Ist-Kosten</strong> — Die bisher angefallenen Kosten: die Summe der aufgelaufenen Fixkosten und aufgelaufenen Ressourcenkosten. Wie Kosten auflaufen, hängt von der <strong>Kostenabgrenzung</strong>-Einstellung jeder Ressource ab:
+<ul>
+<li><strong>Anfang</strong> — Die gesamten Kosten werden erfasst, wenn der Ist-Anfang gesetzt wird.</li>
+<li><strong>Anteilig</strong> — Kosten werden proportional basierend auf dem tatsächlichen Arbeitsfortschritt erfasst.</li>
+<li><strong>Ende</strong> — Kosten werden erst erfasst, wenn der Vorgang 100 % abgeschlossen erreicht.</li>
+</ul>
+</li>
+<li><strong>Verbleibende Kosten</strong> — Das noch benötigte Budget, um den Vorgang abzuschließen: Gesamtkosten − Ist-Kosten.</li>
+</ul>
+<h3 id="termine">Termine <a href="#termine" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Ist-Anfang</strong> — Das Datum, an dem die Arbeit tatsächlich begonnen hat. Wird automatisch auf das geplante Startdatum des Vorgangs gesetzt, wenn % Abgeschlossen über 0 % steigt.</li>
+<li><strong>Ist-Ende</strong> — Das Datum, an dem die Arbeit tatsächlich abgeschlossen wurde. Wird automatisch auf das geplante Enddatum des Vorgangs gesetzt, wenn % Abgeschlossen 100 % erreicht.</li>
+</ul>
+<h3 id="überstunden">Überstunden <a href="#überstunden" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Ist-Überstundenarbeit</strong> — Bereits geleistete Überstunden am Vorgang.</li>
+<li><strong>Verbleibende Überstundenarbeit</strong> — Noch erwartete Überstunden.</li>
+<li><strong>Ist-Überstundenkosten</strong> — Bereits angefallene Überstundenkosten.</li>
+<li><strong>Verbleibende Überstundenkosten</strong> — Noch erwartete Überstundenkosten.</li>
+</ul>
+<h2 id="wie-ist-werte-berechnet-werden">Wie Ist-Werte berechnet werden <a href="#wie-ist-werte-berechnet-werden" class="heading-anchor">#</a></h2>
+<p>Alle Ist- und Restfelder folgen der Beziehung:</p>
+<blockquote>
+<p><strong>Gesamt = Ist + Rest</strong></p>
+</blockquote>
+<p>Wenn Sie einen Wert ändern, aktualisiert Ingantt die anderen, um sie konsistent zu halten. Der häufigste Arbeitsablauf besteht darin, <strong>% Abgeschlossen</strong> zu aktualisieren, was automatisch auf alle Ist- und Restfelder durchkaskadiert:</p>
+<ol>
+<li><strong>Ist-Dauer</strong> und <strong>Verbleibende Dauer</strong> werden aus dem neuen Prozentsatz neu berechnet.</li>
+<li><strong>Ist-Arbeit</strong> und <strong>Verbleibende Arbeit</strong> werden aktualisiert (wenn die Projekteinstellung aktiviert ist).</li>
+<li><strong>Ist-Anfang</strong> und <strong>Ist-Ende</strong> werden basierend auf dem Fortschritt gesetzt.</li>
+<li><strong>Ist-Kosten</strong> und <strong>Verbleibende Kosten</strong> werden basierend auf der Abgrenzungsmethode neu berechnet.</li>
+</ol>
+<p>Für Sammelvorgänge werden <strong>Ist-Arbeit</strong>, <strong>Verbleibende Arbeit</strong>, <strong>Ist-Kosten</strong> und <strong>Verbleibende Kosten</strong> von allen untergeordneten Vorgängen aufsummiert (Rollup). <strong>Ist-Anfang</strong> ist der früheste Ist-Anfang unter den untergeordneten Vorgängen, und <strong>Ist-Ende</strong> ist das späteste Ist-Ende.</p>
+<h2 id="vorgangsspalten">Vorgangsspalten <a href="#vorgangsspalten" class="heading-anchor">#</a></h2>
+<p>Über Ist- und Restwerte hinaus unterstützt Ingantt eine breite Palette von Vorgangsspalten — Planungsdaten, Informationen zum kritischen Pfad, Kosten, Arbeit, Earned-Value-Kennzahlen, Basispläne, benutzerdefinierte Felder und Gliederungscodes. Alle Spalten können über den Dialog <strong>Optionen</strong> (Reiter <strong>Vorgangsspalten</strong>) ein- oder ausgeblendet und neu angeordnet werden. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

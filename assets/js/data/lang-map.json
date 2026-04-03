@@ -1,114 +1,198 @@
 {
   "getting-started/overview": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "getting-started/getting-started": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "getting-started/create-with-ai": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "getting-started/import-export": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "setting-up-project/project": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "setting-up-project/calendars": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/tasks": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/task-properties": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/dependencies": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/constraints": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/resources": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "building-schedule/assignments": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "adjusting-schedule/critical-path": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "adjusting-schedule/leveling": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "adjusting-schedule/custom-fields": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "planning-costs/planning-costs": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "planning-costs/setting-up-costs": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "tracking/baselines": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "tracking/progress": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "tracking/actuals": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "tracking/earned-value": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "views/gantt": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "views/task-views": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "views/resource-views": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "views/filtering": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "ui/ui": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "ui/files": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ],
   "ui/shortcuts": [
     "en",
+    "fr",
+    "de",
+    "es",
     "uk"
   ]
 }

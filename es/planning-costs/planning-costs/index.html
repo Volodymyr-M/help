@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Comprensión de los costos - Planificación de costos - Ayuda de Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Aprenda cómo Ingantt calcula los costos de tareas y tareas de resumen, y cómo usar recursos presupuestarios para la planificación de costos descendente.">
+  <link rel="canonical" href="https://help.ingantt.com/es/planning-costs/planning-costs/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Comprensión de los costos">
+  <meta property="og:description" content="Aprenda cómo Ingantt calcula los costos de tareas y tareas de resumen, y cómo usar recursos presupuestarios para la planificación de costos descendente.">
+  <meta property="og:url" content="https://help.ingantt.com/es/planning-costs/planning-costs/">
+  <meta property="og:site_name" content="Ayuda de Ingantt">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Comprensión de los costos">
+  <meta name="twitter:description" content="Aprenda cómo Ingantt calcula los costos de tareas y tareas de resumen, y cómo usar recursos presupuestarios para la planificación de costos descendente.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/planning-costs/planning-costs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir al contenido</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/es/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ayuda de Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Buscar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar documentación">
+      <div class="search-results" data-loading="Cargando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegación de la documentación">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeros pasos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
+    <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuración del proyecto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/setting-up-project/project/">Propiedades del proyecto</a></li>
+    <li><a href="/es/setting-up-project/calendars/">Calendarios</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construcción de un cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
+    <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
+    <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
+    <li><a href="/es/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/es/building-schedule/assignments/">Asignaciones</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análisis y ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
+    <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
+    <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planificación de costos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/planning-costs/planning-costs/" class="active" aria-current="page">Comprensión de los costos</a></li>
+    <li><a href="/es/planning-costs/setting-up-costs/">Configuración de costos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Seguimiento del progreso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/tracking/baselines/">Líneas base</a></li>
+    <li><a href="/es/tracking/progress/">Seguimiento del progreso</a></li>
+    <li><a href="/es/tracking/actuals/">Valores reales</a></li>
+    <li><a href="/es/tracking/earned-value/">Valor ganado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vistas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/views/gantt/">Diagrama de Gantt</a></li>
+    <li><a href="/es/views/task-views/">Vistas de tareas</a></li>
+    <li><a href="/es/views/resource-views/">Vistas de recursos</a></li>
+    <li><a href="/es/views/filtering/">Filtrado de tareas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaz de usuario
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
+    <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/" selected>Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Cambiar tema" title="Alternar tema claro/oscuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contactar con soporte" title="Contactar con soporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="comprensión-de-los-costos">Comprensión de los costos <a href="#comprensión-de-los-costos" class="heading-anchor">#</a></h1>
+<p>Asigne costos a tareas y recursos para ver el precio total de su proyecto. La tarea de resumen raíz muestra el total general — compárelo con los recursos presupuestarios para saber si su proyecto se ajusta al presupuesto aprobado.</p>
+<h2 id="cómo-se-calcula-el-costo-de-la-tarea">Cómo se calcula el costo de la tarea <a href="#cómo-se-calcula-el-costo-de-la-tarea" class="heading-anchor">#</a></h2>
+<p>El costo de cada tarea es una combinación de su propio costo fijo y los costos de sus recursos asignados. Ingantt calcula el costo total de cada tarea y lo muestra en la columna <strong>Costo</strong> en la lista de tareas.</p>
+<p><em>El <strong>Costo</strong> de la tarea = el <strong>Costo fijo</strong> de la tarea + costos de los recursos asignados a la tarea</em></p>
+<blockquote>
+<p>Si no ve la columna <strong>Costo</strong> en la lista de tareas, asegúrese de que la opción <strong>Columna de costo</strong> esté marcada en la pestaña <strong>Columnas de tareas</strong> del diálogo <strong>Opciones</strong>.</p>
+</blockquote>
+<h2 id="costos-de-las-tareas-de-resumen">Costos de las tareas de resumen <a href="#costos-de-las-tareas-de-resumen" class="heading-anchor">#</a></h2>
+<p>En su campo <strong>Costo</strong>, cada <a href="/es/building-schedule/tasks/#tareas-de-resumen">tarea de resumen</a> muestra el costo total de todas sus subtareas.</p>
+<p>Sin embargo, al igual que una tarea regular, una tarea de resumen puede tener <a href="/es/building-schedule/assignments/#asignaciones-de-recursos-y-unidades">recursos asignados</a> y un <strong>Costo fijo</strong>. Estos se agregan sobre el costo total de las subtareas, aumentando el <strong>Costo</strong> de la tarea de resumen.</p>
+<p><em>El <strong>Costo</strong> de la tarea de resumen = costo total de todas las subtareas + el <strong>Costo fijo</strong> de la tarea de resumen + costos de los recursos asignados a la tarea de resumen</em></p>
+<p>Use la <a href="/es/building-schedule/tasks/#tarea-de-resumen-ra%C3%ADz">tarea de resumen raíz</a> para ver y gestionar el costo total de todo su proyecto.</p>
+<h2 id="recursos-presupuestarios">Recursos presupuestarios <a href="#recursos-presupuestarios" class="heading-anchor">#</a></h2>
+<p>Un recurso puede marcarse como recurso <strong>Presupuestario</strong> en el diálogo <strong>Propiedades del recurso</strong>. Los recursos presupuestarios representan montos de presupuesto asignados a nivel general del proyecto y solo pueden asignarse a la <a href="/es/building-schedule/tasks/#tarea-de-resumen-ra%C3%ADz">tarea de resumen raíz</a>.</p>
+<p>Los recursos presupuestarios se excluyen de:</p>
+<ul>
+<li>Programación</li>
+<li>Totales de costos</li>
+<li>Detección de sobreasignación</li>
+<li>Nivelación de recursos</li>
+</ul>
+<p>Proporcionan seguimiento presupuestario descendente que es independiente de los cálculos de costos ascendentes.</p>
+<h2 id="moneda">Moneda <a href="#moneda" class="heading-anchor">#</a></h2>
+<p>Si su proyecto usa una moneda diferente a la predeterminada de Ingantt, puede cambiarla en la pestaña <strong>Regional</strong> del diálogo <strong>Propiedades del proyecto</strong>. Especifique la moneda como símbolo (por ejemplo, €), abreviatura (EUR) o nombre completo (euro).</p>
+<p>En la misma pestaña, también puede especificar la <strong>Posición de la moneda</strong> — antes o después del valor, con o sin espacio.</p>
+<blockquote>
+<p>Cuando cambia la moneda, los valores de costo no se recalculan.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

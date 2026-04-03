@@ -39,7 +39,7 @@
   </main>
   <script>
     (function() {
-      var i18n = {"en":{"site_title":"Ingantt Help","page_not_found":"Page not found","page_not_found_message":"The page you are looking for does not exist or has been moved.","go_home":"Go to home page"},"uk":{"site_title":"Довідка Ingantt","page_not_found":"Сторінку не знайдено","page_not_found_message":"Сторінка, яку ви шукаєте, не існує або була переміщена.","go_home":"Перейти на головну"}};
+      var i18n = {"en":{"site_title":"Ingantt Help","page_not_found":"Page not found","page_not_found_message":"The page you are looking for does not exist or has been moved.","go_home":"Go to home page"},"fr":{"site_title":"Aide Ingantt","page_not_found":"Page introuvable","page_not_found_message":"La page que vous recherchez n'existe pas ou a été déplacée.","go_home":"Aller à la page d'accueil"},"de":{"site_title":"Ingantt-Hilfe","page_not_found":"Seite nicht gefunden","page_not_found_message":"Die gesuchte Seite existiert nicht oder wurde verschoben.","go_home":"Zur Startseite"},"es":{"site_title":"Ayuda de Ingantt","page_not_found":"Página no encontrada","page_not_found_message":"La página que busca no existe o ha sido trasladada.","go_home":"Ir a la página principal"},"uk":{"site_title":"Довідка Ingantt","page_not_found":"Сторінку не знайдено","page_not_found_message":"Сторінка, яку ви шукаєте, не існує або була переміщена.","go_home":"Перейти на головну"}};
       var parts = window.location.pathname.split('/').filter(Boolean);
       var lang = (parts.length > 0 && /^[a-z]{2}$/.test(parts[0]) && i18n[parts[0]]) ? parts[0] : 'en';
       var t = i18n[lang] || i18n['en'];

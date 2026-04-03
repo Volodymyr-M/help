@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ressourcenabgleich - Analysieren &amp; Anpassen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Erkennen und lösen Sie Ressourcenüberlastungen mit automatischem Abgleich, prioritätsbasierter Planung und der Abgleich-Gantt-Ansicht.">
+  <link rel="canonical" href="https://help.ingantt.com/de/adjusting-schedule/leveling/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Ressourcenabgleich">
+  <meta property="og:description" content="Erkennen und lösen Sie Ressourcenüberlastungen mit automatischem Abgleich, prioritätsbasierter Planung und der Abgleich-Gantt-Ansicht.">
+  <meta property="og:url" content="https://help.ingantt.com/de/adjusting-schedule/leveling/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ressourcenabgleich">
+  <meta name="twitter:description" content="Erkennen und lösen Sie Ressourcenüberlastungen mit automatischem Abgleich, prioritätsbasierter Planung und der Abgleich-Gantt-Ansicht.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/" class="active" aria-current="page">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="ressourcenabgleich">Ressourcenabgleich <a href="#ressourcenabgleich" class="heading-anchor">#</a></h1>
+<p>Es passiert schnell, dass einer Person mehr Arbeit zugewiesen wird, als sie an einem Tag bewältigen kann. Der Abgleich verschiebt automatisch Vorgänge, damit niemand überlastet wird, obwohl er das Enddatum Ihres Projekts verlängern kann.</p>
+<h2 id="überlastete-ressourcen">Überlastete Ressourcen <a href="#überlastete-ressourcen" class="heading-anchor">#</a></h2>
+<p>Eine Arbeitsressource kann <strong>überlastet</strong> sein, was bedeutet, dass ihr mehr Arbeit zugewiesen ist, als sie basierend auf ihrem Kalender und ihrer Verfügbarkeit erledigen kann. Wenn Ihr Projekt zum Beispiel zwei Vorgänge hat, jeder mit einer Dauer von einem Tag und ohne <a href="/de/building-schedule/dependencies/#vorg%C3%A4nger-und-abh%C3%A4ngigkeiten">Abhängigkeit</a> untereinander, die beide derselben Arbeitsressource zugewiesen sind, ist die Ressource überlastet. Die Ressource muss zwei Tage Arbeit an einem Kalendertag erledigen. Um dies zu lösen, verknüpfen Sie einfach die beiden Vorgänge mit einer Abhängigkeit.</p>
+<p>Wenn ein Vorgang überlastete Ressourcen zugewiesen hat, zeigt Ingantt ein spezielles Symbol in der Vorgangsliste an.</p>
+<p>Wenn eine Ressource überlastet ist, zeigt Ingantt ein spezielles Symbol in der Ansicht <strong>Ressourcen</strong> und der Ansicht <strong>Ressourcenverwendung</strong> an.</p>
+<p>Zusätzlich zählt Ingantt solche Vorgänge und Ressourcen und zeigt die Zahlen in der Navigationsleiste an.</p>
+<h2 id="automatischer-abgleich">Automatischer Abgleich <a href="#automatischer-abgleich" class="heading-anchor">#</a></h2>
+<p>Abhängigkeiten zwischen Vorgängen steuern ihre Position auf der Zeitachse. In größeren Projekten ist es leicht, eine Abhängigkeit zu übersehen — was dazu führt, dass mehrere Vorgänge, die derselben Arbeitsressource zugewiesen sind, gleichzeitig geplant werden. Die Ressource wird überlastet, und Ingantt benachrichtigt Sie mit speziellen Symbolen in den Vorgangs- und Ressourcenlisten.</p>
+<p>Sie können Überlastungen manuell lösen, indem Sie Abhängigkeiten oder Einschränkungen setzen, um einige Vorgänge so zu verschieben, dass die Arbeit nicht gleichzeitig erledigt wird.</p>
+<p>Eine alternative Möglichkeit zur Lösung von Überlastungen ist der automatische Abgleich. Wenn Sie im Menü <strong>Projekt</strong> die Option <strong>Ressourcen automatisch abgleichen</strong> wählen, verschiebt Ingantt automatisch einige Vorgänge weiter auf der Zeitachse, um Ressourcenüberlastungen zu vermeiden. Sie können diese automatischen Anpassungen durch Wahl von <strong>Abgleich löschen</strong> im Menü <strong>Projekt</strong> zurücksetzen.</p>
+<p>Der automatische Abgleich bietet drei Bereichsoptionen:</p>
+<ul>
+<li><strong>Alle Vorgänge</strong> — Gleicht alle Vorgänge im Projekt ab</li>
+<li><strong>Ausgewählte Vorgänge</strong> — Gleicht nur die aktuell ausgewählten Vorgänge ab</li>
+<li><strong>Ausgewählte Ressourcen</strong> — Gleicht nur die Überlastungskonflikte für die ausgewählten Ressourcen ab (verfügbar in den Ansichten Ressourcen und Ressourcenverwendung)</li>
+</ul>
+<h3 id="wie-der-automatische-abgleich-funktioniert">Wie der automatische Abgleich funktioniert <a href="#wie-der-automatische-abgleich-funktioniert" class="heading-anchor">#</a></h3>
+<p>Wenn Sie <strong>Ressourcen automatisch abgleichen</strong> ausführen, löst Ingantt Überlastungen durch <strong>Verzögern oder Teilen von Vorgängen</strong>. Es werden weder Ressourcen umverteilt noch Zuweisungseinheiten geändert.</p>
+<p>Der Algorithmus identifiziert Tage, an denen eine Ressource mehr zugewiesene Arbeit hat, als ihre Kapazität zulässt, und entscheidet dann, welche konkurrierenden Vorgänge verzögert werden sollen. Jeder Vorgang wird anhand mehrerer Faktoren bewertet — Vorgänge mit höheren Bewertungen sind vor Verzögerung geschützt:</p>
+<table>
+<thead>
+<tr>
+<th>Faktor</th>
+<th>Auswirkung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Abhängigkeiten</strong></td>
+<td>Vorgänge, die Vorgänger anderer Vorgänge sind, werden geschützt</td>
+</tr>
+<tr>
+<td><strong>Puffer</strong></td>
+<td>Kritische oder nahezu kritische Vorgänge (weniger Puffer) werden geschützt</td>
+</tr>
+<tr>
+<td><strong>Priorität</strong></td>
+<td>Vorgänge mit einem höheren Prioritätswert werden geschützt</td>
+</tr>
+<tr>
+<td><strong>Einschränkungen</strong></td>
+<td>Vorgänge mit Planungseinschränkungen werden geschützt</td>
+</tr>
+<tr>
+<td><strong>Startdatum</strong></td>
+<td>Frühere Vorgänge werden etwas geschützt</td>
+</tr>
+<tr>
+<td><strong>Dauer</strong></td>
+<td>Längere Vorgänge werden etwas geschützt</td>
+</tr>
+</tbody>
+</table>
+<p>Der Vorgang mit der niedrigsten Bewertung wird verzögert, um jeden Konflikt zu lösen. Der Prozess wird wiederholt, bis alle Überlastungen gelöst sind oder keine weiteren Verzögerungen angewendet werden können.</p>
+<blockquote>
+<p>Der automatische Abgleich kann das Enddatum des Projekts verlängern. Er löst so viele Überlastungen wie möglich, aber einige können bestehen bleiben, wenn Einschränkungen weitere Verzögerungen verhindern.</p>
+</blockquote>
+<h3 id="abgleichoptionen">Abgleichoptionen <a href="#abgleichoptionen" class="heading-anchor">#</a></h3>
+<p>Konfigurieren Sie das Abgleichverhalten im Dialog <strong>Abgleichoptionen</strong>, zugänglich über das Menü <strong>Projekt</strong>:</p>
+<ul>
+<li><strong>Abgleichreihenfolge</strong> — Steuert die Priorisierung der Vorgänge: Nur Nr. (aufsteigende Nr.), Standard (Multifaktor-Bewertung) oder Priorität Standard (Priorität zuerst, dann Standardfaktoren; die Standardeinstellung)</li>
+<li><strong>Überlastungsgrundlage</strong> — Steuert die Erkennungsgranularität: Minute, Stunde, Tag, Woche oder Monat. Die Einstellungen Minute und Stunde erkennen Konflikte auch dann, wenn die Tagessummen innerhalb der Kapazität liegen, aber Vorgänge sich innerhalb eines Tages überschneiden.</li>
+<li><strong>Einzelne Zuweisungen anpassen</strong> — Wenn aktiviert und ein Vorgang mehrere Ressourcenzuweisungen hat, wird nur die Zuweisung der überlasteten Ressource verzögert, nicht der gesamte Vorgang</li>
+<li><strong>Teilungen in verbleibender Arbeit erstellen</strong> — Wenn aktiviert, kann der Abgleichalgorithmus Arbeit um Konflikte herum teilen, anstatt ganze Vorgänge zu verzögern</li>
+<li><strong>Nur innerhalb verfügbarer Pufferzeit abgleichen</strong> — Beschränkt Abgleichverzögerungen darauf, den Gesamtpuffer eines Vorgangs nicht zu überschreiten, wodurch eine Verlängerung des Projektenddatums verhindert wird</li>
+<li><strong>Abgleichbereich</strong> — Beschränkt den Abgleich auf Vorgänge innerhalb eines bestimmten Datumsfensters</li>
+</ul>
+<h3 id="vom-abgleich-ausgenommen">Vom Abgleich ausgenommen <a href="#vom-abgleich-ausgenommen" class="heading-anchor">#</a></h3>
+<p>Die folgenden Vorgänge und Ressourcen werden nie vom automatischen Abgleich beeinflusst:</p>
+<ul>
+<li>Vorgänge mit <a href="#priorit%C3%A4t">Priorität</a> auf <strong>1000</strong> gesetzt</li>
+<li>Vorgänge mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt (auf dem Reiter <strong>Abgleich</strong> des Dialogs <strong>Vorgangseigenschaften</strong>)</li>
+<li>Vorgänge mit einer <strong>Muss anfangen am</strong>- oder <strong>Muss enden am</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a></li>
+<li><a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgänge</a></li>
+<li>Meilensteine mit Dauer null</li>
+<li>Vollständig abgeschlossene Vorgänge (100 %)</li>
+<li>Ressourcen mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt im Dialog <strong>Ressourceneigenschaften</strong></li>
+<li>Ressourcen mit <a href="/de/building-schedule/resources/#buchungsart">Buchungsart</a> <strong>Vorgeschlagen</strong> (sofern nicht die Abgleichoption zum Einbeziehen vorgeschlagener Ressourcen aktiviert ist)</li>
+</ul>
+<h3 id="erneuter-abgleich-und-zurücksetzen">Erneuter Abgleich und Zurücksetzen <a href="#erneuter-abgleich-und-zurücksetzen" class="heading-anchor">#</a></h3>
+<p>Jedes Mal, wenn Sie <strong>Ressourcen automatisch abgleichen</strong> ausführen, wird ein vorheriger Abgleich automatisch zuerst gelöscht. Der Abgleich beginnt immer von einem sauberen, nicht abgeglichenen Terminplan, um das Stapeln von Verzögerungen zu verhindern.</p>
+<p>Wenn Sie den Terminplan nach dem Abgleich ändern (Vorgänge hinzufügen, Abhängigkeiten ändern usw.), bleiben die bestehenden Abgleichverzögerungen erhalten, lösen aber möglicherweise nicht mehr alle Überlastungen. Führen Sie <strong>Ressourcen automatisch abgleichen</strong> erneut aus, um den aktualisierten Terminplan neu abzugleichen.</p>
+<p>Um alle Abgleichverzögerungen zu entfernen und zum ursprünglichen CPM-berechneten Terminplan zurückzukehren, wählen Sie <strong>Abgleich löschen</strong> aus dem Menü <strong>Projekt</strong>.</p>
+<h3 id="abgleich-gantt">Abgleich-Gantt <a href="#abgleich-gantt" class="heading-anchor">#</a></h3>
+<p>Nachdem Sie den automatischen Abgleich ausgeführt haben, erscheint eine <strong>Abgleich-Gantt</strong>-Umschaltfläche im Gantt-Diagramm-Bereich. Wenn aktiviert, werden grüne Balken an den Positionen vor dem Abgleich gezeichnet — dort, wo die Vorgänge vor dem automatischen Abgleich waren — während die Standard-Vorgangsbalken an ihren aktuellen abgeglichenen Positionen bleiben. So können Sie den ursprünglichen Terminplan mit dem abgeglichenen Terminplan vergleichen und sehen, wie stark jeder Vorgang verzögert wurde.</p>
+<p>Die Umschaltfläche ist nur sichtbar, wenn Abgleichdaten vorliegen, und wird automatisch ausgeblendet, wenn Sie den Abgleich löschen.</p>
+<h2 id="priorität">Priorität <a href="#priorität" class="heading-anchor">#</a></h2>
+<p>Das Feld <strong>Priorität</strong> ist auf dem Reiter <strong>Abgleich</strong> des Dialogs <strong>Vorgangseigenschaften</strong> verfügbar. Es akzeptiert einen ganzzahligen Wert von 0 bis 1000, mit einem Standardwert von 500.</p>
+<p>Die Priorität wird vom <a href="#automatischer-abgleich">automatischen Abgleich</a>-Algorithmus verwendet, um zu entscheiden, welche Vorgänge bei der Lösung von Ressourcenüberlastungen verzögert werden sollen. Vorgänge mit einer höheren Priorität werden mit geringerer Wahrscheinlichkeit verzögert:</p>
+<ul>
+<li><strong>0</strong> — Niedrigste Priorität, wird am ehesten verzögert</li>
+<li><strong>500</strong> — Standardpriorität</li>
+<li><strong>1000</strong> — „Nicht abgleichen&quot; — der Vorgang wird nie durch den automatischen Abgleich verzögert</li>
+</ul>
+<blockquote>
+<p>Setzen Sie die Priorität auf <strong>1000</strong> für Vorgänge, die nie vom automatischen Abgleich verschoben werden dürfen, wie Vorgänge, die an externe Termine oder feste Verpflichtungen gebunden sind.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

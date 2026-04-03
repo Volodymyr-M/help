@@ -1,9 +1,6 @@
 # Create with AI
 
 Let AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.
-
-[Watch video](https://www.youtube.com/watch?v=sOjhGy5BJso)
-
 To create a project schedule with AI:
 
 1. Click the **+** button on the Projects screen.

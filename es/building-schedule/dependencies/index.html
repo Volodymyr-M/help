@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dependencias - Construcción de un cronograma - Ayuda de Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Vincule tareas con dependencias Fin a Inicio, Fin a Fin, Inicio a Inicio e Inicio a Fin, y establezca tiempo de posposición o adelanto.">
+  <link rel="canonical" href="https://help.ingantt.com/es/building-schedule/dependencies/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Dependencias">
+  <meta property="og:description" content="Vincule tareas con dependencias Fin a Inicio, Fin a Fin, Inicio a Inicio e Inicio a Fin, y establezca tiempo de posposición o adelanto.">
+  <meta property="og:url" content="https://help.ingantt.com/es/building-schedule/dependencies/">
+  <meta property="og:site_name" content="Ayuda de Ingantt">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Dependencias">
+  <meta name="twitter:description" content="Vincule tareas con dependencias Fin a Inicio, Fin a Fin, Inicio a Inicio e Inicio a Fin, y establezca tiempo de posposición o adelanto.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir al contenido</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/es/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ayuda de Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Buscar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar documentación">
+      <div class="search-results" data-loading="Cargando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegación de la documentación">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeros pasos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
+    <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuración del proyecto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/setting-up-project/project/">Propiedades del proyecto</a></li>
+    <li><a href="/es/setting-up-project/calendars/">Calendarios</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construcción de un cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
+    <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/dependencies/" class="active" aria-current="page">Dependencias</a></li>
+    <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
+    <li><a href="/es/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/es/building-schedule/assignments/">Asignaciones</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análisis y ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
+    <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
+    <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planificación de costos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/planning-costs/planning-costs/">Comprensión de los costos</a></li>
+    <li><a href="/es/planning-costs/setting-up-costs/">Configuración de costos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Seguimiento del progreso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/tracking/baselines/">Líneas base</a></li>
+    <li><a href="/es/tracking/progress/">Seguimiento del progreso</a></li>
+    <li><a href="/es/tracking/actuals/">Valores reales</a></li>
+    <li><a href="/es/tracking/earned-value/">Valor ganado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vistas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/views/gantt/">Diagrama de Gantt</a></li>
+    <li><a href="/es/views/task-views/">Vistas de tareas</a></li>
+    <li><a href="/es/views/resource-views/">Vistas de recursos</a></li>
+    <li><a href="/es/views/filtering/">Filtrado de tareas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaz de usuario
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
+    <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/" selected>Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Cambiar tema" title="Alternar tema claro/oscuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contactar con soporte" title="Contactar con soporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="dependencias">Dependencias <a href="#dependencias" class="heading-anchor">#</a></h1>
+<p>Los proyectos reales tienen un orden — no se puede probar antes de construir. Vincule las tareas entre sí para que Ingantt calcule la secuencia correcta y desplace todo automáticamente cuando una tarea cambie.</p>
+<h2 id="predecesoras-y-dependencias">Predecesoras y dependencias <a href="#predecesoras-y-dependencias" class="heading-anchor">#</a></h2>
+<p>Cuando vincula tareas usando el botón <strong>Vincular tareas seleccionadas</strong> en la barra de herramientas, crea una dependencia entre las tareas. La dependencia se llama <strong>Fin a Inicio</strong>, y es una de las cuatro dependencias disponibles:</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fin a Inicio</strong></td>
+<td>La segunda tarea puede comenzar una vez que la primera tarea termine.</td>
+</tr>
+<tr>
+<td><strong>Fin a Fin</strong></td>
+<td>La segunda tarea termina cuando la primera tarea termina.</td>
+</tr>
+<tr>
+<td><strong>Inicio a Fin</strong></td>
+<td>La segunda tarea termina cuando la primera tarea comienza.</td>
+</tr>
+<tr>
+<td><strong>Inicio a Inicio</strong></td>
+<td>La segunda tarea comienza cuando la primera tarea comienza.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/building-schedule/tasks/dependencies.png" alt="Dependencias" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
+<p>Para asignar predecesoras y editar dependencias, use la pestaña <strong>Predecesoras</strong> del diálogo <strong>Propiedades de la tarea</strong>.</p>
+<h2 id="posposición-y-tiempo-de-adelanto">Posposición y tiempo de adelanto <a href="#posposición-y-tiempo-de-adelanto" class="heading-anchor">#</a></h2>
+<p>A veces puede necesitar establecer un tiempo de espera entre dos tareas dependientes.</p>
+<p>Supongamos que su primera tarea es &quot;Pintar la pared&quot; y su segunda tarea es &quot;Colgar cuadros en la pared&quot;. Estas tareas están vinculadas (tienen una dependencia <strong>Fin a Inicio</strong>). No es posible colgar cuadros hasta que la pintura esté seca, así que necesita esperar. Para reflejar esto en su cronograma, establezca la <strong>Posposición</strong> (por ejemplo, 2 días) para la dependencia entre las dos tareas.</p>
+<p><img src="/images/building-schedule/tasks/lag.png" alt="Posposición" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
+<p>Las posposiciones también pueden representar el escenario opuesto — cuando una tarea dependiente debe comenzar antes de que su predecesora termine. Para establecer esto, haga la <strong>Posposición</strong> negativa (por ejemplo, -1 día). Esto se llama <em>tiempo de adelanto</em>.</p>
+<p>Para establecer la posposición o el tiempo de adelanto, seleccione la predecesora en la pestaña <strong>Predecesoras</strong> del diálogo <strong>Propiedades de la tarea</strong> y haga clic en el botón <strong>Editar</strong>.</p>
+<blockquote>
+<p>Las posposiciones se pueden establecer en horas, días, semanas, meses o como una fracción de la duración de la tarea predecesora (por ejemplo, 50%).</p>
+</blockquote>
+<h2 id="dependencias-circulares">Dependencias circulares <a href="#dependencias-circulares" class="heading-anchor">#</a></h2>
+<p>Si accidentalmente crea una dependencia circular — por ejemplo, haciendo que dos tareas sean predecesoras una de la otra — Ingantt la detecta y revierte la última acción. Esto se aplica también a cadenas circulares complejas.</p>
+<p>Cuando abre un archivo de proyecto que contiene dependencias circulares, Ingantt elimina automáticamente los vínculos problemáticos para que el proyecto pueda programarse. Un mensaje de advertencia muestra cuántos vínculos de dependencia circular se eliminaron durante la importación.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

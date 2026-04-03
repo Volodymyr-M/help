@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nivelación de recursos - Análisis y ajustes - Ayuda de Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Detecte y resuelva la sobreasignación de recursos con nivelación automática, programación basada en prioridades y la vista Gantt de nivelación.">
+  <link rel="canonical" href="https://help.ingantt.com/es/adjusting-schedule/leveling/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Nivelación de recursos">
+  <meta property="og:description" content="Detecte y resuelva la sobreasignación de recursos con nivelación automática, programación basada en prioridades y la vista Gantt de nivelación.">
+  <meta property="og:url" content="https://help.ingantt.com/es/adjusting-schedule/leveling/">
+  <meta property="og:site_name" content="Ayuda de Ingantt">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nivelación de recursos">
+  <meta name="twitter:description" content="Detecte y resuelva la sobreasignación de recursos con nivelación automática, programación basada en prioridades y la vista Gantt de nivelación.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/leveling/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir al contenido</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/es/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ayuda de Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Buscar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar documentación">
+      <div class="search-results" data-loading="Cargando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegación de la documentación">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeros pasos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
+    <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuración del proyecto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/setting-up-project/project/">Propiedades del proyecto</a></li>
+    <li><a href="/es/setting-up-project/calendars/">Calendarios</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construcción de un cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
+    <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
+    <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
+    <li><a href="/es/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/es/building-schedule/assignments/">Asignaciones</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análisis y ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
+    <li><a href="/es/adjusting-schedule/leveling/" class="active" aria-current="page">Nivelación de recursos</a></li>
+    <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planificación de costos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/planning-costs/planning-costs/">Comprensión de los costos</a></li>
+    <li><a href="/es/planning-costs/setting-up-costs/">Configuración de costos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Seguimiento del progreso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/tracking/baselines/">Líneas base</a></li>
+    <li><a href="/es/tracking/progress/">Seguimiento del progreso</a></li>
+    <li><a href="/es/tracking/actuals/">Valores reales</a></li>
+    <li><a href="/es/tracking/earned-value/">Valor ganado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vistas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/views/gantt/">Diagrama de Gantt</a></li>
+    <li><a href="/es/views/task-views/">Vistas de tareas</a></li>
+    <li><a href="/es/views/resource-views/">Vistas de recursos</a></li>
+    <li><a href="/es/views/filtering/">Filtrado de tareas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaz de usuario
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
+    <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/" selected>Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Cambiar tema" title="Alternar tema claro/oscuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contactar con soporte" title="Contactar con soporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="nivelación-de-recursos">Nivelación de recursos <a href="#nivelación-de-recursos" class="heading-anchor">#</a></h1>
+<p>Es fácil asignar accidentalmente más trabajo del que una persona puede manejar en un día. La nivelación desplaza automáticamente las tareas para que nadie esté sobrecargado, aunque puede extender la fecha de finalización de su proyecto.</p>
+<h2 id="recursos-sobreasignados">Recursos sobreasignados <a href="#recursos-sobreasignados" class="heading-anchor">#</a></h2>
+<p>Un recurso de trabajo puede estar <strong>sobreasignado</strong>, lo que significa que tiene más trabajo asignado del que puede completar según su calendario y disponibilidad. Por ejemplo, si su proyecto tiene dos tareas, cada una con una duración de un día y sin <a href="/es/building-schedule/dependencies/#predecesoras-y-dependencias">dependencia</a> entre ellas, ambas asignadas al mismo recurso de trabajo, el recurso está sobreasignado. El recurso tiene que hacer dos días de trabajo en un día calendario. Para resolver esto, simplemente vincule las dos tareas con una dependencia.</p>
+<p>Si una tarea tiene recursos sobreasignados asignados, Ingantt muestra un icono especial para ella en la lista de tareas.</p>
+<p>Si un recurso está sobreasignado, Ingantt muestra un icono especial para él en la vista <strong>Recursos</strong> y la vista <strong>Uso de recursos</strong>.</p>
+<p>Además, Ingantt cuenta dichas tareas y recursos y muestra los números en el cajón de navegación.</p>
+<h2 id="nivelación-automática">Nivelación automática <a href="#nivelación-automática" class="heading-anchor">#</a></h2>
+<p>Las dependencias entre tareas controlan su posición en la línea de tiempo. En proyectos más grandes, es fácil omitir una dependencia — resultando en múltiples tareas asignadas al mismo recurso de trabajo programadas al mismo tiempo. El recurso queda sobreasignado, e Ingantt le notifica con iconos especiales en las listas de tareas y recursos.</p>
+<p>Puede resolver la sobreasignación manualmente estableciendo dependencias o restricciones para mover algunas tareas de modo que el trabajo no se realice simultáneamente.</p>
+<p>Una forma alternativa de resolver la sobreasignación es la nivelación automática. Si elige <strong>Nivelar recursos automáticamente</strong> en el menú <strong>Proyecto</strong>, Ingantt desplaza automáticamente algunas tareas más adelante en la línea de tiempo para evitar la sobreasignación de recursos. Puede eliminar estos ajustes automáticos eligiendo <strong>Borrar nivelación</strong> en el menú <strong>Proyecto</strong>.</p>
+<p>El comando de nivelación automática ofrece tres opciones de alcance:</p>
+<ul>
+<li><strong>Todas las tareas</strong> — Nivela todas las tareas del proyecto</li>
+<li><strong>Tareas seleccionadas</strong> — Nivela solo las tareas actualmente seleccionadas</li>
+<li><strong>Recursos seleccionados</strong> — Nivela solo los conflictos de sobreasignación de los recursos seleccionados (disponible en las vistas de Recursos y Uso de recursos)</li>
+</ul>
+<h3 id="cómo-funciona-la-nivelación-automática">Cómo funciona la nivelación automática <a href="#cómo-funciona-la-nivelación-automática" class="heading-anchor">#</a></h3>
+<p>Cuando ejecuta <strong>Nivelar recursos automáticamente</strong>, Ingantt resuelve las sobreasignaciones <strong>retrasando o dividiendo tareas</strong>. No reasigna recursos ni cambia las unidades de asignación.</p>
+<p>El algoritmo identifica los días en que un recurso tiene más trabajo asignado del que su capacidad permite, luego decide qué tareas en conflicto retrasar. Cada tarea se puntúa según varios factores — las tareas con puntuaciones más altas están protegidas del retraso:</p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Efecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Dependencias</strong></td>
+<td>Las tareas que son predecesoras de otras tareas están protegidas</td>
+</tr>
+<tr>
+<td><strong>Holgura</strong></td>
+<td>Las tareas críticas o casi críticas (menos holgura) están protegidas</td>
+</tr>
+<tr>
+<td><strong>Prioridad</strong></td>
+<td>Las tareas con un valor de Prioridad más alto están protegidas</td>
+</tr>
+<tr>
+<td><strong>Restricciones</strong></td>
+<td>Las tareas con restricciones de programación están protegidas</td>
+</tr>
+<tr>
+<td><strong>Fecha de inicio</strong></td>
+<td>Las tareas más tempranas están algo protegidas</td>
+</tr>
+<tr>
+<td><strong>Duración</strong></td>
+<td>Las tareas más largas están algo protegidas</td>
+</tr>
+</tbody>
+</table>
+<p>La tarea con la puntuación más baja se retrasa para resolver cada conflicto. El proceso se repite hasta que todas las sobreasignaciones se resuelven o no se pueden aplicar más retrasos.</p>
+<blockquote>
+<p>La nivelación automática puede extender la fecha de finalización del proyecto. Resuelve tantas sobreasignaciones como sea posible, pero algunas pueden permanecer si las restricciones impiden más retrasos.</p>
+</blockquote>
+<h3 id="opciones-de-nivelación">Opciones de nivelación <a href="#opciones-de-nivelación" class="heading-anchor">#</a></h3>
+<p>Configure el comportamiento de la nivelación en el diálogo <strong>Opciones de nivelación</strong>, accesible desde el menú <strong>Proyecto</strong>:</p>
+<ul>
+<li><strong>Orden de nivelación</strong> — Controla cómo se priorizan las tareas: Solo ID (ID ascendente), Estándar (puntuación multifactorial), o Estándar con prioridad (prioridad primero, luego factores estándar; el predeterminado)</li>
+<li><strong>Base de sobreasignación</strong> — Controla la granularidad de detección: minuto, hora, día, semana o mes. Las configuraciones de minuto y hora detectan conflictos incluso cuando los totales diarios están dentro de la capacidad pero las tareas se superponen dentro de un día.</li>
+<li><strong>Ajustar asignaciones individuales</strong> — Cuando está habilitado y una tarea tiene múltiples asignaciones de recursos, solo la asignación del recurso sobreasignado se retrasa en lugar de toda la tarea</li>
+<li><strong>Crear divisiones en el trabajo restante</strong> — Cuando está habilitado, el algoritmo de nivelación puede dividir el trabajo alrededor de los conflictos en lugar de retrasar tareas completas</li>
+<li><strong>Nivelar solo dentro de la holgura disponible</strong> — Restringe los retrasos de nivelación para no exceder la holgura total de una tarea, evitando la extensión de la fecha de finalización del proyecto</li>
+<li><strong>Rango de nivelación</strong> — Restringe la nivelación a tareas dentro de una ventana de fechas específica</li>
+</ul>
+<h3 id="exento-de-nivelación">Exento de nivelación <a href="#exento-de-nivelación" class="heading-anchor">#</a></h3>
+<p>Las siguientes tareas y recursos nunca son afectados por la nivelación automática:</p>
+<ul>
+<li>Tareas con <a href="#prioridad">Prioridad</a> establecida en <strong>1000</strong></li>
+<li>Tareas con <strong>Se puede nivelar</strong> establecido en <strong>falso</strong> (en la pestaña <strong>Nivelación</strong> del diálogo Propiedades de la tarea)</li>
+<li>Tareas con una <a href="/es/building-schedule/constraints/#restricciones">restricción</a> <strong>Debe comenzar el</strong> o <strong>Debe finalizar el</strong></li>
+<li><a href="/es/building-schedule/tasks/#tareas-de-resumen">Tareas de resumen</a></li>
+<li>Hitos con duración cero</li>
+<li>Tareas completamente terminadas (100%)</li>
+<li>Recursos con <strong>Se puede nivelar</strong> establecido en <strong>falso</strong> en el diálogo Propiedades del recurso</li>
+<li>Recursos con <a href="/es/building-schedule/resources/#tipo-de-reserva">tipo de reserva</a> <strong>Propuesto</strong> (a menos que la opción de nivelación para incluir recursos propuestos esté habilitada)</li>
+</ul>
+<h3 id="re-nivelación-y-borrado">Re-nivelación y borrado <a href="#re-nivelación-y-borrado" class="heading-anchor">#</a></h3>
+<p>Cada vez que ejecuta <strong>Nivelar recursos automáticamente</strong>, cualquier nivelación anterior se borra automáticamente primero. La nivelación siempre comienza desde un cronograma limpio y sin nivelar para evitar que los retrasos se acumulen.</p>
+<p>Si modifica el cronograma después de la nivelación (agrega tareas, cambia dependencias, etc.), los retrasos de nivelación existentes se preservan pero pueden ya no resolver todas las sobreasignaciones. Ejecute <strong>Nivelar recursos automáticamente</strong> de nuevo para re-nivelar el cronograma actualizado.</p>
+<p>Para eliminar todos los retrasos de nivelación y volver al cronograma original calculado por CPM, elija <strong>Borrar nivelación</strong> del menú <strong>Proyecto</strong>.</p>
+<h3 id="gantt-de-nivelación">Gantt de nivelación <a href="#gantt-de-nivelación" class="heading-anchor">#</a></h3>
+<p>Después de ejecutar la nivelación automática, aparece un botón de alternancia <strong>Gantt de nivelación</strong> en el área del diagrama de Gantt. Cuando está habilitado, dibuja barras verdes en las posiciones previas a la nivelación — donde estaban las tareas antes de la nivelación — mientras que las barras de tareas estándar permanecen en sus posiciones niveladas actuales. Esto le permite comparar el cronograma original con el cronograma nivelado para ver cuánto se retrasó cada tarea.</p>
+<p>El botón de alternancia solo es visible cuando el proyecto tiene datos de nivelación y se oculta automáticamente cuando borra la nivelación.</p>
+<h2 id="prioridad">Prioridad <a href="#prioridad" class="heading-anchor">#</a></h2>
+<p>El campo <strong>Prioridad</strong> está disponible en la pestaña <strong>Nivelación</strong> del diálogo <strong>Propiedades de la tarea</strong>. Acepta un valor entero de 0 a 1000, con un valor predeterminado de 500.</p>
+<p>La Prioridad es utilizada por el algoritmo de <a href="#nivelaci%C3%B3n-autom%C3%A1tica">nivelación automática</a> para decidir qué tareas retrasar al resolver sobreasignaciones de recursos. Las tareas con una prioridad más alta tienen menos probabilidad de ser retrasadas:</p>
+<ul>
+<li><strong>0</strong> — Prioridad más baja, más probable de ser retrasada</li>
+<li><strong>500</strong> — Prioridad predeterminada</li>
+<li><strong>1000</strong> — &quot;No nivelar&quot; — la tarea nunca es retrasada por la nivelación automática</li>
+</ul>
+<blockquote>
+<p>Establezca la Prioridad en <strong>1000</strong> para tareas que nunca deben ser movidas por la nivelación automática, como tareas vinculadas a plazos externos o compromisos fijos.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

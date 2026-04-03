@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tareas - Construcción de un cronograma - Ayuda de Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Conozca los tipos de tareas en Ingantt, incluyendo tareas de resumen, tareas programadas manualmente, tareas recurrentes, tareas divididas y tareas inactivas.">
+  <link rel="canonical" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tareas">
+  <meta property="og:description" content="Conozca los tipos de tareas en Ingantt, incluyendo tareas de resumen, tareas programadas manualmente, tareas recurrentes, tareas divididas y tareas inactivas.">
+  <meta property="og:url" content="https://help.ingantt.com/es/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ayuda de Ingantt">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tareas">
+  <meta name="twitter:description" content="Conozca los tipos de tareas en Ingantt, incluyendo tareas de resumen, tareas programadas manualmente, tareas recurrentes, tareas divididas y tareas inactivas.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir al contenido</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/es/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ayuda de Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Buscar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar documentación">
+      <div class="search-results" data-loading="Cargando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegación de la documentación">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeros pasos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
+    <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuración del proyecto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/setting-up-project/project/">Propiedades del proyecto</a></li>
+    <li><a href="/es/setting-up-project/calendars/">Calendarios</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construcción de un cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/building-schedule/tasks/" class="active" aria-current="page">Tareas</a></li>
+    <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
+    <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
+    <li><a href="/es/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/es/building-schedule/assignments/">Asignaciones</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análisis y ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
+    <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
+    <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planificación de costos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/planning-costs/planning-costs/">Comprensión de los costos</a></li>
+    <li><a href="/es/planning-costs/setting-up-costs/">Configuración de costos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Seguimiento del progreso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/tracking/baselines/">Líneas base</a></li>
+    <li><a href="/es/tracking/progress/">Seguimiento del progreso</a></li>
+    <li><a href="/es/tracking/actuals/">Valores reales</a></li>
+    <li><a href="/es/tracking/earned-value/">Valor ganado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vistas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/views/gantt/">Diagrama de Gantt</a></li>
+    <li><a href="/es/views/task-views/">Vistas de tareas</a></li>
+    <li><a href="/es/views/resource-views/">Vistas de recursos</a></li>
+    <li><a href="/es/views/filtering/">Filtrado de tareas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaz de usuario
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
+    <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/" selected>Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Cambiar tema" title="Alternar tema claro/oscuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contactar con soporte" title="Contactar con soporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="tareas">Tareas <a href="#tareas" class="heading-anchor">#</a></h1>
+<p>Todo cronograma comienza con las tareas. Defina qué se debe hacer, cuánto tiempo tomará y cuándo vence. Una vez que sus tareas estén en su lugar, verá la línea de tiempo de su proyecto tomar forma en el diagrama de Gantt.</p>
+<h2 id="tareas-de-resumen">Tareas de resumen <a href="#tareas-de-resumen" class="heading-anchor">#</a></h2>
+<p>Las tareas de resumen le ayudan a organizar sus tareas agrupándolas. Para crear una tarea de resumen, seleccione las tareas que desea agrupar, luego haga clic en el botón <strong>Aumentar sangría</strong> en la barra de herramientas para aplicarles sangría. Para convertir una tarea de resumen de nuevo en una tarea regular, seleccione todas sus subtareas y haga clic en el botón <strong>Disminuir sangría</strong> para eliminar su sangría.</p>
+<p>Dado que las tareas de resumen agrupan otras tareas, sus propiedades se derivan de sus subtareas en lugar de establecerse directamente. Su duración representa la duración general de todas las tareas dentro del grupo: la fecha de finalización de una tarea de resumen es la fecha de finalización más tardía entre sus subtareas.</p>
+<p>Una tarea de resumen también muestra el porcentaje completado general, el costo total y el trabajo total de sus subtareas.</p>
+<p>En el diagrama de Gantt, las tareas de resumen se muestran como barras negras. En la lista de tareas, puede <strong>expandir</strong> o <strong>contraer</strong> las tareas de resumen para mostrar u ocultar sus subtareas.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Resumen" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="tarea-de-resumen-raíz">Tarea de resumen raíz <a href="#tarea-de-resumen-raíz" class="heading-anchor">#</a></h2>
+<p>En Ingantt, siempre existe una tarea de resumen para todo su proyecto. Esta tarea es la tarea número 0, por encima de todas sus tareas.</p>
+<p>La tarea de resumen raíz podría no ser visible de forma predeterminada. Para cambiar esto, marque <strong>Mostrar tarea de resumen raíz</strong> en el menú <strong>Vista</strong> o en el diálogo <strong>Opciones</strong>.</p>
+<p>Al igual que cualquier otra tarea de resumen, la tarea de resumen raíz muestra los datos generales de sus subtareas. Dado que todas las tareas en su cronograma son sus subtareas, la tarea de resumen raíz muestra los datos generales de todo su proyecto.</p>
+<p>El nombre de la tarea de resumen raíz es el mismo que el nombre del proyecto.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Tarea de resumen raíz" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="tareas-programadas-manualmente">Tareas programadas manualmente <a href="#tareas-programadas-manualmente" class="heading-anchor">#</a></h2>
+<p>De forma predeterminada, todas las tareas en Ingantt son <strong>autoprogramadas</strong> — sus fechas de inicio y finalización son calculadas por el algoritmo de programación basándose en dependencias, restricciones y calendarios.</p>
+<p>Puede cambiar una tarea al modo <strong>Programada manualmente</strong> usando la casilla de verificación en el diálogo <strong>Propiedades de la tarea</strong>. Cuando una tarea está programada manualmente:</p>
+<ul>
+<li><strong>No es afectada por el algoritmo de programación</strong> — sus fechas las establece usted</li>
+<li>Puede ingresar fechas de <strong>Inicio</strong> y <strong>Fin</strong> usando los campos de fecha o el selector de fechas</li>
+<li>Puede escribir <strong>valores de texto</strong> (como &quot;Por definir&quot;, &quot;principios de marzo&quot; o &quot;2-3 semanas&quot;) en lugar de fechas reales cuando aún no está seguro del momento</li>
+<li>Se muestra un icono de pin para las tareas programadas manualmente en la lista de tareas</li>
+</ul>
+<blockquote>
+<p>Use tareas programadas manualmente como marcadores de posición cuando se desconoce el momento exacto, o cuando las fechas están fijadas por factores externos.</p>
+</blockquote>
+<h2 id="tareas-recurrentes">Tareas recurrentes <a href="#tareas-recurrentes" class="heading-anchor">#</a></h2>
+<p>Las tareas recurrentes representan actividades que se repiten en un horario regular, como reuniones diarias, revisiones semanales o informes mensuales. Puede crear tareas recurrentes a través del menú <strong>Insertar</strong> eligiendo <strong>Agregar tarea recurrente</strong>.</p>
+<p>Al crear una tarea recurrente, usted especifica:</p>
+<ul>
+<li><strong>Duración de la ocurrencia</strong> — La duración de cada ocurrencia individual</li>
+<li><strong>Patrón de recurrencia</strong> — Patrón diario, semanal, mensual o anual con una fecha de inicio y condición de fin (sin fin, finalizar en fecha, o finalizar después de N ocurrencias)</li>
+<li><strong>Solo días laborales</strong> — Limita las ocurrencias a días laborales</li>
+</ul>
+<p>Las tareas recurrentes aparecen como una tarea de resumen que contiene las ocurrencias individuales. Cada ocurrencia puede completarse de forma independiente. Al eliminar una tarea recurrente, se le solicita elegir si desea eliminar toda la serie o solo la ocurrencia seleccionada.</p>
+<h2 id="tareas-divididas">Tareas divididas <a href="#tareas-divididas" class="heading-anchor">#</a></h2>
+<p>Una tarea puede dividirse en partes no contiguas, representando interrupciones en el trabajo. Para dividir una tarea, selecciónela y elija <strong>Dividir tarea</strong> de la barra de herramientas o del menú contextual de clic derecho. El diálogo <strong>Dividir tarea</strong> ofrece dos modos:</p>
+<ul>
+<li><strong>Por duración</strong> — Especifique un desplazamiento de separación desde el inicio de la tarea y una duración de división</li>
+<li><strong>Por fechas</strong> — Especifique las fechas de detención y reanudación para la división</li>
+</ul>
+<p>Las tareas divididas se muestran como barras separadas con conectores de puntos entre las partes en el diagrama de Gantt. Cada parte dividida tiene su propio controlador de redimensionamiento, y arrastrar una parte para que se encuentre con una parte adyacente fusiona las dos. Para eliminar una división, seleccione la tarea y elija <strong>Eliminar división</strong> de la barra de herramientas.</p>
+<h2 id="tareas-inactivas">Tareas inactivas <a href="#tareas-inactivas" class="heading-anchor">#</a></h2>
+<p>Una tarea puede marcarse como <strong>inactiva</strong> desmarcando la casilla <strong>Activa</strong> en la pestaña <strong>General</strong> del diálogo <strong>Propiedades de la tarea</strong>, o usando la opción <strong>Desactivar tarea</strong> en el submenú <strong>Editar &gt; Visualización</strong> o en el menú contextual de clic derecho.</p>
+<p>Las tareas inactivas:</p>
+<ul>
+<li>Se excluyen de la programación — no afectan la ruta crítica ni otras tareas</li>
+<li>Se excluyen de los acumulados de tareas de resumen para duración, trabajo, costo y % completado</li>
+<li>Se excluyen de la detección de sobreasignación de recursos y la nivelación automática</li>
+<li>Se excluyen de los cálculos de Valor Ganado</li>
+</ul>
+<p>Las tareas inactivas permanecen visibles en la lista de tareas y el diagrama de Gantt pero aparecen con opacidad reducida y texto tachado. Sus fechas se conservan como referencia.</p>
+<p>Desactivar una tarea de resumen se aplica en cascada a todas sus subtareas. Reactivar una subtarea reactiva automáticamente su tarea de resumen padre si es necesario. Las tareas con progreso real (% completado &gt; 0) no pueden desactivarse.</p>
+<blockquote>
+<p>Use tareas inactivas para mantener escenarios hipotéticos en su cronograma sin afectar el plan activo.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -29,7 +29,7 @@ Each task has a **Calendar** property in the **Task Properties** dialog, set to 
 If the task's **Calendar** property is set to a calendar instead of **NONE**:
 
 - If a task is not assigned to any work resources, the task is scheduled according to the specified calendar.
-- If a task is assigned to work resources, the task calendar is **ignored** and the task is scheduled according to the intersection of the resource calendars only. To use the task calendar instead of resource calendars, check the **Ignore resource calendars** flag.
+- If a task is assigned to work resources, the task is scheduled according to the **intersection** of the task calendar and the resource calendars — work is only scheduled during times that are working in both the task calendar and all resource calendars. To use the task calendar alone, ignoring resource calendars entirely, check the **Ignore resource calendars** flag.
 
 ## Predefined Calendars
 

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kosten einrichten - Kosten planen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Richten Sie Fixkosten, Arbeits- und Materialressourcensätze, Kostensatztabellen, Kosten pro Einsatz und Kostenabgrenzungsmethoden ein.">
+  <link rel="canonical" href="https://help.ingantt.com/de/planning-costs/setting-up-costs/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Kosten einrichten">
+  <meta property="og:description" content="Richten Sie Fixkosten, Arbeits- und Materialressourcensätze, Kostensatztabellen, Kosten pro Einsatz und Kostenabgrenzungsmethoden ein.">
+  <meta property="og:url" content="https://help.ingantt.com/de/planning-costs/setting-up-costs/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Kosten einrichten">
+  <meta name="twitter:description" content="Richten Sie Fixkosten, Arbeits- und Materialressourcensätze, Kostensatztabellen, Kosten pro Einsatz und Kostenabgrenzungsmethoden ein.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/planning-costs/setting-up-costs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/" class="active" aria-current="page">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="kosten-einrichten">Kosten einrichten <a href="#kosten-einrichten" class="heading-anchor">#</a></h1>
+<p>Legen Sie Fixkosten für Vorgänge und Sätze für Ressourcen fest. Ingantt verwendet diese zusammen mit dem Terminplan, um die Kosten jedes Vorgangs und des gesamten Projekts zu berechnen.</p>
+<h2 id="vorgangs-fixkosten">Vorgangs-Fixkosten <a href="#vorgangs-fixkosten" class="heading-anchor">#</a></h2>
+<p>Sie können Kosten für einen Vorgang unabhängig von seinen Ressourcen festlegen, indem Sie das Feld <strong>Fixkosten</strong> auf dem Reiter <strong>Kosten und EV</strong> des Dialogs <strong>Vorgangseigenschaften</strong> ausfüllen. Verwenden Sie dies zum Beispiel, wenn jemand bereits eine Gesamtkostenschätzung für den Vorgang geliefert hat oder wenn der Vorgang zusätzliche Kosten über seine Ressourcenkosten hinaus hat.</p>
+<blockquote>
+<p>Wenn Sie die gleichen Fixkosten mehreren Vorgängen zuweisen müssen, erwägen Sie, eine Kostenressource zu erstellen und sie diesen Vorgängen zuzuweisen. Wenn sich die Kosten in Zukunft ändern, müssen Sie sie nur an einer Stelle aktualisieren.</p>
+</blockquote>
+<h2 id="arbeitsressourcenkosten">Arbeitsressourcenkosten <a href="#arbeitsressourcenkosten" class="heading-anchor">#</a></h2>
+<p><strong>Arbeits</strong>-Ressourcen sind der einzige Typ mit einem Kalender, daher werden ihre Kosten pro Stunde, pro Tag, pro Woche oder pro Monat angegeben (siehe <a href="/de/setting-up-project/project/#stunden-pro-tag-tage-pro-woche-tage-pro-monat">Stunden pro Tag, Tage pro Woche, Tage pro Monat</a>).</p>
+<p>Wenn Sie zum Beispiel eine Arbeitsressource mit einem <strong>Standardsatz</strong> von 100 € pro Stunde einem Vorgang mit einer 5-stündigen <strong>Dauer</strong> zuweisen, werden 500 € zu den <strong>Kosten</strong> des Vorgangs addiert.</p>
+<p>Arbeitsressourcen unterstützen auch einen <strong>Überstundensatz</strong> für Arbeit über die regulären Kalenderzeiten hinaus. Die Gesamtkosten werden wie folgt berechnet:</p>
+<blockquote>
+<p><strong>Kosten = Reguläre Arbeit × Standardsatz + Überstundenarbeit × Überstundensatz + Kosten pro Einsatz</strong></p>
+</blockquote>
+<p>Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, können Sie den <strong>Einheiten</strong>-Wert als eine vom Standard abweichende Zahl angeben. Dies beeinflusst die Kostenberechnung. Wenn zum Beispiel <strong>Einheiten</strong> 50 % beträgt, sind die berechneten Kosten für die Ressource im Vorgang halb so hoch wie bei 100 % Einheiten.</p>
+<h2 id="materialressourcenkosten">Materialressourcenkosten <a href="#materialressourcenkosten" class="heading-anchor">#</a></h2>
+<p>Für <strong>Material</strong>-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog <strong>Ressourceneigenschaften</strong> ein <strong>Materialbezeichnung</strong> festlegen, um die Einheit zu beschreiben.</p>
+<p>Materialressourcen unterstützen zwei Verbrauchsmodi:</p>
+<ul>
+<li><strong>Fest</strong> (Standard) — Eine Gesamtmenge unabhängig von der Vorgangsdauer (z. B. 5 Tonnen Zement)</li>
+<li><strong>Variabel</strong> — Ein Satz pro Zeiteinheit, der mit der Vorgangsdauer skaliert (z. B. 10 Liter Kraftstoff pro Tag)</li>
+</ul>
+<p>Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff&quot;-Materialressource hinzufügen und die Kosten pro Gallone im Dialog <strong>Ressourceneigenschaften</strong> angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als <strong>Einheiten</strong> an, und Ingantt addiert die berechneten Kraftstoffkosten zu den <strong>Kosten</strong> des Vorgangs.</p>
+<h2 id="kostenressource">Kostenressource <a href="#kostenressource" class="heading-anchor">#</a></h2>
+<p>Eine <strong>Kosten</strong>-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise&quot; = 800 € bei Vorgang A und 1.200 € bei Vorgang B).</p>
+<p>Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld <strong>Fixkosten</strong> für jeden Vorgang einzeln auszufüllen.</p>
+<h2 id="kostensatztabellen">Kostensatztabellen <a href="#kostensatztabellen" class="heading-anchor">#</a></h2>
+<p>Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Satzsätze für verschiedene Arbeitsarten zu pflegen.</p>
+<p>Kostensatztabellen werden auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong> konfiguriert. Bei der Zuweisung einer Ressource zu einem Vorgang können Sie im Dialog <strong>Ressourcenzuweisung bearbeiten</strong> auswählen, welche Kostensatztabelle verwendet werden soll.</p>
+<h2 id="kosten-pro-einsatz">Kosten pro Einsatz <a href="#kosten-pro-einsatz" class="heading-anchor">#</a></h2>
+<p>Ressourcen unterstützen ein Feld <strong>Kosten pro Einsatz</strong> — eine Pauschalgebühr, die jedes Mal berechnet wird, wenn die Ressource einem Vorgang zugewiesen wird, unabhängig von der geleisteten Arbeit. Bei Arbeitsressourcen werden die <strong>Kosten pro Einsatz</strong> mit den Zuweisungseinheiten multipliziert (z. B. 200 % Einheiten bedeutet, dass die Kosten pro Einsatz zweimal berechnet werden). <strong>Kosten pro Einsatz</strong> fallen immer zu Beginn des Vorgangs an.</p>
+<h2 id="kostenabgrenzung">Kostenabgrenzung <a href="#kostenabgrenzung" class="heading-anchor">#</a></h2>
+<p>Die Einstellung <strong>Kostenabgrenzung</strong> steuert, wann Kosten als Ist-Kosten erfasst werden, während die Arbeit fortschreitet:</p>
+<table>
+<thead>
+<tr>
+<th>Abgrenzung</th>
+<th>Wann Kosten erfasst werden</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Anfang</strong></td>
+<td>Volle Kosten, sobald Fortschritt verzeichnet wird (% abgeschlossen &gt; 0 %)</td>
+</tr>
+<tr>
+<td><strong>Anteilig</strong></td>
+<td>Proportional zum Fertigstellungsgrad (z. B. 50 % abgeschlossen = 50 % der Kosten)</td>
+</tr>
+<tr>
+<td><strong>Ende</strong></td>
+<td>Volle Kosten erst, wenn der Vorgang 100 % abgeschlossen erreicht</td>
+</tr>
+</tbody>
+</table>
+<p>Ressourcen haben eine <strong>Kostenabgrenzung</strong>-Einstellung auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong>. Vorgänge haben eine <strong>Fixkosten-Abgrenzung</strong>-Einstellung auf dem Reiter <strong>Kosten und EV</strong> des Dialogs <strong>Vorgangseigenschaften</strong>. Das Projekt hat eine <strong>Standard-Fixkosten-Abgrenzung</strong>-Einstellung auf dem Reiter <strong>Sonstiges</strong> des Dialogs <strong>Projekteigenschaften</strong>.</p>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

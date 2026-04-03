@@ -5,4 +5,7 @@
 ## Languages
 
 - [English](https://help.ingantt.com/en/llms.txt)
+- [Français](https://help.ingantt.com/fr/llms.txt)
+- [Deutsch](https://help.ingantt.com/de/llms.txt)
+- [Español](https://help.ingantt.com/es/llms.txt)
 - [Українська](https://help.ingantt.com/uk/llms.txt)

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Earned Value - Fortschritt verfolgen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Messen Sie die Projektleistung mit Earned-Value-Management-Kennzahlen wie SPI, CPI, EAC und Abweichungsindikatoren.">
+  <link rel="canonical" href="https://help.ingantt.com/de/tracking/earned-value/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Earned Value">
+  <meta property="og:description" content="Messen Sie die Projektleistung mit Earned-Value-Management-Kennzahlen wie SPI, CPI, EAC und Abweichungsindikatoren.">
+  <meta property="og:url" content="https://help.ingantt.com/de/tracking/earned-value/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Earned Value">
+  <meta name="twitter:description" content="Messen Sie die Projektleistung mit Earned-Value-Management-Kennzahlen wie SPI, CPI, EAC und Abweichungsindikatoren.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/earned-value/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/earned-value/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/earned-value/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/earned-value/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/" class="active" aria-current="page">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="earned-value">Earned Value <a href="#earned-value" class="heading-anchor">#</a></h1>
+<p>Earned-Value-Management (EVM) kombiniert Umfangs-, Termin- und Kostenmessungen, um zu beurteilen, ob Ihr Projekt im Zeitplan und im Budget liegt. Legen Sie ein Statusdatum und einen Basisplan fest, und Ingantt berechnet die branchenüblichen EVM-Kennzahlen.</p>
+<h2 id="statusdatum">Statusdatum <a href="#statusdatum" class="heading-anchor">#</a></h2>
+<p>Das <strong>Statusdatum</strong> definiert das Datum, das für die Fortschrittsverfolgung und Earned-Value-Berechnungen verwendet wird. Wenn es gesetzt ist, wird eine grüne vertikale Linie im Gantt-Diagramm an diesem Datum angezeigt.</p>
+<p>Wenn das Statusdatum nicht gesetzt ist, wird das aktuelle Datum für Berechnungen verwendet. Sie können das Statusdatum im Dialog <strong>Earned-Value-Optionen</strong> festlegen, der über das Menü <strong>Projekt</strong> zugänglich ist.</p>
+<h2 id="earned-value-management">Earned-Value-Management <a href="#earned-value-management" class="heading-anchor">#</a></h2>
+<p>Ingantt unterstützt Earned-Value-Management — eine Projektmanagementtechnik, die Umfangs-, Termin- und Kostendaten integriert, um die Projektleistung zu beurteilen.</p>
+<h3 id="earned-value-einrichten">Earned Value einrichten <a href="#earned-value-einrichten" class="heading-anchor">#</a></h3>
+<ol>
+<li>Erstellen Sie einen <a href="/de/tracking/baselines/#basisplan-festlegen">Basisplan</a>, um den geplanten Terminplan und die Kosten zu erfassen.</li>
+<li>Legen Sie das <strong>Statusdatum</strong> im Dialog <strong>Earned-Value-Optionen</strong> fest (zugänglich über das Menü <strong>Projekt</strong>) oder lassen Sie es auf das aktuelle Datum voreingestellt.</li>
+<li>Aktualisieren Sie die <a href="/de/tracking/progress/#-abgeschlossen">% Abgeschlossen</a>-Werte der Vorgänge, während die Arbeit voranschreitet.</li>
+</ol>
+<h3 id="verfügbare-evm-kennzahlen">Verfügbare EVM-Kennzahlen <a href="#verfügbare-evm-kennzahlen" class="heading-anchor">#</a></h3>
+<p>Die folgenden EVM-Spalten können über den Dialog <strong>Optionen</strong> zur Vorgangsliste hinzugefügt werden:</p>
+<table>
+<thead>
+<tr>
+<th>Kennzahl</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BCWS</strong></td>
+<td>Budgetierte Kosten der geplanten Arbeit (Planned Value)</td>
+</tr>
+<tr>
+<td><strong>BCWP</strong></td>
+<td>Budgetierte Kosten der geleisteten Arbeit (Earned Value)</td>
+</tr>
+<tr>
+<td><strong>ACWP</strong></td>
+<td>Tatsächliche Kosten der geleisteten Arbeit</td>
+</tr>
+<tr>
+<td><strong>BAC</strong></td>
+<td>Budget bei Abschluss</td>
+</tr>
+<tr>
+<td><strong>EAC</strong></td>
+<td>Schätzung bei Abschluss</td>
+</tr>
+<tr>
+<td><strong>VAC</strong></td>
+<td>Abweichung bei Abschluss</td>
+</tr>
+<tr>
+<td><strong>SV</strong></td>
+<td>Terminabweichung</td>
+</tr>
+<tr>
+<td><strong>CV</strong></td>
+<td>Kostenabweichung</td>
+</tr>
+<tr>
+<td><strong>SPI</strong></td>
+<td>Terminleistungsindex</td>
+</tr>
+<tr>
+<td><strong>CPI</strong></td>
+<td>Kostenleistungsindex</td>
+</tr>
+<tr>
+<td><strong>TCPI</strong></td>
+<td>Noch-zu-erreichender Leistungsindex</td>
+</tr>
+<tr>
+<td><strong>SV%</strong></td>
+<td>Terminabweichung in Prozent</td>
+</tr>
+<tr>
+<td><strong>CV%</strong></td>
+<td>Kostenabweichung in Prozent</td>
+</tr>
+</tbody>
+</table>
+<h3 id="earned-value-methode">Earned-Value-Methode <a href="#earned-value-methode" class="heading-anchor">#</a></h3>
+<p>Jeder Vorgang kann eine von zwei Methoden zur Berechnung des BCWP (Earned Value) verwenden:</p>
+<ul>
+<li><strong>% Abgeschlossen</strong> (Standard) — Verwendet den Fertigstellungsgrad des Vorgangs zur Berechnung des Earned Value.</li>
+<li><strong>Physisch % Abgeschlossen</strong> — Verwendet einen separat erfassten physischen Fertigstellungsgrad. Nützlich für lieferungsbasierte Fortschrittsmessung.</li>
+</ul>
+<p>Legen Sie die Methode für einzelne Vorgänge auf dem Reiter <strong>Kosten und EV</strong> des Dialogs <strong>Vorgangseigenschaften</strong> fest. Ändern Sie die Standardmethode für neue Vorgänge im Dialog <strong>Earned-Value-Optionen</strong>.</p>
+<h3 id="earned-value-basisplan">Earned-Value-Basisplan <a href="#earned-value-basisplan" class="heading-anchor">#</a></h3>
+<p>EVM-Berechnungen verwenden einen bestimmten Basisplan. Sie können im Dialog <strong>Earned-Value-Optionen</strong> wählen, welcher Basisplan (<code>Basisplan 0</code> bis <code>Basisplan 10</code>) für Earned Value verwendet wird. Der Standard ist <code>Basisplan 0</code>.</p>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

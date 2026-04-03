@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vorgänge - Terminplan erstellen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Erfahren Sie mehr über Vorgangsarten in Ingantt, einschließlich Sammelvorgänge, manuell geplante Vorgänge, wiederkehrende Vorgänge, geteilte Vorgänge und inaktive Vorgänge.">
+  <link rel="canonical" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Vorgänge">
+  <meta property="og:description" content="Erfahren Sie mehr über Vorgangsarten in Ingantt, einschließlich Sammelvorgänge, manuell geplante Vorgänge, wiederkehrende Vorgänge, geteilte Vorgänge und inaktive Vorgänge.">
+  <meta property="og:url" content="https://help.ingantt.com/de/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vorgänge">
+  <meta name="twitter:description" content="Erfahren Sie mehr über Vorgangsarten in Ingantt, einschließlich Sammelvorgänge, manuell geplante Vorgänge, wiederkehrende Vorgänge, geteilte Vorgänge und inaktive Vorgänge.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/" class="active" aria-current="page">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="vorgänge">Vorgänge <a href="#vorgänge" class="heading-anchor">#</a></h1>
+<p>Jeder Terminplan beginnt mit Vorgängen. Definieren Sie, was erledigt werden muss, wie lange es dauern wird und wann es fällig ist. Sobald Ihre Vorgänge eingetragen sind, nimmt Ihre Projektzeitleiste im Gantt-Diagramm Gestalt an.</p>
+<h2 id="sammelvorgänge">Sammelvorgänge <a href="#sammelvorgänge" class="heading-anchor">#</a></h2>
+<p>Sammelvorgänge helfen Ihnen, Ihre Vorgänge zu organisieren, indem sie diese gruppieren. Um einen Sammelvorgang zu erstellen, wählen Sie die Vorgänge aus, die Sie gruppieren möchten, und klicken Sie dann auf die Schaltfläche <strong>Einzug vergrößern</strong> in der Symbolleiste, um sie einzurücken. Um einen Sammelvorgang wieder in einen regulären Vorgang umzuwandeln, wählen Sie alle seine Teilvorgänge aus und klicken Sie auf die Schaltfläche <strong>Einzug verkleinern</strong>, um die Einrückung zu entfernen.</p>
+<p>Da Sammelvorgänge andere Vorgänge gruppieren, werden ihre Eigenschaften von ihren Teilvorgängen abgeleitet und nicht direkt festgelegt. Ihre Dauer stellt die Gesamtdauer aller Vorgänge innerhalb der Gruppe dar: Das Enddatum eines Sammelvorgangs ist das späteste Enddatum seiner Teilvorgänge.</p>
+<p>Ein Sammelvorgang zeigt außerdem den Gesamtfertigstellungsgrad, die Gesamtkosten und die Gesamtarbeit seiner Teilvorgänge an.</p>
+<p>Im Gantt-Diagramm werden Sammelvorgänge als schwarze Balken dargestellt. In der Vorgangsliste können Sie Sammelvorgänge <strong>aufklappen</strong> oder <strong>zuklappen</strong>, um ihre Teilvorgänge ein- oder auszublenden.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Sammelvorgang" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="projektsammelvorgang">Projektsammelvorgang <a href="#projektsammelvorgang" class="heading-anchor">#</a></h2>
+<p>In Ingantt gibt es immer einen Sammelvorgang für Ihr gesamtes Projekt. Dieser Vorgang hat die Nummer 0 und steht über allen Ihren Vorgängen.</p>
+<p>Der Projektsammelvorgang ist möglicherweise standardmäßig nicht sichtbar. Um dies zu ändern, aktivieren Sie <strong>Projektsammelvorgang anzeigen</strong> im Menü <strong>Ansicht</strong> oder im Dialog <strong>Optionen</strong>.</p>
+<p>Wie jeder andere Sammelvorgang zeigt der Projektsammelvorgang die Gesamtdaten seiner Teilvorgänge an. Da alle Vorgänge in Ihrem Terminplan seine Teilvorgänge sind, zeigt der Projektsammelvorgang die Gesamtdaten Ihres gesamten Projekts an.</p>
+<p>Der Name des Projektsammelvorgangs entspricht dem Namen des Projekts.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Projektsammelvorgang" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="manuell-geplante-vorgänge">Manuell geplante Vorgänge <a href="#manuell-geplante-vorgänge" class="heading-anchor">#</a></h2>
+<p>Standardmäßig werden alle Vorgänge in Ingantt <strong>automatisch geplant</strong> — ihre Start- und Endtermine werden vom Planungsalgorithmus auf Basis von Abhängigkeiten, Einschränkungen und Kalendern berechnet.</p>
+<p>Sie können einen Vorgang über das Kontrollkästchen im Dialog <strong>Vorgangseigenschaften</strong> in den Modus <strong>Manuell geplant</strong> umschalten. Wenn ein Vorgang manuell geplant wird:</p>
+<ul>
+<li>Er wird <strong>nicht vom Planungsalgorithmus beeinflusst</strong> — seine Termine werden von Ihnen festgelegt</li>
+<li>Sie können <strong>Anfang</strong>- und <strong>Ende</strong>-Termine über die Datumsfelder oder die Datumsauswahl eingeben</li>
+<li>Sie können <strong>Textwerte</strong> (wie „TBD&quot;, „Anfang März&quot; oder „2–3 Wochen&quot;) anstelle tatsächlicher Termine eingeben, wenn Sie sich über den Zeitpunkt noch nicht sicher sind</li>
+<li>Ein Nadelsymbol wird für manuell geplante Vorgänge in der Vorgangsliste angezeigt</li>
+</ul>
+<blockquote>
+<p>Verwenden Sie manuell geplante Vorgänge als Platzhalter, wenn der genaue Zeitpunkt unbekannt ist oder wenn Termine durch externe Faktoren festgelegt werden.</p>
+</blockquote>
+<h2 id="wiederkehrende-vorgänge">Wiederkehrende Vorgänge <a href="#wiederkehrende-vorgänge" class="heading-anchor">#</a></h2>
+<p>Wiederkehrende Vorgänge stellen Aktivitäten dar, die sich nach einem regelmäßigen Zeitplan wiederholen, wie tägliche Stand-up-Meetings, wöchentliche Reviews oder monatliche Berichte. Sie können wiederkehrende Vorgänge über das Menü <strong>Einfügen</strong> erstellen, indem Sie <strong>Wiederkehrenden Vorgang hinzufügen</strong> wählen.</p>
+<p>Beim Erstellen eines wiederkehrenden Vorgangs legen Sie Folgendes fest:</p>
+<ul>
+<li><strong>Dauer des Vorkommens</strong> — Die Dauer jedes einzelnen Vorkommens</li>
+<li><strong>Wiederholungsmuster</strong> — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Vorkommnissen)</li>
+<li><strong>Nur Arbeitstage</strong> — Beschränkt Vorkommnisse auf Arbeitstage</li>
+</ul>
+<p>Wiederkehrende Vorgänge erscheinen als Sammelvorgang, der die einzelnen Vorkommnisse enthält. Jedes Vorkommnis kann unabhängig abgeschlossen werden. Beim Löschen eines wiederkehrenden Vorgangs werden Sie gefragt, ob Sie die gesamte Serie oder nur das ausgewählte Vorkommnis löschen möchten.</p>
+<h2 id="geteilte-vorgänge">Geteilte Vorgänge <a href="#geteilte-vorgänge" class="heading-anchor">#</a></h2>
+<p>Ein Vorgang kann in nicht zusammenhängende Teile aufgeteilt werden, die Unterbrechungen in der Arbeit darstellen. Um einen Vorgang zu teilen, wählen Sie ihn aus und wählen Sie <strong>Vorgang teilen</strong> aus der Symbolleiste oder dem Rechtsklick-Kontextmenü. Der Dialog <strong>Vorgang teilen</strong> bietet zwei Modi:</p>
+<ul>
+<li><strong>Nach Dauer</strong> — Geben Sie einen Versatzwert vom Vorgangsstart und eine Teilungsdauer an</li>
+<li><strong>Nach Datum</strong> — Geben Sie die Stopp- und Wiederaufnahmedaten für die Teilung an</li>
+</ul>
+<p>Geteilte Vorgänge werden im Gantt-Diagramm als separate Balken mit gepunkteten Verbindungslinien zwischen den Teilen angezeigt. Jeder geteilte Teil hat einen eigenen Größenänderungsgriff, und wenn ein Teil so verschoben wird, dass er einen benachbarten Teil berührt, werden die beiden zusammengeführt. Um eine Teilung zu entfernen, wählen Sie den Vorgang aus und wählen Sie <strong>Teilung entfernen</strong> aus der Symbolleiste.</p>
+<h2 id="inaktive-vorgänge">Inaktive Vorgänge <a href="#inaktive-vorgänge" class="heading-anchor">#</a></h2>
+<p>Ein Vorgang kann als <strong>inaktiv</strong> markiert werden, indem das Kontrollkästchen <strong>Aktiv</strong> auf dem Reiter <strong>Allgemein</strong> des Dialogs <strong>Vorgangseigenschaften</strong> deaktiviert wird, oder über die Option <strong>Vorgang deaktivieren</strong> im Untermenü <strong>Bearbeiten &gt; Anzeige</strong> oder im Rechtsklick-Kontextmenü.</p>
+<p>Inaktive Vorgänge sind:</p>
+<ul>
+<li>Von der Planung ausgeschlossen — sie beeinflussen weder den kritischen Pfad noch andere Vorgänge</li>
+<li>Von den Zusammenfassungen des Sammelvorgangs für Dauer, Arbeit, Kosten und % Complete ausgeschlossen</li>
+<li>Von der Erkennung von Ressourcenüberlastung und der automatischen Kapazitätsabgleichung ausgeschlossen</li>
+<li>Von Earned-Value-Berechnungen ausgeschlossen</li>
+</ul>
+<p>Inaktive Vorgänge bleiben in der Vorgangsliste und im Gantt-Diagramm sichtbar, werden jedoch mit reduzierter Deckkraft und durchgestrichenem Text angezeigt. Ihre Termine werden als Referenz beibehalten.</p>
+<p>Das Deaktivieren eines Sammelvorgangs wirkt sich auf alle seine Teilvorgänge aus. Das Reaktivieren eines Teilvorgangs reaktiviert bei Bedarf automatisch seinen übergeordneten Sammelvorgang. Vorgänge mit tatsächlichem Fortschritt (% Complete &gt; 0) können nicht deaktiviert werden.</p>
+<blockquote>
+<p>Verwenden Sie inaktive Vorgänge, um „Was-wäre-wenn&quot;-Szenarien in Ihrem Terminplan zu behalten, ohne den aktiven Plan zu beeinflussen.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

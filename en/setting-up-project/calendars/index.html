@@ -18,6 +18,9 @@
   <meta name="twitter:description" content="Set up project, resource, and task calendars with custom work weeks, holidays, and recurring exceptions.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/setting-up-project/calendars/">
   <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
   <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/calendars/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -158,6 +161,9 @@
       <div class="sidebar-controls">
         <select class="lang-select" aria-label="Language">
   <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
   <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
 </select>
 <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
@@ -195,7 +201,7 @@
 <p>If the task's <strong>Calendar</strong> property is set to a calendar instead of <strong>NONE</strong>:</p>
 <ul>
 <li>If a task is not assigned to any work resources, the task is scheduled according to the specified calendar.</li>
-<li>If a task is assigned to work resources, the task calendar is <strong>ignored</strong> and the task is scheduled according to the intersection of the resource calendars only. To use the task calendar instead of resource calendars, check the <strong>Ignore resource calendars</strong> flag.</li>
+<li>If a task is assigned to work resources, the task is scheduled according to the <strong>intersection</strong> of the task calendar and the resource calendars — work is only scheduled during times that are working in both the task calendar and all resource calendars. To use the task calendar alone, ignoring resource calendars entirely, check the <strong>Ignore resource calendars</strong> flag.</li>
 </ul>
 <h2 id="predefined-calendars">Predefined Calendars <a href="#predefined-calendars" class="heading-anchor">#</a></h2>
 <p>Ingantt has 3 predefined calendars, one of which (<strong>Standard</strong>) is assigned to the project by default.</p>

@@ -20,7 +20,7 @@ Ingantt automatically detects critical tasks. If the **Highlight critical tasks*
 
 Tasks with negative slack also display a warning icon in the task list, indicating a scheduling conflict. This typically occurs when a **Start no later than** or **Finish no later than** constraint conflicts with the task's dependencies.
 
-![Critical](../building-schedule/images/tasks/critical.png)
+![Critical](/images/building-schedule/tasks/critical.png)
 
 ## Critical Path Options
 

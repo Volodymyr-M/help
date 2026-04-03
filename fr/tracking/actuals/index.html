@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Valeurs réelles - Suivi de l'avancement - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Découvrez les valeurs réelles et restantes pour la durée, le travail, le coût et les dates, et apprenez à configurer les colonnes de tâches.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/tracking/actuals/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Valeurs réelles">
+  <meta property="og:description" content="Découvrez les valeurs réelles et restantes pour la durée, le travail, le coût et les dates, et apprenez à configurer les colonnes de tâches.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/tracking/actuals/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Valeurs réelles">
+  <meta name="twitter:description" content="Découvrez les valeurs réelles et restantes pour la durée, le travail, le coût et les dates, et apprenez à configurer les colonnes de tâches.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/actuals/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/actuals/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/actuals/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/actuals/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/" class="active" aria-current="page">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="valeurs-réelles">Valeurs réelles <a href="#valeurs-réelles" class="heading-anchor">#</a></h1>
+<p>Au fur et à mesure de l'avancement des travaux et de la mise à jour du <a href="/fr/tracking/progress/#-complete">% Complete</a>, Ingantt calcule automatiquement les valeurs réelles et restantes pour la durée, le travail, le coût et les dates. Ces champs vous permettent de voir précisément ce qui a été dépensé, ce qui reste et comment le projet se situe par rapport au plan.</p>
+<p>Les colonnes réelles et restantes les plus courantes sont <strong>Actual Cost</strong> / <strong>Remaining Cost</strong>, <strong>Actual Work</strong> / <strong>Remaining Work</strong>, et <strong>Actual Duration</strong> / <strong>Remaining Duration</strong>. En consultant ces valeurs sur la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a>, vous pouvez visualiser d'un coup d'œil les totaux de l'ensemble du projet — combien a été dépensé, quel effort a été fourni et combien il reste à faire. Assurez-vous que la tâche récapitulative racine est visible : cochez <strong>Show root summary task</strong> dans le menu <strong>View</strong> ou dans la boîte de dialogue <strong>Options</strong>.</p>
+<h2 id="afficher-les-colonnes-réelles-et-restantes">Afficher les colonnes réelles et restantes <a href="#afficher-les-colonnes-réelles-et-restantes" class="heading-anchor">#</a></h2>
+<p>Les colonnes réelles et restantes ne sont pas visibles par défaut. Pour les ajouter à la liste des tâches, ouvrez la boîte de dialogue <strong>Options</strong> (onglet <strong>Task Columns</strong>) et activez les colonnes souhaitées. Vous pouvez également faire un clic droit sur un en-tête de colonne dans la grille des tâches pour accéder rapidement aux paramètres des colonnes.</p>
+<h3 id="durée">Durée <a href="#durée" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Duration</strong> — Le temps de travail consacré à une tâche jusqu'à présent. Calculé comme la durée de la tâche multipliée par son % Complete.</li>
+<li><strong>Remaining Duration</strong> — Le temps de travail encore nécessaire pour terminer la tâche : Durée − Actual Duration.</li>
+</ul>
+<p>Par exemple, une tâche de 10 jours achevée à 40 % a une Actual Duration de 4 jours et une Remaining Duration de 6 jours.</p>
+<h3 id="travail">Travail <a href="#travail" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Work</strong> — L'effort total (en heures) que les ressources ont consacré à une tâche. Lorsque l'option <strong>Updating task status updates resource status</strong> est activée dans les paramètres du projet (option par défaut), l'Actual Work est mis à jour proportionnellement lorsque vous modifiez le % Complete.</li>
+<li><strong>Remaining Work</strong> — L'effort encore nécessaire pour terminer la tâche : Work − Actual Work.</li>
+</ul>
+<h3 id="coût">Coût <a href="#coût" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Cost</strong> — Les coûts engagés jusqu'à présent : la somme des coûts fixes comptabilisés et des coûts de ressources comptabilisés. Le mode de comptabilisation des coûts dépend du paramètre <strong>Cost Accrual</strong> de chaque ressource :
+<ul>
+<li><strong>Start</strong> — La totalité du coût est comptabilisée lorsque l'Actual Start est défini.</li>
+<li><strong>Prorated</strong> — Le coût est comptabilisé proportionnellement en fonction de l'avancement réel du travail.</li>
+<li><strong>End</strong> — Le coût n'est comptabilisé que lorsque la tâche atteint 100 % d'achèvement.</li>
+</ul>
+</li>
+<li><strong>Remaining Cost</strong> — Le budget encore nécessaire pour terminer la tâche : Total Cost − Actual Cost.</li>
+</ul>
+<h3 id="dates">Dates <a href="#dates" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Start</strong> — La date à laquelle le travail a réellement commencé. Automatiquement définie à la date de début planifiée de la tâche lorsque le % Complete dépasse 0 %.</li>
+<li><strong>Actual Finish</strong> — La date à laquelle le travail a réellement été achevé. Automatiquement définie à la date de fin planifiée de la tâche lorsque le % Complete atteint 100 %.</li>
+</ul>
+<h3 id="heures-supplémentaires">Heures supplémentaires <a href="#heures-supplémentaires" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Overtime Work</strong> — Heures supplémentaires déjà effectuées sur la tâche.</li>
+<li><strong>Remaining Overtime Work</strong> — Heures supplémentaires encore prévues.</li>
+<li><strong>Actual Overtime Cost</strong> — Coûts des heures supplémentaires déjà engagés.</li>
+<li><strong>Remaining Overtime Cost</strong> — Coûts des heures supplémentaires encore prévus.</li>
+</ul>
+<h2 id="comment-les-valeurs-réelles-sont-calculées">Comment les valeurs réelles sont calculées <a href="#comment-les-valeurs-réelles-sont-calculées" class="heading-anchor">#</a></h2>
+<p>Tous les champs réels et restants maintiennent la relation :</p>
+<blockquote>
+<p><strong>Total = Réel + Restant</strong></p>
+</blockquote>
+<p>Lorsque vous modifiez une valeur, Ingantt met à jour les autres pour maintenir la cohérence. Le flux de travail le plus courant consiste à mettre à jour le <strong>% Complete</strong>, ce qui se répercute automatiquement sur tous les champs réels et restants :</p>
+<ol>
+<li><strong>Actual Duration</strong> et <strong>Remaining Duration</strong> sont recalculées à partir du nouveau pourcentage.</li>
+<li><strong>Actual Work</strong> et <strong>Remaining Work</strong> sont mis à jour (si le paramètre du projet est activé).</li>
+<li><strong>Actual Start</strong> et <strong>Actual Finish</strong> sont définis en fonction de l'avancement.</li>
+<li><strong>Actual Cost</strong> et <strong>Remaining Cost</strong> sont recalculés selon la méthode de comptabilisation.</li>
+</ol>
+<p>Pour les tâches récapitulatives, <strong>Actual Work</strong>, <strong>Remaining Work</strong>, <strong>Actual Cost</strong> et <strong>Remaining Cost</strong> sont agrégés (sommés) à partir de toutes les tâches enfants. <strong>Actual Start</strong> correspond au début réel le plus précoce parmi les tâches enfants, et <strong>Actual Finish</strong> à la fin réelle la plus tardive.</p>
+<h2 id="colonnes-de-tâches">Colonnes de tâches <a href="#colonnes-de-tâches" class="heading-anchor">#</a></h2>
+<p>Au-delà des valeurs réelles et restantes, Ingantt prend en charge un large éventail de colonnes de tâches — données de planification, informations sur le chemin critique, coût, travail, métriques de valeur acquise, références de base, champs personnalisés et codes hiérarchiques. Toutes les colonnes peuvent être activées, désactivées et réorganisées via la boîte de dialogue <strong>Options</strong> (onglet <strong>Task Columns</strong>). Vous pouvez également faire un clic droit sur un en-tête de colonne dans la grille des tâches pour accéder rapidement aux paramètres des colonnes.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tâches - Construction d'un planning - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Découvrez les types de tâches dans Ingantt, notamment les tâches récapitulatives, les tâches planifiées manuellement, les tâches récurrentes, les tâches fractionnées et les tâches inactives.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tâches">
+  <meta property="og:description" content="Découvrez les types de tâches dans Ingantt, notamment les tâches récapitulatives, les tâches planifiées manuellement, les tâches récurrentes, les tâches fractionnées et les tâches inactives.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tâches">
+  <meta name="twitter:description" content="Découvrez les types de tâches dans Ingantt, notamment les tâches récapitulatives, les tâches planifiées manuellement, les tâches récurrentes, les tâches fractionnées et les tâches inactives.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/" class="active" aria-current="page">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="tâches">Tâches <a href="#tâches" class="heading-anchor">#</a></h1>
+<p>Tout planning commence par des tâches. Définissez ce qui doit être fait, combien de temps cela prendra et quand cela doit être terminé. Une fois vos tâches en place, la ligne temporelle de votre projet prend forme dans le diagramme de Gantt.</p>
+<h2 id="tâches-récapitulatives">Tâches récapitulatives <a href="#tâches-récapitulatives" class="heading-anchor">#</a></h2>
+<p>Les tâches récapitulatives vous aident à organiser vos tâches en les regroupant. Pour créer une tâche récapitulative, sélectionnez les tâches que vous souhaitez regrouper, puis cliquez sur le bouton <strong>Increase Indent</strong> dans la barre d'outils pour les indenter. Pour reconvertir une tâche récapitulative en tâche ordinaire, sélectionnez toutes ses sous-tâches et cliquez sur le bouton <strong>Decrease Indent</strong> pour supprimer leur indentation.</p>
+<p>Puisque les tâches récapitulatives regroupent d'autres tâches, leurs propriétés sont dérivées de leurs sous-tâches plutôt que définies directement. Leur durée représente la durée globale de toutes les tâches du groupe : la date de fin d'une tâche récapitulative correspond à la date de fin la plus tardive parmi ses sous-tâches.</p>
+<p>Une tâche récapitulative affiche également le pourcentage d'achèvement global, le coût total et le travail total de ses sous-tâches.</p>
+<p>Dans le diagramme de Gantt, les tâches récapitulatives sont représentées par des barres noires. Dans la liste des tâches, vous pouvez <strong>développer</strong> ou <strong>réduire</strong> les tâches récapitulatives pour afficher ou masquer leurs sous-tâches.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Summary" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="tâche-récapitulative-racine">Tâche récapitulative racine <a href="#tâche-récapitulative-racine" class="heading-anchor">#</a></h2>
+<p>Dans Ingantt, il existe toujours une tâche récapitulative pour l'ensemble de votre projet. Cette tâche porte le numéro 0 et se situe au-dessus de toutes vos tâches.</p>
+<p>La tâche récapitulative racine peut ne pas être visible par défaut. Pour modifier ce comportement, cochez <strong>Show root summary task</strong> dans le menu <strong>View</strong> ou dans la boîte de dialogue <strong>Options</strong>.</p>
+<p>Comme toute autre tâche récapitulative, la tâche récapitulative racine affiche les données globales de ses sous-tâches. Puisque toutes les tâches de votre planning sont ses sous-tâches, elle affiche les données globales de l'ensemble de votre projet.</p>
+<p>Le nom de la tâche récapitulative racine est identique au nom du projet.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Root Summary Task" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="tâches-planifiées-manuellement">Tâches planifiées manuellement <a href="#tâches-planifiées-manuellement" class="heading-anchor">#</a></h2>
+<p>Par défaut, toutes les tâches dans Ingantt sont <strong>planifiées automatiquement</strong> — leurs dates de début et de fin sont calculées par l'algorithme de planification en fonction des dépendances, des contraintes et des calendriers.</p>
+<p>Vous pouvez basculer une tâche en mode <strong>Manually scheduled</strong> à l'aide de la case à cocher dans la boîte de dialogue <strong>Task Properties</strong>. Lorsqu'une tâche est planifiée manuellement :</p>
+<ul>
+<li>Elle <strong>n'est pas affectée par l'algorithme de planification</strong> — ses dates sont définies par vous</li>
+<li>Vous pouvez saisir les dates de <strong>Start</strong> et <strong>Finish</strong> à l'aide des champs de date ou du sélecteur de date</li>
+<li>Vous pouvez saisir des <strong>valeurs textuelles</strong> (telles que « À déterminer », « début mars » ou « 2-3 semaines ») au lieu de dates réelles lorsque vous n'êtes pas encore sûr du calendrier</li>
+<li>Une icône d'épingle est affichée pour les tâches planifiées manuellement dans la liste des tâches</li>
+</ul>
+<blockquote>
+<p>Utilisez les tâches planifiées manuellement comme espaces réservés lorsque le calendrier exact est inconnu, ou lorsque les dates sont imposées par des facteurs externes.</p>
+</blockquote>
+<h2 id="tâches-récurrentes">Tâches récurrentes <a href="#tâches-récurrentes" class="heading-anchor">#</a></h2>
+<p>Les tâches récurrentes représentent des activités qui se répètent selon un calendrier régulier, comme les réunions quotidiennes, les revues hebdomadaires ou les rapports mensuels. Vous pouvez créer des tâches récurrentes via le menu <strong>Insert</strong> en choisissant <strong>Add recurring task</strong>.</p>
+<p>Lors de la création d'une tâche récurrente, vous spécifiez :</p>
+<ul>
+<li><strong>Occurrence duration</strong> — La durée de chaque occurrence individuelle</li>
+<li><strong>Recurrence pattern</strong> — Un schéma quotidien, hebdomadaire, mensuel ou annuel avec une date de début et une condition de fin (pas de fin, fin à une date donnée, ou fin après N occurrences)</li>
+<li><strong>Working days only</strong> — Limite les occurrences aux jours ouvrés</li>
+</ul>
+<p>Les tâches récurrentes apparaissent sous forme de tâche récapitulative contenant les occurrences individuelles. Chaque occurrence peut être complétée indépendamment. La suppression d'une tâche récurrente vous invite à choisir entre supprimer la série entière ou uniquement l'occurrence sélectionnée.</p>
+<h2 id="tâches-fractionnées">Tâches fractionnées <a href="#tâches-fractionnées" class="heading-anchor">#</a></h2>
+<p>Une tâche peut être fractionnée en parties non contiguës, représentant des interruptions de travail. Pour fractionner une tâche, sélectionnez-la et choisissez <strong>Split task</strong> dans la barre d'outils ou le menu contextuel du clic droit. La boîte de dialogue <strong>Split Task</strong> propose deux modes :</p>
+<ul>
+<li><strong>By duration</strong> — Spécifiez un décalage à partir du début de la tâche et une durée de fractionnement</li>
+<li><strong>By dates</strong> — Spécifiez les dates d'arrêt et de reprise du fractionnement</li>
+</ul>
+<p>Les tâches fractionnées s'affichent sous forme de barres séparées reliées par des connecteurs en pointillés dans le diagramme de Gantt. Chaque partie fractionnée possède sa propre poignée de redimensionnement, et faire glisser une partie jusqu'à ce qu'elle rejoigne une partie adjacente fusionne les deux. Pour supprimer un fractionnement, sélectionnez la tâche et choisissez <strong>Remove split</strong> dans la barre d'outils.</p>
+<h2 id="tâches-inactives">Tâches inactives <a href="#tâches-inactives" class="heading-anchor">#</a></h2>
+<p>Une tâche peut être marquée comme <strong>inactive</strong> en décochant la case <strong>Active</strong> dans l'onglet <strong>General</strong> de la boîte de dialogue <strong>Task Properties</strong>, ou en utilisant l'option <strong>Inactivate task</strong> dans le sous-menu <strong>Edit &gt; Display</strong> ou le menu contextuel du clic droit.</p>
+<p>Les tâches inactives sont :</p>
+<ul>
+<li>Exclues de la planification — elles n'affectent ni le chemin critique ni les autres tâches</li>
+<li>Exclues des cumuls des tâches récapitulatives pour la durée, le travail, le coût et le % d'achèvement</li>
+<li>Exclues de la détection de surallocation des ressources et du nivellement automatique</li>
+<li>Exclues des calculs de Valeur acquise</li>
+</ul>
+<p>Les tâches inactives restent visibles dans la liste des tâches et le diagramme de Gantt, mais apparaissent avec une opacité réduite et un texte barré. Leurs dates sont conservées à titre de référence.</p>
+<p>L'inactivation d'une tâche récapitulative se propage à toutes ses sous-tâches. La réactivation d'une sous-tâche réactive automatiquement sa tâche récapitulative parente si nécessaire. Les tâches ayant un avancement réel (% d'achèvement &gt; 0) ne peuvent pas être inactivées.</p>
+<blockquote>
+<p>Utilisez les tâches inactives pour conserver des scénarios hypothétiques dans votre planning sans affecter le plan actif.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

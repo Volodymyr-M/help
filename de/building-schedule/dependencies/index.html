@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhängigkeiten - Terminplan erstellen - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Verknüpfen Sie Vorgänge mit Ende-Anfang-, Ende-Ende-, Anfang-Anfang- und Anfang-Ende-Abhängigkeiten und legen Sie Verzögerung oder Vorlaufzeit fest.">
+  <link rel="canonical" href="https://help.ingantt.com/de/building-schedule/dependencies/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Abhängigkeiten">
+  <meta property="og:description" content="Verknüpfen Sie Vorgänge mit Ende-Anfang-, Ende-Ende-, Anfang-Anfang- und Anfang-Ende-Abhängigkeiten und legen Sie Verzögerung oder Vorlaufzeit fest.">
+  <meta property="og:url" content="https://help.ingantt.com/de/building-schedule/dependencies/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abhängigkeiten">
+  <meta name="twitter:description" content="Verknüpfen Sie Vorgänge mit Ende-Anfang-, Ende-Ende-, Anfang-Anfang- und Anfang-Ende-Abhängigkeiten und legen Sie Verzögerung oder Vorlaufzeit fest.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/dependencies/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/dependencies/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/" class="active" aria-current="page">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="abhängigkeiten">Abhängigkeiten <a href="#abhängigkeiten" class="heading-anchor">#</a></h1>
+<p>Reale Projekte haben eine Reihenfolge — Sie können nicht testen, bevor Sie bauen. Verknüpfen Sie Vorgänge miteinander, damit Ingantt die richtige Abfolge berechnet und alles automatisch verschiebt, wenn sich ein Vorgang ändert.</p>
+<h2 id="vorgänger-und-abhängigkeiten">Vorgänger und Abhängigkeiten <a href="#vorgänger-und-abhängigkeiten" class="heading-anchor">#</a></h2>
+<p>Wenn Sie Vorgänge über die Schaltfläche <strong>Ausgewählte Vorgänge verknüpfen</strong> in der Symbolleiste verknüpfen, erstellen Sie eine Abhängigkeit zwischen den Vorgängen. Die Abhängigkeit heißt <strong>Ende-Anfang</strong> und ist eine von vier verfügbaren Abhängigkeiten:</p>
+<table>
+<thead>
+<tr>
+<th>Typ</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Ende-Anfang</strong></td>
+<td>Der zweite Vorgang kann beginnen, sobald der erste Vorgang abgeschlossen ist.</td>
+</tr>
+<tr>
+<td><strong>Ende-Ende</strong></td>
+<td>Der zweite Vorgang endet, wenn der erste Vorgang endet.</td>
+</tr>
+<tr>
+<td><strong>Anfang-Ende</strong></td>
+<td>Der zweite Vorgang endet, wenn der erste Vorgang beginnt.</td>
+</tr>
+<tr>
+<td><strong>Anfang-Anfang</strong></td>
+<td>Der zweite Vorgang beginnt, wenn der erste Vorgang beginnt.</td>
+</tr>
+</tbody>
+</table>
+<p><img src="/images/building-schedule/tasks/dependencies.png" alt="Abhängigkeiten" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
+<p>Um Vorgänger zuzuweisen und Abhängigkeiten zu bearbeiten, verwenden Sie den Reiter <strong>Vorgänger</strong> des Dialogs <strong>Vorgangseigenschaften</strong>.</p>
+<h2 id="verzögerung-und-vorlaufzeit">Verzögerung und Vorlaufzeit <a href="#verzögerung-und-vorlaufzeit" class="heading-anchor">#</a></h2>
+<p>Manchmal müssen Sie eine Wartezeit zwischen zwei abhängigen Vorgängen festlegen.</p>
+<p>Nehmen wir an, Ihr erster Vorgang ist „Wand streichen&quot; und Ihr zweiter Vorgang ist „Bilder an die Wand hängen&quot;. Diese Vorgänge sind verknüpft (haben eine <strong>Ende-Anfang</strong>-Abhängigkeit). Es ist nicht möglich, Bilder aufzuhängen, bis die Farbe trocken ist, also müssen Sie warten. Um dies in Ihrem Terminplan abzubilden, legen Sie die <strong>Verzögerung</strong> (z. B. 2 Tage) für die Abhängigkeit zwischen den beiden Vorgängen fest.</p>
+<p><img src="/images/building-schedule/tasks/lag.png" alt="Verzögerung" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
+<p>Verzögerungen können auch das umgekehrte Szenario darstellen — wenn ein abhängiger Vorgang beginnen soll, bevor sein Vorgänger abgeschlossen ist. Um dies festzulegen, machen Sie die <strong>Verzögerung</strong> negativ (z. B. -1 Tag). Dies wird als <em>Vorlaufzeit</em> bezeichnet.</p>
+<p>Um Verzögerung oder Vorlaufzeit festzulegen, wählen Sie den Vorgänger auf dem Reiter <strong>Vorgänger</strong> des Dialogs <strong>Vorgangseigenschaften</strong> aus und klicken Sie auf die Schaltfläche <strong>Bearbeiten</strong>.</p>
+<blockquote>
+<p>Verzögerungen können in Stunden, Tagen, Wochen, Monaten oder als Bruchteil der Dauer des Vorgängervorgangs angegeben werden (z. B. 50%).</p>
+</blockquote>
+<h2 id="zirkuläre-abhängigkeiten">Zirkuläre Abhängigkeiten <a href="#zirkuläre-abhängigkeiten" class="heading-anchor">#</a></h2>
+<p>Wenn Sie versehentlich eine zirkuläre Abhängigkeit erstellen — z. B. indem Sie zwei Vorgänge gegenseitig als Vorgänger festlegen — erkennt Ingantt dies und macht die letzte Aktion rückgängig. Dies gilt auch für komplexe zirkuläre Ketten.</p>
+<p>Wenn Sie eine Projektdatei öffnen, die zirkuläre Abhängigkeiten enthält, entfernt Ingantt automatisch die problematischen Verknüpfungen, damit das Projekt geplant werden kann. Eine Warnmeldung zeigt an, wie viele zirkuläre Abhängigkeitsverknüpfungen beim Import entfernt wurden.</p>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

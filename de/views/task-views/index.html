@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vorgangsansichten - Ansichten - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Arbeiten Sie mit Vorgangstafel, Netzplandiagramm, Kalenderansicht, Zeitachse und Überwachungs-Gantt-Ansichten.">
+  <link rel="canonical" href="https://help.ingantt.com/de/views/task-views/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Vorgangsansichten">
+  <meta property="og:description" content="Arbeiten Sie mit Vorgangstafel, Netzplandiagramm, Kalenderansicht, Zeitachse und Überwachungs-Gantt-Ansichten.">
+  <meta property="og:url" content="https://help.ingantt.com/de/views/task-views/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vorgangsansichten">
+  <meta name="twitter:description" content="Arbeiten Sie mit Vorgangstafel, Netzplandiagramm, Kalenderansicht, Zeitachse und Überwachungs-Gantt-Ansichten.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/task-views/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/views/task-views/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/task-views/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/views/task-views/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/task-views/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/task-views/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/" class="active" aria-current="page">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="vorgangsansichten">Vorgangsansichten <a href="#vorgangsansichten" class="heading-anchor">#</a></h1>
+<p>Über das Gantt-Diagramm hinaus können Sie Vorgänge auf einem Kanban-Board, einem Monatskalender, einem Netzplandiagramm oder einer Zeitachse anzeigen. Jede Ansicht hebt verschiedene Aspekte Ihres Terminplans hervor.</p>
+<h2 id="vorgangstafel">Vorgangstafel <a href="#vorgangstafel" class="heading-anchor">#</a></h2>
+<p>Die <strong>Vorgangstafel</strong>-Ansicht zeigt Vorgänge als Karten, die in Spalten organisiert sind, die Arbeitsablaufphasen darstellen (Kanban-Stil).</p>
+<p>Neue Projekte starten mit drei Standardspalten: „Nicht begonnen&quot; (0 %), „In Bearbeitung&quot; (50 %) und „Abgeschlossen&quot; (100 %). Jede Spalte hat eine Zuordnung zu % abgeschlossen — wenn Sie eine Karte in eine Spalte ziehen, wird der Fertigstellungsgrad des Vorgangs automatisch aktualisiert.</p>
+<p>Sie können Spalten hinzufügen, bearbeiten, umbenennen, neu anordnen und löschen. Jede Spalte hat eine Schaltfläche <strong>Vorgang hinzufügen</strong> am unteren Rand zum direkten Erstellen von Vorgängen in dieser Phase.</p>
+<p>Nur nicht-Sammelvorgänge, aktive Vorgänge mit aktiviertem „Auf Tafel anzeigen&quot; erscheinen auf der Tafel. Die Einstellung „Auf Tafel anzeigen&quot; ist auf dem Reiter <strong>Visuell</strong> des Dialogs <strong>Vorgangseigenschaften</strong> verfügbar.</p>
+<blockquote>
+<p>Ziehen Sie Vorgangskarten zwischen Spalten, um ihren Status zu ändern. Wenn sich der % abgeschlossen eines Vorgangs anderweitig ändert (über Dialog, Inline-Bearbeitung oder Projekt aktualisieren), verschiebt sich die Karte automatisch in die passende Spalte.</p>
+</blockquote>
+<h2 id="netzplandiagramm">Netzplandiagramm <a href="#netzplandiagramm" class="heading-anchor">#</a></h2>
+<p>Die <strong>Netzplandiagramm</strong>-Ansicht zeigt Vorgänge als rechteckige Knoten, die in einem Flussdiagramm-Layout von links nach rechts angeordnet sind. Vorgänge ohne Vorgänger erscheinen in der ganz linken Spalte, und jeder nachfolgende Vorgang erscheint nach allen seinen Vorgängern.</p>
+<ul>
+<li>Normale Vorgänge zeigen Nr., Dauer, Start-/Endtermine und Ressourcen</li>
+<li>Sammelvorgänge zeigen Nr., Dauer, Start-/Endtermine und Fertigstellungsgrad</li>
+<li>Meilensteine zeigen Nr. und Startdatum</li>
+<li>Kritische Pfad-Vorgänge haben rote Überschriften und Rahmen</li>
+<li>Der Fortschritt wird durch diagonale Linienüberlagerungen angezeigt: eine Linie für laufende Vorgänge, gekreuzte Linien für abgeschlossene Vorgänge</li>
+</ul>
+<p>Sie können Sammelvorgänge auf- und zuklappen, zum Auswählen klicken, zum Bearbeiten doppelklicken und per Rechtsklick das Kontextmenü aufrufen. Abhängigkeitspfeile werden zwischen den Knoten für alle vier Verknüpfungstypen gezeichnet.</p>
+<h2 id="kalenderansicht">Kalenderansicht <a href="#kalenderansicht" class="heading-anchor">#</a></h2>
+<p>Die <strong>Kalenderansicht</strong> zeigt ein monatliches Kalenderraster mit Vorgängen als horizontale Balken, die ihre geplanten Termine umspannen.</p>
+<ul>
+<li>Wechseln Sie zwischen <strong>Monats-</strong> und <strong>Wochen</strong>ansicht über die Umschaltfläche in der Kopfzeile</li>
+<li>Aktivieren Sie den <strong>Arbeitswoche</strong>-Modus, um nur Werktage anzuzeigen (5-Tage-Ansicht)</li>
+<li>Navigieren Sie mit den Vor-/Zurück-Schaltflächen oder springen Sie zum heutigen Tag</li>
+<li>Arbeitsfreie Tage werden mit einem unterschiedlichen Hintergrund angezeigt</li>
+<li>Meilensteine erscheinen als Rauten-Symbole</li>
+<li>Doppelklicken Sie auf einen leeren Tag, um einen neuen 1-Tages-Vorgang an diesem Datum zu erstellen</li>
+</ul>
+<p>Vorgänge, die über eine Wochengrenze hinausgehen, werden in die nächste Zeile umgebrochen. Wenn sich mehrere Vorgänge am selben Tag überschneiden, werden sie vertikal gestapelt.</p>
+<h2 id="zeitachse">Zeitachse <a href="#zeitachse" class="heading-anchor">#</a></h2>
+<p>Die <strong>Zeitachse</strong> ist ein einklappbarer Bereich, der über dem Gantt-Diagramm erscheint und eine vereinfachte Übersicht der vom Benutzer ausgewählten Vorgänge auf einer horizontalen Zeitachse zeigt.</p>
+<p>Um einen Vorgang zur Zeitachse hinzuzufügen, klicken Sie mit der rechten Maustaste darauf und wählen Sie <strong>Auf Zeitachse anzeigen</strong>, oder aktivieren Sie die Option auf dem Reiter <strong>Visuell</strong> des Dialogs Vorgangseigenschaften.</p>
+<p>Vorgänge auf der Zeitachse können als Balken oder Beschriftungen (Textbeschriftungen mit vertikalen Verbindungslinien) angezeigt werden. Sie können zwischen den Modi wechseln, indem Sie einen Vorgangsbalken über oder unter die horizontale Trennlinie im Zeitachsenbereich ziehen. Die Zeitachse zeigt auch eine Heute-Markierung und eine Ansichtsfenster-Überlagerung, die Sie ziehen können, um das Gantt-Diagramm zu scrollen.</p>
+<p>Schalten Sie die Zeitachse über das Menü <strong>Ansicht</strong> ein oder aus.</p>
+<h2 id="überwachungs-gantt">Überwachungs-Gantt <a href="#überwachungs-gantt" class="heading-anchor">#</a></h2>
+<p>Die <strong>Überwachungs-Gantt</strong>-Ansicht ähnelt der Standard-Vorgangsansicht, jedoch mit immer aktivierter Hervorhebung des kritischen Pfads und angezeigtem Basisplan 0, wenn dieser gespeichert wurde. Wenn Sie die Überwachungs-Gantt-Ansicht verlassen, werden die Einstellungen für die Sichtbarkeit des kritischen Pfads und des Basisplans auf ihren vorherigen Zustand zurückgesetzt.</p>
+<p>Verwenden Sie den Überwachungs-Gantt zur Überwachung des Projektfortschritts im Vergleich zum Basisplan.</p>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

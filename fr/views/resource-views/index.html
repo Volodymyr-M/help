@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vues des ressources - Vues - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Analysez la charge de travail avec les vues Utilisation des ressources, Utilisation des tâches, Planificateur d'équipe et Graphe des ressources.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/views/resource-views/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Vues des ressources">
+  <meta property="og:description" content="Analysez la charge de travail avec les vues Utilisation des ressources, Utilisation des tâches, Planificateur d'équipe et Graphe des ressources.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/views/resource-views/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Vues des ressources">
+  <meta name="twitter:description" content="Analysez la charge de travail avec les vues Utilisation des ressources, Utilisation des tâches, Planificateur d'équipe et Graphe des ressources.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/views/resource-views/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/resource-views/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/views/resource-views/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/resource-views/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/" class="active" aria-current="page">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+</select>
+<button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="vues-des-ressources">Vues des ressources <a href="#vues-des-ressources" class="heading-anchor">#</a></h1>
+<p>Visualisez la répartition de la charge de travail au sein de votre équipe. Les vues d'utilisation montrent qui fait quoi et quand, le planificateur d'équipe permet de réaffecter par glisser-déposer, et le graphe des ressources révèle la capacité en un coup d'œil.</p>
+<h2 id="resource-usage">Resource Usage <a href="#resource-usage" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Resource Usage</strong> vous permet de visualiser toutes les affectations de ressources et la quantité de <a href="/fr/building-schedule/tasks/#work">travail</a> que chaque ressource de travail effectue pendant chaque période sur la ligne temporelle.</p>
+<p>Comme pour le diagramme de Gantt, vous pouvez zoomer en avant ou en arrière sur la ligne temporelle pour obtenir une vue plus ou moins détaillée.</p>
+<p>Si une ressource doit effectuer plus de travail que ce que les calendriers autorisent pour une période donnée, le <strong>travail</strong> correspondant est mis en évidence en rouge.</p>
+<p>Dans la vue Resource Usage, vous pouvez double-cliquer sur les cellules de travail au niveau des affectations pour modifier directement la répartition du travail. Lorsque vous modifiez une cellule de travail, le profil de charge de l'affectation passe automatiquement à « Contoured » et les données de travail personnalisées par jour sont enregistrées.</p>
+<h2 id="task-usage">Task Usage <a href="#task-usage" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Task Usage</strong> est l'inverse de Resource Usage — elle offre une vue centrée sur les tâches de la répartition du travail. Chaque tâche apparaît en tant que ligne de niveau supérieur avec ses affectations de ressources indentées en dessous.</p>
+<p>Le panneau de gauche affiche les détails des tâches et des affectations, tandis que le panneau de droite affiche les valeurs de travail réparties sur les périodes. Les valeurs de travail au niveau des tâches sont affichées en gras. Les valeurs de travail des affectations surutilisées sont mises en évidence en rouge.</p>
+<h2 id="team-planner">Team Planner <a href="#team-planner" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Team Planner</strong> est une vue de planification centrée sur les ressources où chaque ligne représente une ressource de travail. Les barres de tâches sont positionnées sur la ligne de chaque ressource le long d'une échelle de temps partagée.</p>
+<p>Fonctionnalités principales :</p>
+<ul>
+<li><strong>Glissez horizontalement</strong> pour replanifier une tâche — la tâche reçoit une contrainte Début au plus tôt le à la nouvelle position</li>
+<li><strong>Glissez verticalement</strong> pour réaffecter une tâche à une autre ressource</li>
+<li><strong>Glissez en diagonale</strong> pour replanifier et réaffecter en une seule opération</li>
+<li>Glissez vers ou depuis la section <strong>Unassigned Tasks</strong> pour ajouter ou supprimer des affectations de ressources</li>
+<li>Les ressources surutilisées sont affichées en rouge dans le panneau de gauche</li>
+<li>Les tâches achevées à 100 % ne peuvent pas être déplacées</li>
+</ul>
+<h2 id="resource-graph">Resource Graph <a href="#resource-graph" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Resource Graph</strong> affiche un histogramme par ressource de la répartition de la charge de travail dans le temps. Elle affiche une seule ressource de travail à la fois avec des barres verticales pour chaque période. Naviguez entre les ressources à l'aide des boutons fléchés dans le panneau de gauche.</p>
+<p>Sept types de graphiques sont disponibles :</p>
+<table>
+<thead>
+<tr>
+<th>Type de graphique</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Peak Units</strong></td>
+<td>Pourcentage de capacité de la ressource utilisé par période (par défaut)</td>
+</tr>
+<tr>
+<td><strong>Work</strong></td>
+<td>Heures de travail par période</td>
+</tr>
+<tr>
+<td><strong>Overallocation</strong></td>
+<td>Uniquement les heures excédentaires au-delà de la capacité</td>
+</tr>
+<tr>
+<td><strong>Percent Allocation</strong></td>
+<td>Identique à Peak Units avec affichage en pourcentage</td>
+</tr>
+<tr>
+<td><strong>Remaining Availability</strong></td>
+<td>Capacité inutilisée en heures</td>
+</tr>
+<tr>
+<td><strong>Work Availability</strong></td>
+<td>Capacité totale du calendrier en heures</td>
+</tr>
+<tr>
+<td><strong>Unit Availability</strong></td>
+<td>Pourcentage effectif des unités maximales</td>
+</tr>
+</tbody>
+</table>
+<p>Les barres bleues représentent le travail dans les limites de la capacité ; les barres rouges représentent la portion surutilisée dépassant la capacité.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>
