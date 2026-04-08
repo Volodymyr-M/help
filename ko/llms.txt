@@ -1,0 +1,55 @@
+# Ingantt Help — 한국어
+
+> Documentation for Ingantt, a project scheduling application.
+
+## 시작하기
+
+- [개요](https://help.ingantt.com/ko/getting-started/overview/index.md)
+- [시작하기](https://help.ingantt.com/ko/getting-started/getting-started/index.md)
+- [AI로 생성하기](https://help.ingantt.com/ko/getting-started/create-with-ai/index.md)
+- [가져오기 및 내보내기](https://help.ingantt.com/ko/getting-started/import-export/index.md)
+
+## 프로젝트 설정
+
+- [프로젝트 속성](https://help.ingantt.com/ko/setting-up-project/project/index.md)
+- [달력](https://help.ingantt.com/ko/setting-up-project/calendars/index.md)
+
+## 일정 작성
+
+- [작업](https://help.ingantt.com/ko/building-schedule/tasks/index.md)
+- [작업 속성](https://help.ingantt.com/ko/building-schedule/task-properties/index.md)
+- [종속성](https://help.ingantt.com/ko/building-schedule/dependencies/index.md)
+- [제약 조건](https://help.ingantt.com/ko/building-schedule/constraints/index.md)
+- [자원](https://help.ingantt.com/ko/building-schedule/resources/index.md)
+- [배정](https://help.ingantt.com/ko/building-schedule/assignments/index.md)
+
+## 분석 및 조정
+
+- [주공정경로](https://help.ingantt.com/ko/adjusting-schedule/critical-path/index.md)
+- [자원 평준화](https://help.ingantt.com/ko/adjusting-schedule/leveling/index.md)
+- [사용자 정의 필드](https://help.ingantt.com/ko/adjusting-schedule/custom-fields/index.md)
+
+## 비용 계획
+
+- [비용 이해하기](https://help.ingantt.com/ko/planning-costs/planning-costs/index.md)
+- [비용 설정](https://help.ingantt.com/ko/planning-costs/setting-up-costs/index.md)
+
+## 진행 추적
+
+- [기준선](https://help.ingantt.com/ko/tracking/baselines/index.md)
+- [진행 추적](https://help.ingantt.com/ko/tracking/progress/index.md)
+- [실적](https://help.ingantt.com/ko/tracking/actuals/index.md)
+- [획득가치](https://help.ingantt.com/ko/tracking/earned-value/index.md)
+
+## 보기
+
+- [Gantt 차트](https://help.ingantt.com/ko/views/gantt/index.md)
+- [작업 보기](https://help.ingantt.com/ko/views/task-views/index.md)
+- [자원 보기](https://help.ingantt.com/ko/views/resource-views/index.md)
+- [작업 필터링](https://help.ingantt.com/ko/views/filtering/index.md)
+
+## 사용자 인터페이스
+
+- [추가 및 선택](https://help.ingantt.com/ko/ui/ui/index.md)
+- [Google Drive 연동](https://help.ingantt.com/ko/ui/files/index.md)
+- [키보드 단축키](https://help.ingantt.com/ko/ui/shortcuts/index.md)

@@ -1,198 +1,310 @@
 {
   "getting-started/overview": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/getting-started": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/create-with-ai": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/import-export": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "setting-up-project/project": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "setting-up-project/calendars": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/tasks": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/task-properties": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/dependencies": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/constraints": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/resources": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/assignments": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "adjusting-schedule/critical-path": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "adjusting-schedule/leveling": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "adjusting-schedule/custom-fields": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "planning-costs/planning-costs": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "planning-costs/setting-up-costs": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "tracking/baselines": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "tracking/progress": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "tracking/actuals": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "tracking/earned-value": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "views/gantt": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "views/task-views": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "views/resource-views": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "views/filtering": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "ui/ui": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "ui/files": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "ui/shortcuts": [
     "en",
-    "fr",
     "de",
     "es",
-    "uk"
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ]
 }

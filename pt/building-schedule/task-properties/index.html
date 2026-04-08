@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propriedades da Tarefa - Construindo um Cronograma - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/building-schedule/task-properties/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Propriedades da Tarefa">
+  <meta property="og:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/building-schedule/task-properties/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Propriedades da Tarefa">
+  <meta name="twitter:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/task-properties/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/" class="active" aria-current="page">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="propriedades-da-tarefa">Propriedades da Tarefa <a href="#propriedades-da-tarefa" class="heading-anchor">#</a></h1>
+<p>Cada tarefa tem propriedades que controlam como ela é agendada, como os custos são calculados e como ela aparece no gráfico de Gantt. Defina-as na caixa de diálogo <strong>Task Properties</strong>.</p>
+<h2 id="duração">Duração <a href="#duração" class="heading-anchor">#</a></h2>
+<p>Ao planejar seu projeto, você insere as durações como estimativas, ou seja, a duração é uma previsão razoável de quanto tempo uma tarefa levará para todos os recursos envolvidos.</p>
+<p>Não confunda <strong>Duration</strong> com <strong>Work</strong>. Por exemplo, se três pessoas estão trabalhando na sua tarefa, mas a completam em uma hora, você define a <strong>Duration</strong> da tarefa como uma hora. Se essas três pessoas estiverem atribuídas à tarefa, o Ingantt calcula a propriedade <strong>Work</strong> automaticamente como três horas.</p>
+<p>A duração pode ser alterada usando o campo <strong>Duration</strong> na caixa de diálogo <strong>Task Properties</strong>.</p>
+<p>Quando você ainda não está confiante com sua estimativa de duração, pode marcá-la como <strong>Estimate</strong> na caixa de diálogo <strong>Task Properties</strong>. Isso faz com que a duração sempre exiba um ponto de interrogação (&quot;<strong>?</strong>&quot;). Marcar ou desmarcar essa opção não afeta o agendamento.</p>
+<p>Se pelo menos uma subtarefa de uma tarefa resumo tiver <strong>Estimate</strong> marcado, a duração da tarefa resumo também é marcada como <strong>Estimate</strong> e, portanto, também mostra &quot;<strong>?</strong>&quot;.</p>
+<p>A duração pode ser definida em Horas, Dias, Semanas ou Meses. Por padrão, &quot;1 Dia&quot; significa 8 horas, &quot;1 Semana&quot; significa 5 dias (40 horas) e &quot;1 Mês&quot; significa 20 dias. Esses padrões podem ser alterados na aba <strong>Duration</strong> da caixa de diálogo <strong>Project Properties</strong>.</p>
+<p>Quando você altera atribuições de recursos, trabalho ou duração, um deles é recalculado de acordo com o <a href="#tipo-e-orientado-ao-esfor%C3%A7o">Tipo</a> da tarefa.</p>
+<h2 id="trabalho">Trabalho <a href="#trabalho" class="heading-anchor">#</a></h2>
+<p>Uma vez que uma tarefa tem um recurso de trabalho atribuído (como uma pessoa realizando a tarefa), a propriedade <strong>Work</strong> da tarefa passa a ser maior que 0. Ela mostra o tempo que todos os recursos dedicarão à tarefa. Por exemplo, se uma tarefa com <strong>Duration</strong> de 5 horas tem 2 recursos atribuídos trabalhando nela, o <strong>Work</strong> da tarefa é igual a 10 horas.</p>
+<p>O trabalho pode ser alterado usando o campo <strong>Work</strong> na caixa de diálogo <strong>Task Properties</strong>.</p>
+<p>Assim como a Duração, o Trabalho pode ser especificado em Horas, Dias, Semanas ou Meses usando as definições na aba <strong>Duration</strong> da caixa de diálogo <strong>Project Properties</strong>. O formato de exibição padrão do trabalho pode ser alterado na aba <strong>Time</strong>.</p>
+<p>Quando você altera atribuições de recursos, trabalho ou duração, um deles é recalculado de acordo com o <a href="#tipo-e-orientado-ao-esfor%C3%A7o">Tipo</a> da tarefa.</p>
+<h2 id="prazo">Prazo <a href="#prazo" class="heading-anchor">#</a></h2>
+<p>Às vezes, você precisa garantir que uma tarefa seja concluída até uma data específica, geralmente chamada de prazo.</p>
+<p>O prazo de uma tarefa pode ser especificado usando o campo <strong>Deadline</strong> na caixa de diálogo <strong>Task Properties</strong>.</p>
+<p>Os prazos são apenas para sua referência e não afetam o agendamento.</p>
+<p>Os prazos são exibidos no gráfico de Gantt como ícones especiais.</p>
+<blockquote>
+<p>Se o seu cronograma mostra que uma tarefa termina depois do prazo especificado, o Ingantt exibe um ícone na lista de tarefas e contabiliza essas tarefas no menu de navegação.</p>
+</blockquote>
+<p><img src="/images/building-schedule/tasks/deadline.png" alt="Prazo" / data-dark-src="/images/building-schedule/tasks/deadline_d.png"></p>
+<blockquote>
+<p>Você pode definir um prazo para o projeto inteiro definindo o prazo da tarefa resumo raiz. Apenas certifique-se de que a tarefa resumo raiz esteja configurada como visível na caixa de diálogo <strong>Options</strong>.</p>
+</blockquote>
+<h2 id="marco">Marco <a href="#marco" class="heading-anchor">#</a></h2>
+<p>Qualquer tarefa pode ser marcada como marco marcando a caixa de seleção <strong>Milestone</strong> na caixa de diálogo <strong>Task Properties</strong>. Isso não altera sua duração nem afeta o agendamento, mas a tarefa é exibida no gráfico de Gantt como um ícone.</p>
+<p><img src="/images/building-schedule/tasks/milestone.png" alt="Marco" / data-dark-src="/images/building-schedule/tasks/milestone_d.png"></p>
+<p>Se você especificar 0 como a <strong>Duration</strong> de uma tarefa, ela é automaticamente marcada como <strong>Milestone</strong> ao salvar a alteração.</p>
+<h2 id="tipo-e-orientado-ao-esforço">Tipo e Orientado ao Esforço <a href="#tipo-e-orientado-ao-esforço" class="heading-anchor">#</a></h2>
+<p>As atribuições de recursos de trabalho (ou unidades de recursos de trabalho atribuídos), trabalho e duração dependem uns dos outros. Quando você altera um deles, os outros precisam ser recalculados. O <strong>Type</strong> da tarefa (com a ajuda da flag <strong>Effort Driven</strong>) define qual das duas propriedades restantes permanece inalterada, de modo que apenas uma delas é recalculada.</p>
+<p>Por exemplo, você pode definir o <strong>Type</strong> como <strong>Fixed units</strong> (o padrão), nesse caso, quando você altera a Duração, o Trabalho é recalculado automaticamente.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fixed units</strong></td>
+<td>Ao alterar a Duração: o Trabalho é recalculado.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar o Trabalho: a Duração é recalculada.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar as Unidades:</td>
+</tr>
+<tr>
+<td></td>
+<td>- Se <strong>Effort Driven</strong> estiver ativado: a Duração é recalculada.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Se <strong>Effort Driven</strong> não estiver ativado: o Trabalho é recalculado.</td>
+</tr>
+<tr>
+<td><strong>Fixed duration</strong></td>
+<td>Ao alterar a Duração: o Trabalho é recalculado.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar o Trabalho: as Unidades são recalculadas.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar as Unidades: o Trabalho é recalculado.</td>
+</tr>
+<tr>
+<td><strong>Fixed work</strong></td>
+<td>Ao alterar a Duração: as Unidades são recalculadas.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar o Trabalho: a Duração é recalculada.</td>
+</tr>
+<tr>
+<td></td>
+<td>Ao alterar as Unidades: a Duração é recalculada.</td>
+</tr>
+</tbody>
+</table>
+<p>Em outras palavras, o <strong>Type</strong> permite congelar uma das três propriedades, enquanto a flag <strong>Effort Driven</strong> define se o Trabalho deve permanecer inalterado entre as duas restantes.</p>
+<blockquote>
+<p>As configurações <strong>Type</strong> e <strong>Effort Driven</strong> não estão disponíveis para <a href="/pt/building-schedule/tasks/#tarefas-resumo">tarefas resumo</a>, que são sempre do tipo Duração Fixa e não orientadas ao esforço.</p>
+</blockquote>
+<h2 id="notas">Notas <a href="#notas" class="heading-anchor">#</a></h2>
+<p>Você pode adicionar qualquer texto à sua tarefa preenchendo o campo <strong>Notes</strong> na aba <strong>Notes</strong> da caixa de diálogo <strong>Task Properties</strong>. Use-o para descrições de tarefas, informações de contato, ideias ou quaisquer outros dados textuais.</p>
+<p>Se uma tarefa tem o campo <strong>Notes</strong> preenchido, um ícone especial é exibido na lista de tarefas. No Windows, macOS e Web, passar o mouse sobre o ícone mostra a nota. Em dispositivos móveis, abra a caixa de diálogo <strong>Task Properties</strong> para ver a nota completa.</p>
+<h2 id="hyperlink">Hyperlink <a href="#hyperlink" class="heading-anchor">#</a></h2>
+<p>Você pode anexar uma URL à sua tarefa usando o campo <strong>Hyperlink</strong> na aba <strong>Notes</strong> da caixa de diálogo <strong>Task Properties</strong>. Tarefas com hyperlink exibem um ícone de link na lista de tarefas. Clicar no ícone de link abre a URL no seu navegador.</p>
+<h2 id="ocultar-barra-e-rollup">Ocultar Barra e Rollup <a href="#ocultar-barra-e-rollup" class="heading-anchor">#</a></h2>
+<p>Na aba <strong>Visual</strong> da caixa de diálogo <strong>Task Properties</strong>:</p>
+<ul>
+<li><strong>Hide bar</strong> — Oculta a barra da tarefa no gráfico de Gantt, mantendo a linha visível na lista de tarefas. A área da barra invisível ainda responde a cliques e menus de contexto.</li>
+<li><strong>Rollup</strong> — Exibe a barra da subtarefa na linha da tarefa resumo pai no gráfico de Gantt. Isso proporciona uma visualização condensada quando as tarefas resumo estão recolhidas.</li>
+</ul>
+<p>Essas opções também podem ser alternadas no submenu <strong>Edit &gt; Display</strong> ou no menu de contexto com clique direito.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

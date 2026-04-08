@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Configurando Custos - Planejamento de Custos - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Configure custos fixos, taxas de recursos de trabalho e material, tabelas de taxas, custo por uso e métodos de acumulação de custos.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/planning-costs/setting-up-costs/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Configurando Custos">
+  <meta property="og:description" content="Configure custos fixos, taxas de recursos de trabalho e material, tabelas de taxas, custo por uso e métodos de acumulação de custos.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/planning-costs/setting-up-costs/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Configurando Custos">
+  <meta name="twitter:description" content="Configure custos fixos, taxas de recursos de trabalho e material, tabelas de taxas, custo por uso e métodos de acumulação de custos.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/planning-costs/setting-up-costs/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/planning-costs/setting-up-costs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/" class="active" aria-current="page">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="configurando-custos">Configurando Custos <a href="#configurando-custos" class="heading-anchor">#</a></h1>
+<p>Defina custos fixos nas tarefas e taxas nos recursos. O Ingantt os utiliza junto com o cronograma para calcular o custo de cada tarefa e de todo o projeto.</p>
+<h2 id="custo-fixo-da-tarefa">Custo Fixo da Tarefa <a href="#custo-fixo-da-tarefa" class="heading-anchor">#</a></h2>
+<p>Você pode definir um custo para a tarefa independentemente dos seus recursos, preenchendo o campo <strong>Fixed Cost</strong> na aba <strong>Cost and EV</strong> da caixa de diálogo <strong>Task Properties</strong>. Por exemplo, use isso quando alguém já forneceu uma estimativa de custo total para a tarefa, ou quando a tarefa tem um custo adicional além dos custos de recursos.</p>
+<blockquote>
+<p>Se você precisa atribuir o mesmo custo fixo a múltiplas tarefas, considere criar um recurso de custo e atribuí-lo a essas tarefas. Se o custo mudar no futuro, você só precisa atualizá-lo em um lugar.</p>
+</blockquote>
+<h2 id="custo-de-recurso-de-trabalho">Custo de Recurso de Trabalho <a href="#custo-de-recurso-de-trabalho" class="heading-anchor">#</a></h2>
+<p>Os recursos de <strong>Work</strong> são o único tipo que possui calendário, então seu custo é especificado por hora, por dia, por semana ou por mês (veja <a href="/pt/setting-up-project/project/#horas-por-dia-dias-por-semana-dias-por-m%C3%AAs">Horas por Dia, Dias por Semana, Dias por Mês</a>).</p>
+<p>Por exemplo, ao atribuir um recurso de trabalho com <strong>Standard Rate</strong> de R$ 100 por hora a uma tarefa com <strong>Duration</strong> de 5 horas, R$ 500 são adicionados ao <strong>Cost</strong> da tarefa.</p>
+<p>Os recursos de trabalho também suportam uma <strong>Overtime Rate</strong> para trabalho além do horário regular do calendário. O custo total é calculado como:</p>
+<blockquote>
+<p><strong>Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use</strong></p>
+</blockquote>
+<p>Quando um recurso de trabalho é atribuído a uma tarefa, você pode especificar o valor de <strong>Units</strong> como um número diferente do padrão. Isso impacta os cálculos de custo. Por exemplo, se <strong>Units</strong> for 50%, o custo calculado para o recurso na tarefa é metade do que seria com 100% de Unidades.</p>
+<h2 id="custo-de-recurso-de-material">Custo de Recurso de Material <a href="#custo-de-recurso-de-material" class="heading-anchor">#</a></h2>
+<p>Para recursos de <strong>material</strong>, o custo é especificado por unidade com base em como você define a unidade. Pode ser uma medida de peso (ex.: libra, quilograma, tonelada), medida de comprimento ou volume (ex.: pé, metro, quilômetro, galão, litro) ou qualquer outra medida (ex.: contêiner, caixa, peça, metro quadrado). Você pode definir um <strong>Material Label</strong> na caixa de diálogo <strong>Resource Properties</strong> para descrever a unidade.</p>
+<p>Os recursos de material suportam dois modos de consumo:</p>
+<ul>
+<li><strong>Fixed</strong> (padrão) — Uma quantidade total independente da duração da tarefa (ex.: 5 toneladas de cimento)</li>
+<li><strong>Variable</strong> — Uma taxa por unidade de tempo que escala com a duração da tarefa (ex.: 10 litros por dia de combustível)</li>
+</ul>
+<p>Por exemplo, se combustível é utilizado no seu projeto, você pode adicionar um recurso de material &quot;combustível&quot; e especificar o custo por litro na caixa de diálogo <strong>Resource Properties</strong>. Então, ao atribuir o recurso a uma tarefa, você especifica o número de litros como <strong>Units</strong>, e o Ingantt adiciona o custo calculado do combustível ao <strong>Cost</strong> da tarefa.</p>
+<h2 id="recurso-de-custo">Recurso de Custo <a href="#recurso-de-custo" class="heading-anchor">#</a></h2>
+<p>Um recurso de <strong>cost</strong> é uma despesa fixa que você pode querer atribuir a múltiplas tarefas. Recursos de custo suportam valores de custo por atribuição — o mesmo recurso de custo pode ter valores diferentes em atribuições de tarefas diferentes (ex.: &quot;Viagem&quot; = R$ 800 na Tarefa A e R$ 1.200 na Tarefa B).</p>
+<p>Use esse tipo para despesas fixas que normalmente não são especificadas em medidas, como custos de instalação. Se múltiplas tarefas têm o mesmo custo fixo pelo mesmo motivo, crie um recurso de custo e atribua-o a todas essas tarefas em vez de preencher o campo <strong>Fixed Cost</strong> de cada tarefa separadamente.</p>
+<h2 id="tabelas-de-taxas">Tabelas de Taxas <a href="#tabelas-de-taxas" class="heading-anchor">#</a></h2>
+<p>Cada recurso de trabalho e material suporta até 5 tabelas de taxas de custo (A a E), cada uma com múltiplas linhas que entram em vigor em datas diferentes. Isso permite modelar alterações de taxas ao longo do tempo ou manter conjuntos de taxas diferentes para tipos de trabalho diferentes.</p>
+<p>As tabelas de taxas são configuradas na aba <strong>Costs</strong> da caixa de diálogo <strong>Resource Properties</strong>. Ao atribuir um recurso a uma tarefa, você pode selecionar qual tabela de taxas usar na caixa de diálogo <strong>Edit Resource Assignment</strong>.</p>
+<h2 id="custo-por-uso">Custo por Uso <a href="#custo-por-uso" class="heading-anchor">#</a></h2>
+<p>Os recursos suportam um campo <strong>Cost Per Use</strong> — uma taxa fixa cobrada cada vez que o recurso é atribuído a uma tarefa, independentemente de quanto trabalho é realizado. Para recursos de trabalho, <strong>Cost Per Use</strong> é multiplicado pelas unidades de atribuição (ex.: 200% de unidades significa que o custo por uso é cobrado duas vezes). <strong>Cost Per Use</strong> sempre é acumulado no início da tarefa.</p>
+<h2 id="acumulação-de-custos">Acumulação de Custos <a href="#acumulação-de-custos" class="heading-anchor">#</a></h2>
+<p>A configuração <strong>Cost Accrual</strong> controla quando os custos são reconhecidos como custos reais conforme o trabalho progride:</p>
+<table>
+<thead>
+<tr>
+<th>Acumulação</th>
+<th>Quando os custos são reconhecidos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start</strong></td>
+<td>Custo total assim que qualquer progresso é feito (% Concluída &gt; 0%)</td>
+</tr>
+<tr>
+<td><strong>Prorated</strong></td>
+<td>Proporcional ao percentual concluído (ex.: 50% concluído = 50% do custo)</td>
+</tr>
+<tr>
+<td><strong>End</strong></td>
+<td>Custo total somente quando a tarefa atinge 100% concluída</td>
+</tr>
+</tbody>
+</table>
+<p>Os recursos possuem uma configuração <strong>Cost Accrual</strong> na aba <strong>Costs</strong> da caixa de diálogo <strong>Resource Properties</strong>. As tarefas possuem uma configuração <strong>Fixed Cost Accrual</strong> na aba <strong>Cost and EV</strong> da caixa de diálogo <strong>Task Properties</strong>. O projeto possui uma configuração <strong>Default Fixed Cost Accrual</strong> na aba <strong>Other</strong> da caixa de diálogo <strong>Project Properties</strong>.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

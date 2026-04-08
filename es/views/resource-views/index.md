@@ -4,7 +4,7 @@ Vea la distribución de la carga de trabajo en su equipo. Las vistas de uso mues
 
 ## Uso de recursos
 
-La vista **Uso de recursos** le permite ver todas las asignaciones de recursos y la cantidad de [Trabajo](/es/building-schedule/tasks/index.md#work) que cada recurso de trabajo realiza durante cada período en la línea de tiempo.
+La vista **Uso de recursos** le permite ver todas las asignaciones de recursos y la cantidad de [Trabajo](/es/building-schedule/task-properties/index.md#trabajo) que cada recurso de trabajo realiza durante cada período en la línea de tiempo.
 
 Similar al diagrama de Gantt, puede acercar o alejar la línea de tiempo para ver una vista más o menos detallada.
 

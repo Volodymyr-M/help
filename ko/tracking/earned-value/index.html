@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>획득가치 - 진행 추적 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="SPI, CPI, EAC 및 차이 지표를 포함한 획득가치 관리 지표로 프로젝트 성과를 측정합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/tracking/earned-value/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="획득가치">
+  <meta property="og:description" content="SPI, CPI, EAC 및 차이 지표를 포함한 획득가치 관리 지표로 프로젝트 성과를 측정합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/tracking/earned-value/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="획득가치">
+  <meta name="twitter:description" content="SPI, CPI, EAC 및 차이 지표를 포함한 획득가치 관리 지표로 프로젝트 성과를 측정합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/earned-value/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/earned-value/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/earned-value/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/tracking/earned-value/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/tracking/earned-value/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/earned-value/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/tracking/earned-value/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/tracking/earned-value/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/" class="active" aria-current="page">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="획득가치">획득가치 <a href="#획득가치" class="heading-anchor">#</a></h1>
+<p>획득가치 관리(EVM)는 범위, 일정 및 비용 측정을 결합하여 프로젝트가 일정대로이고 예산 내에 있는지 평가합니다. 상태 날짜와 기준선을 설정하면 Ingantt가 산업 표준 EVM 지표를 계산합니다.</p>
+<h2 id="상태-날짜">상태 날짜 <a href="#상태-날짜" class="heading-anchor">#</a></h2>
+<p><strong>Status Date</strong>는 진행 추적 및 획득가치 계산에 사용되는 날짜를 정의합니다. 설정되면 해당 날짜에 Gantt 차트에 녹색 수직선이 표시됩니다.</p>
+<p>상태 날짜가 설정되지 않은 경우 현재 날짜가 계산에 사용됩니다. <strong>Project</strong> 메뉴에서 접근할 수 있는 <strong>Earned Value Options</strong> 대화 상자에서 상태 날짜를 설정할 수 있습니다.</p>
+<h2 id="획득가치-관리">획득가치 관리 <a href="#획득가치-관리" class="heading-anchor">#</a></h2>
+<p>Ingantt는 획득가치 관리를 지원합니다 — 범위, 일정 및 비용 데이터를 통합하여 프로젝트 성과를 평가하는 프로젝트 관리 기법입니다.</p>
+<h3 id="획득가치-설정">획득가치 설정 <a href="#획득가치-설정" class="heading-anchor">#</a></h3>
+<ol>
+<li>계획된 일정과 비용을 캡처하기 위해 <a href="/ko/tracking/baselines/#%EA%B8%B0%EC%A4%80%EC%84%A0-%EC%84%A4%EC%A0%95">기준선</a>을 생성합니다.</li>
+<li><strong>Earned Value Options</strong> 대화 상자(<strong>Project</strong> 메뉴에서 접근)에서 <strong>Status Date</strong>를 설정하거나 현재 날짜로 기본 설정합니다.</li>
+<li>작업이 진행됨에 따라 작업의 <a href="/ko/tracking/progress/#%EC%99%84%EB%A3%8C%EC%9C%A8">완료율</a> 값을 업데이트합니다.</li>
+</ol>
+<h3 id="사용-가능한-evm-지표">사용 가능한 EVM 지표 <a href="#사용-가능한-evm-지표" class="heading-anchor">#</a></h3>
+<p><strong>Options</strong> 대화 상자를 통해 다음 EVM 열을 작업 목록에 추가할 수 있습니다:</p>
+<table>
+<thead>
+<tr>
+<th>지표</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BCWS</strong></td>
+<td>예정 작업의 예산 비용 (계획 가치)</td>
+</tr>
+<tr>
+<td><strong>BCWP</strong></td>
+<td>수행 작업의 예산 비용 (획득가치)</td>
+</tr>
+<tr>
+<td><strong>ACWP</strong></td>
+<td>수행 작업의 실제 비용</td>
+</tr>
+<tr>
+<td><strong>BAC</strong></td>
+<td>완료 시 예산</td>
+</tr>
+<tr>
+<td><strong>EAC</strong></td>
+<td>완료 시 추정 비용</td>
+</tr>
+<tr>
+<td><strong>VAC</strong></td>
+<td>완료 시 차이</td>
+</tr>
+<tr>
+<td><strong>SV</strong></td>
+<td>일정 차이</td>
+</tr>
+<tr>
+<td><strong>CV</strong></td>
+<td>비용 차이</td>
+</tr>
+<tr>
+<td><strong>SPI</strong></td>
+<td>일정 성과 지수</td>
+</tr>
+<tr>
+<td><strong>CPI</strong></td>
+<td>비용 성과 지수</td>
+</tr>
+<tr>
+<td><strong>TCPI</strong></td>
+<td>완료 성과 지수</td>
+</tr>
+<tr>
+<td><strong>SV%</strong></td>
+<td>일정 차이 백분율</td>
+</tr>
+<tr>
+<td><strong>CV%</strong></td>
+<td>비용 차이 백분율</td>
+</tr>
+</tbody>
+</table>
+<h3 id="획득가치-방법">획득가치 방법 <a href="#획득가치-방법" class="heading-anchor">#</a></h3>
+<p>각 작업은 BCWP(획득가치)를 계산하기 위해 두 가지 방법 중 하나를 사용할 수 있습니다:</p>
+<ul>
+<li><strong>% Complete</strong> (기본값) — 작업의 완료율을 사용하여 획득가치를 계산합니다.</li>
+<li><strong>Physical % Complete</strong> — 별도로 추적된 물리적 완료율 값을 사용합니다. 산출물 기반 진행 측정에 유용합니다.</li>
+</ul>
+<p><strong>Task Properties</strong> 대화 상자의 <strong>Cost and EV</strong> 탭에서 개별 작업의 방법을 설정합니다. <strong>Earned Value Options</strong> 대화 상자에서 새 작업의 기본 방법을 변경합니다.</p>
+<h3 id="획득가치-기준선">획득가치 기준선 <a href="#획득가치-기준선" class="heading-anchor">#</a></h3>
+<p>EVM 계산은 특정 기준선을 사용합니다. <strong>Earned Value Options</strong> 대화 상자에서 획득가치에 사용할 기준선(<code>Baseline 0</code>~<code>Baseline 10</code>)을 선택할 수 있습니다. 기본값은 <code>Baseline 0</code>입니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

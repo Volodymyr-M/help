@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>制約 - スケジュールの構築 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="柔軟な制約（できるだけ早く）から固定制約（指定日に開始、指定日に終了）まで、8種類の制約でタスクスケジューリングを制御します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/building-schedule/constraints/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="制約">
+  <meta property="og:description" content="柔軟な制約（できるだけ早く）から固定制約（指定日に開始、指定日に終了）まで、8種類の制約でタスクスケジューリングを制御します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/building-schedule/constraints/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="制約">
+  <meta name="twitter:description" content="柔軟な制約（できるだけ早く）から固定制約（指定日に開始、指定日に終了）まで、8種類の制約でタスクスケジューリングを制御します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/constraints/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/constraints/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/constraints/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/constraints/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/constraints/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/constraints/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/constraints/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/" class="active" aria-current="page">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="制約">制約 <a href="#制約" class="heading-anchor">#</a></h1>
+<p>一部のタスクは特定の日付に開始または終了しなければなりません — 火曜日に配達が届く、金曜日に許可が期限切れになるなど。制約を使うと、必要な箇所で日付を固定しながら、残りのスケジュールを柔軟に保つことができます。</p>
+<h2 id="制約の仕組み">制約の仕組み <a href="#制約の仕組み" class="heading-anchor">#</a></h2>
+<p>タスクの依存関係（先行タスクリンク）とともに、タスクの制約がタスクのスケジューリング方法を定義します。</p>
+<p>制約は<strong>Task Properties</strong>ダイアログの<strong>Advanced</strong>タブで設定します。デフォルトの制約は<strong>As soon as possible</strong>です。これは、他のタスクとの依存関係を考慮しつつ、タスクがプロジェクトの開始日にできるだけ近く設定されることを意味します。終了日から計画するプロジェクトでは、デフォルトは代わりに<strong>As late as possible</strong>です。</p>
+<p>依存関係に関係なく、タスクを指定した日付に開始または終了させる2つの制約があります。これらは_固定制約_と呼ばれ、<strong>Must start on</strong>と<strong>Must finish on</strong>です。本当に必要な場合にのみ使用してください。</p>
+<p>その他の制約（<strong>Start no earlier than</strong>、<strong>Start no later than</strong>、<strong>Finish no earlier than</strong>、<strong>Finish no later than</strong>）は_柔軟な制約_と呼ばれ、タスクの依存関係を尊重します。依存関係がタスクを制約日付よりも後にする場合、依存関係に基づく日付が優先されます。</p>
+<table>
+<thead>
+<tr>
+<th>制約</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>As soon as possible</strong></td>
+<td>先行タスクが許す限り早くタスクがスケジュールされます。先行タスクがない場合、親サマリータスクの開始時点にタスクが開始されます。</td>
+</tr>
+<tr>
+<td><strong>As late as possible</strong></td>
+<td>先行タスクが許す限り遅くタスクがスケジュールされます。先行タスクがない場合、親サマリータスクの終了時点にタスクが終了します。</td>
+</tr>
+<tr>
+<td><strong>Start no earlier than</strong></td>
+<td>先行タスクにより指定日より遅くタスクが開始される場合、変更はありません。それ以外の場合、タスクは指定日に開始されるようスケジュールされます。</td>
+</tr>
+<tr>
+<td><strong>Start no later than</strong></td>
+<td>先行タスクがタスクを制約日付より後にする場合、依存関係に基づく日付が優先されます。それ以外の場合、タスクは指定日までに開始されるようスケジュールされます。</td>
+</tr>
+<tr>
+<td><strong>Finish no earlier than</strong></td>
+<td>先行タスクにより指定日より遅くタスクが終了する場合、変更はありません。それ以外の場合、タスクは指定日に終了されるようスケジュールされます。</td>
+</tr>
+<tr>
+<td><strong>Finish no later than</strong></td>
+<td>先行タスクがタスクを制約日付より後にする場合、依存関係に基づく日付が優先されます。それ以外の場合、タスクは指定日までに終了されるようスケジュールされます。</td>
+</tr>
+<tr>
+<td><strong>Must start on</strong></td>
+<td>先行タスクに関係なく、タスクの開始日が指定どおりにスケジュールされます。</td>
+</tr>
+<tr>
+<td><strong>Must finish on</strong></td>
+<td>先行タスクに関係なく、タスクの終了日が指定どおりにスケジュールされます。</td>
+</tr>
+</tbody>
+</table>
+<p>柔軟または固定の制約があるタスクは、タスクリストに特別なアイコンが表示されます。</p>
+<blockquote>
+<p>ほとんどのタスクは<strong>As soon as possible</strong>のままにし、特定の日付付近に開始または終了しなければならないタスクにのみ柔軟な制約を使用してください。</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>実績値 - 進捗管理 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="期間、作業量、コスト、日付の実績値と残りの値、およびタスク列の設定方法を理解します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/tracking/actuals/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="実績値">
+  <meta property="og:description" content="期間、作業量、コスト、日付の実績値と残りの値、およびタスク列の設定方法を理解します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/tracking/actuals/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="実績値">
+  <meta name="twitter:description" content="期間、作業量、コスト、日付の実績値と残りの値、およびタスク列の設定方法を理解します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/actuals/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/actuals/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/actuals/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/tracking/actuals/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/tracking/actuals/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/actuals/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/tracking/actuals/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/tracking/actuals/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/actuals/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/" class="active" aria-current="page">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="実績値">実績値 <a href="#実績値" class="heading-anchor">#</a></h1>
+<p>作業が進み<a href="/ja/tracking/progress/#-complete">% Complete</a>を更新すると、Inganttは期間、作業量、コスト、日付の実績値と残りの値を自動的に計算します。これらのフィールドにより、何がいくら使われたか、何が残っているか、プロジェクトが計画に対してどのように推移しているかを正確に確認できます。</p>
+<p>最もよく使われる実績列と残り列は、<strong>Actual Cost</strong> / <strong>Remaining Cost</strong>、<strong>Actual Work</strong> / <strong>Remaining Work</strong>、<strong>Actual Duration</strong> / <strong>Remaining Duration</strong>です。<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>でこれらの値を確認すると、プロジェクト全体の合計を一目で把握できます — いくら使われたか、どれだけの作業量が投入されたか、あとどれくらい残っているか。ルートサマリータスクが表示されていることを確認してください：<strong>View</strong>メニューまたは<strong>Options</strong>ダイアログで<strong>Show root summary task</strong>にチェックを入れます。</p>
+<h2 id="実績列と残り列の表示">実績列と残り列の表示 <a href="#実績列と残り列の表示" class="heading-anchor">#</a></h2>
+<p>実績列と残り列はデフォルトでは表示されていません。タスクリストに追加するには、<strong>Options</strong>ダイアログ（<strong>Task Columns</strong>タブ）を開き、必要な列を有効にします。タスクグリッドの列ヘッダーを右クリックして、列設定に素早くアクセスすることもできます。</p>
+<h3 id="期間">期間 <a href="#期間" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Duration</strong> — タスクにこれまで費やされた稼働時間。タスクの期間に達成率を掛けて計算されます。</li>
+<li><strong>Remaining Duration</strong> — タスクを完了するために必要な残りの稼働時間：期間 - 実績期間。</li>
+</ul>
+<p>たとえば、10日間のタスクが40%完了の場合、実績期間は4日、残り期間は6日です。</p>
+<h3 id="作業量">作業量 <a href="#作業量" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Work</strong> — リソースがタスクに費やした総作業量（時間単位）。プロジェクト設定で<strong>Updating task status updates resource status</strong>が有効になっている場合（デフォルト）、% Completeを変更すると実績作業量が比例して更新されます。</li>
+<li><strong>Remaining Work</strong> — タスクを完了するために必要な残りの作業量：作業量 - 実績作業量。</li>
+</ul>
+<h3 id="コスト">コスト <a href="#コスト" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Cost</strong> — これまでに発生したコスト：発生した固定費と発生したリソースコストの合計。コストの発生方法は各リソースの<strong>Cost Accrual</strong>設定によります：
+<ul>
+<li><strong>Start</strong> — 実績開始日が設定された時点で全額認識。</li>
+<li><strong>Prorated</strong> — 実績作業の進捗に比例してコストが認識。</li>
+<li><strong>End</strong> — タスクが100%完了した時点でのみコストが認識。</li>
+</ul>
+</li>
+<li><strong>Remaining Cost</strong> — タスクを完了するために必要な残りの予算：総コスト - 実績コスト。</li>
+</ul>
+<h3 id="日付">日付 <a href="#日付" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Start</strong> — 作業が実際に開始された日付。% Completeが0%を超えるとタスクのスケジュール上の開始日に自動設定されます。</li>
+<li><strong>Actual Finish</strong> — 作業が実際に完了した日付。% Completeが100%に達するとタスクのスケジュール上の終了日に自動設定されます。</li>
+</ul>
+<h3 id="残業">残業 <a href="#残業" class="heading-anchor">#</a></h3>
+<ul>
+<li><strong>Actual Overtime Work</strong> — タスクで既に実施された残業時間。</li>
+<li><strong>Remaining Overtime Work</strong> — まだ見込まれる残業時間。</li>
+<li><strong>Actual Overtime Cost</strong> — 既に発生した残業コスト。</li>
+<li><strong>Remaining Overtime Cost</strong> — まだ見込まれる残業コスト。</li>
+</ul>
+<h2 id="実績値の計算方法">実績値の計算方法 <a href="#実績値の計算方法" class="heading-anchor">#</a></h2>
+<p>すべての実績フィールドと残りフィールドは以下の関係を維持します：</p>
+<blockquote>
+<p><strong>合計 = 実績 + 残り</strong></p>
+</blockquote>
+<p>一方の値を変更すると、Inganttは整合性を保つために他の値を更新します。最も一般的なワークフローは**% Complete**を更新することで、すべての実績フィールドと残りフィールドに自動的に反映されます：</p>
+<ol>
+<li><strong>Actual Duration</strong>と<strong>Remaining Duration</strong>が新しい達成率から再計算されます。</li>
+<li><strong>Actual Work</strong>と<strong>Remaining Work</strong>が更新されます（プロジェクト設定が有効な場合）。</li>
+<li><strong>Actual Start</strong>と<strong>Actual Finish</strong>が進捗に基づいて設定されます。</li>
+<li><strong>Actual Cost</strong>と<strong>Remaining Cost</strong>が発生方法に基づいて再計算されます。</li>
+</ol>
+<p>サマリータスクでは、<strong>Actual Work</strong>、<strong>Remaining Work</strong>、<strong>Actual Cost</strong>、<strong>Remaining Cost</strong>はすべての子タスクからロールアップ（合計）されます。<strong>Actual Start</strong>は子タスクの中で最も早い実績開始日、<strong>Actual Finish</strong>は最も遅い実績終了日です。</p>
+<h2 id="タスク列">タスク列 <a href="#タスク列" class="heading-anchor">#</a></h2>
+<p>実績値と残りの値以外にも、Inganttはスケジューリングデータ、クリティカルパス情報、コスト、作業量、アーンドバリュー指標、ベースライン、カスタムフィールド、アウトラインコードなど、幅広いタスク列をサポートしています。すべての列は<strong>Options</strong>ダイアログ（<strong>Task Columns</strong>タブ）でオン/オフの切り替えと並べ替えが可能です。タスクグリッドの列ヘッダーを右クリックして、列設定に素早くアクセスすることもできます。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

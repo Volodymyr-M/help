@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>배정 - 일정 작성 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="작업에 자원을 배정하고 배정 단위, 작업량 윤곽, 배정 지연 및 초과 근무를 구성합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/building-schedule/assignments/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="배정">
+  <meta property="og:description" content="작업에 자원을 배정하고 배정 단위, 작업량 윤곽, 배정 지연 및 초과 근무를 구성합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/building-schedule/assignments/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="배정">
+  <meta name="twitter:description" content="작업에 자원을 배정하고 배정 단위, 작업량 윤곽, 배정 지연 및 초과 근무를 구성합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/assignments/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/assignments/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/assignments/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/assignments/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/assignments/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/assignments/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/assignments/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/assignments/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/" class="active" aria-current="page">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="배정">배정 <a href="#배정" class="heading-anchor">#</a></h1>
+<p>자원이 작업에 어떻게 할당되는지 제어합니다 — 누가 무엇을, 얼마만큼의 시간으로, 노력이 어떻게 분배되는지를 관리합니다. 단위, 작업량 윤곽, 초과 근무를 조정하여 팀의 실제 근무 방식에 맞추십시오.</p>
+<h2 id="자원-배정-및-단위">자원 배정 및 단위 <a href="#자원-배정-및-단위" class="heading-anchor">#</a></h2>
+<p>자원은 <strong>Task Properties</strong> 대화 상자의 <strong>Resources</strong> 탭에서 작업에 배정할 수 있습니다.</p>
+<p>자원을 배정하려면 해당 자원 행의 체크박스를 체크합니다. 자원 배정을 해제하려면 체크박스를 해제합니다.</p>
+<p>작업 자원 또는 자재 자원의 배정에는 해당 열에 표시되는 <strong>Units</strong>가 있습니다. <strong>Edit</strong> 버튼을 클릭하여 배정의 기본 <strong>Units</strong> 값을 변경합니다.</p>
+<p>기본적으로 작업 자원은 자원의 <a href="/ko/building-schedule/resources/#%EC%B5%9C%EB%8C%80-%EB%8B%A8%EC%9C%84">Max Units</a>(전일 근무 자원의 경우 100%)와 일치하는 단위로 배정됩니다. 이는 자원이 사용 가능한 모든 달력 시간을 해당 작업에 투입함을 의미합니다. 이 값을 원하는 숫자로 변경할 수 있습니다.</p>
+<p>기본적으로 자재 자원은 1단위로 배정됩니다. 이는 작업을 완료할 때 해당 자재 1단위가 사용됨을 의미합니다. 단위는 자재에 대해 정의한 것(상자, 갤런, 톤 등)을 나타냅니다. 기본값을 변경하고 원하는 수량의 단위를 설정할 수 있습니다.</p>
+<h2 id="작업량-윤곽">작업량 윤곽 <a href="#작업량-윤곽" class="heading-anchor">#</a></h2>
+<p>작업 자원이 작업에 배정되면 노력(작업량)이 <strong>작업량 윤곽</strong>에 따라 작업 기간에 걸쳐 분배됩니다. 기본적으로 작업량은 균등하게 분배되지만(Flat 윤곽), Ingantt는 시간에 따라 노력이 분배되는 방식을 변경하는 여러 윤곽 패턴을 지원합니다:</p>
+<table>
+<thead>
+<tr>
+<th>윤곽</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flat</strong></td>
+<td>전체 기간에 걸쳐 균일한 노력 (기본값)</td>
+</tr>
+<tr>
+<td><strong>Back Loaded</strong></td>
+<td>작업 후반으로 갈수록 노력이 증가</td>
+</tr>
+<tr>
+<td><strong>Front Loaded</strong></td>
+<td>작업 초반에 노력이 가장 크고 점차 감소</td>
+</tr>
+<tr>
+<td><strong>Double Peak</strong></td>
+<td>작업 중 두 번의 강도 피크</td>
+</tr>
+<tr>
+<td><strong>Early Peak</strong></td>
+<td>초반에 피크를 찍은 후 점차 감소</td>
+</tr>
+<tr>
+<td><strong>Late Peak</strong></td>
+<td>후반에 피크를 향해 점진적으로 증가</td>
+</tr>
+<tr>
+<td><strong>Bell</strong></td>
+<td>종 모양 곡선 — 중간에 피크</td>
+</tr>
+<tr>
+<td><strong>Turtle</strong></td>
+<td>완만한 종 모양 곡선 — 더 고른 분배</td>
+</tr>
+</tbody>
+</table>
+<p>작업량 윤곽은 작업량이 시간 기간에 걸쳐 분배되는 방식에 영향을 미치며 프로젝트 파일을 열고 저장할 때 유지됩니다.</p>
+<h2 id="배정-지연">배정 지연 <a href="#배정-지연" class="heading-anchor">#</a></h2>
+<p>작업의 각 자원 배정에는 자원이 작업 시작 날짜를 기준으로 언제 작업을 시작하는지 조정하는 <strong>Delay</strong> 속성이 있습니다. 예를 들어, 작업이 월요일에 시작되고 자원에 2일 지연이 있으면 해당 자원은 수요일에 작업을 시작합니다.</p>
+<p>지연은 <strong>Edit Resource Assignment</strong> 대화 상자에서 설정되며 작업 자원 배정에만 적용됩니다. 이를 사용하여 작업에서 자원의 시작 시간을 엇갈리게 할 수 있습니다.</p>
+<h2 id="초과-근무">초과 근무 <a href="#초과-근무" class="heading-anchor">#</a></h2>
+<p>작업 자원의 경우 배정의 총 작업량 중 일부를 초과 근무로 지정할 수 있습니다. 초과 근무 작업량은 총 작업량의 일부이며 추가가 아닙니다: <strong>Work = Regular Work + Overtime Work</strong>.</p>
+<p>작업 비용은 정규 근무와 초과 근무 부분을 별도로 사용하여 계산됩니다:
+<strong>Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use</strong></p>
+<p>Fixed Units 및 Fixed Work 작업의 경우 초과 근무를 입력하면 기간이 정규 작업량만을 기반으로 하므로 작업 기간이 단축됩니다.</p>
+<p><strong>Edit Resource Assignment</strong> 대화 상자에서 초과 근무를 설정합니다. 작업 테이블에서 <strong>Overtime Work</strong>, <strong>Overtime Cost</strong>, <strong>Regular Work</strong> 세 가지 선택적 열을 사용할 수 있습니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

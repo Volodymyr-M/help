@@ -4,7 +4,7 @@ See workload distribution across your team. Usage views show who is doing what a
 
 ## Resource Usage
 
-The **Resource Usage** view allows you to see all resource assignments and the amount of [Work](/en/building-schedule/tasks/index.md#work) that each work resource performs during each period on the timeline.
+The **Resource Usage** view allows you to see all resource assignments and the amount of [Work](/en/building-schedule/task-properties/index.md#work) that each work resource performs during each period on the timeline.
 
 Similar to the Gantt chart, you can zoom the timeline in or out to see a more or less detailed view.
 

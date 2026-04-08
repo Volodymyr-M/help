@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제약 조건 - 일정 작성 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/building-schedule/constraints/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="제약 조건">
+  <meta property="og:description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/building-schedule/constraints/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="제약 조건">
+  <meta name="twitter:description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/constraints/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/constraints/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/constraints/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/constraints/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/constraints/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/constraints/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/constraints/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/constraints/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/" class="active" aria-current="page">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="제약-조건">제약 조건 <a href="#제약-조건" class="heading-anchor">#</a></h1>
+<p>일부 작업은 특정 날짜에 시작하거나 완료해야 합니다 — 배송이 화요일에 도착하거나 허가가 금요일에 만료되는 경우 등이 있습니다. 제약 조건을 사용하면 필요한 곳에 날짜를 고정하면서 일정의 나머지 부분은 유연하게 유지할 수 있습니다.</p>
+<h2 id="제약-조건의-작동-방식">제약 조건의 작동 방식 <a href="#제약-조건의-작동-방식" class="heading-anchor">#</a></h2>
+<p>작업 종속성(선행 작업 링크)과 함께 작업의 제약 조건은 작업의 일정 방식을 정의합니다.</p>
+<p>제약 조건은 <strong>Task Properties</strong> 대화 상자의 <strong>Advanced</strong> 탭에서 설정됩니다. 기본 제약 조건은 <strong>As soon as possible</strong>입니다. 이는 다른 작업과의 종속성을 고려하여 작업이 프로젝트 시작 날짜에 가능한 한 가깝게 설정됨을 의미합니다. 완료 날짜 기준으로 계획된 프로젝트에서는 기본값이 <strong>As late as possible</strong>입니다.</p>
+<p>지정된 날짜에 종속성에 관계없이 작업이 시작되거나 완료되도록 강제하는 두 가지 제약 조건이 있습니다. 이를 _고정 제약 조건_이라 하며, <strong>Must start on</strong>과 <strong>Must finish on</strong>이 해당됩니다. 반드시 필요한 경우에만 이 제약 조건을 사용하십시오.</p>
+<p>다른 제약 조건(<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong>, <strong>Finish no later than</strong>)은 작업 종속성을 존중하므로 _유연한 제약 조건_이라고 합니다. 종속성이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다.</p>
+<table>
+<thead>
+<tr>
+<th>제약 조건</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>As soon as possible</strong></td>
+<td>선행 작업이 허용하는 한 가능한 빨리 일정이 잡힙니다. 연결된 선행 작업이 없으면 상위 요약 작업의 시작 시점에 시작됩니다.</td>
+</tr>
+<tr>
+<td><strong>As late as possible</strong></td>
+<td>선행 작업이 허용하는 한 가능한 늦게 일정이 잡힙니다. 연결된 선행 작업이 없으면 상위 요약 작업의 종료 시점에 완료됩니다.</td>
+</tr>
+<tr>
+<td><strong>Start no earlier than</strong></td>
+<td>선행 작업으로 인해 지정된 날짜보다 늦게 시작되면 변경 사항이 없습니다. 그렇지 않으면 지정된 날짜에 시작되도록 일정이 잡힙니다.</td>
+</tr>
+<tr>
+<td><strong>Start no later than</strong></td>
+<td>선행 작업이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다. 그렇지 않으면 지정된 날짜까지 시작되도록 일정이 잡힙니다.</td>
+</tr>
+<tr>
+<td><strong>Finish no earlier than</strong></td>
+<td>선행 작업으로 인해 지정된 날짜보다 늦게 완료되면 변경 사항이 없습니다. 그렇지 않으면 지정된 날짜에 완료되도록 일정이 잡힙니다.</td>
+</tr>
+<tr>
+<td><strong>Finish no later than</strong></td>
+<td>선행 작업이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다. 그렇지 않으면 지정된 날짜까지 완료되도록 일정이 잡힙니다.</td>
+</tr>
+<tr>
+<td><strong>Must start on</strong></td>
+<td>선행 작업에 관계없이 작업의 시작 날짜가 정확히 지정된 대로 예약됩니다.</td>
+</tr>
+<tr>
+<td><strong>Must finish on</strong></td>
+<td>선행 작업에 관계없이 작업의 완료 날짜가 정확히 지정된 대로 예약됩니다.</td>
+</tr>
+</tbody>
+</table>
+<p>유연한 제약 조건 또는 고정 제약 조건이 있는 작업은 작업 목록에 특수 아이콘이 표시됩니다.</p>
+<blockquote>
+<p>대부분의 작업은 <strong>As soon as possible</strong>로 유지하고 특정 날짜 근처에서 시작하거나 완료해야 하는 작업에만 유연한 제약 조건을 사용하십시오.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

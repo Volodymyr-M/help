@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>가져오기 및 내보내기 - 시작하기 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/getting-started/import-export/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="가져오기 및 내보내기">
+  <meta property="og:description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/getting-started/import-export/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="가져오기 및 내보내기">
+  <meta name="twitter:description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/import-export/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/import-export/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/import-export/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/import-export/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/import-export/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/import-export/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/import-export/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/import-export/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/" class="active" aria-current="page">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="가져오기-및-내보내기">가져오기 및 내보내기 <a href="#가져오기-및-내보내기" class="heading-anchor">#</a></h1>
+<p>다양한 일정 관리 애플리케이션의 프로젝트 파일을 열고 프로젝트를 PDF, PNG, CSV 등의 형식으로 내보냅니다.</p>
+<h2 id="프로젝트-파일-가져오기">프로젝트 파일 가져오기 <a href="#프로젝트-파일-가져오기" class="heading-anchor">#</a></h2>
+<p>Ingantt는 Microsoft Project뿐만 아니라 다양한 일정 관리 애플리케이션의 프로젝트 파일을 열 수 있습니다. 지원되는 가져오기 형식은 다음과 같습니다:</p>
+<ul>
+<li><strong>Microsoft Project</strong> — MPP, MPT, MPX</li>
+<li><strong>Primavera P6</strong> — XER, PMXML</li>
+<li><strong>GanttProject</strong> — GAN</li>
+<li><strong>Asta Powerproject</strong> — PP</li>
+<li><strong>ConceptDraw</strong> — CDPX</li>
+<li><strong>FastTrack Schedule</strong> — FTS</li>
+<li><strong>ProjectLibre</strong> — POD</li>
+<li><strong>GNOME Planner</strong> — Planner</li>
+<li><strong>Phoenix Project Manager</strong> — PPX</li>
+<li><strong>Synchro</strong> — SP</li>
+<li><strong>TurboProject</strong> — PEP</li>
+<li>기타 (SDEF 및 기타 형식)</li>
+</ul>
+<p>파일을 가져오려면 프로젝트 화면에서 <strong>+</strong> 버튼을 클릭하거나 <strong>File</strong> 메뉴의 <strong>Import</strong> 옵션을 사용하십시오. 가져온 파일을 변경하면 Ingantt는 XML 형식으로 저장합니다.</p>
+<blockquote>
+<p>비 XML 프로젝트 파일을 열기 위해 Ingantt는 보안 연결을 통해 Ingantt 웹 서비스로 파일을 전송하여 변환합니다. 파일은 서비스에 저장되지 않습니다. 인터넷 연결이 필요합니다.</p>
+</blockquote>
+<h2 id="프로젝트-내보내기">프로젝트 내보내기 <a href="#프로젝트-내보내기" class="heading-anchor">#</a></h2>
+<p>Ingantt는 <strong>File</strong> 메뉴(또는 웹에서 <strong>Download</strong>)의 <strong>Export</strong> 옵션을 통해 여러 내보내기 형식을 제공합니다. <strong>Export</strong>를 선택하면 원하는 형식을 선택할 수 있는 대화 상자가 나타납니다:</p>
+<table>
+<thead>
+<tr>
+<th>형식</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>PDF</strong></td>
+<td>Gantt 차트의 인쇄 가능한 PDF 문서</td>
+</tr>
+<tr>
+<td><strong>PNG</strong></td>
+<td>Gantt 차트의 이미지 파일 (현재 테마 포함)</td>
+</tr>
+<tr>
+<td><strong>CSV</strong></td>
+<td>스프레드시트용 작업 데이터의 쉼표 구분 값 파일</td>
+</tr>
+<tr>
+<td><strong>XML</strong></td>
+<td>상호 운용성을 위한 프로젝트 XML 형식</td>
+</tr>
+<tr>
+<td><strong>Markdown</strong></td>
+<td>문서화, README 또는 위키용 텍스트 형식</td>
+</tr>
+</tbody>
+</table>
+<p>내보낸 파일은 현재 Gantt 차트 설정을 반영합니다. 예를 들어, <strong>Options</strong> 대화 상자에서 작업 이름이 숨겨져 있으면 내보내기에도 표시되지 않습니다. 확대/축소 수준도 유지됩니다.</p>
+<blockquote>
+<p>PDF 내보내기는 항상 라이트 테마 색상을 사용하고, PNG 내보내기는 현재 UI 테마(라이트 또는 다크)를 사용합니다. CSV 및 Markdown 내보내기는 일반 텍스트입니다. UI에서 표시되는 경우 분할 작업, 기준선 막대 및 평준화 고스트 막대가 모두 PDF 및 PNG 내보내기에 렌더링됩니다.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

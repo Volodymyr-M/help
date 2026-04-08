@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Visualizações de Tarefas - Visualizações - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Trabalhe com o Quadro de Tarefas, Diagrama de Rede, Visualização de Calendário, Linha do Tempo e Gantt de Acompanhamento.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/views/task-views/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Visualizações de Tarefas">
+  <meta property="og:description" content="Trabalhe com o Quadro de Tarefas, Diagrama de Rede, Visualização de Calendário, Linha do Tempo e Gantt de Acompanhamento.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/views/task-views/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_PT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Visualizações de Tarefas">
+  <meta name="twitter:description" content="Trabalhe com o Quadro de Tarefas, Diagrama de Rede, Visualização de Calendário, Linha do Tempo e Gantt de Acompanhamento.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/task-views/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/task-views/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/views/task-views/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/views/task-views/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/views/task-views/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/views/task-views/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/task-views/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/views/task-views/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/views/task-views/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/task-views/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/" class="active" aria-current="page">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="visualizações-de-tarefas">Visualizações de Tarefas <a href="#visualizações-de-tarefas" class="heading-anchor">#</a></h1>
+<p>Além do gráfico de Gantt, visualize tarefas em um quadro Kanban, calendário mensal, diagrama de rede ou linha do tempo. Cada visualização destaca diferentes aspectos do seu cronograma.</p>
+<h2 id="quadro-de-tarefas">Quadro de Tarefas <a href="#quadro-de-tarefas" class="heading-anchor">#</a></h2>
+<p>A visualização <strong>Task Board</strong> exibe tarefas como cartões organizados em colunas que representam estágios do fluxo de trabalho (estilo Kanban).</p>
+<p>Novos projetos começam com três colunas padrão: &quot;Not Started&quot; (0%), &quot;In Progress&quot; (50%) e &quot;Complete&quot; (100%). Cada coluna tem um mapeamento de % Concluído — quando você arrasta um cartão para uma coluna, o percentual concluído da tarefa é atualizado automaticamente.</p>
+<p>Você pode adicionar, editar, renomear, reordenar e excluir colunas. Cada coluna tem um botão <strong>Add Task</strong> na parte inferior para criar tarefas diretamente naquele estágio.</p>
+<p>Apenas tarefas que não são resumo, ativas e com &quot;Show on board&quot; ativado aparecem no quadro. A configuração &quot;Show on board&quot; está disponível na aba <strong>Visual</strong> da caixa de diálogo <strong>Task Properties</strong>.</p>
+<blockquote>
+<p>Arraste os cartões de tarefas entre colunas para alterar seu status. Quando o % Concluído de uma tarefa muda em outro lugar (via caixa de diálogo, edição inline ou Update Project), o cartão se move automaticamente para a coluna correspondente.</p>
+</blockquote>
+<h2 id="diagrama-de-rede">Diagrama de Rede <a href="#diagrama-de-rede" class="heading-anchor">#</a></h2>
+<p>A visualização <strong>Network Diagram</strong> exibe tarefas como nós retangulares dispostos em um layout de fluxograma da esquerda para a direita. Tarefas sem predecessoras aparecem na coluna mais à esquerda, e cada tarefa subsequente aparece após todas as suas predecessoras.</p>
+<ul>
+<li>Tarefas normais mostram ID, duração, datas de início/término e recursos</li>
+<li>Tarefas resumo mostram ID, duração, datas de início/término e percentual concluído</li>
+<li>Marcos mostram ID e data de início</li>
+<li>Tarefas do caminho crítico têm cabeçalhos e bordas vermelhas</li>
+<li>O progresso é indicado por sobreposições de linhas diagonais: uma linha para tarefas em andamento, linhas cruzadas para tarefas concluídas</li>
+</ul>
+<p>Você pode recolher/expandir tarefas resumo, clicar para selecionar, clicar duas vezes para editar e clicar com o botão direito para o menu de contexto. As setas de dependência são desenhadas entre os nós para todos os quatro tipos de vínculo.</p>
+<h2 id="visualização-de-calendário">Visualização de Calendário <a href="#visualização-de-calendário" class="heading-anchor">#</a></h2>
+<p>A <strong>Calendar View</strong> exibe uma grade de calendário mensal com as tarefas mostradas como barras horizontais nas datas agendadas.</p>
+<ul>
+<li>Alterne entre as visualizações <strong>Month</strong> e <strong>Week</strong> usando o botão de alternância no cabeçalho</li>
+<li>Ative o modo <strong>Work week</strong> para mostrar apenas dias úteis (visualização de 5 dias)</li>
+<li>Navegue com os botões Anterior/Próximo ou pule para hoje</li>
+<li>Dias não úteis são mostrados com um fundo distinto</li>
+<li>Marcos aparecem como ícones de losango</li>
+<li>Clique duas vezes em um dia vazio para criar uma nova tarefa de 1 dia nessa data</li>
+</ul>
+<p>Tarefas que se estendem além do limite de uma semana continuam na linha seguinte. Quando múltiplas tarefas se sobrepõem no mesmo dia, elas se empilham verticalmente.</p>
+<h2 id="linha-do-tempo">Linha do Tempo <a href="#linha-do-tempo" class="heading-anchor">#</a></h2>
+<p>A <strong>Timeline</strong> é um painel retrátil que aparece acima do gráfico de Gantt, mostrando uma visão simplificada das tarefas selecionadas pelo usuário em um eixo temporal horizontal.</p>
+<p>Para adicionar uma tarefa à linha do tempo, clique com o botão direito e escolha <strong>Display on Timeline</strong>, ou marque a opção na aba <strong>Visual</strong> da caixa de diálogo Task Properties.</p>
+<p>As tarefas na linha do tempo podem ser exibidas como barras ou chamadas (rótulos de texto com linhas conectoras verticais). Você pode alternar entre os modos arrastando uma barra de tarefa acima ou abaixo da linha separadora horizontal no painel da linha do tempo. A linha do tempo também mostra um marcador de hoje e uma sobreposição de viewport que pode ser arrastada para rolar o gráfico de Gantt.</p>
+<p>Alterne a Timeline pelo menu <strong>View</strong>.</p>
+<h2 id="gantt-de-acompanhamento">Gantt de Acompanhamento <a href="#gantt-de-acompanhamento" class="heading-anchor">#</a></h2>
+<p>A visualização <strong>Tracking Gantt</strong> é semelhante à visualização Tasks padrão, mas com o destaque do caminho crítico sempre ativado e a Baseline 0 exibida se tiver sido salva. Quando você sai do Tracking Gantt, as configurações de visibilidade do caminho crítico e da linha de base são restauradas ao estado anterior.</p>
+<p>Use o Tracking Gantt para monitorar o progresso do projeto em relação ao plano da linha de base.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

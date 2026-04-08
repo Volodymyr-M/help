@@ -4,7 +4,7 @@ Visualisez la répartition de la charge de travail au sein de votre équipe. Les
 
 ## Resource Usage
 
-La vue **Resource Usage** vous permet de visualiser toutes les affectations de ressources et la quantité de [travail](/fr/building-schedule/tasks/index.md#work) que chaque ressource de travail effectue pendant chaque période sur la ligne temporelle.
+La vue **Resource Usage** vous permet de visualiser toutes les affectations de ressources et la quantité de [travail](/fr/building-schedule/task-properties/index.md#travail) que chaque ressource de travail effectue pendant chaque période sur la ligne temporelle.
 
 Comme pour le diagramme de Gantt, vous pouvez zoomer en avant ou en arrière sur la ligne temporelle pour obtenir une vue plus ou moins détaillée.
 

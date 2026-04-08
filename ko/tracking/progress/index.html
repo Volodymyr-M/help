@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>진행 추적 - 진행 추적 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="완료율, 실제 날짜, 잔여 기간 및 프로젝트 업데이트 명령으로 작업 완료를 추적합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/tracking/progress/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="진행 추적">
+  <meta property="og:description" content="완료율, 실제 날짜, 잔여 기간 및 프로젝트 업데이트 명령으로 작업 완료를 추적합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/tracking/progress/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="진행 추적">
+  <meta name="twitter:description" content="완료율, 실제 날짜, 잔여 기간 및 프로젝트 업데이트 명령으로 작업 완료를 추적합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/progress/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/progress/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/progress/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/progress/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/tracking/progress/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/tracking/progress/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/progress/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/tracking/progress/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/tracking/progress/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/progress/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/" class="active" aria-current="page">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="진행-추적">진행 추적 <a href="#진행-추적" class="heading-anchor">#</a></h1>
+<p>작업이 시작되면 각 작업의 <strong>% Complete</strong>를 업데이트하여 실제 진행 상황이 계획과 어떻게 비교되는지 추적합니다. <strong>Update Project</strong>를 사용하여 진행 상황을 일괄 설정합니다. 진행 상황이 기록되면 Ingantt가 자동으로 <a href="/ko/tracking/actuals/">실적</a>을 계산합니다 — 기간, 작업량, 비용 및 날짜에 대한 실적 및 잔여 값입니다.</p>
+<h2 id="완료율">완료율 <a href="#완료율" class="heading-anchor">#</a></h2>
+<p>프로젝트가 실행 중이면 진행 상황을 추적해야 합니다. 각 작업의 <strong>% Complete</strong>를 최신 상태로 유지하면 루트 요약 작업에서 프로젝트의 전체 <strong>% Complete</strong>를 확인할 수 있습니다.</p>
+<p><strong>Task Properties</strong> 대화 상자의 <strong>% Complete</strong> 필드를 사용하여 특정 작업의 완료율을 설정합니다. 100% 완료된 작업은 작업 목록에 녹색 체크 표시 아이콘이 표시됩니다.</p>
+<p>완료율을 업데이트할 때:</p>
+<ul>
+<li>0% 이상으로 설정하면 작업의 <strong>Actual Start</strong>가 작업의 예정 시작 날짜로 설정됩니다.</li>
+<li>100%로 설정하면 작업의 <strong>Actual Finish</strong>가 작업의 예정 완료 날짜로 설정됩니다.</li>
+<li><strong>Actual Duration</strong>과 <strong>Remaining Duration</strong>은 완료율을 기반으로 자동 계산됩니다.</li>
+<li>프로젝트 설정에서 <strong>Updating task status updates resource status</strong>가 활성화(기본값)되어 있으면 <strong>Actual Work</strong>와 <strong>Remaining Work</strong>도 비례적으로 업데이트됩니다.</li>
+</ul>
+<p>요약 작업의 <strong>% Complete</strong>는 모든 하위 비요약 작업의 기간 가중 평균으로 계산됩니다.</p>
+<blockquote>
+<p><a href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">프로젝트 업데이트</a> 명령을 사용하여 기준 날짜를 기반으로 여러 작업의 완료율을 한 번에 설정할 수도 있습니다.</p>
+</blockquote>
+<h2 id="프로젝트-업데이트">프로젝트 업데이트 <a href="#프로젝트-업데이트" class="heading-anchor">#</a></h2>
+<p><strong>Update Project</strong> 명령은 <strong>Project</strong> 메뉴에서 접근할 수 있는 일괄 진행 추적 작업을 제공합니다.</p>
+<h3 id="작업을-완료로-업데이트">작업을 완료로 업데이트 <a href="#작업을-완료로-업데이트" class="heading-anchor">#</a></h3>
+<p>지정된 날짜까지 작업을 완료로 표시합니다:</p>
+<ul>
+<li><strong>비례 (0%~100%)</strong> — 각 작업의 근무 기간 중 기준 날짜 이전에 해당하는 부분을 기반으로 완료율을 계산합니다.</li>
+<li><strong>전부 또는 전무 (0% 또는 100%)</strong> — 기준 날짜까지 완료 여부에 따라 작업을 0% 또는 100%로 설정합니다.</li>
+</ul>
+<h3 id="미완료-작업-재예약">미완료 작업 재예약 <a href="#미완료-작업-재예약" class="heading-anchor">#</a></h3>
+<p>미완료 작업을 지정된 날짜 이후에 시작하도록 이동합니다:</p>
+<ul>
+<li>시작되지 않은 작업은 <strong>Start No Earlier Than</strong> 제약 조건을 받습니다.</li>
+<li>진행 중인 작업은 프로젝트 일정 옵션에서 <strong>Split in-progress tasks</strong>가 활성화된 경우 분할됩니다.</li>
+<li>완료된 작업은 수정되지 않습니다.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

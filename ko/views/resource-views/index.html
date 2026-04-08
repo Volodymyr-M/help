@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>자원 보기 - 보기 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="자원 사용량, 작업 사용량, 팀 플래너 및 자원 그래프 보기로 업무량을 분석합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/views/resource-views/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="자원 보기">
+  <meta property="og:description" content="자원 사용량, 작업 사용량, 팀 플래너 및 자원 그래프 보기로 업무량을 분석합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/views/resource-views/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="자원 보기">
+  <meta name="twitter:description" content="자원 사용량, 작업 사용량, 팀 플래너 및 자원 그래프 보기로 업무량을 분석합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/resource-views/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/views/resource-views/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/views/resource-views/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/views/resource-views/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/views/resource-views/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/resource-views/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/views/resource-views/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/views/resource-views/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/resource-views/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/" class="active" aria-current="page">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="자원-보기">자원 보기 <a href="#자원-보기" class="heading-anchor">#</a></h1>
+<p>팀 전체의 업무량 분포를 확인합니다. 사용량 보기에서 누가 언제 무엇을 하는지 보고, Team Planner에서 드래그하여 재배정하고, Resource Graph에서 용량을 한눈에 파악합니다.</p>
+<h2 id="resource-usage">Resource Usage <a href="#resource-usage" class="heading-anchor">#</a></h2>
+<p><strong>Resource Usage</strong> 보기에서 모든 자원 배정과 각 작업 자원이 타임라인의 각 기간에 수행하는 <a href="/ko/building-schedule/task-properties/#%EC%9E%91%EC%97%85%EB%9F%89">작업량</a>을 확인할 수 있습니다.</p>
+<p>Gantt 차트와 마찬가지로 타임라인을 확대하거나 축소하여 더 상세하거나 간략한 보기를 확인할 수 있습니다.</p>
+<p>자원이 주어진 기간 동안 달력이 허용하는 것보다 더 많은 작업을 수행해야 하는 경우, 해당 <strong>Work</strong>가 빨간색으로 강조 표시됩니다.</p>
+<p>Resource Usage 보기에서 배정 수준의 작업량 셀을 더블클릭하여 작업량 분배를 직접 편집할 수 있습니다. 작업량 셀을 편집하면 배정의 작업량 윤곽이 자동으로 &quot;Contoured&quot;로 변경되고 사용자 정의 일별 작업량 데이터가 저장됩니다.</p>
+<h2 id="task-usage">Task Usage <a href="#task-usage" class="heading-anchor">#</a></h2>
+<p><strong>Task Usage</strong> 보기는 Resource Usage의 반대입니다 — 작업 중심의 작업량 분배 보기를 표시합니다. 각 작업이 최상위 행으로 나타나고 그 아래에 자원 배정이 들여쓰기되어 표시됩니다.</p>
+<p>왼쪽 패널에는 작업 및 배정 세부 정보가, 오른쪽 패널에는 시간 기간에 걸쳐 분배된 작업량 값이 표시됩니다. 작업 수준의 작업량 값은 굵은 글씨로 표시됩니다. 과배정된 배정 작업량 값은 빨간색으로 강조 표시됩니다.</p>
+<h2 id="team-planner">Team Planner <a href="#team-planner" class="heading-anchor">#</a></h2>
+<p><strong>Team Planner</strong> 보기는 각 행이 작업 자원을 나타내는 자원 중심 일정 보기입니다. 작업 막대는 공유 시간 척도를 따라 각 자원의 행에 배치됩니다.</p>
+<p>주요 기능:</p>
+<ul>
+<li><strong>수평 드래그</strong>로 작업 일정 변경 — 작업에 새 위치의 Start No Earlier Than 제약 조건이 적용됩니다.</li>
+<li><strong>수직 드래그</strong>로 다른 자원에 작업 재배정</li>
+<li><strong>대각선 드래그</strong>로 한 번에 일정 변경과 재배정</li>
+<li><strong>Unassigned Tasks</strong> 섹션으로 또는 해당 섹션에서 드래그하여 자원 배정 추가 또는 제거</li>
+<li>과배정된 자원은 왼쪽 패널에 빨간색 텍스트로 표시</li>
+<li>100% 완료된 작업은 드래그할 수 없음</li>
+</ul>
+<h2 id="resource-graph">Resource Graph <a href="#resource-graph" class="heading-anchor">#</a></h2>
+<p><strong>Resource Graph</strong> 보기는 시간에 따른 자원별 업무량 할당 히스토그램을 표시합니다. 한 번에 하나의 작업 자원을 표시하며 각 기간에 대한 수직 막대가 있습니다. 왼쪽 패널의 화살표 버튼을 사용하여 자원 간에 이동합니다.</p>
+<p>7가지 그래프 유형을 사용할 수 있습니다:</p>
+<table>
+<thead>
+<tr>
+<th>그래프 유형</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Peak Units</strong></td>
+<td>기간별 자원 용량 사용 비율 (기본값)</td>
+</tr>
+<tr>
+<td><strong>Work</strong></td>
+<td>기간별 작업 시간</td>
+</tr>
+<tr>
+<td><strong>Overallocation</strong></td>
+<td>용량을 초과하는 시간만 표시</td>
+</tr>
+<tr>
+<td><strong>Percent Allocation</strong></td>
+<td>Peak Units와 동일하며 백분율 표시</td>
+</tr>
+<tr>
+<td><strong>Remaining Availability</strong></td>
+<td>미사용 용량(시간)</td>
+</tr>
+<tr>
+<td><strong>Work Availability</strong></td>
+<td>총 달력 용량(시간)</td>
+</tr>
+<tr>
+<td><strong>Unit Availability</strong></td>
+<td>유효 최대 단위 백분율</td>
+</tr>
+</tbody>
+</table>
+<p>파란색 막대는 용량 내의 작업을 나타내고, 빨간색 막대는 용량을 초과하는 과배정 부분을 나타냅니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

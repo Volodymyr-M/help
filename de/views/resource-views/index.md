@@ -4,7 +4,7 @@ Sehen Sie die Arbeitsverteilung in Ihrem Team. Verwendungsansichten zeigen, wer 
 
 ## Ressourcenverwendung
 
-Die **Ressourcenverwendung**-Ansicht ermöglicht es Ihnen, alle Ressourcenzuweisungen und die [Arbeit](/de/building-schedule/tasks/index.md#arbeit) zu sehen, die jede Arbeitsressource während jedes Zeitraums auf der Zeitachse leistet.
+Die **Ressourcenverwendung**-Ansicht ermöglicht es Ihnen, alle Ressourcenzuweisungen und die [Arbeit](/de/building-schedule/task-properties/index.md#arbeit) zu sehen, die jede Arbeitsressource während jedes Zeitraums auf der Zeitachse leistet.
 
 Ähnlich wie beim Gantt-Diagramm können Sie die Zeitachse vergrößern oder verkleinern, um eine detailliertere oder weniger detaillierte Ansicht zu erhalten.
 

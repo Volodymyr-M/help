@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>割り当て - スケジュールの構築 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="リソースをタスクに割り当て、割り当て単位、作業量配分、割り当て遅延、残業作業量を設定します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/building-schedule/assignments/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="割り当て">
+  <meta property="og:description" content="リソースをタスクに割り当て、割り当て単位、作業量配分、割り当て遅延、残業作業量を設定します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/building-schedule/assignments/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="割り当て">
+  <meta name="twitter:description" content="リソースをタスクに割り当て、割り当て単位、作業量配分、割り当て遅延、残業作業量を設定します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/assignments/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/assignments/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/assignments/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/assignments/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/assignments/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/assignments/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/assignments/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/assignments/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/assignments/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/" class="active" aria-current="page">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="割り当て">割り当て <a href="#割り当て" class="heading-anchor">#</a></h1>
+<p>リソースをタスクにどのように配分するかを制御します。誰がどの作業を行うか、時間の何割を使うか、作業量をどう配分するかを設定できます。単位、作業量配分、残業を調整して、チームの実際の働き方に合わせましょう。</p>
+<h2 id="リソースの割り当てと単位">リソースの割り当てと単位 <a href="#リソースの割り当てと単位" class="heading-anchor">#</a></h2>
+<p>リソースは<strong>Task Properties</strong>ダイアログの<strong>Resources</strong>タブでタスクに割り当てることができます。</p>
+<p>リソースを割り当てるには、そのリソースの行にあるチェックボックスにチェックを入れます。割り当てを解除するには、チェックを外します。</p>
+<p>稼働リソースまたは資材リソースの割り当てには<strong>Units</strong>があり、対応する列に表示されます。<strong>Edit</strong>ボタンをクリックして、割り当てのデフォルト<strong>Units</strong>値を変更できます。</p>
+<p>デフォルトでは、稼働リソースはリソースの<a href="/ja/building-schedule/resources/#%E6%9C%80%E5%A4%A7%E5%8D%98%E4%BD%8D">最大単位</a>と一致する単位で割り当てられます（フルタイムリソースの場合100%）。これは、リソースが利用可能なカレンダー時間のすべてをそのタスクに充てることを意味します。この値は任意の数値に変更できます。</p>
+<p>デフォルトでは、資材リソースは1単位で割り当てられます。これは、タスク完了時にその資材の1単位が使用されることを意味します。単位は資材に対して定義したもの（箱、ガロン、トンなど）を表します。デフォルト値を変更して任意の数の単位を設定できます。</p>
+<h2 id="作業量配分">作業量配分 <a href="#作業量配分" class="heading-anchor">#</a></h2>
+<p>稼働リソースをタスクに割り当てると、作業量はタスクの期間にわたって<strong>作業量配分</strong>に従って配分されます。デフォルトでは作業量は均等に配分されますが（Flat配分）、Inganttは作業量の時間的な配分方法を変更するいくつかの配分パターンに対応しています：</p>
+<table>
+<thead>
+<tr>
+<th>配分</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Flat</strong></td>
+<td>全期間にわたって均等な作業量（デフォルト）</td>
+</tr>
+<tr>
+<td><strong>Back Loaded</strong></td>
+<td>タスクの終盤に向けて作業量が増加</td>
+</tr>
+<tr>
+<td><strong>Front Loaded</strong></td>
+<td>序盤に作業量が最も多く、徐々に減少</td>
+</tr>
+<tr>
+<td><strong>Double Peak</strong></td>
+<td>タスク中に2回の作業量ピーク</td>
+</tr>
+<tr>
+<td><strong>Early Peak</strong></td>
+<td>序盤にピークを迎え、その後減少</td>
+</tr>
+<tr>
+<td><strong>Late Peak</strong></td>
+<td>終盤に向けてピークに達する</td>
+</tr>
+<tr>
+<td><strong>Bell</strong></td>
+<td>ベルカーブ — 中間でピーク</td>
+</tr>
+<tr>
+<td><strong>Turtle</strong></td>
+<td>より平坦なベルカーブ — なだらかな配分</td>
+</tr>
+</tbody>
+</table>
+<p>作業量配分は時間期間にわたる作業量の配分方法に影響し、プロジェクトファイルの開閉時に保持されます。</p>
+<h2 id="割り当て遅延">割り当て遅延 <a href="#割り当て遅延" class="heading-anchor">#</a></h2>
+<p>タスクの各リソース割り当てには<strong>Delay</strong>プロパティがあり、タスクの開始日に対してリソースが作業を開始するタイミングをオフセットします。たとえば、タスクが月曜日に開始し、リソースに2日の遅延がある場合、そのリソースは水曜日から作業を開始します。</p>
+<p>遅延は<strong>Edit Resource Assignment</strong>ダイアログで設定し、稼働リソースの割り当てにのみ適用されます。タスク内でリソースの開始時期をずらすために使用できます。</p>
+<h2 id="残業作業量">残業作業量 <a href="#残業作業量" class="heading-anchor">#</a></h2>
+<p>稼働リソースの場合、割り当ての総作業量の一部を残業として指定できます。残業作業量は総作業量のサブセットであり、追加ではありません：<strong>作業量 = 通常作業量 + 残業作業量</strong>。</p>
+<p>タスクコストは通常分と残業分を別々に計算します：
+<strong>コスト = 通常作業量 × 標準単価 + 残業作業量 × 残業単価 + 使用単価</strong></p>
+<p>Fixed UnitsおよびFixed Workタスクでは、残業作業量を入力すると、期間は通常作業量のみに基づくため、タスクの期間が短くなります。</p>
+<p>残業作業量は<strong>Edit Resource Assignment</strong>ダイアログで設定します。タスクテーブルで3つのオプション列が利用可能です：<strong>Overtime Work</strong>、<strong>Overtime Cost</strong>、<strong>Regular Work</strong>。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

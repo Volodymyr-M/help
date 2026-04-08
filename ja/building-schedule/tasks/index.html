@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>タスク - スケジュールの構築 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="サマリータスク、手動スケジュールタスク、繰り返しタスク、分割タスク、非アクティブタスクなど、Inganttのタスクの種類を学びます。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="タスク">
+  <meta property="og:description" content="サマリータスク、手動スケジュールタスク、繰り返しタスク、分割タスク、非アクティブタスクなど、Inganttのタスクの種類を学びます。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="タスク">
+  <meta name="twitter:description" content="サマリータスク、手動スケジュールタスク、繰り返しタスク、分割タスク、非アクティブタスクなど、Inganttのタスクの種類を学びます。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/tasks/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/" class="active" aria-current="page">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="タスク">タスク <a href="#タスク" class="heading-anchor">#</a></h1>
+<p>すべてのスケジュールはタスクから始まります。何をすべきか、どれくらいかかるか、いつまでに完了すべきかを定義しましょう。タスクを配置すれば、ガントチャートにプロジェクトのタイムラインが形になっていきます。</p>
+<h2 id="サマリータスク">サマリータスク <a href="#サマリータスク" class="heading-anchor">#</a></h2>
+<p>サマリータスクは、タスクをグループ化して整理するのに役立ちます。サマリータスクを作成するには、グループ化したいタスクを選択し、ツールバーの<strong>Increase Indent</strong>ボタンをクリックしてインデントします。サマリータスクを通常のタスクに戻すには、すべてのサブタスクを選択し、<strong>Decrease Indent</strong>ボタンをクリックしてインデントを解除します。</p>
+<p>サマリータスクは他のタスクをグループ化するため、そのプロパティは直接設定するのではなく、サブタスクから導出されます。期間はグループ内のすべてのタスクの全体的な期間を表し、サマリータスクの終了日はサブタスクの中で最も遅い終了日となります。</p>
+<p>サマリータスクには、サブタスクの全体的な達成率、総コスト、総作業量も表示されます。</p>
+<p>ガントチャートでは、サマリータスクは黒いバーとして表示されます。タスクリストでは、サマリータスクを<strong>展開</strong>または<strong>折りたたみ</strong>して、サブタスクの表示/非表示を切り替えることができます。</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="サマリー" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="ルートサマリータスク">ルートサマリータスク <a href="#ルートサマリータスク" class="heading-anchor">#</a></h2>
+<p>Inganttでは、プロジェクト全体のサマリータスクが常に存在します。このタスクはタスク番号0で、すべてのタスクの上に位置します。</p>
+<p>ルートサマリータスクはデフォルトでは表示されない場合があります。表示を変更するには、<strong>View</strong>メニューまたは<strong>Options</strong>ダイアログで<strong>Show root summary task</strong>にチェックを入れます。</p>
+<p>他のサマリータスクと同様に、ルートサマリータスクはサブタスクの全体的なデータを表示します。スケジュール内のすべてのタスクがサブタスクであるため、ルートサマリータスクはプロジェクト全体の総合データを表示します。</p>
+<p>ルートサマリータスクの名前はプロジェクト名と同じです。</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="ルートサマリータスク" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="手動スケジュールタスク">手動スケジュールタスク <a href="#手動スケジュールタスク" class="heading-anchor">#</a></h2>
+<p>デフォルトでは、Inganttのすべてのタスクは<strong>自動スケジュール</strong>です。開始日と終了日は、依存関係、制約、カレンダーに基づいてスケジューリングアルゴリズムにより計算されます。</p>
+<p><strong>Task Properties</strong>ダイアログのチェックボックスを使用して、タスクを<strong>Manually scheduled</strong>モードに切り替えることができます。タスクが手動スケジュールの場合：</p>
+<ul>
+<li>スケジューリングアルゴリズムの<strong>影響を受けません</strong> — 日付はユーザーが設定します</li>
+<li>日付フィールドまたは日付ピッカーを使用して<strong>Start</strong>と<strong>Finish</strong>の日付を入力できます</li>
+<li>タイミングがまだ確定していない場合は、実際の日付の代わりに<strong>テキスト値</strong>（「未定」「3月初旬」「2〜3週間」など）を入力できます</li>
+<li>タスクリストに手動スケジュールタスクはピンアイコンで表示されます</li>
+</ul>
+<blockquote>
+<p>正確なタイミングが不明な場合や、外部要因により日付が固定されている場合に、手動スケジュールタスクをプレースホルダーとして使用してください。</p>
+</blockquote>
+<h2 id="繰り返しタスク">繰り返しタスク <a href="#繰り返しタスク" class="heading-anchor">#</a></h2>
+<p>繰り返しタスクは、毎日のスタンドアップミーティング、週次レビュー、月次レポートなど、定期的に繰り返されるアクティビティを表します。<strong>Insert</strong>メニューから<strong>Add recurring task</strong>を選択して、繰り返しタスクを作成できます。</p>
+<p>繰り返しタスクを作成する際に指定する項目：</p>
+<ul>
+<li><strong>発生期間</strong> — 各回の期間</li>
+<li><strong>繰り返しパターン</strong> — 日次、週次、月次、年次のパターンと開始日、終了条件（終了なし、指定日で終了、N回発生後に終了）</li>
+<li><strong>稼働日のみ</strong> — 発生を稼働日に限定</li>
+</ul>
+<p>繰り返しタスクは、個別の発生を含むサマリータスクとして表示されます。各発生は独立して完了できます。繰り返しタスクを削除する際は、シリーズ全体を削除するか、選択した回のみを削除するかを選択するプロンプトが表示されます。</p>
+<h2 id="分割タスク">分割タスク <a href="#分割タスク" class="heading-anchor">#</a></h2>
+<p>タスクは非連続の部分に分割でき、作業の中断を表します。タスクを分割するには、タスクを選択してツールバーまたは右クリックコンテキストメニューから<strong>Split task</strong>を選択します。<strong>Split Task</strong>ダイアログには2つのモードがあります：</p>
+<ul>
+<li><strong>期間指定</strong> — タスク開始からのギャップオフセットと分割期間を指定</li>
+<li><strong>日付指定</strong> — 中断日と再開日を指定</li>
+</ul>
+<p>分割タスクは、ガントチャートで点線のコネクターで接続された別々のバーとして表示されます。各分割部分には独自のリサイズハンドルがあり、隣接する部分にドラッグすると2つが結合されます。分割を解除するには、タスクを選択してツールバーから<strong>Remove split</strong>を選択します。</p>
+<h2 id="非アクティブタスク">非アクティブタスク <a href="#非アクティブタスク" class="heading-anchor">#</a></h2>
+<p>タスクは、<strong>Task Properties</strong>ダイアログの<strong>General</strong>タブにある<strong>Active</strong>チェックボックスのチェックを外すか、<strong>Edit &gt; Display</strong>サブメニューまたは右クリックコンテキストメニューの<strong>Inactivate task</strong>オプションを使用して、<strong>非アクティブ</strong>にすることができます。</p>
+<p>非アクティブタスクの特徴：</p>
+<ul>
+<li>スケジューリングから除外 — クリティカルパスや他のタスクに影響しません</li>
+<li>サマリータスクの期間、作業量、コスト、達成率のロールアップから除外</li>
+<li>リソースの過負荷検出と自動平準化から除外</li>
+<li>アーンドバリュー計算から除外</li>
+</ul>
+<p>非アクティブタスクはタスクリストとガントチャートに引き続き表示されますが、不透明度が低下し、取り消し線付きのテキストで表示されます。参照用に日付は保持されます。</p>
+<p>サマリータスクを非アクティブにすると、すべてのサブタスクにも適用されます。サブタスクを再アクティブにすると、必要に応じて親のサマリータスクも自動的に再アクティブになります。実際の進捗（達成率 &gt; 0）があるタスクは非アクティブにできません。</p>
+<blockquote>
+<p>アクティブな計画に影響を与えずに「もしも」のシナリオをスケジュールに残しておくために、非アクティブタスクを使用してください。</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

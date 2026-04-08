@@ -1,0 +1,55 @@
+# Ingantt Help — Italiano
+
+> Documentation for Ingantt, a project scheduling application.
+
+## Per iniziare
+
+- [Panoramica](https://help.ingantt.com/it/getting-started/overview/index.md)
+- [Per iniziare](https://help.ingantt.com/it/getting-started/getting-started/index.md)
+- [Crea con l'IA](https://help.ingantt.com/it/getting-started/create-with-ai/index.md)
+- [Importazione ed esportazione](https://help.ingantt.com/it/getting-started/import-export/index.md)
+
+## Configurazione del progetto
+
+- [Proprietà del progetto](https://help.ingantt.com/it/setting-up-project/project/index.md)
+- [Calendari](https://help.ingantt.com/it/setting-up-project/calendars/index.md)
+
+## Costruire un cronogramma
+
+- [Attività](https://help.ingantt.com/it/building-schedule/tasks/index.md)
+- [Proprietà delle attività](https://help.ingantt.com/it/building-schedule/task-properties/index.md)
+- [Dipendenze](https://help.ingantt.com/it/building-schedule/dependencies/index.md)
+- [Vincoli](https://help.ingantt.com/it/building-schedule/constraints/index.md)
+- [Risorse](https://help.ingantt.com/it/building-schedule/resources/index.md)
+- [Assegnazioni](https://help.ingantt.com/it/building-schedule/assignments/index.md)
+
+## Analisi e ottimizzazione
+
+- [Percorso critico](https://help.ingantt.com/it/adjusting-schedule/critical-path/index.md)
+- [Livellamento delle risorse](https://help.ingantt.com/it/adjusting-schedule/leveling/index.md)
+- [Campi personalizzati](https://help.ingantt.com/it/adjusting-schedule/custom-fields/index.md)
+
+## Pianificazione dei costi
+
+- [Comprendere i costi](https://help.ingantt.com/it/planning-costs/planning-costs/index.md)
+- [Configurazione dei costi](https://help.ingantt.com/it/planning-costs/setting-up-costs/index.md)
+
+## Monitoraggio dell'avanzamento
+
+- [Baseline](https://help.ingantt.com/it/tracking/baselines/index.md)
+- [Monitoraggio dell'avanzamento](https://help.ingantt.com/it/tracking/progress/index.md)
+- [Valori effettivi](https://help.ingantt.com/it/tracking/actuals/index.md)
+- [Earned Value](https://help.ingantt.com/it/tracking/earned-value/index.md)
+
+## Viste
+
+- [Diagramma di Gantt](https://help.ingantt.com/it/views/gantt/index.md)
+- [Viste attività](https://help.ingantt.com/it/views/task-views/index.md)
+- [Viste risorse](https://help.ingantt.com/it/views/resource-views/index.md)
+- [Filtraggio delle attività](https://help.ingantt.com/it/views/filtering/index.md)
+
+## Interfaccia utente
+
+- [Aggiungere e selezionare](https://help.ingantt.com/it/ui/ui/index.md)
+- [Integrazione con Google Drive](https://help.ingantt.com/it/ui/files/index.md)
+- [Scorciatoie da tastiera](https://help.ingantt.com/it/ui/shortcuts/index.md)

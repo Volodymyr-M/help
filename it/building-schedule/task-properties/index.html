@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proprietà delle attività - Costruire un cronogramma - Guida di Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Configura durata, lavoro, scadenze, milestone, tipo di attività, pianificazione guidata dallo sforzo, note e collegamenti ipertestuali.">
+  <link rel="canonical" href="https://help.ingantt.com/it/building-schedule/task-properties/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Proprietà delle attività">
+  <meta property="og:description" content="Configura durata, lavoro, scadenze, milestone, tipo di attività, pianificazione guidata dallo sforzo, note e collegamenti ipertestuali.">
+  <meta property="og:url" content="https://help.ingantt.com/it/building-schedule/task-properties/">
+  <meta property="og:site_name" content="Guida di Ingantt">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Proprietà delle attività">
+  <meta name="twitter:description" content="Configura durata, lavoro, scadenze, milestone, tipo di attività, pianificazione guidata dallo sforzo, note e collegamenti ipertestuali.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/task-properties/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/task-properties/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Vai al contenuto</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Mostra/nascondi navigazione" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/it/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Guida di Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Cerca">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Cerca..." aria-label="Cerca nella documentazione">
+      <div class="search-results" data-loading="Caricamento…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigazione della documentazione">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Per iniziare
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
+    <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurazione del progetto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Costruire un cronogramma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/building-schedule/tasks/">Attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/" class="active" aria-current="page">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
+    <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
+    <li><a href="/it/building-schedule/resources/">Risorse</a></li>
+    <li><a href="/it/building-schedule/assignments/">Assegnazioni</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analisi e ottimizzazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
+    <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Pianificazione dei costi
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/planning-costs/planning-costs/">Comprendere i costi</a></li>
+    <li><a href="/it/planning-costs/setting-up-costs/">Configurazione dei costi</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Monitoraggio dell'avanzamento
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/tracking/baselines/">Baseline</a></li>
+    <li><a href="/it/tracking/progress/">Monitoraggio dell'avanzamento</a></li>
+    <li><a href="/it/tracking/actuals/">Valori effettivi</a></li>
+    <li><a href="/it/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Viste
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/views/gantt/">Diagramma di Gantt</a></li>
+    <li><a href="/it/views/task-views/">Viste attività</a></li>
+    <li><a href="/it/views/resource-views/">Viste risorse</a></li>
+    <li><a href="/it/views/filtering/">Filtraggio delle attività</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaccia utente
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
+    <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Lingua">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/" selected>Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Cambia tema" title="Passa al tema chiaro/scuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatta l'assistenza" title="Contatta l'assistenza">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="proprietà-delle-attività">Proprietà delle attività <a href="#proprietà-delle-attività" class="heading-anchor">#</a></h1>
+<p>Ogni attività ha proprietà che controllano come viene pianificata, come vengono calcolati i costi e come appare nel diagramma di Gantt. Impostale nella finestra <strong>Task Properties</strong>.</p>
+<h2 id="durata">Durata <a href="#durata" class="heading-anchor">#</a></h2>
+<p>Durante la pianificazione del progetto, inserisci le durate come stime, ovvero la durata è una previsione ragionevole di quanto tempo impiegherà un'attività per tutte le risorse coinvolte.</p>
+<p>Non confondere <strong>Duration</strong> con <strong>Work</strong>. Ad esempio, se tre persone stanno lavorando alla tua attività, ma la completano in un'ora, imposti la <strong>Duration</strong> dell'attività a un'ora. Se queste tre persone sono assegnate all'attività, Ingantt calcola automaticamente la proprietà <strong>Work</strong> come tre ore.</p>
+<p>La durata può essere modificata usando il campo <strong>Duration</strong> nella finestra <strong>Task Properties</strong>.</p>
+<p>Quando non sei ancora sicuro della tua stima per la durata, puoi contrassegnarla come <strong>Estimate</strong> nella finestra <strong>Task Properties</strong>. Questo fa sì che la durata visualizzi sempre un punto interrogativo (&quot;<strong>?</strong>&quot;). Selezionare o deselezionare questo flag non influisce sulla pianificazione.</p>
+<p>Se almeno una sottoattività di un'attività di riepilogo ha <strong>Estimate</strong> selezionato, anche la durata dell'attività di riepilogo viene contrassegnata come <strong>Estimate</strong> e quindi mostra anch'essa &quot;<strong>?</strong>&quot;.</p>
+<p>La durata può essere impostata in ore, giorni, settimane o mesi. Per impostazione predefinita, &quot;1 giorno&quot; equivale a 8 ore, &quot;1 settimana&quot; equivale a 5 giorni (40 ore) e &quot;1 mese&quot; equivale a 20 giorni. Questi valori predefiniti possono essere modificati nella scheda <strong>Duration</strong> della finestra <strong>Project Properties</strong>.</p>
+<p>Quando modifichi le assegnazioni delle risorse, il lavoro o la durata, uno di questi viene ricalcolato secondo il <a href="#tipo-e-guidato-dallo-sforzo">Tipo</a> dell'attività.</p>
+<h2 id="lavoro">Lavoro <a href="#lavoro" class="heading-anchor">#</a></h2>
+<p>Quando un'attività ha una risorsa di tipo lavoro assegnata (come una persona che esegue l'attività), la proprietà <strong>Work</strong> dell'attività diventa maggiore di 0. Mostra il tempo che tutte le risorse dedicheranno al lavoro sull'attività. Ad esempio, se un'attività con una <strong>Duration</strong> di 5 ore ha 2 risorse assegnate che ci lavorano, il <strong>Work</strong> dell'attività è pari a 10 ore.</p>
+<p>Il lavoro può essere modificato usando il campo <strong>Work</strong> nella finestra <strong>Task Properties</strong>.</p>
+<p>Come la durata, il lavoro può essere specificato in ore, giorni, settimane o mesi utilizzando le definizioni nella scheda <strong>Duration</strong> della finestra <strong>Project Properties</strong>. Il formato di visualizzazione predefinito per il lavoro può essere modificato nella scheda <strong>Time</strong>.</p>
+<p>Quando modifichi le assegnazioni delle risorse, il lavoro o la durata, uno di questi viene ricalcolato secondo il <a href="#tipo-e-guidato-dallo-sforzo">Tipo</a> dell'attività.</p>
+<h2 id="scadenza">Scadenza <a href="#scadenza" class="heading-anchor">#</a></h2>
+<p>A volte è necessario assicurarsi che un'attività venga completata entro un giorno specifico, tipicamente chiamato scadenza.</p>
+<p>La scadenza di un'attività può essere specificata usando il campo <strong>Deadline</strong> nella finestra <strong>Task Properties</strong>.</p>
+<p>Le scadenze sono solo a scopo informativo e non influiscono sulla pianificazione.</p>
+<p>Le scadenze vengono mostrate nel diagramma di Gantt come icone speciali.</p>
+<blockquote>
+<p>Se il cronogramma mostra che un'attività termina dopo la scadenza specificata, Ingantt mostra un'icona nell'elenco delle attività e conta tali attività nel menu di navigazione.</p>
+</blockquote>
+<p><img src="/images/building-schedule/tasks/deadline.png" alt="Deadline" / data-dark-src="/images/building-schedule/tasks/deadline_d.png"></p>
+<blockquote>
+<p>Puoi impostare una scadenza per l'intero progetto impostando la scadenza per l'attività di riepilogo radice. Assicurati che l'attività di riepilogo radice sia impostata come visibile nella finestra <strong>Options</strong>.</p>
+</blockquote>
+<h2 id="milestone">Milestone <a href="#milestone" class="heading-anchor">#</a></h2>
+<p>Qualsiasi attività può essere contrassegnata come milestone selezionando la casella <strong>Milestone</strong> nella finestra <strong>Task Properties</strong>. Questo non cambia la durata né influisce sulla pianificazione, ma l'attività viene mostrata nel diagramma di Gantt come un'icona.</p>
+<p><img src="/images/building-schedule/tasks/milestone.png" alt="Milestone" / data-dark-src="/images/building-schedule/tasks/milestone_d.png"></p>
+<p>Se specifichi 0 come <strong>Duration</strong> di un'attività, l'attività viene automaticamente contrassegnata come <strong>Milestone</strong> una volta salvata la modifica.</p>
+<h2 id="tipo-e-guidato-dallo-sforzo">Tipo e guidato dallo sforzo <a href="#tipo-e-guidato-dallo-sforzo" class="heading-anchor">#</a></h2>
+<p>Le assegnazioni di risorse di tipo lavoro (o le unità delle risorse di tipo lavoro assegnate), il lavoro e la durata dipendono l'uno dall'altro. Quando ne modifichi uno, gli altri devono essere ricalcolati di conseguenza. Il <strong>Type</strong> dell'attività (con l'aiuto del flag <strong>Effort Driven</strong>) definisce quale delle due proprietà rimanenti resta invariata, in modo che solo una venga ricalcolata.</p>
+<p>Ad esempio, puoi impostare il <strong>Type</strong> su <strong>Fixed units</strong> (l'impostazione predefinita), nel qual caso quando modifichi la durata, il lavoro viene ricalcolato automaticamente.</p>
+<table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Fixed units</strong></td>
+<td>Quando modifichi la durata: il lavoro viene ricalcolato.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi il lavoro: la durata viene ricalcolata.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi le unità:</td>
+</tr>
+<tr>
+<td></td>
+<td>- Se <strong>Effort Driven</strong> è impostato: la durata viene ricalcolata.</td>
+</tr>
+<tr>
+<td></td>
+<td>- Se <strong>Effort Driven</strong> non è impostato: il lavoro viene ricalcolato.</td>
+</tr>
+<tr>
+<td><strong>Fixed duration</strong></td>
+<td>Quando modifichi la durata: il lavoro viene ricalcolato.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi il lavoro: le unità vengono ricalcolate.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi le unità: il lavoro viene ricalcolato.</td>
+</tr>
+<tr>
+<td><strong>Fixed work</strong></td>
+<td>Quando modifichi la durata: le unità vengono ricalcolate.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi il lavoro: la durata viene ricalcolata.</td>
+</tr>
+<tr>
+<td></td>
+<td>Quando modifichi le unità: la durata viene ricalcolata.</td>
+</tr>
+</tbody>
+</table>
+<p>In altre parole, il <strong>Type</strong> consente di bloccare una delle tre proprietà, mentre il flag <strong>Effort Driven</strong> definisce se il lavoro debba rimanere invariato tra le due proprietà rimanenti.</p>
+<blockquote>
+<p><strong>Type</strong> ed <strong>Effort Driven</strong> non sono disponibili per le <a href="/it/building-schedule/tasks/#attivit%C3%A0-di-riepilogo">attività di riepilogo</a>, che sono sempre di tipo Fixed duration e non guidate dallo sforzo.</p>
+</blockquote>
+<h2 id="note">Note <a href="#note" class="heading-anchor">#</a></h2>
+<p>Puoi aggiungere qualsiasi testo alla tua attività compilando il campo <strong>Notes</strong> nella scheda <strong>Notes</strong> della finestra <strong>Task Properties</strong>. Usalo per descrizioni dell'attività, informazioni di contatto, idee o qualsiasi altro dato testuale.</p>
+<p>Se un'attività ha il campo <strong>Notes</strong> compilato, un'icona speciale viene mostrata per l'attività nell'elenco delle attività. Su Windows, macOS e web, passando il mouse sull'icona si visualizza la nota. Su dispositivi mobili, apri la finestra <strong>Task Properties</strong> per visualizzare la nota completa.</p>
+<h2 id="collegamento-ipertestuale">Collegamento ipertestuale <a href="#collegamento-ipertestuale" class="heading-anchor">#</a></h2>
+<p>Puoi allegare un URL alla tua attività usando il campo <strong>Hyperlink</strong> nella scheda <strong>Notes</strong> della finestra <strong>Task Properties</strong>. Le attività con un collegamento ipertestuale mostrano un'icona a forma di link nell'elenco delle attività. Facendo clic sull'icona del link si apre l'URL nel browser.</p>
+<h2 id="nascondi-barra-e-riepilogo-visivo">Nascondi barra e riepilogo visivo <a href="#nascondi-barra-e-riepilogo-visivo" class="heading-anchor">#</a></h2>
+<p>Nella scheda <strong>Visual</strong> della finestra <strong>Task Properties</strong>:</p>
+<ul>
+<li><strong>Hide bar</strong> — Nasconde la barra dell'attività nel diagramma di Gantt mantenendo la riga visibile nell'elenco delle attività. L'area della barra invisibile risponde comunque ai clic e ai menu contestuali.</li>
+<li><strong>Rollup</strong> — Visualizza la barra della sottoattività sulla riga dell'attività di riepilogo genitore nel diagramma di Gantt. Fornisce una vista condensata quando le attività di riepilogo sono compresse.</li>
+</ul>
+<p>Queste opzioni possono essere attivate anche dal sottomenu <strong>Edit &gt; Display</strong> o dal menu contestuale (clic destro).</p>
+
+    </main>
+    <aside class="toc" aria-label="Indice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>달력 - 프로젝트 설정 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="사용자 정의 근무 주간, 휴일 및 반복 예외가 포함된 프로젝트, 자원 및 작업 달력을 설정합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/setting-up-project/calendars/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="달력">
+  <meta property="og:description" content="사용자 정의 근무 주간, 휴일 및 반복 예외가 포함된 프로젝트, 자원 및 작업 달력을 설정합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/setting-up-project/calendars/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="달력">
+  <meta name="twitter:description" content="사용자 정의 근무 주간, 휴일 및 반복 예외가 포함된 프로젝트, 자원 및 작업 달력을 설정합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/" class="active" aria-current="page">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="달력">달력 <a href="#달력" class="heading-anchor">#</a></h1>
+<p>공휴일, 휴가, 반일 근무, 야간 교대 — 일정은 실제로 작업이 수행되는 시간을 반영해야 합니다. 달력을 설정하면 Ingantt가 비근무 시간을 건너뛰고 현실적인 날짜를 제공합니다.</p>
+<p>달력은 작업을 수행할 수 있는 날짜와 시간을 정의합니다. 달력은 두 가지 유형의 데이터를 사용합니다:</p>
+<ul>
+<li><strong>요일</strong>: 요일별로 설정된 근무 시간 — 일반적이고 규칙적인 일정을 정의합니다.</li>
+<li><strong>예외</strong>: 요일 일정과 다른 시간에 작업이 수행되거나 수행되지 않는 날짜입니다.</li>
+</ul>
+<h2 id="프로젝트-달력">프로젝트 달력 <a href="#프로젝트-달력" class="heading-anchor">#</a></h2>
+<p>프로젝트에는 <strong>Project Properties</strong> 대화 상자에서 지정된 <strong>Calendar</strong>가 연결되어 있습니다. 이 달력은 작업 자원에 배정되지 않은 작업의 일정 방식을 정의합니다. 주말 등 비근무일은 이 달력을 기반으로 Gantt 차트에도 표시됩니다.</p>
+<h2 id="자원-달력">자원 달력 <a href="#자원-달력" class="heading-anchor">#</a></h2>
+<p>각 <a href="/ko/building-schedule/resources/#%EC%9E%90%EC%9B%90-%EC%9C%A0%ED%98%95">작업 자원</a>에는 <strong>Resource Properties</strong> 대화 상자의 <strong>Base Calendar</strong> 필드에서 지정된 달력이 연결되어 있습니다. 작업 자원이 작업에 <a href="/ko/building-schedule/assignments/#%EC%9E%90%EC%9B%90-%EB%B0%B0%EC%A0%95-%EB%B0%8F-%EB%8B%A8%EC%9C%84">배정</a>되면 해당 달력이 작업 일정에 영향을 미칩니다.</p>
+<p>여러 작업 자원이 하나의 작업에 배정된 경우, 해당 달력은 <strong>교차</strong> 처리됩니다 — 즉, <strong>모든</strong> 배정된 자원이 가용한 시간에만 작업이 예약됩니다. 예를 들어, 자원 A가 월<del>수 근무하고 자원 B가 수</del>금 근무하면, 두 자원 모두 배정된 작업은 수요일에만 예약됩니다.</p>
+<blockquote>
+<p>여러 자원이 유사한 근무 일정을 공유하는 경우, 하나의 달력을 만들어 모든 자원에 지정하십시오. <strong>Resource Properties</strong>에서 각 자원별로 별도의 예외(예: 휴가 또는 특정 날짜의 조정된 근무 시간)를 지정할 수 있습니다.</p>
+</blockquote>
+<h2 id="작업-달력">작업 달력 <a href="#작업-달력" class="heading-anchor">#</a></h2>
+<p>각 작업에는 <strong>Task Properties</strong> 대화 상자에 <strong>Calendar</strong> 속성이 있으며, 기본적으로 <strong>NONE</strong>으로 설정되어 있습니다. <strong>NONE</strong>으로 설정된 경우:</p>
+<ul>
+<li>작업에 작업 자원이 배정되지 않은 경우, 프로젝트 달력에 따라 일정이 잡힙니다.</li>
+<li>작업에 작업 자원이 배정된 경우, 해당 자원의 달력에 따라 일정이 잡힙니다.</li>
+</ul>
+<p>작업의 <strong>Calendar</strong> 속성이 <strong>NONE</strong> 대신 특정 달력으로 설정된 경우:</p>
+<ul>
+<li>작업에 작업 자원이 배정되지 않은 경우, 지정된 달력에 따라 일정이 잡힙니다.</li>
+<li>작업에 작업 자원이 배정된 경우, 작업 달력과 자원 달력의 <strong>교차</strong> 시간에 따라 일정이 잡힙니다 — 작업 달력과 모든 자원 달력 모두에서 근무 시간인 경우에만 작업이 예약됩니다. 자원 달력을 완전히 무시하고 작업 달력만 사용하려면 <strong>Ignore resource calendars</strong> 플래그를 체크하십시오.</li>
+</ul>
+<h2 id="미리-정의된-달력">미리 정의된 달력 <a href="#미리-정의된-달력" class="heading-anchor">#</a></h2>
+<p>Ingantt에는 3개의 미리 정의된 달력이 있으며, 그 중 하나(<strong>Standard</strong>)가 기본적으로 프로젝트에 지정됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>달력</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>월요일부터 금요일까지, 오전 8시부터 오후 5시까지 근무하며 1시간(오후 12시~오후 1시) 휴식이 있습니다.</td>
+</tr>
+<tr>
+<td><strong>Night Shift</strong></td>
+<td>월요일 밤부터 토요일 아침까지, 오후 11시부터 오전 8시까지 근무하며 1시간(오전 3시~오전 4시) 휴식이 있습니다.</td>
+</tr>
+<tr>
+<td><strong>24 Hours</strong></td>
+<td>매일 24시간 작업이 수행됩니다.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Calendar Properties</strong> 대화 상자를 사용하여 미리 정의된 달력을 편집하거나, <strong>Add Calendar</strong> 대화 상자를 사용하여 이를 기반으로 자체 달력을 만들 수 있습니다.</p>
+<h2 id="근무-주간">근무 주간 <a href="#근무-주간" class="heading-anchor">#</a></h2>
+<p>근무 주간을 사용하면 특정 날짜 범위에 대해 주간 일정을 변경할 수 있습니다. 예를 들어, 모든 사람이 표준 8시간 대신 4시간 근무하는 기간이 있거나 토요일이 근무일이 되는 기간을 설정할 수 있습니다.</p>
+<p>근무 주간은 <strong>Calendar Properties</strong> 대화 상자의 <strong>Work Weeks</strong> 탭에서 구성됩니다. 각 근무 주간에는 이름, 시작 및 종료 날짜, 요일별 근무 시간 정의가 있습니다.</p>
+<blockquote>
+<p>달력 예외는 근무 주간보다 우선하며, 근무 주간은 기본 요일 일정보다 우선합니다.</p>
+</blockquote>
+<h2 id="달력-예외">달력 예외 <a href="#달력-예외" class="heading-anchor">#</a></h2>
+<p>달력 예외는 일반 요일 일정과 다른 작업이 수행되는 날짜이며, 비근무일도 포함됩니다.</p>
+<p>달력 예외는 다음에서 지정할 수 있습니다:</p>
+<ul>
+<li>특정 자원에 대한 <strong>Resource Properties</strong> 대화 상자.</li>
+<li>이 달력을 사용하는 프로젝트, 자원 또는 작업에 예외를 적용하기 위한 <strong>Calendar Properties</strong>.</li>
+</ul>
+<p>예를 들어, 특정인의 휴가를 구성하려면 해당 자원의 예외로 추가하십시오. 모든 사람에게 공휴일을 구성하려면 모든 사람이 사용하는 달력의 예외로 추가하십시오.</p>
+<p>달력 예외를 추가하거나 편집할 때 예외에 대한 근무 시간을 지정합니다. 근무 시간을 지정하지 않으면 해당 예외에는 근무 시간이 없으며, 이는 비근무일을 의미합니다.</p>
+<p>각 예외에는 설명용 <strong>Name</strong>(예: &quot;크리스마스 휴일&quot; 또는 &quot;사무실 휴무&quot;)을 지정할 수 있으며, 이는 예외 목록에 표시됩니다.</p>
+<h3 id="반복-예외">반복 예외 <a href="#반복-예외" class="heading-anchor">#</a></h3>
+<p>달력 예외는 단일 날짜가 아닌 패턴에 따라 반복되도록 설정할 수 있습니다. 사용 가능한 반복 패턴은 다음과 같습니다:</p>
+<ul>
+<li><strong>매일</strong> — N일마다 또는 N 근무일마다</li>
+<li><strong>매주</strong> — N주마다 지정된 요일에</li>
+<li><strong>매월</strong> — 날짜별 또는 위치별(예: 둘째 화요일)</li>
+<li><strong>매년</strong> — 날짜별 또는 위치별(예: 11월 마지막 금요일)</li>
+</ul>
+<p>반복 예외에는 종료 조건이 있습니다: 종료 없음, 날짜까지 종료, N회 발생 후 종료.</p>
+<h2 id="빈-달력-및-부분-달력">빈 달력 및 부분 달력 <a href="#빈-달력-및-부분-달력" class="heading-anchor">#</a></h2>
+<p>달력에 근무 시간을 추가하지 않으면 비어 있어 일정 예약에 사용할 수 없습니다. 이러한 달력은 달력 목록에서 경고 아이콘으로 표시되며, 탐색 서랍에 이러한 달력의 수가 표시됩니다.</p>
+<p>그러나 달력이 비어 있지 않지만 특정 작업의 일정을 잡기에 충분한 근무 시간이 없는 경우가 있습니다. 이러한 상황은 일정이 실행될 때만 감지할 수 있습니다.</p>
+<p>빈 달력 또는 충분한 근무 시간이 없는 달력을 프로젝트, 자원 또는 작업에 지정하여 일정을 진행할 수 없는 경우, 오류가 표시되고 마지막 작업이 되돌려집니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

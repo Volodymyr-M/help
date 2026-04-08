@@ -1,0 +1,55 @@
+# Ingantt Help — 日本語
+
+> Documentation for Ingantt, a project scheduling application.
+
+## はじめに
+
+- [概要](https://help.ingantt.com/ja/getting-started/overview/index.md)
+- [はじめに](https://help.ingantt.com/ja/getting-started/getting-started/index.md)
+- [AIで作成](https://help.ingantt.com/ja/getting-started/create-with-ai/index.md)
+- [インポートとエクスポート](https://help.ingantt.com/ja/getting-started/import-export/index.md)
+
+## プロジェクトのセットアップ
+
+- [プロジェクトのプロパティ](https://help.ingantt.com/ja/setting-up-project/project/index.md)
+- [カレンダー](https://help.ingantt.com/ja/setting-up-project/calendars/index.md)
+
+## スケジュールの構築
+
+- [タスク](https://help.ingantt.com/ja/building-schedule/tasks/index.md)
+- [タスクのプロパティ](https://help.ingantt.com/ja/building-schedule/task-properties/index.md)
+- [依存関係](https://help.ingantt.com/ja/building-schedule/dependencies/index.md)
+- [制約](https://help.ingantt.com/ja/building-schedule/constraints/index.md)
+- [リソース](https://help.ingantt.com/ja/building-schedule/resources/index.md)
+- [割り当て](https://help.ingantt.com/ja/building-schedule/assignments/index.md)
+
+## 分析と調整
+
+- [クリティカルパス](https://help.ingantt.com/ja/adjusting-schedule/critical-path/index.md)
+- [リソースの平準化](https://help.ingantt.com/ja/adjusting-schedule/leveling/index.md)
+- [カスタムフィールド](https://help.ingantt.com/ja/adjusting-schedule/custom-fields/index.md)
+
+## コスト計画
+
+- [コストの理解](https://help.ingantt.com/ja/planning-costs/planning-costs/index.md)
+- [コストの設定](https://help.ingantt.com/ja/planning-costs/setting-up-costs/index.md)
+
+## 進捗管理
+
+- [ベースライン](https://help.ingantt.com/ja/tracking/baselines/index.md)
+- [進捗の追跡](https://help.ingantt.com/ja/tracking/progress/index.md)
+- [実績値](https://help.ingantt.com/ja/tracking/actuals/index.md)
+- [アーンドバリュー](https://help.ingantt.com/ja/tracking/earned-value/index.md)
+
+## ビュー
+
+- [ガントチャート](https://help.ingantt.com/ja/views/gantt/index.md)
+- [タスクビュー](https://help.ingantt.com/ja/views/task-views/index.md)
+- [リソースビュー](https://help.ingantt.com/ja/views/resource-views/index.md)
+- [タスクのフィルタリング](https://help.ingantt.com/ja/views/filtering/index.md)
+
+## ユーザーインターフェース
+
+- [追加と選択](https://help.ingantt.com/ja/ui/ui/index.md)
+- [Google Driveとの連携](https://help.ingantt.com/ja/ui/files/index.md)
+- [キーボードショートカット](https://help.ingantt.com/ja/ui/shortcuts/index.md)

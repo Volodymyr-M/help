@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scorciatoie da tastiera - Interfaccia utente - Guida di Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Riferimento completo delle scorciatoie da tastiera per navigazione, modifica, viste, zoom e operazioni sulle attività in Ingantt.">
+  <link rel="canonical" href="https://help.ingantt.com/it/ui/shortcuts/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Scorciatoie da tastiera">
+  <meta property="og:description" content="Riferimento completo delle scorciatoie da tastiera per navigazione, modifica, viste, zoom e operazioni sulle attività in Ingantt.">
+  <meta property="og:url" content="https://help.ingantt.com/it/ui/shortcuts/">
+  <meta property="og:site_name" content="Guida di Ingantt">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Scorciatoie da tastiera">
+  <meta name="twitter:description" content="Riferimento completo delle scorciatoie da tastiera per navigazione, modifica, viste, zoom e operazioni sulle attività in Ingantt.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/shortcuts/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/shortcuts/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/shortcuts/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/shortcuts/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/shortcuts/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/shortcuts/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/shortcuts/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/shortcuts/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Vai al contenuto</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Mostra/nascondi navigazione" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/it/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Guida di Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Cerca">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Cerca..." aria-label="Cerca nella documentazione">
+      <div class="search-results" data-loading="Caricamento…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigazione della documentazione">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Per iniziare
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
+    <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurazione del progetto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Costruire un cronogramma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/building-schedule/tasks/">Attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
+    <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
+    <li><a href="/it/building-schedule/resources/">Risorse</a></li>
+    <li><a href="/it/building-schedule/assignments/">Assegnazioni</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analisi e ottimizzazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
+    <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Pianificazione dei costi
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/planning-costs/planning-costs/">Comprendere i costi</a></li>
+    <li><a href="/it/planning-costs/setting-up-costs/">Configurazione dei costi</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Monitoraggio dell'avanzamento
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/tracking/baselines/">Baseline</a></li>
+    <li><a href="/it/tracking/progress/">Monitoraggio dell'avanzamento</a></li>
+    <li><a href="/it/tracking/actuals/">Valori effettivi</a></li>
+    <li><a href="/it/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Viste
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/views/gantt/">Diagramma di Gantt</a></li>
+    <li><a href="/it/views/task-views/">Viste attività</a></li>
+    <li><a href="/it/views/resource-views/">Viste risorse</a></li>
+    <li><a href="/it/views/filtering/">Filtraggio delle attività</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaccia utente
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
+    <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/shortcuts/" class="active" aria-current="page">Scorciatoie da tastiera</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Lingua">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/" selected>Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Cambia tema" title="Passa al tema chiaro/scuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatta l'assistenza" title="Contatta l'assistenza">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="scorciatoie-da-tastiera">Scorciatoie da tastiera <a href="#scorciatoie-da-tastiera" class="heading-anchor">#</a></h1>
+<p>Velocizza il tuo lavoro con le scorciatoie da tastiera per le azioni comuni come modifica, navigazione e cambio di vista.</p>
+<blockquote>
+<p>Le scorciatoie da tastiera non sono disponibili su <strong>Android</strong> e <strong>iOS</strong>.</p>
+<p>Su <strong>macOS</strong>, usa <code>Cmd</code> al posto di <code>Ctrl</code>.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>Scorciatoia</th>
+<th>Descrizione</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + X</code></td>
+<td>Taglia gli elementi selezionati negli appunti.</td>
+</tr>
+<tr>
+<td><code>Ctrl + C</code></td>
+<td>Copia gli elementi selezionati negli appunti.</td>
+</tr>
+<tr>
+<td><code>Ctrl + V</code></td>
+<td>Incolla gli elementi dagli appunti sotto l'elemento selezionato, o alla fine dell'elenco se nulla è selezionato.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Z</code></td>
+<td>Annulla l'ultima azione.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Y</code></td>
+<td>Ripeti l'ultima azione annullata.</td>
+</tr>
+<tr>
+<td><code>Ctrl + S</code></td>
+<td>Salva le modifiche in un file.</td>
+</tr>
+<tr>
+<td><code>Ctrl + O</code></td>
+<td>Apri un file (selezione file nativa su desktop, finestra <strong>Open file</strong> su <strong>Web</strong>).</td>
+</tr>
+<tr>
+<td><code>Ctrl + P</code></td>
+<td>Stampa il progetto corrente.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Shift + F</code></td>
+<td>Mostra/nascondi la visibilità dell'<strong>intestazione/barra dei menu</strong>.</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>Aggiungi un nuovo elemento.</td>
+</tr>
+<tr>
+<td><code>Del</code></td>
+<td>Elimina gli elementi selezionati.</td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td>Mostra la finestra <strong>Properties</strong> per l'elemento selezionato. Se sono selezionati più elementi, la finestra viene mostrata per il primo elemento.</td>
+</tr>
+<tr>
+<td><code>Arrow Up</code></td>
+<td>Seleziona l'elemento precedente.</td>
+</tr>
+<tr>
+<td><code>Arrow Down</code></td>
+<td>Seleziona l'elemento successivo.</td>
+</tr>
+<tr>
+<td><code>Shift + Arrow Up/Down</code></td>
+<td>Estendi la selezione verso l'alto o il basso in qualsiasi vista a elenco.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Up</code></td>
+<td>Sposta le attività selezionate verso l'alto.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Down</code></td>
+<td>Sposta le attività selezionate verso il basso.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Left</code></td>
+<td>Riduci il rientro delle attività selezionate.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Right</code></td>
+<td>Aumenta il rientro delle attività selezionate.</td>
+</tr>
+<tr>
+<td><code>Tab / Shift + Tab</code></td>
+<td>Passa alla cella modificabile successiva o precedente. Conferma la modifica corrente prima di spostarsi.</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td>Passa alla vista <strong>Resources</strong>.</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td>Passa alla vista <strong>Calendars</strong>.</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td>Passa alla vista <strong>Tasks</strong>.</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td>Mostra la finestra <strong>Project Properties</strong>.</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>Ingrandisci il diagramma di Gantt.</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>Riduci il diagramma di Gantt.</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>Collega le attività selezionate.</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>Scollega le attività selezionate (rimuovi la dipendenza tra esse).</td>
+</tr>
+<tr>
+<td><code>Numpad +</code></td>
+<td>Ingrandisci il diagramma di Gantt.</td>
+</tr>
+<tr>
+<td><code>Numpad -</code></td>
+<td>Riduci il diagramma di Gantt.</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>Esci dalla modalità a schermo intero; annulla le finestre di dialogo.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Enter</code></td>
+<td>Conferma la finestra di dialogo corrente.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Alt + Shift + H</code></td>
+<td>Mostra la cronologia delle versioni.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <aside class="toc" aria-label="Indice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

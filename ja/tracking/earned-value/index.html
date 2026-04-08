@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>アーンドバリュー - 進捗管理 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="SPI、CPI、EACなどのアーンドバリューマネジメント指標で、プロジェクトのパフォーマンスを測定します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/tracking/earned-value/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="アーンドバリュー">
+  <meta property="og:description" content="SPI、CPI、EACなどのアーンドバリューマネジメント指標で、プロジェクトのパフォーマンスを測定します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/tracking/earned-value/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="アーンドバリュー">
+  <meta name="twitter:description" content="SPI、CPI、EACなどのアーンドバリューマネジメント指標で、プロジェクトのパフォーマンスを測定します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/earned-value/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/tracking/earned-value/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/tracking/earned-value/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/tracking/earned-value/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/tracking/earned-value/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/tracking/earned-value/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/tracking/earned-value/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/tracking/earned-value/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/tracking/earned-value/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/" class="active" aria-current="page">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="アーンドバリュー">アーンドバリュー <a href="#アーンドバリュー" class="heading-anchor">#</a></h1>
+<p>アーンドバリューマネジメント（EVM）は、スコープ、スケジュール、コストの測定を組み合わせて、プロジェクトが予定通り・予算通りに進んでいるかを評価します。ステータス日付とベースラインを設定すれば、Inganttが業界標準のEVM指標を計算します。</p>
+<h2 id="ステータス日付">ステータス日付 <a href="#ステータス日付" class="heading-anchor">#</a></h2>
+<p><strong>Status Date</strong>は、進捗追跡とアーンドバリュー計算に使用される日付を定義します。設定すると、ガントチャート上にその日付の位置に緑色の垂直線が表示されます。</p>
+<p>ステータス日付が設定されていない場合、計算には現在の日付が使用されます。ステータス日付は<strong>Project</strong>メニューからアクセスできる<strong>Earned Value Options</strong>ダイアログで設定できます。</p>
+<h2 id="アーンドバリューマネジメント">アーンドバリューマネジメント <a href="#アーンドバリューマネジメント" class="heading-anchor">#</a></h2>
+<p>Inganttは、スコープ、スケジュール、コストのデータを統合してプロジェクトのパフォーマンスを評価するプロジェクト管理技法であるアーンドバリューマネジメントをサポートしています。</p>
+<h3 id="アーンドバリューのセットアップ">アーンドバリューのセットアップ <a href="#アーンドバリューのセットアップ" class="heading-anchor">#</a></h3>
+<ol>
+<li>計画されたスケジュールとコストを記録するために<a href="/ja/tracking/baselines/#%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%AE%E8%A8%AD%E5%AE%9A">ベースライン</a>を作成します。</li>
+<li><strong>Earned Value Options</strong>ダイアログ（<strong>Project</strong>メニューからアクセス）で<strong>Status Date</strong>を設定するか、現在の日付をデフォルトとして使用します。</li>
+<li>作業の進行に応じてタスクの<a href="/ja/tracking/progress/#-complete">% Complete</a>値を更新します。</li>
+</ol>
+<h3 id="利用可能なevm指標">利用可能なEVM指標 <a href="#利用可能なevm指標" class="heading-anchor">#</a></h3>
+<p>以下のEVM列を<strong>Options</strong>ダイアログからタスクリストに追加できます：</p>
+<table>
+<thead>
+<tr>
+<th>指標</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>BCWS</strong></td>
+<td>予定作業の予算コスト（計画価値）</td>
+</tr>
+<tr>
+<td><strong>BCWP</strong></td>
+<td>実施作業の予算コスト（アーンドバリュー）</td>
+</tr>
+<tr>
+<td><strong>ACWP</strong></td>
+<td>実施作業の実績コスト</td>
+</tr>
+<tr>
+<td><strong>BAC</strong></td>
+<td>完了時予算</td>
+</tr>
+<tr>
+<td><strong>EAC</strong></td>
+<td>完了時見積もり</td>
+</tr>
+<tr>
+<td><strong>VAC</strong></td>
+<td>完了時差異</td>
+</tr>
+<tr>
+<td><strong>SV</strong></td>
+<td>スケジュール差異</td>
+</tr>
+<tr>
+<td><strong>CV</strong></td>
+<td>コスト差異</td>
+</tr>
+<tr>
+<td><strong>SPI</strong></td>
+<td>スケジュール効率指標</td>
+</tr>
+<tr>
+<td><strong>CPI</strong></td>
+<td>コスト効率指標</td>
+</tr>
+<tr>
+<td><strong>TCPI</strong></td>
+<td>残作業効率指標</td>
+</tr>
+<tr>
+<td><strong>SV%</strong></td>
+<td>スケジュール差異率</td>
+</tr>
+<tr>
+<td><strong>CV%</strong></td>
+<td>コスト差異率</td>
+</tr>
+</tbody>
+</table>
+<h3 id="アーンドバリュー方式">アーンドバリュー方式 <a href="#アーンドバリュー方式" class="heading-anchor">#</a></h3>
+<p>各タスクはBCWP（アーンドバリュー）の計算に2つの方式のいずれかを使用できます：</p>
+<ul>
+<li><strong>% Complete</strong>（デフォルト） — タスクの達成率を使用してアーンドバリューを計算します。</li>
+<li><strong>Physical % Complete</strong> — 個別に追跡される物理的な達成率を使用します。成果物ベースの進捗測定に便利です。</li>
+</ul>
+<p>個々のタスクの方式は<strong>Task Properties</strong>ダイアログの<strong>Cost and EV</strong>タブで設定します。新規タスクのデフォルトの方式は<strong>Earned Value Options</strong>ダイアログで変更できます。</p>
+<h3 id="アーンドバリューベースライン">アーンドバリューベースライン <a href="#アーンドバリューベースライン" class="heading-anchor">#</a></h3>
+<p>EVM計算は特定のベースラインを使用します。<strong>Earned Value Options</strong>ダイアログで、アーンドバリューに使用するベースライン（<code>Baseline 0</code>から<code>Baseline 10</code>）を選択できます。デフォルトは<code>Baseline 0</code>です。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>키보드 단축키 - 사용자 인터페이스 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Ingantt에서 탐색, 편집, 보기, 확대/축소, 작업 조작을 위한 키보드 단축키 전체 참조입니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/ui/shortcuts/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="키보드 단축키">
+  <meta property="og:description" content="Ingantt에서 탐색, 편집, 보기, 확대/축소, 작업 조작을 위한 키보드 단축키 전체 참조입니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/ui/shortcuts/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="키보드 단축키">
+  <meta name="twitter:description" content="Ingantt에서 탐색, 편집, 보기, 확대/축소, 작업 조작을 위한 키보드 단축키 전체 참조입니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/shortcuts/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/shortcuts/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/shortcuts/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/shortcuts/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/shortcuts/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/shortcuts/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/shortcuts/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/shortcuts/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/shortcuts/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/" class="active" aria-current="page">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="키보드-단축키">키보드 단축키 <a href="#키보드-단축키" class="heading-anchor">#</a></h1>
+<p>편집, 탐색, 보기 전환 등 자주 사용하는 작업을 키보드 단축키로 빠르게 수행합니다.</p>
+<blockquote>
+<p>키보드 단축키는 <strong>Android</strong> 및 <strong>iOS</strong>에서 사용할 수 없습니다.</p>
+<p><strong>macOS</strong>에서는 <code>Ctrl</code> 대신 <code>Cmd</code>를 사용하십시오.</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>단축키</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Ctrl + X</code></td>
+<td>선택한 항목을 클립보드로 잘라냅니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + C</code></td>
+<td>선택한 항목을 클립보드로 복사합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + V</code></td>
+<td>클립보드의 항목을 선택한 항목 아래에 붙여넣거나, 선택한 항목이 없으면 목록 끝에 붙여넣습니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Z</code></td>
+<td>마지막 작업을 실행 취소합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Y</code></td>
+<td>마지막으로 취소한 작업을 다시 실행합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + S</code></td>
+<td>파일에 변경 사항을 저장합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + O</code></td>
+<td>파일을 엽니다 (데스크톱에서는 기본 파일 선택기, <strong>Web</strong>에서는 <strong>Open file</strong> 대화 상자).</td>
+</tr>
+<tr>
+<td><code>Ctrl + P</code></td>
+<td>현재 프로젝트를 인쇄합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Shift + F</code></td>
+<td><strong>헤더/메뉴 바</strong> 표시를 전환합니다.</td>
+</tr>
+<tr>
+<td><code>A</code></td>
+<td>새 항목을 추가합니다.</td>
+</tr>
+<tr>
+<td><code>Del</code></td>
+<td>선택한 항목을 삭제합니다.</td>
+</tr>
+<tr>
+<td><code>Enter</code></td>
+<td>선택한 항목의 <strong>Properties</strong> 대화 상자를 표시합니다. 여러 항목이 선택된 경우 첫 번째 항목의 대화 상자가 표시됩니다.</td>
+</tr>
+<tr>
+<td><code>Arrow Up</code></td>
+<td>이전 항목을 선택합니다.</td>
+</tr>
+<tr>
+<td><code>Arrow Down</code></td>
+<td>다음 항목을 선택합니다.</td>
+</tr>
+<tr>
+<td><code>Shift + Arrow Up/Down</code></td>
+<td>목록 보기에서 선택 범위를 위 또는 아래로 확장합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Up</code></td>
+<td>선택한 작업을 위로 이동합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Down</code></td>
+<td>선택한 작업을 아래로 이동합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Left</code></td>
+<td>선택한 작업의 들여쓰기를 줄입니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Arrow Right</code></td>
+<td>선택한 작업의 들여쓰기를 늘립니다.</td>
+</tr>
+<tr>
+<td><code>Tab / Shift + Tab</code></td>
+<td>다음 또는 이전 편집 가능한 셀로 이동합니다. 이동 전에 현재 편집을 확정합니다.</td>
+</tr>
+<tr>
+<td><code>R</code></td>
+<td><strong>Resources</strong> 보기로 전환합니다.</td>
+</tr>
+<tr>
+<td><code>C</code></td>
+<td><strong>Calendars</strong> 보기로 전환합니다.</td>
+</tr>
+<tr>
+<td><code>T</code></td>
+<td><strong>Tasks</strong> 보기로 전환합니다.</td>
+</tr>
+<tr>
+<td><code>P</code></td>
+<td><strong>Project Properties</strong> 대화 상자를 표시합니다.</td>
+</tr>
+<tr>
+<td><code>I</code></td>
+<td>Gantt 차트를 확대합니다.</td>
+</tr>
+<tr>
+<td><code>O</code></td>
+<td>Gantt 차트를 축소합니다.</td>
+</tr>
+<tr>
+<td><code>L</code></td>
+<td>선택한 작업을 연결합니다.</td>
+</tr>
+<tr>
+<td><code>U</code></td>
+<td>선택한 작업의 연결을 해제합니다 (종속성 제거).</td>
+</tr>
+<tr>
+<td><code>Numpad +</code></td>
+<td>Gantt 차트를 확대합니다.</td>
+</tr>
+<tr>
+<td><code>Numpad -</code></td>
+<td>Gantt 차트를 축소합니다.</td>
+</tr>
+<tr>
+<td><code>Esc</code></td>
+<td>전체 화면 모드 종료, 대화 상자 취소.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Enter</code></td>
+<td>현재 대화 상자를 확인합니다.</td>
+</tr>
+<tr>
+<td><code>Ctrl + Alt + Shift + H</code></td>
+<td>버전 기록을 표시합니다.</td>
+</tr>
+</tbody>
+</table>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

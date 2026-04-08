@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gantt 차트 - 보기 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/views/gantt/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Gantt 차트">
+  <meta property="og:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/views/gantt/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Gantt 차트">
+  <meta name="twitter:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/gantt/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/gantt/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/views/gantt/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/views/gantt/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/views/gantt/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/views/gantt/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/views/gantt/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/views/gantt/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/views/gantt/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/views/gantt/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/" class="active" aria-current="page">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="gantt-차트">Gantt 차트 <a href="#gantt-차트" class="heading-anchor">#</a></h1>
+<p>Gantt 차트는 프로젝트의 타임라인입니다. 평준화 조정, 진행선, 기준선 이후 일정이 어떻게 변경되었는지 확인할 수 있습니다.</p>
+<h2 id="사용-가능한-보기">사용 가능한 보기 <a href="#사용-가능한-보기" class="heading-anchor">#</a></h2>
+<p>Ingantt는 탐색 서랍이나 <strong>View</strong> 메뉴에서 접근할 수 있는 프로젝트 작업을 위한 다양한 보기를 제공합니다. 모든 보기에서 작업에 대해 사용 가능한 모든 작업을 수행할 수 있습니다.</p>
+<p><strong>작업 보기:</strong></p>
+<ul>
+<li><strong>Tasks</strong> — 작업 목록 및 Gantt 차트</li>
+<li><strong>Tracking Gantt</strong></li>
+<li><strong><a href="/ko/views/task-views/#task-board">Task Board</a></strong></li>
+<li><strong><a href="/ko/views/task-views/#network-diagram">Network Diagram</a></strong></li>
+<li><strong><a href="/ko/views/task-views/#calendar-view">Calendar View</a></strong></li>
+<li><strong><a href="/ko/views/task-views/#timeline">Timeline</a></strong></li>
+</ul>
+<p><strong>자원 보기:</strong></p>
+<ul>
+<li><strong><a href="/ko/views/resource-views/#resource-usage">Resource Usage</a></strong></li>
+<li><strong><a href="/ko/views/resource-views/#task-usage">Task Usage</a></strong></li>
+<li><strong><a href="/ko/views/resource-views/#team-planner">Team Planner</a></strong></li>
+<li><strong><a href="/ko/views/resource-views/#resource-graph">Resource Graph</a></strong></li>
+</ul>
+<h2 id="tasks-보기">Tasks 보기 <a href="#tasks-보기" class="heading-anchor">#</a></h2>
+<p><strong>Tasks</strong> 보기는 작업 목록과 Gantt 차트(분할 보기)를 결합한 기본 보기입니다. <strong>View &gt; Panels in Tasks</strong> 하위 메뉴에서 표시할 패널을 구성할 수 있습니다: Task List와 Gantt Chart를 각각 독립적으로 전환할 수 있습니다.</p>
+<h2 id="작업-검사기">작업 검사기 <a href="#작업-검사기" class="heading-anchor">#</a></h2>
+<p><strong>Task Inspector</strong>는 선택한 작업의 세부 정보를 보여주는 측면 패널로, 일정 결정 요인(작업 날짜를 결정하는 요소), 일반 속성, 자원, 선행 작업, 비용 등이 포함됩니다. 도구 모음에서 Task Inspector를 전환합니다.</p>
+<p>상단의 <strong>Scheduling Factors</strong> 섹션은 작업의 예정 날짜를 결정하는 요소를 보여줍니다: 추진 선행 작업(&quot;Driving&quot; 배지가 있는 굵은 글씨), 비추진 선행 작업(상대적 여유 포함), 제약 조건, 평준화 지연, 달력 및 여유 값. 주공정 작업에는 &quot;Critical&quot; 배지가 표시됩니다.</p>
+<h2 id="평준화-gantt">평준화 Gantt <a href="#평준화-gantt" class="heading-anchor">#</a></h2>
+<p><a href="/ko/adjusting-schedule/leveling/#%EC%9E%90%EB%8F%99-%ED%8F%89%EC%A4%80%ED%99%94">자동 평준화</a>가 프로젝트에 적용된 경우, Gantt 차트 영역에 <strong>Leveling Gantt</strong> 토글 버튼이 나타납니다.</p>
+<p>활성화하면 Gantt 차트에 각 작업의 평준화 전 위치(자동 평준화 전 작업의 위치)에 <strong>녹색 막대</strong>가 표시됩니다. 표준 작업 막대는 현재 평준화된 위치에 유지됩니다. 이를 통해 원래 일정과 평준화된 일정을 시각적으로 비교하고 각 작업이 얼마나 지연되었는지 확인할 수 있습니다.</p>
+<p>토글이 꺼져 있으면 표준 작업 막대만 표시됩니다.</p>
+<blockquote>
+<p>Leveling Gantt 토글은 평준화 데이터가 있을 때만 표시됩니다. 평준화를 지우면 자동으로 숨겨집니다. 이미 평준화 데이터가 포함된 프로젝트 파일을 열면 토글을 사용할 수 있지만 꺼진 상태로 시작됩니다.</p>
+</blockquote>
+<h2 id="진행선">진행선 <a href="#진행선" class="heading-anchor">#</a></h2>
+<p>활성화하면 Gantt 차트에 <strong>진행선</strong> — 작업이 상태 날짜 기준으로 일정보다 뒤처져 있는지 앞서 있는지를 시각적으로 나타내는 지그재그 선이 표시됩니다. 뒤처진 작업은 선을 왼쪽으로, 앞선 작업은 오른쪽으로, 정상 진행 작업은 선을 직선으로 유지합니다.</p>
+<p>Gantt 차트의 플로팅 도구 모음 버튼이나 <strong>View</strong> 메뉴에서 진행선을 전환합니다. 진행선이 활성화되어 있으면 PDF/인쇄 출력에도 포함됩니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

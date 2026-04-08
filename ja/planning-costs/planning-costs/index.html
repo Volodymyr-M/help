@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>コストの理解 - コスト計画 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Inganttがタスクとサマリータスクのコストをどのように計算するか、またトップダウンのコスト計画に予算リソースを使用する方法を学びます。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/planning-costs/planning-costs/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="コストの理解">
+  <meta property="og:description" content="Inganttがタスクとサマリータスクのコストをどのように計算するか、またトップダウンのコスト計画に予算リソースを使用する方法を学びます。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/planning-costs/planning-costs/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="コストの理解">
+  <meta name="twitter:description" content="Inganttがタスクとサマリータスクのコストをどのように計算するか、またトップダウンのコスト計画に予算リソースを使用する方法を学びます。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/planning-costs/planning-costs/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/planning-costs/planning-costs/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/" class="active" aria-current="page">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="コストの理解">コストの理解 <a href="#コストの理解" class="heading-anchor">#</a></h1>
+<p>タスクとリソースにコストを割り当てると、プロジェクトの総額がわかります。ルートサマリータスクに総合計が表示されるので、予算リソースと比較して、プロジェクトが承認された予算内に収まるかどうかを確認できます。</p>
+<h2 id="タスクコストの計算方法">タスクコストの計算方法 <a href="#タスクコストの計算方法" class="heading-anchor">#</a></h2>
+<p>各タスクのコストは、タスク自体の固定費と割り当てられたリソースのコストの合計です。Inganttは各タスクの総コストを計算し、タスクリストの<strong>Cost</strong>列に表示します。</p>
+<p><em>タスクの<strong>Cost</strong> = タスクの<strong>Fixed Cost</strong> + タスクに割り当てられたリソースのコスト</em></p>
+<blockquote>
+<p>タスクリストに<strong>Cost</strong>列が表示されない場合は、<strong>Options</strong>ダイアログの<strong>Task Columns</strong>タブで<strong>Cost Column</strong>フラグにチェックが入っていることを確認してください。</p>
+</blockquote>
+<h2 id="サマリータスクのコスト">サマリータスクのコスト <a href="#サマリータスクのコスト" class="heading-anchor">#</a></h2>
+<p>各<a href="/ja/building-schedule/tasks/#%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">サマリータスク</a>は、<strong>Cost</strong>フィールドにすべてのサブタスクの総コストを表示します。</p>
+<p>ただし、通常のタスクと同様に、サマリータスクにも<a href="/ja/building-schedule/assignments/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%81%A8%E5%8D%98%E4%BD%8D">割り当てリソース</a>と<strong>Fixed Cost</strong>を設定できます。これらはサブタスクの総コストに加算され、サマリータスクの<strong>Cost</strong>を増加させます。</p>
+<p><em>サマリータスクの<strong>Cost</strong> = すべてのサブタスクの総コスト + サマリータスクの<strong>Fixed Cost</strong> + サマリータスクに割り当てられたリソースのコスト</em></p>
+<p><a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>を使用して、プロジェクト全体の総コストを確認・管理できます。</p>
+<h2 id="予算リソース">予算リソース <a href="#予算リソース" class="heading-anchor">#</a></h2>
+<p><strong>Resource Properties</strong>ダイアログで、リソースを<strong>Budget</strong>リソースとしてマークできます。予算リソースはプロジェクトレベルで配分された予算総額を表し、<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>にのみ割り当てることができます。</p>
+<p>予算リソースは以下から除外されます：</p>
+<ul>
+<li>スケジューリング</li>
+<li>コスト合計</li>
+<li>過負荷検出</li>
+<li>リソースの平準化</li>
+</ul>
+<p>予算リソースは、ボトムアップのコスト計算とは別の、トップダウンの予算管理を提供します。</p>
+<h2 id="通貨">通貨 <a href="#通貨" class="heading-anchor">#</a></h2>
+<p>プロジェクトがInganttのデフォルトとは異なる通貨を使用する場合、<strong>Project Properties</strong>ダイアログの<strong>Regional</strong>タブで変更できます。通貨は記号（例：€）、略称（EUR）、または正式名称（ユーロ）で指定します。</p>
+<p>同じタブで、<strong>Currency Position</strong>（値の前または後、スペースの有無）も指定できます。</p>
+<blockquote>
+<p>通貨を変更しても、コスト値は再計算されません。</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

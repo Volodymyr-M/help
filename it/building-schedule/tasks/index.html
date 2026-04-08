@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Attività - Costruire un cronogramma - Guida di Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Scopri i tipi di attività in Ingantt, incluse le attività di riepilogo, le attività pianificate manualmente, le attività ricorrenti, le attività suddivise e le attività inattive.">
+  <link rel="canonical" href="https://help.ingantt.com/it/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Attività">
+  <meta property="og:description" content="Scopri i tipi di attività in Ingantt, incluse le attività di riepilogo, le attività pianificate manualmente, le attività ricorrenti, le attività suddivise e le attività inattive.">
+  <meta property="og:url" content="https://help.ingantt.com/it/building-schedule/tasks/">
+  <meta property="og:site_name" content="Guida di Ingantt">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Attività">
+  <meta name="twitter:description" content="Scopri i tipi di attività in Ingantt, incluse le attività di riepilogo, le attività pianificate manualmente, le attività ricorrenti, le attività suddivise e le attività inattive.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/tasks/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Vai al contenuto</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Mostra/nascondi navigazione" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/it/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Guida di Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Cerca">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Cerca..." aria-label="Cerca nella documentazione">
+      <div class="search-results" data-loading="Caricamento…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigazione della documentazione">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Per iniziare
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
+    <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurazione del progetto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Costruire un cronogramma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/building-schedule/tasks/" class="active" aria-current="page">Attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
+    <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
+    <li><a href="/it/building-schedule/resources/">Risorse</a></li>
+    <li><a href="/it/building-schedule/assignments/">Assegnazioni</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analisi e ottimizzazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
+    <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Pianificazione dei costi
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/planning-costs/planning-costs/">Comprendere i costi</a></li>
+    <li><a href="/it/planning-costs/setting-up-costs/">Configurazione dei costi</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Monitoraggio dell'avanzamento
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/tracking/baselines/">Baseline</a></li>
+    <li><a href="/it/tracking/progress/">Monitoraggio dell'avanzamento</a></li>
+    <li><a href="/it/tracking/actuals/">Valori effettivi</a></li>
+    <li><a href="/it/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Viste
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/views/gantt/">Diagramma di Gantt</a></li>
+    <li><a href="/it/views/task-views/">Viste attività</a></li>
+    <li><a href="/it/views/resource-views/">Viste risorse</a></li>
+    <li><a href="/it/views/filtering/">Filtraggio delle attività</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaccia utente
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
+    <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Lingua">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/" selected>Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Cambia tema" title="Passa al tema chiaro/scuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatta l'assistenza" title="Contatta l'assistenza">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="attività">Attività <a href="#attività" class="heading-anchor">#</a></h1>
+<p>Ogni cronogramma parte dalle attività. Definisci cosa deve essere fatto, quanto tempo richiederà e quando è prevista la scadenza. Una volta che le attività sono in posizione, vedrai la linea temporale del tuo progetto prendere forma nel diagramma di Gantt.</p>
+<h2 id="attività-di-riepilogo">Attività di riepilogo <a href="#attività-di-riepilogo" class="heading-anchor">#</a></h2>
+<p>Le attività di riepilogo ti aiutano a organizzare le attività raggruppandole insieme. Per creare un'attività di riepilogo, seleziona le attività che vuoi raggruppare, poi fai clic sul pulsante <strong>Increase Indent</strong> nella barra degli strumenti per rientrarle. Per riconvertire un'attività di riepilogo in un'attività normale, seleziona tutte le sue sottoattività e fai clic sul pulsante <strong>Decrease Indent</strong> per rimuovere il rientro.</p>
+<p>Poiché le attività di riepilogo raggruppano altre attività, le loro proprietà derivano dalle sottoattività anziché essere impostate direttamente. La loro durata rappresenta la durata complessiva di tutte le attività all'interno del gruppo: la data di fine di un'attività di riepilogo è l'ultima data di fine tra le sue sottoattività.</p>
+<p>Un'attività di riepilogo mostra anche la percentuale di completamento complessiva, il costo totale e il lavoro totale delle sue sottoattività.</p>
+<p>Nel diagramma di Gantt, le attività di riepilogo sono visualizzate come barre nere. Nell'elenco delle attività, puoi <strong>espandere</strong> o <strong>comprimere</strong> le attività di riepilogo per mostrare o nascondere le loro sottoattività.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="Summary" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="attività-di-riepilogo-radice">Attività di riepilogo radice <a href="#attività-di-riepilogo-radice" class="heading-anchor">#</a></h2>
+<p>In Ingantt, esiste sempre un'attività di riepilogo per l'intero progetto. Questa attività è l'attività numero 0, posizionata sopra tutte le altre attività.</p>
+<p>L'attività di riepilogo radice potrebbe non essere visibile per impostazione predefinita. Per cambiare questa impostazione, seleziona <strong>Show root summary task</strong> nel menu <strong>View</strong> o nella finestra <strong>Options</strong>.</p>
+<p>Come qualsiasi altra attività di riepilogo, l'attività di riepilogo radice mostra i dati complessivi delle sue sottoattività. Poiché tutte le attività del cronogramma sono sue sottoattività, l'attività di riepilogo radice mostra i dati complessivi dell'intero progetto.</p>
+<p>Il nome dell'attività di riepilogo radice corrisponde al nome del progetto.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="Root Summary Task" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="attività-pianificate-manualmente">Attività pianificate manualmente <a href="#attività-pianificate-manualmente" class="heading-anchor">#</a></h2>
+<p>Per impostazione predefinita, tutte le attività in Ingantt sono <strong>auto-scheduled</strong> — le loro date di inizio e fine sono calcolate dall'algoritmo di pianificazione in base a dipendenze, vincoli e calendari.</p>
+<p>Puoi passare un'attività alla modalità <strong>Manually scheduled</strong> utilizzando la casella di controllo nella finestra <strong>Task Properties</strong>. Quando un'attività è pianificata manualmente:</p>
+<ul>
+<li><strong>Non è influenzata dall'algoritmo di pianificazione</strong> — le date sono impostate da te</li>
+<li>Puoi inserire le date di <strong>Start</strong> e <strong>Finish</strong> usando i campi data o il selettore di date</li>
+<li>Puoi digitare <strong>valori testuali</strong> (come &quot;Da definire&quot;, &quot;inizio marzo&quot; o &quot;2-3 settimane&quot;) al posto di date effettive quando non sei ancora sicuro della tempistica</li>
+<li>Un'icona a forma di puntina viene mostrata per le attività pianificate manualmente nell'elenco delle attività</li>
+</ul>
+<blockquote>
+<p>Usa le attività pianificate manualmente come segnaposto quando la tempistica esatta è sconosciuta, o quando le date sono fissate da fattori esterni.</p>
+</blockquote>
+<h2 id="attività-ricorrenti">Attività ricorrenti <a href="#attività-ricorrenti" class="heading-anchor">#</a></h2>
+<p>Le attività ricorrenti rappresentano attività che si ripetono con cadenza regolare, come riunioni giornaliere, revisioni settimanali o report mensili. Puoi creare attività ricorrenti tramite il menu <strong>Insert</strong> scegliendo <strong>Add recurring task</strong>.</p>
+<p>Quando crei un'attività ricorrente, specifichi:</p>
+<ul>
+<li><strong>Durata dell'occorrenza</strong> — La durata di ogni singola occorrenza</li>
+<li><strong>Schema di ricorrenza</strong> — Schema giornaliero, settimanale, mensile o annuale con una data di inizio e una condizione di fine (nessuna fine, fine per data o fine dopo N occorrenze)</li>
+<li><strong>Solo giorni lavorativi</strong> — Limita le occorrenze ai giorni lavorativi</li>
+</ul>
+<p>Le attività ricorrenti appaiono come un'attività di riepilogo contenente le singole occorrenze. Ogni occorrenza può essere completata indipendentemente. L'eliminazione di un'attività ricorrente ti chiede di scegliere se eliminare l'intera serie o solo l'occorrenza selezionata.</p>
+<h2 id="attività-suddivise">Attività suddivise <a href="#attività-suddivise" class="heading-anchor">#</a></h2>
+<p>Un'attività può essere suddivisa in parti non contigue, che rappresentano interruzioni nel lavoro. Per suddividere un'attività, selezionala e scegli <strong>Split task</strong> dalla barra degli strumenti o dal menu contestuale (clic destro). La finestra <strong>Split Task</strong> offre due modalità:</p>
+<ul>
+<li><strong>Per durata</strong> — Specifica un intervallo di pausa dall'inizio dell'attività e una durata della suddivisione</li>
+<li><strong>Per date</strong> — Specifica le date di interruzione e ripresa della suddivisione</li>
+</ul>
+<p>Le attività suddivise vengono visualizzate come barre separate con connettori punteggiati tra le parti nel diagramma di Gantt. Ogni parte suddivisa ha la propria maniglia di ridimensionamento, e trascinando una parte fino a farla incontrare con una adiacente le si unisce. Per rimuovere una suddivisione, seleziona l'attività e scegli <strong>Remove split</strong> dalla barra degli strumenti.</p>
+<h2 id="attività-inattive">Attività inattive <a href="#attività-inattive" class="heading-anchor">#</a></h2>
+<p>Un'attività può essere contrassegnata come <strong>inattiva</strong> deselezionando la casella <strong>Active</strong> nella scheda <strong>General</strong> della finestra <strong>Task Properties</strong>, oppure utilizzando l'opzione <strong>Inactivate task</strong> nel sottomenu <strong>Edit &gt; Display</strong> o nel menu contestuale (clic destro).</p>
+<p>Le attività inattive sono:</p>
+<ul>
+<li>Escluse dalla pianificazione — non influenzano il percorso critico né le altre attività</li>
+<li>Escluse dai riepiloghi delle attività di riepilogo per durata, lavoro, costo e % di completamento</li>
+<li>Escluse dal rilevamento della sovrallocazione delle risorse e dal livellamento automatico</li>
+<li>Escluse dai calcoli Earned Value</li>
+</ul>
+<p>Le attività inattive rimangono visibili nell'elenco delle attività e nel diagramma di Gantt, ma appaiono con opacità ridotta e testo barrato. Le loro date vengono conservate per riferimento.</p>
+<p>L'inattivazione di un'attività di riepilogo si propaga a tutte le sue sottoattività. La riattivazione di una sottoattività riattiva automaticamente la sua attività di riepilogo genitore se necessario. Le attività con avanzamento effettivo (% di completamento &gt; 0) non possono essere inattivate.</p>
+<blockquote>
+<p>Usa le attività inattive per mantenere scenari &quot;what-if&quot; nel cronogramma senza influenzare il piano attivo.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="Indice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

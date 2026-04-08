@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>작업 - 일정 작성 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="요약 작업, 수동 일정 작업, 반복 작업, 분할 작업, 비활성 작업 등 Ingantt의 작업 유형에 대해 알아봅니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/building-schedule/tasks/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="작업">
+  <meta property="og:description" content="요약 작업, 수동 일정 작업, 반복 작업, 분할 작업, 비활성 작업 등 Ingantt의 작업 유형에 대해 알아봅니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/building-schedule/tasks/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KO">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="작업">
+  <meta name="twitter:description" content="요약 작업, 수동 일정 작업, 반복 작업, 분할 작업, 비활성 작업 등 Ingantt의 작업 유형에 대해 알아봅니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/tasks/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/tasks/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/tasks/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/tasks/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/tasks/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/tasks/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/tasks/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/tasks/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/" class="active" aria-current="page">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="작업">작업 <a href="#작업" class="heading-anchor">#</a></h1>
+<p>모든 일정은 작업에서 시작됩니다. 수행해야 할 작업, 소요 시간, 마감일을 정의하십시오. 작업을 배치하면 Gantt 차트에서 프로젝트 타임라인이 형성되는 것을 확인할 수 있습니다.</p>
+<h2 id="요약-작업">요약 작업 <a href="#요약-작업" class="heading-anchor">#</a></h2>
+<p>요약 작업은 작업을 그룹으로 묶어 정리하는 데 사용됩니다. 요약 작업을 만들려면 그룹화할 작업을 선택한 다음 도구 모음에서 <strong>Increase Indent</strong> 버튼을 클릭하여 들여쓰기합니다. 요약 작업을 일반 작업으로 되돌리려면 모든 하위 작업을 선택하고 <strong>Decrease Indent</strong> 버튼을 클릭하여 들여쓰기를 제거하십시오.</p>
+<p>요약 작업은 다른 작업을 그룹화하므로 속성이 직접 설정되지 않고 하위 작업에서 파생됩니다. 기간은 그룹 내 모든 작업의 전체 기간을 나타냅니다. 요약 작업의 완료 날짜는 하위 작업 중 가장 늦은 완료 날짜입니다.</p>
+<p>요약 작업은 하위 작업의 전체 완료율, 총 비용 및 총 작업량도 표시합니다.</p>
+<p>Gantt 차트에서 요약 작업은 검은색 막대로 표시됩니다. 작업 목록에서 요약 작업을 <strong>펼치기</strong> 또는 <strong>접기</strong>하여 하위 작업을 표시하거나 숨길 수 있습니다.</p>
+<p><img src="/images/building-schedule/tasks/summary.png" alt="요약" / data-dark-src="/images/building-schedule/tasks/summary_d.png"></p>
+<h2 id="루트-요약-작업">루트 요약 작업 <a href="#루트-요약-작업" class="heading-anchor">#</a></h2>
+<p>Ingantt에는 항상 전체 프로젝트에 대한 요약 작업이 있습니다. 이 작업은 모든 작업 위에 있는 작업 번호 0입니다.</p>
+<p>루트 요약 작업은 기본적으로 표시되지 않을 수 있습니다. 이를 변경하려면 <strong>View</strong> 메뉴 또는 <strong>Options</strong> 대화 상자에서 <strong>Show root summary task</strong>를 체크하십시오.</p>
+<p>다른 요약 작업과 마찬가지로 루트 요약 작업은 하위 작업의 전체 데이터를 표시합니다. 일정의 모든 작업이 하위 작업이므로 루트 요약 작업은 전체 프로젝트의 종합 데이터를 표시합니다.</p>
+<p>루트 요약 작업의 이름은 프로젝트의 이름과 동일합니다.</p>
+<p><img src="/images/building-schedule/tasks/root_summary.png" alt="루트 요약 작업" / data-dark-src="/images/building-schedule/tasks/root_summary_d.png"></p>
+<h2 id="수동-일정-작업">수동 일정 작업 <a href="#수동-일정-작업" class="heading-anchor">#</a></h2>
+<p>기본적으로 Ingantt의 모든 작업은 <strong>자동 일정</strong> 방식입니다 — 시작 및 완료 날짜가 종속성, 제약 조건 및 달력을 기반으로 일정 알고리즘에 의해 계산됩니다.</p>
+<p><strong>Task Properties</strong> 대화 상자의 체크박스를 사용하여 작업을 <strong>Manually scheduled</strong> 모드로 전환할 수 있습니다. 수동 일정 작업의 경우:</p>
+<ul>
+<li>일정 알고리즘의 <strong>영향을 받지 않으며</strong> 날짜를 직접 설정합니다.</li>
+<li>날짜 필드 또는 날짜 선택기를 사용하여 <strong>Start</strong> 및 <strong>Finish</strong> 날짜를 입력할 수 있습니다.</li>
+<li>정확한 시기가 아직 확정되지 않은 경우 실제 날짜 대신 <strong>텍스트 값</strong>(예: &quot;미정&quot;, &quot;3월 초&quot;, &quot;2~3주&quot;)을 입력할 수 있습니다.</li>
+<li>작업 목록에서 수동 일정 작업에는 핀 아이콘이 표시됩니다.</li>
+</ul>
+<blockquote>
+<p>정확한 시기를 알 수 없거나 외부 요인에 의해 날짜가 고정된 경우 수동 일정 작업을 임시 표시용으로 사용하십시오.</p>
+</blockquote>
+<h2 id="반복-작업">반복 작업 <a href="#반복-작업" class="heading-anchor">#</a></h2>
+<p>반복 작업은 일일 스탠드업 미팅, 주간 리뷰, 월간 보고서 등 정기적으로 반복되는 활동을 나타냅니다. <strong>Insert</strong> 메뉴에서 <strong>Add recurring task</strong>를 선택하여 반복 작업을 만들 수 있습니다.</p>
+<p>반복 작업을 만들 때 다음을 지정합니다:</p>
+<ul>
+<li><strong>발생 기간</strong> — 각 개별 발생의 기간</li>
+<li><strong>반복 패턴</strong> — 일별, 주별, 월별 또는 연별 패턴과 시작 날짜 및 종료 조건(종료 없음, 날짜까지 종료, N회 발생 후 종료)</li>
+<li><strong>근무일만</strong> — 근무일에만 발생하도록 제한</li>
+</ul>
+<p>반복 작업은 개별 발생을 포함하는 요약 작업으로 표시됩니다. 각 발생은 독립적으로 완료할 수 있습니다. 반복 작업을 삭제하면 전체 시리즈를 삭제할지 선택한 발생만 삭제할지 선택하라는 메시지가 표시됩니다.</p>
+<h2 id="분할-작업">분할 작업 <a href="#분할-작업" class="heading-anchor">#</a></h2>
+<p>작업을 비연속적인 부분으로 분할하여 작업 중단을 나타낼 수 있습니다. 작업을 분할하려면 작업을 선택하고 도구 모음 또는 마우스 우클릭 컨텍스트 메뉴에서 <strong>Split task</strong>를 선택하십시오. <strong>Split Task</strong> 대화 상자에는 두 가지 모드가 있습니다:</p>
+<ul>
+<li><strong>기간 기준</strong> — 작업 시작으로부터의 간격 오프셋과 분할 기간을 지정합니다.</li>
+<li><strong>날짜 기준</strong> — 중단 날짜와 재개 날짜를 지정합니다.</li>
+</ul>
+<p>분할 작업은 Gantt 차트에서 점선 연결선이 있는 별도의 막대로 표시됩니다. 각 분할 부분에는 자체 크기 조절 핸들이 있으며, 인접한 부분과 만나도록 드래그하면 두 부분이 병합됩니다. 분할을 제거하려면 작업을 선택하고 도구 모음에서 <strong>Remove split</strong>을 선택하십시오.</p>
+<h2 id="비활성-작업">비활성 작업 <a href="#비활성-작업" class="heading-anchor">#</a></h2>
+<p><strong>Task Properties</strong> 대화 상자의 <strong>General</strong> 탭에서 <strong>Active</strong> 체크박스를 해제하거나, <strong>Edit &gt; Display</strong> 하위 메뉴 또는 마우스 우클릭 컨텍스트 메뉴에서 <strong>Inactivate task</strong> 옵션을 사용하여 작업을 <strong>비활성</strong>으로 표시할 수 있습니다.</p>
+<p>비활성 작업은:</p>
+<ul>
+<li>일정에서 제외됩니다 — 주공정경로나 다른 작업에 영향을 미치지 않습니다.</li>
+<li>기간, 작업량, 비용 및 완료율에 대한 요약 작업 롤업에서 제외됩니다.</li>
+<li>자원 과배정 감지 및 자동 평준화에서 제외됩니다.</li>
+<li>획득가치 계산에서 제외됩니다.</li>
+</ul>
+<p>비활성 작업은 작업 목록과 Gantt 차트에 계속 표시되지만 투명도가 낮아지고 취소선 텍스트로 나타납니다. 참조용으로 날짜가 유지됩니다.</p>
+<p>요약 작업을 비활성화하면 모든 하위 작업에 연쇄적으로 적용됩니다. 하위 작업을 재활성화하면 필요한 경우 상위 요약 작업도 자동으로 재활성화됩니다. 실제 진행 상황(완료율 &gt; 0)이 있는 작업은 비활성화할 수 없습니다.</p>
+<blockquote>
+<p>비활성 작업을 사용하면 활성 계획에 영향을 주지 않으면서 일정에 &quot;가정&quot; 시나리오를 유지할 수 있습니다.</p>
+</blockquote>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

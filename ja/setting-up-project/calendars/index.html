@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>カレンダー - プロジェクトのセットアップ - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="カスタム稼働週、祝日、繰り返し例外を使用して、プロジェクト、リソース、タスクのカレンダーを設定します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/setting-up-project/calendars/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="カレンダー">
+  <meta property="og:description" content="カスタム稼働週、祝日、繰り返し例外を使用して、プロジェクト、リソース、タスクのカレンダーを設定します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/setting-up-project/calendars/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="カレンダー">
+  <meta name="twitter:description" content="カスタム稼働週、祝日、繰り返し例外を使用して、プロジェクト、リソース、タスクのカレンダーを設定します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/setting-up-project/calendars/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/calendars/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/" class="active" aria-current="page">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="カレンダー">カレンダー <a href="#カレンダー" class="heading-anchor">#</a></h1>
+<p>祝日、休暇、半日勤務、夜勤 — スケジュールは実際に作業が行われる時間を反映する必要があります。カレンダーを設定して、Inganttが非稼働時間をスキップし、現実的な日程を算出できるようにしましょう。</p>
+<p>カレンダーは、作業を行える日時を定義します。カレンダーは2種類のデータを使用します：</p>
+<ul>
+<li><strong>曜日</strong>：各曜日に設定された稼働時間 — 通常の定期的なスケジュールを定義します。</li>
+<li><strong>例外</strong>：曜日スケジュールとは異なる時間に作業を行う日、または作業を行わない日です。</li>
+</ul>
+<h2 id="プロジェクトカレンダー">プロジェクトカレンダー <a href="#プロジェクトカレンダー" class="heading-anchor">#</a></h2>
+<p>プロジェクトには、<strong>Project Properties</strong>ダイアログで指定された<strong>Calendar</strong>が関連付けられています。このカレンダーは、稼働リソースが割り当てられていないタスクのスケジューリング方法を定義します。週末などの休日もこのカレンダーに基づいてガントチャートに表示されます。</p>
+<h2 id="リソースカレンダー">リソースカレンダー <a href="#リソースカレンダー" class="heading-anchor">#</a></h2>
+<p>各<a href="/ja/building-schedule/resources/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%BF%E3%82%A4%E3%83%97">稼働リソース</a>には、<strong>Resource Properties</strong>ダイアログの<strong>Base Calendar</strong>フィールドで指定されたカレンダーが関連付けられています。稼働リソースがタスクに<a href="/ja/building-schedule/assignments/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%81%A8%E5%8D%98%E4%BD%8D">割り当て</a>られると、そのカレンダーがタスクのスケジューリングに影響します。</p>
+<p>複数の稼働リソースがタスクに割り当てられている場合、それらのカレンダーは<strong>積集合</strong>で処理されます。つまり、<strong>すべての</strong>割り当てリソースが稼働可能な時間帯にのみ作業がスケジュールされます。たとえば、リソースAが月〜水に稼働し、リソースBが水〜金に稼働する場合、両方が割り当てられたタスクは水曜日にのみスケジュールされます。</p>
+<blockquote>
+<p>複数のリソースが同様の稼働スケジュールを持つ場合、1つのカレンダーを作成して全員に割り当ててください。それでも、各リソースの例外（休暇や特定の日の稼働時間の変更など）は<strong>Resource Properties</strong>で個別に指定できます。</p>
+</blockquote>
+<h2 id="タスクカレンダー">タスクカレンダー <a href="#タスクカレンダー" class="heading-anchor">#</a></h2>
+<p>各タスクには<strong>Task Properties</strong>ダイアログに<strong>Calendar</strong>プロパティがあり、デフォルトでは<strong>NONE</strong>に設定されています。<strong>NONE</strong>の場合：</p>
+<ul>
+<li>タスクに稼働リソースが割り当てられていない場合、タスクはプロジェクトのカレンダーに従ってスケジュールされます。</li>
+<li>タスクに稼働リソースが割り当てられている場合、タスクはそのリソースのカレンダーに従ってスケジュールされます。</li>
+</ul>
+<p>タスクの<strong>Calendar</strong>プロパティが<strong>NONE</strong>ではなくカレンダーに設定されている場合：</p>
+<ul>
+<li>タスクに稼働リソースが割り当てられていない場合、タスクは指定されたカレンダーに従ってスケジュールされます。</li>
+<li>タスクに稼働リソースが割り当てられている場合、タスクはタスクカレンダーとリソースカレンダーの<strong>積集合</strong>に従ってスケジュールされます。つまり、タスクカレンダーとすべてのリソースカレンダーの両方で稼働時間となっている時間帯にのみ作業がスケジュールされます。リソースカレンダーを無視してタスクカレンダーのみを使用するには、<strong>Ignore resource calendars</strong>フラグにチェックを入れてください。</li>
+</ul>
+<h2 id="定義済みカレンダー">定義済みカレンダー <a href="#定義済みカレンダー" class="heading-anchor">#</a></h2>
+<p>Inganttには3つの定義済みカレンダーがあり、そのうち1つ（<strong>Standard</strong>）がデフォルトでプロジェクトに割り当てられています。</p>
+<table>
+<thead>
+<tr>
+<th>カレンダー</th>
+<th>説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>月曜日から金曜日、午前8時から午後5時まで稼働。1時間の休憩（正午12時から午後1時）あり。</td>
+</tr>
+<tr>
+<td><strong>Night Shift</strong></td>
+<td>月曜夜から土曜朝まで稼働、午後11時から午前8時まで。1時間の休憩（午前3時から午前4時）あり。</td>
+</tr>
+<tr>
+<td><strong>24 Hours</strong></td>
+<td>毎日24時間稼働。</td>
+</tr>
+</tbody>
+</table>
+<p>定義済みカレンダーは<strong>Calendar Properties</strong>ダイアログで編集できます。また、<strong>Add Calendar</strong>ダイアログを使用して、定義済みカレンダーを基に独自のカレンダーを作成することもできます。</p>
+<h2 id="稼働週">稼働週 <a href="#稼働週" class="heading-anchor">#</a></h2>
+<p>稼働週を使用すると、特定の日付範囲における週間スケジュールの変更を定義できます。たとえば、全員が通常の8時間ではなく4時間勤務する期間や、土曜日が稼働日になる期間を設定できます。</p>
+<p>稼働週は<strong>Calendar Properties</strong>ダイアログの<strong>Work Weeks</strong>タブで設定します。各稼働週には名前、開始日と終了日、曜日ごとの稼働時間の定義があります。</p>
+<blockquote>
+<p>カレンダー例外は稼働週よりも優先され、稼働週はデフォルトの曜日スケジュールよりも優先されます。</p>
+</blockquote>
+<h2 id="カレンダー例外">カレンダー例外 <a href="#カレンダー例外" class="heading-anchor">#</a></h2>
+<p>カレンダー例外は、通常の曜日スケジュールとは異なる作業日（休日を含む）です。</p>
+<p>カレンダー例外は以下の場所で指定できます：</p>
+<ul>
+<li>特定のリソースの<strong>Resource Properties</strong>ダイアログ。</li>
+<li>特定のカレンダーの<strong>Calendar Properties</strong>。このカレンダーを使用するプロジェクト、リソース、またはタスクにこの例外が適用されます。</li>
+</ul>
+<p>たとえば、特定の人の休暇を設定する場合は、そのリソースの例外として追加します。全員の祝日を設定する場合は、全員が使用するカレンダーの例外として追加します。</p>
+<p>カレンダー例外を追加または編集する際に、例外の稼働時間を指定します。稼働時間を指定しない場合、その例外には稼働時間がなく、休日として定義されます。</p>
+<p>各例外には説明的な<strong>Name</strong>（「クリスマス休暇」や「オフィス休業日」など）を付けることができ、例外リストに表示されます。</p>
+<h3 id="繰り返し例外">繰り返し例外 <a href="#繰り返し例外" class="heading-anchor">#</a></h3>
+<p>カレンダー例外は、単一の日付だけでなく、パターンに基づいて繰り返すように設定できます。使用可能な繰り返しパターンは以下のとおりです：</p>
+<ul>
+<li><strong>日次</strong> — N日ごと、またはN平日ごと</li>
+<li><strong>週次</strong> — 指定した曜日にN週間ごと</li>
+<li><strong>月次</strong> — 月の日付、または位置（第2火曜日など）で指定</li>
+<li><strong>年次</strong> — 日付、または位置（11月の最終金曜日など）で指定</li>
+</ul>
+<p>繰り返し例外には終了条件があります：終了なし、指定日で終了、またはN回発生後に終了です。</p>
+<h2 id="空のカレンダーと不完全なカレンダー">空のカレンダーと不完全なカレンダー <a href="#空のカレンダーと不完全なカレンダー" class="heading-anchor">#</a></h2>
+<p>カレンダーに稼働時間を追加しない場合、そのカレンダーは空であり、スケジューリングに使用できません。このようなカレンダーはカレンダーリストで警告アイコン付きで表示され、その数はナビゲーションドロワーに表示されます。</p>
+<p>ただし、カレンダーが空ではなくても、特定のタスクをスケジュールするのに十分な稼働時間がない場合があります。このような状況はスケジューリング実行時にのみ検出されます。</p>
+<p>空のカレンダー、または十分な稼働時間がないカレンダーをプロジェクト、リソース、またはタスクに割り当ててスケジューリングが続行できない場合、エラーが表示され、最後の操作が元に戻されます。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>
