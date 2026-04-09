@@ -41,8 +41,7 @@ O atraso é definido na caixa de diálogo **Edit Resource Assignment** e se apli
 
 Para recursos de trabalho, você pode designar uma parte do trabalho total de uma atribuição como horas extras. O trabalho com horas extras é um subconjunto do trabalho total, não um adicional: **Work = Regular Work + Overtime Work**.
 
-O custo da tarefa é calculado usando as partes regular e de horas extras separadamente:
-**Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use**
+O impacto das horas extras nos custos é abordado em [Configurando Custos](/pt/planning-costs/setting-up-costs/index.md#custo-de-recurso-de-trabalho).
 
 Para tarefas do tipo Fixed Units e Fixed Work, inserir trabalho com horas extras reduz a duração da tarefa porque a duração é baseada apenas no trabalho regular.
 

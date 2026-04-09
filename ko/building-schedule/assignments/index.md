@@ -41,8 +41,7 @@
 
 작업 자원의 경우 배정의 총 작업량 중 일부를 초과 근무로 지정할 수 있습니다. 초과 근무 작업량은 총 작업량의 일부이며 추가가 아닙니다: **Work = Regular Work + Overtime Work**.
 
-작업 비용은 정규 근무와 초과 근무 부분을 별도로 사용하여 계산됩니다:
-**Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use**
+초과 근무의 비용 영향은 [비용 설정](/ko/planning-costs/setting-up-costs/index.md#작업-자원-비용)에서 다룹니다.
 
 Fixed Units 및 Fixed Work 작업의 경우 초과 근무를 입력하면 기간이 정규 작업량만을 기반으로 하므로 작업 기간이 단축됩니다.
 

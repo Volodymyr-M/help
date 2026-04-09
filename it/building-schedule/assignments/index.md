@@ -41,8 +41,7 @@ Il ritardo viene impostato nella finestra **Edit Resource Assignment** e si appl
 
 Per le risorse di tipo lavoro, puoi designare una parte del lavoro totale di un'assegnazione come straordinario. Il lavoro straordinario è un sottoinsieme del lavoro totale, non un'aggiunta: **Work = Regular Work + Overtime Work**.
 
-Il costo dell'attività viene calcolato utilizzando separatamente le porzioni regolari e straordinarie:
-**Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use**
+L'impatto degli straordinari sui costi è trattato in [Configurazione dei costi](/it/planning-costs/setting-up-costs/index.md#costo-della-risorsa-di-tipo-lavoro).
 
 Per le attività di tipo Fixed Units e Fixed Work, l'inserimento del lavoro straordinario riduce la durata dell'attività perché la durata si basa solo sul lavoro regolare.
 

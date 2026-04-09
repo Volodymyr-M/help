@@ -41,8 +41,7 @@ The delay is set in the **Edit Resource Assignment** dialog and only applies to 
 
 For work resources, you can designate a portion of an assignment's total work as overtime. Overtime work is a subset of total work, not additive: **Work = Regular Work + Overtime Work**.
 
-Task cost is calculated using the regular and overtime portions separately:
-**Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use**
+The cost impact of overtime is covered in [Setting Up Costs](/en/planning-costs/setting-up-costs/index.md#work-resource-cost).
 
 For Fixed Units and Fixed Work tasks, entering overtime work reduces the task duration because duration is based on regular work only.
 

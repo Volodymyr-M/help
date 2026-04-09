@@ -41,8 +41,7 @@ Le délai est défini dans la boîte de dialogue **Edit Resource Assignment** et
 
 Pour les ressources de travail, vous pouvez désigner une partie du travail total d'une affectation comme heures supplémentaires. Les heures supplémentaires sont un sous-ensemble du travail total, et non un ajout : **Travail = Travail normal + Heures supplémentaires**.
 
-Le coût de la tâche est calculé séparément pour les parties normales et supplémentaires :
-**Coût = Travail normal × Taux standard + Heures supplémentaires × Taux des heures supplémentaires + Coût par utilisation**
+L'impact des heures supplémentaires sur les coûts est traité dans [Configuration des coûts](/fr/planning-costs/setting-up-costs/index.md#coût-des-ressources-de-travail).
 
 Pour les tâches de type Fixed Units et Fixed Work, la saisie d'heures supplémentaires réduit la durée de la tâche car la durée est basée uniquement sur le travail normal.
 

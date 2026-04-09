@@ -41,8 +41,7 @@ El retraso se establece en el diálogo **Editar asignación de recurso** y solo 
 
 Para recursos de trabajo, puede designar una parte del trabajo total de una asignación como horas extra. El trabajo en horas extra es un subconjunto del trabajo total, no adicional: **Trabajo = Trabajo regular + Trabajo en horas extra**.
 
-El costo de la tarea se calcula usando las porciones regular y de horas extra por separado:
-**Costo = Trabajo regular × Tasa estándar + Trabajo en horas extra × Tasa de horas extra + Costo por uso**
+El impacto en los costos de las horas extra se trata en [Configuración de costos](/es/planning-costs/setting-up-costs/index.md#costo-del-recurso-de-trabajo).
 
 Para tareas de Unidades fijas y Trabajo fijo, ingresar trabajo en horas extra reduce la duración de la tarea porque la duración se basa únicamente en el trabajo regular.
 

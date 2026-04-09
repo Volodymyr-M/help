@@ -41,8 +41,7 @@ Die Verzögerung wird im Dialog **Ressourcenzuweisung bearbeiten** festgelegt un
 
 Bei Arbeitsressourcen können Sie einen Teil der Gesamtarbeit einer Zuweisung als Überstunden festlegen. Überstundenarbeit ist eine Teilmenge der Gesamtarbeit, keine Addition: **Arbeit = Reguläre Arbeit + Überstundenarbeit**.
 
-Die Vorgangskosten werden anhand der regulären und der Überstundenanteile separat berechnet:
-**Kosten = Reguläre Arbeit x Standardsatz + Überstundenarbeit x Überstundensatz + Kosten pro Einsatz**
+Die Auswirkungen von Überstunden auf die Kosten werden unter [Kosten einrichten](/de/planning-costs/setting-up-costs/index.md#arbeitsressourcenkosten) behandelt.
 
 Bei Vorgängen mit **Feste Einheiten** und **Feste Arbeit** reduziert die Eingabe von Überstundenarbeit die Vorgangsdauer, da die Dauer nur auf der regulären Arbeit basiert.
 
