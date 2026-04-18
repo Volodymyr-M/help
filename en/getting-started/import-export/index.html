@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Import &amp; Export - Getting Started - Ingantt Help</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Import projects from MPP, XER, GAN, and other formats, and export to PDF, PNG, CSV, XML, or Markdown.">
+  <meta name="description" content="Import projects from MPP, XER, GAN, YAML, and other formats, and export to PDF, PNG, CSV, XML, YAML, or Markdown — including an AI-editable YAML workflow.">
   <link rel="canonical" href="https://help.ingantt.com/en/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Import &amp; Export">
-  <meta property="og:description" content="Import projects from MPP, XER, GAN, and other formats, and export to PDF, PNG, CSV, XML, or Markdown.">
+  <meta property="og:description" content="Import projects from MPP, XER, GAN, YAML, and other formats, and export to PDF, PNG, CSV, XML, YAML, or Markdown — including an AI-editable YAML workflow.">
   <meta property="og:url" content="https://help.ingantt.com/en/getting-started/import-export/">
   <meta property="og:site_name" content="Ingantt Help">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Import &amp; Export">
-  <meta name="twitter:description" content="Import projects from MPP, XER, GAN, and other formats, and export to PDF, PNG, CSV, XML, or Markdown.">
+  <meta name="twitter:description" content="Import projects from MPP, XER, GAN, YAML, and other formats, and export to PDF, PNG, CSV, XML, YAML, or Markdown — including an AI-editable YAML workflow.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/en/getting-started/overview/">Overview</a></li>
     <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
     <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
     <li><a href="/en/getting-started/import-export/" class="active" aria-current="page">Import &amp; Export</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML, YML</li>
 <li>And more (SDEF and other formats)</li>
 </ul>
 <p>To import a file, click the <strong>+</strong> button on the Projects screen, or use the <strong>Import</strong> option in the <strong>File</strong> menu. If you make changes to an imported file, Ingantt saves them in XML format.</p>
 <blockquote>
-<p>To open non-XML project files, Ingantt sends them through a secure connection to the Ingantt web service for conversion. Your files are not stored on the service. An internet connection is required.</p>
+<p>To open non-XML project files, Ingantt sends them through a secure connection to the Ingantt web service for conversion. Your files are not stored on the service. An internet connection is required. YAML files are parsed locally.</p>
 </blockquote>
 <h2 id="exporting-your-project">Exporting Your Project <a href="#exporting-your-project" class="heading-anchor">#</a></h2>
 <p>Ingantt provides multiple export formats through the <strong>Export</strong> option in the <strong>File</strong> menu (or <strong>Download</strong> on web). When you choose <strong>Export</strong>, a dialog appears allowing you to select the desired format:</p>
@@ -234,6 +236,10 @@
 <td>Project XML format for interoperability</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>Compact, human-readable project definition designed for AI-assisted editing</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>Text format for documentation, READMEs, or wikis</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>The exported file reflects your current Gantt chart settings. For example, if task names are hidden in the <strong>Options</strong> dialog, they won't appear in the export either. The zoom level is also preserved.</p>
 <blockquote>
-<p>PDF exports always use light theme colors, while PNG exports use the current UI theme (light or dark). CSV and Markdown exports are plain text. When visible in the UI, split tasks, baseline bars, and leveling ghost bars are all rendered in PDF and PNG exports.</p>
+<p>PDF exports always use light theme colors, while PNG exports use the current UI theme (light or dark). CSV, YAML, and Markdown exports are plain text. When visible in the UI, split tasks, baseline bars, and leveling ghost bars are all rendered in PDF and PNG exports.</p>
+</blockquote>
+<h2 id="editing-yaml-with-ai-agents">Editing YAML with AI Agents <a href="#editing-yaml-with-ai-agents" class="heading-anchor">#</a></h2>
+<p>YAML export is designed for editing with an AI coding assistant (Claude Code, Codex, or any tool that can read and write files). Export the project, describe the changes you want in natural language — <em>&quot;add a two-week QA phase after development&quot;</em>, <em>&quot;assign Alex to all design tasks&quot;</em> — and import the result back.</p>
+<p>The format holds <strong>inputs only</strong> (durations, dependencies, constraints, assignments, calendars, rates). Derived values — task start/finish dates, total cost, critical path, slack, summary rollups — are omitted on purpose; Ingantt recomputes them on import. The agent shouldn't try to work out dates itself.</p>
+<p>Point the agent at the <a href="/yaml-reference.md">YAML format reference</a> so it knows the schema.</p>
+<blockquote>
+<p>For real-time editing without the export/import round-trip, see <a href="/en/getting-started/edit-with-ai/">Edit with AI</a> — the AI reads and writes the same YAML schema over a live session and you watch each change appear in the Gantt chart as it happens.</p>
 </blockquote>
 
     </main>

@@ -778,7 +778,7 @@
     "theme": "Interface do Usuário",
     "url": "/pt/ui/files/",
     "snippet": "Integração com Google Drive\nO Ingantt armazena seus arquivos de projeto no Google Drive para que você possa acessá-los de qualquer dispositivo.\nFazer Login no Google\nAo usar o Ingantt pela primeira ve",
-    "keywords": "Integração com Google Drive\nO Ingantt armazena seus arquivos de projeto no Google Drive para que você possa acessá-los de qualquer dispositivo.\nFazer Login no Google\nAo usar o Ingantt pela primeira vez, você é solicitado a fazer login com sua conta Google. O Ingantt solicita as seguintes permissões:\n- See your profile info — Usado para identificar sua conta.\n- Connect itself to your Google Drive — Apenas na versão Web. Permite criar ou abrir arquivos do Ingantt pela interface web do Google Drive (botão New ou menu Open with).\n- See, edit, create, and delete only the specific Google Drive files you use with this app — Permite que o Ingantt crie e edite seus próprios arquivos no seu Google Drive. O Ingantt não pode acessar seus outros arquivos.",
+    "keywords": "Integração com Google Drive\nO Ingantt armazena seus arquivos de projeto no Google Drive para que você possa acessá-los de qualquer dispositivo.\nFazer Login no Google\nAo usar o Ingantt pela primeira vez, você é solicitado a fazer login com sua conta Google. O Ingantt solicita as seguintes permissões:\n- See your profile info — Usado para identificar sua conta.\n- Connect itself to your Google Drive — Apenas na versão Web. Permite criar ou abrir arquivos do Ingantt pela interface web do Google Drive (botão New ou menu Open with).\n- See, edit, create, and delete only the specific Google Drive files you use with this app — Permite que o Ingantt crie e edite seus próprios arquivos no seu Google Drive. O Ingantt não pode acessar seus outros arquivos.\nUsando o Ingantt para Web com o Google Drive\n$1",
     "sections": [
       {
         "slug": "",
@@ -787,6 +787,10 @@
       {
         "slug": "fazer-login-no-google",
         "text": "Ao usar o Ingantt pela primeira vez, você é solicitado a fazer login com sua conta Google. O Ingantt solicita as seguintes permissões:\n- See your profile info — Usado para identificar sua conta.\n- Connect itself to your Google Drive — Apenas na versão Web. Permite criar ou abrir arquivos do Ingantt pela interface web do Google Drive (botão New ou menu Open with).\n- See, edit, create, and delete only the specific Google Drive files you use with this app — Permite que o Ingantt crie e edite seus próprios arquivos no seu Google Drive. O Ingantt não pode acessar seus outros arquivos."
+      },
+      {
+        "slug": "usando-o-ingantt-para-web-com-o-google-drive",
+        "text": "$1"
       }
     ]
   },

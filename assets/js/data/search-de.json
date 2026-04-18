@@ -778,7 +778,7 @@
     "theme": "Benutzeroberfläche",
     "url": "/de/ui/files/",
     "snippet": "Google-Drive-Integration\nIngantt speichert Ihre Projektdateien in Google Drive, damit Sie von jedem Gerät darauf zugreifen können.\nBei Google anmelden\nWenn Sie Ingantt zum ersten Mal verwenden, werden",
-    "keywords": "Google-Drive-Integration\nIngantt speichert Ihre Projektdateien in Google Drive, damit Sie von jedem Gerät darauf zugreifen können.\nBei Google anmelden\nWenn Sie Ingantt zum ersten Mal verwenden, werden Sie gebeten, sich mit Ihrem Google-Konto anzumelden. Ingantt fordert die folgenden Berechtigungen an:\n- Profilinformationen anzeigen — Wird verwendet, um Ihr Konto zu identifizieren.\n- Verbindung mit Google Drive herstellen — Nur Web-Version. Ermöglicht es Ihnen, Ingantt-Dateien über die Google-Drive-Weboberfläche zu erstellen oder zu öffnen (Schaltfläche Neu oder Menü Öffnen mit).\n- Nur die spezifischen Google-Drive-Dateien einsehen, bearbeiten, erstellen und löschen, die Sie mit dieser App verwenden — Ermöglicht Ingantt, eigene Dateien in Ihrem Google Drive zu erstellen und zu bearbeiten. Ingantt kann nicht auf Ihre anderen Dateien zugreifen.",
+    "keywords": "Google-Drive-Integration\nIngantt speichert Ihre Projektdateien in Google Drive, damit Sie von jedem Gerät darauf zugreifen können.\nBei Google anmelden\nWenn Sie Ingantt zum ersten Mal verwenden, werden Sie gebeten, sich mit Ihrem Google-Konto anzumelden. Ingantt fordert die folgenden Berechtigungen an:\n- Profilinformationen anzeigen — Wird verwendet, um Ihr Konto zu identifizieren.\n- Verbindung mit Google Drive herstellen — Nur Web-Version. Ermöglicht es Ihnen, Ingantt-Dateien über die Google-Drive-Weboberfläche zu erstellen oder zu öffnen (Schaltfläche Neu oder Menü Öffnen mit).\n- Nur die spezifischen Google-Drive-Dateien einsehen, bearbeiten, erstellen und löschen, die Sie mit dieser App verwenden — Ermöglicht Ingantt, eigene Dateien in Ihrem Google Drive zu erstellen und zu bearbeiten. Ingantt kann nicht auf Ihre anderen Dateien zugreifen.\nIngantt für Web mit Google Drive verwenden\n$1",
     "sections": [
       {
         "slug": "",
@@ -787,6 +787,10 @@
       {
         "slug": "bei-google-anmelden",
         "text": "Wenn Sie Ingantt zum ersten Mal verwenden, werden Sie gebeten, sich mit Ihrem Google-Konto anzumelden. Ingantt fordert die folgenden Berechtigungen an:\n- Profilinformationen anzeigen — Wird verwendet, um Ihr Konto zu identifizieren.\n- Verbindung mit Google Drive herstellen — Nur Web-Version. Ermöglicht es Ihnen, Ingantt-Dateien über die Google-Drive-Weboberfläche zu erstellen oder zu öffnen (Schaltfläche Neu oder Menü Öffnen mit).\n- Nur die spezifischen Google-Drive-Dateien einsehen, bearbeiten, erstellen und löschen, die Sie mit dieser App verwenden — Ermöglicht Ingantt, eigene Dateien in Ihrem Google Drive zu erstellen und zu bearbeiten. Ingantt kann nicht auf Ihre anderen Dateien zugreifen."
+      },
+      {
+        "slug": "ingantt-für-web-mit-google-drive-verwenden",
+        "text": "$1"
       }
     ]
   },

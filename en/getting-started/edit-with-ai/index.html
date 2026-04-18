@@ -3,30 +3,22 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Project Properties - Setting Up Your Project - Ingantt Help</title>
+  <title>Edit with AI - Getting Started - Ingantt Help</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Configure project start date, working time defaults, duration formats, and scheduling options.">
-  <link rel="canonical" href="https://help.ingantt.com/en/setting-up-project/project/">
+  <meta name="description" content="Connect an AI assistant like Claude Code or Codex to your project and let it make changes in real time while you watch the Gantt chart update.">
+  <link rel="canonical" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="Project Properties">
-  <meta property="og:description" content="Configure project start date, working time defaults, duration formats, and scheduling options.">
-  <meta property="og:url" content="https://help.ingantt.com/en/setting-up-project/project/">
+  <meta property="og:title" content="Edit with AI">
+  <meta property="og:description" content="Connect an AI assistant like Claude Code or Codex to your project and let it make changes in real time while you watch the Gantt chart update.">
+  <meta property="og:url" content="https://help.ingantt.com/en/getting-started/edit-with-ai/">
   <meta property="og:site_name" content="Ingantt Help">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Project Properties">
-  <meta name="twitter:description" content="Configure project start date, working time defaults, duration formats, and scheduling options.">
+  <meta name="twitter:title" content="Edit with AI">
+  <meta name="twitter:description" content="Connect an AI assistant like Claude Code or Codex to your project and let it make changes in real time while you watch the Gantt chart update.">
 
-  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/setting-up-project/project/">
-  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/setting-up-project/project/">
-  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/setting-up-project/project/">
-  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/setting-up-project/project/">
-  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/setting-up-project/project/">
-  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/setting-up-project/project/">
-  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/setting-up-project/project/">
-  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/setting-up-project/project/">
-  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/setting-up-project/project/">
-  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/setting-up-project/project/">
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -69,7 +61,7 @@
     <nav class="sidebar" aria-label="Documentation navigation">
       <div class="sidebar-nav">
         <div class="theme-group">
-  <button class="theme-header" aria-expanded="false">
+  <button class="theme-header" aria-expanded="true">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Getting Started
   </button>
@@ -77,17 +69,17 @@
     <li><a href="/en/getting-started/overview/">Overview</a></li>
     <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
     <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
-    <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
+    <li><a href="/en/getting-started/edit-with-ai/" class="active" aria-current="page">Edit with AI</a></li>
     <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
   </ul>
 </div>
 <div class="theme-group">
-  <button class="theme-header" aria-expanded="true">
+  <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     Setting Up Your Project
   </button>
   <ul class="theme-pages">
-    <li><a href="/en/setting-up-project/project/" class="active" aria-current="page">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
     <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
   </ul>
 </div>
@@ -186,53 +178,43 @@
       </div>
     </nav>
     <main id="main-content" class="content">
-      <h1 id="project-properties">Project Properties <a href="#project-properties" class="heading-anchor">#</a></h1>
-<p>Configure your project's start date, working hours, and scheduling rules. These settings shape how every task in your project is calculated and displayed.</p>
-<h2 id="project-name">Project Name <a href="#project-name" class="heading-anchor">#</a></h2>
-<p>Set your project name in the <strong>Name</strong> field on the <strong>General</strong> tab of the <strong>Project Properties</strong> dialog. This name is also used by your project's <a href="/en/building-schedule/tasks/#root-summary-task">root summary task</a>.</p>
-<p>On web and Windows, clicking the project name in the header also opens the <strong>Project Properties</strong> dialog.</p>
-<h2 id="start-date-and-planning-direction">Start Date and Planning Direction <a href="#start-date-and-planning-direction" class="heading-anchor">#</a></h2>
-<p>By default, your project is planned from the Start Date, which you can set in the <strong>Project Start Date</strong> field of the <strong>Project Properties</strong> dialog.</p>
-<p>To plan your project from the Finish Date instead, switch to <strong>Plan from Finish date</strong> in the <strong>Project Properties</strong> dialog and set the <strong>Project Finish Date</strong>.</p>
-<p>The <strong>General</strong> tab of the <strong>Project Properties</strong> dialog shows both the Start Date and Finish Date. When scheduling from start, the Start Date is editable and the Finish Date shows the calculated value. When scheduling from finish, the Finish Date is editable and the Start Date shows the calculated value.</p>
-<p>Keep in mind:</p>
-<ul>
-<li>For projects planned from the Start Date, the default <a href="/en/building-schedule/constraints/#constraints">constraint</a> for newly created tasks is <strong>As soon as possible</strong>.</li>
-<li>For projects planned from the Finish Date, the default constraint for newly created tasks is <strong>As late as possible</strong>.</li>
-</ul>
-<p>When switching between planning from Start and Finish, constraints of existing tasks are not changed except for <a href="/en/building-schedule/tasks/#summary-tasks">summary tasks</a>, including the <a href="/en/building-schedule/tasks/#root-summary-task">root summary task</a>.</p>
-<p>For summary tasks:</p>
-<ul>
-<li>The <strong>As soon as possible</strong> constraint is replaced with <strong>As late as possible</strong> when switching from planning from Start to Finish.</li>
-<li>The <strong>As late as possible</strong> constraint is replaced with <strong>As soon as possible</strong> when switching from planning from Finish to Start.</li>
-</ul>
-<h2 id="first-day-of-the-week">First Day of the Week <a href="#first-day-of-the-week" class="heading-anchor">#</a></h2>
-<p>Depending on your country, a week may start on Sunday or Monday. You can update the <strong>First Day of Week</strong> field on the <strong>Regional</strong> tab of the <strong>Project Properties</strong> dialog to change the default setting for your project.</p>
-<p>Changing this property updates the user interface, including the Gantt chart on some zoom levels, but does not affect scheduling. To adjust the schedule accordingly, update your <a href="/en/setting-up-project/calendars/">Calendars</a>.</p>
-<h2 id="hours-per-day-days-per-week-days-per-month">Hours per Day, Days per Week, Days per Month <a href="#hours-per-day-days-per-week-days-per-month" class="heading-anchor">#</a></h2>
-<p>In Ingantt, you can specify <a href="/en/building-schedule/task-properties/#duration">Duration</a>, <a href="/en/building-schedule/task-properties/#work">Work</a>, or <a href="/en/building-schedule/dependencies/#lag-and-lead-time">Lag</a> in Hours, Days, Weeks, and Months.</p>
-<p>For example, setting a task's duration to 2 Days means 16 hours using the default settings.</p>
-<p>By default:</p>
-<ul>
-<li>1 Day equals 8 hours.</li>
-<li>1 Week equals 5 days (40 hours).</li>
-<li>1 Month equals 20 days (160 hours).</li>
-</ul>
-<p>You can change these default settings on the <strong>Duration</strong> tab of the <strong>Project Properties</strong> dialog.</p>
+      <h1 id="edit-with-ai">Edit with AI <a href="#edit-with-ai" class="heading-anchor">#</a></h1>
+<p>Connect your project to an AI coding assistant like Claude Code, Codex, or any tool with HTTP access, and let it make changes to your schedule in real time. While the session is running, the AI can read your current project, add or modify tasks, adjust dependencies, assign resources, and push updates back — you see each change in the Gantt chart the moment it's applied.</p>
 <blockquote>
-<p>Most projects should use the default values. Only change these settings if your project has a specific requirement for different conversions.</p>
+<p><strong>Edit with AI is currently in beta.</strong> The feature is available on the web version of Ingantt.</p>
 </blockquote>
-<h2 id="duration-and-work-display-format">Duration and Work Display Format <a href="#duration-and-work-display-format" class="heading-anchor">#</a></h2>
-<p>By default, durations are displayed in days and work values in hours. You can change the display format for both on the <strong>Time</strong> tab of the <strong>Project Properties</strong> dialog. Available units are minutes, hours, days, weeks, and months.</p>
-<p>When you change either format, all existing values are updated to display in the new unit.</p>
-<h2 id="default-start-and-finish-time">Default Start and Finish Time <a href="#default-start-and-finish-time" class="heading-anchor">#</a></h2>
-<p>The default start time (8:00 AM) and finish time (5:00 PM) control when work begins and ends each day. You can change these on the <strong>Time</strong> tab of the <strong>Project Properties</strong> dialog.</p>
-<h2 id="scheduling-options">Scheduling Options <a href="#scheduling-options" class="heading-anchor">#</a></h2>
-<p>The <strong>Scheduling</strong> tab of the <strong>Project Properties</strong> dialog contains options that control how tasks are scheduled:</p>
+<h2 id="starting-an-ai-editing-session">Starting an AI Editing Session <a href="#starting-an-ai-editing-session" class="heading-anchor">#</a></h2>
+<ol>
+<li>Open the project you want to edit.</li>
+<li>Click the <strong>Edit with AI</strong> icon (✨) in the top-right corner, next to the version history button.</li>
+<li>The dialog shows a set of instructions that describe how your AI tool should read and write the project.</li>
+<li>Click <strong>Copy instructions</strong>. This starts the editing session and copies the instructions to your clipboard.</li>
+<li>Paste the instructions into your AI tool (e.g., as the first message in a Claude Code or Codex conversation).</li>
+<li>Ask the AI to make changes in natural language — for example, <em>&quot;Add a two-week QA phase after development&quot;</em> or <em>&quot;Assign Alex to all design tasks&quot;</em>.</li>
+</ol>
+<p>The AI follows the instructions to fetch the current YAML, edit it, and push the result back to Ingantt. Ingantt validates every edit before accepting it.</p>
+<h2 id="what-happens-during-a-session">What Happens During a Session <a href="#what-happens-during-a-session" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>Honor constraint dates</strong> — When enabled, semi-flexible constraints (such as Start No Later Than) take priority over dependencies, potentially creating negative slack. When disabled (the default), dependencies always take priority.</li>
-<li><strong>Split in-progress tasks</strong> — When enabled (the default), the scheduler can automatically split tasks that have out-of-sequence progress.</li>
-<li><strong>Move completed/remaining parts</strong> — Four options that control how completed and remaining work portions are repositioned relative to the status date. These help keep your schedule current by moving completed work backward to the status date or pushing remaining work forward.</li>
+<li><strong>The green dot</strong> next to the ✨ icon indicates an active session. The dot turns amber when the connection is reconnecting, and red when the session has encountered an error.</li>
+<li><strong>Every AI change is validated</strong> against Ingantt's project rules before it's applied. If the AI sends invalid data, Ingantt rejects the change and tells the AI what went wrong so it can self-correct.</li>
+<li><strong>Your own edits are pushed to the session</strong> too. If you change something in the Ingantt UI while the session is active, the AI will see your update on its next read.</li>
+<li><strong>The scheduler stays authoritative.</strong> When the AI sets dates or durations, Ingantt re-runs the Critical Path Method to compute the final schedule, which may shift other tasks.</li>
+</ul>
+<h2 id="stopping-the-session">Stopping the Session <a href="#stopping-the-session" class="heading-anchor">#</a></h2>
+<p>Click the ✨ icon while a session is active and choose <strong>Stop session</strong>. You can also simply close the browser tab — the session ends automatically after a period of inactivity.</p>
+<h2 id="supported-ai-tools">Supported AI Tools <a href="#supported-ai-tools" class="heading-anchor">#</a></h2>
+<p>Any AI tool that can make HTTP requests works with Edit with AI. Common choices include:</p>
+<ul>
+<li><strong>Claude Code</strong> — paste the instructions as the first message in a conversation.</li>
+<li><strong>Codex</strong> — paste the instructions as the first message in a conversation.</li>
+<li><strong>Other tools</strong> — any assistant with access to <code>curl</code> or an HTTP client can read and write the session.</li>
+</ul>
+<h2 id="tips">Tips <a href="#tips" class="heading-anchor">#</a></h2>
+<ul>
+<li>Keep the Ingantt tab open while the session is active. If the tab is closed, the AI will get a &quot;session not connected&quot; error on its next write.</li>
+<li>If the AI sends invalid YAML, you'll see a notification in the Ingantt UI. The AI receives the error details and usually fixes the problem on its next attempt.</li>
+<li>For large projects, start with a focused request (<em>&quot;rearrange the testing phase&quot;</em>) rather than sweeping changes — the AI can iterate in small steps with immediate feedback.</li>
+<li>The AI can't see information it isn't given. If your request depends on context — constraints, deadlines, or business rules — include that in your prompt.</li>
 </ul>
 
     </main>

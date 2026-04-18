@@ -9,3 +9,7 @@ When you first use Ingantt, you are asked to sign in with your Google account. I
 - **See your profile info** — Used to identify your account.
 - **Connect itself to your Google Drive** — **Web** version only. Allows you to create or open Ingantt files from Google Drive's web interface (**New** button or **Open with** menu).
 - **See, edit, create, and delete only the specific Google Drive files you use with this app** — Allows Ingantt to create and edit its own files in your Google Drive. Ingantt cannot access your other files.
+
+## Using Ingantt for Web with Google Drive
+
+[Using Ingantt for Web with Google Drive](https://www.youtube.com/watch?v=sFg1a4tl4G4)
