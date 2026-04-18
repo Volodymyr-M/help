@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Import &amp; Export - Erste Schritte - Ingantt-Hilfe</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Importieren Sie Projekte aus MPP-, XER-, GAN- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML oder Markdown.">
+  <meta name="description" content="Importieren Sie Projekte aus MPP-, XER-, GAN-, YAML- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML, YAML oder Markdown — einschließlich eines KI-bearbeitbaren YAML-Workflows.">
   <link rel="canonical" href="https://help.ingantt.com/de/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Import &amp; Export">
-  <meta property="og:description" content="Importieren Sie Projekte aus MPP-, XER-, GAN- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML oder Markdown.">
+  <meta property="og:description" content="Importieren Sie Projekte aus MPP-, XER-, GAN-, YAML- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML, YAML oder Markdown — einschließlich eines KI-bearbeitbaren YAML-Workflows.">
   <meta property="og:url" content="https://help.ingantt.com/de/getting-started/import-export/">
   <meta property="og:site_name" content="Ingantt-Hilfe">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Import &amp; Export">
-  <meta name="twitter:description" content="Importieren Sie Projekte aus MPP-, XER-, GAN- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML oder Markdown.">
+  <meta name="twitter:description" content="Importieren Sie Projekte aus MPP-, XER-, GAN-, YAML- und anderen Formaten und exportieren Sie in PDF, PNG, CSV, XML, YAML oder Markdown — einschließlich eines KI-bearbeitbaren YAML-Workflows.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/" class="active" aria-current="page">Import &amp; Export</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML, YML</li>
 <li>Und weitere (SDEF und andere Formate)</li>
 </ul>
 <p>Um eine Datei zu importieren, klicken Sie auf die <strong>+</strong>-Schaltfläche auf dem Projekte-Bildschirm oder verwenden Sie die Option <strong>Importieren</strong> im Menü <strong>Datei</strong>. Wenn Sie Änderungen an einer importierten Datei vornehmen, speichert Ingantt diese im XML-Format.</p>
 <blockquote>
-<p>Um Projektdateien außer XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich.</p>
+<p>Um Projektdateien außer XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich. YAML-Dateien werden lokal verarbeitet.</p>
 </blockquote>
 <h2 id="ihr-projekt-exportieren">Ihr Projekt exportieren <a href="#ihr-projekt-exportieren" class="heading-anchor">#</a></h2>
 <p>Ingantt bietet mehrere Exportformate über die Option <strong>Exportieren</strong> im Menü <strong>Datei</strong> (oder <strong>Herunterladen</strong> im Web). Wenn Sie <strong>Exportieren</strong> wählen, erscheint ein Dialog, in dem Sie das gewünschte Format auswählen können:</p>
@@ -234,6 +236,10 @@
 <td>Projekt-XML-Format für Interoperabilität</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>Kompakte, menschenlesbare Projektdefinition, konzipiert für die KI-gestützte Bearbeitung</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>Textformat für Dokumentation, READMEs oder Wikis</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>Die exportierte Datei spiegelt Ihre aktuellen Gantt-Diagramm-Einstellungen wider. Wenn zum Beispiel Vorgangsnamen im Dialog <strong>Optionen</strong> ausgeblendet sind, erscheinen sie auch im Export nicht. Die Zoomstufe wird ebenfalls beibehalten.</p>
 <blockquote>
-<p>PDF-Exporte verwenden immer helle Designfarben, während PNG-Exporte das aktuelle UI-Design (hell oder dunkel) verwenden. CSV- und Markdown-Exporte sind reiner Text. Wenn sie in der Benutzeroberfläche sichtbar sind, werden geteilte Vorgänge, Basisplan-Balken und Abgleich-Geisterbalken in PDF- und PNG-Exporten gerendert.</p>
+<p>PDF-Exporte verwenden immer helle Designfarben, während PNG-Exporte das aktuelle UI-Design (hell oder dunkel) verwenden. CSV-, YAML- und Markdown-Exporte sind reiner Text. Wenn sie in der Benutzeroberfläche sichtbar sind, werden geteilte Vorgänge, Basisplan-Balken und Abgleich-Geisterbalken in PDF- und PNG-Exporten gerendert.</p>
+</blockquote>
+<h2 id="yaml-mit-ki-agenten-bearbeiten">YAML mit KI-Agenten bearbeiten <a href="#yaml-mit-ki-agenten-bearbeiten" class="heading-anchor">#</a></h2>
+<p>Der YAML-Export ist für die Bearbeitung mit einem KI-Coding-Assistenten (Claude Code, Codex oder jedem Tool, das Dateien lesen und schreiben kann) konzipiert. Exportieren Sie das Projekt, beschreiben Sie die gewünschten Änderungen in natürlicher Sprache — <em>„eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen&quot;</em>, <em>„Alex allen Design-Vorgängen zuweisen&quot;</em> — und importieren Sie das Ergebnis zurück.</p>
+<p>Das Format enthält <strong>nur Eingaben</strong> (Dauern, Abhängigkeiten, Einschränkungen, Zuweisungen, Kalender, Raten). Abgeleitete Werte — Start-/Endtermine von Vorgängen, Gesamtkosten, kritischer Pfad, Pufferzeit, Sammelvorgangsaggregationen — werden bewusst weggelassen; Ingantt berechnet sie beim Import neu. Der Agent sollte nicht versuchen, Termine selbst zu ermitteln.</p>
+<p>Verweisen Sie den Agenten auf die <a href="/yaml-reference.md">YAML-Formatreferenz</a>, damit er das Schema kennt.</p>
+<blockquote>
+<p>Für die Echtzeitbearbeitung ohne den Export-/Import-Umweg siehe <a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a> — die KI liest und schreibt dasselbe YAML-Schema über eine Live-Sitzung, und Sie sehen jede Änderung im Gantt-Diagramm, sobald sie vorgenommen wird.</p>
 </blockquote>
 
     </main>

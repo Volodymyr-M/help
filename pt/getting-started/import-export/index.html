@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Importar e Exportar - Primeiros Passos - Ajuda do Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Importe projetos nos formatos MPP, XER, GAN e outros, e exporte para PDF, PNG, CSV, XML ou Markdown.">
+  <meta name="description" content="Importe projetos nos formatos MPP, XER, GAN, YAML e outros, e exporte para PDF, PNG, CSV, XML, YAML ou Markdown — incluindo um fluxo YAML editável por IA.">
   <link rel="canonical" href="https://help.ingantt.com/pt/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Importar e Exportar">
-  <meta property="og:description" content="Importe projetos nos formatos MPP, XER, GAN e outros, e exporte para PDF, PNG, CSV, XML ou Markdown.">
+  <meta property="og:description" content="Importe projetos nos formatos MPP, XER, GAN, YAML e outros, e exporte para PDF, PNG, CSV, XML, YAML ou Markdown — incluindo um fluxo YAML editável por IA.">
   <meta property="og:url" content="https://help.ingantt.com/pt/getting-started/import-export/">
   <meta property="og:site_name" content="Ajuda do Ingantt">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Importar e Exportar">
-  <meta name="twitter:description" content="Importe projetos nos formatos MPP, XER, GAN e outros, e exporte para PDF, PNG, CSV, XML ou Markdown.">
+  <meta name="twitter:description" content="Importe projetos nos formatos MPP, XER, GAN, YAML e outros, e exporte para PDF, PNG, CSV, XML, YAML ou Markdown — incluindo um fluxo YAML editável por IA.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/" class="active" aria-current="page">Importar e Exportar</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML, YML</li>
 <li>E mais (SDEF e outros formatos)</li>
 </ul>
 <p>Para importar um arquivo, clique no botão <strong>+</strong> na tela de Projetos ou use a opção <strong>Import</strong> no menu <strong>File</strong>. Se você fizer alterações em um arquivo importado, o Ingantt salva no formato XML.</p>
 <blockquote>
-<p>Para abrir arquivos de projeto que não são XML, o Ingantt os envia por meio de uma conexão segura ao serviço web do Ingantt para conversão. Seus arquivos não ficam armazenados no serviço. É necessária uma conexão com a internet.</p>
+<p>Para abrir arquivos de projeto que não são XML, o Ingantt os envia por meio de uma conexão segura ao serviço web do Ingantt para conversão. Seus arquivos não ficam armazenados no serviço. É necessária uma conexão com a internet. Arquivos YAML são processados localmente.</p>
 </blockquote>
 <h2 id="exportando-seu-projeto">Exportando Seu Projeto <a href="#exportando-seu-projeto" class="heading-anchor">#</a></h2>
 <p>O Ingantt oferece múltiplos formatos de exportação através da opção <strong>Export</strong> no menu <strong>File</strong> (ou <strong>Download</strong> na web). Ao escolher <strong>Export</strong>, uma caixa de diálogo aparece permitindo selecionar o formato desejado:</p>
@@ -234,6 +236,10 @@
 <td>Formato XML de projeto para interoperabilidade</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>Definição de projeto compacta e legível por humanos, projetada para edição assistida por IA</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>Formato de texto para documentação, READMEs ou wikis</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>O arquivo exportado reflete as configurações atuais do seu gráfico de Gantt. Por exemplo, se os nomes das tarefas estiverem ocultos na caixa de diálogo <strong>Options</strong>, eles também não aparecerão na exportação. O nível de zoom também é preservado.</p>
 <blockquote>
-<p>As exportações em PDF sempre usam cores do tema claro, enquanto as exportações em PNG usam o tema atual da interface (claro ou escuro). Exportações em CSV e Markdown são em texto simples. Quando visíveis na interface, tarefas divididas, barras de linha de base e barras fantasma de nivelamento são renderizadas nas exportações PDF e PNG.</p>
+<p>As exportações em PDF sempre usam cores do tema claro, enquanto as exportações em PNG usam o tema atual da interface (claro ou escuro). Exportações em CSV, YAML e Markdown são em texto simples. Quando visíveis na interface, tarefas divididas, barras de linha de base e barras fantasma de nivelamento são renderizadas nas exportações PDF e PNG.</p>
+</blockquote>
+<h2 id="editando-yaml-com-agentes-de-ia">Editando YAML com Agentes de IA <a href="#editando-yaml-com-agentes-de-ia" class="heading-anchor">#</a></h2>
+<p>A exportação YAML foi projetada para ser editada com um assistente de codificação com IA (Claude Code, Codex ou qualquer ferramenta capaz de ler e escrever arquivos). Exporte o projeto, descreva as alterações desejadas em linguagem natural — <em>&quot;adicionar uma fase de QA de duas semanas após o desenvolvimento&quot;</em>, <em>&quot;atribuir Alex a todas as tarefas de design&quot;</em> — e importe o resultado de volta.</p>
+<p>O formato contém <strong>apenas entradas</strong> (durações, dependências, restrições, atribuições, calendários, taxas). Valores derivados — datas de início/término das tarefas, custo total, caminho crítico, folga, totais de resumo — são omitidos propositalmente; o Ingantt os recalcula na importação. O agente não deve tentar calcular as datas por conta própria.</p>
+<p>Direcione o agente para a <a href="/yaml-reference.md">referência do formato YAML</a> para que ele conheça o esquema.</p>
+<blockquote>
+<p>Para edição em tempo real sem o ciclo de exportação/importação, consulte <a href="/pt/getting-started/edit-with-ai/">Editar com IA</a> — a IA lê e escreve o mesmo esquema YAML por meio de uma sessão ao vivo, e você vê cada alteração aparecer no gráfico de Gantt no momento em que acontece.</p>
 </blockquote>
 
     </main>

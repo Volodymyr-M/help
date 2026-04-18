@@ -7,6 +7,7 @@
 - [Überblick](https://help.ingantt.com/de/getting-started/overview/index.md)
 - [Erste Schritte](https://help.ingantt.com/de/getting-started/getting-started/index.md)
 - [Mit KI erstellen](https://help.ingantt.com/de/getting-started/create-with-ai/index.md)
+- [Mit KI bearbeiten](https://help.ingantt.com/de/getting-started/edit-with-ai/index.md)
 - [Import & Export](https://help.ingantt.com/de/getting-started/import-export/index.md)
 
 ## Projekt einrichten

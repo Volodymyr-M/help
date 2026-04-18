@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Редагування за допомогою ШІ - Початок роботи - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Підключіть ШІ-асистента, такого як Claude Code чи Codex, до вашого проекту й дозвольте йому вносити зміни в реальному часі, поки ви спостерігаєте, як оновлюється діаграма Ганта.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Редагування за допомогою ШІ">
+  <meta property="og:description" content="Підключіть ШІ-асистента, такого як Claude Code чи Codex, до вашого проекту й дозвольте йому вносити зміни в реальному часі, поки ви спостерігаєте, як оновлюється діаграма Ганта.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <meta property="og:site_name" content="Довідка Ingantt">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Редагування за допомогою ШІ">
+  <meta name="twitter:description" content="Підключіть ШІ-асистента, такого як Claude Code чи Codex, до вашого проекту й дозвольте йому вносити зміни в реальному часі, поки ви спостерігаєте, як оновлюється діаграма Ганта.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/edit-with-ai/" class="active" aria-current="page">Редагування за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="редагування-за-допомогою-ші">Редагування за допомогою ШІ <a href="#редагування-за-допомогою-ші" class="heading-anchor">#</a></h1>
+<p>Підключіть ваш проект до ШІ-асистента програмування, такого як Claude Code, Codex або будь-який інструмент із HTTP-доступом, і дозвольте йому вносити зміни до вашого розкладу в реальному часі. Поки сесія триває, ШІ може читати ваш поточний проект, додавати або змінювати завдання, коригувати залежності, призначати ресурси та надсилати оновлення назад — ви бачите кожну зміну на діаграмі Ганта в момент її застосування.</p>
+<blockquote>
+<p><strong>Редагування за допомогою ШІ наразі в бета-версії.</strong> Функція доступна у веб-версії Ingantt.</p>
+</blockquote>
+<h2 id="початок-сесії-редагування-ші">Початок сесії редагування ШІ <a href="#початок-сесії-редагування-ші" class="heading-anchor">#</a></h2>
+<ol>
+<li>Відкрийте проект, який ви хочете редагувати.</li>
+<li>Натисніть значок <strong>Редагувати за допомогою ШІ</strong> (✨) у верхньому правому куті, поруч із кнопкою історії версій.</li>
+<li>У діалозі відображається набір інструкцій, які описують, як ваш ШІ-інструмент повинен читати й записувати проект.</li>
+<li>Натисніть <strong>Копіювати інструкції</strong>. Це запускає сесію редагування та копіює інструкції до буфера обміну.</li>
+<li>Вставте інструкції у ваш ШІ-інструмент (наприклад, як перше повідомлення у розмові Claude Code або Codex).</li>
+<li>Попросіть ШІ внести зміни природною мовою — наприклад, <em>«додай двотижневу фазу QA після розробки»</em> або <em>«признач Alex на всі завдання з дизайну»</em>.</li>
+</ol>
+<p>ШІ дотримується інструкцій, щоб отримати поточний YAML, відредагувати його та надіслати результат назад в Ingantt. Ingantt перевіряє кожну зміну перед тим, як її прийняти.</p>
+<h2 id="що-відбувається-під-час-сесії">Що відбувається під час сесії <a href="#що-відбувається-під-час-сесії" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>Зелена крапка</strong> поруч зі значком ✨ вказує на активну сесію. Крапка стає бурштиновою, коли з'єднання перевстановлюється, і червоною, коли в сесії виникла помилка.</li>
+<li><strong>Кожна зміна від ШІ перевіряється</strong> за правилами проекту Ingantt перед застосуванням. Якщо ШІ надсилає невірні дані, Ingantt відхиляє зміну та повідомляє ШІ, що пішло не так, щоб він міг виправитися самостійно.</li>
+<li><strong>Ваші власні редагування також надходять до сесії.</strong> Якщо ви щось змінюєте в інтерфейсі Ingantt, поки сесія активна, ШІ побачить ваше оновлення під час наступного читання.</li>
+<li><strong>Планувальник залишається авторитетним.</strong> Коли ШІ встановлює дати або тривалості, Ingantt повторно запускає метод критичного шляху для обчислення остаточного розкладу, що може зсунути інші завдання.</li>
+</ul>
+<h2 id="зупинка-сесії">Зупинка сесії <a href="#зупинка-сесії" class="heading-anchor">#</a></h2>
+<p>Натисніть значок ✨, поки сесія активна, та оберіть <strong>Зупинити сесію</strong>. Ви також можете просто закрити вкладку браузера — сесія завершиться автоматично після періоду неактивності.</p>
+<h2 id="підтримувані-ші-інструменти">Підтримувані ШІ-інструменти <a href="#підтримувані-ші-інструменти" class="heading-anchor">#</a></h2>
+<p>Будь-який ШІ-інструмент, який може робити HTTP-запити, працює з «Редагування за допомогою ШІ». Поширені варіанти:</p>
+<ul>
+<li><strong>Claude Code</strong> — вставте інструкції як перше повідомлення в розмові.</li>
+<li><strong>Codex</strong> — вставте інструкції як перше повідомлення в розмові.</li>
+<li><strong>Інші інструменти</strong> — будь-який асистент із доступом до <code>curl</code> або HTTP-клієнта може читати й записувати в сесію.</li>
+</ul>
+<h2 id="поради">Поради <a href="#поради" class="heading-anchor">#</a></h2>
+<ul>
+<li>Залишайте вкладку Ingantt відкритою, поки сесія активна. Якщо вкладка закрита, ШІ отримає помилку «сесія не підключена» під час наступного запису.</li>
+<li>Якщо ШІ надсилає невірний YAML, ви побачите сповіщення в інтерфейсі Ingantt. ШІ отримує деталі помилки та зазвичай виправляє проблему на наступній спробі.</li>
+<li>Для великих проектів починайте з цілеспрямованого запиту (<em>«переставити фазу тестування»</em>), а не з масштабних змін — ШІ може ітерувати невеликими кроками з миттєвим зворотним зв'язком.</li>
+<li>ШІ не бачить інформації, яку йому не надали. Якщо ваш запит залежить від контексту — обмежень, термінів або бізнес-правил — включайте це у свій промпт.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

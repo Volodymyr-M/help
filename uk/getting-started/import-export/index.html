@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Імпорт та експорт - Початок роботи - Довідка Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Імпортуйте проекти з форматів MPP, XER, GAN та інших, а також експортуйте у PDF, PNG, CSV, XML або Markdown.">
+  <meta name="description" content="Імпортуйте проекти з форматів MPP, XER, GAN, YAML та інших, а також експортуйте у PDF, PNG, CSV, XML, YAML або Markdown — включно з YAML-робочим процесом, який редагується ШІ.">
   <link rel="canonical" href="https://help.ingantt.com/uk/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Імпорт та експорт">
-  <meta property="og:description" content="Імпортуйте проекти з форматів MPP, XER, GAN та інших, а також експортуйте у PDF, PNG, CSV, XML або Markdown.">
+  <meta property="og:description" content="Імпортуйте проекти з форматів MPP, XER, GAN, YAML та інших, а також експортуйте у PDF, PNG, CSV, XML, YAML або Markdown — включно з YAML-робочим процесом, який редагується ШІ.">
   <meta property="og:url" content="https://help.ingantt.com/uk/getting-started/import-export/">
   <meta property="og:site_name" content="Довідка Ingantt">
   <meta property="og:locale" content="uk_UA">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Імпорт та експорт">
-  <meta name="twitter:description" content="Імпортуйте проекти з форматів MPP, XER, GAN та інших, а також експортуйте у PDF, PNG, CSV, XML або Markdown.">
+  <meta name="twitter:description" content="Імпортуйте проекти з форматів MPP, XER, GAN, YAML та інших, а також експортуйте у PDF, PNG, CSV, XML, YAML або Markdown — включно з YAML-робочим процесом, який редагується ШІ.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/" class="active" aria-current="page">Імпорт та експорт</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML, YML</li>
 <li>Та інші (SDEF та інші формати)</li>
 </ul>
 <p>Щоб імпортувати файл, натисніть кнопку <strong>+</strong> на екрані проектів або скористайтеся пунктом <strong>Імпорт</strong> у меню <strong>Файл</strong>. Якщо ви вносите зміни до імпортованого файлу, Ingantt зберігає їх у форматі XML.</p>
 <blockquote>
-<p>Для відкриття файлів проектів, відмінних від XML, Ingantt надсилає їх через безпечне з'єднання до веб-служби Ingantt для конвертації. Ваші файли не зберігаються на сервісі. Потрібне підключення до інтернету.</p>
+<p>Для відкриття файлів проектів, відмінних від XML, Ingantt надсилає їх через безпечне з'єднання до веб-служби Ingantt для конвертації. Ваші файли не зберігаються на сервісі. Потрібне підключення до інтернету. Файли YAML обробляються локально.</p>
 </blockquote>
 <h2 id="експорт-вашого-проекту">Експорт вашого проекту <a href="#експорт-вашого-проекту" class="heading-anchor">#</a></h2>
 <p>Ingantt надає кілька форматів експорту через пункт <strong>Експорт</strong> у меню <strong>Файл</strong> (або <strong>Завантажити</strong> у веб-версії). Коли ви обираєте <strong>Експорт</strong>, з'являється діалог, що дозволяє вибрати потрібний формат:</p>
@@ -234,6 +236,10 @@
 <td>Формат XML проекту для сумісності з іншими програмами</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>Компактне, зручне для людини визначення проекту, створене для редагування за допомогою ШІ</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>Текстовий формат для документації, README або вікі</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>Експортований файл відображає поточні налаштування вашої діаграми Ганта. Наприклад, якщо назви завдань приховані в діалозі <strong>Параметри</strong>, вони також не з'являться в експорті. Масштаб також зберігається.</p>
 <blockquote>
-<p>Експорт у PDF завжди використовує кольори світлої теми, тоді як експорт у PNG використовує поточну тему інтерфейсу (світлу або темну). Експорт у CSV та Markdown — це звичайний текст. Коли вони видимі в інтерфейсі, розділені завдання, базові стовпці та стовпці вирівнювання відображаються в експорті PDF та PNG.</p>
+<p>Експорт у PDF завжди використовує кольори світлої теми, тоді як експорт у PNG використовує поточну тему інтерфейсу (світлу або темну). Експорт у CSV, YAML та Markdown — це звичайний текст. Коли вони видимі в інтерфейсі, розділені завдання, базові стовпці та стовпці вирівнювання відображаються в експорті PDF та PNG.</p>
+</blockquote>
+<h2 id="редагування-yaml-за-допомогою-ші-агентів">Редагування YAML за допомогою ШІ-агентів <a href="#редагування-yaml-за-допомогою-ші-агентів" class="heading-anchor">#</a></h2>
+<p>Експорт у YAML створений для редагування за допомогою ШІ-асистента програмування (Claude Code, Codex або будь-якого інструмента, що вміє читати й записувати файли). Експортуйте проект, опишіть потрібні зміни природною мовою — <em>«додай двотижневу фазу QA після розробки»</em>, <em>«признач Alex на всі завдання з дизайну»</em> — та імпортуйте результат назад.</p>
+<p>Формат містить <strong>лише вхідні дані</strong> (тривалості, залежності, обмеження, призначення, календарі, ставки). Похідні значення — дати початку/завершення завдань, загальна вартість, критичний шлях, резерв часу, підсумки зведень — навмисно опускаються; Ingantt перераховує їх під час імпорту. Агент не повинен намагатися обчислювати дати самостійно.</p>
+<p>Направте агента до <a href="/yaml-reference.md">довідника формату YAML</a>, щоб він знав схему.</p>
+<blockquote>
+<p>Для редагування в реальному часі без циклу експорт/імпорт див. <a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a> — ШІ читає й записує ту саму YAML-схему через живу сесію, і ви бачите кожну зміну на діаграмі Ганта в момент її появи.</p>
 </blockquote>
 
     </main>

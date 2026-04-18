@@ -7,6 +7,7 @@
 - [Panoramica](https://help.ingantt.com/it/getting-started/overview/index.md)
 - [Per iniziare](https://help.ingantt.com/it/getting-started/getting-started/index.md)
 - [Crea con l'IA](https://help.ingantt.com/it/getting-started/create-with-ai/index.md)
+- [Modifica con l'IA](https://help.ingantt.com/it/getting-started/edit-with-ai/index.md)
 - [Importazione ed esportazione](https://help.ingantt.com/it/getting-started/import-export/index.md)
 
 ## Configurazione del progetto

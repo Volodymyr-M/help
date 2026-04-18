@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>가져오기 및 내보내기 - 시작하기 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+  <meta name="description" content="MPP, XER, GAN, YAML 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML, YAML 또는 Markdown으로 내보냅니다. AI로 편집 가능한 YAML 워크플로도 포함됩니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="가져오기 및 내보내기">
-  <meta property="og:description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+  <meta property="og:description" content="MPP, XER, GAN, YAML 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML, YAML 또는 Markdown으로 내보냅니다. AI로 편집 가능한 YAML 워크플로도 포함됩니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/getting-started/import-export/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="가져오기 및 내보내기">
-  <meta name="twitter:description" content="MPP, XER, GAN 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML 또는 Markdown으로 내보냅니다.">
+  <meta name="twitter:description" content="MPP, XER, GAN, YAML 등의 형식에서 프로젝트를 가져오고 PDF, PNG, CSV, XML, YAML 또는 Markdown으로 내보냅니다. AI로 편집 가능한 YAML 워크플로도 포함됩니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/ko/getting-started/overview/">개요</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/" class="active" aria-current="page">가져오기 및 내보내기</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML, YML</li>
 <li>기타 (SDEF 및 기타 형식)</li>
 </ul>
 <p>파일을 가져오려면 프로젝트 화면에서 <strong>+</strong> 버튼을 클릭하거나 <strong>File</strong> 메뉴의 <strong>Import</strong> 옵션을 사용하십시오. 가져온 파일을 변경하면 Ingantt는 XML 형식으로 저장합니다.</p>
 <blockquote>
-<p>비 XML 프로젝트 파일을 열기 위해 Ingantt는 보안 연결을 통해 Ingantt 웹 서비스로 파일을 전송하여 변환합니다. 파일은 서비스에 저장되지 않습니다. 인터넷 연결이 필요합니다.</p>
+<p>비 XML 프로젝트 파일을 열기 위해 Ingantt는 보안 연결을 통해 Ingantt 웹 서비스로 파일을 전송하여 변환합니다. 파일은 서비스에 저장되지 않습니다. 인터넷 연결이 필요합니다. YAML 파일은 로컬에서 처리됩니다.</p>
 </blockquote>
 <h2 id="프로젝트-내보내기">프로젝트 내보내기 <a href="#프로젝트-내보내기" class="heading-anchor">#</a></h2>
 <p>Ingantt는 <strong>File</strong> 메뉴(또는 웹에서 <strong>Download</strong>)의 <strong>Export</strong> 옵션을 통해 여러 내보내기 형식을 제공합니다. <strong>Export</strong>를 선택하면 원하는 형식을 선택할 수 있는 대화 상자가 나타납니다:</p>
@@ -234,6 +236,10 @@
 <td>상호 운용성을 위한 프로젝트 XML 형식</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>AI 지원 편집을 위해 설계된 간결하고 사람이 읽기 쉬운 프로젝트 정의</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>문서화, README 또는 위키용 텍스트 형식</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>내보낸 파일은 현재 Gantt 차트 설정을 반영합니다. 예를 들어, <strong>Options</strong> 대화 상자에서 작업 이름이 숨겨져 있으면 내보내기에도 표시되지 않습니다. 확대/축소 수준도 유지됩니다.</p>
 <blockquote>
-<p>PDF 내보내기는 항상 라이트 테마 색상을 사용하고, PNG 내보내기는 현재 UI 테마(라이트 또는 다크)를 사용합니다. CSV 및 Markdown 내보내기는 일반 텍스트입니다. UI에서 표시되는 경우 분할 작업, 기준선 막대 및 평준화 고스트 막대가 모두 PDF 및 PNG 내보내기에 렌더링됩니다.</p>
+<p>PDF 내보내기는 항상 라이트 테마 색상을 사용하고, PNG 내보내기는 현재 UI 테마(라이트 또는 다크)를 사용합니다. CSV, YAML 및 Markdown 내보내기는 일반 텍스트입니다. UI에서 표시되는 경우 분할 작업, 기준선 막대 및 평준화 고스트 막대가 모두 PDF 및 PNG 내보내기에 렌더링됩니다.</p>
+</blockquote>
+<h2 id="ai-에이전트로-yaml-편집하기">AI 에이전트로 YAML 편집하기 <a href="#ai-에이전트로-yaml-편집하기" class="heading-anchor">#</a></h2>
+<p>YAML 내보내기는 AI 코딩 도우미(Claude Code, Codex 또는 파일을 읽고 쓸 수 있는 모든 도구)로 편집할 수 있도록 설계되었습니다. 프로젝트를 내보내고, 원하는 변경 사항을 자연어로 설명한 다음 — <em>&quot;개발 후 2주간의 QA 단계를 추가해 줘&quot;</em>, <em>&quot;Alex를 모든 디자인 작업에 배정해 줘&quot;</em> — 결과를 다시 가져옵니다.</p>
+<p>이 형식은 <strong>입력만</strong> (기간, 종속성, 제약 조건, 배정, 달력, 요율) 담고 있습니다. 파생된 값 — 작업 시작/종료 날짜, 총 비용, 임계 경로, 여유 시간, 요약 집계 — 은 의도적으로 생략되어 있으며, Ingantt가 가져오기 시 이를 다시 계산합니다. 에이전트는 날짜를 스스로 계산하려고 해서는 안 됩니다.</p>
+<p>에이전트가 스키마를 알 수 있도록 <a href="/yaml-reference.md">YAML 형식 참조</a>로 안내하십시오.</p>
+<blockquote>
+<p>내보내기/가져오기 왕복 없이 실시간으로 편집하려면 <a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a>를 참조하십시오 — AI는 실시간 세션을 통해 동일한 YAML 스키마를 읽고 쓰며, 각 변경 사항이 발생하는 즉시 Gantt 차트에 나타나는 것을 볼 수 있습니다.</p>
 </blockquote>
 
     </main>

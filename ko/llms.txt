@@ -7,6 +7,7 @@
 - [개요](https://help.ingantt.com/ko/getting-started/overview/index.md)
 - [시작하기](https://help.ingantt.com/ko/getting-started/getting-started/index.md)
 - [AI로 생성하기](https://help.ingantt.com/ko/getting-started/create-with-ai/index.md)
+- [AI로 편집하기](https://help.ingantt.com/ko/getting-started/edit-with-ai/index.md)
 - [가져오기 및 내보내기](https://help.ingantt.com/ko/getting-started/import-export/index.md)
 
 ## 프로젝트 설정

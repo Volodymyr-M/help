@@ -7,6 +7,7 @@
 - [Огляд](https://help.ingantt.com/uk/getting-started/overview/index.md)
 - [Початок роботи](https://help.ingantt.com/uk/getting-started/getting-started/index.md)
 - [Створення за допомогою ШІ](https://help.ingantt.com/uk/getting-started/create-with-ai/index.md)
+- [Редагування за допомогою ШІ](https://help.ingantt.com/uk/getting-started/edit-with-ai/index.md)
 - [Імпорт та експорт](https://help.ingantt.com/uk/getting-started/import-export/index.md)
 
 ## Налаштування проекту

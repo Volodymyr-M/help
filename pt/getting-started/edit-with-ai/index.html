@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Editar com IA - Primeiros Passos - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Conecte um assistente de IA como Claude Code ou Codex ao seu projeto e deixe-o fazer alterações em tempo real enquanto você acompanha a atualização do gráfico de Gantt.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Editar com IA">
+  <meta property="og:description" content="Conecte um assistente de IA como Claude Code ou Codex ao seu projeto e deixe-o fazer alterações em tempo real enquanto você acompanha a atualização do gráfico de Gantt.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Editar com IA">
+  <meta name="twitter:description" content="Conecte um assistente de IA como Claude Code ou Codex ao seu projeto e deixe-o fazer alterações em tempo real enquanto você acompanha a atualização do gráfico de Gantt.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/edit-with-ai/" class="active" aria-current="page">Editar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="editar-com-ia">Editar com IA <a href="#editar-com-ia" class="heading-anchor">#</a></h1>
+<p>Conecte seu projeto a um assistente de codificação com IA como Claude Code, Codex ou qualquer ferramenta com acesso HTTP, e deixe-o fazer alterações no seu cronograma em tempo real. Enquanto a sessão estiver em execução, a IA pode ler seu projeto atual, adicionar ou modificar tarefas, ajustar dependências, atribuir recursos e enviar atualizações de volta — você vê cada alteração no gráfico de Gantt no momento em que é aplicada.</p>
+<blockquote>
+<p><strong>Editar com IA está atualmente em beta.</strong> O recurso está disponível na versão web do Ingantt.</p>
+</blockquote>
+<h2 id="iniciando-uma-sessão-de-edição-com-ia">Iniciando uma Sessão de Edição com IA <a href="#iniciando-uma-sessão-de-edição-com-ia" class="heading-anchor">#</a></h2>
+<ol>
+<li>Abra o projeto que deseja editar.</li>
+<li>Clique no ícone <strong>Editar com IA</strong> (✨) no canto superior direito, ao lado do botão de histórico de versões.</li>
+<li>A caixa de diálogo mostra um conjunto de instruções que descrevem como sua ferramenta de IA deve ler e escrever o projeto.</li>
+<li>Clique em <strong>Copiar instruções</strong>. Isso inicia a sessão de edição e copia as instruções para a área de transferência.</li>
+<li>Cole as instruções na sua ferramenta de IA (por exemplo, como a primeira mensagem em uma conversa do Claude Code ou Codex).</li>
+<li>Peça à IA para fazer alterações em linguagem natural — por exemplo, <em>&quot;adicionar uma fase de QA de duas semanas após o desenvolvimento&quot;</em> ou <em>&quot;atribuir Alex a todas as tarefas de design&quot;</em>.</li>
+</ol>
+<p>A IA segue as instruções para obter o YAML atual, editá-lo e enviar o resultado de volta ao Ingantt. O Ingantt valida cada edição antes de aceitá-la.</p>
+<h2 id="o-que-acontece-durante-uma-sessão">O Que Acontece Durante uma Sessão <a href="#o-que-acontece-durante-uma-sessão" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>O ponto verde</strong> ao lado do ícone ✨ indica uma sessão ativa. O ponto fica âmbar quando a conexão está sendo restabelecida e vermelho quando a sessão encontrou um erro.</li>
+<li><strong>Cada alteração da IA é validada</strong> contra as regras de projeto do Ingantt antes de ser aplicada. Se a IA enviar dados inválidos, o Ingantt rejeita a alteração e informa à IA o que deu errado para que ela possa se autocorrigir.</li>
+<li><strong>Suas próprias edições também são enviadas para a sessão.</strong> Se você alterar algo na interface do Ingantt enquanto a sessão estiver ativa, a IA verá sua atualização na próxima leitura.</li>
+<li><strong>O agendador mantém a autoridade.</strong> Quando a IA define datas ou durações, o Ingantt executa novamente o Método do Caminho Crítico para calcular o cronograma final, o que pode mover outras tarefas.</li>
+</ul>
+<h2 id="parando-a-sessão">Parando a Sessão <a href="#parando-a-sessão" class="heading-anchor">#</a></h2>
+<p>Clique no ícone ✨ enquanto uma sessão estiver ativa e escolha <strong>Parar sessão</strong>. Você também pode simplesmente fechar a aba do navegador — a sessão termina automaticamente após um período de inatividade.</p>
+<h2 id="ferramentas-de-ia-suportadas">Ferramentas de IA Suportadas <a href="#ferramentas-de-ia-suportadas" class="heading-anchor">#</a></h2>
+<p>Qualquer ferramenta de IA capaz de fazer solicitações HTTP funciona com Editar com IA. Opções comuns incluem:</p>
+<ul>
+<li><strong>Claude Code</strong> — cole as instruções como a primeira mensagem em uma conversa.</li>
+<li><strong>Codex</strong> — cole as instruções como a primeira mensagem em uma conversa.</li>
+<li><strong>Outras ferramentas</strong> — qualquer assistente com acesso a <code>curl</code> ou a um cliente HTTP pode ler e escrever na sessão.</li>
+</ul>
+<h2 id="dicas">Dicas <a href="#dicas" class="heading-anchor">#</a></h2>
+<ul>
+<li>Mantenha a aba do Ingantt aberta enquanto a sessão estiver ativa. Se a aba for fechada, a IA receberá um erro de &quot;sessão não conectada&quot; na próxima gravação.</li>
+<li>Se a IA enviar YAML inválido, você verá uma notificação na interface do Ingantt. A IA recebe os detalhes do erro e geralmente corrige o problema na tentativa seguinte.</li>
+<li>Para projetos grandes, comece com uma solicitação focada (<em>&quot;reorganizar a fase de testes&quot;</em>) em vez de mudanças abrangentes — a IA pode iterar em pequenos passos com feedback imediato.</li>
+<li>A IA não pode ver informações que não lhe são fornecidas. Se a sua solicitação depende de contexto — restrições, prazos ou regras de negócio — inclua isso no seu prompt.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

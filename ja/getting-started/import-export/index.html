@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>インポートとエクスポート - はじめに - Ingantt ヘルプ</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="MPP、XER、GANなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、Markdownにエクスポートします。">
+  <meta name="description" content="MPP、XER、GAN、YAMLなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、YAML、Markdownにエクスポートします。AIで編集可能なYAMLワークフローも含まれます。">
   <link rel="canonical" href="https://help.ingantt.com/ja/getting-started/import-export/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="インポートとエクスポート">
-  <meta property="og:description" content="MPP、XER、GANなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、Markdownにエクスポートします。">
+  <meta property="og:description" content="MPP、XER、GAN、YAMLなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、YAML、Markdownにエクスポートします。AIで編集可能なYAMLワークフローも含まれます。">
   <meta property="og:url" content="https://help.ingantt.com/ja/getting-started/import-export/">
   <meta property="og:site_name" content="Ingantt ヘルプ">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="インポートとエクスポート">
-  <meta name="twitter:description" content="MPP、XER、GANなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、Markdownにエクスポートします。">
+  <meta name="twitter:description" content="MPP、XER、GAN、YAMLなどの形式からプロジェクトをインポートし、PDF、PNG、CSV、XML、YAML、Markdownにエクスポートします。AIで編集可能なYAMLワークフローも含まれます。">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/import-export/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/import-export/">
@@ -77,6 +77,7 @@
     <li><a href="/ja/getting-started/overview/">概要</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/" class="active" aria-current="page">インポートとエクスポート</a></li>
   </ul>
 </div>
@@ -201,11 +202,12 @@
 <li><strong>Phoenix Project Manager</strong> — PPX</li>
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
+<li><strong>Ingantt YAML</strong> — YAML、YML</li>
 <li>その他（SDEFなどの形式）</li>
 </ul>
 <p>ファイルをインポートするには、プロジェクト画面で**+<strong>ボタンをクリックするか、<strong>File</strong>メニューの</strong>Import**オプションを使用します。インポートしたファイルを変更すると、InganttはXML形式で保存します。</p>
 <blockquote>
-<p>XML以外のプロジェクトファイルを開く場合、Inganttはセキュアな接続を通じてIngantt Webサービスにファイルを送信し、変換を行います。ファイルはサービス上に保存されません。インターネット接続が必要です。</p>
+<p>XML以外のプロジェクトファイルを開く場合、Inganttはセキュアな接続を通じてIngantt Webサービスにファイルを送信し、変換を行います。ファイルはサービス上に保存されません。インターネット接続が必要です。YAMLファイルはローカルで解析されます。</p>
 </blockquote>
 <h2 id="プロジェクトのエクスポート">プロジェクトのエクスポート <a href="#プロジェクトのエクスポート" class="heading-anchor">#</a></h2>
 <p>Inganttは、<strong>File</strong>メニューの<strong>Export</strong>オプション（Webでは<strong>Download</strong>）を通じて、複数のエクスポート形式を提供します。<strong>Export</strong>を選択すると、目的の形式を選択できるダイアログが表示されます：</p>
@@ -234,6 +236,10 @@
 <td>相互運用性のためのプロジェクトXML形式</td>
 </tr>
 <tr>
+<td><strong>YAML</strong></td>
+<td>AI支援による編集のために設計された、コンパクトで人間が読める形式のプロジェクト定義</td>
+</tr>
+<tr>
 <td><strong>Markdown</strong></td>
 <td>ドキュメント、README、Wikiのためのテキスト形式</td>
 </tr>
@@ -241,7 +247,14 @@
 </table>
 <p>エクスポートされるファイルは、現在のガントチャートの設定を反映します。たとえば、<strong>Options</strong>ダイアログでタスク名を非表示にしている場合、エクスポートにも表示されません。ズームレベルも維持されます。</p>
 <blockquote>
-<p>PDFエクスポートは常にライトテーマの配色を使用し、PNGエクスポートは現在のUIテーマ（ライトまたはダーク）を使用します。CSVとMarkdownのエクスポートはプレーンテキストです。UIに表示されている場合、分割タスク、ベースラインバー、平準化ゴーストバーはすべてPDFおよびPNGエクスポートに描画されます。</p>
+<p>PDFエクスポートは常にライトテーマの配色を使用し、PNGエクスポートは現在のUIテーマ（ライトまたはダーク）を使用します。CSV、YAML、Markdownのエクスポートはプレーンテキストです。UIに表示されている場合、分割タスク、ベースラインバー、平準化ゴーストバーはすべてPDFおよびPNGエクスポートに描画されます。</p>
+</blockquote>
+<h2 id="aiエージェントによるyamlの編集">AIエージェントによるYAMLの編集 <a href="#aiエージェントによるyamlの編集" class="heading-anchor">#</a></h2>
+<p>YAMLエクスポートは、AIコーディングアシスタント（Claude Code、Codex、またはファイルの読み書きができる任意のツール）で編集するように設計されています。プロジェクトをエクスポートし、自然言語で変更したい内容を記述します — <em>「開発の後に2週間のQAフェーズを追加する」</em>、<em>「すべてのデザインタスクにAlexを割り当てる」</em> — そして結果を再インポートします。</p>
+<p>この形式は<strong>入力のみ</strong>（期間、依存関係、制約、割り当て、カレンダー、レート）を保持します。導出される値 — タスクの開始/終了日、総コスト、クリティカルパス、スラック、サマリーの集計 — は意図的に省略されています。Inganttはインポート時にこれらを再計算します。エージェントは自分で日付を計算しようとすべきではありません。</p>
+<p>エージェントに<a href="/yaml-reference.md">YAML形式リファレンス</a>を示して、スキーマを把握できるようにしてください。</p>
+<blockquote>
+<p>エクスポート/インポートを往復せずにリアルタイムで編集する場合は、<a href="/ja/getting-started/edit-with-ai/">AIで編集</a>を参照してください。AIはライブセッション上で同じYAMLスキーマを読み書きし、各変更が発生するとすぐにガントチャートに反映されるのを見ることができます。</p>
 </blockquote>
 
     </main>

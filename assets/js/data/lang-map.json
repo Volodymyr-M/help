@@ -33,7 +33,15 @@
     "ko"
   ],
   "getting-started/edit-with-ai": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/import-export": [
     "en",

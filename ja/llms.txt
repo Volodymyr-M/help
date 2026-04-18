@@ -7,6 +7,7 @@
 - [概要](https://help.ingantt.com/ja/getting-started/overview/index.md)
 - [はじめに](https://help.ingantt.com/ja/getting-started/getting-started/index.md)
 - [AIで作成](https://help.ingantt.com/ja/getting-started/create-with-ai/index.md)
+- [AIで編集](https://help.ingantt.com/ja/getting-started/edit-with-ai/index.md)
 - [インポートとエクスポート](https://help.ingantt.com/ja/getting-started/import-export/index.md)
 
 ## プロジェクトのセットアップ

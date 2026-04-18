@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI로 편집하기 - 시작하기 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Claude Code나 Codex 같은 AI 도우미를 프로젝트에 연결하여 Gantt 차트가 업데이트되는 모습을 지켜보며 실시간으로 변경 사항을 적용하도록 합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="AI로 편집하기">
+  <meta property="og:description" content="Claude Code나 Codex 같은 AI 도우미를 프로젝트에 연결하여 Gantt 차트가 업데이트되는 모습을 지켜보며 실시간으로 변경 사항을 적용하도록 합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="AI로 편집하기">
+  <meta name="twitter:description" content="Claude Code나 Codex 같은 AI 도우미를 프로젝트에 연결하여 Gantt 차트가 업데이트되는 모습을 지켜보며 실시간으로 변경 사항을 적용하도록 합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/" class="active" aria-current="page">AI로 편집하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+<button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="ai로-편집하기">AI로 편집하기 <a href="#ai로-편집하기" class="heading-anchor">#</a></h1>
+<p>Claude Code, Codex 또는 HTTP 액세스가 가능한 모든 도구와 같은 AI 코딩 도우미에 프로젝트를 연결하여 일정을 실시간으로 변경하도록 합니다. 세션이 진행되는 동안 AI는 현재 프로젝트를 읽고 작업을 추가하거나 수정하고 종속성을 조정하며 자원을 배정하고 업데이트를 다시 보낼 수 있습니다 — 각 변경 사항은 적용되는 순간 Gantt 차트에서 확인할 수 있습니다.</p>
+<blockquote>
+<p><strong>AI로 편집하기는 현재 베타 버전입니다.</strong> 이 기능은 Ingantt 웹 버전에서 사용할 수 있습니다.</p>
+</blockquote>
+<h2 id="ai-편집-세션-시작하기">AI 편집 세션 시작하기 <a href="#ai-편집-세션-시작하기" class="heading-anchor">#</a></h2>
+<ol>
+<li>편집하려는 프로젝트를 엽니다.</li>
+<li>오른쪽 상단 구석의 버전 기록 버튼 옆에 있는 <strong>AI로 편집하기</strong> 아이콘(✨)을 클릭합니다.</li>
+<li>대화 상자에는 AI 도구가 프로젝트를 어떻게 읽고 써야 하는지 설명하는 지침 세트가 표시됩니다.</li>
+<li><strong>지침 복사</strong>를 클릭합니다. 이렇게 하면 편집 세션이 시작되고 지침이 클립보드에 복사됩니다.</li>
+<li>AI 도구에 지침을 붙여넣습니다 (예: Claude Code 또는 Codex 대화의 첫 번째 메시지로).</li>
+<li>자연어로 AI에게 변경 사항을 요청하십시오 — 예를 들어, <em>&quot;개발 후 2주간의 QA 단계를 추가해 줘&quot;</em> 또는 <em>&quot;Alex를 모든 디자인 작업에 배정해 줘&quot;</em>.</li>
+</ol>
+<p>AI는 지침을 따라 현재 YAML을 가져오고 편집하여 결과를 Ingantt에 다시 보냅니다. Ingantt는 수락하기 전에 모든 편집을 검증합니다.</p>
+<h2 id="세션-중에-일어나는-일">세션 중에 일어나는 일 <a href="#세션-중에-일어나는-일" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>✨ 아이콘 옆의 녹색 점</strong>은 활성 세션을 나타냅니다. 연결이 재연결 중일 때는 점이 황색으로, 세션에 오류가 발생하면 빨간색으로 바뀝니다.</li>
+<li><strong>모든 AI 변경 사항은</strong> 적용되기 전에 Ingantt의 프로젝트 규칙에 대해 검증됩니다. AI가 유효하지 않은 데이터를 보내면 Ingantt는 변경을 거부하고 AI에게 무엇이 잘못되었는지 알려서 스스로 수정할 수 있도록 합니다.</li>
+<li><strong>사용자의 편집도 세션에 전달됩니다.</strong> 세션이 활성화된 동안 Ingantt UI에서 무언가를 변경하면 AI는 다음 읽기에서 업데이트를 확인합니다.</li>
+<li><strong>스케줄러가 최종 권한을 유지합니다.</strong> AI가 날짜나 기간을 설정하면 Ingantt는 임계 경로 방법을 다시 실행하여 최종 일정을 계산하며, 이는 다른 작업을 이동시킬 수 있습니다.</li>
+</ul>
+<h2 id="세션-중지하기">세션 중지하기 <a href="#세션-중지하기" class="heading-anchor">#</a></h2>
+<p>세션이 활성화된 동안 ✨ 아이콘을 클릭하고 <strong>세션 중지</strong>를 선택합니다. 브라우저 탭을 간단히 닫을 수도 있습니다 — 일정 시간 비활성 상태가 지나면 세션이 자동으로 종료됩니다.</p>
+<h2 id="지원되는-ai-도구">지원되는 AI 도구 <a href="#지원되는-ai-도구" class="heading-anchor">#</a></h2>
+<p>HTTP 요청을 할 수 있는 모든 AI 도구는 AI로 편집하기와 함께 작동합니다. 일반적인 선택지는 다음과 같습니다:</p>
+<ul>
+<li><strong>Claude Code</strong> — 대화의 첫 번째 메시지로 지침을 붙여넣습니다.</li>
+<li><strong>Codex</strong> — 대화의 첫 번째 메시지로 지침을 붙여넣습니다.</li>
+<li><strong>기타 도구</strong> — <code>curl</code> 또는 HTTP 클라이언트에 액세스할 수 있는 도우미는 세션을 읽고 쓸 수 있습니다.</li>
+</ul>
+<h2 id="팁">팁 <a href="#팁" class="heading-anchor">#</a></h2>
+<ul>
+<li>세션이 활성화된 동안 Ingantt 탭을 열어 두십시오. 탭이 닫히면 AI는 다음 쓰기에서 &quot;세션이 연결되지 않음&quot; 오류를 받게 됩니다.</li>
+<li>AI가 유효하지 않은 YAML을 보내면 Ingantt UI에 알림이 표시됩니다. AI는 오류 세부 정보를 받으며 일반적으로 다음 시도에서 문제를 해결합니다.</li>
+<li>대규모 프로젝트의 경우 대대적인 변경보다는 집중된 요청(<em>&quot;테스트 단계 재배치&quot;</em>)으로 시작하십시오 — AI는 즉각적인 피드백과 함께 작은 단계로 반복할 수 있습니다.</li>
+<li>AI는 제공되지 않은 정보를 볼 수 없습니다. 요청이 문맥 — 제약 조건, 기한 또는 비즈니스 규칙 — 에 의존하는 경우 프롬프트에 포함시키십시오.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

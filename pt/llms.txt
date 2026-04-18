@@ -7,6 +7,7 @@
 - [Visão Geral](https://help.ingantt.com/pt/getting-started/overview/index.md)
 - [Primeiros Passos](https://help.ingantt.com/pt/getting-started/getting-started/index.md)
 - [Criar com IA](https://help.ingantt.com/pt/getting-started/create-with-ai/index.md)
+- [Editar com IA](https://help.ingantt.com/pt/getting-started/edit-with-ai/index.md)
 - [Importar e Exportar](https://help.ingantt.com/pt/getting-started/import-export/index.md)
 
 ## Configurando Seu Projeto

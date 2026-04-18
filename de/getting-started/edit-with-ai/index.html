@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mit KI bearbeiten - Erste Schritte - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Verbinden Sie einen KI-Assistenten wie Claude Code oder Codex mit Ihrem Projekt und lassen Sie ihn Änderungen in Echtzeit vornehmen, während Sie die Aktualisierung des Gantt-Diagramms verfolgen.">
+  <link rel="canonical" href="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Mit KI bearbeiten">
+  <meta property="og:description" content="Verbinden Sie einen KI-Assistenten wie Claude Code oder Codex mit Ihrem Projekt und lassen Sie ihn Änderungen in Echtzeit vornehmen, während Sie die Aktualisierung des Gantt-Diagramms verfolgen.">
+  <meta property="og:url" content="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Mit KI bearbeiten">
+  <meta name="twitter:description" content="Verbinden Sie einen KI-Assistenten wie Claude Code oder Codex mit Ihrem Projekt und lassen Sie ihn Änderungen in Echtzeit vornehmen, während Sie die Aktualisierung des Gantt-Diagramms verfolgen.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/edit-with-ai/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/edit-with-ai/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/edit-with-ai/" class="active" aria-current="page">Mit KI bearbeiten</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+<button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="mit-ki-bearbeiten">Mit KI bearbeiten <a href="#mit-ki-bearbeiten" class="heading-anchor">#</a></h1>
+<p>Verbinden Sie Ihr Projekt mit einem KI-Coding-Assistenten wie Claude Code, Codex oder einem beliebigen Tool mit HTTP-Zugriff und lassen Sie es Änderungen an Ihrem Terminplan in Echtzeit vornehmen. Während die Sitzung läuft, kann die KI Ihr aktuelles Projekt lesen, Vorgänge hinzufügen oder ändern, Abhängigkeiten anpassen, Ressourcen zuweisen und Aktualisierungen zurückschicken — Sie sehen jede Änderung im Gantt-Diagramm in dem Moment, in dem sie angewendet wird.</p>
+<blockquote>
+<p><strong>Mit KI bearbeiten ist derzeit in der Beta-Phase.</strong> Die Funktion ist in der Webversion von Ingantt verfügbar.</p>
+</blockquote>
+<h2 id="eine-ki-bearbeitungssitzung-starten">Eine KI-Bearbeitungssitzung starten <a href="#eine-ki-bearbeitungssitzung-starten" class="heading-anchor">#</a></h2>
+<ol>
+<li>Öffnen Sie das Projekt, das Sie bearbeiten möchten.</li>
+<li>Klicken Sie oben rechts auf das Symbol <strong>Mit KI bearbeiten</strong> (✨), direkt neben der Schaltfläche für den Versionsverlauf.</li>
+<li>Der Dialog zeigt eine Reihe von Anweisungen, die beschreiben, wie Ihr KI-Tool das Projekt lesen und schreiben soll.</li>
+<li>Klicken Sie auf <strong>Anweisungen kopieren</strong>. Dies startet die Bearbeitungssitzung und kopiert die Anweisungen in Ihre Zwischenablage.</li>
+<li>Fügen Sie die Anweisungen in Ihr KI-Tool ein (z. B. als erste Nachricht in einer Claude Code- oder Codex-Unterhaltung).</li>
+<li>Bitten Sie die KI in natürlicher Sprache, Änderungen vorzunehmen — zum Beispiel: <em>„Eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen&quot;</em> oder <em>„Alex allen Design-Vorgängen zuweisen&quot;</em>.</li>
+</ol>
+<p>Die KI folgt den Anweisungen, um die aktuelle YAML abzurufen, zu bearbeiten und das Ergebnis an Ingantt zurückzusenden. Ingantt validiert jede Bearbeitung, bevor sie akzeptiert wird.</p>
+<h2 id="was-während-einer-sitzung-passiert">Was während einer Sitzung passiert <a href="#was-während-einer-sitzung-passiert" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>Der grüne Punkt</strong> neben dem ✨-Symbol zeigt eine aktive Sitzung an. Der Punkt wird gelb, wenn die Verbindung wiederhergestellt wird, und rot, wenn ein Fehler in der Sitzung aufgetreten ist.</li>
+<li><strong>Jede KI-Änderung wird validiert</strong> gegen die Projektregeln von Ingantt, bevor sie angewendet wird. Sendet die KI ungültige Daten, lehnt Ingantt die Änderung ab und teilt der KI mit, was schiefgelaufen ist, damit sie sich selbst korrigieren kann.</li>
+<li><strong>Ihre eigenen Bearbeitungen werden ebenfalls an die Sitzung übertragen.</strong> Wenn Sie etwas in der Ingantt-Benutzeroberfläche ändern, während die Sitzung aktiv ist, sieht die KI Ihre Änderung beim nächsten Lesevorgang.</li>
+<li><strong>Der Scheduler bleibt maßgeblich.</strong> Wenn die KI Termine oder Dauern festlegt, führt Ingantt die Critical-Path-Methode erneut aus, um den endgültigen Terminplan zu berechnen, was andere Vorgänge verschieben kann.</li>
+</ul>
+<h2 id="die-sitzung-beenden">Die Sitzung beenden <a href="#die-sitzung-beenden" class="heading-anchor">#</a></h2>
+<p>Klicken Sie während einer aktiven Sitzung auf das ✨-Symbol und wählen Sie <strong>Sitzung beenden</strong>. Sie können auch einfach den Browser-Tab schließen — die Sitzung endet nach einer gewissen Zeit der Inaktivität automatisch.</p>
+<h2 id="unterstützte-ki-tools">Unterstützte KI-Tools <a href="#unterstützte-ki-tools" class="heading-anchor">#</a></h2>
+<p>Jedes KI-Tool, das HTTP-Anfragen stellen kann, funktioniert mit „Mit KI bearbeiten&quot;. Gängige Optionen sind:</p>
+<ul>
+<li><strong>Claude Code</strong> — fügen Sie die Anweisungen als erste Nachricht in eine Unterhaltung ein.</li>
+<li><strong>Codex</strong> — fügen Sie die Anweisungen als erste Nachricht in eine Unterhaltung ein.</li>
+<li><strong>Andere Tools</strong> — jeder Assistent mit Zugriff auf <code>curl</code> oder einen HTTP-Client kann die Sitzung lesen und schreiben.</li>
+</ul>
+<h2 id="tipps">Tipps <a href="#tipps" class="heading-anchor">#</a></h2>
+<ul>
+<li>Lassen Sie den Ingantt-Tab geöffnet, solange die Sitzung aktiv ist. Wenn der Tab geschlossen wird, erhält die KI beim nächsten Schreibvorgang einen Fehler „Sitzung nicht verbunden&quot;.</li>
+<li>Sendet die KI ungültiges YAML, sehen Sie eine Benachrichtigung in der Ingantt-Benutzeroberfläche. Die KI erhält die Fehlerdetails und behebt das Problem in der Regel beim nächsten Versuch.</li>
+<li>Beginnen Sie bei großen Projekten mit einer fokussierten Anfrage (<em>„die Testphase umstrukturieren&quot;</em>) anstatt mit umfassenden Änderungen — die KI kann in kleinen Schritten mit sofortigem Feedback iterieren.</li>
+<li>Die KI kann keine Informationen sehen, die ihr nicht gegeben werden. Wenn Ihre Anfrage von Kontext abhängt — Einschränkungen, Fristen oder Geschäftsregeln — nehmen Sie diese in Ihre Aufforderung auf.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>
