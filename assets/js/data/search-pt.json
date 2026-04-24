@@ -49,12 +49,20 @@
     "title": "Criar com IA",
     "theme": "Primeiros Passos",
     "url": "/pt/getting-started/create-with-ai/",
-    "snippet": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos.\nPara criar um cronograma de ",
-    "keywords": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos.\nPara criar um cronograma de projeto com IA:\n1. Clique no botão + na tela de Projetos.\n2. Escolha Create new with AI.\n3. Insira uma descrição do seu projeto na caixa de diálogo.\n4. Clique em CREATE.\n> Sua descrição pode ser tão genérica quanto \"Desenvolvimento de um aplicativo iOS de delivery de comida\" ou tão detalhada quanto quiser. Se o seu projeto for grande, tente dividi-lo em subprojetos e gerar planos separados para cada um. Os resultados podem variar entre execuções, então se não ficar satisfeito com o resultado, tente novamente.",
+    "snippet": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos.\nCriando um Projeto\nPara cria",
+    "keywords": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos.\nCriando um Projeto\nPara criar um cronograma de projeto com IA:\n1. Clique no botão + na tela de Projetos. Se você já estiver editando um projeto, abra o menu File em vez disso.\n2. Escolha Create new with AI.\n3. Insira uma descrição do seu projeto na caixa de diálogo.\n4. Clique em CREATE.\n!$1\nEscrevendo um Bom Prompt\nSua descrição pode ser tão genérica quanto \"Desenvolvimento de um aplicativo iOS de delivery de comida\" ou tão detalhada quanto quiser.\nPor exemplo, o projeto de reforma que $1 apresenta passo a passo produz o mesmo cronograma a partir de um prompt como:\n> \"Meu projeto de reforma\" começa em 1º de janeiro de 2027. O Pintor pinta as paredes por 2 dias, depois o Carpinteiro instala os armários da cozinha por 2 dias após isso. O Pintor tem um dia de férias em 4 de janeiro de 2027. Considere 6 de janeiro de 2027 como um feriado para todos.\nSe o seu projeto for grande, tente dividi-lo em subprojetos e gerar planos separados para cada um.\nOs resultados podem variar entre execuções, então se não ficar satisfeito com o resultado, tente novamente.",
     "sections": [
       {
         "slug": "",
-        "text": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos.\nPara criar um cronograma de projeto com IA:\n1. Clique no botão + na tela de Projetos.\n2. Escolha Create new with AI.\n3. Insira uma descrição do seu projeto na caixa de diálogo.\n4. Clique em CREATE.\n> Sua descrição pode ser tão genérica quanto \"Desenvolvimento de um aplicativo iOS de delivery de comida\" ou tão detalhada quanto quiser. Se o seu projeto for grande, tente dividi-lo em subprojetos e gerar planos separados para cada um. Os resultados podem variar entre execuções, então se não ficar satisfeito com o resultado, tente novamente."
+        "text": "Criar com IA\nDeixe a IA criar um plano de projeto completo para você — basta descrever seu projeto e o Ingantt gera tarefas, dependências e uma linha do tempo em segundos."
+      },
+      {
+        "slug": "criando-um-projeto",
+        "text": "Para criar um cronograma de projeto com IA:\n1. Clique no botão + na tela de Projetos. Se você já estiver editando um projeto, abra o menu File em vez disso.\n2. Escolha Create new with AI.\n3. Insira uma descrição do seu projeto na caixa de diálogo.\n4. Clique em CREATE.\n!$1"
+      },
+      {
+        "slug": "escrevendo-um-bom-prompt",
+        "text": "Sua descrição pode ser tão genérica quanto \"Desenvolvimento de um aplicativo iOS de delivery de comida\" ou tão detalhada quanto quiser.\nPor exemplo, o projeto de reforma que $1 apresenta passo a passo produz o mesmo cronograma a partir de um prompt como:\n> \"Meu projeto de reforma\" começa em 1º de janeiro de 2027. O Pintor pinta as paredes por 2 dias, depois o Carpinteiro instala os armários da cozinha por 2 dias após isso. O Pintor tem um dia de férias em 4 de janeiro de 2027. Considere 6 de janeiro de 2027 como um feriado para todos.\nSe o seu projeto for grande, tente dividi-lo em subprojetos e gerar planos separados para cada um.\nOs resultados podem variar entre execuções, então se não ficar satisfeito com o resultado, tente novamente."
       }
     ]
   },

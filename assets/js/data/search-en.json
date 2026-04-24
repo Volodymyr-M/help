@@ -49,12 +49,20 @@
     "title": "Create with AI",
     "theme": "Getting Started",
     "url": "/en/getting-started/create-with-ai/",
-    "snippet": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.\nTo create a project schedule with AI:\n1. Clic",
-    "keywords": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.\nTo create a project schedule with AI:\n1. Click the + button on the Projects screen.\n2. Choose Create new with AI.\n3. Enter a description of your project in the dialog box.\n4. Click CREATE.\n> Your description can be as generic as \"Development of an iOS food delivery app\" or as detailed as you like. If your project is large, try splitting it into sub-projects and generating separate project plans for each one. Results may vary between runs, so if you're not happy with the output, try again.",
+    "snippet": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.\nCreating a Project\nTo create a project schedu",
+    "keywords": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.\nCreating a Project\nTo create a project schedule with AI:\n1. Click the + button on the Projects screen. If you're already editing a project, open the File menu instead.\n2. Choose Create new with AI.\n3. Enter a description of your project in the dialog box.\n4. Click CREATE.\n!$1\nWriting a Good Prompt\nYour description can be as generic as \"Development of an iOS food delivery app\" or as detailed as you like.\nFor example, the renovation project that $1 walks through step by step produces the same schedule from a prompt like:\n> \"My renovation project\" starts January 1, 2027. Painter paints the walls for 2 days, then Carpenter installs the kitchen cabinets for 2 days after that. The Painter has a vacation day on January 4, 2027. Treat January 6, 2027 as a holiday for everyone.\nIf your project is large, try splitting it into sub-projects and generating separate project plans for each one.\nResults may vary between runs, so if you're not happy with the output, try again.",
     "sections": [
       {
         "slug": "",
-        "text": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds.\nTo create a project schedule with AI:\n1. Click the + button on the Projects screen.\n2. Choose Create new with AI.\n3. Enter a description of your project in the dialog box.\n4. Click CREATE.\n> Your description can be as generic as \"Development of an iOS food delivery app\" or as detailed as you like. If your project is large, try splitting it into sub-projects and generating separate project plans for each one. Results may vary between runs, so if you're not happy with the output, try again."
+        "text": "Create with AI\nLet AI build a full project plan for you — just describe your project and Ingantt generates tasks, dependencies, and a timeline in seconds."
+      },
+      {
+        "slug": "creating-a-project",
+        "text": "To create a project schedule with AI:\n1. Click the + button on the Projects screen. If you're already editing a project, open the File menu instead.\n2. Choose Create new with AI.\n3. Enter a description of your project in the dialog box.\n4. Click CREATE.\n!$1"
+      },
+      {
+        "slug": "writing-a-good-prompt",
+        "text": "Your description can be as generic as \"Development of an iOS food delivery app\" or as detailed as you like.\nFor example, the renovation project that $1 walks through step by step produces the same schedule from a prompt like:\n> \"My renovation project\" starts January 1, 2027. Painter paints the walls for 2 days, then Carpenter installs the kitchen cabinets for 2 days after that. The Painter has a vacation day on January 4, 2027. Treat January 6, 2027 as a holiday for everyone.\nIf your project is large, try splitting it into sub-projects and generating separate project plans for each one.\nResults may vary between runs, so if you're not happy with the output, try again."
       }
     ]
   },
