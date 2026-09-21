@@ -92,7 +92,7 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  gap: 1.25rem;
   padding: 0 1.5rem;
   background: var(--surface);
   border-bottom: 1px solid var(--border);
@@ -105,6 +105,15 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+  flex-shrink: 0;
 }
 
 .logo-icon {
@@ -192,6 +201,10 @@ body {
   gap: 0.75rem;
   padding: 0.75rem 1rem;
   border-top: 1px solid var(--border);
+}
+
+.email-link-text {
+  font-size: 0.875rem;
 }
 
 .theme-group {
@@ -510,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   10. Sidebar Controls (Language Switcher & Theme Toggle)
+   10. Header Controls (Theme Toggle & Language Switcher) + Support Link
    ========================================================================== */
 
 .lang-select {
@@ -549,9 +562,10 @@ h1, h2, h3, h4, h5, h6 {
 .email-link {
   display: flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
   padding: 0.4rem;
   color: var(--text-secondary);
+  text-decoration: none;
   border-radius: 6px;
   transition: color 0.2s;
 }
@@ -566,10 +580,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .search-wrapper {
   position: relative;
+  flex: 0 1 460px;
+  min-width: 0;
 }
 
 .search-input {
-  width: 250px;
+  width: 100%;
   padding: 0.5rem 1rem;
   border: 1px solid var(--border);
   border-radius: 20px;
@@ -597,8 +613,10 @@ h1, h2, h3, h4, h5, h6 {
 .search-results {
   position: absolute;
   top: 100%;
-  right: 0;
-  width: 400px;
+  left: 0;
+  min-width: 100%;
+  width: 460px;
+  max-width: calc(100vw - 3rem);
   max-height: 400px;
   overflow-y: auto;
   background: var(--bg);
@@ -673,6 +691,60 @@ mark.search-highlight {
    12. Responsive Breakpoints
    ========================================================================== */
 
+/* Desktop: mirror the .layout grid so the search box starts on the same
+   vertical line as the documentation text below it */
+@media (min-width: 992px) {
+  .header {
+    display: grid;
+    grid-template-columns: 240px minmax(0, 1fr) 200px;
+    gap: 0;
+    padding: 0;
+  }
+
+  .logo-link {
+    grid-row: 1;
+    padding-left: 1.5rem;
+  }
+
+  /* Same box as .content, so both share a left edge */
+  .search-wrapper {
+    grid-row: 1;
+    grid-column: 2;
+    flex: none;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-left: 2.5rem;
+  }
+
+  .search-input {
+    max-width: 460px;
+  }
+
+  .search-results {
+    left: 2.5rem;
+    min-width: 0;
+    width: 460px;
+    max-width: calc(100% - 2.5rem);
+  }
+
+  /* Spans to the last column so long language names never squeeze column 2 */
+  .header-controls {
+    grid-row: 1;
+    grid-column: 2 / -1;
+    justify-self: end;
+    margin-left: 0;
+    padding-right: 1.5rem;
+  }
+}
+
+/* TOC hidden below 1200px — drop its column from the header grid too */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .header {
+    grid-template-columns: 240px minmax(0, 1fr);
+  }
+}
+
 /* Hide TOC on narrower screens */
 @media (max-width: 1199px) {
   .toc {
@@ -698,6 +770,10 @@ mark.search-highlight {
     display: flex;
   }
 
+  .search-wrapper {
+    flex: 0 0 auto;
+  }
+
   .search-input {
     display: none;
   }
@@ -708,6 +784,26 @@ mark.search-highlight {
 
   .content {
     padding: 1.5rem 1rem;
+  }
+}
+
+/* Small screens: tighten the header so the wordmark fits as long as possible */
+@media (max-width: 600px) {
+  .header {
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+  }
+
+  .lang-select {
+    padding: 0.35rem 0.4rem;
+    max-width: 7.5rem;
+  }
+}
+
+/* Narrow phones: the wordmark no longer fits beside the header controls */
+@media (max-width: 499px) {
+  .site-title {
+    display: none;
   }
 }
 
@@ -763,6 +859,7 @@ mark.search-highlight {
   left: 0;
   right: 0;
   width: 100%;
+  max-width: none;
   border-radius: 0;
   border-left: none;
   border-right: none;
