@@ -5,7 +5,10 @@
 ## Getting Started
 
 - [Overview](https://help.ingantt.com/en/getting-started/overview/index.md)
+- [Install Ingantt](https://help.ingantt.com/en/getting-started/install/index.md)
 - [Getting Started](https://help.ingantt.com/en/getting-started/getting-started/index.md)
+- [Project Templates](https://help.ingantt.com/en/getting-started/templates/index.md)
+- [Saving Your Project](https://help.ingantt.com/en/getting-started/saving/index.md)
 - [Create with AI](https://help.ingantt.com/en/getting-started/create-with-ai/index.md)
 - [Edit with AI](https://help.ingantt.com/en/getting-started/edit-with-ai/index.md)
 - [Import & Export](https://help.ingantt.com/en/getting-started/import-export/index.md)
@@ -19,6 +22,7 @@
 
 - [Tasks](https://help.ingantt.com/en/building-schedule/tasks/index.md)
 - [Task Properties](https://help.ingantt.com/en/building-schedule/task-properties/index.md)
+- [Elapsed Durations](https://help.ingantt.com/en/building-schedule/elapsed-durations/index.md)
 - [Dependencies](https://help.ingantt.com/en/building-schedule/dependencies/index.md)
 - [Constraints](https://help.ingantt.com/en/building-schedule/constraints/index.md)
 - [Resources](https://help.ingantt.com/en/building-schedule/resources/index.md)
@@ -29,6 +33,7 @@
 - [Critical Path](https://help.ingantt.com/en/adjusting-schedule/critical-path/index.md)
 - [Resource Leveling](https://help.ingantt.com/en/adjusting-schedule/leveling/index.md)
 - [Custom Fields](https://help.ingantt.com/en/adjusting-schedule/custom-fields/index.md)
+- [WBS Codes](https://help.ingantt.com/en/adjusting-schedule/wbs-codes/index.md)
 
 ## Planning Costs
 
@@ -53,4 +58,14 @@
 
 - [Adding and Selecting](https://help.ingantt.com/en/ui/ui/index.md)
 - [Google Drive Integration](https://help.ingantt.com/en/ui/files/index.md)
+- [Sharing a Project](https://help.ingantt.com/en/ui/sharing/index.md)
+- [Languages](https://help.ingantt.com/en/ui/languages/index.md)
 - [Keyboard Shortcuts](https://help.ingantt.com/en/ui/shortcuts/index.md)
+- [Contacting Support](https://help.ingantt.com/en/ui/contact-support/index.md)
+- [Working Offline](https://help.ingantt.com/en/ui/offline-mode/index.md)
+- [Version History](https://help.ingantt.com/en/ui/version-history/index.md)
+
+## Account & Billing
+
+- [Free Trial](https://help.ingantt.com/en/account/trial/index.md)
+- [Subscriptions and Payment](https://help.ingantt.com/en/account/subscription/index.md)

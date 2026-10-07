@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Saving Your Project - Getting Started - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Save your project to a local file or Google Drive, how autosave works on each platform, why the web version cannot autosave local files, and working offline.">
+  <link rel="canonical" href="https://help.ingantt.com/en/getting-started/saving/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Saving Your Project">
+  <meta property="og:description" content="Save your project to a local file or Google Drive, how autosave works on each platform, why the web version cannot autosave local files, and working offline.">
+  <meta property="og:url" content="https://help.ingantt.com/en/getting-started/saving/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Saving Your Project">
+  <meta name="twitter:description" content="Save your project to a local file or Google Drive, how autosave works on each platform, why the web version cannot autosave local files, and working offline.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/install/">Install Ingantt</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/templates/">Project Templates</a></li>
+    <li><a href="/en/getting-started/saving/" class="active" aria-current="page">Saving Your Project</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/elapsed-durations/">Elapsed Durations</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+    <li><a href="/en/adjusting-schedule/wbs-codes/">WBS Codes</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/sharing/">Sharing a Project</a></li>
+    <li><a href="/en/ui/languages/">Languages</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+    <li><a href="/en/ui/contact-support/">Contacting Support</a></li>
+    <li><a href="/en/ui/offline-mode/">Working Offline</a></li>
+    <li><a href="/en/ui/version-history/">Version History</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account &amp; Billing
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/account/trial/">Free Trial</a></li>
+    <li><a href="/en/account/subscription/">Subscriptions and Payment</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contact support</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="saving-your-project">Saving Your Project <a href="#saving-your-project" class="heading-anchor">#</a></h1>
+<p>Ingantt saves your project either as a file on your device or as a file in your Google Drive. Autosave then keeps that file up to date while you work. This article explains which destination you get, when autosave applies, and the one case where it cannot.</p>
+<h2 id="saving-for-the-first-time">Saving for the first time <a href="#saving-for-the-first-time" class="heading-anchor">#</a></h2>
+<p>Click the <strong>Save</strong> button in the toolbar, or use <strong>Save file</strong> in the <strong>File</strong> menu.</p>
+<p>If the project has never been saved, Ingantt asks where it should go. <strong>Save project as</strong> offers two destinations:</p>
+<ul>
+<li><strong>Save to new local file</strong> — a file on your device.</li>
+<li><strong>Save to new Google Drive file</strong> — a file in your Google Drive. Requires signing in with Google.</li>
+</ul>
+<p>You can change the destination later with <strong>Save file as</strong> in the <strong>File</strong> menu, which always creates a new file and continues working in it.</p>
+<p>Your project is saved in an XML format that is fully compatible with Microsoft Project. Nothing about your plan is locked to Ingantt.</p>
+<blockquote>
+<p>On the web, if you are already signed in to Google when you create a project, Ingantt picks Google Drive for you and names the file after the project. You do not have to save once before autosave starts working, and renaming the project renames the Drive file.</p>
+</blockquote>
+<h2 id="autosave">Autosave <a href="#autosave" class="heading-anchor">#</a></h2>
+<p>When autosave is on, Ingantt writes every change to the project's existing file in the background, roughly every 20 seconds, and only when there is something unsaved. It always writes to the destination the project already has — it never picks a new one.</p>
+<p>Whether it is on by default depends on the platform:</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Autosave by default</th>
+<th>Where to change it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>On</td>
+<td><strong>File</strong> menu → <strong>Work offline (no autosave)</strong></td>
+</tr>
+<tr>
+<td><strong>Android, iOS, Windows, macOS</strong></td>
+<td>Off</td>
+<td><strong>Enable autosave</strong> in the <strong>Options</strong> dialog, or in the <strong>File</strong> menu</td>
+</tr>
+</tbody>
+</table>
+<p>The <strong>Save</strong> button doubles as the autosave indicator. It shows <em>Saving…</em>, <em>File saved</em>, <em>File saved to Google Drive</em>, <em>Autosave pending…</em>, or an error if a save did not go through.</p>
+<p>Autosave cannot help in two situations:</p>
+<ul>
+<li><strong>The project has never been saved.</strong> There is no file to update yet, so save it once yourself.</li>
+<li><strong>The project was opened from a local file while you are using Ingantt in a browser.</strong> See below.</li>
+</ul>
+<h2 id="autosave-and-local-files-on-the-web">Autosave and local files on the web <a href="#autosave-and-local-files-on-the-web" class="heading-anchor">#</a></h2>
+<p>A browser cannot write back to a file you picked from your disk. When Ingantt for Web saves to &quot;a local file&quot; it downloads a new copy of the file instead — which is the right behaviour for an explicit <strong>Save</strong>, but not something you want happening every 20 seconds.</p>
+<p>So: <strong>Ingantt for Web does not autosave to local files.</strong> If you opened a local project file in the browser and want your changes kept automatically, use <strong>Save file as</strong> → <strong>Save to new Google Drive file</strong> once. From then on, autosave keeps the Drive file current.</p>
+<p>This affects <a href="/en/getting-started/edit-with-ai/">Edit with AI</a> in the same way: with no autosave, anything the AI changes stays unsaved until you save it yourself, and Ingantt warns you about that before the session starts.</p>
+<h2 id="working-offline-on-the-web">Working offline on the web <a href="#working-offline-on-the-web" class="heading-anchor">#</a></h2>
+<p><strong>Work offline (no autosave)</strong> in the <strong>File</strong> menu turns autosave off for the current browser tab. Use it when you want to keep editing without every change going to Google Drive.</p>
+<p>Two things to know about it:</p>
+<ul>
+<li>Nothing is saved while it is on, so save manually before you close the tab. Ingantt reminds you when you switch it on.</li>
+<li>The setting is per session. Reloading the page or opening a new tab starts with autosave on again. On Android, iOS, Windows, and macOS the <strong>Enable autosave</strong> setting is remembered instead.</li>
+</ul>
+<h2 id="downloading-a-copy">Downloading a copy <a href="#downloading-a-copy" class="heading-anchor">#</a></h2>
+<p>On the web, <strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong> saves a copy of the project to your computer without changing where the project itself is saved. Use it for a backup, or to hand the file to someone using Microsoft Project.</p>
+<p>Other formats — PDF, PNG, CSV, XML, YAML, and Markdown — are covered in <a href="/en/getting-started/import-export/">Import &amp; Export</a>.</p>
+<h2 id="closing-with-unsaved-changes">Closing with unsaved changes <a href="#closing-with-unsaved-changes" class="heading-anchor">#</a></h2>
+<p>If you close a project that has unsaved changes, Ingantt asks <strong>Save changes to</strong> your project and warns that unsaved changes will be lost. The same prompt appears before moving a project to the Trash.</p>
+<h2 id="if-ingantt-will-not-let-you-save">If Ingantt will not let you save <a href="#if-ingantt-will-not-let-you-save" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>&quot;View only mode as trial ended&quot;</strong> or <strong>&quot;Subscription inactive&quot;</strong> — your projects are still there and still readable, but saving is off until your subscription is active. See <a href="/en/account/trial/">Free Trial</a> and <a href="/en/account/subscription/">Subscriptions and Payment</a>.</li>
+<li><strong>&quot;You are a viewer and cannot save&quot;</strong> — the Google Drive file was shared with you as a viewer or commenter. Ask the owner for edit access, or use <strong>Save file as</strong> to keep your own copy. See <a href="/en/ui/sharing/">Sharing a Project</a>.</li>
+<li><strong>&quot;Error saving file to Google Drive&quot;</strong> — usually a connection problem or an expired Google sign-in. Check your connection and sign in again; see <a href="/en/ui/files/">Google Drive Integration</a>.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

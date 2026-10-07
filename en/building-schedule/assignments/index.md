@@ -28,8 +28,18 @@ When a work resource is assigned to a task, the effort (work) is distributed acr
 | **Late Peak** | Builds to a peak near the end |
 | **Bell** | Bell curve — peaks in the middle |
 | **Turtle** | Flatter bell curve — smoother distribution |
+| **Contoured** | Your own per-day distribution. Set automatically when you edit work in a usage view; it cannot be chosen from the dropdown. |
 
 Work contours affect how work is distributed across time periods and are preserved when opening and saving project files.
+
+### The Contoured Contour
+
+**Contoured** is the custom contour, and it behaves differently from the other eight. You cannot pick it from the dropdown on an assignment that does not already have it — the option is disabled. You get it by **editing work directly in a [Resource Usage or Task Usage](/en/views/resource-views/index.md) cell**: the moment you type a per-day work value, that assignment's contour becomes *Contoured* and your typed distribution is what it uses.
+
+Two consequences are worth knowing:
+
+- **Switching away from Contoured discards the hand-entered distribution.** Pick any of the other eight contours and the per-day values you typed are cleared. They are not kept and restored if you switch back.
+- **Contoured work round-trips through the Microsoft Project format.** Import reads the per-day timephased work into the assignment, and export writes it back out. A plan that arrives from Microsoft Project with a hand-edited contour keeps it.
 
 ## Assignment Delay
 

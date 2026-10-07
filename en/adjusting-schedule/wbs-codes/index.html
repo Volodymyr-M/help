@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WBS Codes - Analyzing &amp; Adjusting - Ingantt Help</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Replace the default outline numbering with a custom WBS code mask — project code prefix, per-level sequence, length, and separators.">
+  <link rel="canonical" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WBS Codes">
+  <meta property="og:description" content="Replace the default outline numbering with a custom WBS code mask — project code prefix, per-level sequence, length, and separators.">
+  <meta property="og:url" content="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <meta property="og:site_name" content="Ingantt Help">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WBS Codes">
+  <meta name="twitter:description" content="Replace the default outline numbering with a custom WBS code mask — project code prefix, per-level sequence, length, and separators.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to content</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/en/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt Help</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Search..." aria-label="Search documentation">
+      <div class="search-results" data-loading="Loading…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Search">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Toggle theme" title="Toggle light/dark theme">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Language">
+  <option value="en" data-first-page="/en/getting-started/overview/" selected>English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Documentation navigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Getting Started
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/install/">Install Ingantt</a></li>
+    <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/templates/">Project Templates</a></li>
+    <li><a href="/en/getting-started/saving/">Saving Your Project</a></li>
+    <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
+    <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
+    <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Setting Up Your Project
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/setting-up-project/project/">Project Properties</a></li>
+    <li><a href="/en/setting-up-project/calendars/">Calendars</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Building a Schedule
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
+    <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/elapsed-durations/">Elapsed Durations</a></li>
+    <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
+    <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
+    <li><a href="/en/building-schedule/resources/">Resources</a></li>
+    <li><a href="/en/building-schedule/assignments/">Assignments</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyzing &amp; Adjusting
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
+    <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
+    <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+    <li><a href="/en/adjusting-schedule/wbs-codes/" class="active" aria-current="page">WBS Codes</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planning Costs
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/planning-costs/planning-costs/">Understanding Costs</a></li>
+    <li><a href="/en/planning-costs/setting-up-costs/">Setting Up Costs</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Tracking Progress
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/tracking/baselines/">Baselines</a></li>
+    <li><a href="/en/tracking/progress/">Tracking Progress</a></li>
+    <li><a href="/en/tracking/actuals/">Actuals</a></li>
+    <li><a href="/en/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Views
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/views/gantt/">Gantt Chart</a></li>
+    <li><a href="/en/views/task-views/">Task Views</a></li>
+    <li><a href="/en/views/resource-views/">Resource Views</a></li>
+    <li><a href="/en/views/filtering/">Filtering Tasks</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    User Interface
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
+    <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/sharing/">Sharing a Project</a></li>
+    <li><a href="/en/ui/languages/">Languages</a></li>
+    <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+    <li><a href="/en/ui/contact-support/">Contacting Support</a></li>
+    <li><a href="/en/ui/offline-mode/">Working Offline</a></li>
+    <li><a href="/en/ui/version-history/">Version History</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account &amp; Billing
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/account/trial/">Free Trial</a></li>
+    <li><a href="/en/account/subscription/">Subscriptions and Payment</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contact support" title="Contact support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contact support</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="wbs-codes">WBS Codes <a href="#wbs-codes" class="heading-anchor">#</a></h1>
+<p>Every task has a <strong>WBS</strong> code — its address in the outline. Out of the box it is the plain outline number: <code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>. Show it by turning on the <strong>WBS</strong> column in the task table.</p>
+<p>A <strong>WBS code mask</strong> replaces those outline numbers with a structured code of your own design, so tasks come out as <code>PROJ-A-01</code> or <code>1.A.001</code> instead of <code>1.1.1</code>. Organizations with a numbering standard — a contract, a cost-code scheme, a client's reporting format — use this to make Ingantt's codes match it.</p>
+<p>Open <strong>Project → WBS Code Definition</strong> to set one up.</p>
+<h2 id="wbs-codes-and-outline-codes-are-different">WBS Codes and Outline Codes Are Different <a href="#wbs-codes-and-outline-codes-are-different" class="heading-anchor">#</a></h2>
+<ul>
+<li>A <strong>WBS code</strong> is structural. There is exactly one per task and it is derived from where the task sits in the outline. It renumbers itself when you move tasks around.</li>
+<li>An <strong><a href="/en/adjusting-schedule/custom-fields/">outline code</a></strong> is a tag. You define a lookup list — department, phase, cost centre — and assign values to tasks independently of the hierarchy. A task can carry several, from several outline codes.</li>
+</ul>
+<h2 id="defining-the-mask">Defining the Mask <a href="#defining-the-mask" class="heading-anchor">#</a></h2>
+<p>The dialog has three parts.</p>
+<h3 id="project-code-prefix">Project Code Prefix <a href="#project-code-prefix" class="heading-anchor">#</a></h3>
+<p>Fixed text put in front of every code in the project. With the prefix <code>PROJ</code>, codes come out as <code>PROJ.1.1</code> or <code>PROJ-A-01</code> depending on your separators. Leave it empty for no prefix.</p>
+<h3 id="code-mask">Code Mask <a href="#code-mask" class="heading-anchor">#</a></h3>
+<p>One row per outline level, added with <strong>Add Level</strong>. Each row sets:</p>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level</strong></td>
+<td>The outline depth this row applies to. Level 1 is top-level tasks, level 2 their children, and so on.</td>
+</tr>
+<tr>
+<td><strong>Sequence</strong></td>
+<td>The characters used at this level: <strong>Numbers</strong> (1, 2, 3), <strong>Uppercase Letters</strong> (A, B, C … Z, AA), <strong>Lowercase Letters</strong> (a, b, c … z, aa), or <strong>Characters</strong>.</td>
+</tr>
+<tr>
+<td><strong>Length</strong></td>
+<td>Maximum characters at this level. Leave it empty — it shows <em>Any</em> — for no limit.</td>
+</tr>
+<tr>
+<td><strong>Separator</strong></td>
+<td>The character between this level and the next, such as <code>.</code> or <code>-</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Two things are worth knowing about how the fields behave:</p>
+<ul>
+<li><strong>Length pads numbers with leading zeros.</strong> A length of <code>3</code> on a Numbers level turns the ninth task into <code>009</code>. It does not pad letter levels.</li>
+<li><strong>Characters</strong> behaves the same as Numbers for codes Ingantt generates. It exists for compatibility with Microsoft Project, where it means a level you type yourself.</li>
+</ul>
+<p>You do not have to define every level. <strong>Levels deeper than your last mask row fall back to a number with a <code>.</code> separator</strong>, so a three-row mask on a five-deep plan still produces a complete code.</p>
+<h3 id="options">Options <a href="#options" class="heading-anchor">#</a></h3>
+<p><strong>Generate WBS code for new task</strong> and <strong>Verify uniqueness of new WBS codes</strong> are stored with the project and preserved through a Microsoft Project round trip. In Ingantt, a mask with at least one level is applied to every task automatically, and codes are unique by construction because they follow the outline.</p>
+<h2 id="what-happens-when-you-save-the-mask">What Happens When You Save the Mask <a href="#what-happens-when-you-save-the-mask" class="heading-anchor">#</a></h2>
+<p>Ingantt renumbers the whole project immediately. Codes are rebuilt from the outline every time the structure changes — when you add, delete, indent, outdent, or move a task — so they always describe where the task is now.</p>
+<p>That is worth saying plainly: <strong>a WBS code is not a permanent identifier for a task.</strong> Move a task and its code changes. If you need a label that follows a task around, use an outline code or a <a href="/en/adjusting-schedule/custom-fields/">custom text field</a> instead.</p>
+<h2 id="import-and-export">Import and Export <a href="#import-and-export" class="heading-anchor">#</a></h2>
+<p>The mask is part of the Microsoft Project format and survives a round trip. A project imported with a mask keeps it, exports with it, and its task codes match what Microsoft Project produced.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table of contents"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

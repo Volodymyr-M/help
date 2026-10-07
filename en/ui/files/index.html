@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Google Drive Integration - User Interface - Ingantt Help</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version.">
+  <meta name="description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version, including troubleshooting Google sign-in.">
   <link rel="canonical" href="https://help.ingantt.com/en/ui/files/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Google Drive Integration">
-  <meta property="og:description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version.">
+  <meta property="og:description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version, including troubleshooting Google sign-in.">
   <meta property="og:url" content="https://help.ingantt.com/en/ui/files/">
   <meta property="og:site_name" content="Ingantt Help">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Google Drive Integration">
-  <meta name="twitter:description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version.">
+  <meta name="twitter:description" content="Sign in to Google Drive to create, open, and save Ingantt project files directly from the web version, including troubleshooting Google sign-in.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/files/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/files/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/install/">Install Ingantt</a></li>
     <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/templates/">Project Templates</a></li>
+    <li><a href="/en/getting-started/saving/">Saving Your Project</a></li>
     <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
     <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
     <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
     <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/elapsed-durations/">Elapsed Durations</a></li>
     <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
     <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
     <li><a href="/en/building-schedule/resources/">Resources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
     <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
     <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+    <li><a href="/en/adjusting-schedule/wbs-codes/">WBS Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
     <li><a href="/en/ui/files/" class="active" aria-current="page">Google Drive Integration</a></li>
+    <li><a href="/en/ui/sharing/">Sharing a Project</a></li>
+    <li><a href="/en/ui/languages/">Languages</a></li>
     <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+    <li><a href="/en/ui/contact-support/">Contacting Support</a></li>
+    <li><a href="/en/ui/offline-mode/">Working Offline</a></li>
+    <li><a href="/en/ui/version-history/">Version History</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account &amp; Billing
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/account/trial/">Free Trial</a></li>
+    <li><a href="/en/account/subscription/">Subscriptions and Payment</a></li>
   </ul>
 </div>
 
@@ -191,16 +211,54 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="google-drive-integration">Google Drive Integration <a href="#google-drive-integration" class="heading-anchor">#</a></h1>
-<p>Ingantt stores your project files in Google Drive so you can access them from any device.</p>
+<p>Ingantt stores your project files in Google Drive so you can access them from any device. This article covers signing in, the permissions Ingantt asks for, how Drive and Ingantt fit together, and what to do when Google sign-in does not behave.</p>
+<h2 id="working-without-signing-in">Working without signing in <a href="#working-without-signing-in" class="heading-anchor">#</a></h2>
+<p>You do not have to sign in. Without a Google account you can open and edit project files stored on your device, and save them back (on the web, saving a local file downloads a new copy — see <a href="/en/getting-started/saving/">Saving Your Project</a>).</p>
+<p>Sign in with Google when you want your projects kept in the cloud, saved automatically as you work, available on your other devices, and shareable with other people.</p>
 <h2 id="sign-in-to-google">Sign in to Google <a href="#sign-in-to-google" class="heading-anchor">#</a></h2>
-<p>When you first use Ingantt, you are asked to sign in with your Google account. Ingantt requests the following permissions:</p>
+<p>On the Projects screen, click <strong>Sign in with Google</strong>. A standard Google dialog opens and asks for the permissions below. You can sign out again at any time with <strong>Sign out of Google</strong>.</p>
+<p>Ingantt requests the following permissions:</p>
 <ul>
 <li><strong>See your profile info</strong> — Used to identify your account.</li>
 <li><strong>Connect itself to your Google Drive</strong> — <strong>Web</strong> version only. Allows you to create or open Ingantt files from Google Drive's web interface (<strong>New</strong> button or <strong>Open with</strong> menu).</li>
 <li><strong>See, edit, create, and delete only the specific Google Drive files you use with this app</strong> — Allows Ingantt to create and edit its own files in your Google Drive. Ingantt cannot access your other files.</li>
 </ul>
-<h2 id="using-ingantt-for-web-with-google-drive">Using Ingantt for Web with Google Drive <a href="#using-ingantt-for-web-with-google-drive" class="heading-anchor">#</a></h2>
+<blockquote>
+<p>The third permission is the narrow Google Drive scope: Ingantt only ever sees files you created in Ingantt or opened with it. The rest of your Drive stays invisible to Ingantt, which is also why Ingantt cannot browse your Drive folders for you.</p>
+</blockquote>
+<h2 id="creating-and-opening-projects-in-google-drive">Creating and opening projects in Google Drive <a href="#creating-and-opening-projects-in-google-drive" class="heading-anchor">#</a></h2>
+<p>Once you are signed in, the Projects screen is your Drive:</p>
+<ul>
+<li><strong>Recent Projects</strong> — projects you opened most recently, grouped by date.</li>
+<li><strong>Shared with me</strong> — Ingantt files other people shared with you.</li>
+<li><strong>Starred</strong> — projects you marked with <strong>Add to Starred</strong>.</li>
+<li><strong>Trash</strong> — projects you moved to the Trash. Use <strong>Restore</strong> to bring one back.</li>
+</ul>
+<p>Use <strong>Open</strong> → <strong>Open from Google Drive</strong> to pick an existing file, or the <strong>Upload</strong> tab of that dialog to browse for a file on your device or drag one in. Microsoft Project, Primavera, and the other supported formats can be opened this way — see <a href="/en/getting-started/import-export/">Import &amp; Export</a>.</p>
+<p>New projects come from <strong>New</strong> on the Projects screen: <strong>New project</strong>, <strong>New with AI</strong>, or <strong>New from template</strong>. When you are signed in on the web, a new project is targeted at Google Drive straight away and autosaved from then on.</p>
+<blockquote>
+<p><strong>Missing a file in &quot;Shared with me&quot;?</strong> Google requires you to open a shared file from Google Drive first. Right-click the file there and choose <strong>Open with</strong> → <strong>Ingantt</strong>. It then appears in the list.</p>
+</blockquote>
+<h2 id="using-ingantt-from-google-drives-own-interface-web">Using Ingantt from Google Drive's own interface (web) <a href="#using-ingantt-from-google-drives-own-interface-web" class="heading-anchor">#</a></h2>
+<p>On the web, Ingantt can be launched from Drive rather than the other way round. This is what the <strong>Connect itself to your Google Drive</strong> permission is for, and it only works once Ingantt has been added to your Drive from the <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>.</p>
+<ul>
+<li><strong>New</strong> → <strong>More</strong> → <strong>Ingantt</strong> creates a new Ingantt project in the Drive folder you are in.</li>
+<li>Right-click an Ingantt file → <strong>Open with</strong> → <strong>Ingantt</strong> opens it in Ingantt for Web.</li>
+</ul>
+<p>In both cases Drive opens <code>web.ingantt.com</code> and passes along the folder or file to use, so you land directly in the right project.</p>
+<h2 id="troubleshooting-sign-in-to-google-web">Troubleshooting Sign in to Google (Web) <a href="#troubleshooting-sign-in-to-google-web" class="heading-anchor">#</a></h2>
+<p><strong>Google Drive does not offer Ingantt in its New or Open with menus.</strong> Sign out of Google in Ingantt, sign in again, and make sure you grant the <strong>Connect itself to your Google Drive</strong> permission. Google only adds the Drive menu entries once that permission has been granted, and it is easy to skip on the consent screen. If the entries are still missing, check that Ingantt is added to your account from the Google Workspace Marketplace.</p>
+<p><strong>A file someone shared with you is not in &quot;Shared with me&quot;.</strong> Open it once from Google Drive with <strong>Open with</strong> → <strong>Ingantt</strong>. Because Ingantt only has access to files you use with Ingantt, a shared file is invisible to it until you have opened it that way at least once.</p>
+<p><strong>&quot;Error saving file to Google Drive&quot;.</strong> Check your connection first. If it persists, sign out of Google and sign in again — the sign-in may have expired or lost a permission.</p>
+<p><strong>&quot;Could not sign in to Google.&quot;</strong> If you use more than one Google account, make sure the popup is signing in as the account that owns your projects. Browser extensions that block third-party cookies or popups can also stop the Google dialog from completing.</p>
+<p>Still stuck? <a href="mailto:support@ingantt.com">Contact support</a> and tell us your platform, your browser, and the exact message you see.</p>
+<h2 id="video-walkthrough">Video walkthrough <a href="#video-walkthrough" class="heading-anchor">#</a></h2>
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/sFg1a4tl4G4" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h2 id="related">Related <a href="#related" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/en/getting-started/saving/">Saving Your Project</a> — destinations, autosave, and working offline.</li>
+<li><a href="/en/ui/sharing/">Sharing a Project</a> — giving other people access to a plan.</li>
+</ul>
 
     </main>
     <aside class="toc" aria-label="Table of contents"></aside>

@@ -24,6 +24,12 @@ To import a file, click the **+** button on the Projects screen, or use the **Im
 
 > To open non-XML project files, Ingantt sends them through a secure connection to the Ingantt web service for conversion. Your files are not stored on the service. An internet connection is required. YAML files are parsed locally.
 
+### File size
+
+Files we convert on our server are limited to **30 MB**. That covers MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP and PEP. XML and YAML files are parsed inside the app and never uploaded, so the server limit does not apply to them.
+
+**File too large?** In Microsoft Project, use **File → Save As** and choose **Project XML (.xml)**. Ingantt parses XML inside the app, so the 30 MB server limit does not apply, and the export keeps your task structure, dependencies and resources.
+
 ## Exporting Your Project
 
 Ingantt provides multiple export formats through the **Export** option in the **File** menu (or **Download** on web). When you choose **Export**, a dialog appears allowing you to select the desired format:

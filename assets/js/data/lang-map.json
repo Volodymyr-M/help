@@ -10,6 +10,9 @@
     "ja",
     "ko"
   ],
+  "getting-started/install": [
+    "en"
+  ],
   "getting-started/getting-started": [
     "en",
     "de",
@@ -20,6 +23,12 @@
     "uk",
     "ja",
     "ko"
+  ],
+  "getting-started/templates": [
+    "en"
+  ],
+  "getting-started/saving": [
+    "en"
   ],
   "getting-started/create-with-ai": [
     "en",
@@ -98,6 +107,9 @@
     "ja",
     "ko"
   ],
+  "building-schedule/elapsed-durations": [
+    "en"
+  ],
   "building-schedule/dependencies": [
     "en",
     "de",
@@ -174,6 +186,9 @@
     "uk",
     "ja",
     "ko"
+  ],
+  "adjusting-schedule/wbs-codes": [
+    "en"
   ],
   "planning-costs/planning-costs": [
     "en",
@@ -307,6 +322,12 @@
     "ja",
     "ko"
   ],
+  "ui/sharing": [
+    "en"
+  ],
+  "ui/languages": [
+    "en"
+  ],
   "ui/shortcuts": [
     "en",
     "de",
@@ -317,5 +338,20 @@
     "uk",
     "ja",
     "ko"
+  ],
+  "ui/contact-support": [
+    "en"
+  ],
+  "ui/offline-mode": [
+    "en"
+  ],
+  "ui/version-history": [
+    "en"
+  ],
+  "account/trial": [
+    "en"
+  ],
+  "account/subscription": [
+    "en"
   ]
 }

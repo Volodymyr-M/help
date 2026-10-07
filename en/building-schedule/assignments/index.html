@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/en/getting-started/overview/">Overview</a></li>
+    <li><a href="/en/getting-started/install/">Install Ingantt</a></li>
     <li><a href="/en/getting-started/getting-started/">Getting Started</a></li>
+    <li><a href="/en/getting-started/templates/">Project Templates</a></li>
+    <li><a href="/en/getting-started/saving/">Saving Your Project</a></li>
     <li><a href="/en/getting-started/create-with-ai/">Create with AI</a></li>
     <li><a href="/en/getting-started/edit-with-ai/">Edit with AI</a></li>
     <li><a href="/en/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/en/building-schedule/tasks/">Tasks</a></li>
     <li><a href="/en/building-schedule/task-properties/">Task Properties</a></li>
+    <li><a href="/en/building-schedule/elapsed-durations/">Elapsed Durations</a></li>
     <li><a href="/en/building-schedule/dependencies/">Dependencies</a></li>
     <li><a href="/en/building-schedule/constraints/">Constraints</a></li>
     <li><a href="/en/building-schedule/resources/">Resources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/en/adjusting-schedule/critical-path/">Critical Path</a></li>
     <li><a href="/en/adjusting-schedule/leveling/">Resource Leveling</a></li>
     <li><a href="/en/adjusting-schedule/custom-fields/">Custom Fields</a></li>
+    <li><a href="/en/adjusting-schedule/wbs-codes/">WBS Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/en/ui/ui/">Adding and Selecting</a></li>
     <li><a href="/en/ui/files/">Google Drive Integration</a></li>
+    <li><a href="/en/ui/sharing/">Sharing a Project</a></li>
+    <li><a href="/en/ui/languages/">Languages</a></li>
     <li><a href="/en/ui/shortcuts/">Keyboard Shortcuts</a></li>
+    <li><a href="/en/ui/contact-support/">Contacting Support</a></li>
+    <li><a href="/en/ui/offline-mode/">Working Offline</a></li>
+    <li><a href="/en/ui/version-history/">Version History</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account &amp; Billing
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/en/account/trial/">Free Trial</a></li>
+    <li><a href="/en/account/subscription/">Subscriptions and Payment</a></li>
   </ul>
 </div>
 
@@ -240,9 +260,20 @@
 <td><strong>Turtle</strong></td>
 <td>Flatter bell curve — smoother distribution</td>
 </tr>
+<tr>
+<td><strong>Contoured</strong></td>
+<td>Your own per-day distribution. Set automatically when you edit work in a usage view; it cannot be chosen from the dropdown.</td>
+</tr>
 </tbody>
 </table>
 <p>Work contours affect how work is distributed across time periods and are preserved when opening and saving project files.</p>
+<h3 id="the-contoured-contour">The Contoured Contour <a href="#the-contoured-contour" class="heading-anchor">#</a></h3>
+<p><strong>Contoured</strong> is the custom contour, and it behaves differently from the other eight. You cannot pick it from the dropdown on an assignment that does not already have it — the option is disabled. You get it by <strong>editing work directly in a <a href="/en/views/resource-views/">Resource Usage or Task Usage</a> cell</strong>: the moment you type a per-day work value, that assignment's contour becomes <em>Contoured</em> and your typed distribution is what it uses.</p>
+<p>Two consequences are worth knowing:</p>
+<ul>
+<li><strong>Switching away from Contoured discards the hand-entered distribution.</strong> Pick any of the other eight contours and the per-day values you typed are cleared. They are not kept and restored if you switch back.</li>
+<li><strong>Contoured work round-trips through the Microsoft Project format.</strong> Import reads the per-day timephased work into the assignment, and export writes it back out. A plan that arrives from Microsoft Project with a hand-edited contour keeps it.</li>
+</ul>
 <h2 id="assignment-delay">Assignment Delay <a href="#assignment-delay" class="heading-anchor">#</a></h2>
 <p>Each resource assignment on a task has a <strong>Delay</strong> property that offsets when the resource begins work relative to the task start date. For example, if a task starts on Monday and a resource has a 2-day delay, that resource begins work on Wednesday.</p>
 <p>The delay is set in the <strong>Edit Resource Assignment</strong> dialog and only applies to work resource assignments. It can be used to stagger resource start times on a task.</p>
