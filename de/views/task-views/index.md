@@ -2,15 +2,15 @@
 
 Über das Gantt-Diagramm hinaus können Sie Vorgänge auf einem Kanban-Board, einem Monatskalender, einem Netzplandiagramm oder einer Zeitachse anzeigen. Jede Ansicht hebt verschiedene Aspekte Ihres Terminplans hervor.
 
-## Vorgangstafel
+## Aufgabentafel
 
-Die **Vorgangstafel**-Ansicht zeigt Vorgänge als Karten, die in Spalten organisiert sind, die Arbeitsablaufphasen darstellen (Kanban-Stil).
+Die **Aufgabentafel**-Ansicht zeigt Vorgänge als Karten, die in Spalten organisiert sind, die Arbeitsablaufphasen darstellen (Kanban-Stil).
 
 Neue Projekte starten mit drei Standardspalten: „Nicht begonnen“ (0 %), „In Bearbeitung“ (50 %) und „Abgeschlossen“ (100 %). Jede Spalte hat eine Zuordnung zu % Abgeschlossen — wenn Sie eine Karte in eine Spalte ziehen, wird der Fertigstellungsgrad des Vorgangs automatisch aktualisiert.
 
-Sie können Spalten hinzufügen, bearbeiten, umbenennen, neu anordnen und löschen. Jede Spalte hat eine Schaltfläche **Vorgang hinzufügen** am unteren Rand zum direkten Erstellen von Vorgängen in dieser Phase.
+Sie können Spalten hinzufügen, bearbeiten, umbenennen, neu anordnen und löschen. Jede Spalte hat eine Schaltfläche **Aufgabe hinzufügen** am unteren Rand zum direkten Erstellen von Vorgängen in dieser Phase.
 
-Auf der Tafel erscheinen nur aktive Vorgänge, die keine Sammelvorgänge sind und bei denen „Auf Tafel anzeigen“ aktiviert ist. Die Einstellung „Auf Tafel anzeigen“ ist auf dem Reiter **Visuell** des Dialogs **Vorgangseigenschaften** verfügbar.
+Auf der Tafel erscheinen nur aktive Vorgänge, die keine Sammelvorgänge sind und bei denen „Auf Tafel anzeigen“ aktiviert ist. Die Einstellung „Auf Tafel anzeigen“ ist auf dem Reiter **Visuell** des Dialogs **Aufgabeneigenschaften** verfügbar.
 
 > Ziehen Sie Vorgangskarten zwischen Spalten, um ihren Status zu ändern. Wenn sich der % Abgeschlossen-Wert eines Vorgangs anderweitig ändert (über Dialog, Inline-Bearbeitung oder Projekt aktualisieren), verschiebt sich die Karte automatisch in die passende Spalte.
 

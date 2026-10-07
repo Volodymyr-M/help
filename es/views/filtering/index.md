@@ -2,7 +2,7 @@
 
 Enfóquese en lo que importa ocultando las tareas que no necesita ver ahora mismo — trabajo completado, tareas no críticas, o tareas no asignadas a personas específicas.
 
-La opción **Filtro** en el menú **Vista** le permite filtrar qué tareas se muestran en la vista de tareas y el diagrama de Gantt.
+La opción **Filtrar** en el menú **Vista** le permite filtrar qué tareas se muestran en la vista de tareas y el diagrama de Gantt.
 
 Las opciones de filtro incluyen:
 
@@ -12,10 +12,10 @@ Las opciones de filtro incluyen:
 
 Para aplicar un filtro:
 
-1. Elija **Filtro** en el menú **Vista**
+1. Elija **Filtrar** en el menú **Vista**
 2. Marque las opciones de filtro deseadas
 3. Seleccione uno o más recursos por los que filtrar (opcional)
-4. Haga clic en **Aceptar** para aplicar el filtro
+4. Haga clic en **OK** para aplicar el filtro
 
 Cuando un filtro está activo, solo las tareas que coinciden se muestran en la lista de tareas y el diagrama de Gantt. El botón de filtro en la barra de herramientas se resalta cuando cualquier filtro está activo. Use **Borrar todo** en el diálogo de Filtro para restablecer todos los filtros.
 

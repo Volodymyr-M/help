@@ -30,7 +30,7 @@ Beschleunigen Sie Ihre Arbeit mit Tastaturkürzeln für häufige Aktionen wie Be
 | `Tab / Umschalt + Tab`    | Zur nächsten oder vorherigen bearbeitbaren Zelle wechseln. Bestätigt die aktuelle Bearbeitung vor dem Wechsel.                                                               |
 | `R`                    | Zur Ansicht **Ressourcen** wechseln.                                                                                                                     |
 | `C`                    | Zur Ansicht **Kalender** wechseln.                                                                                                                     |
-| `T`                    | Zur Ansicht **Vorgänge** wechseln.                                                                                                                         |
+| `T`                    | Zur Ansicht **Aufgaben** wechseln.                                                                                                                         |
 | `P`                    | Dialog **Projekteigenschaften** anzeigen.                                                                                                           |
 | `I`                    | Gantt-Diagramm vergrößern.                                                                                                                       |
 | `O`                    | Gantt-Diagramm verkleinern.                                                                                                                      |

@@ -27,13 +27,13 @@ La même liste s'applique à toutes les plateformes : Web, Android, iOS, Windows
 
 Ingantt lit le paramètre de langue de votre appareil — sur le web, la langue indiquée par votre navigateur — et l'utilise s'il s'agit de l'une des langues ci-dessus. Il n'y a pas de paramètre de langue dans Ingantt : pour changer la langue de l'interface, changez la langue de votre appareil ou de votre navigateur et rouvrez Ingantt.
 
-Votre langue détermine également quelques valeurs régionales par défaut : si les heures sont affichées au format 12 heures ou 24 heures, quel jour commence la semaine, et avec quel symbole monétaire un nouveau projet démarre. Ce ne sont que des points de départ — **Date/time format** se trouve dans la boîte de dialogue **Options**, et le premier jour de la semaine ainsi que la devise appartiennent au projet et se définissent dans **Project Properties**.
+Votre langue détermine également quelques valeurs régionales par défaut : si les heures sont affichées au format 12 heures ou 24 heures, quel jour commence la semaine, et avec quel symbole monétaire un nouveau projet démarre. Ce ne sont que des points de départ — **Format de date/heure** se trouve dans la boîte de dialogue **Options**, et le premier jour de la semaine ainsi que la devise appartiennent au projet et se définissent dans **Propriétés du projet**.
 
 ## La langue de votre projet
 
 La langue de l'interface et le contenu de votre planning sont indépendants. Quelle que soit la langue des menus d'Ingantt, vous pouvez saisir les noms des tâches, les noms des ressources, les notes et tout autre texte de votre planning dans la langue de votre choix.
 
-La devise et sa position sont définies par projet dans **Project Properties**, et non par la langue de l'interface. Voir [Planification des coûts](/fr/planning-costs/planning-costs/index.md).
+La devise et sa position sont définies par projet dans **Propriétés du projet**, et non par la langue de l'interface. Voir [Planification des coûts](/fr/planning-costs/planning-costs/index.md).
 
 ## Ce centre d'aide
 

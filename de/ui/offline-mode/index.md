@@ -2,7 +2,7 @@
 
 Schalten Sie Autosave aus, damit nichts in Google Drive geschrieben wird, bis Sie bewusst speichern — nützlich, wenn Sie Ihre Verbindung gleich verlieren werden.
 
-In der **Web**-Version heißt der Menüeintrag **Datei → Offline arbeiten (kein Autosave)**. Unter Windows, macOS, Android und iOS heißt derselbe Schalter **Autosave aktivieren**.
+In der **Web**-Version heißt der Menüeintrag **Datei → Offline arbeiten (kein automatisches Speichern)**. Unter Windows, macOS, Android und iOS heißt derselbe Schalter **Automatisches Speichern aktivieren**.
 
 ## Was „Offline arbeiten“ bewirkt
 
@@ -32,18 +32,18 @@ Die Schaltfläche „Speichern“ in der Symbolleiste ist die Anzeige, die Sie i
 
 | Was sie anzeigt | Was es bedeutet |
 |---------------|---------------|
-| **Datei in Google Drive gespeichert** | Alles ist in Drive. |
-| **Autosave ausstehend…** | Es gibt ungespeicherte Änderungen; Autosave übernimmt sie in Kürze. |
-| **Wird gespeichert…** | Ein Speichervorgang läuft. |
-| **Datei in Google Drive speichern** | Es gibt ungespeicherte Änderungen und Autosave ist aus — Sie müssen speichern. |
-| **Fehler beim Speichern der Datei in Google Drive** | Ein Speichervorgang wurde versucht und ist fehlgeschlagen. Ihre Änderungen sind noch im Tab und weiterhin ungespeichert. |
+| **Datei auf Google Drive gespeichert** | Alles ist in Drive. |
+| **Automatisches Speichern ausstehend…** | Es gibt ungespeicherte Änderungen; Autosave übernimmt sie in Kürze. |
+| **Speichern…** | Ein Speichervorgang läuft. |
+| **Datei auf Google Drive speichern** | Es gibt ungespeicherte Änderungen und Autosave ist aus — Sie müssen speichern. |
+| **Fehler beim Speichern auf Google Drive** | Ein Speichervorgang wurde versucht und ist fehlgeschlagen. Ihre Änderungen sind noch im Tab und weiterhin ungespeichert. |
 
 Der Fehlerzustand ist das, was Sie sehen, wenn Autosave läuft, während die Verbindung unterbrochen ist: Das Speichern schlägt fehl, die Schaltfläche wird rot, und das Projekt bleibt ungespeichert im Tab. In diesem Moment ist nichts verloren, aber auch nichts in Sicherheit — stellen Sie die Verbindung wieder her und speichern Sie.
 
 ## Unterschiede zwischen den Plattformen
 
 - **Die Einstellung bleibt im Web nicht erhalten.** Sie gilt pro Tab und pro Sitzung. Öffnen Sie einen neuen Tab oder laden Sie neu, und Autosave ist wieder an. Das ist beabsichtigt — aktiviertes Autosave ist die sicherere Standardeinstellung, sodass ein vergessener Offline-Schalter Sie nicht verfolgen kann. Unter Windows, macOS, Android und iOS *wird* die Autosave-Einstellung gespeichert.
-- **Die Standardwerte unterscheiden sich.** Im Web ist Autosave von Anfang an aktiviert. In den Desktop- und Mobil-Builds ist es von Anfang an deaktiviert, und derselbe Menüeintrag heißt **Autosave aktivieren**.
+- **Die Standardwerte unterscheiden sich.** Im Web ist Autosave von Anfang an aktiviert. In den Desktop- und Mobil-Builds ist es von Anfang an deaktiviert, und derselbe Menüeintrag heißt **Automatisches Speichern aktivieren**.
 - **Ein Projekt, das Sie noch nicht gespeichert haben, wird überhaupt nicht automatisch gespeichert**, Offline-Modus hin oder her. Autosave kann nur eine Datei aktualisieren, die bereits in Drive existiert. Speichern Sie einmal, und Autosave übernimmt.
 - **Eine in der Webversion von Ihrem Gerät geöffnete Datei wird nie automatisch gespeichert.** Ingantt für Web kann nicht in eine Datei auf Ihrer Festplatte zurückschreiben. Speichern Sie sie in [Google Drive](/de/ui/files/index.md), um Autosave zu erhalten.
 

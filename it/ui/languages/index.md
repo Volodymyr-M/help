@@ -27,13 +27,13 @@ Lo stesso elenco vale per tutte le piattaforme: Web, Android, iOS, Windows e mac
 
 Ingantt legge l'impostazione della lingua del tuo dispositivo — sul web, la lingua comunicata dal browser — e la usa se è una delle lingue sopra elencate. Non esiste un'impostazione della lingua all'interno di Ingantt: per cambiare la lingua dell'interfaccia, cambia la lingua del dispositivo o del browser e riapri Ingantt.
 
-La tua lingua determina anche alcune impostazioni regionali predefinite: se gli orari vengono mostrati nel formato a 12 o a 24 ore, con quale giorno inizia la settimana e con quale simbolo di valuta parte un nuovo progetto. Sono solo punti di partenza — **Date/time format** si trova nella finestra **Options**, mentre l'inizio della settimana e la valuta appartengono al progetto e si impostano in **Project Properties**.
+La tua lingua determina anche alcune impostazioni regionali predefinite: se gli orari vengono mostrati nel formato a 12 o a 24 ore, con quale giorno inizia la settimana e con quale simbolo di valuta parte un nuovo progetto. Sono solo punti di partenza — **Formato data/ora** si trova nella finestra **Opzioni**, mentre l'inizio della settimana e la valuta appartengono al progetto e si impostano in **Proprietà del Progetto**.
 
 ## La lingua del tuo progetto
 
 La lingua dell'interfaccia e il contenuto del tuo piano sono indipendenti. Qualunque sia la lingua dei menu di Ingantt, puoi scrivere i nomi delle attività, i nomi delle risorse, le note e qualsiasi altro testo del tuo cronogramma nella lingua che preferisci.
 
-La valuta e la sua posizione si impostano per ogni progetto in **Project Properties**, non in base alla lingua dell'interfaccia. Vedi [Pianificazione dei costi](/it/planning-costs/planning-costs/index.md).
+La valuta e la sua posizione si impostano per ogni progetto in **Proprietà del Progetto**, non in base alla lingua dell'interfaccia. Vedi [Pianificazione dei costi](/it/planning-costs/planning-costs/index.md).
 
 ## Questo centro assistenza
 

@@ -2,18 +2,18 @@
 
 Dos elementos están uno junto al otro en el menú **Ayuda** y hacen cosas distintas.
 
-- **Ayuda → Contactar con soporte** abre un formulario dentro de Ingantt. Puede llevar consigo su archivo de proyecto y nos indica en qué plataforma y compilación está. Es el que debe usar para un problema con un plan.
-- **Ayuda → Enviar correo a soporte** abre su propio cliente de correo con la dirección `support@ingantt.com`. Úselo si la aplicación no arranca o si prefiere escribir desde su propio buzón.
+- **Ayuda → Contactar soporte** abre un formulario dentro de Ingantt. Puede llevar consigo su archivo de proyecto y nos indica en qué plataforma y compilación está. Es el que debe usar para un problema con un plan.
+- **Ayuda → Soporte por correo** abre su propio cliente de correo con la dirección `support@ingantt.com`. Úselo si la aplicación no arranca o si prefiere escribir desde su propio buzón.
 
 ## Enviar un informe desde la aplicación
 
-**Ayuda → Contactar con soporte** muestra:
+**Ayuda → Contactar soporte** muestra:
 
 - **De** — la foto, el nombre y el correo electrónico de su cuenta de Google, rellenados automáticamente y no editables. Debe haber iniciado sesión en Google; de lo contrario, el formulario no se abre.
 - Un cuadro de mensaje: *Describa su problema o comentario*.
-- Una casilla: **Incluir el archivo del proyecto actual**.
+- Una casilla: **Incluir archivo del proyecto actual**.
 
-Pulse **ENVIAR**. Si se envía correctamente, verá *¡Gracias! Le responderemos por correo electrónico.* Si falla, verá *No se pudo enviar el comentario. Inténtelo de nuevo o escríbanos directamente por correo electrónico.* — en cuyo caso use **Enviar correo a soporte** en su lugar.
+Pulse **ENVIAR**. Si se envía correctamente, verá *¡Gracias! Le responderemos por correo electrónico.* Si falla, verá *Error al enviar. Inténtelo de nuevo o envíenos un correo directamente.* — en cuyo caso use **Soporte por correo** en su lugar.
 
 Su informe también incluye la plataforma, la versión del cliente y el idioma que está usando, así que no necesita describir su compilación.
 

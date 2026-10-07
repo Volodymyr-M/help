@@ -4,7 +4,7 @@ Ingantt almacena sus archivos de proyecto en Google Drive para que pueda acceder
 
 ## Iniciar sesión en Google
 
-En la pantalla de Proyectos, haga clic en **Iniciar sesión con Google**. Se abre un diálogo estándar de Google que solicita los permisos indicados a continuación. Puede cerrar la sesión en cualquier momento con **Cerrar sesión de Google**.
+En la pantalla de Proyectos, haga clic en **Iniciar sesión con Google**. Se abre un diálogo estándar de Google que solicita los permisos indicados a continuación. Puede cerrar la sesión en cualquier momento con **Cerrar sesión en Google**.
 
 Ingantt solicita los siguientes permisos:
 
@@ -19,8 +19,8 @@ Ingantt solicita los siguientes permisos:
 Una vez que ha iniciado sesión, la pantalla de Proyectos es su Drive:
 
 - **Proyectos recientes** — los proyectos que abrió más recientemente, agrupados por fecha.
-- **Compartido conmigo** — archivos de Ingantt que otras personas compartieron con usted.
-- **Destacados** — proyectos que marcó con **Agregar a Destacados**.
+- **Compartidos conmigo** — archivos de Ingantt que otras personas compartieron con usted.
+- **Favoritos** — proyectos que marcó con **Añadir a Favoritos**.
 - **Papelera** — proyectos que movió a la Papelera. Use **Restaurar** para recuperar uno.
 
 Use **Abrir** → **Abrir desde Google Drive** para elegir un archivo existente, o la pestaña **Subir** de ese diálogo para buscar un archivo en su dispositivo o arrastrarlo allí. Los archivos de Microsoft Project, Primavera y los demás formatos compatibles se pueden abrir de esta manera — consulte [Importar y exportar](/es/getting-started/import-export/index.md).

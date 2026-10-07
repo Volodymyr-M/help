@@ -223,21 +223,21 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Work</strong></td>
+<td><strong>Travail</strong></td>
 <td>Quelqu'un ou quelque chose qui exécute votre tâche. Il peut s'agir d'une personne, d'une équipe, d'une entreprise sous-traitante ou d'un équipement.</td>
 </tr>
 <tr>
-<td><strong>Material</strong></td>
+<td><strong>Matériel</strong></td>
 <td>Éléments utilisés pour réaliser votre tâche, tels que des matériaux, des ingrédients ou des composants.</td>
 </tr>
 <tr>
-<td><strong>Cost</strong></td>
+<td><strong>Coût</strong></td>
 <td>Coûts pouvant être appliqués à plusieurs tâches, tels que des frais de livraison, des frais de déploiement ou tout coût fixe.</td>
 </tr>
 </tbody>
 </table>
 <p>Seules les ressources de travail, lorsqu'elles sont affectées à des tâches, influencent la planification.</p>
-<p>Tous les types de ressources affectent le calcul des coûts si le champ <strong>Cost</strong> de la ressource est renseigné.</p>
+<p>Tous les types de ressources affectent le calcul des coûts si le champ <strong>Coût</strong> de la ressource est renseigné.</p>
 <h2 id="unités-maximales">Unités maximales <a href="#unités-maximales" class="heading-anchor">#</a></h2>
 <p>Les ressources de travail possèdent une propriété <strong>Max Units</strong> (100 % par défaut) qui représente la capacité disponible de la ressource. Par exemple :</p>
 <ul>
@@ -248,15 +248,15 @@
 <p>Les unités maximales sont utilisées par la <a href="/fr/adjusting-schedule/leveling/#ressources-surutilis%C3%A9es">détection de surutilisation</a> et le <a href="/fr/adjusting-schedule/leveling/#nivellement-automatique">nivellement automatique</a> pour déterminer si une ressource a plus de travail qu'elle ne peut en gérer. Lors de l'affectation d'une ressource de travail à une tâche, les unités d'affectation par défaut correspondent aux unités maximales de la ressource.</p>
 <h2 id="périodes-de-disponibilité-des-ressources">Périodes de disponibilité des ressources <a href="#périodes-de-disponibilité-des-ressources" class="heading-anchor">#</a></h2>
 <p>La disponibilité d'une ressource de travail peut évoluer dans le temps. Par exemple, un membre de l'équipe peut être à temps plein pendant les trois premiers mois, puis passer à temps partiel.</p>
-<p>Dans l'onglet <strong>Availability</strong> de la boîte de dialogue <strong>Resource Properties</strong>, vous pouvez définir plusieurs périodes de disponibilité, chacune avec une plage de dates et un pourcentage de disponibilité. Pour les dates comprises dans une période définie, les unités de la période remplacent les unités maximales de base de la ressource pour les calculs de capacité.</p>
+<p>Dans l'onglet <strong>Disponibilité</strong> de la boîte de dialogue <strong>Propriétés de la ressource</strong>, vous pouvez définir plusieurs périodes de disponibilité, chacune avec une plage de dates et un pourcentage de disponibilité. Pour les dates comprises dans une période définie, les unités de la période remplacent les unités maximales de base de la ressource pour les calculs de capacité.</p>
 <h2 id="ressources-génériques">Ressources génériques <a href="#ressources-génériques" class="heading-anchor">#</a></h2>
-<p>Une ressource peut être marquée comme <strong>Generic</strong> à l'aide de la case à cocher dans la boîte de dialogue <strong>Resource Properties</strong>. Les ressources génériques sont des espaces réservés qui représentent un rôle (par ex., « Développeur », « Designer ») plutôt qu'une personne spécifique. Elles sont utiles lors de la planification initiale lorsque les membres spécifiques de l'équipe ne sont pas encore identifiés.</p>
+<p>Une ressource peut être marquée comme <strong>Générique</strong> à l'aide de la case à cocher dans la boîte de dialogue <strong>Propriétés de la ressource</strong>. Les ressources génériques sont des espaces réservés qui représentent un rôle (par ex., « Développeur », « Designer ») plutôt qu'une personne spécifique. Elles sont utiles lors de la planification initiale lorsque les membres spécifiques de l'équipe ne sont pas encore identifiés.</p>
 <p>Les ressources génériques sont signalées par une icône de badge dans la liste des ressources. L'indicateur générique est purement informatif — il n'affecte ni la planification ni le calcul des coûts.</p>
 <h2 id="type-de-réservation">Type de réservation <a href="#type-de-réservation" class="heading-anchor">#</a></h2>
-<p>Chaque ressource possède un <strong>Booking Type</strong> qui peut être défini sur <strong>Committed</strong> (par défaut) ou <strong>Proposed</strong> dans la boîte de dialogue <strong>Resource Properties</strong>.</p>
+<p>Chaque ressource possède un <strong>Type de réservation</strong> qui peut être défini sur <strong>Confirmé</strong> (par défaut) ou <strong>Proposé</strong> dans la boîte de dialogue <strong>Propriétés de la ressource</strong>.</p>
 <ul>
-<li><strong>Committed</strong> — La ressource est fermement réservée pour le projet.</li>
-<li><strong>Proposed</strong> — La ressource est affectée à titre provisoire à des fins de planification.</li>
+<li><strong>Confirmé</strong> — La ressource est fermement réservée pour le projet.</li>
+<li><strong>Proposé</strong> — La ressource est affectée à titre provisoire à des fins de planification.</li>
 </ul>
 <p>Par défaut, le nivellement automatique exclut les ressources proposées. Vous pouvez les inclure en activant l'option « Level resources with the proposed booking type » dans la boîte de dialogue <a href="/fr/adjusting-schedule/leveling/#options-de-nivellement">Options de nivellement</a>.</p>
 

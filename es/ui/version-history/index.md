@@ -45,7 +45,7 @@ Después de confirmar, el plan restaurado se convierte en el proyecto abierto y 
 
 Es fácil confundirlos:
 
-- El **historial de versiones** es un registro del *archivo* a lo largo del tiempo, mantenido por Google Drive. Responde a "¿cómo era este plan el martes pasado?"
+- El **Historial de versiones** es un registro del *archivo* a lo largo del tiempo, mantenido por Google Drive. Responde a "¿cómo era este plan el martes pasado?"
 - Las **[líneas base](/es/tracking/baselines/index.md)** son instantáneas del *cronograma* almacenadas dentro del plan, con las que se compara en la misma vista — barras de línea base en el diagrama de Gantt, columnas de línea base y variación en la tabla. Responden a "¿cuánto nos hemos desviado del plan aprobado?"
 
 Use el historial de versiones para volver atrás. Use las líneas base para medir.

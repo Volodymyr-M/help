@@ -213,11 +213,11 @@
       <h1 id="intégration-google-drive">Intégration Google Drive <a href="#intégration-google-drive" class="heading-anchor">#</a></h1>
 <p>Ingantt stocke vos fichiers de projet dans Google Drive afin que vous puissiez y accéder depuis n'importe quel appareil. Cet article couvre la connexion, les autorisations demandées par Ingantt, la manière dont Drive et Ingantt fonctionnent ensemble, et ce qu'il faut faire lorsque la connexion Google ne se comporte pas comme prévu.</p>
 <h2 id="se-connecter-à-google">Se connecter à Google <a href="#se-connecter-à-google" class="heading-anchor">#</a></h2>
-<p>Sur l'écran des projets, cliquez sur <strong>Sign in with Google</strong>. Une boîte de dialogue Google standard s'ouvre et demande les autorisations ci-dessous. Vous pouvez vous déconnecter à tout moment avec <strong>Sign out of Google</strong>.</p>
+<p>Sur l'écran des projets, cliquez sur <strong>Se connecter avec Google</strong>. Une boîte de dialogue Google standard s'ouvre et demande les autorisations ci-dessous. Vous pouvez vous déconnecter à tout moment avec <strong>Se déconnecter de Google</strong>.</p>
 <p>Ingantt demande les autorisations suivantes :</p>
 <ul>
 <li><strong>See your profile info</strong> — Utilisé pour identifier votre compte.</li>
-<li><strong>Connect itself to your Google Drive</strong> — Version <strong>Web</strong> uniquement. Vous permet de créer ou d'ouvrir des fichiers Ingantt depuis l'interface web de Google Drive (bouton <strong>New</strong> ou menu <strong>Open with</strong>).</li>
+<li><strong>Connect itself to your Google Drive</strong> — Version <strong>Web</strong> uniquement. Vous permet de créer ou d'ouvrir des fichiers Ingantt depuis l'interface web de Google Drive (bouton <strong>Nouveau</strong> ou menu <strong>Open with</strong>).</li>
 <li><strong>See, edit, create, and delete only the specific Google Drive files you use with this app</strong> — Permet à Ingantt de créer et de modifier ses propres fichiers dans votre Google Drive. Ingantt ne peut pas accéder à vos autres fichiers.</li>
 </ul>
 <blockquote>
@@ -226,27 +226,27 @@
 <h2 id="créer-et-ouvrir-des-projets-dans-google-drive">Créer et ouvrir des projets dans Google Drive <a href="#créer-et-ouvrir-des-projets-dans-google-drive" class="heading-anchor">#</a></h2>
 <p>Une fois connecté, l'écran des projets est votre Drive :</p>
 <ul>
-<li><strong>Recent Projects</strong> — les projets que vous avez ouverts le plus récemment, regroupés par date.</li>
-<li><strong>Shared with me</strong> — les fichiers Ingantt que d'autres personnes ont partagés avec vous.</li>
-<li><strong>Starred</strong> — les projets que vous avez marqués avec <strong>Add to Starred</strong>.</li>
-<li><strong>Trash</strong> — les projets que vous avez placés dans la corbeille. Utilisez <strong>Restore</strong> pour en récupérer un.</li>
+<li><strong>Projets récents</strong> — les projets que vous avez ouverts le plus récemment, regroupés par date.</li>
+<li><strong>Partagés avec moi</strong> — les fichiers Ingantt que d'autres personnes ont partagés avec vous.</li>
+<li><strong>Favoris</strong> — les projets que vous avez marqués avec <strong>Ajouter aux Favoris</strong>.</li>
+<li><strong>Corbeille</strong> — les projets que vous avez placés dans la corbeille. Utilisez <strong>Restaurer</strong> pour en récupérer un.</li>
 </ul>
-<p>Utilisez <strong>Open</strong> → <strong>Open from Google Drive</strong> pour choisir un fichier existant, ou l'onglet <strong>Upload</strong> de cette boîte de dialogue pour rechercher un fichier sur votre appareil ou en glisser un. Les fichiers Microsoft Project, Primavera et les autres formats pris en charge peuvent être ouverts de cette façon — voir <a href="/fr/getting-started/import-export/">Import et export</a>.</p>
-<p>Les nouveaux projets se créent depuis <strong>New</strong> sur l'écran des projets : <strong>New project</strong>, <strong>New with AI</strong> ou <strong>New from template</strong>. Lorsque vous êtes connecté sur le web, un nouveau projet est immédiatement destiné à Google Drive et enregistré automatiquement à partir de ce moment.</p>
+<p>Utilisez <strong>Ouvrir</strong> → <strong>Ouvrir depuis Google Drive</strong> pour choisir un fichier existant, ou l'onglet <strong>Envoyer</strong> de cette boîte de dialogue pour rechercher un fichier sur votre appareil ou en glisser un. Les fichiers Microsoft Project, Primavera et les autres formats pris en charge peuvent être ouverts de cette façon — voir <a href="/fr/getting-started/import-export/">Import et export</a>.</p>
+<p>Les nouveaux projets se créent depuis <strong>Nouveau</strong> sur l'écran des projets : <strong>Nouveau projet</strong>, <strong>Nouveau avec IA</strong> ou <strong>Nouveau depuis modèle</strong>. Lorsque vous êtes connecté sur le web, un nouveau projet est immédiatement destiné à Google Drive et enregistré automatiquement à partir de ce moment.</p>
 <blockquote>
 <p><strong>Un fichier manque dans « Shared with me » ?</strong> Google exige que vous ouvriez d'abord un fichier partagé depuis Google Drive. Faites un clic droit sur le fichier à cet endroit et choisissez <strong>Open with</strong> → <strong>Ingantt</strong>. Il apparaît alors dans la liste.</p>
 </blockquote>
 <h2 id="utiliser-ingantt-depuis-linterface-de-google-drive-web">Utiliser Ingantt depuis l'interface de Google Drive (web) <a href="#utiliser-ingantt-depuis-linterface-de-google-drive-web" class="heading-anchor">#</a></h2>
-<p>Sur le web, Ingantt peut être lancé depuis Drive plutôt que l'inverse. C'est à cela que sert l'autorisation <strong>Connect itself to your Google Drive</strong> : en l'accordant lorsque vous vous connectez à Ingantt, vous enregistrez Ingantt comme application Drive pour votre compte, et il apparaît dans le menu <strong>New</strong> de Drive ainsi que dans le menu <strong>Open with</strong> des fichiers Ingantt. Ajouter Ingantt depuis le <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a> produit le même résultat ; les deux ne sont pas nécessaires.</p>
+<p>Sur le web, Ingantt peut être lancé depuis Drive plutôt que l'inverse. C'est à cela que sert l'autorisation <strong>Connect itself to your Google Drive</strong> : en l'accordant lorsque vous vous connectez à Ingantt, vous enregistrez Ingantt comme application Drive pour votre compte, et il apparaît dans le menu <strong>Nouveau</strong> de Drive ainsi que dans le menu <strong>Open with</strong> des fichiers Ingantt. Ajouter Ingantt depuis le <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a> produit le même résultat ; les deux ne sont pas nécessaires.</p>
 <ul>
-<li><strong>New</strong> → <strong>More</strong> → <strong>Ingantt</strong> crée un nouveau projet Ingantt dans le dossier Drive où vous vous trouvez.</li>
+<li><strong>Nouveau</strong> → <strong>More</strong> → <strong>Ingantt</strong> crée un nouveau projet Ingantt dans le dossier Drive où vous vous trouvez.</li>
 <li>Clic droit sur un fichier Ingantt → <strong>Open with</strong> → <strong>Ingantt</strong> l'ouvre dans Ingantt pour Web.</li>
 </ul>
 <p>Dans les deux cas, Drive ouvre <code>web.ingantt.com</code> et lui transmet le dossier ou le fichier à utiliser, de sorte que vous arrivez directement dans le bon projet.</p>
 <h2 id="résoudre-les-problèmes-de-connexion-à-google-web">Résoudre les problèmes de connexion à Google (web) <a href="#résoudre-les-problèmes-de-connexion-à-google-web" class="heading-anchor">#</a></h2>
 <p><strong>Google Drive ne propose pas Ingantt dans ses menus New ou Open with.</strong> Déconnectez-vous de Google dans Ingantt, reconnectez-vous et assurez-vous d'accorder l'autorisation <strong>Connect itself to your Google Drive</strong> sur l'écran de consentement ; Google n'ajoute les entrées de menu Drive qu'une fois cette autorisation accordée, et il est facile de la sauter. Ajouter Ingantt depuis le Google Workspace Marketplace accorde la même autorisation. Rechargez ensuite Drive. Si vous utilisez un compte Google Workspace de votre entreprise ou de votre école, votre administrateur a peut-être désactivé les applications Drive tierces ou restreint les installations depuis le Marketplace.</p>
 <p><strong>Un fichier que quelqu'un a partagé avec vous n'est pas dans « Shared with me ».</strong> Ouvrez-le une fois depuis Google Drive avec <strong>Open with</strong> → <strong>Ingantt</strong>. Comme Ingantt n'a accès qu'aux fichiers que vous utilisez avec Ingantt, un fichier partagé lui reste invisible tant que vous ne l'avez pas ouvert de cette façon au moins une fois.</p>
-<p><strong>« Error saving file to Google Drive ».</strong> Vérifiez d'abord votre connexion. Si le problème persiste, déconnectez-vous de Google et reconnectez-vous — la connexion a peut-être expiré ou perdu une autorisation.</p>
+<p><strong>« Erreur lors de l'enregistrement sur Google Drive ».</strong> Vérifiez d'abord votre connexion. Si le problème persiste, déconnectez-vous de Google et reconnectez-vous — la connexion a peut-être expiré ou perdu une autorisation.</p>
 <p><strong>« Could not sign in to Google. »</strong> Si vous utilisez plusieurs comptes Google, assurez-vous que la fenêtre contextuelle se connecte avec le compte qui possède vos projets. Les extensions de navigateur qui bloquent les cookies tiers ou les fenêtres contextuelles peuvent également empêcher la boîte de dialogue Google d'aboutir.</p>
 <p>Toujours bloqué ? <a href="mailto:support@ingantt.com">Contactez le support</a> et indiquez-nous votre plateforme, votre navigateur et le message exact que vous voyez.</p>
 <h2 id="vidéo-de-présentation">Vidéo de présentation <a href="#vidéo-de-présentation" class="heading-anchor">#</a></h2>

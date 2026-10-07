@@ -214,23 +214,23 @@
 <p>作業を開始する前にスケジュールのスナップショットを保存し、現在の状態と比較することで、プロジェクトのどこにずれが生じたかを確認できます。</p>
 <p>ベースラインは、ある時点でのすべてのタスクの開始日、終了日、期間、作業量、コストを記録します。</p>
 <h2 id="ベースラインの設定">ベースラインの設定 <a href="#ベースラインの設定" class="heading-anchor">#</a></h2>
-<p><strong>Project</strong>メニューの<strong>Set baseline</strong>サブメニューからベースラインを設定します：</p>
+<p><strong>プロジェクト</strong>メニューの<strong>基準計画を設定</strong>サブメニューからベースラインを設定します：</p>
 <ul>
 <li>すべてのタスクまたは選択したタスクのみにベースラインを設定できます。</li>
 <li>Inganttは最大11のベースラインをサポートしています。</li>
 </ul>
 <h2 id="ベースラインの表示">ベースラインの表示 <a href="#ベースラインの表示" class="heading-anchor">#</a></h2>
-<p>ベースラインが保存されると、<strong>Baselines</strong>ダイアログでベースラインの表示/非表示を切り替えて、ガントチャートで確認できます。ベースラインバーは、現在のタスクバーの下に、ベースライン番号ごとに異なる色の細いバーとして表示されます。</p>
-<p>ベースラインを管理するには、<strong>Project</strong>メニューの<strong>Baselines</strong>項目を使用します。<strong>Baselines</strong>ダイアログでは以下を行えます：</p>
+<p>ベースラインが保存されると、<strong>基準計画</strong>ダイアログでベースラインの表示/非表示を切り替えて、ガントチャートで確認できます。ベースラインバーは、現在のタスクバーの下に、ベースライン番号ごとに異なる色の細いバーとして表示されます。</p>
+<p>ベースラインを管理するには、<strong>プロジェクト</strong>メニューの<strong>基準計画</strong>項目を使用します。<strong>基準計画</strong>ダイアログでは以下を行えます：</p>
 <ul>
 <li>保存されたすべてのベースラインの表示</li>
 <li>不要になったベースラインの削除</li>
 <li><a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88">アーンドバリュー</a>計算に使用するベースラインの指定</li>
 </ul>
 <h2 id="ベースラインと差異の列">ベースラインと差異の列 <a href="#ベースラインと差異の列" class="heading-anchor">#</a></h2>
-<p><strong>Options</strong>ダイアログを通じて、ベースライン列と差異列をタスクリストに追加できます。合計で<strong>55のベースライン列</strong>と<strong>5つの差異列</strong>があります。</p>
+<p><strong>オプション</strong>ダイアログを通じて、ベースライン列と差異列をタスクリストに追加できます。合計で<strong>55のベースライン列</strong>と<strong>5つの差異列</strong>があります。</p>
 <h3 id="55のベースライン列">55のベースライン列 <a href="#55のベースライン列" class="heading-anchor">#</a></h3>
-<p>Inganttは<strong>11のベースライン</strong>を保存します：番号なしの<strong>Baseline</strong>と、<strong>Baseline 1</strong>から<strong>Baseline 10</strong>までです。それぞれに同じ5つのタスク列があります：</p>
+<p>Inganttは<strong>11のベースライン</strong>を保存します：番号なしの<strong>基準計画</strong>と、<strong>基準計画 1</strong>から<strong>基準計画 10</strong>までです。それぞれに同じ5つのタスク列があります：</p>
 <ul>
 <li>Baseline Start</li>
 <li>Baseline Finish</li>
@@ -238,7 +238,7 @@
 <li>Baseline Work</li>
 <li>Baseline Cost</li>
 </ul>
-<p>11ベースライン × 5フィールド = <strong>55のベースライン列</strong>で、すべてタスクテーブルの列選択から利用できます。番号なしのセットは単純な名前（<em>Baseline Start</em>）で、番号付きのセットには番号が付きます（<em>Baseline 3 Start</em>）。</p>
+<p>11ベースライン × 5フィールド = <strong>55のベースライン列</strong>で、すべてタスクテーブルの列選択から利用できます。番号なしのセットは単純な名前（<em>基準計画の開始</em>）で、番号付きのセットには番号が付きます（<em>基準計画 3 開始</em>）。</p>
 <h3 id="5つの差異列">5つの差異列 <a href="#5つの差異列" class="heading-anchor">#</a></h3>
 <p>差異列は計算値（現在のスケジュール − ベースライン）で、次の5つがあります：</p>
 <ul>
@@ -248,14 +248,14 @@
 <li>Work Variance</li>
 <li>Cost Variance</li>
 </ul>
-<p>5つの列は1セットのみで、ベースラインごとにセットがあるわけではありません。差異列は、現在のスケジュールを<strong>1つ</strong>のベースライン、つまり<strong>Project → Earned Value Options</strong>で<a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3">アーンドバリューベースライン</a>として選択されているベースライン（デフォルトは番号なしのBaseline）と比較します。この設定を変更すると、すべての差異列が選択したベースラインに対して再計算されます。選択したベースラインが設定されていないタスクでは、差異はゼロではなく空欄になります。</p>
+<p>5つの列は1セットのみで、ベースラインごとにセットがあるわけではありません。差異列は、現在のスケジュールを<strong>1つ</strong>のベースライン、つまり<strong>プロジェクト → アーンドバリューオプション</strong>で<a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3">アーンドバリューベースライン</a>として選択されているベースライン（デフォルトは番号なしのBaseline）と比較します。この設定を変更すると、すべての差異列が選択したベースラインに対して再計算されます。選択したベースラインが設定されていないタスクでは、差異はゼロではなく空欄になります。</p>
 <h2 id="ベースラインの保存場所">ベースラインの保存場所 <a href="#ベースラインの保存場所" class="heading-anchor">#</a></h2>
 <p>ベースラインは別のファイルではなく、<strong>プロジェクトファイルの内部</strong>に保存されます。プロジェクトを保存すると、そのベースラインも保存されます。</p>
-<p>12個目のベースラインを設定しようとすると、Inganttは<em>All baseline slots are in use. Clear one in the Baselines dialog first.</em>と表示します。<strong>Project → Baselines</strong>を開いて、いずれかをクリアしてください。</p>
+<p>12個目のベースラインを設定しようとすると、Inganttは<em>すべてのベースラインスロットが使用中です。先にベースラインダイアログで1つ削除してください。</em>と表示します。<strong>プロジェクト → 基準計画</strong>を開いて、いずれかをクリアしてください。</p>
 <p>ベースラインは、ファイル自体の経時的な記録である<a href="/ja/ui/version-history/">バージョン履歴</a>とは異なります。以前の計画に戻すにはバージョン履歴を、現在の計画がどれだけずれたかを測定するにはベースラインを使用してください。</p>
 <h2 id="中間計画">中間計画 <a href="#中間計画" class="heading-anchor">#</a></h2>
-<p>中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（<strong>Start</strong>と<strong>Finish</strong>の日付のみ）を保存します。Inganttは最大10の中間計画（<code>Interim Plan 1</code>から<code>Interim Plan 10</code>）をサポートしています。</p>
-<p>中間計画の設定とクリアは、<strong>Project</strong>メニューの<strong>Interim Plans</strong>項目から行います。タスクリストに中間計画の日付を列として表示できます。</p>
+<p>中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（<strong>開始</strong>と<strong>終了</strong>の日付のみ）を保存します。Inganttは最大10の中間計画（<code>Interim Plan 1</code>から<code>Interim Plan 10</code>）をサポートしています。</p>
+<p>中間計画の設定とクリアは、<strong>プロジェクト</strong>メニューの<strong>中間計画</strong>項目から行います。タスクリストに中間計画の日付を列として表示できます。</p>
 
     </main>
     <aside class="toc" aria-label="目次"></aside>

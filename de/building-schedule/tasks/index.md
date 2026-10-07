@@ -1,4 +1,4 @@
-# Vorgänge
+# Aufgaben
 
 Jeder Terminplan beginnt mit Vorgängen. Definieren Sie, was erledigt werden muss, wie lange es dauern wird und wann es fällig ist. Sobald Ihre Vorgänge eingetragen sind, nimmt Ihre Projektzeitleiste im Gantt-Diagramm Gestalt an.
 
@@ -18,7 +18,7 @@ Im Gantt-Diagramm werden Sammelvorgänge als schwarze Balken dargestellt. In der
 
 In Ingantt gibt es immer einen Sammelvorgang für Ihr gesamtes Projekt. Dieser Vorgang hat die Nummer 0 und steht über allen Ihren Vorgängen.
 
-Der Projektsammelvorgang ist möglicherweise standardmäßig nicht sichtbar. Um dies zu ändern, aktivieren Sie **Projektsammelvorgang anzeigen** im Menü **Ansicht** oder im Dialog **Optionen**.
+Der Projektsammelvorgang ist möglicherweise standardmäßig nicht sichtbar. Um dies zu ändern, aktivieren Sie **Root-Zusammenfassungsaufgabe anzeigen** im Menü **Ansicht** oder im Dialog **Optionen**.
 
 Wie jeder andere Sammelvorgang zeigt der Projektsammelvorgang die Gesamtdaten seiner Teilvorgänge an. Da alle Vorgänge in Ihrem Terminplan seine Teilvorgänge sind, zeigt der Projektsammelvorgang die Gesamtdaten Ihres gesamten Projekts an.
 
@@ -30,7 +30,7 @@ Der Name des Projektsammelvorgangs entspricht dem Namen des Projekts.
 
 Standardmäßig werden alle Vorgänge in Ingantt **automatisch geplant** — ihre Start- und Endtermine werden vom Planungsalgorithmus auf Basis von Abhängigkeiten, Einschränkungen und Kalendern berechnet.
 
-Sie können einen Vorgang über das Kontrollkästchen im Dialog **Vorgangseigenschaften** in den Modus **Manuell geplant** umschalten. Wenn ein Vorgang manuell geplant wird:
+Sie können einen Vorgang über das Kontrollkästchen im Dialog **Aufgabeneigenschaften** in den Modus **Manuell geplant** umschalten. Wenn ein Vorgang manuell geplant wird:
 
 - Er wird **nicht vom Planungsalgorithmus beeinflusst** — seine Termine werden von Ihnen festgelegt
 - Sie können **Anfang**- und **Ende**-Termine über die Datumsfelder oder die Datumsauswahl eingeben
@@ -41,11 +41,11 @@ Sie können einen Vorgang über das Kontrollkästchen im Dialog **Vorgangseigens
 
 ## Wiederkehrende Vorgänge
 
-Wiederkehrende Vorgänge stellen Aktivitäten dar, die sich nach einem regelmäßigen Zeitplan wiederholen, wie tägliche Stand-up-Meetings, wöchentliche Reviews oder monatliche Berichte. Sie können wiederkehrende Vorgänge über das Menü **Einfügen** erstellen, indem Sie **Wiederkehrenden Vorgang hinzufügen** wählen.
+Wiederkehrende Vorgänge stellen Aktivitäten dar, die sich nach einem regelmäßigen Zeitplan wiederholen, wie tägliche Stand-up-Meetings, wöchentliche Reviews oder monatliche Berichte. Sie können wiederkehrende Vorgänge über das Menü **Einfügen** erstellen, indem Sie **Serienvorgang hinzufügen** wählen.
 
 Beim Erstellen eines wiederkehrenden Vorgangs legen Sie Folgendes fest:
 
-- **Dauer der Wiederholung** — Die Dauer jeder einzelnen Wiederholung
+- **Dauer des Vorkommens** — Die Dauer jeder einzelnen Wiederholung
 - **Wiederholungsmuster** — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Wiederholungen)
 - **Nur Arbeitstage** — Beschränkt Wiederholungen auf Arbeitstage
 
@@ -62,7 +62,7 @@ Geteilte Vorgänge werden im Gantt-Diagramm als separate Balken mit gepunkteten 
 
 ## Inaktive Vorgänge
 
-Ein Vorgang kann als **inaktiv** markiert werden, indem das Kontrollkästchen **Aktiv** auf dem Reiter **Allgemein** des Dialogs **Vorgangseigenschaften** deaktiviert wird, oder über die Option **Vorgang deaktivieren** im Untermenü **Bearbeiten > Anzeige** oder im Rechtsklick-Kontextmenü.
+Ein Vorgang kann als **inaktiv** markiert werden, indem das Kontrollkästchen **Aktiv** auf dem Reiter **Allgemein** des Dialogs **Aufgabeneigenschaften** deaktiviert wird, oder über die Option **Aufgabe deaktivieren** im Untermenü **Bearbeiten > Anzeige** oder im Rechtsklick-Kontextmenü.
 
 Inaktive Vorgänge sind:
 

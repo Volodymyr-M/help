@@ -213,18 +213,18 @@
       <h1 id="コストの理解">コストの理解 <a href="#コストの理解" class="heading-anchor">#</a></h1>
 <p>タスクとリソースにコストを割り当てると、プロジェクトの総額がわかります。ルートサマリータスクに総合計が表示されるので、予算リソースと比較して、プロジェクトが承認された予算内に収まるかどうかを確認できます。</p>
 <h2 id="タスクコストの計算方法">タスクコストの計算方法 <a href="#タスクコストの計算方法" class="heading-anchor">#</a></h2>
-<p>各タスクのコストは、タスク自体の固定費と割り当てられたリソースのコストの合計です。Inganttは各タスクの総コストを計算し、タスクリストの<strong>Cost</strong>列に表示します。</p>
-<p><em>タスクの<strong>Cost</strong> = タスクの<strong>Fixed Cost</strong> + タスクに割り当てられたリソースのコスト</em></p>
+<p>各タスクのコストは、タスク自体の固定費と割り当てられたリソースのコストの合計です。Inganttは各タスクの総コストを計算し、タスクリストの<strong>コスト</strong>列に表示します。</p>
+<p><em>タスクの<strong>コスト</strong> = タスクの<strong>固定コスト</strong> + タスクに割り当てられたリソースのコスト</em></p>
 <blockquote>
-<p>タスクリストに<strong>Cost</strong>列が表示されない場合は、<strong>Options</strong>ダイアログの<strong>Task Columns</strong>タブで<strong>Cost Column</strong>フラグにチェックが入っていることを確認してください。</p>
+<p>タスクリストに<strong>コスト</strong>列が表示されない場合は、<strong>オプション</strong>ダイアログの<strong>タスクの列</strong>タブで<strong>Cost Column</strong>フラグにチェックが入っていることを確認してください。</p>
 </blockquote>
 <h2 id="サマリータスクのコスト">サマリータスクのコスト <a href="#サマリータスクのコスト" class="heading-anchor">#</a></h2>
-<p>各<a href="/ja/building-schedule/tasks/#%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">サマリータスク</a>は、<strong>Cost</strong>フィールドにすべてのサブタスクの総コストを表示します。</p>
-<p>ただし、通常のタスクと同様に、サマリータスクにも<a href="/ja/building-schedule/assignments/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%81%A8%E5%8D%98%E4%BD%8D">割り当てリソース</a>と<strong>Fixed Cost</strong>を設定できます。これらはサブタスクの総コストに加算され、サマリータスクの<strong>Cost</strong>を増加させます。</p>
-<p><em>サマリータスクの<strong>Cost</strong> = すべてのサブタスクの総コスト + サマリータスクの<strong>Fixed Cost</strong> + サマリータスクに割り当てられたリソースのコスト</em></p>
+<p>各<a href="/ja/building-schedule/tasks/#%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">サマリータスク</a>は、<strong>コスト</strong>フィールドにすべてのサブタスクの総コストを表示します。</p>
+<p>ただし、通常のタスクと同様に、サマリータスクにも<a href="/ja/building-schedule/assignments/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E5%89%B2%E3%82%8A%E5%BD%93%E3%81%A6%E3%81%A8%E5%8D%98%E4%BD%8D">割り当てリソース</a>と<strong>固定コスト</strong>を設定できます。これらはサブタスクの総コストに加算され、サマリータスクの<strong>コスト</strong>を増加させます。</p>
+<p><em>サマリータスクの<strong>コスト</strong> = すべてのサブタスクの総コスト + サマリータスクの<strong>固定コスト</strong> + サマリータスクに割り当てられたリソースのコスト</em></p>
 <p><a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>を使用して、プロジェクト全体の総コストを確認・管理できます。</p>
 <h2 id="予算リソース">予算リソース <a href="#予算リソース" class="heading-anchor">#</a></h2>
-<p><strong>Resource Properties</strong>ダイアログで、リソースを<strong>Budget</strong>リソースとしてマークできます。予算リソースはプロジェクトレベルで配分された予算総額を表し、<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>にのみ割り当てることができます。</p>
+<p><strong>リソースのプロパティ</strong>ダイアログで、リソースを<strong>予算</strong>リソースとしてマークできます。予算リソースはプロジェクトレベルで配分された予算総額を表し、<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>にのみ割り当てることができます。</p>
 <p>予算リソースは以下から除外されます：</p>
 <ul>
 <li>スケジューリング</li>
@@ -234,8 +234,8 @@
 </ul>
 <p>予算リソースは、ボトムアップのコスト計算とは別の、トップダウンの予算管理を提供します。</p>
 <h2 id="通貨">通貨 <a href="#通貨" class="heading-anchor">#</a></h2>
-<p>プロジェクトがInganttのデフォルトとは異なる通貨を使用する場合、<strong>Project Properties</strong>ダイアログの<strong>Regional</strong>タブで変更できます。通貨は記号（例：€）、略称（EUR）、または正式名称（ユーロ）で指定します。</p>
-<p>同じタブで、<strong>Currency Position</strong>（値の前または後、スペースの有無）も指定できます。</p>
+<p>プロジェクトがInganttのデフォルトとは異なる通貨を使用する場合、<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>地域</strong>タブで変更できます。通貨は記号（例：€）、略称（EUR）、または正式名称（ユーロ）で指定します。</p>
+<p>同じタブで、<strong>通貨の位置</strong>（値の前または後、スペースの有無）も指定できます。</p>
 <blockquote>
 <p>通貨を変更しても、コスト値は再計算されません。</p>
 </blockquote>

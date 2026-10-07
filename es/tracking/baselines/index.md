@@ -47,13 +47,13 @@ Las columnas de variación se calculan — cronograma actual menos línea base �
 - Variación de trabajo
 - Variación de costo
 
-Hay un solo conjunto de cinco, no un conjunto por línea base. Comparan el cronograma actual con **una** línea base — la que esté seleccionada como [línea base de valor ganado](/es/tracking/earned-value/index.md#línea-base-de-valor-ganado) en **Proyecto → Opciones de Valor Ganado**, que de forma predeterminada es la Línea base sin número. Cambie esa configuración y todas las columnas de variación se recalculan respecto a la línea base que eligió. Una tarea cuya línea base elegida nunca se estableció muestra una variación vacía en lugar de un cero.
+Hay un solo conjunto de cinco, no un conjunto por línea base. Comparan el cronograma actual con **una** línea base — la que esté seleccionada como [línea base de valor ganado](/es/tracking/earned-value/index.md#línea-base-de-valor-ganado) en **Proyecto → Opciones de valor acumulado**, que de forma predeterminada es la Línea base sin número. Cambie esa configuración y todas las columnas de variación se recalculan respecto a la línea base que eligió. Una tarea cuya línea base elegida nunca se estableció muestra una variación vacía en lugar de un cero.
 
 ## Dónde se almacenan las líneas base
 
 Las líneas base se almacenan **dentro del archivo de proyecto**, no en un archivo aparte. Al guardar el proyecto se guardan sus líneas base.
 
-Si intenta establecer una duodécima línea base, Ingantt le indica *Todas las ranuras de línea base están en uso. Borre una primero en el diálogo Líneas base.* Abra **Proyecto → Líneas base** y borre una.
+Si intenta establecer una duodécima línea base, Ingantt le indica *Todas las líneas base están en uso. Primero elimine una en el diálogo de líneas base.* Abra **Proyecto → Líneas base** y borre una.
 
 Las líneas base no son lo mismo que el [historial de versiones](/es/ui/version-history/index.md), que registra el archivo en sí a lo largo del tiempo. Use el historial de versiones para volver a un plan anterior; use las líneas base para medir cuánto se ha desviado el plan actual.
 
@@ -61,4 +61,4 @@ Las líneas base no son lo mismo que el [historial de versiones](/es/ui/version-
 
 Los planes provisionales almacenan instantáneas ligeras del cronograma (solo fechas de **Inicio** y **Fin**) para una comparación rápida sin la carga de las líneas base completas. Ingantt admite hasta 10 planes provisionales (`Plan provisional 1` a `Plan provisional 10`).
 
-Establezca y borre planes provisionales desde el elemento **Planes provisionales** en el menú **Proyecto**. Puede mostrar las fechas de los planes provisionales como columnas en la lista de tareas.
+Establezca y borre planes provisionales desde el elemento **Planes intermedios** en el menú **Proyecto**. Puede mostrar las fechas de los planes provisionales como columnas en la lista de tareas.

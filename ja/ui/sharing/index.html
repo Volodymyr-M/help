@@ -215,14 +215,14 @@
 <h2 id="はじめる前に">はじめる前に <a href="#はじめる前に" class="heading-anchor">#</a></h2>
 <p>共有はGoogle Driveのファイルでのみ機能します。Googleにサインインし、プロジェクトをDriveに保存している必要があります。デバイス上のローカルファイルにあるプロジェクトには共有するものがありません。<a href="/ja/getting-started/saving/">プロジェクトの保存</a>をご覧ください。</p>
 <blockquote>
-<p><strong>Share</strong>ボタンはIngantt for Webの機能です。Android、iOS、Windows、macOSでは、代わりにGoogle Driveからファイルを共有してください。Driveを開き、Inganttファイルを見つけて、Drive自体の<strong>Share</strong>コマンドを使用します。権限はいずれの場合もDriveファイル上に存在するため、結果は同じです。</p>
+<p><strong>共有</strong>ボタンはIngantt for Webの機能です。Android、iOS、Windows、macOSでは、代わりにGoogle Driveからファイルを共有してください。Driveを開き、Inganttファイルを見つけて、Drive自体の<strong>共有</strong>コマンドを使用します。権限はいずれの場合もDriveファイル上に存在するため、結果は同じです。</p>
 </blockquote>
 <h2 id="特定の人との共有">特定の人との共有 <a href="#特定の人との共有" class="heading-anchor">#</a></h2>
 <ol>
-<li>プロジェクトを開き、ヘッダーの<strong>Share</strong>をクリックするか、<strong>File</strong>メニューの<strong>Share</strong>を選択します。<strong>Share on Google Drive</strong>ダイアログが開きます。</li>
-<li><strong>People with access</strong>の下に、すでにアクセス権を持つ全員が、オーナーを先頭に表示されます。</li>
-<li><strong>Add</strong>をクリックし、相手のメールアドレスを入力し、付与する役割を選択して確定します。</li>
-<li>ダイアログを閉じます。Inganttは新しい権限をDriveに保存し、<em>Access updated</em>と確認表示します。</li>
+<li>プロジェクトを開き、ヘッダーの<strong>共有</strong>をクリックするか、<strong>ファイル</strong>メニューの<strong>共有</strong>を選択します。<strong>Googleドライブで共有</strong>ダイアログが開きます。</li>
+<li><strong>アクセス権のある人</strong>の下に、すでにアクセス権を持つ全員が、オーナーを先頭に表示されます。</li>
+<li><strong>追加</strong>をクリックし、相手のメールアドレスを入力し、付与する役割を選択して確定します。</li>
+<li>ダイアログを閉じます。Inganttは新しい権限をDriveに保存し、<em>アクセスが更新されました</em>と確認表示します。</li>
 </ol>
 <p>役割はGoogle Driveの役割です：</p>
 <table>
@@ -234,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Viewer</strong></td>
+<td><strong>閲覧者</strong></td>
 <td>プロジェクトを開いて閲覧できます。変更の保存はできません。</td>
 </tr>
 <tr>
-<td><strong>Commenter</strong></td>
+<td><strong>コメント投稿者</strong></td>
 <td>Viewerと同じに加え、Google Driveでファイルにコメントできます。変更の保存はできません。</td>
 </tr>
 <tr>
-<td><strong>Editor</strong></td>
+<td><strong>編集者</strong></td>
 <td>プロジェクトを開き、変更を保存できます。</td>
 </tr>
 <tr>
-<td><strong>Owner</strong></td>
+<td><strong>所有者</strong></td>
 <td>ファイルの削除とオーナー権限の移行を含む、すべての操作。</td>
 </tr>
 </tbody>
@@ -256,21 +256,21 @@
 <p>相手が実際にGoogleにサインインできるアドレスを入力してください。アドレスがGmailまたはGoogle Workspaceのものであることを確認できない場合、Inganttは警告します。Googleアカウントのないアドレスに対するDrive共有では、相手はプロジェクトを開けないためです。</p>
 </blockquote>
 <h2 id="一般的なアクセス-リンクと組織">一般的なアクセス — リンクと組織 <a href="#一般的なアクセス-リンクと組織" class="heading-anchor">#</a></h2>
-<p><strong>General access</strong>は、個別に指定していない全員を制御します：</p>
+<p><strong>一般アクセス</strong>は、個別に指定していない全員を制御します：</p>
 <ul>
-<li><strong>Restricted</strong> — <strong>People with access</strong>に一覧表示されている人のみ。これがデフォルトです。</li>
-<li><strong>Anyone with the link</strong> — リンクを知っている人なら誰でも。役割（Viewer、Commenter、またはEditor）を選択します。</li>
-<li><strong>Domain</strong> — Google Workspace組織の全員。役割を選択します。このオプションは、プロジェクトのオーナーがWorkspaceドメインに属している場合にのみ表示され、個人のGmailアカウントでは提供されません。</li>
+<li><strong>制限付き</strong> — <strong>アクセス権のある人</strong>に一覧表示されている人のみ。これがデフォルトです。</li>
+<li><strong>リンクを持っている人は誰でも</strong> — リンクを知っている人なら誰でも。役割（Viewer、Commenter、またはEditor）を選択します。</li>
+<li><strong>ドメイン</strong> — Google Workspace組織の全員。役割を選択します。このオプションは、プロジェクトのオーナーがWorkspaceドメインに属している場合にのみ表示され、個人のGmailアカウントでは提供されません。</li>
 </ul>
-<p><strong>Copy link</strong>は、プロジェクトへのGoogle Driveリンクをコピーします。アクセス権が許す人なら誰でも、そのリンクを開いてInganttで計画を編集できます。</p>
-<p><strong>Share</strong>ボタンのツールチップで現在の状態が一目でわかります。<em>Private — only you can access</em>、<em>Shared with specific people</em>、<em>Anyone with the link can view/comment/edit</em>、またはドメインに対する同等の表示です。</p>
+<p><strong>リンクをコピー</strong>は、プロジェクトへのGoogle Driveリンクをコピーします。アクセス権が許す人なら誰でも、そのリンクを開いてInganttで計画を編集できます。</p>
+<p><strong>共有</strong>ボタンのツールチップで現在の状態が一目でわかります。<em>Private — only you can access</em>、<em>特定のユーザーと共有</em>、<em>Anyone with the link can view/comment/edit</em>、またはドメインに対する同等の表示です。</p>
 <h2 id="アクセス権を変更できる人">アクセス権を変更できる人 <a href="#アクセス権を変更できる人" class="heading-anchor">#</a></h2>
 <p>ファイルの<strong>オーナー</strong>だけが、常にアクセス権を管理できます。<strong>編集者</strong>もアクセス権を管理できますが、オーナーがGoogle Driveでそれをオフにしている場合は除きます。</p>
-<p>閲覧者またはコメント投稿者として共有されたプロジェクトでダイアログを開くと、<strong>You are a viewer and cannot manage access</strong>と表示され、現在の一般的なアクセスは表示されますが変更はできません。さらに権限が必要な場合はオーナーに依頼してください。</p>
+<p>閲覧者またはコメント投稿者として共有されたプロジェクトでダイアログを開くと、<strong>閲覧者のみでアクセスを管理できません</strong>と表示され、現在の一般的なアクセスは表示されますが変更はできません。さらに権限が必要な場合はオーナーに依頼してください。</p>
 <h2 id="共有プロジェクトでの作業">共有プロジェクトでの作業 <a href="#共有プロジェクトでの作業" class="heading-anchor">#</a></h2>
 <ul>
 <li>全員が同じDriveファイルを開きますが、Inganttはリアルタイム共同編集ツールではありません。保存のたびにプロジェクトファイル全体が書き込まれるため、2人が計画を開いて両方が保存すると、最後の保存が優先され、もう一方の変更は置き換えられます。開始前に誰が編集するかを決め、何かが失われたと思われる場合はGoogle Driveでファイルのバージョン履歴を確認してください。</li>
-<li>閲覧者またはコメント投稿者が保存しようとすると、<strong>You are a viewer and cannot save</strong>と表示されます。代わりに<strong>Save file as</strong>を使用して個人用のコピーを保存してください。</li>
+<li>閲覧者またはコメント投稿者が保存しようとすると、<strong>閲覧者のみで保存できません</strong>と表示されます。代わりに<strong>ファイルを保存</strong>を使用して個人用のコピーを保存してください。</li>
 <li>編集するには、各共同作業者に有効なInganttのサブスクリプションまたはトライアルが必要です。計画を共有してもサブスクリプションは共有されません。<a href="/ja/account/subscription/">サブスクリプションと支払い</a>をご覧ください。</li>
 <li>Google<strong>グループ</strong>のアドレスへの共有は、InganttのShareダイアログではサポートされていません。個別のアドレスと共有するか、Google Driveからグループ共有を管理してください。</li>
 </ul>

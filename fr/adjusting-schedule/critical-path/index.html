@@ -217,20 +217,20 @@
 <p>D'autres tâches ont une marge nulle — tout retard décale la date de fin du projet. Ce sont les <em>tâches critiques</em>. Pour maintenir votre projet dans les délais, accordez-leur une attention particulière lors du suivi de l'avancement.</p>
 <p>Une tâche est également critique si :</p>
 <ul>
-<li>Elle possède une <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> <strong>Must start on</strong> ou <strong>Must finish on</strong></li>
-<li>Elle possède une <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> <strong>As late as possible</strong> dans un projet planifié à partir de la date de début</li>
+<li>Elle possède une <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> <strong>Doit commencer le</strong> ou <strong>Doit finir le</strong></li>
+<li>Elle possède une <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> <strong>Le plus tard possible</strong> dans un projet planifié à partir de la date de début</li>
 <li>Sa date de fin atteint ou dépasse son <a href="/fr/building-schedule/task-properties/#%C3%A9ch%C3%A9ance">échéance</a></li>
 <li>Elle a une <strong>marge négative</strong> — un conflit de planification où les contraintes forcent la tâche à commencer avant ce que ses dépendances permettent</li>
 </ul>
 <p>Les tâches achevées à 100 % ne sont jamais marquées comme critiques, quelles que soient les autres conditions.</p>
-<p>Ingantt détecte automatiquement les tâches critiques. Si l'option <strong>Highlight critical tasks</strong> est activée (via le menu <strong>View</strong>, le menu <strong>Chart</strong> dans la barre de menus, ou la boîte de dialogue <strong>Options</strong>), ces tâches sont affichées en rouge.</p>
-<p>Les tâches avec une marge négative affichent également une icône d'avertissement dans la liste des tâches, signalant un conflit de planification. Cela se produit généralement lorsqu'une contrainte <strong>Start no later than</strong> ou <strong>Finish no later than</strong> entre en conflit avec les dépendances de la tâche.</p>
+<p>Ingantt détecte automatiquement les tâches critiques. Si l'option <strong>Mettre en évidence les tâches critiques</strong> est activée (via le menu <strong>Vue</strong>, le menu <strong>Graphique</strong> dans la barre de menus, ou la boîte de dialogue <strong>Options</strong>), ces tâches sont affichées en rouge.</p>
+<p>Les tâches avec une marge négative affichent également une icône d'avertissement dans la liste des tâches, signalant un conflit de planification. Cela se produit généralement lorsqu'une contrainte <strong>Début pas après</strong> ou <strong>Fin pas après</strong> entre en conflit avec les dépendances de la tâche.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="Critical" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="options-du-chemin-critique">Options du chemin critique <a href="#options-du-chemin-critique" class="heading-anchor">#</a></h2>
-<p>Dans l'onglet <strong>Other</strong> de la boîte de dialogue <strong>Project Properties</strong>, vous pouvez configurer le mode de calcul du chemin critique :</p>
+<p>Dans l'onglet <strong>Autre</strong> de la boîte de dialogue <strong>Propriétés du projet</strong>, vous pouvez configurer le mode de calcul du chemin critique :</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — Lorsque cette option est activée, chaque groupe déconnecté de tâches liées possède son propre chemin critique. Lorsqu'elle est désactivée (par défaut), les tâches sans successeur utilisent la date de fin du projet comme date de fin au plus tard.</li>
-<li><strong>Critical slack limit</strong> — Par défaut, les tâches avec une marge nulle ou négative sont critiques. Vous pouvez augmenter ce seuil afin que les tâches dont la marge ne dépasse pas le nombre de jours spécifié soient également considérées comme critiques.</li>
+<li><strong>Calculer les chemins critiques multiples</strong> — Lorsque cette option est activée, chaque groupe déconnecté de tâches liées possède son propre chemin critique. Lorsqu'elle est désactivée (par défaut), les tâches sans successeur utilisent la date de fin du projet comme date de fin au plus tard.</li>
+<li><strong>Les tâches sont critiques si la marge est inférieure ou égale à</strong> — Par défaut, les tâches avec une marge nulle ou négative sont critiques. Vous pouvez augmenter ce seuil afin que les tâches dont la marge ne dépasse pas le nombre de jours spécifié soient également considérées comme critiques.</li>
 </ul>
 
     </main>

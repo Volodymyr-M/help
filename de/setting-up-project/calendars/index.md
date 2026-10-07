@@ -21,7 +21,7 @@ Wenn einem Vorgang mehrere Arbeitsressourcen zugewiesen sind, wird die **Schnitt
 
 ## Vorgangskalender
 
-Jeder Vorgang hat eine **Kalender**-Eigenschaft im Dialog **Vorgangseigenschaften**, die standardmäßig auf **KEINE** gesetzt ist. Wenn auf **KEINE** gesetzt:
+Jeder Vorgang hat eine **Kalender**-Eigenschaft im Dialog **Aufgabeneigenschaften**, die standardmäßig auf **KEINE** gesetzt ist. Wenn auf **KEINE** gesetzt:
 
 - Wenn einem Vorgang keine Arbeitsressourcen zugewiesen sind, wird der Vorgang gemäß dem Projektkalender geplant.
 - Wenn einem Vorgang Arbeitsressourcen zugewiesen sind, wird der Vorgang gemäß deren Kalendern geplant.

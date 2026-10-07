@@ -42,7 +42,7 @@ Hay siete tipos de gráficos disponibles:
 | **Unidades pico** | Porcentaje de capacidad del recurso utilizado por período (predeterminado) |
 | **Trabajo** | Horas de trabajo por período |
 | **Sobreasignación** | Solo las horas excedentes más allá de la capacidad |
-| **Porcentaje de asignación** | Igual que Unidades pico con visualización de porcentaje |
+| **Asignación porcentual** | Igual que Unidades pico con visualización de porcentaje |
 | **Disponibilidad restante** | Capacidad no utilizada en horas |
 | **Disponibilidad de trabajo** | Capacidad total del calendario en horas |
 | **Disponibilidad de unidades** | Porcentaje de unidades máximas efectivas |

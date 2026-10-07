@@ -214,9 +214,9 @@
 <p>Certaines tâches doivent commencer ou se terminer à des dates précises — une livraison arrive mardi, un permis expire vendredi. Les contraintes vous permettent de verrouiller les dates là où c'est nécessaire tout en gardant le reste du planning flexible.</p>
 <h2 id="fonctionnement-des-contraintes">Fonctionnement des contraintes <a href="#fonctionnement-des-contraintes" class="heading-anchor">#</a></h2>
 <p>Conjointement avec les dépendances entre tâches (liens de prédécesseurs), la contrainte d'une tâche définit comment celle-ci est planifiée.</p>
-<p>Les contraintes sont définies dans l'onglet <strong>Advanced</strong> de la boîte de dialogue <strong>Task Properties</strong>. La contrainte par défaut est <strong>As soon as possible</strong>. Cela signifie que la tâche est placée aussi près que possible de la date de début du projet, en tenant compte des dépendances avec les autres tâches. Pour les projets planifiés à partir de la date de fin, la contrainte par défaut est <strong>As late as possible</strong>.</p>
-<p>Il existe deux contraintes qui forcent la tâche à commencer ou à se terminer à la date spécifiée, indépendamment des dépendances. Ces contraintes sont appelées <em>contraintes strictes</em> et sont <strong>Must start on</strong> et <strong>Must finish on</strong>. N'utilisez ces contraintes que si vous êtes certain qu'elles sont nécessaires.</p>
-<p>Les autres contraintes (<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong> et <strong>Finish no later than</strong>) sont dites <em>flexibles</em>, car elles respectent les dépendances entre tâches. Si les dépendances repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut.</p>
+<p>Les contraintes sont définies dans l'onglet <strong>Avancé</strong> de la boîte de dialogue <strong>Propriétés de la tâche</strong>. La contrainte par défaut est <strong>Dès que possible</strong>. Cela signifie que la tâche est placée aussi près que possible de la date de début du projet, en tenant compte des dépendances avec les autres tâches. Pour les projets planifiés à partir de la date de fin, la contrainte par défaut est <strong>Le plus tard possible</strong>.</p>
+<p>Il existe deux contraintes qui forcent la tâche à commencer ou à se terminer à la date spécifiée, indépendamment des dépendances. Ces contraintes sont appelées <em>contraintes strictes</em> et sont <strong>Doit commencer le</strong> et <strong>Doit finir le</strong>. N'utilisez ces contraintes que si vous êtes certain qu'elles sont nécessaires.</p>
+<p>Les autres contraintes (<strong>Début pas avant</strong>, <strong>Début pas après</strong>, <strong>Fin pas avant</strong> et <strong>Fin pas après</strong>) sont dites <em>flexibles</em>, car elles respectent les dépendances entre tâches. Si les dépendances repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut.</p>
 <table>
 <thead>
 <tr>
@@ -226,42 +226,42 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>As soon as possible</strong></td>
+<td><strong>Dès que possible</strong></td>
 <td>La tâche est planifiée dès que les prédécesseurs le permettent. Si aucun prédécesseur n'est lié, la tâche commence au début de sa tâche récapitulative parente.</td>
 </tr>
 <tr>
-<td><strong>As late as possible</strong></td>
+<td><strong>Le plus tard possible</strong></td>
 <td>La tâche est planifiée aussi tard que les prédécesseurs le permettent. Si aucun prédécesseur n'est lié, la tâche se termine à la fin de sa tâche récapitulative parente.</td>
 </tr>
 <tr>
-<td><strong>Start no earlier than</strong></td>
+<td><strong>Début pas avant</strong></td>
 <td>Si la tâche commence plus tard que la date spécifiée en raison des prédécesseurs, rien ne change. Sinon, la tâche est planifiée pour commencer à la date spécifiée.</td>
 </tr>
 <tr>
-<td><strong>Start no later than</strong></td>
+<td><strong>Début pas après</strong></td>
 <td>Si les prédécesseurs repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut. Sinon, la tâche est planifiée pour commencer au plus tard à la date spécifiée.</td>
 </tr>
 <tr>
-<td><strong>Finish no earlier than</strong></td>
+<td><strong>Fin pas avant</strong></td>
 <td>Si la tâche se termine plus tard que la date spécifiée en raison des prédécesseurs, rien ne change. Sinon, la tâche est planifiée pour se terminer à la date spécifiée.</td>
 </tr>
 <tr>
-<td><strong>Finish no later than</strong></td>
+<td><strong>Fin pas après</strong></td>
 <td>Si les prédécesseurs repoussent la tâche au-delà de la date de contrainte, la date imposée par la dépendance prévaut. Sinon, la tâche est planifiée pour se terminer au plus tard à la date spécifiée.</td>
 </tr>
 <tr>
-<td><strong>Must start on</strong></td>
+<td><strong>Doit commencer le</strong></td>
 <td>La date de début de la tâche est planifiée exactement comme spécifié, indépendamment des prédécesseurs.</td>
 </tr>
 <tr>
-<td><strong>Must finish on</strong></td>
+<td><strong>Doit finir le</strong></td>
 <td>La date de fin de la tâche est planifiée exactement comme spécifié, indépendamment des prédécesseurs.</td>
 </tr>
 </tbody>
 </table>
 <p>Les tâches avec une contrainte flexible ou stricte affichent une icône spéciale dans la liste des tâches.</p>
 <blockquote>
-<p>Conservez la plupart des tâches avec la contrainte <strong>As soon as possible</strong> et n'utilisez les contraintes flexibles que pour les tâches qui doivent commencer ou se terminer à proximité d'une date précise.</p>
+<p>Conservez la plupart des tâches avec la contrainte <strong>Dès que possible</strong> et n'utilisez les contraintes flexibles que pour les tâches qui doivent commencer ou se terminer à proximité d'une date précise.</p>
 </blockquote>
 
     </main>

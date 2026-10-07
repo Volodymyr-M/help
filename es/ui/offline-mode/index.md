@@ -2,7 +2,7 @@
 
 Desactive el guardado automático para que no se escriba nada en Google Drive hasta que guarde deliberadamente — útil cuando está a punto de perder la conexión.
 
-En la versión **Web**, el elemento de menú es **Archivo → Trabajar sin conexión (sin guardado automático)**. En Windows, macOS, Android e iOS, el mismo interruptor se llama **Habilitar guardado automático**.
+En la versión **Web**, el elemento de menú es **Archivo → Trabajar sin conexión (sin autoguardado)**. En Windows, macOS, Android e iOS, el mismo interruptor se llama **Habilitar guardado automático**.
 
 ## Qué hace Trabajar sin conexión
 

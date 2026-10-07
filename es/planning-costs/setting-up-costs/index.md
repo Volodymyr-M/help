@@ -4,7 +4,7 @@ Establezca costos fijos en las tareas y tasas en los recursos. Ingantt los usa j
 
 ## Costo fijo de la tarea
 
-Puede establecer un costo para la tarea independientemente de sus recursos completando el campo **Costo fijo** en la pestaña **Costo y VG** del diálogo **Propiedades de la tarea**. Por ejemplo, use esto cuando alguien ya haya proporcionado una estimación de costo total para la tarea, o cuando la tarea tiene un costo adicional más allá de los costos de sus recursos.
+Puede establecer un costo para la tarea independientemente de sus recursos completando el campo **Costo fijo** en la pestaña **Costo y VA** del diálogo **Propiedades de la tarea**. Por ejemplo, use esto cuando alguien ya haya proporcionado una estimación de costo total para la tarea, o cuando la tarea tiene un costo adicional más allá de los costos de sus recursos.
 
 > Si necesita asignar el mismo costo fijo a múltiples tareas, considere crear un recurso de costo y asignarlo a esas tareas. Si el costo cambia en el futuro, solo necesita actualizarlo en un lugar.
 
@@ -53,7 +53,7 @@ La configuración de **Acumulación de costos** controla cuándo los costos se r
 | Acumulación | Cuándo se reconocen los costos |
 |---------|--------------------------|
 | **Inicio** | Costo completo tan pronto como se registra cualquier progreso (% completado > 0%) |
-| **Prorrateado** | Proporcional al porcentaje completado (por ejemplo, 50% completado = 50% del costo) |
+| **Prorrateo** | Proporcional al porcentaje completado (por ejemplo, 50% completado = 50% del costo) |
 | **Fin** | Costo completo solo cuando la tarea alcanza el 100% de completado |
 
-Los recursos tienen una configuración de **Acumulación de costos** en la pestaña **Costos** del diálogo **Propiedades del recurso**. Las tareas tienen una configuración de **Acumulación de costo fijo** en la pestaña **Costo y VG** del diálogo **Propiedades de la tarea**. El proyecto tiene una configuración de **Acumulación de costo fijo predeterminada** en la pestaña **Otros** del diálogo **Propiedades del proyecto**.
+Los recursos tienen una configuración de **Acumulación de costos** en la pestaña **Costos** del diálogo **Propiedades del recurso**. Las tareas tienen una configuración de **Acumulación de costo fijo** en la pestaña **Costo y VA** del diálogo **Propiedades de la tarea**. El proyecto tiene una configuración de **Acumulación de costo fijo predeterminada** en la pestaña **Otros** del diálogo **Propiedades del proyecto**.

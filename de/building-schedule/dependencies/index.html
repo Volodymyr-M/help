@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/" class="active" aria-current="page">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -213,7 +213,7 @@
       <h1 id="abhängigkeiten">Abhängigkeiten <a href="#abhängigkeiten" class="heading-anchor">#</a></h1>
 <p>Reale Projekte haben eine Reihenfolge — Sie können nicht testen, bevor Sie bauen. Verknüpfen Sie Vorgänge miteinander, damit Ingantt die richtige Abfolge berechnet und alles automatisch verschiebt, wenn sich ein Vorgang ändert.</p>
 <h2 id="vorgänger-und-abhängigkeiten">Vorgänger und Abhängigkeiten <a href="#vorgänger-und-abhängigkeiten" class="heading-anchor">#</a></h2>
-<p>Wenn Sie Vorgänge über die Schaltfläche <strong>Ausgewählte Vorgänge verknüpfen</strong> in der Symbolleiste verknüpfen, erstellen Sie eine Abhängigkeit zwischen den Vorgängen. Die Abhängigkeit heißt <strong>Ende-Anfang</strong> und ist eine von vier verfügbaren Abhängigkeiten:</p>
+<p>Wenn Sie Vorgänge über die Schaltfläche <strong>Ausgewählte Vorgänge verknüpfen</strong> in der Symbolleiste verknüpfen, erstellen Sie eine Abhängigkeit zwischen den Vorgängen. Die Abhängigkeit heißt <strong>Ende-zu-Anfang</strong> und ist eine von vier verfügbaren Abhängigkeiten:</p>
 <table>
 <thead>
 <tr>
@@ -223,31 +223,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Ende-Anfang</strong></td>
+<td><strong>Ende-zu-Anfang</strong></td>
 <td>Der zweite Vorgang kann beginnen, sobald der erste Vorgang abgeschlossen ist.</td>
 </tr>
 <tr>
-<td><strong>Ende-Ende</strong></td>
+<td><strong>Ende-zu-Ende</strong></td>
 <td>Der zweite Vorgang endet, wenn der erste Vorgang endet.</td>
 </tr>
 <tr>
-<td><strong>Anfang-Ende</strong></td>
+<td><strong>Anfang-zu-Ende</strong></td>
 <td>Der zweite Vorgang endet, wenn der erste Vorgang beginnt.</td>
 </tr>
 <tr>
-<td><strong>Anfang-Anfang</strong></td>
+<td><strong>Anfang-zu-Anfang</strong></td>
 <td>Der zweite Vorgang beginnt, wenn der erste Vorgang beginnt.</td>
 </tr>
 </tbody>
 </table>
 <p><img src="/images/building-schedule/tasks/dependencies.png" alt="Abhängigkeiten" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
-<p>Um Vorgänger zuzuweisen und Abhängigkeiten zu bearbeiten, verwenden Sie den Reiter <strong>Vorgänger</strong> des Dialogs <strong>Vorgangseigenschaften</strong>.</p>
+<p>Um Vorgänger zuzuweisen und Abhängigkeiten zu bearbeiten, verwenden Sie den Reiter <strong>Vorgänger</strong> des Dialogs <strong>Aufgabeneigenschaften</strong>.</p>
 <h2 id="verzögerung-und-vorlaufzeit">Verzögerung und Vorlaufzeit <a href="#verzögerung-und-vorlaufzeit" class="heading-anchor">#</a></h2>
 <p>Manchmal müssen Sie eine Wartezeit zwischen zwei abhängigen Vorgängen festlegen.</p>
-<p>Nehmen wir an, Ihr erster Vorgang ist „Wand streichen“ und Ihr zweiter Vorgang ist „Bilder an die Wand hängen“. Diese Vorgänge sind verknüpft (haben eine <strong>Ende-Anfang</strong>-Abhängigkeit). Es ist nicht möglich, Bilder aufzuhängen, bis die Farbe trocken ist, also müssen Sie warten. Um dies in Ihrem Terminplan abzubilden, legen Sie die <strong>Verzögerung</strong> (z. B. 2 Tage) für die Abhängigkeit zwischen den beiden Vorgängen fest.</p>
+<p>Nehmen wir an, Ihr erster Vorgang ist „Wand streichen“ und Ihr zweiter Vorgang ist „Bilder an die Wand hängen“. Diese Vorgänge sind verknüpft (haben eine <strong>Ende-zu-Anfang</strong>-Abhängigkeit). Es ist nicht möglich, Bilder aufzuhängen, bis die Farbe trocken ist, also müssen Sie warten. Um dies in Ihrem Terminplan abzubilden, legen Sie die <strong>Verzögerung</strong> (z. B. 2 Tage) für die Abhängigkeit zwischen den beiden Vorgängen fest.</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="Verzögerung" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
 <p>Verzögerungen können auch das umgekehrte Szenario darstellen — wenn ein abhängiger Vorgang beginnen soll, bevor sein Vorgänger abgeschlossen ist. Um dies festzulegen, machen Sie die <strong>Verzögerung</strong> negativ (z. B. -1 Tag). Dies wird als <em>Vorlaufzeit</em> bezeichnet.</p>
-<p>Um Verzögerung oder Vorlaufzeit festzulegen, wählen Sie den Vorgänger auf dem Reiter <strong>Vorgänger</strong> des Dialogs <strong>Vorgangseigenschaften</strong> aus und klicken Sie auf die Schaltfläche <strong>Bearbeiten</strong>.</p>
+<p>Um Verzögerung oder Vorlaufzeit festzulegen, wählen Sie den Vorgänger auf dem Reiter <strong>Vorgänger</strong> des Dialogs <strong>Aufgabeneigenschaften</strong> aus und klicken Sie auf die Schaltfläche <strong>Bearbeiten</strong>.</p>
 <blockquote>
 <p>Verzögerungen können in Stunden, Tagen, Wochen, Monaten oder als Bruchteil der Dauer des Vorgängervorgangs angegeben werden (z. B. 50 %).</p>
 </blockquote>

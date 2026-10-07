@@ -213,13 +213,13 @@
       <h1 id="enregistrer-votre-projet">Enregistrer votre projet <a href="#enregistrer-votre-projet" class="heading-anchor">#</a></h1>
 <p>Ingantt enregistre votre projet soit dans un fichier sur votre appareil, soit dans un fichier de votre Google Drive. L'enregistrement automatique maintient ensuite ce fichier à jour pendant que vous travaillez. Cet article explique quelle destination vous obtenez, quand l'enregistrement automatique s'applique, et le seul cas où il ne le peut pas.</p>
 <h2 id="enregistrer-pour-la-première-fois">Enregistrer pour la première fois <a href="#enregistrer-pour-la-première-fois" class="heading-anchor">#</a></h2>
-<p>Cliquez sur le bouton <strong>Save</strong> dans la barre d'outils, ou utilisez <strong>Save file</strong> dans le menu <strong>File</strong>.</p>
-<p>Si le projet n'a jamais été enregistré, Ingantt vous demande où il doit aller. <strong>Save project as</strong> propose deux destinations :</p>
+<p>Cliquez sur le bouton <strong>Enregistrer</strong> dans la barre d'outils, ou utilisez <strong>Enregistrer le fichier</strong> dans le menu <strong>Fichier</strong>.</p>
+<p>Si le projet n'a jamais été enregistré, Ingantt vous demande où il doit aller. <strong>Enregistrer le projet sous</strong> propose deux destinations :</p>
 <ul>
-<li><strong>Save to new local file</strong> — un fichier sur votre appareil.</li>
-<li><strong>Save to new Google Drive file</strong> — un fichier dans votre Google Drive. Nécessite une connexion avec Google.</li>
+<li><strong>Enregistrer en tant que nouveau fichier local</strong> — un fichier sur votre appareil.</li>
+<li><strong>Enregistrer en tant que nouveau fichier Google Drive</strong> — un fichier dans votre Google Drive. Nécessite une connexion avec Google.</li>
 </ul>
-<p>Vous pouvez changer de destination plus tard avec <strong>Save file as</strong> dans le menu <strong>File</strong>, qui crée toujours un nouveau fichier et continue à travailler dedans.</p>
+<p>Vous pouvez changer de destination plus tard avec <strong>Enregistrer le fichier sous</strong> dans le menu <strong>Fichier</strong>, qui crée toujours un nouveau fichier et continue à travailler dedans.</p>
 <p>Votre projet est enregistré dans un format XML entièrement compatible avec Microsoft Project. Rien dans votre planning ne vous lie à Ingantt.</p>
 <blockquote>
 <p>Sur le web, si vous êtes déjà connecté à Google lorsque vous créez un projet, Ingantt choisit Google Drive pour vous et nomme le fichier d'après le projet. Vous n'avez pas besoin d'enregistrer une première fois pour que l'enregistrement automatique se mette en marche, et renommer le projet renomme le fichier Drive.</p>
@@ -239,42 +239,42 @@
 <tr>
 <td><strong>Web</strong></td>
 <td>Activé</td>
-<td>Menu <strong>File</strong> → <strong>Work offline (no autosave)</strong></td>
+<td>Menu <strong>Fichier</strong> → <strong>Travailler hors ligne (sans enregistrement automatique)</strong></td>
 </tr>
 <tr>
 <td><strong>Android, iOS, Windows, macOS</strong></td>
 <td>Désactivé</td>
-<td><strong>Enable autosave</strong> dans la boîte de dialogue <strong>Options</strong>, ou dans le menu <strong>File</strong></td>
+<td><strong>Activer l'enregistrement automatique</strong> dans la boîte de dialogue <strong>Options</strong>, ou dans le menu <strong>Fichier</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Le bouton <strong>Save</strong> sert aussi d'indicateur d'enregistrement automatique. Il affiche <em>Saving…</em>, <em>File saved</em>, <em>File saved to Google Drive</em>, <em>Autosave pending…</em>, ou une erreur si un enregistrement n'a pas abouti.</p>
+<p>Le bouton <strong>Enregistrer</strong> sert aussi d'indicateur d'enregistrement automatique. Il affiche <em>Enregistrement…</em>, <em>Fichier enregistré</em>, <em>Fichier enregistré sur Google Drive</em>, <em>Enregistrement automatique en attente…</em>, ou une erreur si un enregistrement n'a pas abouti.</p>
 <p>L'enregistrement automatique ne peut rien faire dans deux situations :</p>
 <ul>
 <li><strong>Le projet n'a jamais été enregistré.</strong> Il n'y a pas encore de fichier à mettre à jour, enregistrez-le donc une première fois vous-même.</li>
 <li><strong>Le projet a été ouvert depuis un fichier local alors que vous utilisez Ingantt dans un navigateur.</strong> Voir ci-dessous.</li>
 </ul>
 <h2 id="enregistrement-automatique-et-fichiers-locaux-sur-le-web">Enregistrement automatique et fichiers locaux sur le web <a href="#enregistrement-automatique-et-fichiers-locaux-sur-le-web" class="heading-anchor">#</a></h2>
-<p>Un navigateur ne peut pas réécrire dans un fichier que vous avez choisi sur votre disque. Lorsqu'Ingantt pour Web enregistre vers « un fichier local », il télécharge à la place une nouvelle copie du fichier — ce qui est le bon comportement pour un <strong>Save</strong> explicite, mais pas quelque chose que vous souhaitez voir se produire toutes les 20 secondes.</p>
-<p>Donc : <strong>Ingantt pour Web n'enregistre pas automatiquement dans les fichiers locaux.</strong> Si vous avez ouvert un fichier de projet local dans le navigateur et souhaitez que vos modifications soient conservées automatiquement, utilisez une fois <strong>Save file as</strong> → <strong>Save to new Google Drive file</strong>. À partir de là, l'enregistrement automatique maintient le fichier Drive à jour.</p>
+<p>Un navigateur ne peut pas réécrire dans un fichier que vous avez choisi sur votre disque. Lorsqu'Ingantt pour Web enregistre vers « un fichier local », il télécharge à la place une nouvelle copie du fichier — ce qui est le bon comportement pour un <strong>Enregistrer</strong> explicite, mais pas quelque chose que vous souhaitez voir se produire toutes les 20 secondes.</p>
+<p>Donc : <strong>Ingantt pour Web n'enregistre pas automatiquement dans les fichiers locaux.</strong> Si vous avez ouvert un fichier de projet local dans le navigateur et souhaitez que vos modifications soient conservées automatiquement, utilisez une fois <strong>Enregistrer le fichier sous</strong> → <strong>Enregistrer en tant que nouveau fichier Google Drive</strong>. À partir de là, l'enregistrement automatique maintient le fichier Drive à jour.</p>
 <p>Cela affecte <a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a> de la même manière : sans enregistrement automatique, tout ce que l'IA modifie reste non enregistré jusqu'à ce que vous l'enregistriez vous-même, et Ingantt vous en avertit avant le début de la session.</p>
 <h2 id="travailler-hors-ligne-sur-le-web">Travailler hors ligne sur le web <a href="#travailler-hors-ligne-sur-le-web" class="heading-anchor">#</a></h2>
-<p><strong>Work offline (no autosave)</strong> dans le menu <strong>File</strong> désactive l'enregistrement automatique pour l'onglet de navigateur actuel. Utilisez-le lorsque vous souhaitez continuer à modifier sans que chaque changement parte vers Google Drive.</p>
+<p><strong>Travailler hors ligne (sans enregistrement automatique)</strong> dans le menu <strong>Fichier</strong> désactive l'enregistrement automatique pour l'onglet de navigateur actuel. Utilisez-le lorsque vous souhaitez continuer à modifier sans que chaque changement parte vers Google Drive.</p>
 <p>Deux choses à savoir à ce sujet :</p>
 <ul>
 <li>Rien n'est enregistré tant qu'il est activé, enregistrez donc manuellement avant de fermer l'onglet. Ingantt vous le rappelle lorsque vous l'activez.</li>
-<li>Le réglage est propre à la session. Recharger la page ou ouvrir un nouvel onglet redémarre avec l'enregistrement automatique activé. Sur Android, iOS, Windows et macOS, c'est le réglage <strong>Enable autosave</strong> qui est mémorisé.</li>
+<li>Le réglage est propre à la session. Recharger la page ou ouvrir un nouvel onglet redémarre avec l'enregistrement automatique activé. Sur Android, iOS, Windows et macOS, c'est le réglage <strong>Activer l'enregistrement automatique</strong> qui est mémorisé.</li>
 </ul>
 <h2 id="télécharger-une-copie">Télécharger une copie <a href="#télécharger-une-copie" class="heading-anchor">#</a></h2>
-<p>Sur le web, <strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong> enregistre une copie du projet sur votre ordinateur sans changer l'emplacement où le projet lui-même est enregistré. Utilisez-le pour une sauvegarde, ou pour transmettre le fichier à quelqu'un qui utilise Microsoft Project.</p>
+<p>Sur le web, <strong>Fichier</strong> → <strong>Télécharger</strong> → <strong>Télécharger XML</strong> enregistre une copie du projet sur votre ordinateur sans changer l'emplacement où le projet lui-même est enregistré. Utilisez-le pour une sauvegarde, ou pour transmettre le fichier à quelqu'un qui utilise Microsoft Project.</p>
 <p>Les autres formats — PDF, PNG, CSV, XML, YAML et Markdown — sont décrits dans <a href="/fr/getting-started/import-export/">Import et export</a>.</p>
 <h2 id="fermer-avec-des-modifications-non-enregistrées">Fermer avec des modifications non enregistrées <a href="#fermer-avec-des-modifications-non-enregistrées" class="heading-anchor">#</a></h2>
 <p>Si vous fermez un projet contenant des modifications non enregistrées, Ingantt vous demande <strong>Save changes to</strong> votre projet et vous avertit que les modifications non enregistrées seront perdues. La même invite apparaît avant le déplacement d'un projet vers la corbeille.</p>
 <h2 id="si-ingantt-refuse-denregistrer">Si Ingantt refuse d'enregistrer <a href="#si-ingantt-refuse-denregistrer" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>« View only mode as trial ended »</strong> ou <strong>« Subscription inactive »</strong> — vos projets sont toujours là et toujours lisibles, mais l'enregistrement est désactivé jusqu'à ce que votre abonnement soit actif. Voir <a href="/fr/account/trial/">Essai gratuit</a> et <a href="/fr/account/subscription/">Abonnements et paiement</a>.</li>
-<li><strong>« You are a viewer and cannot save »</strong> — le fichier Google Drive a été partagé avec vous en tant que lecteur ou commentateur. Demandez au propriétaire un accès en modification, ou utilisez <strong>Save file as</strong> pour conserver votre propre copie. Voir <a href="/fr/ui/sharing/">Partager un projet</a>.</li>
-<li><strong>« Error saving file to Google Drive »</strong> — généralement un problème de connexion ou une session Google expirée. Vérifiez votre connexion et reconnectez-vous ; voir <a href="/fr/ui/files/">Intégration Google Drive</a>.</li>
+<li><strong>« Mode lecture seule car la période d'essai est terminée »</strong> ou <strong>« Abonnement inactif »</strong> — vos projets sont toujours là et toujours lisibles, mais l'enregistrement est désactivé jusqu'à ce que votre abonnement soit actif. Voir <a href="/fr/account/trial/">Essai gratuit</a> et <a href="/fr/account/subscription/">Abonnements et paiement</a>.</li>
+<li><strong>« Vous êtes lecteur et ne pouvez pas enregistrer »</strong> — le fichier Google Drive a été partagé avec vous en tant que lecteur ou commentateur. Demandez au propriétaire un accès en modification, ou utilisez <strong>Enregistrer le fichier sous</strong> pour conserver votre propre copie. Voir <a href="/fr/ui/sharing/">Partager un projet</a>.</li>
+<li><strong>« Erreur lors de l'enregistrement sur Google Drive »</strong> — généralement un problème de connexion ou une session Google expirée. Vérifiez votre connexion et reconnectez-vous ; voir <a href="/fr/ui/files/">Intégration Google Drive</a>.</li>
 </ul>
 
     </main>

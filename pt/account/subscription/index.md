@@ -17,9 +17,9 @@ As assinaturas são renovadas automaticamente ao final de cada período de cobra
 
 ## Comprando uma assinatura
 
-Abra a caixa de diálogo **Account**, ou clique em **Subscribe now** quando o Ingantt informar que sua avaliação terminou, e siga os passos:
+Abra a caixa de diálogo **Conta**, ou clique em **Assinar agora** quando o Ingantt informar que sua avaliação terminou, e siga os passos:
 
-1. **Escolha para quem é** — para você ou para outras pessoas. Para comprar para uma equipe, escolha *I want to purchase subscriptions for others* e insira um endereço de e-mail por linha. Cada endereço precisa ser um endereço com o qual essa pessoa consiga fazer login no Google.
+1. **Escolha para quem é** — para você ou para outras pessoas. Para comprar para uma equipe, escolha *Quero comprar assinaturas para outras pessoas* e insira um endereço de e-mail por linha. Cada endereço precisa ser um endereço com o qual essa pessoa consiga fazer login no Google.
 2. **Escolha o plano** — mensal ou anual.
 3. **Insira seus dados de cobrança** — nome, endereço, cidade, código postal, estado ou região, país e número de telefone.
 4. **Revise** os itens comprados e os dados de cobrança.
@@ -27,24 +27,24 @@ Abra a caixa de diálogo **Account**, ou clique em **Subscribe now** quando o In
 
 Quando o pagamento é concluído, o Ingantt confirma que a assinatura — ou a lista de assinaturas que você comprou para outras pessoas — está ativa.
 
-Se a janela de pagamento informar que o pagamento ainda está sendo processado, isso é normal. Aguarde o e-mail *Notice of successful payment* e então clique em **Refresh** na caixa de diálogo para obter o novo status.
+Se a janela de pagamento informar que o pagamento ainda está sendo processado, isso é normal. Aguarde o e-mail *Notice of successful payment* e então clique em **Atualizar** na caixa de diálogo para obter o novo status.
 
 > Sua assinatura está vinculada à conta Google com a qual você fez login. Faça login com essa conta em qualquer dispositivo para usá-la. Um endereço que já possui uma assinatura ativa não pode receber uma segunda.
 
 ## Vendo e gerenciando assinaturas
 
-**Manage subscriptions** na caixa de diálogo **Account** lista as assinaturas que você comprou — o usuário de cada uma, a data da compra e quem comprou. **Refresh** relê o estado atual do servidor.
+**Gerenciar assinaturas** na caixa de diálogo **Conta** lista as assinaturas que você comprou — o usuário de cada uma, a data da compra e quem comprou. **Atualizar** relê o estado atual do servidor.
 
 É aqui também que as compras para equipes são administradas: quem pagou pelas licenças vê todas elas e pode cancelar qualquer uma individualmente.
 
-Seu próprio status é exibido no menu de navegação como **Paid subscriber**, **Subscription inactive** ou os dias restantes da sua avaliação ou do período pago.
+Seu próprio status é exibido no menu de navegação como **Assinante pago**, **Assinatura inativa** ou os dias restantes da sua avaliação ou do período pago.
 
 ## Cancelando
 
-1. Abra **Account** → **Manage subscriptions**.
-2. Clique em **Cancel** na linha do usuário que você deseja cancelar e confirme.
+1. Abra **Conta** → **Gerenciar assinaturas**.
+2. Clique em **Cancelar** na linha do usuário que você deseja cancelar e confirme.
 
-Cancelar interrompe a próxima renovação. Não corta o acesso imediatamente: a mensagem *Subscription canceled, but all features available until the paid period ends* significa exatamente isso, e o menu de navegação passa a fazer a contagem regressiva com **Paid period ends in N days**. Quando o período pago termina, o Ingantt muda para o modo somente visualização.
+Cancelar interrompe a próxima renovação. Não corta o acesso imediatamente: a mensagem *Assinatura cancelada, mas todas as funcionalidades estão disponíveis até o término do período pago* significa exatamente isso, e o menu de navegação passa a fazer a contagem regressiva com **Paid period ends in N days**. Quando o período pago termina, o Ingantt muda para o modo somente visualização.
 
 Seus projetos não são afetados pelo cancelamento. Eles ficam no seu Google Drive e permanecem lá, legíveis e disponíveis para download como XML do Microsoft Project.
 

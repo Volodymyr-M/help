@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/" class="active" aria-current="page">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -215,14 +215,14 @@
 <h2 id="prima-di-iniziare">Prima di iniziare <a href="#prima-di-iniziare" class="heading-anchor">#</a></h2>
 <p>La condivisione funziona solo con i file di Google Drive. Devi aver effettuato l'accesso con Google e il progetto deve essere salvato su Drive; un progetto che si trova in un file locale sul tuo dispositivo non ha nulla da condividere. Vedi <a href="/it/getting-started/saving/">Salvare il progetto</a>.</p>
 <blockquote>
-<p>Il pulsante <strong>Share</strong> fa parte di Ingantt per Web. Su Android, iOS, Windows e macOS, condividi invece il file da Google Drive — apri Drive, trova il file Ingantt e usa il comando <strong>Condividi</strong> di Drive. Il risultato è identico, perché in entrambi i casi le autorizzazioni risiedono sul file di Drive.</p>
+<p>Il pulsante <strong>Condividi</strong> fa parte di Ingantt per Web. Su Android, iOS, Windows e macOS, condividi invece il file da Google Drive — apri Drive, trova il file Ingantt e usa il comando <strong>Condividi</strong> di Drive. Il risultato è identico, perché in entrambi i casi le autorizzazioni risiedono sul file di Drive.</p>
 </blockquote>
 <h2 id="condividere-con-persone-specifiche">Condividere con persone specifiche <a href="#condividere-con-persone-specifiche" class="heading-anchor">#</a></h2>
 <ol>
-<li>Apri il progetto e fai clic su <strong>Share</strong> nell'intestazione, oppure scegli <strong>Share</strong> nel menu <strong>File</strong>. Si apre la finestra <strong>Share on Google Drive</strong>.</li>
-<li>Sotto <strong>People with access</strong> vedi tutti quelli che hanno già accesso, con i proprietari per primi.</li>
-<li>Fai clic su <strong>Add</strong>, inserisci l'indirizzo email della persona, scegli il ruolo che vuoi assegnarle e conferma.</li>
-<li>Chiudi la finestra. Ingantt salva le nuove autorizzazioni su Drive e conferma con <em>Access updated</em>.</li>
+<li>Apri il progetto e fai clic su <strong>Condividi</strong> nell'intestazione, oppure scegli <strong>Condividi</strong> nel menu <strong>File</strong>. Si apre la finestra <strong>Condividi su Google Drive</strong>.</li>
+<li>Sotto <strong>Persone con accesso</strong> vedi tutti quelli che hanno già accesso, con i proprietari per primi.</li>
+<li>Fai clic su <strong>Aggiungi</strong>, inserisci l'indirizzo email della persona, scegli il ruolo che vuoi assegnarle e conferma.</li>
+<li>Chiudi la finestra. Ingantt salva le nuove autorizzazioni su Drive e conferma con <em>Accesso aggiornato</em>.</li>
 </ol>
 <p>I ruoli sono quelli di Google Drive:</p>
 <table>
@@ -234,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Viewer</strong></td>
+<td><strong>Visualizzatore</strong></td>
 <td>Aprire il progetto e consultarlo. Non può salvare modifiche.</td>
 </tr>
 <tr>
-<td><strong>Commenter</strong></td>
+<td><strong>Commentatore</strong></td>
 <td>Come Viewer, più commentare il file in Google Drive. Non può salvare modifiche.</td>
 </tr>
 <tr>
-<td><strong>Editor</strong></td>
+<td><strong>Editore</strong></td>
 <td>Aprire il progetto e salvarvi le modifiche.</td>
 </tr>
 <tr>
-<td><strong>Owner</strong></td>
+<td><strong>Proprietario</strong></td>
 <td>Tutto, inclusi eliminare il file e trasferirne la proprietà.</td>
 </tr>
 </tbody>
@@ -256,23 +256,23 @@
 <p>Inserisci un indirizzo con cui la persona può effettivamente accedere a Google. Se Ingantt non riesce a confermare che l'indirizzo appartiene a Gmail o Google Workspace ti avvisa, perché una condivisione Drive verso un indirizzo senza un account Google dietro non permetterà a quella persona di aprire il progetto.</p>
 </blockquote>
 <h2 id="accesso-generale-link-e-organizzazioni">Accesso generale — link e organizzazioni <a href="#accesso-generale-link-e-organizzazioni" class="heading-anchor">#</a></h2>
-<p><strong>General access</strong> controlla tutti quelli che non hai indicato singolarmente:</p>
+<p><strong>Accesso generale</strong> controlla tutti quelli che non hai indicato singolarmente:</p>
 <ul>
-<li><strong>Restricted</strong> — solo le persone elencate sotto <strong>People with access</strong>. È l'impostazione predefinita.</li>
-<li><strong>Anyone with the link</strong> — chiunque abbia il link, con il ruolo che scegli (Viewer, Commenter o Editor).</li>
-<li><strong>Domain</strong> — tutti i membri della tua organizzazione Google Workspace, con il ruolo che scegli. Questa opzione compare solo quando il proprietario del progetto appartiene a un dominio Workspace; non è offerta per gli account Gmail personali.</li>
+<li><strong>Limitato</strong> — solo le persone elencate sotto <strong>Persone con accesso</strong>. È l'impostazione predefinita.</li>
+<li><strong>Chiunque con il link</strong> — chiunque abbia il link, con il ruolo che scegli (Viewer, Commenter o Editor).</li>
+<li><strong>Dominio</strong> — tutti i membri della tua organizzazione Google Workspace, con il ruolo che scegli. Questa opzione compare solo quando il proprietario del progetto appartiene a un dominio Workspace; non è offerta per gli account Gmail personali.</li>
 </ul>
-<p><strong>Copy link</strong> copia il link di Google Drive al progetto. Chiunque abbia l'accesso necessario può aprire quel link e modificare il piano in Ingantt.</p>
-<p>Il suggerimento del pulsante <strong>Share</strong> ti dice lo stato corrente a colpo d'occhio — <em>Private — only you can access</em>, <em>Shared with specific people</em>, <em>Anyone with the link can view/comment/edit</em>, o l'equivalente per il tuo dominio.</p>
+<p><strong>Copia link</strong> copia il link di Google Drive al progetto. Chiunque abbia l'accesso necessario può aprire quel link e modificare il piano in Ingantt.</p>
+<p>Il suggerimento del pulsante <strong>Condividi</strong> ti dice lo stato corrente a colpo d'occhio — <em>Privato - Solo tu puoi accedere</em>, <em>Condiviso con persone specifiche</em>, <em>Chiunque con il link può visualizzare/commentare/modificare</em>, o l'equivalente per il tuo dominio.</p>
 <h2 id="chi-può-modificare-laccesso">Chi può modificare l'accesso <a href="#chi-può-modificare-laccesso" class="heading-anchor">#</a></h2>
-<p>Solo il <strong>proprietario</strong> del file può sempre gestire l'accesso. Anche un <strong>editor</strong> può gestire l'accesso, a meno che il proprietario non l'abbia disattivato in Google Drive.</p>
-<p>Se apri la finestra su un progetto condiviso con te come visualizzatore o commentatore, mostra <strong>You are a viewer and cannot manage access</strong> e visualizza l'accesso generale corrente senza permetterti di modificarlo. Chiedi al proprietario se ti servono più permessi.</p>
+<p>Solo il <strong>proprietario</strong> del file può sempre gestire l'accesso. Anche un <strong>editore</strong> può gestire l'accesso, a meno che il proprietario non l'abbia disattivato in Google Drive.</p>
+<p>Se apri la finestra su un progetto condiviso con te come visualizzatore o commentatore, mostra <strong>Sei un visualizzatore e non puoi gestire l'accesso</strong> e visualizza l'accesso generale corrente senza permetterti di modificarlo. Chiedi al proprietario se ti servono più permessi.</p>
 <h2 id="lavorare-su-un-progetto-condiviso">Lavorare su un progetto condiviso <a href="#lavorare-su-un-progetto-condiviso" class="heading-anchor">#</a></h2>
 <ul>
 <li>Tutti aprono lo stesso file di Drive, ma Ingantt non è uno strumento di modifica collaborativa in tempo reale. Ogni salvataggio scrive l'intero file di progetto, quindi se due persone hanno il piano aperto ed entrambe salvano, vince l'ultimo salvataggio e le modifiche dell'altra persona vengono sostituite. Mettiti d'accordo su chi modifica prima di iniziare e controlla la cronologia delle versioni del file in Google Drive se pensi che qualcosa sia andato perso.</li>
-<li>Un visualizzatore o commentatore che prova a salvare vede <strong>You are a viewer and cannot save</strong>. Usa invece <strong>Save file as</strong> per conservare una copia personale.</li>
+<li>Un visualizzatore o commentatore che prova a salvare vede <strong>Sei un visualizzatore e non puoi salvare</strong>. Usa invece <strong>Salva file come</strong> per conservare una copia personale.</li>
 <li>Ogni collaboratore ha bisogno del proprio abbonamento o della propria prova Ingantt attivi per modificare — condividere un piano non condivide il tuo abbonamento. Vedi <a href="/it/account/subscription/">Abbonamenti e pagamento</a>.</li>
-<li>La condivisione con un indirizzo di <strong>gruppo</strong> Google non è supportata dalla finestra Share di Ingantt. Condividi con indirizzi individuali, oppure gestisci la condivisione con un gruppo da Google Drive.</li>
+<li>La condivisione con un indirizzo di <strong>gruppo</strong> Google non è supportata dalla finestra Condividi di Ingantt. Condividi con indirizzi individuali, oppure gestisci la condivisione con un gruppo da Google Drive.</li>
 </ul>
 <h2 id="argomenti-correlati">Argomenti correlati <a href="#argomenti-correlati" class="heading-anchor">#</a></h2>
 <ul>

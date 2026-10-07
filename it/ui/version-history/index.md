@@ -1,4 +1,4 @@
-# Cronologia delle versioni
+# Cronologia versioni
 
 Ingantt conserva la cronologia completa di ogni piano archiviato in Google Drive. Puoi sfogliarla, visualizzare in anteprima qualsiasi versione precedente nel diagramma di Gantt, fissare quelle importanti e ripristinarne una come piano corrente.
 
@@ -6,13 +6,13 @@ Ingantt conserva la cronologia completa di ogni piano archiviato in Google Drive
 
 ## Aprire la cronologia delle versioni
 
-Scegli **File → Version history → See version history**, oppure premi `Ctrl` + `Alt` + `Shift` + `H`.
+Scegli **File → Cronologia versioni → Vedi cronologia versioni**, oppure premi `Ctrl` + `Alt` + `Shift` + `H`.
 
 Il pannello si apre lateralmente e Ingantt passa a schermo intero per lasciare spazio al diagramma. Chiudendo il pannello tutto torna com'era.
 
 ## Sfogliare e visualizzare in anteprima
 
-Le versioni sono elencate dalla più recente e raggruppate per giorno — **Today**, **Yesterday**, poi la data. La più recente è contrassegnata come **Current version** ed è selezionata automaticamente all'apertura del pannello.
+Le versioni sono elencate dalla più recente e raggruppate per giorno — **Oggi**, **Ieri**, poi la data. La più recente è contrassegnata come **Versione corrente** ed è selezionata automaticamente all'apertura del pannello.
 
 Fai clic su una versione qualsiasi e Ingantt la carica nel diagramma così puoi esaminarla. L'anteprima è una consultazione, non una modifica:
 
@@ -26,14 +26,14 @@ Google Drive elimina nel tempo le vecchie revisioni di un file. Fissare una vers
 
 Ci sono due modi per fissare una versione:
 
-- **File → Version history → Pin current version** fissa la versione più recente senza aprire il pannello. Usalo subito dopo un salvataggio che vuoi conservare — prima di una ripianificazione, alla fine di una fase o quando un piano viene approvato.
-- Nel pannello, apri il menu di una versione qualsiasi e scegli **Pin this version**.
+- **File → Cronologia versioni → Fissa la versione corrente** fissa la versione più recente senza aprire il pannello. Usalo subito dopo un salvataggio che vuoi conservare — prima di una ripianificazione, alla fine di una fase o quando un piano viene approvato.
+- Nel pannello, apri il menu di una versione qualsiasi e scegli **Fissa questa versione**.
 
-Le versioni fissate sono contrassegnate come **Pinned** nell'elenco. Scegliendo di nuovo la stessa voce di menu si annulla il fissaggio.
+Le versioni fissate sono contrassegnate come **Fissata** nell'elenco. Scegliendo di nuovo la stessa voce di menu si annulla il fissaggio.
 
 ## Ripristinare una versione
 
-Seleziona la versione desiderata e scegli **Restore this version**. Ingantt ti chiede conferma:
+Seleziona la versione desiderata e scegli **Ripristina questa versione**. Ingantt ti chiede conferma:
 
 > Ripristinare questa versione? La versione corrente verrà salvata prima.
 
@@ -45,7 +45,7 @@ Dopo la conferma, il piano ripristinato diventa il progetto aperto e viene salva
 
 Le due cose sono facili da confondere:
 
-- La **cronologia delle versioni** è una registrazione del *file* nel tempo, conservata da Google Drive. Risponde alla domanda "com'era questo piano martedì scorso?"
-- Le **[baseline](/it/tracking/baselines/index.md)** sono istantanee del *cronogramma* memorizzate all'interno del piano, con cui fai il confronto nella stessa vista — barre di baseline nel diagramma di Gantt, colonne di baseline e di scostamento nella tabella. Rispondono alla domanda "quanto ci siamo allontanati dal piano approvato?"
+- La **Cronologia versioni** è una registrazione del *file* nel tempo, conservata da Google Drive. Risponde alla domanda "com'era questo piano martedì scorso?"
+- Le **[Previsioni](/it/tracking/baselines/index.md)** sono istantanee del *cronogramma* memorizzate all'interno del piano, con cui fai il confronto nella stessa vista — barre di baseline nel diagramma di Gantt, colonne di baseline e di scostamento nella tabella. Rispondono alla domanda "quanto ci siamo allontanati dal piano approvato?"
 
 Usa la cronologia delle versioni per tornare indietro. Usa le baseline per misurare.

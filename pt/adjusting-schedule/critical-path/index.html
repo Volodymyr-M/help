@@ -217,20 +217,20 @@
 <p>Outras tarefas têm folga zero — qualquer atraso desloca a data de término do projeto. Estas são chamadas de <em>tarefas críticas</em>. Para manter seu projeto no prazo, dê atenção especial a elas ao acompanhar o progresso.</p>
 <p>Uma tarefa também é considerada crítica se:</p>
 <ul>
-<li>Possui uma <a href="/pt/building-schedule/constraints/#restri%C3%A7%C3%B5es">restrição</a> <strong>Must start on</strong> ou <strong>Must finish on</strong></li>
-<li>Possui uma <a href="/pt/building-schedule/constraints/#restri%C3%A7%C3%B5es">restrição</a> <strong>As late as possible</strong> em um projeto planejado a partir da Data de Início</li>
+<li>Possui uma <a href="/pt/building-schedule/constraints/#restri%C3%A7%C3%B5es">restrição</a> <strong>Deve começar em</strong> ou <strong>Deve terminar em</strong></li>
+<li>Possui uma <a href="/pt/building-schedule/constraints/#restri%C3%A7%C3%B5es">restrição</a> <strong>O mais tarde possível</strong> em um projeto planejado a partir da Data de Início</li>
 <li>Sua data de término é igual ou posterior ao seu <a href="/pt/building-schedule/task-properties/#prazo">prazo</a></li>
 <li>Possui <strong>folga negativa</strong> — um conflito de agendamento onde restrições forçam a tarefa a ser antecipada em relação às suas dependências</li>
 </ul>
 <p>Tarefas 100% concluídas nunca são marcadas como críticas, independentemente de outras condições.</p>
-<p>O Ingantt detecta automaticamente as tarefas críticas. Se a opção <strong>Highlight critical tasks</strong> estiver ativada (via menu <strong>View</strong>, menu <strong>Chart</strong> na barra de menus ou caixa de diálogo <strong>Options</strong>), essas tarefas são exibidas em vermelho.</p>
-<p>Tarefas com folga negativa também exibem um ícone de aviso na lista de tarefas, indicando um conflito de agendamento. Isso normalmente ocorre quando uma restrição <strong>Start no later than</strong> ou <strong>Finish no later than</strong> entra em conflito com as dependências da tarefa.</p>
+<p>O Ingantt detecta automaticamente as tarefas críticas. Se a opção <strong>Destacar tarefas críticas</strong> estiver ativada (via menu <strong>Visualizar</strong>, menu <strong>Gráfico</strong> na barra de menus ou caixa de diálogo <strong>Opções</strong>), essas tarefas são exibidas em vermelho.</p>
+<p>Tarefas com folga negativa também exibem um ícone de aviso na lista de tarefas, indicando um conflito de agendamento. Isso normalmente ocorre quando uma restrição <strong>Começar não depois de</strong> ou <strong>Terminar não depois de</strong> entra em conflito com as dependências da tarefa.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="Crítico" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="opções-do-caminho-crítico">Opções do Caminho Crítico <a href="#opções-do-caminho-crítico" class="heading-anchor">#</a></h2>
-<p>Na aba <strong>Other</strong> da caixa de diálogo <strong>Project Properties</strong>, você pode configurar como o caminho crítico é calculado:</p>
+<p>Na aba <strong>Outros</strong> da caixa de diálogo <strong>Propriedades do Projeto</strong>, você pode configurar como o caminho crítico é calculado:</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — Quando ativada, cada grupo desconectado de tarefas vinculadas recebe seu próprio caminho crítico. Quando desativada (o padrão), tarefas sem sucessoras derivam seu término tardio a partir da data de término do projeto.</li>
-<li><strong>Critical slack limit</strong> — Por padrão, tarefas com folga zero ou negativa são críticas. Você pode aumentar esse limite para que tarefas com folga de até o número especificado de dias também sejam consideradas críticas.</li>
+<li><strong>Calcular múltiplos caminhos críticos</strong> — Quando ativada, cada grupo desconectado de tarefas vinculadas recebe seu próprio caminho crítico. Quando desativada (o padrão), tarefas sem sucessoras derivam seu término tardio a partir da data de término do projeto.</li>
+<li><strong>As tarefas são críticas se a folga for menor ou igual a</strong> — Por padrão, tarefas com folga zero ou negativa são críticas. Você pode aumentar esse limite para que tarefas com folga de até o número especificado de dias também sejam consideradas críticas.</li>
 </ul>
 
     </main>

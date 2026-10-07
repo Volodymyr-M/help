@@ -8,18 +8,18 @@ Comece aqui para criar seu primeiro cronograma de projeto. Em poucos minutos, vo
 
 Digamos que você tem um pequeno projeto de reforma residencial com duas tarefas, uma após a outra.
 
-Após clicar em **Create new**, você é levado a uma tela dividida com a lista de tarefas à esquerda e o gráfico de Gantt à direita. Adicione suas tarefas uma após a outra clicando no botão grande **+** no canto inferior direito. Na caixa de diálogo **Add Task**, especifique o **Name** e a **Duration** prevista de cada tarefa.
+Após clicar em **Criar novo**, você é levado a uma tela dividida com a lista de tarefas à esquerda e o gráfico de Gantt à direita. Adicione suas tarefas uma após a outra clicando no botão grande **+** no canto inferior direito. Na caixa de diálogo **Adicionar Tarefa**, especifique o **Nome** e a **Duração** prevista de cada tarefa.
 
 ![Adicionar tarefa](/images/getting-started/add_task.png)
 
-Selecione ambas as tarefas na lista à esquerda e depois clique no botão **Link tasks** na barra de ferramentas. Isso vincula as tarefas e atualiza o gráfico de Gantt.
+Selecione ambas as tarefas na lista à esquerda e depois clique no botão **Vincular tarefas** na barra de ferramentas. Isso vincula as tarefas e atualiza o gráfico de Gantt.
 
 - Para selecionar múltiplas tarefas no Android e iOS, mantenha o dedo pressionado um pouco mais ao tocar em cada tarefa na lista ou no gráfico de Gantt.
 - Em outras plataformas, clique nas tarefas na lista ou no gráfico de Gantt enquanto mantém pressionado `Ctrl` ou `Shift` no teclado.
 
 ![Vincular](/images/getting-started/link.png)
 
-Agora que as tarefas estão vinculadas, tente atualizar a duração da primeira tarefa. Dê um clique duplo nela na lista ou no gráfico de Gantt e edite o campo **Duration** na caixa de diálogo **Task Properties**. Você verá como essa alteração afeta o cronograma, deslocando a segunda tarefa.
+Agora que as tarefas estão vinculadas, tente atualizar a duração da primeira tarefa. Dê um clique duplo nela na lista ou no gráfico de Gantt e edite o campo **Duração** na caixa de diálogo **Propriedades da Tarefa**. Você verá como essa alteração afeta o cronograma, deslocando a segunda tarefa.
 
 ![Gantt](/images/getting-started/gantt.png)
 
@@ -27,9 +27,9 @@ Agora que as tarefas estão vinculadas, tente atualizar a duração da primeira 
 
 Seu projeto pode começar em um dia diferente do padrão usado pelo Ingantt.
 
-Abra **Project Properties** usando o menu de navegação ou, na web e no Windows, clicando no nome do projeto no cabeçalho.
+Abra **Propriedades do Projeto** usando o menu de navegação ou, na web e no Windows, clicando no nome do projeto no cabeçalho.
 
-Defina a nova data de início do projeto no campo **Project Start Date** e aproveite para alterar o **Name** do projeto.
+Defina a nova data de início do projeto no campo **Data de início do projeto** e aproveite para alterar o **Nome** do projeto.
 
 ![Nome do projeto](/images/getting-started/project_name.png)
 
@@ -39,19 +39,19 @@ Defina a nova data de início do projeto no campo **Project Start Date** e aprov
 
 Digamos que uma pessoa diferente vai cuidar de cada tarefa no seu projeto.
 
-Abra o menu de navegação e mude para a visualização **Resources**.
+Abra o menu de navegação e mude para a visualização **Recursos**.
 
 ![Nav](/images/getting-started/nav.png)
 
-Clique no botão grande **+** para abrir a caixa de diálogo **Add Resource**, insira um **Name** para o recurso e salve. Repita esses passos para adicionar outro recurso de trabalho.
+Clique no botão grande **+** para abrir a caixa de diálogo **Adicionar Recurso**, insira um **Nome** para o recurso e salve. Repita esses passos para adicionar outro recurso de trabalho.
 
 ![Adicionar recurso](/images/getting-started/add_resource.png)
 
 ![Recursos](/images/getting-started/resources.png)
 
-Usando o menu de navegação, volte para a visualização **Tasks**. Dê um clique duplo na primeira tarefa na lista ou no gráfico de Gantt para abrir a caixa de diálogo **Task Properties**.
+Usando o menu de navegação, volte para a visualização **Tarefas**. Dê um clique duplo na primeira tarefa na lista ou no gráfico de Gantt para abrir a caixa de diálogo **Propriedades da Tarefa**.
 
-Mude para a aba **Resources**, marque o primeiro recurso para atribuir essa pessoa à tarefa e salve.
+Mude para a aba **Recursos**, marque o primeiro recurso para atribuir essa pessoa à tarefa e salve.
 
 ![Atribuições](/images/getting-started/assignments.png)
 
@@ -65,13 +65,13 @@ As pessoas podem ter diferentes eventos durante o andamento do seu projeto que a
 
 Suponha que o recurso responsável pela primeira tarefa do seu projeto precise de um dia de folga durante essa tarefa.
 
-Para configurar isso, use o menu de navegação para ir à visualização **Resources**.
+Para configurar isso, use o menu de navegação para ir à visualização **Recursos**.
 
-Dê um clique duplo no recurso para ver **Resource Properties**. Vá para a aba **Calendar** e clique no botão **Add exception**. Escolha um dos dias durante o seu projeto, deixe a lista de horários de trabalho vazia e salve.
+Dê um clique duplo no recurso para ver **Propriedades do Recurso**. Vá para a aba **Calendário** e clique no botão **Adicionar exceção**. Escolha um dos dias durante o seu projeto, deixe a lista de horários de trabalho vazia e salve.
 
 ![Dia de folga](/images/getting-started/day_off.png)
 
-Usando o menu de navegação, volte para **Tasks** e veja como o cronograma mudou. A segunda tarefa foi deslocada devido à sua dependência da primeira.
+Usando o menu de navegação, volte para **Tarefas** e veja como o cronograma mudou. A segunda tarefa foi deslocada devido à sua dependência da primeira.
 
 ![Férias](/images/getting-started/vacation.png)
 
@@ -81,16 +81,16 @@ Usando o menu de navegação, volte para **Tasks** e veja como o cronograma mudo
 
 Imagine que há um feriado durante o seu projeto, um dia em que nenhum trabalho é realizado.
 
-As férias são configuradas através do calendário de cada recurso. Dias que afetam todos, no entanto, são configurados no calendário do projeto. O calendário padrão do projeto é chamado **Standard** e já indica que nenhum trabalho é realizado nos finais de semana.
+As férias são configuradas através do calendário de cada recurso. Dias que afetam todos, no entanto, são configurados no calendário do projeto. O calendário padrão do projeto é chamado **Padrão** e já indica que nenhum trabalho é realizado nos finais de semana.
 
-Para configurar feriados, use o menu de navegação para ir à visualização **Calendars**. Dê um clique duplo em **Standard** para ver **Calendar Properties**. Clique no botão **Add exception**. Escolha um dos dias durante o seu projeto, deixe a lista de horários de trabalho vazia e salve.
+Para configurar feriados, use o menu de navegação para ir à visualização **Calendários**. Dê um clique duplo em **Padrão** para ver **Propriedades do Calendário**. Clique no botão **Adicionar exceção**. Escolha um dos dias durante o seu projeto, deixe a lista de horários de trabalho vazia e salve.
 
 ![Feriado](/images/getting-started/holiday.png)
 
-Usando o menu de navegação, volte para a visualização **Tasks** e veja como o projeto mudou. As tarefas foram deslocadas e o feriado é exibido de forma semelhante aos finais de semana no gráfico de Gantt.
+Usando o menu de navegação, volte para a visualização **Tarefas** e veja como o projeto mudou. As tarefas foram deslocadas e o feriado é exibido de forma semelhante aos finais de semana no gráfico de Gantt.
 
 ![Final](/images/getting-started/final.png)
 
 > Usando a mesma abordagem, você pode configurar não apenas feriados, mas também outras alterações no horário de todos. Por exemplo, ao adicionar horários de trabalho à exceção, você pode especificar que todos trabalham apenas em horários específicos naquele dia em particular.
 >
-> Você também pode verificar as abas que representam cada dia da semana em **Calendar Properties**. Se toda a equipe sai mais cedo às sextas-feiras ou trabalha aos sábados, você pode configurar isso nas abas correspondentes.
+> Você também pode verificar as abas que representam cada dia da semana em **Propriedades do Calendário**. Se toda a equipe sai mais cedo às sextas-feiras ou trabalha aos sábados, você pode configurar isso nas abas correspondentes.

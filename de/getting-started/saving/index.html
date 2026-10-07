@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -214,10 +214,10 @@
 <p>Ingantt speichert Ihr Projekt entweder als Datei auf Ihrem Gerät oder als Datei in Ihrem Google Drive. Autosave hält diese Datei dann während der Arbeit aktuell. Dieser Artikel erklärt, welcher Speicherort verwendet wird, wann Autosave greift und den einen Fall, in dem es nicht möglich ist.</p>
 <h2 id="zum-ersten-mal-speichern">Zum ersten Mal speichern <a href="#zum-ersten-mal-speichern" class="heading-anchor">#</a></h2>
 <p>Klicken Sie auf die Schaltfläche <strong>Speichern</strong> in der Symbolleiste oder verwenden Sie <strong>Datei speichern</strong> im Menü <strong>Datei</strong>.</p>
-<p>Wenn das Projekt noch nie gespeichert wurde, fragt Ingantt, wohin es soll. <strong>Projekt speichern unter</strong> bietet zwei Ziele:</p>
+<p>Wenn das Projekt noch nie gespeichert wurde, fragt Ingantt, wohin es soll. <strong>Projekt speichern als</strong> bietet zwei Ziele:</p>
 <ul>
-<li><strong>In neuer lokaler Datei speichern</strong> — eine Datei auf Ihrem Gerät.</li>
-<li><strong>In neuer Google-Drive-Datei speichern</strong> — eine Datei in Ihrem Google Drive. Erfordert die Anmeldung bei Google.</li>
+<li><strong>Als neue lokale Datei speichern</strong> — eine Datei auf Ihrem Gerät.</li>
+<li><strong>Als neue Google Drive-Datei speichern</strong> — eine Datei in Ihrem Google Drive. Erfordert die Anmeldung bei Google.</li>
 </ul>
 <p>Sie können das Ziel später mit <strong>Datei speichern unter</strong> im Menü <strong>Datei</strong> ändern; dies erstellt immer eine neue Datei und arbeitet darin weiter.</p>
 <p>Ihr Projekt wird in einem XML-Format gespeichert, das vollständig mit Microsoft Project kompatibel ist. Nichts an Ihrem Plan ist an Ingantt gebunden.</p>
@@ -239,16 +239,16 @@
 <tr>
 <td><strong>Web</strong></td>
 <td>An</td>
-<td>Menü <strong>Datei</strong> → <strong>Offline arbeiten (kein Autosave)</strong></td>
+<td>Menü <strong>Datei</strong> → <strong>Offline arbeiten (kein automatisches Speichern)</strong></td>
 </tr>
 <tr>
 <td><strong>Android, iOS, Windows, macOS</strong></td>
 <td>Aus</td>
-<td><strong>Autosave aktivieren</strong> im Dialog <strong>Optionen</strong> oder im Menü <strong>Datei</strong></td>
+<td><strong>Automatisches Speichern aktivieren</strong> im Dialog <strong>Optionen</strong> oder im Menü <strong>Datei</strong></td>
 </tr>
 </tbody>
 </table>
-<p>Die Schaltfläche <strong>Speichern</strong> dient zugleich als Autosave-Anzeige. Sie zeigt <em>Wird gespeichert…</em>, <em>Datei gespeichert</em>, <em>Datei in Google Drive gespeichert</em>, <em>Autosave ausstehend…</em> oder einen Fehler an, wenn ein Speichervorgang nicht durchging.</p>
+<p>Die Schaltfläche <strong>Speichern</strong> dient zugleich als Autosave-Anzeige. Sie zeigt <em>Speichern…</em>, <em>Datei gespeichert</em>, <em>Datei auf Google Drive gespeichert</em>, <em>Automatisches Speichern ausstehend…</em> oder einen Fehler an, wenn ein Speichervorgang nicht durchging.</p>
 <p>In zwei Situationen kann Autosave nicht helfen:</p>
 <ul>
 <li><strong>Das Projekt wurde noch nie gespeichert.</strong> Es gibt noch keine Datei zum Aktualisieren, speichern Sie es also einmal selbst.</li>
@@ -256,14 +256,14 @@
 </ul>
 <h2 id="autosave-und-lokale-dateien-im-web">Autosave und lokale Dateien im Web <a href="#autosave-und-lokale-dateien-im-web" class="heading-anchor">#</a></h2>
 <p>Ein Browser kann nicht in eine Datei zurückschreiben, die Sie von Ihrer Festplatte ausgewählt haben. Wenn Ingantt für Web in „eine lokale Datei“ speichert, lädt es stattdessen eine neue Kopie der Datei herunter — das ist das richtige Verhalten für ein ausdrückliches <strong>Speichern</strong>, aber nichts, was Sie alle 20 Sekunden geschehen lassen möchten.</p>
-<p>Daher: <strong>Ingantt für Web speichert lokale Dateien nicht automatisch.</strong> Wenn Sie eine lokale Projektdatei im Browser geöffnet haben und Ihre Änderungen automatisch gesichert haben möchten, verwenden Sie einmal <strong>Datei speichern unter</strong> → <strong>In neuer Google-Drive-Datei speichern</strong>. Von da an hält Autosave die Drive-Datei aktuell.</p>
+<p>Daher: <strong>Ingantt für Web speichert lokale Dateien nicht automatisch.</strong> Wenn Sie eine lokale Projektdatei im Browser geöffnet haben und Ihre Änderungen automatisch gesichert haben möchten, verwenden Sie einmal <strong>Datei speichern unter</strong> → <strong>Als neue Google Drive-Datei speichern</strong>. Von da an hält Autosave die Drive-Datei aktuell.</p>
 <p>Dies betrifft <a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a> in gleicher Weise: Ohne Autosave bleibt alles, was die KI ändert, ungespeichert, bis Sie es selbst speichern, und Ingantt warnt Sie davor, bevor die Sitzung beginnt.</p>
 <h2 id="offline-arbeiten-im-web">Offline arbeiten im Web <a href="#offline-arbeiten-im-web" class="heading-anchor">#</a></h2>
-<p><strong>Offline arbeiten (kein Autosave)</strong> im Menü <strong>Datei</strong> schaltet Autosave für den aktuellen Browser-Tab aus. Verwenden Sie es, wenn Sie weiter bearbeiten möchten, ohne dass jede Änderung an Google Drive geht.</p>
+<p><strong>Offline arbeiten (kein automatisches Speichern)</strong> im Menü <strong>Datei</strong> schaltet Autosave für den aktuellen Browser-Tab aus. Verwenden Sie es, wenn Sie weiter bearbeiten möchten, ohne dass jede Änderung an Google Drive geht.</p>
 <p>Zwei Dinge sollten Sie dazu wissen:</p>
 <ul>
 <li>Solange es aktiv ist, wird nichts gespeichert; speichern Sie also manuell, bevor Sie den Tab schließen. Ingantt erinnert Sie daran, wenn Sie es einschalten.</li>
-<li>Die Einstellung gilt pro Sitzung. Nach dem Neuladen der Seite oder dem Öffnen eines neuen Tabs ist Autosave wieder aktiviert. Unter Android, iOS, Windows und macOS wird stattdessen die Einstellung <strong>Autosave aktivieren</strong> gespeichert.</li>
+<li>Die Einstellung gilt pro Sitzung. Nach dem Neuladen der Seite oder dem Öffnen eines neuen Tabs ist Autosave wieder aktiviert. Unter Android, iOS, Windows und macOS wird stattdessen die Einstellung <strong>Automatisches Speichern aktivieren</strong> gespeichert.</li>
 </ul>
 <h2 id="eine-kopie-herunterladen">Eine Kopie herunterladen <a href="#eine-kopie-herunterladen" class="heading-anchor">#</a></h2>
 <p>Im Web speichert <strong>Datei</strong> → <strong>Herunterladen</strong> → <strong>XML herunterladen</strong> eine Kopie des Projekts auf Ihrem Computer, ohne zu ändern, wo das Projekt selbst gespeichert ist. Verwenden Sie es für eine Sicherung oder um die Datei jemandem zu geben, der Microsoft Project verwendet.</p>
@@ -272,9 +272,9 @@
 <p>Wenn Sie ein Projekt mit ungespeicherten Änderungen schließen, zeigt Ingantt die Abfrage <strong>Änderungen speichern in</strong> (gefolgt vom Projektnamen) und warnt, dass ungespeicherte Änderungen verloren gehen. Dieselbe Abfrage erscheint, bevor ein Projekt in den Papierkorb verschoben wird.</p>
 <h2 id="wenn-ingantt-sie-nicht-speichern-lässt">Wenn Ingantt Sie nicht speichern lässt <a href="#wenn-ingantt-sie-nicht-speichern-lässt" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>„Nur-Ansicht-Modus, da die Testphase beendet ist“</strong> oder <strong>„Abonnement inaktiv“</strong> — Ihre Projekte sind noch da und weiterhin lesbar, aber das Speichern ist deaktiviert, bis Ihr Abonnement aktiv ist. Siehe <a href="/de/account/trial/">Kostenlose Testphase</a> und <a href="/de/account/subscription/">Abonnements und Zahlung</a>.</li>
-<li><strong>„Sie sind Betrachter und können nicht speichern“</strong> — die Google-Drive-Datei wurde für Sie als Betrachter oder Kommentator freigegeben. Bitten Sie den Eigentümer um Bearbeitungszugriff oder verwenden Sie <strong>Datei speichern unter</strong>, um eine eigene Kopie zu behalten. Siehe <a href="/de/ui/sharing/">Projekt freigeben</a>.</li>
-<li><strong>„Fehler beim Speichern der Datei in Google Drive“</strong> — meist ein Verbindungsproblem oder eine abgelaufene Google-Anmeldung. Prüfen Sie Ihre Verbindung und melden Sie sich erneut an; siehe <a href="/de/ui/files/">Google-Drive-Integration</a>.</li>
+<li><strong>„Nur-Anzeige-Modus, da die Testversion abgelaufen ist“</strong> oder <strong>„Abonnement inaktiv“</strong> — Ihre Projekte sind noch da und weiterhin lesbar, aber das Speichern ist deaktiviert, bis Ihr Abonnement aktiv ist. Siehe <a href="/de/account/trial/">Kostenlose Testphase</a> und <a href="/de/account/subscription/">Abonnements und Zahlung</a>.</li>
+<li><strong>„Sie sind ein Betrachter und können nicht speichern“</strong> — die Google-Drive-Datei wurde für Sie als Betrachter oder Kommentator freigegeben. Bitten Sie den Eigentümer um Bearbeitungszugriff oder verwenden Sie <strong>Datei speichern unter</strong>, um eine eigene Kopie zu behalten. Siehe <a href="/de/ui/sharing/">Projekt freigeben</a>.</li>
+<li><strong>„Fehler beim Speichern auf Google Drive“</strong> — meist ein Verbindungsproblem oder eine abgelaufene Google-Anmeldung. Prüfen Sie Ihre Verbindung und melden Sie sich erneut an; siehe <a href="/de/ui/files/">Google-Drive-Integration</a>.</li>
 </ul>
 
     </main>

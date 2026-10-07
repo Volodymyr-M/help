@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -213,13 +213,13 @@
       <h1 id="프로젝트-저장">프로젝트 저장 <a href="#프로젝트-저장" class="heading-anchor">#</a></h1>
 <p>Ingantt는 프로젝트를 기기의 파일 또는 Google Drive의 파일로 저장합니다. 그 후에는 작업하는 동안 자동 저장이 해당 파일을 최신 상태로 유지합니다. 이 문서에서는 어떤 저장 위치가 선택되는지, 자동 저장이 언제 적용되는지, 그리고 적용될 수 없는 한 가지 경우를 설명합니다.</p>
 <h2 id="처음-저장하기">처음 저장하기 <a href="#처음-저장하기" class="heading-anchor">#</a></h2>
-<p>도구 모음의 <strong>Save</strong> 버튼을 클릭하거나 <strong>File</strong> 메뉴의 <strong>Save file</strong>을 사용하십시오.</p>
-<p>프로젝트를 한 번도 저장한 적이 없으면 Ingantt가 저장 위치를 묻습니다. <strong>Save project as</strong>에서는 두 가지 위치를 선택할 수 있습니다:</p>
+<p>도구 모음의 <strong>저장</strong> 버튼을 클릭하거나 <strong>파일</strong> 메뉴의 <strong>파일 저장</strong>을 사용하십시오.</p>
+<p>프로젝트를 한 번도 저장한 적이 없으면 Ingantt가 저장 위치를 묻습니다. <strong>프로젝트를 다음 이름으로 저장</strong>에서는 두 가지 위치를 선택할 수 있습니다:</p>
 <ul>
-<li><strong>Save to new local file</strong> — 기기의 파일.</li>
-<li><strong>Save to new Google Drive file</strong> — Google Drive의 파일. Google 로그인이 필요합니다.</li>
+<li><strong>새 로컬 파일에 저장</strong> — 기기의 파일.</li>
+<li><strong>새 Google 드라이브 파일에 저장</strong> — Google Drive의 파일. Google 로그인이 필요합니다.</li>
 </ul>
-<p>저장 위치는 나중에 <strong>File</strong> 메뉴의 <strong>Save file as</strong>로 변경할 수 있습니다. 이 명령은 항상 새 파일을 만들고 그 파일에서 작업을 계속합니다.</p>
+<p>저장 위치는 나중에 <strong>파일</strong> 메뉴의 <strong>다른 이름으로 파일 저장</strong>으로 변경할 수 있습니다. 이 명령은 항상 새 파일을 만들고 그 파일에서 작업을 계속합니다.</p>
 <p>프로젝트는 Microsoft Project와 완전히 호환되는 XML 형식으로 저장됩니다. 계획의 어떤 부분도 Ingantt에 종속되지 않습니다.</p>
 <blockquote>
 <p>웹에서는 프로젝트를 만들 때 이미 Google에 로그인되어 있으면 Ingantt가 Google Drive를 자동으로 선택하고 프로젝트 이름으로 파일 이름을 지정합니다. 자동 저장이 시작되기 전에 한 번 저장할 필요가 없으며, 프로젝트 이름을 바꾸면 Drive 파일 이름도 바뀝니다.</p>
@@ -239,42 +239,42 @@
 <tr>
 <td><strong>Web</strong></td>
 <td>켜짐</td>
-<td><strong>File</strong> 메뉴 → <strong>Work offline (no autosave)</strong></td>
+<td><strong>파일</strong> 메뉴 → <strong>오프라인으로 작업 (자동 저장 안 함)</strong></td>
 </tr>
 <tr>
 <td><strong>Android, iOS, Windows, macOS</strong></td>
 <td>꺼짐</td>
-<td><strong>Options</strong> 대화 상자 또는 <strong>File</strong> 메뉴의 <strong>Enable autosave</strong></td>
+<td><strong>옵션</strong> 대화 상자 또는 <strong>파일</strong> 메뉴의 <strong>자동 저장 활성화</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Save</strong> 버튼은 자동 저장 표시기 역할도 합니다. <em>Saving…</em>, <em>File saved</em>, <em>File saved to Google Drive</em>, <em>Autosave pending…</em> 또는 저장이 실패한 경우 오류를 표시합니다.</p>
+<p><strong>저장</strong> 버튼은 자동 저장 표시기 역할도 합니다. <em>저장 중…</em>, <em>파일 저장됨</em>, <em>Google 드라이브에 파일 저장됨</em>, <em>자동 저장 대기 중…</em> 또는 저장이 실패한 경우 오류를 표시합니다.</p>
 <p>자동 저장이 도움이 되지 않는 두 가지 상황이 있습니다:</p>
 <ul>
 <li><strong>프로젝트를 한 번도 저장하지 않은 경우.</strong> 아직 업데이트할 파일이 없으므로 직접 한 번 저장하십시오.</li>
 <li><strong>브라우저에서 Ingantt를 사용하면서 로컬 파일에서 프로젝트를 연 경우.</strong> 아래를 참조하십시오.</li>
 </ul>
 <h2 id="웹에서의-자동-저장과-로컬-파일">웹에서의 자동 저장과 로컬 파일 <a href="#웹에서의-자동-저장과-로컬-파일" class="heading-anchor">#</a></h2>
-<p>브라우저는 디스크에서 선택한 파일에 다시 쓸 수 없습니다. Ingantt for Web이 &quot;로컬 파일&quot;에 저장할 때는 대신 파일의 새 복사본을 다운로드합니다. 이는 명시적인 <strong>Save</strong>에는 적절한 동작이지만 20초마다 일어나기를 바라는 동작은 아닙니다.</p>
-<p>따라서 <strong>Ingantt for Web은 로컬 파일에 자동 저장하지 않습니다.</strong> 브라우저에서 로컬 프로젝트 파일을 열었고 변경 사항이 자동으로 보관되기를 원한다면 <strong>Save file as</strong> → <strong>Save to new Google Drive file</strong>을 한 번 사용하십시오. 그 이후로는 자동 저장이 Drive 파일을 최신 상태로 유지합니다.</p>
+<p>브라우저는 디스크에서 선택한 파일에 다시 쓸 수 없습니다. Ingantt for Web이 &quot;로컬 파일&quot;에 저장할 때는 대신 파일의 새 복사본을 다운로드합니다. 이는 명시적인 <strong>저장</strong>에는 적절한 동작이지만 20초마다 일어나기를 바라는 동작은 아닙니다.</p>
+<p>따라서 <strong>Ingantt for Web은 로컬 파일에 자동 저장하지 않습니다.</strong> 브라우저에서 로컬 프로젝트 파일을 열었고 변경 사항이 자동으로 보관되기를 원한다면 <strong>다른 이름으로 파일 저장</strong> → <strong>새 Google 드라이브 파일에 저장</strong>을 한 번 사용하십시오. 그 이후로는 자동 저장이 Drive 파일을 최신 상태로 유지합니다.</p>
 <p>이는 <a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a>에도 같은 방식으로 영향을 미칩니다. 자동 저장이 없으면 AI가 변경한 내용은 직접 저장하기 전까지 저장되지 않은 상태로 남으며, Ingantt는 세션이 시작되기 전에 이를 경고합니다.</p>
 <h2 id="웹에서-오프라인으로-작업하기">웹에서 오프라인으로 작업하기 <a href="#웹에서-오프라인으로-작업하기" class="heading-anchor">#</a></h2>
-<p><strong>File</strong> 메뉴의 <strong>Work offline (no autosave)</strong>는 현재 브라우저 탭의 자동 저장을 끕니다. 모든 변경 사항이 Google Drive로 전송되지 않게 하면서 편집을 계속하고 싶을 때 사용하십시오.</p>
+<p><strong>파일</strong> 메뉴의 <strong>오프라인으로 작업 (자동 저장 안 함)</strong>은 현재 브라우저 탭의 자동 저장을 끕니다. 모든 변경 사항이 Google Drive로 전송되지 않게 하면서 편집을 계속하고 싶을 때 사용하십시오.</p>
 <p>알아 둘 두 가지:</p>
 <ul>
 <li>켜져 있는 동안에는 아무것도 저장되지 않으므로 탭을 닫기 전에 직접 저장하십시오. 켤 때 Ingantt가 이를 알려 줍니다.</li>
-<li>이 설정은 세션별로 적용됩니다. 페이지를 새로 고치거나 새 탭을 열면 자동 저장이 다시 켜진 상태로 시작됩니다. Android, iOS, Windows, macOS에서는 대신 <strong>Enable autosave</strong> 설정이 기억됩니다.</li>
+<li>이 설정은 세션별로 적용됩니다. 페이지를 새로 고치거나 새 탭을 열면 자동 저장이 다시 켜진 상태로 시작됩니다. Android, iOS, Windows, macOS에서는 대신 <strong>자동 저장 활성화</strong> 설정이 기억됩니다.</li>
 </ul>
 <h2 id="복사본-다운로드">복사본 다운로드 <a href="#복사본-다운로드" class="heading-anchor">#</a></h2>
-<p>웹에서 <strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong>은 프로젝트의 저장 위치를 바꾸지 않고 프로젝트 복사본을 컴퓨터에 저장합니다. 백업용으로, 또는 Microsoft Project 사용자에게 파일을 전달할 때 사용하십시오.</p>
+<p>웹에서 <strong>파일</strong> → <strong>다운로드</strong> → <strong>XML 다운로드</strong>는 프로젝트의 저장 위치를 바꾸지 않고 프로젝트 복사본을 컴퓨터에 저장합니다. 백업용으로, 또는 Microsoft Project 사용자에게 파일을 전달할 때 사용하십시오.</p>
 <p>PDF, PNG, CSV, XML, YAML, Markdown 등 다른 형식은 <a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a>에서 다룹니다.</p>
 <h2 id="저장하지-않은-변경-사항이-있는-상태로-닫기">저장하지 않은 변경 사항이 있는 상태로 닫기 <a href="#저장하지-않은-변경-사항이-있는-상태로-닫기" class="heading-anchor">#</a></h2>
 <p>저장하지 않은 변경 사항이 있는 프로젝트를 닫으면 Ingantt가 <strong>Save changes to</strong> 메시지로 프로젝트의 변경 사항을 저장할지 묻고, 저장하지 않은 변경 사항은 사라진다고 경고합니다. 프로젝트를 휴지통으로 이동하기 전에도 같은 메시지가 표시됩니다.</p>
 <h2 id="ingantt에서-저장이-되지-않는-경우">Ingantt에서 저장이 되지 않는 경우 <a href="#ingantt에서-저장이-되지-않는-경우" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>&quot;View only mode as trial ended&quot;</strong> 또는 <strong>&quot;Subscription inactive&quot;</strong> — 프로젝트는 여전히 남아 있고 읽을 수 있지만, 구독이 활성화될 때까지 저장이 꺼져 있습니다. <a href="/ko/account/trial/">무료 체험</a> 및 <a href="/ko/account/subscription/">구독 및 결제</a>를 참조하십시오.</li>
-<li><strong>&quot;You are a viewer and cannot save&quot;</strong> — Google Drive 파일이 뷰어 또는 댓글 작성자 권한으로 공유되었습니다. 소유자에게 편집 권한을 요청하거나 <strong>Save file as</strong>로 자신의 복사본을 보관하십시오. <a href="/ko/ui/sharing/">프로젝트 공유</a>를 참조하십시오.</li>
-<li><strong>&quot;Error saving file to Google Drive&quot;</strong> — 대개 연결 문제이거나 Google 로그인이 만료된 경우입니다. 연결을 확인하고 다시 로그인하십시오. <a href="/ko/ui/files/">Google Drive 연동</a>을 참조하십시오.</li>
+<li><strong>&quot;시험판이 끝나서 읽기 전용 모드입니다&quot;</strong> 또는 <strong>&quot;구독 비활성화됨&quot;</strong> — 프로젝트는 여전히 남아 있고 읽을 수 있지만, 구독이 활성화될 때까지 저장이 꺼져 있습니다. <a href="/ko/account/trial/">무료 체험</a> 및 <a href="/ko/account/subscription/">구독 및 결제</a>를 참조하십시오.</li>
+<li><strong>&quot;뷰어로서 저장할 수 없습니다&quot;</strong> — Google Drive 파일이 뷰어 또는 댓글 작성자 권한으로 공유되었습니다. 소유자에게 편집 권한을 요청하거나 <strong>다른 이름으로 파일 저장</strong>으로 자신의 복사본을 보관하십시오. <a href="/ko/ui/sharing/">프로젝트 공유</a>를 참조하십시오.</li>
+<li><strong>&quot;Google 드라이브에 파일 저장 오류&quot;</strong> — 대개 연결 문제이거나 Google 로그인이 만료된 경우입니다. 연결을 확인하고 다시 로그인하십시오. <a href="/ko/ui/files/">Google Drive 연동</a>을 참조하십시오.</li>
 </ul>
 
     </main>

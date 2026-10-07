@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -217,20 +217,20 @@
 <p>다른 작업들은 여유가 전혀 없어 조금이라도 지연되면 프로젝트 종료 날짜가 밀립니다. 이를 <em>주공정 작업</em>이라고 합니다. 진행 상황을 추적할 때 이 작업들에 특히 주의를 기울여 프로젝트 일정을 유지하십시오.</p>
 <p>다음과 같은 경우에도 작업이 주공정 작업이 됩니다:</p>
 <ul>
-<li><strong>Must start on</strong> 또는 <strong>Must finish on</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 경우</li>
-<li>시작 날짜 기준으로 계획된 프로젝트에서 <strong>As late as possible</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 경우</li>
+<li><strong>반드시 시작</strong> 또는 <strong>반드시 완료</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 경우</li>
+<li>시작 날짜 기준으로 계획된 프로젝트에서 <strong>가능한 늦게</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 경우</li>
 <li>완료 날짜가 <a href="/ko/building-schedule/task-properties/#%EB%A7%88%EA%B0%90%EC%9D%BC">마감일</a>과 같거나 초과하는 경우</li>
 <li><strong>음의 여유</strong>가 있는 경우 — 제약 조건이 종속성이 허용하는 것보다 일찍 작업을 강제하는 일정 충돌</li>
 </ul>
 <p>100% 완료된 작업은 다른 조건에 관계없이 주공정 작업으로 표시되지 않습니다.</p>
-<p>Ingantt는 자동으로 주공정 작업을 감지합니다. <strong>Highlight critical tasks</strong> 옵션이 활성화되어 있으면(<strong>View</strong> 메뉴, 메뉴 바의 <strong>Chart</strong> 메뉴 또는 <strong>Options</strong> 대화 상자를 통해) 이 작업들은 빨간색으로 표시됩니다.</p>
-<p>음의 여유가 있는 작업은 작업 목록에 경고 아이콘도 표시되어 일정 충돌을 나타냅니다. 이는 일반적으로 <strong>Start no later than</strong> 또는 <strong>Finish no later than</strong> 제약 조건이 작업의 종속성과 충돌할 때 발생합니다.</p>
+<p>Ingantt는 자동으로 주공정 작업을 감지합니다. <strong>중요 작업 강조 표시</strong> 옵션이 활성화되어 있으면(<strong>보기</strong> 메뉴, 메뉴 바의 <strong>차트</strong> 메뉴 또는 <strong>옵션</strong> 대화 상자를 통해) 이 작업들은 빨간색으로 표시됩니다.</p>
+<p>음의 여유가 있는 작업은 작업 목록에 경고 아이콘도 표시되어 일정 충돌을 나타냅니다. 이는 일반적으로 <strong>이후에는 시작 불가</strong> 또는 <strong>이후에는 완료 불가</strong> 제약 조건이 작업의 종속성과 충돌할 때 발생합니다.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="주공정" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="주공정경로-옵션">주공정경로 옵션 <a href="#주공정경로-옵션" class="heading-anchor">#</a></h2>
-<p><strong>Project Properties</strong> 대화 상자의 <strong>Other</strong> 탭에서 주공정경로 계산 방법을 구성할 수 있습니다:</p>
+<p><strong>프로젝트 속성</strong> 대화 상자의 <strong>기타</strong> 탭에서 주공정경로 계산 방법을 구성할 수 있습니다:</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — 활성화하면 연결되지 않은 각 작업 그룹이 자체 주공정경로를 갖습니다. 비활성화(기본값)하면 후속 작업이 없는 작업의 늦은 완료일은 프로젝트 완료 날짜를 기준으로 계산됩니다.</li>
-<li><strong>Critical slack limit</strong> — 기본적으로 여유가 0이거나 음수인 작업이 주공정 작업입니다. 이 임계값을 높이면 지정된 일수까지의 여유가 있는 작업도 주공정 작업으로 간주됩니다.</li>
+<li><strong>여러 주요 경로 계산</strong> — 활성화하면 연결되지 않은 각 작업 그룹이 자체 주공정경로를 갖습니다. 비활성화(기본값)하면 후속 작업이 없는 작업의 늦은 완료일은 프로젝트 완료 날짜를 기준으로 계산됩니다.</li>
+<li><strong>여유가 다음 값 이하인 경우 작업이 중요합니다</strong> — 기본적으로 여유가 0이거나 음수인 작업이 주공정 작업입니다. 이 임계값을 높이면 지정된 일수까지의 여유가 있는 작업도 주공정 작업으로 간주됩니다.</li>
 </ul>
 
     </main>

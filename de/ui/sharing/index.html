@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -215,11 +215,11 @@
 <h2 id="bevor-sie-beginnen">Bevor Sie beginnen <a href="#bevor-sie-beginnen" class="heading-anchor">#</a></h2>
 <p>Die Freigabe funktioniert nur bei Google-Drive-Dateien. Sie müssen bei Google angemeldet sein, und das Projekt muss in Drive gespeichert sein; ein Projekt, das in einer lokalen Datei auf Ihrem Gerät liegt, lässt sich nicht freigeben. Siehe <a href="/de/getting-started/saving/">Projekt speichern</a>.</p>
 <blockquote>
-<p>Die Schaltfläche <strong>Freigeben</strong> ist Teil von Ingantt für Web. Unter Android, iOS, Windows und macOS geben Sie die Datei stattdessen über Google Drive frei — öffnen Sie Drive, suchen Sie die Ingantt-Datei und verwenden Sie den Befehl <strong>Freigeben</strong> von Drive. Das Ergebnis ist identisch, denn die Berechtigungen liegen in beiden Fällen auf der Drive-Datei.</p>
+<p>Die Schaltfläche <strong>Teilen</strong> ist Teil von Ingantt für Web. Unter Android, iOS, Windows und macOS geben Sie die Datei stattdessen über Google Drive frei — öffnen Sie Drive, suchen Sie die Ingantt-Datei und verwenden Sie den Befehl <strong>Teilen</strong> von Drive. Das Ergebnis ist identisch, denn die Berechtigungen liegen in beiden Fällen auf der Drive-Datei.</p>
 </blockquote>
 <h2 id="für-bestimmte-personen-freigeben">Für bestimmte Personen freigeben <a href="#für-bestimmte-personen-freigeben" class="heading-anchor">#</a></h2>
 <ol>
-<li>Öffnen Sie das Projekt und klicken Sie in der Kopfzeile auf <strong>Freigeben</strong> oder wählen Sie <strong>Freigeben</strong> im Menü <strong>Datei</strong>. Der Dialog <strong>In Google Drive freigeben</strong> öffnet sich.</li>
+<li>Öffnen Sie das Projekt und klicken Sie in der Kopfzeile auf <strong>Teilen</strong> oder wählen Sie <strong>Teilen</strong> im Menü <strong>Datei</strong>. Der Dialog <strong>Auf Google Drive teilen</strong> öffnet sich.</li>
 <li>Unter <strong>Personen mit Zugriff</strong> sehen Sie alle, die bereits Zugriff haben, Eigentümer zuerst.</li>
 <li>Klicken Sie auf <strong>Hinzufügen</strong>, geben Sie die E-Mail-Adresse der Person ein, wählen Sie die gewünschte Rolle und bestätigen Sie.</li>
 <li>Schließen Sie den Dialog. Ingantt speichert die neuen Berechtigungen in Drive und bestätigt mit <em>Zugriff aktualisiert</em>.</li>
@@ -242,7 +242,7 @@
 <td>Wie Betrachter, zusätzlich Kommentare zur Datei in Google Drive. Kann keine Änderungen speichern.</td>
 </tr>
 <tr>
-<td><strong>Mitbearbeiter</strong></td>
+<td><strong>Bearbeiter</strong></td>
 <td>Das Projekt öffnen und Änderungen darin speichern.</td>
 </tr>
 <tr>
@@ -263,14 +263,14 @@
 <li><strong>Domain</strong> — alle in Ihrer Google-Workspace-Organisation, mit der von Ihnen gewählten Rolle. Diese Option erscheint nur, wenn der Eigentümer des Projekts einer Workspace-Domain angehört; für private Gmail-Konten wird sie nicht angeboten.</li>
 </ul>
 <p><strong>Link kopieren</strong> kopiert den Google-Drive-Link zum Projekt. Jeder, dessen Zugriff es erlaubt, kann diesen Link öffnen und den Plan in Ingantt bearbeiten.</p>
-<p>Der Tooltip der Schaltfläche <strong>Freigeben</strong> zeigt Ihnen den aktuellen Zustand auf einen Blick — <em>Privat — nur Sie haben Zugriff</em>, <em>Für bestimmte Personen freigegeben</em>, <em>Jeder mit dem Link kann ansehen/kommentieren/bearbeiten</em> oder das Entsprechende für Ihre Domain.</p>
+<p>Der Tooltip der Schaltfläche <strong>Teilen</strong> zeigt Ihnen den aktuellen Zustand auf einen Blick — <em>Privat — nur Sie haben Zugriff</em>, <em>Mit bestimmten Personen geteilt</em>, <em>Jeder mit dem Link kann ansehen/kommentieren/bearbeiten</em> oder das Entsprechende für Ihre Domain.</p>
 <h2 id="wer-den-zugriff-ändern-darf">Wer den Zugriff ändern darf <a href="#wer-den-zugriff-ändern-darf" class="heading-anchor">#</a></h2>
 <p>Nur der <strong>Eigentümer</strong> der Datei kann den Zugriff immer verwalten. Ein <strong>Mitbearbeiter</strong> kann den Zugriff ebenfalls verwalten, es sei denn, der Eigentümer hat dies in Google Drive abgeschaltet.</p>
-<p>Wenn Sie den Dialog bei einem Projekt öffnen, das für Sie als Betrachter oder Kommentator freigegeben wurde, meldet er <strong>Sie sind Betrachter und können den Zugriff nicht verwalten</strong> und zeigt den aktuellen allgemeinen Zugriff an, ohne dass Sie ihn ändern können. Fragen Sie den Eigentümer, wenn Sie mehr benötigen.</p>
+<p>Wenn Sie den Dialog bei einem Projekt öffnen, das für Sie als Betrachter oder Kommentator freigegeben wurde, meldet er <strong>Sie sind ein Betrachter und können den Zugriff nicht verwalten</strong> und zeigt den aktuellen allgemeinen Zugriff an, ohne dass Sie ihn ändern können. Fragen Sie den Eigentümer, wenn Sie mehr benötigen.</p>
 <h2 id="an-einem-freigegebenen-projekt-arbeiten">An einem freigegebenen Projekt arbeiten <a href="#an-einem-freigegebenen-projekt-arbeiten" class="heading-anchor">#</a></h2>
 <ul>
 <li>Alle öffnen dieselbe Drive-Datei, aber Ingantt ist kein Werkzeug für gleichzeitiges Bearbeiten. Jedes Speichern schreibt die gesamte Projektdatei; wenn also zwei Personen den Plan geöffnet haben und beide speichern, gewinnt das letzte Speichern, und die Änderungen der anderen Person werden ersetzt. Vereinbaren Sie, wer bearbeitet, bevor Sie beginnen, und prüfen Sie den Versionsverlauf der Datei in Google Drive, wenn Sie glauben, dass etwas verloren gegangen ist.</li>
-<li>Ein Betrachter oder Kommentator, der zu speichern versucht, sieht <strong>Sie sind Betrachter und können nicht speichern</strong>. Verwenden Sie stattdessen <strong>Datei speichern unter</strong>, um eine persönliche Kopie zu behalten.</li>
+<li>Ein Betrachter oder Kommentator, der zu speichern versucht, sieht <strong>Sie sind ein Betrachter und können nicht speichern</strong>. Verwenden Sie stattdessen <strong>Datei speichern unter</strong>, um eine persönliche Kopie zu behalten.</li>
 <li>Jeder Mitwirkende benötigt zum Bearbeiten ein eigenes aktives Ingantt-Abonnement oder eine eigene Testphase — die Freigabe eines Plans gibt nicht Ihr Abonnement frei. Siehe <a href="/de/account/subscription/">Abonnements und Zahlung</a>.</li>
 <li>Die Freigabe an die Adresse einer Google-<strong>Gruppe</strong> wird vom Freigabedialog in Ingantt nicht unterstützt. Geben Sie für einzelne Adressen frei oder verwalten Sie eine Gruppenfreigabe über Google Drive.</li>
 </ul>

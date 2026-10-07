@@ -214,14 +214,14 @@
 <p>Enregistrez un instantané de votre planning avant le début des travaux, puis comparez-le à l'état actuel pour identifier les écarts du projet.</p>
 <p>Une référence de base capture la date de début, la date de fin, la durée, le travail et le coût de chaque tâche à un instant donné.</p>
 <h2 id="définir-une-référence-de-base">Définir une référence de base <a href="#définir-une-référence-de-base" class="heading-anchor">#</a></h2>
-<p>Définissez une référence de base depuis le menu <strong>Project</strong> en utilisant le sous-menu <strong>Set baseline</strong> :</p>
+<p>Définissez une référence de base depuis le menu <strong>Projet</strong> en utilisant le sous-menu <strong>Définir la référence</strong> :</p>
 <ul>
 <li>Vous pouvez définir une référence de base pour toutes les tâches ou uniquement pour les tâches sélectionnées.</li>
 <li>Ingantt prend en charge jusqu'à 11 références de base.</li>
 </ul>
 <h2 id="afficher-les-références-de-base">Afficher les références de base <a href="#afficher-les-références-de-base" class="heading-anchor">#</a></h2>
-<p>Une fois qu'une référence de base a été enregistrée, vous pouvez la visualiser dans le diagramme de Gantt en activant la visibilité des références dans la boîte de dialogue <strong>Baselines</strong>. Les barres de référence apparaissent sous forme de barres plus fines sous les barres de tâches actuelles, avec une couleur distincte pour chaque numéro de référence.</p>
-<p>Pour gérer les références de base, utilisez l'élément <strong>Baselines</strong> dans le menu <strong>Project</strong>. La boîte de dialogue <strong>Baselines</strong> vous permet de :</p>
+<p>Une fois qu'une référence de base a été enregistrée, vous pouvez la visualiser dans le diagramme de Gantt en activant la visibilité des références dans la boîte de dialogue <strong>Planifications de référence</strong>. Les barres de référence apparaissent sous forme de barres plus fines sous les barres de tâches actuelles, avec une couleur distincte pour chaque numéro de référence.</p>
+<p>Pour gérer les références de base, utilisez l'élément <strong>Planifications de référence</strong> dans le menu <strong>Projet</strong>. La boîte de dialogue <strong>Planifications de référence</strong> vous permet de :</p>
 <ul>
 <li>Afficher toutes les références de base enregistrées</li>
 <li>Supprimer les références dont vous n'avez plus besoin</li>
@@ -230,15 +230,15 @@
 <h2 id="colonnes-de-référence-et-décart">Colonnes de référence et d'écart <a href="#colonnes-de-référence-et-décart" class="heading-anchor">#</a></h2>
 <p>Vous pouvez ajouter des colonnes de référence et d'écart à la liste des tâches via la boîte de dialogue <strong>Options</strong>. Il y a au total <strong>55 colonnes de référence</strong> et <strong>5 colonnes d'écart</strong>.</p>
 <h3 id="les-55-colonnes-de-référence">Les 55 colonnes de référence <a href="#les-55-colonnes-de-référence" class="heading-anchor">#</a></h3>
-<p>Ingantt stocke <strong>11 références de base</strong> : la référence <strong>Baseline</strong> non numérotée, plus <strong>Baseline 1</strong> à <strong>Baseline 10</strong>. Chacune expose les cinq mêmes colonnes de tâche :</p>
+<p>Ingantt stocke <strong>11 références de base</strong> : la référence <strong>Planification de référence</strong> non numérotée, plus <strong>Planification de référence 1</strong> à <strong>Planification de référence 10</strong>. Chacune expose les cinq mêmes colonnes de tâche :</p>
 <ul>
-<li>Baseline Start</li>
+<li>Début de référence</li>
 <li>Baseline Finish</li>
 <li>Baseline Duration</li>
 <li>Baseline Work</li>
 <li>Baseline Cost</li>
 </ul>
-<p>11 références × 5 champs = <strong>55 colonnes de référence</strong>, toutes disponibles depuis le sélecteur de colonnes du tableau des tâches. Le jeu non numéroté porte un nom simple (<em>Baseline Start</em>) ; les jeux numérotés portent leur numéro (<em>Baseline 3 Start</em>).</p>
+<p>11 références × 5 champs = <strong>55 colonnes de référence</strong>, toutes disponibles depuis le sélecteur de colonnes du tableau des tâches. Le jeu non numéroté porte un nom simple (<em>Début de référence</em>) ; les jeux numérotés portent leur numéro (<em>Début de référence 3</em>).</p>
 <h3 id="les-5-colonnes-décart">Les 5 colonnes d'écart <a href="#les-5-colonnes-décart" class="heading-anchor">#</a></h3>
 <p>Les colonnes d'écart sont calculées — planning actuel moins référence de base — et il y en a cinq :</p>
 <ul>
@@ -248,14 +248,14 @@
 <li>Work Variance</li>
 <li>Cost Variance</li>
 </ul>
-<p>Il n'existe qu'un seul jeu de cinq colonnes, et non un jeu par référence de base. Elles comparent le planning actuel à <strong>une seule</strong> référence de base — celle sélectionnée comme <a href="/fr/tracking/earned-value/#r%C3%A9f%C3%A9rence-de-base-pour-la-valeur-acquise">référence de base pour la valeur acquise</a> dans <strong>Project → Earned Value Options</strong>, qui est par défaut la référence Baseline non numérotée. Modifiez ce paramètre et chaque colonne d'écart est recalculée par rapport à la référence choisie. Une tâche dont la référence choisie n'a jamais été définie affiche un écart vide plutôt qu'un zéro.</p>
+<p>Il n'existe qu'un seul jeu de cinq colonnes, et non un jeu par référence de base. Elles comparent le planning actuel à <strong>une seule</strong> référence de base — celle sélectionnée comme <a href="/fr/tracking/earned-value/#r%C3%A9f%C3%A9rence-de-base-pour-la-valeur-acquise">référence de base pour la valeur acquise</a> dans <strong>Projet → Options de valeur acquise</strong>, qui est par défaut la référence Baseline non numérotée. Modifiez ce paramètre et chaque colonne d'écart est recalculée par rapport à la référence choisie. Une tâche dont la référence choisie n'a jamais été définie affiche un écart vide plutôt qu'un zéro.</p>
 <h2 id="où-sont-stockées-les-références-de-base">Où sont stockées les références de base <a href="#où-sont-stockées-les-références-de-base" class="heading-anchor">#</a></h2>
 <p>Les références de base sont stockées <strong>dans le fichier de projet</strong>, et non dans un fichier séparé. Enregistrer le projet enregistre ses références de base.</p>
-<p>Si vous essayez de définir une douzième référence de base, Ingantt vous indique <em>All baseline slots are in use. Clear one in the Baselines dialog first.</em> Ouvrez <strong>Project → Baselines</strong> et effacez-en une.</p>
+<p>Si vous essayez de définir une douzième référence de base, Ingantt vous indique <em>Tous les créneaux de référence sont utilisés. Supprimez - en un d'abord dans le dialogue des références.</em> Ouvrez <strong>Projet → Planifications de référence</strong> et effacez-en une.</p>
 <p>Les références de base ne sont pas la même chose que l'<a href="/fr/ui/version-history/">historique des versions</a>, qui enregistre le fichier lui-même au fil du temps. Utilisez l'historique des versions pour revenir à un plan antérieur ; utilisez les références de base pour mesurer à quel point le plan actuel a dérivé.</p>
 <h2 id="plans-intermédiaires">Plans intermédiaires <a href="#plans-intermédiaires" class="heading-anchor">#</a></h2>
-<p>Les plans intermédiaires stockent des instantanés allégés du planning (dates de <strong>Start</strong> et <strong>Finish</strong> uniquement) pour une comparaison rapide sans la lourdeur des références de base complètes. Ingantt prend en charge jusqu'à 10 plans intermédiaires (<code>Interim Plan 1</code> à <code>Interim Plan 10</code>).</p>
-<p>Définissez et effacez les plans intermédiaires depuis l'élément <strong>Interim Plans</strong> dans le menu <strong>Project</strong>. Vous pouvez afficher les dates des plans intermédiaires sous forme de colonnes dans la liste des tâches.</p>
+<p>Les plans intermédiaires stockent des instantanés allégés du planning (dates de <strong>Début</strong> et <strong>Fin</strong> uniquement) pour une comparaison rapide sans la lourdeur des références de base complètes. Ingantt prend en charge jusqu'à 10 plans intermédiaires (<code>Interim Plan 1</code> à <code>Interim Plan 10</code>).</p>
+<p>Définissez et effacez les plans intermédiaires depuis l'élément <strong>Plans intermédiaires</strong> dans le menu <strong>Projet</strong>. Vous pouvez afficher les dates des plans intermédiaires sous forme de colonnes dans la liste des tâches.</p>
 
     </main>
     <aside class="toc" aria-label="Table des matières"></aside>

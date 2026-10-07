@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -211,23 +211,23 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="작업-속성">작업 속성 <a href="#작업-속성" class="heading-anchor">#</a></h1>
-<p>각 작업에는 일정 방식, 비용 계산 방법, Gantt 차트에서의 표시 방식을 제어하는 속성이 있습니다. <strong>Task Properties</strong> 대화 상자에서 이를 설정합니다.</p>
+<p>각 작업에는 일정 방식, 비용 계산 방법, Gantt 차트에서의 표시 방식을 제어하는 속성이 있습니다. <strong>작업 속성</strong> 대화 상자에서 이를 설정합니다.</p>
 <h2 id="기간">기간 <a href="#기간" class="heading-anchor">#</a></h2>
 <p>프로젝트를 계획할 때 기간은 추정값으로 입력합니다. 즉, 관련된 모든 자원이 작업을 완료하는 데 소요될 것으로 합리적으로 예상되는 시간입니다.</p>
-<p><strong>Duration</strong>(기간)과 <strong>Work</strong>(작업량)를 혼동하지 마십시오. 예를 들어, 세 명이 작업을 수행하지만 한 시간 만에 완료한다면 작업의 <strong>Duration</strong>을 한 시간으로 설정합니다. 이 세 명이 작업에 배정되면 Ingantt가 <strong>Work</strong> 속성을 세 시간으로 자동 계산합니다.</p>
-<p>기간은 <strong>Task Properties</strong> 대화 상자의 <strong>Duration</strong> 필드를 사용하여 변경할 수 있습니다.</p>
-<p>기간 추정에 아직 확신이 없는 경우 <strong>Task Properties</strong> 대화 상자에서 <strong>Estimate</strong>로 표시할 수 있습니다. 이렇게 하면 기간에 항상 물음표(&quot;<strong>?</strong>&quot;)가 표시됩니다. 이 플래그를 체크하거나 해제해도 일정에는 영향을 미치지 않습니다.</p>
-<p>요약 작업의 하위 작업 중 하나 이상에 <strong>Estimate</strong>가 체크되어 있으면, 요약 작업의 기간도 <strong>Estimate</strong>로 표시되어 &quot;<strong>?</strong>&quot;가 표시됩니다.</p>
-<p>기간은 시간, 일, 주 또는 월 단위로 설정할 수 있습니다. 기본적으로 &quot;1일&quot;은 8시간, &quot;1주&quot;는 5일(40시간), &quot;1개월&quot;은 20일을 의미합니다. 이 기본값은 <strong>Project Properties</strong> 대화 상자의 <strong>Duration</strong> 탭에서 변경할 수 있습니다.</p>
+<p><strong>기간</strong>과 <strong>작업</strong>을 혼동하지 마십시오. 예를 들어, 세 명이 작업을 수행하지만 한 시간 만에 완료한다면 작업의 <strong>기간</strong>을 한 시간으로 설정합니다. 이 세 명이 작업에 배정되면 Ingantt가 <strong>작업</strong> 속성을 세 시간으로 자동 계산합니다.</p>
+<p>기간은 <strong>작업 속성</strong> 대화 상자의 <strong>기간</strong> 필드를 사용하여 변경할 수 있습니다.</p>
+<p>기간 추정에 아직 확신이 없는 경우 <strong>작업 속성</strong> 대화 상자에서 <strong>추정치</strong>로 표시할 수 있습니다. 이렇게 하면 기간에 항상 물음표(&quot;<strong>?</strong>&quot;)가 표시됩니다. 이 플래그를 체크하거나 해제해도 일정에는 영향을 미치지 않습니다.</p>
+<p>요약 작업의 하위 작업 중 하나 이상에 <strong>추정치</strong>가 체크되어 있으면, 요약 작업의 기간도 <strong>추정치</strong>로 표시되어 &quot;<strong>?</strong>&quot;가 표시됩니다.</p>
+<p>기간은 시간, 일, 주 또는 월 단위로 설정할 수 있습니다. 기본적으로 &quot;1일&quot;은 8시간, &quot;1주&quot;는 5일(40시간), &quot;1개월&quot;은 20일을 의미합니다. 이 기본값은 <strong>프로젝트 속성</strong> 대화 상자의 <strong>기간</strong> 탭에서 변경할 수 있습니다.</p>
 <p>자원 배정, 작업량 또는 기간을 변경하면 작업의 <a href="#%EC%9C%A0%ED%98%95-%EB%B0%8F-%EB%85%B8%EB%A0%A5-%EA%B8%B0%EB%B0%98">유형</a>에 따라 이 중 하나가 재계산됩니다.</p>
 <h2 id="작업량">작업량 <a href="#작업량" class="heading-anchor">#</a></h2>
-<p>작업에 작업 자원(작업을 수행하는 사람 등)이 배정되면 작업의 <strong>Work</strong> 속성이 0보다 커집니다. 이는 모든 자원이 해당 작업에 소비할 시간을 나타냅니다. 예를 들어, <strong>Duration</strong>이 5시간인 작업에 2명의 자원이 배정되어 작업하는 경우, 작업의 <strong>Work</strong>는 10시간입니다.</p>
-<p>작업량은 <strong>Task Properties</strong> 대화 상자의 <strong>Work</strong> 필드를 사용하여 변경할 수 있습니다.</p>
-<p>기간과 마찬가지로 작업량도 <strong>Project Properties</strong> 대화 상자의 <strong>Duration</strong> 탭 정의를 사용하여 시간, 일, 주 또는 월 단위로 지정할 수 있습니다. 작업량의 기본 표시 형식은 <strong>Time</strong> 탭에서 변경할 수 있습니다.</p>
+<p>작업에 작업 자원(작업을 수행하는 사람 등)이 배정되면 작업의 <strong>작업</strong> 속성이 0보다 커집니다. 이는 모든 자원이 해당 작업에 소비할 시간을 나타냅니다. 예를 들어, <strong>기간</strong>이 5시간인 작업에 2명의 자원이 배정되어 작업하는 경우, 작업의 <strong>작업</strong>은 10시간입니다.</p>
+<p>작업량은 <strong>작업 속성</strong> 대화 상자의 <strong>작업</strong> 필드를 사용하여 변경할 수 있습니다.</p>
+<p>기간과 마찬가지로 작업량도 <strong>프로젝트 속성</strong> 대화 상자의 <strong>기간</strong> 탭 정의를 사용하여 시간, 일, 주 또는 월 단위로 지정할 수 있습니다. 작업량의 기본 표시 형식은 <strong>시간</strong> 탭에서 변경할 수 있습니다.</p>
 <p>자원 배정, 작업량 또는 기간을 변경하면 작업의 <a href="#%EC%9C%A0%ED%98%95-%EB%B0%8F-%EB%85%B8%EB%A0%A5-%EA%B8%B0%EB%B0%98">유형</a>에 따라 이 중 하나가 재계산됩니다.</p>
 <h2 id="마감일">마감일 <a href="#마감일" class="heading-anchor">#</a></h2>
 <p>특정 날짜까지 작업을 완료해야 하는 경우가 있으며, 이를 일반적으로 마감일이라고 합니다.</p>
-<p>작업의 마감일은 <strong>Task Properties</strong> 대화 상자의 <strong>Deadline</strong> 필드를 사용하여 지정할 수 있습니다.</p>
+<p>작업의 마감일은 <strong>작업 속성</strong> 대화 상자의 <strong>마감 기한</strong> 필드를 사용하여 지정할 수 있습니다.</p>
 <p>마감일은 참조용이며 일정에 영향을 미치지 않습니다.</p>
 <p>마감일은 Gantt 차트에서 특수 아이콘으로 표시됩니다.</p>
 <blockquote>
@@ -235,15 +235,15 @@
 </blockquote>
 <p><img src="/images/building-schedule/tasks/deadline.png" alt="마감일" / data-dark-src="/images/building-schedule/tasks/deadline_d.png"></p>
 <blockquote>
-<p>루트 요약 작업에 마감일을 설정하여 전체 프로젝트에 대한 마감일을 지정할 수 있습니다. 루트 요약 작업이 <strong>Options</strong> 대화 상자에서 표시되도록 설정되어 있는지 확인하십시오.</p>
+<p>루트 요약 작업에 마감일을 설정하여 전체 프로젝트에 대한 마감일을 지정할 수 있습니다. 루트 요약 작업이 <strong>옵션</strong> 대화 상자에서 표시되도록 설정되어 있는지 확인하십시오.</p>
 </blockquote>
 <h2 id="마일스톤">마일스톤 <a href="#마일스톤" class="heading-anchor">#</a></h2>
-<p><strong>Task Properties</strong> 대화 상자에서 <strong>Milestone</strong> 체크박스를 체크하여 모든 작업을 마일스톤으로 표시할 수 있습니다. 이는 기간이나 일정에 영향을 주지 않지만 Gantt 차트에서 아이콘으로 표시됩니다.</p>
+<p><strong>작업 속성</strong> 대화 상자에서 <strong>이정표</strong> 체크박스를 체크하여 모든 작업을 마일스톤으로 표시할 수 있습니다. 이는 기간이나 일정에 영향을 주지 않지만 Gantt 차트에서 아이콘으로 표시됩니다.</p>
 <p><img src="/images/building-schedule/tasks/milestone.png" alt="마일스톤" / data-dark-src="/images/building-schedule/tasks/milestone_d.png"></p>
-<p>작업의 <strong>Duration</strong>을 0으로 지정하면 변경 사항을 저장할 때 자동으로 <strong>Milestone</strong>으로 표시됩니다.</p>
+<p>작업의 <strong>기간</strong>을 0으로 지정하면 변경 사항을 저장할 때 자동으로 <strong>이정표</strong>로 표시됩니다.</p>
 <h2 id="유형-및-노력-기반">유형 및 노력 기반 <a href="#유형-및-노력-기반" class="heading-anchor">#</a></h2>
-<p>작업 자원 배정(또는 배정된 작업 자원의 단위), 작업량 및 기간은 서로 종속됩니다. 이 중 하나를 변경하면 나머지가 그에 맞게 재계산되어야 합니다. 작업의 <strong>Type</strong>(<strong>Effort Driven</strong> 플래그의 도움으로)은 나머지 두 속성 중 어느 것이 변경되지 않는지를 정의하여 하나만 재계산되도록 합니다.</p>
-<p>예를 들어, <strong>Type</strong>을 <strong>Fixed units</strong>(기본값)로 설정하면 Duration을 변경할 때 Work가 자동으로 재계산됩니다.</p>
+<p>작업 자원 배정(또는 배정된 작업 자원의 단위), 작업량 및 기간은 서로 종속됩니다. 이 중 하나를 변경하면 나머지가 그에 맞게 재계산되어야 합니다. 작업의 <strong>유형</strong>(<strong>노력 기반</strong> 플래그의 도움으로)은 나머지 두 속성 중 어느 것이 변경되지 않는지를 정의하여 하나만 재계산되도록 합니다.</p>
+<p>예를 들어, <strong>유형</strong>을 <strong>고정 단위</strong>(기본값)로 설정하면 Duration을 변경할 때 Work가 자동으로 재계산됩니다.</p>
 <table>
 <thead>
 <tr>
@@ -253,7 +253,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Fixed units</strong></td>
+<td><strong>고정 단위</strong></td>
 <td>Duration을 변경하면: Work가 재계산됩니다.</td>
 </tr>
 <tr>
@@ -266,14 +266,14 @@
 </tr>
 <tr>
 <td></td>
-<td>- <strong>Effort Driven</strong>이 설정된 경우: Duration이 재계산됩니다.</td>
+<td>- <strong>노력 기반</strong>이 설정된 경우: Duration이 재계산됩니다.</td>
 </tr>
 <tr>
 <td></td>
-<td>- <strong>Effort Driven</strong>이 설정되지 않은 경우: Work가 재계산됩니다.</td>
+<td>- <strong>노력 기반</strong>이 설정되지 않은 경우: Work가 재계산됩니다.</td>
 </tr>
 <tr>
-<td><strong>Fixed duration</strong></td>
+<td><strong>고정 기간</strong></td>
 <td>Duration을 변경하면: Work가 재계산됩니다.</td>
 </tr>
 <tr>
@@ -285,7 +285,7 @@
 <td>Units를 변경하면: Work가 재계산됩니다.</td>
 </tr>
 <tr>
-<td><strong>Fixed work</strong></td>
+<td><strong>고정 작업량</strong></td>
 <td>Duration을 변경하면: Units가 재계산됩니다.</td>
 </tr>
 <tr>
@@ -298,22 +298,22 @@
 </tr>
 </tbody>
 </table>
-<p>즉, <strong>Type</strong>은 세 가지 속성 중 하나를 고정하고, <strong>Effort Driven</strong> 플래그는 나머지 두 속성 중 Work를 변경하지 않을지 여부를 정의합니다.</p>
+<p>즉, <strong>유형</strong>은 세 가지 속성 중 하나를 고정하고, <strong>노력 기반</strong> 플래그는 나머지 두 속성 중 Work를 변경하지 않을지 여부를 정의합니다.</p>
 <blockquote>
-<p><strong>Type</strong> 및 <strong>Effort Driven</strong> 설정은 항상 Fixed duration이고 노력 기반이 아닌 <a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a>에는 사용할 수 없습니다.</p>
+<p><strong>유형</strong> 및 <strong>노력 기반</strong> 설정은 항상 Fixed duration이고 노력 기반이 아닌 <a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a>에는 사용할 수 없습니다.</p>
 </blockquote>
 <h2 id="메모">메모 <a href="#메모" class="heading-anchor">#</a></h2>
-<p><strong>Task Properties</strong> 대화 상자의 <strong>Notes</strong> 탭에 있는 <strong>Notes</strong> 필드에 작업에 대한 텍스트를 추가할 수 있습니다. 작업 설명, 연락처 정보, 아이디어 또는 기타 텍스트 데이터에 사용하십시오.</p>
-<p>작업에 <strong>Notes</strong> 필드가 채워져 있으면 작업 목록에 특수 아이콘이 표시됩니다. Windows, macOS 및 웹에서는 아이콘 위에 마우스를 올리면 메모가 표시됩니다. 모바일에서는 <strong>Task Properties</strong> 대화 상자를 열어 전체 메모를 확인하십시오.</p>
+<p><strong>작업 속성</strong> 대화 상자의 <strong>노트</strong> 탭에 있는 <strong>노트</strong> 필드에 작업에 대한 텍스트를 추가할 수 있습니다. 작업 설명, 연락처 정보, 아이디어 또는 기타 텍스트 데이터에 사용하십시오.</p>
+<p>작업에 <strong>노트</strong> 필드가 채워져 있으면 작업 목록에 특수 아이콘이 표시됩니다. Windows, macOS 및 웹에서는 아이콘 위에 마우스를 올리면 메모가 표시됩니다. 모바일에서는 <strong>작업 속성</strong> 대화 상자를 열어 전체 메모를 확인하십시오.</p>
 <h2 id="하이퍼링크">하이퍼링크 <a href="#하이퍼링크" class="heading-anchor">#</a></h2>
-<p><strong>Task Properties</strong> 대화 상자의 <strong>Notes</strong> 탭에 있는 <strong>Hyperlink</strong> 필드를 사용하여 작업에 URL을 첨부할 수 있습니다. 하이퍼링크가 있는 작업은 작업 목록에 링크 아이콘이 표시됩니다. 링크 아이콘을 클릭하면 브라우저에서 URL이 열립니다.</p>
+<p><strong>작업 속성</strong> 대화 상자의 <strong>노트</strong> 탭에 있는 <strong>하이퍼링크</strong> 필드를 사용하여 작업에 URL을 첨부할 수 있습니다. 하이퍼링크가 있는 작업은 작업 목록에 링크 아이콘이 표시됩니다. 링크 아이콘을 클릭하면 브라우저에서 URL이 열립니다.</p>
 <h2 id="막대-숨기기-및-롤업">막대 숨기기 및 롤업 <a href="#막대-숨기기-및-롤업" class="heading-anchor">#</a></h2>
-<p><strong>Task Properties</strong> 대화 상자의 <strong>Visual</strong> 탭에서:</p>
+<p><strong>작업 속성</strong> 대화 상자의 <strong>시각적</strong> 탭에서:</p>
 <ul>
-<li><strong>Hide bar</strong> — 작업 목록에서 행은 유지하면서 Gantt 차트에서 작업 막대를 숨깁니다. 보이지 않는 막대 영역은 여전히 클릭 및 컨텍스트 메뉴에 반응합니다.</li>
-<li><strong>Rollup</strong> — Gantt 차트에서 하위 작업의 막대를 상위 요약 작업의 행에 표시합니다. 요약 작업이 접혀 있을 때 축약된 보기를 제공합니다.</li>
+<li><strong>막대 숨기기</strong> — 작업 목록에서 행은 유지하면서 Gantt 차트에서 작업 막대를 숨깁니다. 보이지 않는 막대 영역은 여전히 클릭 및 컨텍스트 메뉴에 반응합니다.</li>
+<li><strong>롤업</strong> — Gantt 차트에서 하위 작업의 막대를 상위 요약 작업의 행에 표시합니다. 요약 작업이 접혀 있을 때 축약된 보기를 제공합니다.</li>
 </ul>
-<p>이 옵션은 <strong>Edit &gt; Display</strong> 하위 메뉴 또는 마우스 우클릭 컨텍스트 메뉴에서도 전환할 수 있습니다.</p>
+<p>이 옵션은 <strong>편집 &gt; 표시</strong> 하위 메뉴 또는 마우스 우클릭 컨텍스트 메뉴에서도 전환할 수 있습니다.</p>
 
     </main>
     <aside class="toc" aria-label="목차"></aside>

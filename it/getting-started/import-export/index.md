@@ -20,7 +20,7 @@ Ingantt può aprire file di progetto da molte applicazioni di pianificazione, no
 - **Ingantt YAML** — YAML, YML
 - E altri ancora (SDEF e ulteriori formati)
 
-Per importare un file, fai clic sul pulsante **+** nella schermata dei progetti, oppure usa l'opzione **Import** nel menu **File**. Se apporti modifiche a un file importato, Ingantt le salva in formato XML.
+Per importare un file, fai clic sul pulsante **+** nella schermata dei progetti, oppure usa l'opzione **Importa** nel menu **File**. Se apporti modifiche a un file importato, Ingantt le salva in formato XML.
 
 > Per aprire file di progetto non XML, Ingantt li invia tramite una connessione sicura al servizio web di Ingantt per la conversione. I tuoi file non vengono archiviati nel servizio. È necessaria una connessione a Internet. I file YAML vengono analizzati localmente.
 
@@ -32,7 +32,7 @@ I file convertiti sul nostro server sono limitati a **30 MB**. Questo riguarda M
 
 ## Esportazione del progetto
 
-Ingantt offre diversi formati di esportazione tramite l'opzione **Export** nel menu **File** (oppure **Download** sulla versione web). Quando scegli **Export**, appare una finestra di dialogo che consente di selezionare il formato desiderato:
+Ingantt offre diversi formati di esportazione tramite l'opzione **Esporta** nel menu **File** (oppure **Scarica** sulla versione web). Quando scegli **Esporta**, appare una finestra di dialogo che consente di selezionare il formato desiderato:
 
 | Formato | Descrizione |
 |---------|-------------|
@@ -43,7 +43,7 @@ Ingantt offre diversi formati di esportazione tramite l'opzione **Export** nel m
 | **YAML** | Definizione di progetto compatta e leggibile dall'uomo, pensata per la modifica assistita dall'IA |
 | **Markdown** | Formato di testo per documentazione, README o wiki |
 
-Il file esportato riflette le impostazioni correnti del diagramma di Gantt. Ad esempio, se i nomi delle attività sono nascosti nella finestra **Options**, non appariranno nemmeno nell'esportazione. Anche il livello di zoom viene preservato.
+Il file esportato riflette le impostazioni correnti del diagramma di Gantt. Ad esempio, se i nomi delle attività sono nascosti nella finestra **Opzioni**, non appariranno nemmeno nell'esportazione. Anche il livello di zoom viene preservato.
 
 > Le esportazioni PDF utilizzano sempre i colori del tema chiaro, mentre le esportazioni PNG utilizzano il tema corrente dell'interfaccia (chiaro o scuro). Le esportazioni CSV, YAML e Markdown sono in testo semplice. Quando visibili nell'interfaccia, le attività suddivise, le barre di baseline e le barre fantasma del livellamento vengono tutte renderizzate nelle esportazioni PDF e PNG.
 

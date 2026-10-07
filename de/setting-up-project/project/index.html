@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -217,18 +217,18 @@
 <p>Im Web und unter Windows öffnet ein Klick auf den Projektnamen in der Kopfzeile ebenfalls den Dialog <strong>Projekteigenschaften</strong>.</p>
 <h2 id="startdatum-und-planungsrichtung">Startdatum und Planungsrichtung <a href="#startdatum-und-planungsrichtung" class="heading-anchor">#</a></h2>
 <p>Standardmäßig wird Ihr Projekt vom Startdatum aus geplant, das Sie im Feld <strong>Projektstartdatum</strong> des Dialogs <strong>Projekteigenschaften</strong> festlegen können.</p>
-<p>Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu <strong>Vom Enddatum planen</strong> im Dialog <strong>Projekteigenschaften</strong> und legen Sie das <strong>Projektenddatum</strong> fest.</p>
+<p>Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu <strong>Ab Enddatum planen</strong> im Dialog <strong>Projekteigenschaften</strong> und legen Sie das <strong>Projektenddatum</strong> fest.</p>
 <p>Der Reiter <strong>Allgemein</strong> des Dialogs <strong>Projekteigenschaften</strong> zeigt sowohl das Startdatum als auch das Enddatum an. Bei der Planung vom Startdatum ist das Startdatum bearbeitbar und das Enddatum zeigt den berechneten Wert an. Bei der Planung vom Enddatum ist das Enddatum bearbeitbar und das Startdatum zeigt den berechneten Wert an.</p>
 <p>Beachten Sie:</p>
 <ul>
-<li>Bei Projekten, die vom Startdatum geplant werden, ist die Standard-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> für neu erstellte Vorgänge <strong>So früh wie möglich</strong>.</li>
+<li>Bei Projekten, die vom Startdatum geplant werden, ist die Standard-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> für neu erstellte Vorgänge <strong>So bald wie möglich</strong>.</li>
 <li>Bei Projekten, die vom Enddatum geplant werden, ist die Standardeinschränkung für neu erstellte Vorgänge <strong>So spät wie möglich</strong>.</li>
 </ul>
 <p>Beim Wechsel zwischen der Planung vom Start- und Enddatum werden die Einschränkungen bestehender Vorgänge nicht geändert, mit Ausnahme von <a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgängen</a>, einschließlich des <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgangs</a>.</p>
 <p>Für Sammelvorgänge:</p>
 <ul>
-<li>Die Einschränkung <strong>So früh wie möglich</strong> wird beim Wechsel von der Planung vom Start- zum Enddatum durch <strong>So spät wie möglich</strong> ersetzt.</li>
-<li>Die Einschränkung <strong>So spät wie möglich</strong> wird beim Wechsel von der Planung vom End- zum Startdatum durch <strong>So früh wie möglich</strong> ersetzt.</li>
+<li>Die Einschränkung <strong>So bald wie möglich</strong> wird beim Wechsel von der Planung vom Start- zum Enddatum durch <strong>So spät wie möglich</strong> ersetzt.</li>
+<li>Die Einschränkung <strong>So spät wie möglich</strong> wird beim Wechsel von der Planung vom End- zum Startdatum durch <strong>So bald wie möglich</strong> ersetzt.</li>
 </ul>
 <h2 id="erster-wochentag">Erster Wochentag <a href="#erster-wochentag" class="heading-anchor">#</a></h2>
 <p>Je nach Land kann eine Woche am Sonntag oder Montag beginnen. Sie können das Feld <strong>Erster Wochentag</strong> auf dem Reiter <strong>Regional</strong> des Dialogs <strong>Projekteigenschaften</strong> aktualisieren, um die Standardeinstellung für Ihr Projekt zu ändern.</p>
@@ -255,7 +255,7 @@
 <p>Der Reiter <strong>Planung</strong> des Dialogs <strong>Projekteigenschaften</strong> enthält Optionen, die steuern, wie Vorgänge geplant werden:</p>
 <ul>
 <li><strong>Einschränkungstermine einhalten</strong> — Wenn aktiviert, haben halbflexible Einschränkungen (wie Anfang nicht später als) Vorrang vor Abhängigkeiten, was möglicherweise negativen Puffer erzeugt. Wenn deaktiviert (die Standardeinstellung), haben Abhängigkeiten immer Vorrang.</li>
-<li><strong>Laufende Vorgänge teilen</strong> — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.</li>
+<li><strong>Laufende Vorgänge unterbrechen</strong> — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.</li>
 <li><strong>Abgeschlossene/verbleibende Teile verschieben</strong> — Vier Optionen, die steuern, wie abgeschlossene und verbleibende Arbeitsanteile relativ zum Statusdatum neu positioniert werden. Diese helfen, Ihren Terminplan aktuell zu halten, indem abgeschlossene Arbeit zum Statusdatum zurück oder verbleibende Arbeit nach vorne verschoben wird.</li>
 </ul>
 

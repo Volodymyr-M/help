@@ -45,4 +45,4 @@ Jede Ressource hat eine **Buchungsart**, die im Dialog **Ressourceneigenschaften
 - **Zugesichert** — Die Ressource ist fest für das Projekt gebucht.
 - **Vorgeschlagen** — Die Ressource ist vorläufig zu Planungszwecken zugewiesen.
 
-Standardmäßig schließt der automatische Abgleich vorgeschlagene Ressourcen aus. Sie können sie einbeziehen, indem Sie „Ressourcen mit Buchungsart ‚Vorgeschlagen‘ abgleichen“ im Dialog [Abgleichoptionen](/de/adjusting-schedule/leveling/index.md#abgleichoptionen) aktivieren.
+Standardmäßig schließt der automatische Abgleich vorgeschlagene Ressourcen aus. Sie können sie einbeziehen, indem Sie „Ressourcen mit Buchungsart ‚Vorgeschlagen‘ abgleichen“ im Dialog [Abgleichoptionen](/de/adjusting-schedule/leveling/index.md#abgleichsoptionen) aktivieren.

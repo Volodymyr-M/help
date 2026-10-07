@@ -212,16 +212,16 @@
     <main id="main-content" class="content">
       <h1 id="vues-des-tâches">Vues des tâches <a href="#vues-des-tâches" class="heading-anchor">#</a></h1>
 <p>Au-delà du diagramme de Gantt, visualisez vos tâches sur un tableau Kanban, un calendrier mensuel, un diagramme réseau ou une chronologie. Chaque vue met en évidence différents aspects de votre planning.</p>
-<h2 id="task-board">Task Board <a href="#task-board" class="heading-anchor">#</a></h2>
-<p>La vue <strong>Task Board</strong> affiche les tâches sous forme de cartes organisées en colonnes représentant les étapes du flux de travail (style Kanban).</p>
+<h2 id="tableau-des-tâches">Tableau des tâches <a href="#tableau-des-tâches" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Tableau des tâches</strong> affiche les tâches sous forme de cartes organisées en colonnes représentant les étapes du flux de travail (style Kanban).</p>
 <p>Les nouveaux projets démarrent avec trois colonnes par défaut : « Not Started » (0 %), « In Progress » (50 %) et « Complete » (100 %). Chaque colonne est associée à un pourcentage d'achèvement — lorsque vous faites glisser une carte vers une colonne, le pourcentage d'achèvement de la tâche est automatiquement mis à jour.</p>
-<p>Vous pouvez ajouter, modifier, renommer, réorganiser et supprimer des colonnes. Chaque colonne dispose d'un bouton <strong>Add Task</strong> en bas pour créer des tâches directement à cette étape.</p>
-<p>Seules les tâches actives non récapitulatives ayant l'option « Show on board » activée apparaissent sur le tableau. Le paramètre « Show on board » est disponible dans l'onglet <strong>Visual</strong> de la boîte de dialogue <strong>Task Properties</strong>.</p>
+<p>Vous pouvez ajouter, modifier, renommer, réorganiser et supprimer des colonnes. Chaque colonne dispose d'un bouton <strong>Ajouter une tâche</strong> en bas pour créer des tâches directement à cette étape.</p>
+<p>Seules les tâches actives non récapitulatives ayant l'option « Afficher sur le tableau » activée apparaissent sur le tableau. Le paramètre « Afficher sur le tableau » est disponible dans l'onglet <strong>Visuel</strong> de la boîte de dialogue <strong>Propriétés de la tâche</strong>.</p>
 <blockquote>
-<p>Faites glisser les cartes de tâches entre les colonnes pour modifier leur état. Lorsque le pourcentage d'achèvement d'une tâche change par un autre moyen (boîte de dialogue, modification en ligne ou Update Project), la carte se déplace automatiquement vers la colonne correspondante.</p>
+<p>Faites glisser les cartes de tâches entre les colonnes pour modifier leur état. Lorsque le pourcentage d'achèvement d'une tâche change par un autre moyen (boîte de dialogue, modification en ligne ou Mettre à jour le projet), la carte se déplace automatiquement vers la colonne correspondante.</p>
 </blockquote>
-<h2 id="network-diagram">Network Diagram <a href="#network-diagram" class="heading-anchor">#</a></h2>
-<p>La vue <strong>Network Diagram</strong> affiche les tâches sous forme de nœuds rectangulaires disposés dans un organigramme de gauche à droite. Les tâches sans prédécesseur apparaissent dans la colonne la plus à gauche, et chaque tâche suivante apparaît après tous ses prédécesseurs.</p>
+<h2 id="diagramme-de-réseau">Diagramme de réseau <a href="#diagramme-de-réseau" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Diagramme de réseau</strong> affiche les tâches sous forme de nœuds rectangulaires disposés dans un organigramme de gauche à droite. Les tâches sans prédécesseur apparaissent dans la colonne la plus à gauche, et chaque tâche suivante apparaît après tous ses prédécesseurs.</p>
 <ul>
 <li>Les tâches normales affichent l'identifiant, la durée, les dates de début/fin et les ressources</li>
 <li>Les tâches récapitulatives affichent l'identifiant, la durée, les dates de début/fin et le pourcentage d'achèvement</li>
@@ -230,25 +230,25 @@
 <li>L'avancement est indiqué par des lignes diagonales superposées : une ligne pour les tâches en cours, des lignes croisées pour les tâches terminées</li>
 </ul>
 <p>Vous pouvez réduire/développer les tâches récapitulatives, cliquer pour sélectionner, double-cliquer pour modifier et faire un clic droit pour accéder au menu contextuel. Des flèches de dépendance sont tracées entre les nœuds pour les quatre types de liens.</p>
-<h2 id="calendar-view">Calendar View <a href="#calendar-view" class="heading-anchor">#</a></h2>
-<p>La vue <strong>Calendar View</strong> affiche une grille de calendrier mensuel avec les tâches représentées sous forme de barres horizontales couvrant leurs dates planifiées.</p>
+<h2 id="vue-calendrier">Vue calendrier <a href="#vue-calendrier" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Vue calendrier</strong> affiche une grille de calendrier mensuel avec les tâches représentées sous forme de barres horizontales couvrant leurs dates planifiées.</p>
 <ul>
-<li>Basculez entre les vues <strong>Month</strong> et <strong>Week</strong> à l'aide du sélecteur dans l'en-tête</li>
-<li>Activez le mode <strong>Work week</strong> pour afficher uniquement les jours ouvrés (vue sur 5 jours)</li>
+<li>Basculez entre les vues <strong>Mois</strong> et <strong>Semaine</strong> à l'aide du sélecteur dans l'en-tête</li>
+<li>Activez le mode <strong>Semaine de travail</strong> pour afficher uniquement les jours ouvrés (vue sur 5 jours)</li>
 <li>Naviguez avec les boutons Précédent/Suivant ou accédez directement à la date du jour</li>
 <li>Les jours non ouvrés sont affichés avec un arrière-plan distinct</li>
 <li>Les jalons apparaissent sous forme d'icônes en losange</li>
 <li>Double-cliquez sur un jour vide pour créer une nouvelle tâche d'un jour à cette date</li>
 </ul>
 <p>Les tâches qui chevauchent une limite de semaine passent à la ligne suivante. Lorsque plusieurs tâches se superposent le même jour, elles s'empilent verticalement.</p>
-<h2 id="timeline">Timeline <a href="#timeline" class="heading-anchor">#</a></h2>
-<p>La <strong>Timeline</strong> est un volet rétractable qui apparaît au-dessus du diagramme de Gantt et affiche un aperçu simplifié des tâches sélectionnées par l'utilisateur sur un axe temporel horizontal.</p>
-<p>Pour ajouter une tâche à la chronologie, faites un clic droit dessus et choisissez <strong>Display on Timeline</strong>, ou cochez l'option dans l'onglet <strong>Visual</strong> de la boîte de dialogue Task Properties.</p>
+<h2 id="chronologie">Chronologie <a href="#chronologie" class="heading-anchor">#</a></h2>
+<p>La <strong>Chronologie</strong> est un volet rétractable qui apparaît au-dessus du diagramme de Gantt et affiche un aperçu simplifié des tâches sélectionnées par l'utilisateur sur un axe temporel horizontal.</p>
+<p>Pour ajouter une tâche à la chronologie, faites un clic droit dessus et choisissez <strong>Afficher sur la chronologie</strong>, ou cochez l'option dans l'onglet <strong>Visuel</strong> de la boîte de dialogue Propriétés de la tâche.</p>
 <p>Les tâches sur la chronologie peuvent être affichées sous forme de barres ou d'étiquettes (libellés textuels reliés par des lignes verticales). Vous pouvez basculer entre les modes en faisant glisser une barre de tâche au-dessus ou en dessous de la ligne de séparation horizontale dans le volet de la chronologie. La chronologie affiche également un marqueur de la date du jour et une zone de vue que vous pouvez faire glisser pour faire défiler le diagramme de Gantt.</p>
-<p>Activez ou désactivez la chronologie depuis le menu <strong>View</strong>.</p>
-<h2 id="tracking-gantt">Tracking Gantt <a href="#tracking-gantt" class="heading-anchor">#</a></h2>
-<p>La vue <strong>Tracking Gantt</strong> est similaire à la vue Tasks standard, mais avec la mise en évidence du chemin critique toujours activée et la référence de base 0 affichée si elle a été enregistrée. Lorsque vous quittez la vue Tracking Gantt, les paramètres de visibilité du chemin critique et de la référence de base sont rétablis à leur état précédent.</p>
-<p>Utilisez le Tracking Gantt pour suivre l'avancement du projet par rapport au plan de référence.</p>
+<p>Activez ou désactivez la chronologie depuis le menu <strong>Vue</strong>.</p>
+<h2 id="gantt-de-suivi">Gantt de suivi <a href="#gantt-de-suivi" class="heading-anchor">#</a></h2>
+<p>La vue <strong>Gantt de suivi</strong> est similaire à la vue Tâches standard, mais avec la mise en évidence du chemin critique toujours activée et la référence de base 0 affichée si elle a été enregistrée. Lorsque vous quittez la vue Gantt de suivi, les paramètres de visibilité du chemin critique et de la référence de base sont rétablis à leur état précédent.</p>
+<p>Utilisez le Gantt de suivi pour suivre l'avancement du projet par rapport au plan de référence.</p>
 
     </main>
     <aside class="toc" aria-label="Table des matières"></aside>

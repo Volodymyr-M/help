@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -213,13 +213,13 @@
       <h1 id="assegnazioni">Assegnazioni <a href="#assegnazioni" class="heading-anchor">#</a></h1>
 <p>Controlla come le risorse vengono allocate alle attività — chi lavora su cosa, per quanta parte del suo tempo e come è distribuito lo sforzo. Regola unità, profili di lavoro e straordinari in base a come il tuo team lavora effettivamente.</p>
 <h2 id="assegnazioni-delle-risorse-e-unità">Assegnazioni delle risorse e unità <a href="#assegnazioni-delle-risorse-e-unità" class="heading-anchor">#</a></h2>
-<p>Le risorse possono essere assegnate a un'attività nella scheda <strong>Resources</strong> della finestra <strong>Task Properties</strong>.</p>
+<p>Le risorse possono essere assegnate a un'attività nella scheda <strong>Risorse</strong> della finestra <strong>Proprietà del Compito</strong>.</p>
 <p>Per assegnare una risorsa, seleziona la casella di controllo nella riga della risorsa. Per rimuovere l'assegnazione di una risorsa, deseleziona la casella.</p>
-<p>Le assegnazioni di risorse di tipo lavoro o materiale hanno delle <strong>Units</strong>, mostrate nella colonna corrispondente. Fai clic sul pulsante <strong>Edit</strong> per modificare il valore predefinito delle <strong>Units</strong> per l'assegnazione.</p>
+<p>Le assegnazioni di risorse di tipo lavoro o materiale hanno delle <strong>Unità</strong>, mostrate nella colonna corrispondente. Fai clic sul pulsante <strong>Modifica</strong> per modificare il valore predefinito delle <strong>Unità</strong> per l'assegnazione.</p>
 <p>Per impostazione predefinita, le risorse di tipo lavoro vengono assegnate con unità corrispondenti alle <a href="/it/building-schedule/resources/#unit%C3%A0-massime">unità massime</a> della risorsa (100% per una risorsa a tempo pieno). Questo significa che la risorsa dedicherà tutto il suo tempo di calendario disponibile all'attività. Puoi modificare il valore con qualsiasi numero.</p>
 <p>Per impostazione predefinita, le risorse di tipo materiale vengono assegnate con 1 unità. Questo significa che 1 unità di quel materiale verrà utilizzata per completare l'attività. L'unità rappresenta qualsiasi cosa tu abbia definito per il materiale (scatola, gallone, tonnellata, ecc.). Puoi modificare il valore predefinito e impostare qualsiasi numero di unità.</p>
 <h2 id="profili-di-lavoro">Profili di lavoro <a href="#profili-di-lavoro" class="heading-anchor">#</a></h2>
-<p>Quando una risorsa di tipo lavoro viene assegnata a un'attività, lo sforzo (lavoro) viene distribuito lungo la durata dell'attività secondo un <strong>profilo di lavoro</strong>. Per impostazione predefinita, il lavoro è distribuito uniformemente (profilo Flat), ma Ingantt supporta diversi schemi di profilo che modificano la distribuzione dello sforzo nel tempo:</p>
+<p>Quando una risorsa di tipo lavoro viene assegnata a un'attività, lo sforzo (lavoro) viene distribuito lungo la durata dell'attività secondo un <strong>profilo lavoro</strong>. Per impostazione predefinita, il lavoro è distribuito uniformemente (profilo Flat), ma Ingantt supporta diversi schemi di profilo che modificano la distribuzione dello sforzo nel tempo:</p>
 <table>
 <thead>
 <tr>
@@ -229,59 +229,59 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Flat</strong></td>
+<td><strong>Uniforme</strong></td>
 <td>Sforzo uniforme per tutta la durata (predefinito)</td>
 </tr>
 <tr>
-<td><strong>Back Loaded</strong></td>
+<td><strong>Carico finale</strong></td>
 <td>Lo sforzo aumenta verso la fine dell'attività</td>
 </tr>
 <tr>
-<td><strong>Front Loaded</strong></td>
+<td><strong>Carico iniziale</strong></td>
 <td>Lo sforzo è maggiore all'inizio e diminuisce</td>
 </tr>
 <tr>
-<td><strong>Double Peak</strong></td>
+<td><strong>Doppio picco</strong></td>
 <td>Due picchi di intensità durante l'attività</td>
 </tr>
 <tr>
-<td><strong>Early Peak</strong></td>
+<td><strong>Picco iniziale</strong></td>
 <td>Picco anticipato, poi calo graduale</td>
 </tr>
 <tr>
-<td><strong>Late Peak</strong></td>
+<td><strong>Picco finale</strong></td>
 <td>Crescita fino a un picco verso la fine</td>
 </tr>
 <tr>
-<td><strong>Bell</strong></td>
+<td><strong>Campana</strong></td>
 <td>Curva a campana — picco al centro</td>
 </tr>
 <tr>
-<td><strong>Turtle</strong></td>
+<td><strong>Tartaruga</strong></td>
 <td>Curva a campana più piatta — distribuzione più uniforme</td>
 </tr>
 <tr>
-<td><strong>Contoured</strong></td>
+<td><strong>Personalizzato</strong></td>
 <td>La tua distribuzione giornaliera personalizzata. Viene impostata automaticamente quando modifichi il lavoro in una vista di utilizzo; non può essere scelta dal menu a discesa.</td>
 </tr>
 </tbody>
 </table>
 <p>I profili di lavoro influenzano il modo in cui il lavoro viene distribuito nei periodi temporali e vengono conservati durante l'apertura e il salvataggio dei file di progetto.</p>
 <h3 id="il-profilo-contoured">Il profilo Contoured <a href="#il-profilo-contoured" class="heading-anchor">#</a></h3>
-<p><strong>Contoured</strong> è il profilo personalizzato e si comporta diversamente dagli altri otto. Non puoi sceglierlo dal menu a discesa su un'assegnazione che non lo ha già — l'opzione è disattivata. Lo ottieni <strong>modificando direttamente il lavoro in una cella di <a href="/it/views/resource-views/">Resource Usage o Task Usage</a></strong>: nel momento in cui digiti un valore di lavoro giornaliero, il profilo di quell'assegnazione diventa <em>Contoured</em> e viene usata la distribuzione che hai digitato.</p>
+<p><strong>Personalizzato</strong> è il profilo personalizzato e si comporta diversamente dagli altri otto. Non puoi sceglierlo dal menu a discesa su un'assegnazione che non lo ha già — l'opzione è disattivata. Lo ottieni <strong>modificando direttamente il lavoro in una cella di <a href="/it/views/resource-views/">Utilizzo delle Risorse o Utilizzo delle Attività</a></strong>: nel momento in cui digiti un valore di lavoro giornaliero, il profilo di quell'assegnazione diventa <em>Personalizzato</em> e viene usata la distribuzione che hai digitato.</p>
 <p>Due conseguenze sono utili da sapere:</p>
 <ul>
 <li><strong>Passare da Contoured a un altro profilo elimina la distribuzione inserita a mano.</strong> Scegli uno qualsiasi degli altri otto profili e i valori giornalieri che hai digitato vengono cancellati. Non vengono conservati né ripristinati se torni indietro.</li>
 <li><strong>Il lavoro Contoured sopravvive al ciclo di andata e ritorno con il formato Microsoft Project.</strong> L'importazione legge il lavoro giornaliero distribuito nel tempo nell'assegnazione e l'esportazione lo riscrive. Un piano che arriva da Microsoft Project con un profilo modificato a mano lo conserva.</li>
 </ul>
 <h2 id="ritardo-dellassegnazione">Ritardo dell'assegnazione <a href="#ritardo-dellassegnazione" class="heading-anchor">#</a></h2>
-<p>Ogni assegnazione di risorsa su un'attività ha una proprietà <strong>Delay</strong> che posticipa il momento in cui la risorsa inizia a lavorare rispetto alla data di inizio dell'attività. Ad esempio, se un'attività inizia lunedì e una risorsa ha un ritardo di 2 giorni, quella risorsa inizia a lavorare mercoledì.</p>
-<p>Il ritardo viene impostato nella finestra <strong>Edit Resource Assignment</strong> e si applica solo alle assegnazioni di risorse di tipo lavoro. Può essere utilizzato per scaglionare i tempi di inizio delle risorse su un'attività.</p>
-<h2 id="lavoro-straordinario">Lavoro straordinario <a href="#lavoro-straordinario" class="heading-anchor">#</a></h2>
+<p>Ogni assegnazione di risorsa su un'attività ha una proprietà <strong>Ritardo</strong> che posticipa il momento in cui la risorsa inizia a lavorare rispetto alla data di inizio dell'attività. Ad esempio, se un'attività inizia lunedì e una risorsa ha un ritardo di 2 giorni, quella risorsa inizia a lavorare mercoledì.</p>
+<p>Il ritardo viene impostato nella finestra <strong>Modifica Assegnazione delle Risorse</strong> e si applica solo alle assegnazioni di risorse di tipo lavoro. Può essere utilizzato per scaglionare i tempi di inizio delle risorse su un'attività.</p>
+<h2 id="lavoro-straordinario">Lavoro Straordinario <a href="#lavoro-straordinario" class="heading-anchor">#</a></h2>
 <p>Per le risorse di tipo lavoro, puoi designare una parte del lavoro totale di un'assegnazione come straordinario. Il lavoro straordinario è un sottoinsieme del lavoro totale, non un'aggiunta: <strong>Work = Regular Work + Overtime Work</strong>.</p>
 <p>L'impatto degli straordinari sui costi è trattato in <a href="/it/planning-costs/setting-up-costs/#costo-della-risorsa-di-tipo-lavoro">Configurazione dei costi</a>.</p>
 <p>Per le attività di tipo Fixed Units e Fixed Work, l'inserimento del lavoro straordinario riduce la durata dell'attività perché la durata si basa solo sul lavoro regolare.</p>
-<p>Imposta il lavoro straordinario nella finestra <strong>Edit Resource Assignment</strong>. Tre colonne opzionali sono disponibili nella tabella delle attività: <strong>Overtime Work</strong>, <strong>Overtime Cost</strong> e <strong>Regular Work</strong>.</p>
+<p>Imposta il lavoro straordinario nella finestra <strong>Modifica Assegnazione delle Risorse</strong>. Tre colonne opzionali sono disponibili nella tabella delle attività: <strong>Lavoro Straordinario</strong>, <strong>Costo Straordinario</strong> e <strong>Lavoro Regolare</strong>.</p>
 
     </main>
     <aside class="toc" aria-label="Indice"></aside>

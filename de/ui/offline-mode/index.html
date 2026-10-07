@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -212,7 +212,7 @@
     <main id="main-content" class="content">
       <h1 id="offline-arbeiten">Offline arbeiten <a href="#offline-arbeiten" class="heading-anchor">#</a></h1>
 <p>Schalten Sie Autosave aus, damit nichts in Google Drive geschrieben wird, bis Sie bewusst speichern — nützlich, wenn Sie Ihre Verbindung gleich verlieren werden.</p>
-<p>In der <strong>Web</strong>-Version heißt der Menüeintrag <strong>Datei → Offline arbeiten (kein Autosave)</strong>. Unter Windows, macOS, Android und iOS heißt derselbe Schalter <strong>Autosave aktivieren</strong>.</p>
+<p>In der <strong>Web</strong>-Version heißt der Menüeintrag <strong>Datei → Offline arbeiten (kein automatisches Speichern)</strong>. Unter Windows, macOS, Android und iOS heißt derselbe Schalter <strong>Automatisches Speichern aktivieren</strong>.</p>
 <h2 id="was-offline-arbeiten-bewirkt">Was „Offline arbeiten“ bewirkt <a href="#was-offline-arbeiten-bewirkt" class="heading-anchor">#</a></h2>
 <p><strong>Datei → Offline arbeiten</strong> schaltet Autosave für den aktuellen Tab aus. Das ist alles. Solange es aktiv ist, hört Ingantt auf, Ihr Projekt alle 20 Sekunden in Google Drive zu schreiben, und nichts verlässt Ihren Browser, bis Sie speichern.</p>
 <p>Beim Einschalten erscheint einmalig eine Erinnerung:</p>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Datei in Google Drive gespeichert</strong></td>
+<td><strong>Datei auf Google Drive gespeichert</strong></td>
 <td>Alles ist in Drive.</td>
 </tr>
 <tr>
-<td><strong>Autosave ausstehend…</strong></td>
+<td><strong>Automatisches Speichern ausstehend…</strong></td>
 <td>Es gibt ungespeicherte Änderungen; Autosave übernimmt sie in Kürze.</td>
 </tr>
 <tr>
-<td><strong>Wird gespeichert…</strong></td>
+<td><strong>Speichern…</strong></td>
 <td>Ein Speichervorgang läuft.</td>
 </tr>
 <tr>
-<td><strong>Datei in Google Drive speichern</strong></td>
+<td><strong>Datei auf Google Drive speichern</strong></td>
 <td>Es gibt ungespeicherte Änderungen und Autosave ist aus — Sie müssen speichern.</td>
 </tr>
 <tr>
-<td><strong>Fehler beim Speichern der Datei in Google Drive</strong></td>
+<td><strong>Fehler beim Speichern auf Google Drive</strong></td>
 <td>Ein Speichervorgang wurde versucht und ist fehlgeschlagen. Ihre Änderungen sind noch im Tab und weiterhin ungespeichert.</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="unterschiede-zwischen-den-plattformen">Unterschiede zwischen den Plattformen <a href="#unterschiede-zwischen-den-plattformen" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Die Einstellung bleibt im Web nicht erhalten.</strong> Sie gilt pro Tab und pro Sitzung. Öffnen Sie einen neuen Tab oder laden Sie neu, und Autosave ist wieder an. Das ist beabsichtigt — aktiviertes Autosave ist die sicherere Standardeinstellung, sodass ein vergessener Offline-Schalter Sie nicht verfolgen kann. Unter Windows, macOS, Android und iOS <em>wird</em> die Autosave-Einstellung gespeichert.</li>
-<li><strong>Die Standardwerte unterscheiden sich.</strong> Im Web ist Autosave von Anfang an aktiviert. In den Desktop- und Mobil-Builds ist es von Anfang an deaktiviert, und derselbe Menüeintrag heißt <strong>Autosave aktivieren</strong>.</li>
+<li><strong>Die Standardwerte unterscheiden sich.</strong> Im Web ist Autosave von Anfang an aktiviert. In den Desktop- und Mobil-Builds ist es von Anfang an deaktiviert, und derselbe Menüeintrag heißt <strong>Automatisches Speichern aktivieren</strong>.</li>
 <li><strong>Ein Projekt, das Sie noch nicht gespeichert haben, wird überhaupt nicht automatisch gespeichert</strong>, Offline-Modus hin oder her. Autosave kann nur eine Datei aktualisieren, die bereits in Drive existiert. Speichern Sie einmal, und Autosave übernimmt.</li>
 <li><strong>Eine in der Webversion von Ihrem Gerät geöffnete Datei wird nie automatisch gespeichert.</strong> Ingantt für Web kann nicht in eine Datei auf Ihrer Festplatte zurückschreiben. Speichern Sie sie in <a href="/de/ui/files/">Google Drive</a>, um Autosave zu erhalten.</li>
 </ul>

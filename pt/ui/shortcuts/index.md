@@ -14,12 +14,12 @@ Acelere seu trabalho com atalhos de teclado para ações comuns como editar, nav
 | `Ctrl + Z`             | Desfazer a última ação.                                                                                                                             |
 | `Ctrl + Y`             | Refazer a última ação desfeita.                                                                                                                      |
 | `Ctrl + S`             | Salvar alterações em um arquivo.                                                                                                                           |
-| `Ctrl + O`             | Abrir um arquivo (seletor de arquivo nativo no desktop, caixa de diálogo **Open file** na **Web**).                                                                     |
+| `Ctrl + O`             | Abrir um arquivo (seletor de arquivo nativo no desktop, caixa de diálogo **Abrir arquivo** na **Web**).                                                                     |
 | `Ctrl + P`             | Imprimir o projeto atual.                                                                                                                        |
 | `Ctrl + Shift + F`     | Alternar visibilidade do **cabeçalho/barra de menus**.                                                                                                            |
 | `A`                    | Adicionar um novo item.                                                                                                                                   |
 | `Del`                  | Excluir itens selecionados.                                                                                                            |
-| `Enter`                | Mostrar a caixa de diálogo **Properties** para o item selecionado. Se múltiplos itens estiverem selecionados, a caixa de diálogo é mostrada para o primeiro item.                       |
+| `Enter`                | Mostrar a caixa de diálogo **Propriedades** para o item selecionado. Se múltiplos itens estiverem selecionados, a caixa de diálogo é mostrada para o primeiro item.                       |
 | `Arrow Up`             | Selecionar o item anterior.                                                                                                                         |
 | `Arrow Down`           | Selecionar o próximo item.                                                                                                                             |
 | `Shift + Arrow Up/Down` | Estender a seleção para cima ou para baixo em qualquer visualização de lista.                                                                                                |
@@ -28,10 +28,10 @@ Acelere seu trabalho com atalhos de teclado para ações comuns como editar, nav
 | `Ctrl + Arrow Left`    | Diminuir recuo das tarefas selecionadas.                                                                                                                |
 | `Ctrl + Arrow Right`   | Aumentar recuo das tarefas selecionadas.                                                                                                                |
 | `Tab / Shift + Tab`    | Mover para a próxima ou anterior célula editável. Confirma a edição atual antes de mover.                                                               |
-| `R`                    | Alternar para a visualização **Resources**.                                                                                                                     |
-| `C`                    | Alternar para a visualização **Calendars**.                                                                                                                     |
-| `T`                    | Alternar para a visualização **Tasks**.                                                                                                                         |
-| `P`                    | Mostrar a caixa de diálogo **Project Properties**.                                                                                                           |
+| `R`                    | Alternar para a visualização **Recursos**.                                                                                                                     |
+| `C`                    | Alternar para a visualização **Calendários**.                                                                                                                     |
+| `T`                    | Alternar para a visualização **Tarefas**.                                                                                                                         |
+| `P`                    | Mostrar a caixa de diálogo **Propriedades do Projeto**.                                                                                                           |
 | `I`                    | Aumentar zoom no gráfico de Gantt.                                                                                                                       |
 | `O`                    | Diminuir zoom no gráfico de Gantt.                                                                                                                      |
 | `L`                    | Vincular tarefas selecionadas.                                                                                                                              |

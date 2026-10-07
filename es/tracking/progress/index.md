@@ -11,9 +11,9 @@ Use el campo **% completado** en el diálogo **Propiedades de la tarea** para es
 Cuando actualiza el % completado:
 
 - Establecerlo por encima del 0% establece el **Inicio real** de la tarea en la fecha de inicio programada de la tarea.
-- Establecerlo al 100% establece el **Fin real** de la tarea en la fecha de finalización programada de la tarea.
+- Establecerlo al 100% establece el **Final real** de la tarea en la fecha de finalización programada de la tarea.
 - La **Duración real** y la **Duración restante** se calculan automáticamente basándose en el porcentaje completado.
-- Si **Actualizar el estado de la tarea actualiza el estado del recurso** está habilitado en la configuración del proyecto (el valor predeterminado), el **Trabajo real** y el **Trabajo restante** también se actualizan proporcionalmente.
+- Si **La actualización del estado de la tarea actualiza el estado del recurso** está habilitado en la configuración del proyecto (el valor predeterminado), el **Trabajo real** y el **Trabajo restante** también se actualizan proporcionalmente.
 
 El **% completado** de una tarea de resumen se calcula como un promedio ponderado por duración de todas sus tareas descendientes que no son de resumen.
 
@@ -35,5 +35,5 @@ Marque tareas como completadas hasta una fecha especificada:
 Empuja el trabajo no completado para que comience después de una fecha especificada:
 
 - Las tareas que no han comenzado reciben una restricción **No comenzar antes del**.
-- Las tareas en progreso se dividen si **Dividir tareas en progreso** está habilitado en las opciones de programación del proyecto.
+- Las tareas en progreso se dividen si **Dividir tareas en curso** está habilitado en las opciones de programación del proyecto.
 - Las tareas completadas no se modifican.

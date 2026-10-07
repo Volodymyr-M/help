@@ -212,9 +212,9 @@
     <main id="main-content" class="content">
       <h1 id="trabalhando-offline">Trabalhando Offline <a href="#trabalhando-offline" class="heading-anchor">#</a></h1>
 <p>Desative o salvamento automático para que nada seja gravado no Google Drive até que você salve deliberadamente — útil quando você está prestes a perder a conexão.</p>
-<p>Na versão <strong>Web</strong>, o item de menu é <strong>File → Work offline (no autosave)</strong>. No Windows, macOS, Android e iOS, a mesma opção se chama <strong>Enable autosave</strong>.</p>
+<p>Na versão <strong>Web</strong>, o item de menu é <strong>Arquivo → Trabalhar offline (sem salvamento automático)</strong>. No Windows, macOS, Android e iOS, a mesma opção se chama <strong>Ativar salvamento automático</strong>.</p>
 <h2 id="o-que-o-work-offline-faz">O Que o Work Offline Faz <a href="#o-que-o-work-offline-faz" class="heading-anchor">#</a></h2>
-<p><strong>File → Work offline</strong> desativa o salvamento automático para a aba atual. É só isso. Enquanto está ativado, o Ingantt para de gravar seu projeto no Google Drive a cada 20 segundos, e nada sai do seu navegador até que você salve.</p>
+<p><strong>Arquivo → Work offline</strong> desativa o salvamento automático para a aba atual. É só isso. Enquanto está ativado, o Ingantt para de gravar seu projeto no Google Drive a cada 20 segundos, e nada sai do seu navegador até que você salve.</p>
 <p>Ativá-lo mostra um lembrete único:</p>
 <blockquote>
 <p>Offline mode is on. Remember to save your changes manually before closing the tab.</p>
@@ -224,12 +224,12 @@
 <p>Você não pode salvar no Google Drive sem conexão, então a sequência que funciona é:</p>
 <ol>
 <li>Abra o plano enquanto ainda tem conexão.</li>
-<li>Ative <strong>File → Work offline</strong>.</li>
+<li>Ative <strong>Arquivo → Work offline</strong>.</li>
 <li>Edite normalmente. Tudo acontece no navegador — o cronograma é recalculado, desfazer e refazer funcionam, nada é enviado a lugar algum.</li>
 <li>Quando estiver online novamente, desative <strong>Work offline</strong> e então pressione <strong>Save</strong> (ou <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). Este é o passo que coloca seu trabalho no Drive.</li>
 <li>O salvamento automático é retomado a partir desse ponto.</li>
 </ol>
-<p>Se preferir não depender de lembrar do passo 4, exporte uma cópia antes de perder a conexão: <strong>File → Export → XML</strong> baixa o plano para o seu dispositivo, e você pode abrir esse arquivo novamente mais tarde.</p>
+<p>Se preferir não depender de lembrar do passo 4, exporte uma cópia antes de perder a conexão: <strong>Arquivo → Exportar → XML</strong> baixa o plano para o seu dispositivo, e você pode abrir esse arquivo novamente mais tarde.</p>
 <h2 id="o-botão-save-mostra-sua-situação">O Botão Save Mostra Sua Situação <a href="#o-botão-save-mostra-sua-situação" class="heading-anchor">#</a></h2>
 <p>O botão Save na barra de ferramentas é o indicador a observar:</p>
 <table>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>File saved to Google Drive</strong></td>
+<td><strong>Arquivo salvo no Google Drive</strong></td>
 <td>Tudo está no Drive.</td>
 </tr>
 <tr>
-<td><strong>Autosave pending…</strong></td>
+<td><strong>Salvamento automático pendente…</strong></td>
 <td>Há edições não salvas; o salvamento automático as gravará em breve.</td>
 </tr>
 <tr>
-<td><strong>Saving…</strong></td>
+<td><strong>Salvando…</strong></td>
 <td>Um salvamento está em andamento.</td>
 </tr>
 <tr>
-<td><strong>Save file to Google Drive</strong></td>
+<td><strong>Salvar arquivo no Google Drive</strong></td>
 <td>Há edições não salvas e o salvamento automático está desativado — você precisa salvar.</td>
 </tr>
 <tr>
-<td><strong>Error saving file to Google Drive</strong></td>
+<td><strong>Erro ao salvar arquivo no Google Drive</strong></td>
 <td>Um salvamento foi tentado e falhou. Suas edições ainda estão na aba e continuam não salvas.</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="diferenças-entre-plataformas">Diferenças entre Plataformas <a href="#diferenças-entre-plataformas" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>A configuração não persiste na Web.</strong> Ela é por aba e por sessão. Abra uma nova aba ou recarregue, e o salvamento automático volta a ficar ativado. Isso é intencional — salvamento automático ativado é o padrão mais seguro, para que uma opção offline esquecida não acompanhe você. No Windows, macOS, Android e iOS, a configuração de salvamento automático <em>é</em> lembrada.</li>
-<li><strong>Os padrões são diferentes.</strong> Na Web, o salvamento automático vem ativado de fábrica. Nas versões desktop e móveis, ele vem desativado, e o mesmo item de menu aparece como <strong>Enable autosave</strong>.</li>
+<li><strong>Os padrões são diferentes.</strong> Na Web, o salvamento automático vem ativado de fábrica. Nas versões desktop e móveis, ele vem desativado, e o mesmo item de menu aparece como <strong>Ativar salvamento automático</strong>.</li>
 <li><strong>Um projeto que você ainda não salvou não é salvo automaticamente de forma alguma</strong>, com ou sem modo offline. O salvamento automático só pode atualizar um arquivo que já existe no Drive. Salve uma vez, e o salvamento automático assume.</li>
 <li><strong>Um arquivo aberto do seu dispositivo na versão Web nunca é salvo automaticamente.</strong> O Ingantt para Web não consegue gravar de volta em um arquivo no seu disco. Salve-o no <a href="/pt/ui/files/">Google Drive</a> para ter o salvamento automático.</li>
 </ul>

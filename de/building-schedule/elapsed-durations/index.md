@@ -19,7 +19,7 @@ Geben Sie die Dauer mit einem **`e`** vor der Einheit ein:
 
 Die Einheiten sind `min`, `h`, `d`, `w` und `m` — Minuten, Stunden, Tage, Wochen, Monate — und jede davon akzeptiert das `e`. Die Abkürzungen sind übersetzt; in einer nicht-englischen Oberfläche verwenden Sie daher die Einheitenbuchstaben dieser Sprache. Die Markierung `e` bleibt gleich.
 
-Sie können statt der Eingabe auch das Kontrollkästchen **Fortlaufend** im Dauer-Editor des Dialogs [Vorgangseigenschaften](/de/building-schedule/task-properties/index.md) verwenden. Sein Tooltip ist die Definition:
+Sie können statt der Eingabe auch das Kontrollkästchen **Verstrichen** im Dauer-Editor des Dialogs [Vorgangseigenschaften](/de/building-schedule/task-properties/index.md) verwenden. Sein Tooltip ist die Definition:
 
 > Fortlaufend. Wenn aktiviert, zählt die Dauer ununterbrochen (24/7) statt nur während der im Kalender definierten Arbeitszeit.
 
@@ -41,7 +41,7 @@ Vergleichen Sie das mit Arbeitseinheiten, die aus den [Projekteigenschaften](/de
 
 Dasselbe Prinzip gilt für die Verzögerung bei einer [Abhängigkeit](/de/building-schedule/dependencies/index.md), und hier ist es am wichtigsten. „Den nächsten Vorgang drei Tage nach dem Ende dieses Vorgangs starten“ bedeutet üblicherweise drei *Kalender*tage, nicht drei Arbeitstage — sonst verschiebt ein Ende am Freitag den Nachfolger auf Mittwoch.
 
-Auf dem Reiter **Vorgänger** der Vorgangseigenschaften hat jede Verknüpfung ein eigenes Kontrollkästchen **Fortlaufend** neben der Verzögerung, mit derselben Bedeutung:
+Auf dem Reiter **Vorgänger** der Vorgangseigenschaften hat jede Verknüpfung ein eigenes Kontrollkästchen **Verstrichen** neben der Verzögerung, mit derselben Bedeutung:
 
 > Wenn aktiviert, zählt die Verzögerung ununterbrochen (24/7) statt nur während der im Kalender definierten Arbeitszeit.
 

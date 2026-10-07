@@ -17,34 +17,34 @@ Gli abbonamenti si rinnovano automaticamente alla fine di ogni periodo di fattur
 
 ## Acquistare un abbonamento
 
-Apri la finestra **Account**, oppure fai clic su **Subscribe now** quando Ingantt ti avvisa che la prova è terminata, e segui i passaggi:
+Apri la finestra **Account**, oppure fai clic su **Abbonati ora** quando Ingantt ti avvisa che la prova è terminata, e segui i passaggi:
 
-1. **Scegli per chi è** — per te o per altre persone. Per acquistare per un team, scegli *I want to purchase subscriptions for others* e inserisci un indirizzo email per riga. Ogni indirizzo deve essere un indirizzo con cui quella persona può accedere a Google.
+1. **Scegli per chi è** — per te o per altre persone. Per acquistare per un team, scegli *Voglio acquistare abbonamenti per altri* e inserisci un indirizzo email per riga. Ogni indirizzo deve essere un indirizzo con cui quella persona può accedere a Google.
 2. **Scegli il piano** — mensile o annuale.
-3. **Inserisci i dati di fatturazione** — nome, indirizzo, città, codice postale, stato o regione, paese e numero di telefono.
+3. **Inserisci i tuoi dati di fatturazione** — nome, indirizzo, città, codice postale, stato o regione, paese e numero di telefono.
 4. **Controlla** gli articoli acquistati e i dati di fatturazione.
-5. **Paga in una nuova finestra** — il pagamento viene gestito dal nostro fornitore di servizi di pagamento in una finestra separata.
+5. **Paga in nuova finestra** — il pagamento viene gestito dal nostro fornitore di servizi di pagamento in una finestra separata.
 
 Quando il pagamento va a buon fine, Ingantt conferma che l'abbonamento — o l'elenco degli abbonamenti acquistati per altri — è ora attivo.
 
-Se la finestra di pagamento indica che il pagamento è ancora in elaborazione, è normale. Attendi l'email *Notice of successful payment*, poi fai clic su **Refresh** nella finestra per aggiornare lo stato.
+Se la finestra di pagamento indica che il pagamento è ancora in elaborazione, è normale. Attendi l'email *Notice of successful payment*, poi fai clic su **Aggiorna lista** nella finestra per aggiornare lo stato.
 
 > Il tuo abbonamento è collegato all'account Google con cui hai effettuato l'accesso. Accedi con quell'account su qualsiasi dispositivo per utilizzarlo. Per un indirizzo che ha già un abbonamento attivo non è possibile acquistarne un secondo.
 
 ## Vedere e gestire gli abbonamenti
 
-**Manage subscriptions** nella finestra **Account** elenca gli abbonamenti che hai acquistato — l'utente a cui è destinato ciascuno, la data di acquisto e chi lo ha acquistato. **Refresh** rilegge lo stato corrente dal server.
+**Gestisci abbonamenti** nella finestra **Account** elenca gli abbonamenti che hai acquistato — l'utente a cui è destinato ciascuno, la data di acquisto e chi lo ha acquistato. **Aggiorna lista** rilegge lo stato corrente dal server.
 
 È anche qui che vengono amministrati gli acquisti per i team: chi ha pagato le licenze le vede tutte e può annullarle singolarmente.
 
-Il tuo stato è mostrato nel menu di navigazione come **Paid subscriber**, **Subscription inactive** oppure come i giorni rimanenti della prova o del periodo pagato.
+Il tuo stato è mostrato nel menu di navigazione come **Abbonato pagante**, **Abbonamento inattivo** oppure come i giorni rimanenti della prova o del periodo pagato.
 
 ## Annullare
 
-1. Apri **Account** → **Manage subscriptions**.
-2. Fai clic su **Cancel** nella riga dell'utente che vuoi annullare e conferma.
+1. Apri **Account** → **Gestisci abbonamenti**.
+2. Fai clic su **Annulla** nella riga dell'utente che vuoi annullare e conferma.
 
-L'annullamento interrompe il rinnovo successivo. Non interrompe immediatamente l'accesso: il messaggio *Subscription canceled, but all features available until the paid period ends* significa esattamente questo, e il menu di navigazione mostra poi il conto alla rovescia con **Paid period ends in N days**. Quando il periodo pagato termina, Ingantt passa alla modalità di sola visualizzazione.
+L'annullamento interrompe il rinnovo successivo. Non interrompe immediatamente l'accesso: il messaggio *Abbonamento annullato, ma tutte le funzionalità sono disponibili fino alla fine del periodo pagato* significa esattamente questo, e il menu di navigazione mostra poi il conto alla rovescia con **Il periodo pagato termina tra N giorni**. Quando il periodo pagato termina, Ingantt passa alla modalità di sola visualizzazione.
 
 I tuoi progetti non sono interessati dall'annullamento. Si trovano nel tuo Google Drive e restano lì, leggibili e scaricabili come XML di Microsoft Project.
 

@@ -213,7 +213,7 @@
       <h1 id="wbsコード">WBSコード <a href="#wbsコード" class="heading-anchor">#</a></h1>
 <p>すべてのタスクには<strong>WBS</strong>コードがあります。これはアウトライン内でのタスクの所在を示すものです。初期状態では、<code>1</code>、<code>1.1</code>、<code>1.2</code>、<code>1.2.1</code>のような単純なアウトライン番号です。タスクテーブルで<strong>WBS</strong>列をオンにすると表示されます。</p>
 <p><strong>WBSコードマスク</strong>は、これらのアウトライン番号を独自に設計した構造化コードに置き換えます。これにより、タスクは<code>1.1.1</code>ではなく<code>PROJ-A-01</code>や<code>1.A.001</code>のように表示されます。契約、コストコード体系、顧客の報告形式など、番号付けの標準を持つ組織は、Inganttのコードをその標準に合わせるためにこれを使用します。</p>
-<p>設定するには、<strong>Project → WBS Code Definition</strong>を開きます。</p>
+<p>設定するには、<strong>プロジェクト → WBSコードの定義</strong>を開きます。</p>
 <h2 id="wbsコードとアウトラインコードの違い">WBSコードとアウトラインコードの違い <a href="#wbsコードとアウトラインコードの違い" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>WBSコード</strong>は構造的なものです。タスクごとに1つだけ存在し、アウトライン内でのタスクの位置から導出されます。タスクを移動すると自動的に番号が振り直されます。</li>
@@ -224,7 +224,7 @@
 <h3 id="プロジェクトコードのプレフィックス">プロジェクトコードのプレフィックス <a href="#プロジェクトコードのプレフィックス" class="heading-anchor">#</a></h3>
 <p>プロジェクト内のすべてのコードの先頭に付く固定テキストです。プレフィックスを<code>PROJ</code>にすると、区切り文字に応じて<code>PROJ.1.1</code>や<code>PROJ-A-01</code>のようなコードになります。プレフィックスを付けない場合は空のままにします。</p>
 <h3 id="コードマスク">コードマスク <a href="#コードマスク" class="heading-anchor">#</a></h3>
-<p>アウトラインレベルごとに1行で、<strong>Add Level</strong>で追加します。各行では以下を設定します：</p>
+<p>アウトラインレベルごとに1行で、<strong>レベルを追加</strong>で追加します。各行では以下を設定します：</p>
 <table>
 <thead>
 <tr>
@@ -234,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Level</strong></td>
+<td><strong>レベル</strong></td>
 <td>この行が適用されるアウトラインの深さ。レベル1は最上位のタスク、レベル2はその子タスク、というように続きます。</td>
 </tr>
 <tr>
-<td><strong>Sequence</strong></td>
-<td>このレベルで使用する文字：<strong>Numbers</strong>（1、2、3）、<strong>Uppercase Letters</strong>（A、B、C … Z、AA）、<strong>Lowercase Letters</strong>（a、b、c … z、aa）、または<strong>Characters</strong>。</td>
+<td><strong>シーケンス</strong></td>
+<td>このレベルで使用する文字：<strong>数字</strong>（1、2、3）、<strong>大文字</strong>（A、B、C … Z、AA）、<strong>小文字</strong>（a、b、c … z、aa）、または<strong>文字</strong>。</td>
 </tr>
 <tr>
-<td><strong>Length</strong></td>
-<td>このレベルの最大文字数。空のままにすると<em>Any</em>と表示され、制限なしになります。</td>
+<td><strong>長さ</strong></td>
+<td>このレベルの最大文字数。空のままにすると<em>任意</em>と表示され、制限なしになります。</td>
 </tr>
 <tr>
-<td><strong>Separator</strong></td>
+<td><strong>区切り文字</strong></td>
 <td>このレベルと次のレベルの間の文字（<code>.</code>や<code>-</code>など）。</td>
 </tr>
 </tbody>
@@ -254,11 +254,11 @@
 <p>フィールドの動作について知っておくべき点が2つあります：</p>
 <ul>
 <li><strong>Lengthは数字の先頭をゼロで埋めます。</strong> Numbersレベルで長さを<code>3</code>にすると、9番目のタスクは<code>009</code>になります。文字のレベルは埋められません。</li>
-<li><strong>Characters</strong>は、Inganttが生成するコードではNumbersと同じように動作します。これはMicrosoft Projectとの互換性のために存在するもので、Microsoft Projectでは自分で入力するレベルを意味します。</li>
+<li><strong>文字</strong>は、Inganttが生成するコードではNumbersと同じように動作します。これはMicrosoft Projectとの互換性のために存在するもので、Microsoft Projectでは自分で入力するレベルを意味します。</li>
 </ul>
 <p>すべてのレベルを定義する必要はありません。<strong>マスクの最後の行より深いレベルは、<code>.</code>区切りの数字にフォールバックする</strong>ため、5階層の計画に3行のマスクを適用しても完全なコードが生成されます。</p>
 <h3 id="オプション">オプション <a href="#オプション" class="heading-anchor">#</a></h3>
-<p><strong>Generate WBS code for new task</strong>と<strong>Verify uniqueness of new WBS codes</strong>はプロジェクトとともに保存され、Microsoft Projectとのラウンドトリップでも保持されます。Inganttでは、少なくとも1つのレベルを持つマスクはすべてのタスクに自動的に適用され、コードはアウトラインに従うため構造上一意になります。</p>
+<p><strong>新しいタスクのWBSコードを生成</strong>と<strong>新しいWBSコードの一意性を確認</strong>はプロジェクトとともに保存され、Microsoft Projectとのラウンドトリップでも保持されます。Inganttでは、少なくとも1つのレベルを持つマスクはすべてのタスクに自動的に適用され、コードはアウトラインに従うため構造上一意になります。</p>
 <h2 id="マスクを保存すると何が起こるか">マスクを保存すると何が起こるか <a href="#マスクを保存すると何が起こるか" class="heading-anchor">#</a></h2>
 <p>Inganttはプロジェクト全体の番号をすぐに振り直します。コードは、タスクの追加、削除、インデント、アウトデント、移動など、構造が変わるたびにアウトラインから再構築されるため、常にタスクの現在の位置を表します。</p>
 <p>はっきり言っておくべきことがあります：<strong>WBSコードはタスクの永続的な識別子ではありません。</strong> タスクを移動すると、そのコードは変わります。タスクに付いて回るラベルが必要な場合は、代わりにアウトラインコードまたは<a href="/ja/adjusting-schedule/custom-fields/">カスタムテキストフィールド</a>を使用してください。</p>

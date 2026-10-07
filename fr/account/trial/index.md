@@ -15,21 +15,21 @@ Tout. Aucune fonctionnalité n'est bridée pendant l'essai — la génération d
 Le tiroir de navigation affiche votre statut :
 
 - **Free trial ends in N days**
-- **Free trial almost ended**
-- **Free trial ended**
+- **La période d'essai gratuit est presque terminée**
+- **Période d'essai gratuit terminée**
 
 Vous recevez également un e-mail quelques jours avant la fin de l'essai, et un autre lorsqu'il est terminé.
 
 ## À la fin de l'essai
 
-Ingantt passe en mode **lecture seule** et l'interface indique *View only mode as trial ended*.
+Ingantt passe en mode **lecture seule** et l'interface indique *Mode lecture seule car la période d'essai est terminée*.
 
 - **Rien n'est supprimé.** Vos fichiers de projet restent dans votre Google Drive, exactement là où ils étaient. Ils vous appartiennent ; Ingantt ne stocke pas vos projets sur ses propres serveurs.
 - Vous pouvez toujours ouvrir vos projets et les consulter.
 - Vous ne pouvez pas enregistrer de modifications tant que vous n'êtes pas abonné. Si vous essayez, Ingantt vous propose la boîte de dialogue d'abonnement.
-- Pour récupérer vos plannings, utilisez **File** → **Download** → **Download XML**, ou ouvrez les fichiers depuis Google Drive avec n'importe quel outil capable de lire le XML Microsoft Project.
+- Pour récupérer vos plannings, utilisez **Fichier** → **Télécharger** → **Télécharger XML**, ou ouvrez les fichiers depuis Google Drive avec n'importe quel outil capable de lire le XML Microsoft Project.
 
-Abonnez-vous via **Subscribe now** dans le message, ou depuis la boîte de dialogue **Account**. Voir [Abonnements et paiement](/fr/account/subscription/index.md).
+Abonnez-vous via **S'abonner maintenant** dans le message, ou depuis la boîte de dialogue **Compte**. Voir [Abonnements et paiement](/fr/account/subscription/index.md).
 
 ## Applications installées
 

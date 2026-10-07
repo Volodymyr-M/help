@@ -2,9 +2,9 @@
 
 Sehen Sie die Arbeitsverteilung in Ihrem Team. Verwendungsansichten zeigen, wer was wann macht, im Teamplaner weisen Sie Vorgänge per Ziehen neu zu, und das Ressourcendiagramm zeigt die Kapazität auf einen Blick.
 
-## Ressourcenverwendung
+## Ressourcennutzung
 
-Die **Ressourcenverwendung**-Ansicht ermöglicht es Ihnen, alle Ressourcenzuweisungen und die [Arbeit](/de/building-schedule/task-properties/index.md#arbeit) zu sehen, die jede Arbeitsressource während jedes Zeitraums auf der Zeitachse leistet.
+Die **Ressourcennutzung**-Ansicht ermöglicht es Ihnen, alle Ressourcenzuweisungen und die [Arbeit](/de/building-schedule/task-properties/index.md#arbeit) zu sehen, die jede Arbeitsressource während jedes Zeitraums auf der Zeitachse leistet.
 
 Ähnlich wie beim Gantt-Diagramm können Sie die Zeitachse vergrößern oder verkleinern, um eine detailliertere oder weniger detaillierte Ansicht zu erhalten.
 
@@ -12,9 +12,9 @@ Wenn eine Ressource mehr Arbeit leisten muss, als die Kalender für den gegebene
 
 In der Ressourcenverwendung-Ansicht können Sie auf Zuweisungsebene Arbeitszellen doppelklicken, um die Arbeitsverteilung direkt zu bearbeiten. Wenn Sie eine Arbeitszelle bearbeiten, ändert sich das Arbeitsprofil der Zuweisung automatisch zu „Konturiert“ und die benutzerdefinierten Tagesarbeitsdaten werden gespeichert.
 
-## Vorgangsverwendung
+## Aufgabennutzung
 
-Die **Vorgangsverwendung**-Ansicht ist die Umkehrung der Ressourcenverwendung — sie zeigt eine vorgangszentrierte Ansicht der Arbeitsverteilung. Jeder Vorgang erscheint als übergeordnete Zeile mit seinen Ressourcenzuweisungen darunter eingerückt.
+Die **Aufgabennutzung**-Ansicht ist die Umkehrung der Ressourcenverwendung — sie zeigt eine vorgangszentrierte Ansicht der Arbeitsverteilung. Jeder Vorgang erscheint als übergeordnete Zeile mit seinen Ressourcenzuweisungen darunter eingerückt.
 
 Der linke Bereich zeigt Vorgangs- und Zuweisungsdetails, während der rechte Bereich Arbeitswerte über Zeiträume verteilt anzeigt. Arbeitswerte auf Vorgangsebene werden fett dargestellt. Überlastete Zuweisungs-Arbeitswerte werden rot hervorgehoben.
 
@@ -42,7 +42,7 @@ Sieben Diagrammtypen sind verfügbar:
 | **Spitzeneinheiten** | Prozentsatz der genutzten Ressourcenkapazität pro Zeitraum (Standard) |
 | **Arbeit** | Arbeitsstunden pro Zeitraum |
 | **Überlastung** | Nur die überschüssigen Stunden über die Kapazität hinaus |
-| **Prozentuale Auslastung** | Wie Spitzeneinheiten mit Prozentanzeige |
+| **Prozentuale Zuordnung** | Wie Spitzeneinheiten mit Prozentanzeige |
 | **Verbleibende Verfügbarkeit** | Ungenutzte Kapazität in Stunden |
 | **Arbeitsverfügbarkeit** | Gesamte Kalenderkapazität in Stunden |
 | **Einheitenverfügbarkeit** | Effektiver Max.-Einheiten-Prozentsatz |

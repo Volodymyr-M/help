@@ -1,6 +1,6 @@
 # PSP-Codes
 
-Jeder Vorgang hat einen **PSP**-Code — seine Adresse in der Gliederung. Standardmäßig ist es die einfache Gliederungsnummer: `1`, `1.1`, `1.2`, `1.2.1`. Blenden Sie ihn ein, indem Sie die Spalte **PSP** in der Vorgangstabelle aktivieren.
+Jeder Vorgang hat einen **WBS**-Code — seine Adresse in der Gliederung. Standardmäßig ist es die einfache Gliederungsnummer: `1`, `1.1`, `1.2`, `1.2.1`. Blenden Sie ihn ein, indem Sie die Spalte **WBS** in der Vorgangstabelle aktivieren.
 
 Eine **PSP-Code-Maske** ersetzt diese Gliederungsnummern durch einen strukturierten Code nach Ihrem eigenen Entwurf, sodass Vorgänge als `PROJ-A-01` oder `1.A.001` statt `1.1.1` erscheinen. Organisationen mit einem Nummerierungsstandard — ein Vertrag, ein Kostencode-Schema, das Berichtsformat eines Kunden — nutzen dies, damit die Codes von Ingantt dazu passen.
 
@@ -19,7 +19,7 @@ Der Dialog besteht aus drei Teilen.
 
 Fester Text, der jedem Code im Projekt vorangestellt wird. Mit dem Präfix `PROJ` erscheinen die Codes je nach Ihren Trennzeichen als `PROJ.1.1` oder `PROJ-A-01`. Lassen Sie es leer, wenn Sie kein Präfix wünschen.
 
-### Codemaske
+### Code-Maske
 
 Eine Zeile pro Gliederungsebene, hinzugefügt mit **Ebene hinzufügen**. Jede Zeile legt fest:
 
@@ -39,7 +39,7 @@ Sie müssen nicht jede Ebene definieren. **Ebenen tiefer als Ihre letzte Maskenz
 
 ### Optionen
 
-**PSP-Code für neuen Vorgang generieren** und **Eindeutigkeit neuer PSP-Codes prüfen** werden mit dem Projekt gespeichert und bleiben bei einem Austausch mit Microsoft Project in beide Richtungen erhalten. In Ingantt wird eine Maske mit mindestens einer Ebene automatisch auf jeden Vorgang angewendet, und die Codes sind konstruktionsbedingt eindeutig, weil sie der Gliederung folgen.
+**PSP-Code für neue Aufgabe generieren** und **Eindeutigkeit neuer PSP-Codes überprüfen** werden mit dem Projekt gespeichert und bleiben bei einem Austausch mit Microsoft Project in beide Richtungen erhalten. In Ingantt wird eine Maske mit mindestens einer Ebene automatisch auf jeden Vorgang angewendet, und die Codes sind konstruktionsbedingt eindeutig, weil sie der Gliederung folgen.
 
 ## Was beim Speichern der Maske passiert
 

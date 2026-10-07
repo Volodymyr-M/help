@@ -212,9 +212,9 @@
     <main id="main-content" class="content">
       <h1 id="travailler-hors-ligne">Travailler hors ligne <a href="#travailler-hors-ligne" class="heading-anchor">#</a></h1>
 <p>Désactivez l'enregistrement automatique pour que rien ne soit écrit dans Google Drive tant que vous n'enregistrez pas délibérément — utile lorsque vous êtes sur le point de perdre votre connexion.</p>
-<p>Sur la version <strong>Web</strong>, l'entrée de menu est <strong>File → Work offline (no autosave)</strong>. Sur Windows, macOS, Android et iOS, le même interrupteur s'appelle <strong>Enable autosave</strong>.</p>
-<h2 id="ce-que-fait-work-offline">Ce que fait Work offline <a href="#ce-que-fait-work-offline" class="heading-anchor">#</a></h2>
-<p><strong>File → Work offline</strong> désactive l'enregistrement automatique pour l'onglet actuel. C'est tout. Tant qu'il est activé, Ingantt cesse d'écrire votre projet dans Google Drive toutes les 20 secondes, et rien ne quitte votre navigateur tant que vous n'enregistrez pas.</p>
+<p>Sur la version <strong>Web</strong>, l'entrée de menu est <strong>Fichier → Travailler hors ligne (sans enregistrement automatique)</strong>. Sur Windows, macOS, Android et iOS, le même interrupteur s'appelle <strong>Activer l'enregistrement automatique</strong>.</p>
+<h2 id="ce-que-fait-travailler-hors-ligne">Ce que fait Travailler hors ligne <a href="#ce-que-fait-travailler-hors-ligne" class="heading-anchor">#</a></h2>
+<p><strong>Fichier → Travailler hors ligne</strong> désactive l'enregistrement automatique pour l'onglet actuel. C'est tout. Tant qu'il est activé, Ingantt cesse d'écrire votre projet dans Google Drive toutes les 20 secondes, et rien ne quitte votre navigateur tant que vous n'enregistrez pas.</p>
 <p>Son activation affiche un rappel unique :</p>
 <blockquote>
 <p>Offline mode is on. Remember to save your changes manually before closing the tab.</p>
@@ -224,12 +224,12 @@
 <p>Vous ne pouvez pas enregistrer dans Google Drive sans connexion, la séquence qui fonctionne est donc la suivante :</p>
 <ol>
 <li>Ouvrez le planning tant que vous avez encore une connexion.</li>
-<li>Activez <strong>File → Work offline</strong>.</li>
+<li>Activez <strong>Fichier → Travailler hors ligne</strong>.</li>
 <li>Modifiez normalement. Tout se passe dans le navigateur — le planning se recalcule, annuler et rétablir fonctionnent, rien n'est envoyé nulle part.</li>
-<li>Une fois de retour en ligne, désactivez <strong>Work offline</strong>, puis appuyez sur <strong>Save</strong> (ou <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). C'est cette étape qui place votre travail dans Drive.</li>
+<li>Une fois de retour en ligne, désactivez <strong>Travailler hors ligne</strong>, puis appuyez sur <strong>Enregistrer</strong> (ou <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). C'est cette étape qui place votre travail dans Drive.</li>
 <li>L'enregistrement automatique reprend à partir de là.</li>
 </ol>
-<p>Si vous préférez ne pas compter sur votre mémoire pour l'étape 4, exportez une copie avant de perdre la connexion : <strong>File → Export → XML</strong> télécharge le planning sur votre appareil, et vous pourrez rouvrir ce fichier plus tard.</p>
+<p>Si vous préférez ne pas compter sur votre mémoire pour l'étape 4, exportez une copie avant de perdre la connexion : <strong>Fichier → Exporter → XML</strong> télécharge le planning sur votre appareil, et vous pourrez rouvrir ce fichier plus tard.</p>
 <h2 id="le-bouton-save-vous-indique-où-vous-en-êtes">Le bouton Save vous indique où vous en êtes <a href="#le-bouton-save-vous-indique-où-vous-en-êtes" class="heading-anchor">#</a></h2>
 <p>Le bouton Save de la barre d'outils est l'indicateur à surveiller :</p>
 <table>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>File saved to Google Drive</strong></td>
+<td><strong>Fichier enregistré sur Google Drive</strong></td>
 <td>Tout est dans Drive.</td>
 </tr>
 <tr>
-<td><strong>Autosave pending…</strong></td>
+<td><strong>Enregistrement automatique en attente…</strong></td>
 <td>Il y a des modifications non enregistrées ; l'enregistrement automatique s'en chargera sous peu.</td>
 </tr>
 <tr>
-<td><strong>Saving…</strong></td>
+<td><strong>Enregistrement…</strong></td>
 <td>Un enregistrement est en cours.</td>
 </tr>
 <tr>
-<td><strong>Save file to Google Drive</strong></td>
+<td><strong>Enregistrer le fichier sur Google Drive</strong></td>
 <td>Il y a des modifications non enregistrées et l'enregistrement automatique est désactivé — vous devez enregistrer.</td>
 </tr>
 <tr>
-<td><strong>Error saving file to Google Drive</strong></td>
+<td><strong>Erreur lors de l'enregistrement sur Google Drive</strong></td>
 <td>Un enregistrement a été tenté et a échoué. Vos modifications sont toujours dans l'onglet et toujours non enregistrées.</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="différences-entre-plateformes">Différences entre plateformes <a href="#différences-entre-plateformes" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Le réglage n'est pas conservé sur le Web.</strong> Il est propre à l'onglet et à la session. Ouvrez un nouvel onglet ou rechargez, et l'enregistrement automatique est de nouveau activé. C'est voulu — l'enregistrement automatique activé est le choix par défaut le plus sûr, afin qu'un interrupteur hors ligne oublié ne puisse pas vous suivre. Sur Windows, macOS, Android et iOS, le réglage d'enregistrement automatique <em>est</em> mémorisé.</li>
-<li><strong>Les valeurs par défaut diffèrent.</strong> Sur le Web, l'enregistrement automatique est activé d'emblée. Sur les versions de bureau et mobiles, il est désactivé d'emblée, et la même entrée de menu s'intitule <strong>Enable autosave</strong>.</li>
+<li><strong>Les valeurs par défaut diffèrent.</strong> Sur le Web, l'enregistrement automatique est activé d'emblée. Sur les versions de bureau et mobiles, il est désactivé d'emblée, et la même entrée de menu s'intitule <strong>Activer l'enregistrement automatique</strong>.</li>
 <li><strong>Un projet que vous n'avez pas encore enregistré n'est pas enregistré automatiquement du tout</strong>, mode hors ligne ou non. L'enregistrement automatique ne peut mettre à jour qu'un fichier qui existe déjà dans Drive. Enregistrez une fois, et l'enregistrement automatique prend le relais.</li>
 <li><strong>Un fichier ouvert depuis votre appareil sur la version Web n'est jamais enregistré automatiquement.</strong> Ingantt pour Web ne peut pas réécrire dans un fichier sur votre disque. Enregistrez-le dans <a href="/fr/ui/files/">Google Drive</a> pour bénéficier de l'enregistrement automatique.</li>
 </ul>

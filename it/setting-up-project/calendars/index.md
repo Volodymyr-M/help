@@ -9,27 +9,27 @@ I calendari definiscono i giorni e gli orari in cui è possibile lavorare. I cal
 
 ## Calendario del progetto
 
-Un progetto ha un **Calendar** associato, come specificato nella finestra **Project Properties**. Questo calendario definisce come vengono pianificate le attività che non sono assegnate a risorse di tipo lavoro. I giorni non lavorativi come i fine settimana vengono mostrati nel diagramma di Gantt in base a questo calendario.
+Un progetto ha un **Calendario** associato, come specificato nella finestra **Proprietà del Progetto**. Questo calendario definisce come vengono pianificate le attività che non sono assegnate a risorse di tipo lavoro. I giorni non lavorativi come i fine settimana vengono mostrati nel diagramma di Gantt in base a questo calendario.
 
 ## Calendario della risorsa
 
-Ogni [risorsa di tipo lavoro](/it/building-schedule/resources/index.md#tipo-di-risorsa) ha un calendario associato, come specificato nel campo **Base Calendar** della finestra **Resource Properties**. Quando la risorsa di tipo lavoro viene [assegnata](/it/building-schedule/assignments/index.md#assegnazioni-delle-risorse-e-unità) a un'attività, il suo calendario influenza la pianificazione dell'attività.
+Ogni [risorsa di tipo lavoro](/it/building-schedule/resources/index.md#tipo-di-risorsa) ha un calendario associato, come specificato nel campo **Calendario di Base** della finestra **Proprietà della Risorsa**. Quando la risorsa di tipo lavoro viene [assegnata](/it/building-schedule/assignments/index.md#assegnazioni-delle-risorse-e-unità) a un'attività, il suo calendario influenza la pianificazione dell'attività.
 
 Quando più risorse di tipo lavoro sono assegnate a un'attività, i loro calendari vengono **intersecati** — il che significa che il lavoro viene pianificato solo negli orari in cui **tutte** le risorse assegnate sono disponibili. Ad esempio, se la Risorsa A lavora lun-mer e la Risorsa B lavora mer-ven, un'attività assegnata a entrambe verrà pianificata solo il mercoledì.
 
-> Se più risorse condividono un programma di lavoro simile, crea un unico calendario e assegnalo a tutte. Puoi comunque specificare eccezioni per ogni risorsa separatamente nelle **Resource Properties** — ad esempio, ferie o periodi di lavoro modificati in date specifiche.
+> Se più risorse condividono un programma di lavoro simile, crea un unico calendario e assegnalo a tutte. Puoi comunque specificare eccezioni per ogni risorsa separatamente nelle **Proprietà della Risorsa** — ad esempio, ferie o periodi di lavoro modificati in date specifiche.
 
 ## Calendario dell'attività
 
-Ogni attività ha una proprietà **Calendar** nella finestra **Task Properties**, impostata su **NONE** per impostazione predefinita. Quando è impostata su **NONE**:
+Ogni attività ha una proprietà **Calendario** nella finestra **Proprietà del Compito**, impostata su **NESSUNO** per impostazione predefinita. Quando è impostata su **NESSUNO**:
 
 - Se un'attività non è assegnata ad alcuna risorsa di tipo lavoro, l'attività viene pianificata secondo il calendario del progetto.
 - Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo i loro calendari.
 
-Se la proprietà **Calendar** dell'attività è impostata su un calendario anziché su **NONE**:
+Se la proprietà **Calendario** dell'attività è impostata su un calendario anziché su **NESSUNO**:
 
 - Se un'attività non è assegnata ad alcuna risorsa di tipo lavoro, l'attività viene pianificata secondo il calendario specificato.
-- Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo l'**intersezione** del calendario dell'attività e dei calendari delle risorse — il lavoro viene pianificato solo negli orari che sono lavorativi sia nel calendario dell'attività che in tutti i calendari delle risorse. Per utilizzare solo il calendario dell'attività, ignorando completamente i calendari delle risorse, seleziona il flag **Ignore resource calendars**.
+- Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo l'**intersezione** del calendario dell'attività e dei calendari delle risorse — il lavoro viene pianificato solo negli orari che sono lavorativi sia nel calendario dell'attività che in tutti i calendari delle risorse. Per utilizzare solo il calendario dell'attività, ignorando completamente i calendari delle risorse, seleziona il flag **Ignora calendari delle risorse**.
 
 ## Calendari predefiniti
 
@@ -38,16 +38,16 @@ Ingantt dispone di 3 calendari predefiniti, uno dei quali (**Standard**) viene a
 | Calendario | Descrizione                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
 | **Standard**     | Si lavora dal lunedì al venerdì, dalle 8:00 alle 17:00 con una pausa di 1 ora (dalle 12:00 alle 13:00).       |
-| **Night Shift**  | Si lavora dalla notte di lunedì alla mattina di sabato, dalle 23:00 alle 8:00 con una pausa di 1 ora (dalle 3:00 alle 4:00). |
-| **24 Hours**     | Si lavora 24 ore al giorno, tutti i giorni.                                                         |
+| **Turno di Notte**  | Si lavora dalla notte di lunedì alla mattina di sabato, dalle 23:00 alle 8:00 con una pausa di 1 ora (dalle 3:00 alle 4:00). |
+| **24 Ore**     | Si lavora 24 ore al giorno, tutti i giorni.                                                         |
 
-Puoi modificare qualsiasi calendario predefinito tramite la finestra **Calendar Properties** o creare calendari personalizzati basandoti su di essi tramite la finestra **Add Calendar**.
+Puoi modificare qualsiasi calendario predefinito tramite la finestra **Proprietà del Calendario** o creare calendari personalizzati basandoti su di essi tramite la finestra **Aggiungi Calendario**.
 
-## Settimane lavorative
+## Settimane Lavorative
 
 Le settimane lavorative consentono di definire modifiche al programma settimanale specifiche per un intervallo di date. Ad esempio, potresti avere un periodo in cui tutti lavorano 4 ore al giorno invece delle 8 standard, o un periodo in cui il sabato diventa un giorno lavorativo.
 
-Le settimane lavorative vengono configurate nella scheda **Work Weeks** della finestra **Calendar Properties**. Ogni settimana lavorativa ha un nome, una data di inizio e fine, e definizioni degli orari di lavoro per ogni giorno della settimana.
+Le settimane lavorative vengono configurate nella scheda **Settimane Lavorative** della finestra **Proprietà del Calendario**. Ogni settimana lavorativa ha un nome, una data di inizio e fine, e definizioni degli orari di lavoro per ogni giorno della settimana.
 
 > Le eccezioni del calendario hanno la priorità sulle settimane lavorative, che a loro volta hanno la priorità sul programma settimanale predefinito.
 
@@ -57,21 +57,21 @@ Le eccezioni del calendario sono date in cui il lavoro differisce dal programma 
 
 Le eccezioni del calendario possono essere specificate:
 
-- Nella finestra **Resource Properties** per una determinata risorsa.
-- Nelle **Calendar Properties** per un determinato calendario, in modo che progetti, risorse o attività che utilizzano questo calendario abbiano questa eccezione.
+- Nella finestra **Proprietà della Risorsa** per una determinata risorsa.
+- Nelle **Proprietà del Calendario** per un determinato calendario, in modo che progetti, risorse o attività che utilizzano questo calendario abbiano questa eccezione.
 
 Ad esempio, se vuoi configurare le ferie per una persona, aggiungile come eccezione per questa risorsa. Se vuoi configurare una festività per tutti, aggiungila come eccezione a un calendario utilizzato da tutti.
 
 Quando aggiungi o modifichi le eccezioni del calendario, specifichi i periodi di orario di lavoro per l'eccezione. Se non ne specifichi nessuno, l'eccezione non ha orario di lavoro, il che significa che definisce un giorno non lavorativo.
 
-A ogni eccezione può essere assegnato un **Name** descrittivo (come "Festività di Natale" o "Ufficio chiuso") che viene mostrato nell'elenco delle eccezioni.
+A ogni eccezione può essere assegnato un **Nome** descrittivo (come "Festività di Natale" o "Ufficio chiuso") che viene mostrato nell'elenco delle eccezioni.
 
 ### Eccezioni ricorrenti
 
 Le eccezioni del calendario possono essere impostate per ricorrere secondo uno schema anziché su una singola data. Gli schemi di ricorrenza disponibili includono:
 
-- **Daily** — Ogni N giorni o ogni N giorni lavorativi
-- **Weekly** — Ogni N settimane nei giorni specificati
+- **Giornaliero** — Ogni N giorni o ogni N giorni lavorativi
+- **Settimanale** — Ogni N settimane nei giorni specificati
 - **Monthly** — Per giorno del mese o per posizione (ad es., secondo martedì)
 - **Yearly** — Per data o per posizione (ad es., ultimo venerdì di novembre)
 

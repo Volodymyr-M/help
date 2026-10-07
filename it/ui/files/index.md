@@ -4,7 +4,7 @@ Ingantt archivia i file di progetto in Google Drive così puoi accedervi da qual
 
 ## Accesso a Google
 
-Nella schermata dei progetti, fai clic su **Sign in with Google**. Si apre una finestra standard di Google che richiede le autorizzazioni elencate di seguito. Puoi uscire in qualsiasi momento con **Sign out of Google**.
+Nella schermata dei progetti, fai clic su **Accedi con Google**. Si apre una finestra standard di Google che richiede le autorizzazioni elencate di seguito. Puoi uscire in qualsiasi momento con **Esci da Google**.
 
 Ingantt richiede le seguenti autorizzazioni:
 
@@ -18,14 +18,14 @@ Ingantt richiede le seguenti autorizzazioni:
 
 Una volta effettuato l'accesso, la schermata dei progetti è il tuo Drive:
 
-- **Recent Projects** — i progetti che hai aperto più di recente, raggruppati per data.
-- **Shared with me** — i file Ingantt che altre persone hanno condiviso con te.
-- **Starred** — i progetti che hai contrassegnato con **Add to Starred**.
-- **Trash** — i progetti che hai spostato nel Cestino. Usa **Restore** per recuperarne uno.
+- **Progetti Recenti** — i progetti che hai aperto più di recente, raggruppati per data.
+- **Condiviso con me** — i file Ingantt che altre persone hanno condiviso con te.
+- **Preferiti** — i progetti che hai contrassegnato con **Aggiungi ai preferiti**.
+- **Cestino** — i progetti che hai spostato nel Cestino. Usa **Ripristina** per recuperarne uno.
 
-Usa **Open** → **Open from Google Drive** per scegliere un file esistente, oppure la scheda **Upload** della stessa finestra per cercare un file sul tuo dispositivo o trascinarlo al suo interno. Microsoft Project, Primavera e gli altri formati supportati possono essere aperti in questo modo — vedi [Importazione ed esportazione](/it/getting-started/import-export/index.md).
+Usa **Apri** → **Apri da Google Drive** per scegliere un file esistente, oppure la scheda **Carica** della stessa finestra per cercare un file sul tuo dispositivo o trascinarlo al suo interno. Microsoft Project, Primavera e gli altri formati supportati possono essere aperti in questo modo — vedi [Importazione ed esportazione](/it/getting-started/import-export/index.md).
 
-I nuovi progetti si creano da **New** nella schermata dei progetti: **New project**, **New with AI** oppure **New from template**. Quando hai effettuato l'accesso sul web, un nuovo progetto viene destinato subito a Google Drive e da quel momento salvato automaticamente.
+I nuovi progetti si creano da **Nuovo** nella schermata dei progetti: **Nuovo progetto**, **Nuovo con IA** oppure **Nuovo da modello**. Quando hai effettuato l'accesso sul web, un nuovo progetto viene destinato subito a Google Drive e da quel momento salvato automaticamente.
 
 > **Manca un file in "Shared with me"?** Google richiede che un file condiviso venga aperto prima da Google Drive. Fai clic destro sul file in Drive e scegli **Apri con** → **Ingantt**. A quel punto compare nell'elenco.
 
@@ -44,9 +44,9 @@ In entrambi i casi Drive apre `web.ingantt.com` e gli passa la cartella o il fil
 
 **Un file che qualcuno ha condiviso con te non è in "Shared with me".** Aprilo una volta da Google Drive con **Apri con** → **Ingantt**. Poiché Ingantt ha accesso solo ai file che usi con Ingantt, un file condiviso gli resta invisibile finché non lo hai aperto in quel modo almeno una volta.
 
-**"Error saving file to Google Drive".** Controlla prima la connessione. Se il problema persiste, esci da Google e accedi di nuovo — l'accesso potrebbe essere scaduto o aver perso un'autorizzazione.
+**"Errore nel salvataggio del file su Google Drive".** Controlla prima la connessione. Se il problema persiste, esci da Google e accedi di nuovo — l'accesso potrebbe essere scaduto o aver perso un'autorizzazione.
 
-**"Could not sign in to Google."** Se usi più di un account Google, assicurati che la finestra popup stia accedendo con l'account che possiede i tuoi progetti. Anche le estensioni del browser che bloccano i cookie di terze parti o i popup possono impedire alla finestra di Google di completare l'accesso.
+**"Errore durante l'accesso a Google."** Se usi più di un account Google, assicurati che la finestra popup stia accedendo con l'account che possiede i tuoi progetti. Anche le estensioni del browser che bloccano i cookie di terze parti o i popup possono impedire alla finestra di Google di completare l'accesso.
 
 Ancora bloccato? [Contatta l'assistenza](mailto:support@ingantt.com) e indicaci la tua piattaforma, il tuo browser e il messaggio esatto che vedi.
 

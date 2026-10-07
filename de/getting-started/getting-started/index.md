@@ -8,18 +8,18 @@ Beginnen Sie hier, um Ihren ersten Projektterminplan zu erstellen. In nur wenige
 
 Nehmen wir an, Sie haben ein kleines Renovierungsprojekt mit zwei Vorgängen, einer nach dem anderen.
 
-Nachdem Sie auf **Neu erstellen** geklickt haben, gelangen Sie zu einem geteilten Bildschirm mit der Vorgangsliste links und dem Gantt-Diagramm rechts. Fügen Sie Ihre Vorgänge nacheinander hinzu, indem Sie auf die große **+**-Schaltfläche unten rechts klicken. Geben Sie im Dialog **Vorgang hinzufügen** den **Namen** und die voraussichtliche **Dauer** jedes Vorgangs an.
+Nachdem Sie auf **Neu erstellen** geklickt haben, gelangen Sie zu einem geteilten Bildschirm mit der Vorgangsliste links und dem Gantt-Diagramm rechts. Fügen Sie Ihre Vorgänge nacheinander hinzu, indem Sie auf die große **+**-Schaltfläche unten rechts klicken. Geben Sie im Dialog **Aufgabe hinzufügen** den **Namen** und die voraussichtliche **Dauer** jedes Vorgangs an.
 
 ![Vorgang hinzufügen](/images/getting-started/add_task.png)
 
-Wählen Sie beide Vorgänge in der Liste auf der linken Seite aus und klicken Sie dann auf die Symbolleisten-Schaltfläche **Vorgänge verknüpfen**. Dies verknüpft die Vorgänge und aktualisiert das Gantt-Diagramm.
+Wählen Sie beide Vorgänge in der Liste auf der linken Seite aus und klicken Sie dann auf die Symbolleisten-Schaltfläche **Aufgaben verknüpfen**. Dies verknüpft die Vorgänge und aktualisiert das Gantt-Diagramm.
 
 - Um auf Android und iOS mehrere Vorgänge auszuwählen, halten Sie Ihren Finger beim Tippen auf jeden Vorgang in der Liste oder im Gantt-Diagramm etwas länger gedrückt.
 - Auf anderen Plattformen klicken Sie auf Vorgänge in der Liste oder im Gantt-Diagramm, während Sie `Strg` oder `Umschalt` auf der Tastatur gedrückt halten.
 
 ![Verknüpfen](/images/getting-started/link.png)
 
-Nachdem die Vorgänge verknüpft sind, versuchen Sie die Dauer des ersten Vorgangs zu ändern. Doppelklicken Sie darauf in der Liste oder im Gantt-Diagramm und bearbeiten Sie das Feld **Dauer** im Dialog **Vorgangseigenschaften**. Sie werden sehen, wie sich diese Änderung auf den Terminplan auswirkt, indem der zweite Vorgang verschoben wird.
+Nachdem die Vorgänge verknüpft sind, versuchen Sie die Dauer des ersten Vorgangs zu ändern. Doppelklicken Sie darauf in der Liste oder im Gantt-Diagramm und bearbeiten Sie das Feld **Dauer** im Dialog **Aufgabeneigenschaften**. Sie werden sehen, wie sich diese Änderung auf den Terminplan auswirkt, indem der zweite Vorgang verschoben wird.
 
 ![Gantt](/images/getting-started/gantt.png)
 
@@ -49,7 +49,7 @@ Klicken Sie auf die große **+**-Schaltfläche, um den Dialog **Ressource hinzuf
 
 ![Ressourcen](/images/getting-started/resources.png)
 
-Wechseln Sie über die Navigationsleiste zurück zur Ansicht **Vorgänge**. Doppelklicken Sie auf Ihren ersten Vorgang in der Liste oder im Gantt-Diagramm, um den Dialog **Vorgangseigenschaften** zu öffnen.
+Wechseln Sie über die Navigationsleiste zurück zur Ansicht **Aufgaben**. Doppelklicken Sie auf Ihren ersten Vorgang in der Liste oder im Gantt-Diagramm, um den Dialog **Aufgabeneigenschaften** zu öffnen.
 
 Wechseln Sie zum Reiter **Ressourcen**, aktivieren Sie die erste Ressource, um diese Person dem Vorgang zuzuweisen, und speichern Sie.
 
@@ -71,7 +71,7 @@ Doppelklicken Sie auf die Ressource, um die **Ressourceneigenschaften** zu sehen
 
 ![Freier Tag](/images/getting-started/day_off.png)
 
-Gehen Sie über die Navigationsleiste zurück zu **Vorgänge** und sehen Sie, wie sich Ihr Terminplan geändert hat. Der zweite Vorgang hat sich aufgrund seiner Abhängigkeit vom ersten verschoben.
+Gehen Sie über die Navigationsleiste zurück zu **Aufgaben** und sehen Sie, wie sich Ihr Terminplan geändert hat. Der zweite Vorgang hat sich aufgrund seiner Abhängigkeit vom ersten verschoben.
 
 ![Urlaub](/images/getting-started/vacation.png)
 
@@ -87,7 +87,7 @@ Um Feiertage zu konfigurieren, verwenden Sie die Navigationsleiste, um zur Ansic
 
 ![Feiertag](/images/getting-started/holiday.png)
 
-Gehen Sie über die Navigationsleiste zurück zur Ansicht **Vorgänge** und sehen Sie, wie sich Ihr Projekt geändert hat. Die Vorgänge sind verschoben, und der Feiertag wird ähnlich wie Wochenenden im Gantt-Diagramm angezeigt.
+Gehen Sie über die Navigationsleiste zurück zur Ansicht **Aufgaben** und sehen Sie, wie sich Ihr Projekt geändert hat. Die Vorgänge sind verschoben, und der Feiertag wird ähnlich wie Wochenenden im Gantt-Diagramm angezeigt.
 
 ![Fertig](/images/getting-started/final.png)
 

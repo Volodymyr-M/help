@@ -213,9 +213,9 @@
       <h1 id="atribuições">Atribuições <a href="#atribuições" class="heading-anchor">#</a></h1>
 <p>Controle como os recursos são alocados às tarefas — quem trabalha em quê, quanto do seu tempo e como o esforço é distribuído. Ajuste unidades, contornos de trabalho e horas extras para corresponder a como sua equipe realmente trabalha.</p>
 <h2 id="atribuições-de-recursos-e-unidades">Atribuições de Recursos e Unidades <a href="#atribuições-de-recursos-e-unidades" class="heading-anchor">#</a></h2>
-<p>Os recursos podem ser atribuídos a uma tarefa na aba <strong>Resources</strong> da caixa de diálogo <strong>Task Properties</strong>.</p>
+<p>Os recursos podem ser atribuídos a uma tarefa na aba <strong>Recursos</strong> da caixa de diálogo <strong>Propriedades da Tarefa</strong>.</p>
 <p>Para atribuir um recurso, marque a caixa de seleção na linha do recurso. Para desatribuir um recurso, desmarque a caixa de seleção.</p>
-<p>As atribuições de recursos de trabalho ou material possuem <strong>Units</strong>, mostradas na coluna correspondente. Clique no botão <strong>Edit</strong> para alterar o valor padrão de <strong>Units</strong> da atribuição.</p>
+<p>As atribuições de recursos de trabalho ou material possuem <strong>Unidades</strong>, mostradas na coluna correspondente. Clique no botão <strong>Editar</strong> para alterar o valor padrão de <strong>Unidades</strong> da atribuição.</p>
 <p>Por padrão, os recursos de trabalho são atribuídos com unidades correspondentes às <a href="/pt/building-schedule/resources/#unidades-m%C3%A1ximas">Unidades Máximas</a> do recurso (100% para um recurso em tempo integral). Isso significa que o recurso dedicará todo o seu tempo disponível no calendário à tarefa. Você pode alterar o valor para qualquer número.</p>
 <p>Por padrão, os recursos de material são atribuídos com 1 unidade. Isso significa que 1 unidade desse material será utilizada ao completar a tarefa. A unidade representa o que você definiu para o material (caixa, galão, tonelada, etc.). Você pode alterar o valor padrão e definir qualquer número de unidades.</p>
 <h2 id="contornos-de-trabalho">Contornos de Trabalho <a href="#contornos-de-trabalho" class="heading-anchor">#</a></h2>
@@ -229,59 +229,59 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Flat</strong></td>
+<td><strong>Plano</strong></td>
 <td>Esforço uniforme durante toda a duração (padrão)</td>
 </tr>
 <tr>
-<td><strong>Back Loaded</strong></td>
+<td><strong>Carga posterior</strong></td>
 <td>O esforço aumenta no final da tarefa</td>
 </tr>
 <tr>
-<td><strong>Front Loaded</strong></td>
+<td><strong>Carga anterior</strong></td>
 <td>O esforço é mais pesado no início e diminui</td>
 </tr>
 <tr>
-<td><strong>Double Peak</strong></td>
+<td><strong>Pico duplo</strong></td>
 <td>Dois picos de intensidade durante a tarefa</td>
 </tr>
 <tr>
-<td><strong>Early Peak</strong></td>
+<td><strong>Pico inicial</strong></td>
 <td>Atinge o pico cedo e depois diminui</td>
 </tr>
 <tr>
-<td><strong>Late Peak</strong></td>
+<td><strong>Pico final</strong></td>
 <td>Aumenta até um pico próximo ao final</td>
 </tr>
 <tr>
-<td><strong>Bell</strong></td>
+<td><strong>Sino</strong></td>
 <td>Curva em sino — pico no meio</td>
 </tr>
 <tr>
-<td><strong>Turtle</strong></td>
+<td><strong>Tartaruga</strong></td>
 <td>Curva em sino mais achatada — distribuição mais suave</td>
 </tr>
 <tr>
-<td><strong>Contoured</strong></td>
+<td><strong>Personalizado</strong></td>
 <td>Sua própria distribuição por dia. Definido automaticamente quando você edita o trabalho em uma visualização de uso; não pode ser escolhido na lista suspensa.</td>
 </tr>
 </tbody>
 </table>
 <p>Os contornos de trabalho afetam como o trabalho é distribuído entre os períodos de tempo e são preservados ao abrir e salvar arquivos de projeto.</p>
 <h3 id="o-contorno-contoured">O Contorno Contoured <a href="#o-contorno-contoured" class="heading-anchor">#</a></h3>
-<p><strong>Contoured</strong> é o contorno personalizado e se comporta de forma diferente dos outros oito. Você não pode selecioná-lo na lista suspensa em uma atribuição que ainda não o tenha — a opção fica desativada. Você o obtém <strong>editando o trabalho diretamente em uma célula de <a href="/pt/views/resource-views/">Uso de Recursos ou Uso de Tarefas</a></strong>: no momento em que você digita um valor de trabalho por dia, o contorno dessa atribuição passa a ser <em>Contoured</em> e a distribuição que você digitou é a que ela usa.</p>
+<p><strong>Personalizado</strong> é o contorno personalizado e se comporta de forma diferente dos outros oito. Você não pode selecioná-lo na lista suspensa em uma atribuição que ainda não o tenha — a opção fica desativada. Você o obtém <strong>editando o trabalho diretamente em uma célula de <a href="/pt/views/resource-views/">Uso de Recursos ou Uso de Tarefas</a></strong>: no momento em que você digita um valor de trabalho por dia, o contorno dessa atribuição passa a ser <em>Personalizado</em> e a distribuição que você digitou é a que ela usa.</p>
 <p>Vale conhecer duas consequências:</p>
 <ul>
 <li><strong>Trocar o Contoured por outro contorno descarta a distribuição inserida manualmente.</strong> Escolha qualquer um dos outros oito contornos e os valores por dia que você digitou são apagados. Eles não são guardados nem restaurados se você voltar.</li>
 <li><strong>O trabalho Contoured faz o percurso de ida e volta pelo formato do Microsoft Project.</strong> A importação lê o trabalho distribuído no tempo por dia para a atribuição, e a exportação o grava de volta. Um plano que chega do Microsoft Project com um contorno editado manualmente o mantém.</li>
 </ul>
 <h2 id="atraso-de-atribuição">Atraso de Atribuição <a href="#atraso-de-atribuição" class="heading-anchor">#</a></h2>
-<p>Cada atribuição de recurso em uma tarefa tem uma propriedade <strong>Delay</strong> que define um deslocamento de quando o recurso começa a trabalhar em relação à data de início da tarefa. Por exemplo, se uma tarefa começa na segunda-feira e um recurso tem um atraso de 2 dias, esse recurso começa a trabalhar na quarta-feira.</p>
-<p>O atraso é definido na caixa de diálogo <strong>Edit Resource Assignment</strong> e se aplica apenas a atribuições de recursos de trabalho. Pode ser usado para escalonar os horários de início dos recursos em uma tarefa.</p>
-<h2 id="trabalho-com-horas-extras">Trabalho com Horas Extras <a href="#trabalho-com-horas-extras" class="heading-anchor">#</a></h2>
+<p>Cada atribuição de recurso em uma tarefa tem uma propriedade <strong>Atraso</strong> que define um deslocamento de quando o recurso começa a trabalhar em relação à data de início da tarefa. Por exemplo, se uma tarefa começa na segunda-feira e um recurso tem um atraso de 2 dias, esse recurso começa a trabalhar na quarta-feira.</p>
+<p>O atraso é definido na caixa de diálogo <strong>Editar Atribuição de Recurso</strong> e se aplica apenas a atribuições de recursos de trabalho. Pode ser usado para escalonar os horários de início dos recursos em uma tarefa.</p>
+<h2 id="trabalho-extra">Trabalho extra <a href="#trabalho-extra" class="heading-anchor">#</a></h2>
 <p>Para recursos de trabalho, você pode designar uma parte do trabalho total de uma atribuição como horas extras. O trabalho com horas extras é um subconjunto do trabalho total, não um adicional: <strong>Work = Regular Work + Overtime Work</strong>.</p>
 <p>O impacto das horas extras nos custos é abordado em <a href="/pt/planning-costs/setting-up-costs/#custo-de-recurso-de-trabalho">Configurando Custos</a>.</p>
 <p>Para tarefas do tipo Fixed Units e Fixed Work, inserir trabalho com horas extras reduz a duração da tarefa porque a duração é baseada apenas no trabalho regular.</p>
-<p>Defina o trabalho com horas extras na caixa de diálogo <strong>Edit Resource Assignment</strong>. Três colunas opcionais estão disponíveis na tabela de tarefas: <strong>Overtime Work</strong>, <strong>Overtime Cost</strong> e <strong>Regular Work</strong>.</p>
+<p>Defina o trabalho com horas extras na caixa de diálogo <strong>Editar Atribuição de Recurso</strong>. Três colunas opcionais estão disponíveis na tabela de tarefas: <strong>Trabalho extra</strong>, <strong>Custo de hora extra</strong> e <strong>Trabalho regular</strong>.</p>
 
     </main>
     <aside class="toc" aria-label="Índice"></aside>

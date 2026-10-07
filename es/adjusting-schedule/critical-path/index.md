@@ -18,7 +18,7 @@ Las tareas que están 100% completas nunca se marcan como críticas, independien
 
 Ingantt detecta automáticamente las tareas críticas. Si la opción **Resaltar tareas críticas** está habilitada (a través del menú **Vista**, el menú **Gráfico** en la barra de menú, o el diálogo **Opciones**), estas tareas se muestran en rojo.
 
-Las tareas con holgura negativa también muestran un icono de advertencia en la lista de tareas, indicando un conflicto de programación. Esto generalmente ocurre cuando una restricción **No comenzar después del** o **No finalizar después del** entra en conflicto con las dependencias de la tarea.
+Las tareas con holgura negativa también muestran un icono de advertencia en la lista de tareas, indicando un conflicto de programación. Esto generalmente ocurre cuando una restricción **Comienzo no después de** o **Final no después de** entra en conflicto con las dependencias de la tarea.
 
 ![Críticas](/images/building-schedule/tasks/critical.png)
 
@@ -27,4 +27,4 @@ Las tareas con holgura negativa también muestran un icono de advertencia en la 
 En la pestaña **Otros** del diálogo **Propiedades del proyecto**, puede configurar cómo se calcula la ruta crítica:
 
 - **Calcular múltiples rutas críticas** — Cuando está habilitado, cada grupo desconectado de tareas vinculadas obtiene su propia ruta crítica. Cuando está deshabilitado (el valor predeterminado), las tareas sin sucesoras derivan su fecha de finalización tardía de la fecha de finalización del proyecto.
-- **Límite de holgura crítica** — De forma predeterminada, las tareas con holgura cero o negativa son críticas. Puede aumentar este umbral para que las tareas con holgura de hasta el número especificado de días también se consideren críticas.
+- **Las tareas son críticas si la holgura es menor o igual a** — De forma predeterminada, las tareas con holgura cero o negativa son críticas. Puede aumentar este umbral para que las tareas con holgura de hasta el número especificado de días también se consideren críticas.

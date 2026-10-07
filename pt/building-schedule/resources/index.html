@@ -212,7 +212,7 @@
     <main id="main-content" class="content">
       <h1 id="recursos">Recursos <a href="#recursos" class="heading-anchor">#</a></h1>
 <p>Adicione as pessoas, equipamentos e materiais que realizarão o trabalho. Uma vez que os recursos são atribuídos às tarefas, o Ingantt pode calcular a carga de trabalho, detectar superalocação e considerar a disponibilidade de cada pessoa.</p>
-<h2 id="tipo-de-recurso">Tipo de Recurso <a href="#tipo-de-recurso" class="heading-anchor">#</a></h2>
+<h2 id="tipo-de-recurso">Tipo de recurso <a href="#tipo-de-recurso" class="heading-anchor">#</a></h2>
 <p>O Ingantt suporta três tipos de recursos:</p>
 <table>
 <thead>
@@ -223,7 +223,7 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Work</strong></td>
+<td><strong>Trabalho</strong></td>
 <td>Alguém ou algo que realiza sua tarefa. Pode ser uma pessoa, equipe, empresa terceirizada ou equipamento.</td>
 </tr>
 <tr>
@@ -231,13 +231,13 @@
 <td>Itens usados para completar sua tarefa, como materiais, ingredientes ou componentes.</td>
 </tr>
 <tr>
-<td><strong>Cost</strong></td>
+<td><strong>Custo</strong></td>
 <td>Custos que podem ser aplicados a múltiplas tarefas, como custos de entrega, custos de implantação ou quaisquer custos fixos.</td>
 </tr>
 </tbody>
 </table>
 <p>Apenas recursos de trabalho, quando atribuídos a tarefas, afetam o agendamento.</p>
-<p>Todos os tipos de recursos afetam o cálculo de custos se o campo <strong>Cost</strong> do recurso estiver preenchido.</p>
+<p>Todos os tipos de recursos afetam o cálculo de custos se o campo <strong>Custo</strong> do recurso estiver preenchido.</p>
 <h2 id="unidades-máximas">Unidades Máximas <a href="#unidades-máximas" class="heading-anchor">#</a></h2>
 <p>Os recursos de trabalho possuem uma propriedade <strong>Max Units</strong> (padrão 100%) que representa a capacidade disponível do recurso. Por exemplo:</p>
 <ul>
@@ -245,18 +245,18 @@
 <li><strong>50%</strong> — Um recurso em meio período (disponível metade do tempo)</li>
 <li><strong>300%</strong> — Uma equipe de 3 membros em tempo integral representada como um único recurso</li>
 </ul>
-<p>As Unidades Máximas são usadas pela <a href="/pt/adjusting-schedule/leveling/#recursos-superalocados">detecção de superalocação</a> e pelo <a href="/pt/adjusting-schedule/leveling/#nivelamento-autom%C3%A1tico">nivelamento automático</a> para determinar se um recurso tem mais trabalho do que consegue realizar. Ao atribuir um recurso de trabalho a uma tarefa, as unidades de atribuição padrão correspondem às Unidades Máximas do recurso.</p>
+<p>As Unidades Máximas são usadas pela <a href="/pt/adjusting-schedule/leveling/#recursos-sobrecarregados">detecção de superalocação</a> e pelo <a href="/pt/adjusting-schedule/leveling/#nivelamento-autom%C3%A1tico">nivelamento automático</a> para determinar se um recurso tem mais trabalho do que consegue realizar. Ao atribuir um recurso de trabalho a uma tarefa, as unidades de atribuição padrão correspondem às Unidades Máximas do recurso.</p>
 <h2 id="períodos-de-disponibilidade-do-recurso">Períodos de Disponibilidade do Recurso <a href="#períodos-de-disponibilidade-do-recurso" class="heading-anchor">#</a></h2>
 <p>A disponibilidade de um recurso de trabalho pode mudar ao longo do tempo. Por exemplo, um membro da equipe pode trabalhar em tempo integral nos primeiros três meses e depois passar para meio período.</p>
-<p>Na aba <strong>Availability</strong> da caixa de diálogo <strong>Resource Properties</strong>, você pode definir múltiplos períodos de disponibilidade, cada um com um intervalo de datas e um percentual de disponibilidade. Para datas que estão dentro de um período definido, as unidades do período substituem as Unidades Máximas base do recurso para cálculos de capacidade.</p>
+<p>Na aba <strong>Disponibilidade</strong> da caixa de diálogo <strong>Propriedades do Recurso</strong>, você pode definir múltiplos períodos de disponibilidade, cada um com um intervalo de datas e um percentual de disponibilidade. Para datas que estão dentro de um período definido, as unidades do período substituem as Unidades Máximas base do recurso para cálculos de capacidade.</p>
 <h2 id="recursos-genéricos">Recursos Genéricos <a href="#recursos-genéricos" class="heading-anchor">#</a></h2>
-<p>Um recurso pode ser marcado como <strong>Generic</strong> usando a caixa de seleção na caixa de diálogo <strong>Resource Properties</strong>. Recursos genéricos são marcadores de posição que representam uma função (ex.: &quot;Desenvolvedor&quot;, &quot;Designer&quot;) em vez de uma pessoa específica. São úteis durante o planejamento inicial, quando os membros específicos da equipe ainda não foram identificados.</p>
+<p>Um recurso pode ser marcado como <strong>Genérico</strong> usando a caixa de seleção na caixa de diálogo <strong>Propriedades do Recurso</strong>. Recursos genéricos são marcadores de posição que representam uma função (ex.: &quot;Desenvolvedor&quot;, &quot;Designer&quot;) em vez de uma pessoa específica. São úteis durante o planejamento inicial, quando os membros específicos da equipe ainda não foram identificados.</p>
 <p>Os recursos genéricos são indicados por um ícone de crachá na lista de recursos. A marcação de genérico é puramente informativa — não afeta o agendamento ou os cálculos de custo.</p>
-<h2 id="tipo-de-reserva">Tipo de Reserva <a href="#tipo-de-reserva" class="heading-anchor">#</a></h2>
-<p>Cada recurso tem um <strong>Booking Type</strong> que pode ser definido como <strong>Committed</strong> (padrão) ou <strong>Proposed</strong> na caixa de diálogo <strong>Resource Properties</strong>.</p>
+<h2 id="tipo-de-reserva">Tipo de reserva <a href="#tipo-de-reserva" class="heading-anchor">#</a></h2>
+<p>Cada recurso tem um <strong>Tipo de reserva</strong> que pode ser definido como <strong>Confirmado</strong> (padrão) ou <strong>Proposto</strong> na caixa de diálogo <strong>Propriedades do Recurso</strong>.</p>
 <ul>
-<li><strong>Committed</strong> — O recurso está firmemente reservado para o projeto.</li>
-<li><strong>Proposed</strong> — O recurso está provisoriamente atribuído para fins de planejamento.</li>
+<li><strong>Confirmado</strong> — O recurso está firmemente reservado para o projeto.</li>
+<li><strong>Proposto</strong> — O recurso está provisoriamente atribuído para fins de planejamento.</li>
 </ul>
 <p>Por padrão, o nivelamento automático exclui recursos propostos. Você pode incluí-los ativando &quot;Level resources with the proposed booking type&quot; na caixa de diálogo <a href="/pt/adjusting-schedule/leveling/#op%C3%A7%C3%B5es-de-nivelamento">Opções de Nivelamento</a>.</p>
 

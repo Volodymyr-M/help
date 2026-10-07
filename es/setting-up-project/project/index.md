@@ -65,5 +65,5 @@ La hora de inicio predeterminada (8:00 AM) y la hora de fin (5:00 PM) controlan 
 La pestaña **Programación** del diálogo **Propiedades del proyecto** contiene opciones que controlan cómo se programan las tareas:
 
 - **Respetar fechas de restricción** — Cuando está habilitado, las restricciones semiflexibles (como No comenzar después del) tienen prioridad sobre las dependencias, lo que podría crear holgura negativa. Cuando está deshabilitado (el valor predeterminado), las dependencias siempre tienen prioridad.
-- **Dividir tareas en progreso** — Cuando está habilitado (el valor predeterminado), el programador puede dividir automáticamente las tareas que tienen progreso fuera de secuencia.
+- **Dividir tareas en curso** — Cuando está habilitado (el valor predeterminado), el programador puede dividir automáticamente las tareas que tienen progreso fuera de secuencia.
 - **Mover partes completadas/restantes** — Cuatro opciones que controlan cómo las porciones de trabajo completado y restante se reposicionan en relación con la fecha de estado. Estas ayudan a mantener su cronograma actualizado moviendo el trabajo completado hacia atrás a la fecha de estado o empujando el trabajo restante hacia adelante.

@@ -19,7 +19,7 @@ Saisissez la durée avec un **`e`** devant l'unité :
 
 Les unités sont `min`, `h`, `d`, `w` et `m` — minutes, heures, jours, semaines, mois — et chacune d'elles accepte le `e`. Les abréviations sont traduites ; dans une interface non anglaise, utilisez donc les lettres d'unité de cette langue ; le marqueur `e` reste identique.
 
-Vous pouvez également utiliser la case à cocher **Elapsed** au lieu de la saisie, dans l'éditeur de durée de la boîte de dialogue [Propriétés des tâches](/fr/building-schedule/task-properties/index.md). Son info-bulle en donne la définition :
+Vous pouvez également utiliser la case à cocher **Écoulé** au lieu de la saisie, dans l'éditeur de durée de la boîte de dialogue [Propriétés des tâches](/fr/building-schedule/task-properties/index.md). Son info-bulle en donne la définition :
 
 > Elapsed. When checked, duration counts continuously (24/7) instead of only during working hours defined by the calendar.
 
@@ -41,7 +41,7 @@ Comparez avec les unités de travail, qui proviennent des [Propriétés du proje
 
 Le même principe s'applique au décalage d'une [dépendance](/fr/building-schedule/dependencies/index.md), et c'est là qu'il compte le plus. « Commencer la tâche suivante trois jours après la fin de celle-ci » signifie généralement trois jours *calendaires*, et non trois jours ouvrés — sinon une fin le vendredi repousse le successeur au mercredi.
 
-Dans l'onglet **Predecessors** de Task Properties, chaque lien possède sa propre case à cocher **Elapsed** à côté du décalage, avec la même signification :
+Dans l'onglet **Prédécesseurs** de la boîte de dialogue Propriétés de la tâche, chaque lien possède sa propre case à cocher **Écoulé** à côté du décalage, avec la même signification :
 
 > When checked, lag time counts continuously (24/7) instead of only during working hours defined by the calendar.
 

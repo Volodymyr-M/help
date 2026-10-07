@@ -213,7 +213,7 @@
       <h1 id="dependências">Dependências <a href="#dependências" class="heading-anchor">#</a></h1>
 <p>Projetos reais têm uma ordem — você não pode testar antes de construir. Vincule tarefas para que o Ingantt calcule a sequência correta e desloque tudo automaticamente quando uma tarefa mudar.</p>
 <h2 id="predecessoras-e-dependências">Predecessoras e Dependências <a href="#predecessoras-e-dependências" class="heading-anchor">#</a></h2>
-<p>Quando você vincula tarefas usando o botão <strong>Link selected tasks</strong> na barra de ferramentas, você cria uma dependência entre as tarefas. A dependência é chamada de <strong>Finish to Start</strong>, e é uma das quatro dependências disponíveis:</p>
+<p>Quando você vincula tarefas usando o botão <strong>Link selected tasks</strong> na barra de ferramentas, você cria uma dependência entre as tarefas. A dependência é chamada de <strong>Fim para Início</strong>, e é uma das quatro dependências disponíveis:</p>
 <table>
 <thead>
 <tr>
@@ -223,31 +223,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Finish to Start</strong></td>
+<td><strong>Fim para Início</strong></td>
 <td>A segunda tarefa pode iniciar quando a primeira tarefa terminar.</td>
 </tr>
 <tr>
-<td><strong>Finish to Finish</strong></td>
+<td><strong>Fim para Fim</strong></td>
 <td>A segunda tarefa termina quando a primeira tarefa terminar.</td>
 </tr>
 <tr>
-<td><strong>Start to Finish</strong></td>
+<td><strong>Início para Fim</strong></td>
 <td>A segunda tarefa termina quando a primeira tarefa iniciar.</td>
 </tr>
 <tr>
-<td><strong>Start to Start</strong></td>
+<td><strong>Início para Início</strong></td>
 <td>A segunda tarefa inicia quando a primeira tarefa iniciar.</td>
 </tr>
 </tbody>
 </table>
 <p><img src="/images/building-schedule/tasks/dependencies.png" alt="Dependências" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
-<p>Para atribuir predecessoras e editar dependências, use a aba <strong>Predecessors</strong> da caixa de diálogo <strong>Task Properties</strong>.</p>
+<p>Para atribuir predecessoras e editar dependências, use a aba <strong>Predecessores</strong> da caixa de diálogo <strong>Propriedades da Tarefa</strong>.</p>
 <h2 id="latência-e-antecipação">Latência e Antecipação <a href="#latência-e-antecipação" class="heading-anchor">#</a></h2>
 <p>Às vezes, pode ser necessário definir um tempo de espera entre duas tarefas dependentes.</p>
-<p>Digamos que sua primeira tarefa é &quot;Pintar a parede&quot; e a segunda tarefa é &quot;Pendurar quadros na parede&quot;. Essas tarefas estão vinculadas (têm uma dependência <strong>Finish to Start</strong>). Não é possível pendurar quadros até a tinta secar, então você precisa esperar. Para refletir isso no seu cronograma, defina a <strong>Lag</strong> (por exemplo, 2 dias) para a dependência entre as duas tarefas.</p>
+<p>Digamos que sua primeira tarefa é &quot;Pintar a parede&quot; e a segunda tarefa é &quot;Pendurar quadros na parede&quot;. Essas tarefas estão vinculadas (têm uma dependência <strong>Fim para Início</strong>). Não é possível pendurar quadros até a tinta secar, então você precisa esperar. Para refletir isso no seu cronograma, defina o <strong>Atraso</strong> (por exemplo, 2 dias) para a dependência entre as duas tarefas.</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="Latência" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
-<p>As latências também podem representar o cenário oposto — quando uma tarefa dependente deve começar antes que sua predecessora termine. Para definir isso, torne a <strong>Lag</strong> negativa (por exemplo, -1 dia). Isso é chamado de <em>antecipação</em>.</p>
-<p>Para definir latência ou antecipação, selecione a predecessora na aba <strong>Predecessors</strong> da caixa de diálogo <strong>Task Properties</strong> e clique no botão <strong>Edit</strong>.</p>
+<p>As latências também podem representar o cenário oposto — quando uma tarefa dependente deve começar antes que sua predecessora termine. Para definir isso, torne o <strong>Atraso</strong> negativo (por exemplo, -1 dia). Isso é chamado de <em>antecipação</em>.</p>
+<p>Para definir latência ou antecipação, selecione a predecessora na aba <strong>Predecessores</strong> da caixa de diálogo <strong>Propriedades da Tarefa</strong> e clique no botão <strong>Editar</strong>.</p>
 <blockquote>
 <p>As latências podem ser definidas em horas, dias, semanas, meses ou como uma fração da duração da tarefa predecessora (por exemplo, 50%).</p>
 </blockquote>

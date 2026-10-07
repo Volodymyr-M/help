@@ -15,21 +15,21 @@ Ingantt for Web은 모든 기능을 완전히 사용할 수 있는 7일 무료 �
 탐색 서랍에 상태가 표시됩니다:
 
 - **Free trial ends in N days**
-- **Free trial almost ended**
-- **Free trial ended**
+- **무료 평가판이 거의 종료되었습니다**
+- **무료 평가판 종료**
 
 체험 종료 며칠 전에 이메일을 한 번 받고, 종료된 후에 다시 한 번 받게 됩니다.
 
 ## 체험이 끝나면
 
-Ingantt는 **보기 전용** 모드로 전환되고 인터페이스에 *View only mode as trial ended*라고 표시됩니다.
+Ingantt는 **읽기 전용** 모드로 전환되고 인터페이스에 *시험판이 끝나서 읽기 전용 모드입니다*라고 표시됩니다.
 
 - **아무것도 삭제되지 않습니다.** 프로젝트 파일은 Google Drive에 원래 있던 자리에 그대로 남아 있습니다. 파일은 사용자의 것이며, Ingantt는 프로젝트를 자체 서버에 저장하지 않습니다.
 - 프로젝트를 열어 읽는 것은 계속 가능합니다.
 - 구독하기 전까지는 변경 사항을 저장할 수 없습니다. 저장을 시도하면 Ingantt가 구독 대화 상자를 표시합니다.
-- 계획을 꺼내려면 **File** → **Download** → **Download XML**을 사용하거나, Microsoft Project XML을 읽을 수 있는 아무 도구로 Google Drive에서 파일을 여십시오.
+- 계획을 꺼내려면 **파일** → **다운로드** → **XML 다운로드**를 사용하거나, Microsoft Project XML을 읽을 수 있는 아무 도구로 Google Drive에서 파일을 여십시오.
 
-메시지의 **Subscribe now** 또는 **Account** 대화 상자에서 구독할 수 있습니다. [구독 및 결제](/ko/account/subscription/index.md)를 참조하십시오.
+메시지의 **지금 구독하기** 또는 **계정** 대화 상자에서 구독할 수 있습니다. [구독 및 결제](/ko/account/subscription/index.md)를 참조하십시오.
 
 ## 설치형 앱
 

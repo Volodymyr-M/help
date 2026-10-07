@@ -18,7 +18,7 @@ En el diagrama de Gantt, las tareas de resumen se muestran como barras negras. E
 
 En Ingantt, siempre existe una tarea de resumen para todo su proyecto. Esta tarea es la tarea número 0, por encima de todas sus tareas.
 
-La tarea de resumen raíz podría no ser visible de forma predeterminada. Para cambiar esto, marque **Mostrar tarea de resumen raíz** en el menú **Vista** o en el diálogo **Opciones**.
+La tarea de resumen raíz podría no ser visible de forma predeterminada. Para cambiar esto, marque **Mostrar tarea resumen raíz** en el menú **Vista** o en el diálogo **Opciones**.
 
 Al igual que cualquier otra tarea de resumen, la tarea de resumen raíz muestra los datos generales de sus subtareas. Dado que todas las tareas en su cronograma son sus subtareas, la tarea de resumen raíz muestra los datos generales de todo su proyecto.
 
@@ -30,7 +30,7 @@ El nombre de la tarea de resumen raíz es el mismo que el nombre del proyecto.
 
 De forma predeterminada, todas las tareas en Ingantt son **autoprogramadas** — sus fechas de inicio y finalización son calculadas por el algoritmo de programación basándose en dependencias, restricciones y calendarios.
 
-Puede cambiar una tarea al modo **Programada manualmente** usando la casilla de verificación en el diálogo **Propiedades de la tarea**. Cuando una tarea está programada manualmente:
+Puede cambiar una tarea al modo **Programado manualmente** usando la casilla de verificación en el diálogo **Propiedades de la tarea**. Cuando una tarea está programada manualmente:
 
 - **No es afectada por el algoritmo de programación** — sus fechas las establece usted
 - Puede ingresar fechas de **Inicio** y **Fin** usando los campos de fecha o el selector de fechas
@@ -41,7 +41,7 @@ Puede cambiar una tarea al modo **Programada manualmente** usando la casilla de 
 
 ## Tareas recurrentes
 
-Las tareas recurrentes representan actividades que se repiten con una periodicidad regular, como reuniones diarias, revisiones semanales o informes mensuales. Puede crear tareas recurrentes a través del menú **Insertar** eligiendo **Agregar tarea recurrente**.
+Las tareas recurrentes representan actividades que se repiten con una periodicidad regular, como reuniones diarias, revisiones semanales o informes mensuales. Puede crear tareas recurrentes a través del menú **Insertar** eligiendo **Añadir tarea repetitiva**.
 
 Al crear una tarea recurrente, usted especifica:
 
@@ -62,7 +62,7 @@ Las tareas divididas se muestran como barras separadas con conectores de puntos 
 
 ## Tareas inactivas
 
-Una tarea puede marcarse como **inactiva** desmarcando la casilla **Activa** en la pestaña **General** del diálogo **Propiedades de la tarea**, o usando la opción **Desactivar tarea** en el submenú **Editar > Visualización** o en el menú contextual de clic derecho.
+Una tarea puede marcarse como **inactiva** desmarcando la casilla **Activo** en la pestaña **General** del diálogo **Propiedades de la tarea**, o usando la opción **Desactivar tarea** en el submenú **Editar > Visualización** o en el menú contextual de clic derecho.
 
 Las tareas inactivas:
 

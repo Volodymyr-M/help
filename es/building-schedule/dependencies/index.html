@@ -213,7 +213,7 @@
       <h1 id="dependencias">Dependencias <a href="#dependencias" class="heading-anchor">#</a></h1>
 <p>Los proyectos reales tienen un orden — no se puede probar antes de construir. Vincule las tareas entre sí para que Ingantt calcule la secuencia correcta y desplace todo automáticamente cuando una tarea cambie.</p>
 <h2 id="predecesoras-y-dependencias">Predecesoras y dependencias <a href="#predecesoras-y-dependencias" class="heading-anchor">#</a></h2>
-<p>Cuando vincula tareas usando el botón <strong>Vincular tareas seleccionadas</strong> en la barra de herramientas, crea una dependencia entre las tareas. La dependencia se llama <strong>Fin a Inicio</strong>, y es una de las cuatro dependencias disponibles:</p>
+<p>Cuando vincula tareas usando el botón <strong>Vincular tareas seleccionadas</strong> en la barra de herramientas, crea una dependencia entre las tareas. La dependencia se llama <strong>Final a Comienzo</strong>, y es una de las cuatro dependencias disponibles:</p>
 <table>
 <thead>
 <tr>
@@ -223,31 +223,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Fin a Inicio</strong></td>
+<td><strong>Final a Comienzo</strong></td>
 <td>La segunda tarea puede comenzar una vez que la primera tarea termine.</td>
 </tr>
 <tr>
-<td><strong>Fin a Fin</strong></td>
+<td><strong>Final a Final</strong></td>
 <td>La segunda tarea termina cuando la primera tarea termina.</td>
 </tr>
 <tr>
-<td><strong>Inicio a Fin</strong></td>
+<td><strong>Comienzo a Final</strong></td>
 <td>La segunda tarea termina cuando la primera tarea comienza.</td>
 </tr>
 <tr>
-<td><strong>Inicio a Inicio</strong></td>
+<td><strong>Comienzo a Comienzo</strong></td>
 <td>La segunda tarea comienza cuando la primera tarea comienza.</td>
 </tr>
 </tbody>
 </table>
 <p><img src="/images/building-schedule/tasks/dependencies.png" alt="Dependencias" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
-<p>Para asignar predecesoras y editar dependencias, use la pestaña <strong>Predecesoras</strong> del diálogo <strong>Propiedades de la tarea</strong>.</p>
+<p>Para asignar predecesoras y editar dependencias, use la pestaña <strong>Predecesores</strong> del diálogo <strong>Propiedades de la tarea</strong>.</p>
 <h2 id="posposición-y-tiempo-de-adelanto">Posposición y tiempo de adelanto <a href="#posposición-y-tiempo-de-adelanto" class="heading-anchor">#</a></h2>
 <p>A veces puede necesitar establecer un tiempo de espera entre dos tareas dependientes.</p>
-<p>Supongamos que su primera tarea es &quot;Pintar la pared&quot; y su segunda tarea es &quot;Colgar cuadros en la pared&quot;. Estas tareas están vinculadas (tienen una dependencia <strong>Fin a Inicio</strong>). No es posible colgar cuadros hasta que la pintura esté seca, así que necesita esperar. Para reflejar esto en su cronograma, establezca la <strong>Posposición</strong> (por ejemplo, 2 días) para la dependencia entre las dos tareas.</p>
+<p>Supongamos que su primera tarea es &quot;Pintar la pared&quot; y su segunda tarea es &quot;Colgar cuadros en la pared&quot;. Estas tareas están vinculadas (tienen una dependencia <strong>Final a Comienzo</strong>). No es posible colgar cuadros hasta que la pintura esté seca, así que necesita esperar. Para reflejar esto en su cronograma, establezca la <strong>Retraso</strong> (por ejemplo, 2 días) para la dependencia entre las dos tareas.</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="Posposición" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
-<p>Las posposiciones también pueden representar el escenario opuesto — cuando una tarea dependiente debe comenzar antes de que su predecesora termine. Para establecer esto, haga la <strong>Posposición</strong> negativa (por ejemplo, -1 día). Esto se llama <em>tiempo de adelanto</em>.</p>
-<p>Para establecer la posposición o el tiempo de adelanto, seleccione la predecesora en la pestaña <strong>Predecesoras</strong> del diálogo <strong>Propiedades de la tarea</strong> y haga clic en el botón <strong>Editar</strong>.</p>
+<p>Las posposiciones también pueden representar el escenario opuesto — cuando una tarea dependiente debe comenzar antes de que su predecesora termine. Para establecer esto, haga la <strong>Retraso</strong> negativa (por ejemplo, -1 día). Esto se llama <em>tiempo de adelanto</em>.</p>
+<p>Para establecer la posposición o el tiempo de adelanto, seleccione la predecesora en la pestaña <strong>Predecesores</strong> del diálogo <strong>Propiedades de la tarea</strong> y haga clic en el botón <strong>Editar</strong>.</p>
 <blockquote>
 <p>Las posposiciones se pueden establecer en horas, días, semanas, meses o como una fracción de la duración de la tarea predecesora (por ejemplo, 50%).</p>
 </blockquote>

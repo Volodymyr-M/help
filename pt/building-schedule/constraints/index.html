@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Restrições - Construindo um Cronograma - Ajuda do Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O Mais Breve Possível) até inflexíveis (Deve Iniciar Em, Deve Terminar Em).">
+  <meta name="description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O mais cedo possível) até inflexíveis (Deve começar em, Deve terminar em).">
   <link rel="canonical" href="https://help.ingantt.com/pt/building-schedule/constraints/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Restrições">
-  <meta property="og:description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O Mais Breve Possível) até inflexíveis (Deve Iniciar Em, Deve Terminar Em).">
+  <meta property="og:description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O mais cedo possível) até inflexíveis (Deve começar em, Deve terminar em).">
   <meta property="og:url" content="https://help.ingantt.com/pt/building-schedule/constraints/">
   <meta property="og:site_name" content="Ajuda do Ingantt">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Restrições">
-  <meta name="twitter:description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O Mais Breve Possível) até inflexíveis (Deve Iniciar Em, Deve Terminar Em).">
+  <meta name="twitter:description" content="Controle o agendamento de tarefas com oito tipos de restrição, desde flexíveis (O mais cedo possível) até inflexíveis (Deve começar em, Deve terminar em).">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
@@ -214,9 +214,9 @@
 <p>Algumas tarefas precisam iniciar ou terminar em datas específicas — uma entrega chega na terça-feira, uma licença vence na sexta-feira. As restrições permitem fixar datas onde necessário, mantendo o restante do cronograma flexível.</p>
 <h2 id="como-as-restrições-funcionam">Como as Restrições Funcionam <a href="#como-as-restrições-funcionam" class="heading-anchor">#</a></h2>
 <p>Junto com as dependências de tarefas (vínculos com predecessoras), a restrição de uma tarefa define como ela é agendada.</p>
-<p>As restrições são definidas na aba <strong>Advanced</strong> da caixa de diálogo <strong>Task Properties</strong>. A restrição padrão é <strong>As soon as possible</strong>. Isso significa que a tarefa é posicionada o mais próximo possível da data de início do projeto, respeitando as dependências com outras tarefas. Em projetos planejados a partir da Data de Término, o padrão é <strong>As late as possible</strong>.</p>
-<p>Existem duas restrições que forçam a tarefa a iniciar ou terminar na data especificada, independentemente das dependências. Essas restrições são chamadas de <em>restrições inflexíveis</em> e são <strong>Must start on</strong> e <strong>Must finish on</strong>. Use essas restrições somente se tiver certeza de que são necessárias.</p>
-<p>Outras restrições (<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong> e <strong>Finish no later than</strong>) são chamadas de <em>flexíveis</em>, pois respeitam as dependências entre tarefas. Se as dependências empurrarem a tarefa além da data da restrição, a data determinada pela dependência tem prioridade.</p>
+<p>As restrições são definidas na aba <strong>Avançado</strong> da caixa de diálogo <strong>Propriedades da Tarefa</strong>. A restrição padrão é <strong>O mais cedo possível</strong>. Isso significa que a tarefa é posicionada o mais próximo possível da data de início do projeto, respeitando as dependências com outras tarefas. Em projetos planejados a partir da Data de Término, o padrão é <strong>O mais tarde possível</strong>.</p>
+<p>Existem duas restrições que forçam a tarefa a iniciar ou terminar na data especificada, independentemente das dependências. Essas restrições são chamadas de <em>restrições inflexíveis</em> e são <strong>Deve começar em</strong> e <strong>Deve terminar em</strong>. Use essas restrições somente se tiver certeza de que são necessárias.</p>
+<p>Outras restrições (<strong>Começar não antes de</strong>, <strong>Começar não depois de</strong>, <strong>Terminar não antes de</strong> e <strong>Terminar não depois de</strong>) são chamadas de <em>flexíveis</em>, pois respeitam as dependências entre tarefas. Se as dependências empurrarem a tarefa além da data da restrição, a data determinada pela dependência tem prioridade.</p>
 <table>
 <thead>
 <tr>
@@ -226,42 +226,42 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>As soon as possible</strong></td>
+<td><strong>O mais cedo possível</strong></td>
 <td>A tarefa é agendada assim que as predecessoras permitirem. Se nenhuma predecessora estiver vinculada, a tarefa inicia no início da tarefa resumo pai.</td>
 </tr>
 <tr>
-<td><strong>As late as possible</strong></td>
+<td><strong>O mais tarde possível</strong></td>
 <td>A tarefa é agendada o mais tarde que as predecessoras permitirem. Se nenhuma predecessora estiver vinculada, a tarefa termina no final da tarefa resumo pai.</td>
 </tr>
 <tr>
-<td><strong>Start no earlier than</strong></td>
+<td><strong>Começar não antes de</strong></td>
 <td>Se a tarefa iniciar depois da data especificada devido a predecessoras, nada muda. Caso contrário, a tarefa é agendada para iniciar na data especificada.</td>
 </tr>
 <tr>
-<td><strong>Start no later than</strong></td>
+<td><strong>Começar não depois de</strong></td>
 <td>Se as predecessoras empurrarem a tarefa além da data da restrição, a data determinada pela dependência tem prioridade. Caso contrário, a tarefa é agendada para iniciar até a data especificada.</td>
 </tr>
 <tr>
-<td><strong>Finish no earlier than</strong></td>
+<td><strong>Terminar não antes de</strong></td>
 <td>Se a tarefa terminar depois da data especificada devido a predecessoras, nada muda. Caso contrário, a tarefa é agendada para terminar na data especificada.</td>
 </tr>
 <tr>
-<td><strong>Finish no later than</strong></td>
+<td><strong>Terminar não depois de</strong></td>
 <td>Se as predecessoras empurrarem a tarefa além da data da restrição, a data determinada pela dependência tem prioridade. Caso contrário, a tarefa é agendada para terminar até a data especificada.</td>
 </tr>
 <tr>
-<td><strong>Must start on</strong></td>
+<td><strong>Deve começar em</strong></td>
 <td>A data de início da tarefa é agendada exatamente como especificado, independentemente das predecessoras.</td>
 </tr>
 <tr>
-<td><strong>Must finish on</strong></td>
+<td><strong>Deve terminar em</strong></td>
 <td>A data de término da tarefa é agendada exatamente como especificado, independentemente das predecessoras.</td>
 </tr>
 </tbody>
 </table>
 <p>Tarefas com restrição flexível ou inflexível exibem um ícone especial na lista de tarefas.</p>
 <blockquote>
-<p>Mantenha a maioria das tarefas definida como <strong>As soon as possible</strong> e use restrições flexíveis apenas para tarefas que precisem iniciar ou terminar próximo a uma data específica.</p>
+<p>Mantenha a maioria das tarefas definida como <strong>O mais cedo possível</strong> e use restrições flexíveis apenas para tarefas que precisem iniciar ou terminar próximo a uma data específica.</p>
 </blockquote>
 
     </main>

@@ -213,9 +213,9 @@
       <h1 id="割り当て">割り当て <a href="#割り当て" class="heading-anchor">#</a></h1>
 <p>リソースをタスクにどのように配分するかを制御します。誰がどの作業を行うか、時間の何割を使うか、作業量をどう配分するかを設定できます。単位、作業量配分、残業を調整して、チームの実際の働き方に合わせましょう。</p>
 <h2 id="リソースの割り当てと単位">リソースの割り当てと単位 <a href="#リソースの割り当てと単位" class="heading-anchor">#</a></h2>
-<p>リソースは<strong>Task Properties</strong>ダイアログの<strong>Resources</strong>タブでタスクに割り当てることができます。</p>
+<p>リソースは<strong>タスクのプロパティ</strong>ダイアログの<strong>リソース</strong>タブでタスクに割り当てることができます。</p>
 <p>リソースを割り当てるには、そのリソースの行にあるチェックボックスにチェックを入れます。割り当てを解除するには、チェックを外します。</p>
-<p>稼働リソースまたは資材リソースの割り当てには<strong>Units</strong>があり、対応する列に表示されます。<strong>Edit</strong>ボタンをクリックして、割り当てのデフォルト<strong>Units</strong>値を変更できます。</p>
+<p>稼働リソースまたは資材リソースの割り当てには<strong>単位</strong>があり、対応する列に表示されます。<strong>編集</strong>ボタンをクリックして、割り当てのデフォルト<strong>単位</strong>値を変更できます。</p>
 <p>デフォルトでは、稼働リソースはリソースの<a href="/ja/building-schedule/resources/#%E6%9C%80%E5%A4%A7%E5%8D%98%E4%BD%8D">最大単位</a>と一致する単位で割り当てられます（フルタイムリソースの場合100%）。これは、リソースが利用可能なカレンダー時間のすべてをそのタスクに充てることを意味します。この値は任意の数値に変更できます。</p>
 <p>デフォルトでは、資材リソースは1単位で割り当てられます。これは、タスク完了時にその資材の1単位が使用されることを意味します。単位は資材に対して定義したもの（箱、ガロン、トンなど）を表します。デフォルト値を変更して任意の数の単位を設定できます。</p>
 <h2 id="作業量配分">作業量配分 <a href="#作業量配分" class="heading-anchor">#</a></h2>
@@ -229,59 +229,59 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Flat</strong></td>
+<td><strong>均等</strong></td>
 <td>全期間にわたって均等な作業量（デフォルト）</td>
 </tr>
 <tr>
-<td><strong>Back Loaded</strong></td>
+<td><strong>後方ピーク</strong></td>
 <td>タスクの終盤に向けて作業量が増加</td>
 </tr>
 <tr>
-<td><strong>Front Loaded</strong></td>
+<td><strong>前方ピーク</strong></td>
 <td>序盤に作業量が最も多く、徐々に減少</td>
 </tr>
 <tr>
-<td><strong>Double Peak</strong></td>
+<td><strong>二重ピーク</strong></td>
 <td>タスク中に2回の作業量ピーク</td>
 </tr>
 <tr>
-<td><strong>Early Peak</strong></td>
+<td><strong>初期ピーク</strong></td>
 <td>序盤にピークを迎え、その後減少</td>
 </tr>
 <tr>
-<td><strong>Late Peak</strong></td>
+<td><strong>後期ピーク</strong></td>
 <td>終盤に向けてピークに達する</td>
 </tr>
 <tr>
-<td><strong>Bell</strong></td>
+<td><strong>ベル型</strong></td>
 <td>ベルカーブ — 中間でピーク</td>
 </tr>
 <tr>
-<td><strong>Turtle</strong></td>
+<td><strong>亀型</strong></td>
 <td>より平坦なベルカーブ — なだらかな配分</td>
 </tr>
 <tr>
-<td><strong>Contoured</strong></td>
+<td><strong>カスタム</strong></td>
 <td>独自の日ごとの配分。配分ビューで作業量を編集すると自動的に設定され、ドロップダウンから選択することはできません。</td>
 </tr>
 </tbody>
 </table>
 <p>作業量配分は時間期間にわたる作業量の配分方法に影響し、プロジェクトファイルの開閉時に保持されます。</p>
 <h3 id="contoured配分">Contoured配分 <a href="#contoured配分" class="heading-anchor">#</a></h3>
-<p><strong>Contoured</strong>はカスタムの配分で、他の8つとは動作が異なります。まだこの配分になっていない割り当てでは、ドロップダウンから選択することはできません（オプションは無効になっています）。この配分は、<strong><a href="/ja/views/resource-views/">リソース配分またはタスク配分</a>のセルで作業量を直接編集する</strong>ことで設定されます。日ごとの作業量の値を入力した瞬間に、その割り当ての配分は<em>Contoured</em>になり、入力した配分がそのまま使用されます。</p>
+<p><strong>カスタム</strong>はカスタムの配分で、他の8つとは動作が異なります。まだこの配分になっていない割り当てでは、ドロップダウンから選択することはできません（オプションは無効になっています）。この配分は、<strong><a href="/ja/views/resource-views/">リソース使用またはタスク使用</a>のセルで作業量を直接編集する</strong>ことで設定されます。日ごとの作業量の値を入力した瞬間に、その割り当ての配分は<em>カスタム</em>になり、入力した配分がそのまま使用されます。</p>
 <p>知っておくべき影響が2つあります：</p>
 <ul>
 <li><strong>Contouredから他の配分に切り替えると、手入力した配分は破棄されます。</strong> 他の8つの配分のいずれかを選ぶと、入力した日ごとの値はクリアされます。Contouredに戻しても、保持・復元されることはありません。</li>
 <li><strong>Contouredの作業量はMicrosoft Project形式と相互に変換されます。</strong> インポートでは日ごとの時間配分作業量が割り当てに読み込まれ、エクスポートではそれが書き出されます。手編集した配分を持つ計画をMicrosoft Projectから取り込んでも、その配分は維持されます。</li>
 </ul>
 <h2 id="割り当て遅延">割り当て遅延 <a href="#割り当て遅延" class="heading-anchor">#</a></h2>
-<p>タスクの各リソース割り当てには<strong>Delay</strong>プロパティがあり、タスクの開始日に対してリソースが作業を開始するタイミングをオフセットします。たとえば、タスクが月曜日に開始し、リソースに2日の遅延がある場合、そのリソースは水曜日から作業を開始します。</p>
-<p>遅延は<strong>Edit Resource Assignment</strong>ダイアログで設定し、稼働リソースの割り当てにのみ適用されます。タスク内でリソースの開始時期をずらすために使用できます。</p>
+<p>タスクの各リソース割り当てには<strong>遅延</strong>プロパティがあり、タスクの開始日に対してリソースが作業を開始するタイミングをオフセットします。たとえば、タスクが月曜日に開始し、リソースに2日の遅延がある場合、そのリソースは水曜日から作業を開始します。</p>
+<p>遅延は<strong>リソースの割り当てを編集</strong>ダイアログで設定し、稼働リソースの割り当てにのみ適用されます。タスク内でリソースの開始時期をずらすために使用できます。</p>
 <h2 id="残業作業量">残業作業量 <a href="#残業作業量" class="heading-anchor">#</a></h2>
 <p>稼働リソースの場合、割り当ての総作業量の一部を残業として指定できます。残業作業量は総作業量のサブセットであり、追加ではありません：<strong>作業量 = 通常作業量 + 残業作業量</strong>。</p>
 <p>残業のコストへの影響については、<a href="/ja/planning-costs/setting-up-costs/#%E7%A8%BC%E5%83%8D%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%AE%E3%82%B3%E3%82%B9%E3%83%88">コストの設定</a>を参照してください。</p>
 <p>Fixed UnitsおよびFixed Workタスクでは、残業作業量を入力すると、期間は通常作業量のみに基づくため、タスクの期間が短くなります。</p>
-<p>残業作業量は<strong>Edit Resource Assignment</strong>ダイアログで設定します。タスクテーブルで3つのオプション列が利用可能です：<strong>Overtime Work</strong>、<strong>Overtime Cost</strong>、<strong>Regular Work</strong>。</p>
+<p>残業作業量は<strong>リソースの割り当てを編集</strong>ダイアログで設定します。タスクテーブルで3つのオプション列が利用可能です：<strong>残業時間</strong>、<strong>残業コスト</strong>、<strong>通常作業</strong>。</p>
 
     </main>
     <aside class="toc" aria-label="目次"></aside>

@@ -3,17 +3,17 @@
 Zwei Einträge liegen im Menü **Hilfe** nebeneinander und tun unterschiedliche Dinge.
 
 - **Hilfe → Support kontaktieren** öffnet ein Formular innerhalb von Ingantt. Es kann Ihre Projektdatei mitsenden und teilt uns mit, auf welcher Plattform und welchem Build Sie sind. Dies ist der richtige Weg bei einem Problem mit einem Plan.
-- **Hilfe → Support per E-Mail** öffnet Ihr eigenes E-Mail-Programm, adressiert an `support@ingantt.com`. Verwenden Sie es, wenn die App nicht startet oder wenn Sie lieber aus Ihrem eigenen Postfach schreiben möchten.
+- **Hilfe → E-Mail-Support** öffnet Ihr eigenes E-Mail-Programm, adressiert an `support@ingantt.com`. Verwenden Sie es, wenn die App nicht startet oder wenn Sie lieber aus Ihrem eigenen Postfach schreiben möchten.
 
 ## Einen Bericht aus der App senden
 
 **Hilfe → Support kontaktieren** zeigt:
 
 - **Von** — Foto, Name und E-Mail-Adresse Ihres Google-Kontos, für Sie ausgefüllt und nicht bearbeitbar. Sie müssen bei Google angemeldet sein; andernfalls öffnet sich das Formular nicht.
-- Ein Nachrichtenfeld: *Beschreiben Sie Ihr Problem oder Ihr Feedback*.
+- Ein Nachrichtenfeld: *Beschreiben Sie Ihr Problem oder Feedback*.
 - Ein Kontrollkästchen: **Aktuelle Projektdatei anhängen**.
 
-Drücken Sie **SENDEN**. Bei Erfolg sehen Sie *Vielen Dank! Wir melden uns per E-Mail bei Ihnen.* Schlägt es fehl, sehen Sie *Feedback konnte nicht gesendet werden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt eine E-Mail.* — in diesem Fall verwenden Sie stattdessen **Support per E-Mail**.
+Drücken Sie **SENDEN**. Bei Erfolg sehen Sie *Vielen Dank! Wir melden uns per E-Mail bei Ihnen.* Schlägt es fehl, sehen Sie *Fehler beim Senden. Bitte versuchen Sie es erneut oder schreiben Sie uns direkt.* — in diesem Fall verwenden Sie stattdessen **E-Mail-Support**.
 
 Ihr Bericht enthält außerdem die Plattform, die Client-Version und die Sprache, die Sie verwenden, sodass Sie Ihren Build nicht beschreiben müssen.
 

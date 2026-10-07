@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -212,9 +212,9 @@
     <main id="main-content" class="content">
       <h1 id="오프라인으로-작업하기">오프라인으로 작업하기 <a href="#오프라인으로-작업하기" class="heading-anchor">#</a></h1>
 <p>의도적으로 저장하기 전까지 Google Drive에 아무것도 기록되지 않도록 자동 저장을 끕니다. 곧 연결이 끊길 예정일 때 유용합니다.</p>
-<p><strong>Web</strong> 버전에서는 메뉴 항목이 <strong>File → Work offline (no autosave)</strong>입니다. Windows, macOS, Android, iOS에서는 같은 스위치의 이름이 <strong>Enable autosave</strong>입니다.</p>
+<p><strong>Web</strong> 버전에서는 메뉴 항목이 <strong>파일 → 오프라인으로 작업 (자동 저장 안 함)</strong>입니다. Windows, macOS, Android, iOS에서는 같은 스위치의 이름이 <strong>자동 저장 활성화</strong>입니다.</p>
 <h2 id="work-offline의-기능">Work Offline의 기능 <a href="#work-offline의-기능" class="heading-anchor">#</a></h2>
-<p><strong>File → Work offline</strong>은 현재 탭의 자동 저장을 끕니다. 그것이 전부입니다. 켜져 있는 동안 Ingantt는 20초마다 프로젝트를 Google Drive에 기록하는 것을 중단하며, 저장하기 전까지 브라우저 밖으로 아무것도 나가지 않습니다.</p>
+<p><strong>파일 → Work offline</strong>은 현재 탭의 자동 저장을 끕니다. 그것이 전부입니다. 켜져 있는 동안 Ingantt는 20초마다 프로젝트를 Google Drive에 기록하는 것을 중단하며, 저장하기 전까지 브라우저 밖으로 아무것도 나가지 않습니다.</p>
 <p>켜면 일회성 알림이 표시됩니다:</p>
 <blockquote>
 <p><em>Offline mode is on. Remember to save your changes manually before closing the tab.</em> (오프라인 모드가 켜져 있습니다. 탭을 닫기 전에 변경 사항을 직접 저장하십시오.)</p>
@@ -224,12 +224,12 @@
 <p>연결 없이는 Google Drive에 저장할 수 없으므로, 다음 순서로 진행하면 됩니다:</p>
 <ol>
 <li>아직 연결되어 있을 때 계획을 엽니다.</li>
-<li><strong>File → Work offline</strong>을 켭니다.</li>
+<li><strong>파일 → Work offline</strong>을 켭니다.</li>
 <li>평소처럼 편집합니다. 모든 것이 브라우저 안에서 이루어집니다. 일정이 다시 계산되고 실행 취소와 다시 실행이 작동하며, 아무것도 어디로도 전송되지 않습니다.</li>
-<li>다시 온라인이 되면 <strong>Work offline</strong>을 다시 끈 다음 <strong>Save</strong>(또는 <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>)를 누릅니다. 이 단계에서 작업 내용이 Drive에 저장됩니다.</li>
+<li>다시 온라인이 되면 <strong>Work offline</strong>을 다시 끈 다음 <strong>저장</strong>(또는 <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>)를 누릅니다. 이 단계에서 작업 내용이 Drive에 저장됩니다.</li>
 <li>그 시점부터 자동 저장이 재개됩니다.</li>
 </ol>
-<p>4단계를 기억하는 데 의존하고 싶지 않다면 연결이 끊기기 전에 복사본을 내보내십시오. <strong>File → Export → XML</strong>은 계획을 기기에 다운로드하며, 나중에 그 파일을 다시 열 수 있습니다.</p>
+<p>4단계를 기억하는 데 의존하고 싶지 않다면 연결이 끊기기 전에 복사본을 내보내십시오. <strong>파일 → 내보내기 → XML</strong>은 계획을 기기에 다운로드하며, 나중에 그 파일을 다시 열 수 있습니다.</p>
 <h2 id="save-버튼이-현재-상태를-알려-줍니다">Save 버튼이 현재 상태를 알려 줍니다 <a href="#save-버튼이-현재-상태를-알려-줍니다" class="heading-anchor">#</a></h2>
 <p>도구 모음의 Save 버튼이 지켜봐야 할 표시기입니다:</p>
 <table>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>File saved to Google Drive</strong></td>
+<td><strong>Google 드라이브에 파일 저장됨</strong></td>
 <td>모든 것이 Drive에 있습니다.</td>
 </tr>
 <tr>
-<td><strong>Autosave pending…</strong></td>
+<td><strong>자동 저장 대기 중…</strong></td>
 <td>저장되지 않은 편집 내용이 있으며, 곧 자동 저장이 처리합니다.</td>
 </tr>
 <tr>
-<td><strong>Saving…</strong></td>
+<td><strong>저장 중…</strong></td>
 <td>저장이 진행 중입니다.</td>
 </tr>
 <tr>
-<td><strong>Save file to Google Drive</strong></td>
+<td><strong>Google 드라이브에 파일 저장</strong></td>
 <td>저장되지 않은 편집 내용이 있고 자동 저장이 꺼져 있습니다. 직접 저장해야 합니다.</td>
 </tr>
 <tr>
-<td><strong>Error saving file to Google Drive</strong></td>
+<td><strong>Google 드라이브에 파일 저장 오류</strong></td>
 <td>저장을 시도했지만 실패했습니다. 편집 내용은 여전히 탭에 있으며 저장되지 않은 상태입니다.</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="플랫폼별-차이">플랫폼별 차이 <a href="#플랫폼별-차이" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Web에서는 이 설정이 유지되지 않습니다.</strong> 탭별, 세션별로 적용됩니다. 새 탭을 열거나 새로 고치면 자동 저장이 다시 켜집니다. 이는 의도된 동작입니다. 자동 저장이 켜진 상태가 더 안전한 기본값이므로, 끄는 것을 잊은 오프라인 스위치가 계속 따라다니지 않도록 한 것입니다. Windows, macOS, Android, iOS에서는 자동 저장 설정이 <em>기억됩니다</em>.</li>
-<li><strong>기본값이 다릅니다.</strong> Web에서는 자동 저장이 기본적으로 켜져 있습니다. 데스크톱 및 모바일 빌드에서는 기본적으로 꺼져 있으며, 같은 메뉴 항목이 <strong>Enable autosave</strong>로 표시됩니다.</li>
+<li><strong>기본값이 다릅니다.</strong> Web에서는 자동 저장이 기본적으로 켜져 있습니다. 데스크톱 및 모바일 빌드에서는 기본적으로 꺼져 있으며, 같은 메뉴 항목이 <strong>자동 저장 활성화</strong>로 표시됩니다.</li>
 <li><strong>아직 저장하지 않은 프로젝트는</strong> 오프라인 모드와 관계없이 <strong>전혀 자동 저장되지 않습니다.</strong> 자동 저장은 Drive에 이미 존재하는 파일만 업데이트할 수 있습니다. 한 번 저장하면 그다음부터 자동 저장이 맡습니다.</li>
 <li><strong>Web 버전에서 기기에서 연 파일은 절대 자동 저장되지 않습니다.</strong> Ingantt for Web은 디스크의 파일에 다시 쓸 수 없습니다. 자동 저장을 사용하려면 <a href="/ko/ui/files/">Google Drive</a>에 저장하십시오.</li>
 </ul>

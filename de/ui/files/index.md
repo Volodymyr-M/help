@@ -18,12 +18,12 @@ Ingantt fordert die folgenden Berechtigungen an:
 
 Sobald Sie angemeldet sind, ist der Projekte-Bildschirm Ihr Drive:
 
-- **Zuletzt verwendete Projekte** — die Projekte, die Sie zuletzt geöffnet haben, nach Datum gruppiert.
-- **Für mich freigegeben** — Ingantt-Dateien, die andere Personen für Sie freigegeben haben.
-- **Markiert** — Projekte, die Sie mit **Zu „Markiert“ hinzufügen** markiert haben.
+- **Kürzliche Projekte** — die Projekte, die Sie zuletzt geöffnet haben, nach Datum gruppiert.
+- **Mit mir geteilt** — Ingantt-Dateien, die andere Personen für Sie freigegeben haben.
+- **Favoriten** — Projekte, die Sie mit **Zu Favoriten hinzufügen** markiert haben.
 - **Papierkorb** — Projekte, die Sie in den Papierkorb verschoben haben. Mit **Wiederherstellen** holen Sie eines zurück.
 
-Verwenden Sie **Öffnen** → **Aus Google Drive öffnen**, um eine vorhandene Datei auszuwählen, oder den Reiter **Hochladen** dieses Dialogs, um eine Datei auf Ihrem Gerät zu suchen oder hineinzuziehen. Microsoft Project, Primavera und die anderen unterstützten Formate lassen sich auf diesem Weg öffnen — siehe [Import & Export](/de/getting-started/import-export/index.md).
+Verwenden Sie **Öffnen** → **Über Google Drive öffnen**, um eine vorhandene Datei auszuwählen, oder den Reiter **Hochladen** dieses Dialogs, um eine Datei auf Ihrem Gerät zu suchen oder hineinzuziehen. Microsoft Project, Primavera und die anderen unterstützten Formate lassen sich auf diesem Weg öffnen — siehe [Import & Export](/de/getting-started/import-export/index.md).
 
 Neue Projekte entstehen über **Neu** auf dem Projekte-Bildschirm: **Neues Projekt**, **Neu mit KI** oder **Neu aus Vorlage**. Wenn Sie im Web angemeldet sind, wird ein neues Projekt sofort in Google Drive angelegt und von da an automatisch gespeichert.
 

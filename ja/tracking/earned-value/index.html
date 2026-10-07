@@ -213,18 +213,18 @@
       <h1 id="アーンドバリュー">アーンドバリュー <a href="#アーンドバリュー" class="heading-anchor">#</a></h1>
 <p>アーンドバリューマネジメント（EVM）は、スコープ、スケジュール、コストの測定を組み合わせて、プロジェクトが予定通り・予算通りに進んでいるかを評価します。ステータス日付とベースラインを設定すれば、Inganttが業界標準のEVM指標を計算します。</p>
 <h2 id="ステータス日付">ステータス日付 <a href="#ステータス日付" class="heading-anchor">#</a></h2>
-<p><strong>Status Date</strong>は、進捗の追跡とアーンドバリュー計算に使用される日付を定義します。設定すると、ガントチャート上のその日付の位置に緑色の垂直線が表示されます。</p>
-<p>ステータス日付が設定されていない場合、計算には現在の日付が使用されます。ステータス日付は<strong>Project</strong>メニューからアクセスできる<strong>Earned Value Options</strong>ダイアログで設定できます。</p>
+<p><strong>状況報告日</strong>は、進捗の追跡とアーンドバリュー計算に使用される日付を定義します。設定すると、ガントチャート上のその日付の位置に緑色の垂直線が表示されます。</p>
+<p>ステータス日付が設定されていない場合、計算には現在の日付が使用されます。ステータス日付は<strong>プロジェクト</strong>メニューからアクセスできる<strong>アーンドバリューオプション</strong>ダイアログで設定できます。</p>
 <h2 id="アーンドバリューマネジメント">アーンドバリューマネジメント <a href="#アーンドバリューマネジメント" class="heading-anchor">#</a></h2>
 <p>Inganttは、スコープ、スケジュール、コストのデータを統合してプロジェクトのパフォーマンスを評価するプロジェクト管理技法であるアーンドバリューマネジメントをサポートしています。</p>
 <h3 id="アーンドバリューのセットアップ">アーンドバリューのセットアップ <a href="#アーンドバリューのセットアップ" class="heading-anchor">#</a></h3>
 <ol>
 <li>計画されたスケジュールとコストを記録するために<a href="/ja/tracking/baselines/#%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3%E3%81%AE%E8%A8%AD%E5%AE%9A">ベースライン</a>を作成します。</li>
-<li><strong>Earned Value Options</strong>ダイアログ（<strong>Project</strong>メニューからアクセス）で<strong>Status Date</strong>を設定するか、現在の日付をデフォルトとして使用します。</li>
-<li>作業の進行に応じてタスクの<a href="/ja/tracking/progress/#%E9%81%94%E6%88%90%E7%8E%87-complete">% Complete</a>値を更新します。</li>
+<li><strong>アーンドバリューオプション</strong>ダイアログ（<strong>プロジェクト</strong>メニューからアクセス）で<strong>状況報告日</strong>を設定するか、現在の日付をデフォルトとして使用します。</li>
+<li>作業の進行に応じてタスクの<a href="/ja/tracking/progress/#-%E5%AE%8C%E4%BA%86">% 完了</a>値を更新します。</li>
 </ol>
 <h3 id="利用可能なevm指標">利用可能なEVM指標 <a href="#利用可能なevm指標" class="heading-anchor">#</a></h3>
-<p>以下のEVM列を<strong>Options</strong>ダイアログからタスクリストに追加できます：</p>
+<p>以下のEVM列を<strong>オプション</strong>ダイアログからタスクリストに追加できます：</p>
 <table>
 <thead>
 <tr>
@@ -290,12 +290,12 @@
 <h3 id="アーンドバリュー方式">アーンドバリュー方式 <a href="#アーンドバリュー方式" class="heading-anchor">#</a></h3>
 <p>各タスクはBCWP（アーンドバリュー）の計算に2つの方式のいずれかを使用できます：</p>
 <ul>
-<li><strong>% Complete</strong>（デフォルト） — タスクの達成率を使用してアーンドバリューを計算します。</li>
-<li><strong>Physical % Complete</strong> — 個別に追跡される物理的な達成率を使用します。成果物ベースの進捗測定に便利です。</li>
+<li><strong>% 完了</strong>（デフォルト） — タスクの達成率を使用してアーンドバリューを計算します。</li>
+<li><strong>達成率 (実績)</strong> — 個別に追跡される物理的な達成率を使用します。成果物ベースの進捗測定に便利です。</li>
 </ul>
-<p>個々のタスクの方式は<strong>Task Properties</strong>ダイアログの<strong>Cost and EV</strong>タブで設定します。新規タスクのデフォルトの方式は<strong>Earned Value Options</strong>ダイアログで変更できます。</p>
+<p>個々のタスクの方式は<strong>タスクのプロパティ</strong>ダイアログの<strong>コストとEV</strong>タブで設定します。新規タスクのデフォルトの方式は<strong>アーンドバリューオプション</strong>ダイアログで変更できます。</p>
 <h3 id="アーンドバリューベースライン">アーンドバリューベースライン <a href="#アーンドバリューベースライン" class="heading-anchor">#</a></h3>
-<p>EVM計算は特定のベースラインを使用します。<strong>Earned Value Options</strong>ダイアログで、アーンドバリューに使用するベースライン（<code>Baseline 0</code>から<code>Baseline 10</code>）を選択できます。デフォルトは<code>Baseline 0</code>です。</p>
+<p>EVM計算は特定のベースラインを使用します。<strong>アーンドバリューオプション</strong>ダイアログで、アーンドバリューに使用するベースライン（<code>Baseline 0</code>から<code>Baseline 10</code>）を選択できます。デフォルトは<code>Baseline 0</code>です。</p>
 
     </main>
     <aside class="toc" aria-label="目次"></aside>

@@ -1,19 +1,19 @@
 # Contacter le support
 
-Deux entrées voisines du menu **Help** font des choses différentes.
+Deux entrées voisines du menu **Aide** font des choses différentes.
 
-- **Help → Contact support** ouvre un formulaire dans Ingantt. Il peut emporter votre fichier de projet avec lui, et il nous indique la plateforme et la version que vous utilisez. C'est celle à utiliser pour un problème avec un planning.
-- **Help → Email support** ouvre votre propre client de messagerie avec l'adresse `support@ingantt.com`. Utilisez-la si l'application ne démarre pas, ou si vous préférez écrire depuis votre propre boîte aux lettres.
+- **Aide → Contacter le support** ouvre un formulaire dans Ingantt. Il peut emporter votre fichier de projet avec lui, et il nous indique la plateforme et la version que vous utilisez. C'est celle à utiliser pour un problème avec un planning.
+- **Aide → Support par e - mail** ouvre votre propre client de messagerie avec l'adresse `support@ingantt.com`. Utilisez-la si l'application ne démarre pas, ou si vous préférez écrire depuis votre propre boîte aux lettres.
 
 ## Envoyer un rapport depuis l'application
 
-**Help → Contact support** affiche :
+**Aide → Contacter le support** affiche :
 
-- **From** — la photo, le nom et l'e-mail de votre compte Google, remplis pour vous et non modifiables. Vous devez être connecté à Google ; sinon, le formulaire ne s'ouvre pas.
-- Une zone de message : *Describe your issue or feedback*.
-- Une case à cocher : **Include current project file**.
+- **De** — la photo, le nom et l'e-mail de votre compte Google, remplis pour vous et non modifiables. Vous devez être connecté à Google ; sinon, le formulaire ne s'ouvre pas.
+- Une zone de message : *Décrivez votre problème ou commentaire*.
+- Une case à cocher : **Inclure le fichier du projet actuel**.
 
-Appuyez sur **SEND**. En cas de succès, vous voyez *Thank you! We'll get back to you by email.* En cas d'échec, vous voyez *Failed to send feedback. Please try again or email us directly.* — utilisez alors **Email support** à la place.
+Appuyez sur **ENVOYER**. En cas de succès, vous voyez *Merci ! Nous vous répondrons par e - mail.* En cas d'échec, vous voyez *Échec de l'envoi. Veuillez réessayer ou nous envoyer un e - mail directement.* — utilisez alors **Support par e - mail** à la place.
 
 Votre rapport contient également la plateforme, la version du client et la langue que vous utilisez, vous n'avez donc pas besoin de décrire votre version.
 
@@ -29,4 +29,4 @@ Merci de la cocher chaque fois que vous signalez quelque chose concernant un pla
 
 ## Réponses
 
-Nous répondons par e-mail à l'adresse indiquée sur la ligne **From** du formulaire, surveillez donc cette boîte aux lettres. Votre rapport ne comporte pas de numéro de référence — si vous nous écrivez à nouveau au sujet du même problème, envoyez votre message depuis la même adresse afin que nous puissions faire le rapprochement.
+Nous répondons par e-mail à l'adresse indiquée sur la ligne **De** du formulaire, surveillez donc cette boîte aux lettres. Votre rapport ne comporte pas de numéro de référence — si vous nous écrivez à nouveau au sujet du même problème, envoyez votre message depuis la même adresse afin que nous puissions faire le rapprochement.

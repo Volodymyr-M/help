@@ -23,7 +23,7 @@ Abra el diálogo **Cuenta**, o haga clic en **Suscribirse ahora** cuando Ingantt
 2. **Elija el plan** — mensual o anual.
 3. **Ingrese sus datos de facturación** — nombre, dirección, ciudad, código postal, estado o región, país y número de teléfono.
 4. **Revise** los artículos comprados y los datos de facturación.
-5. **Pagar en una nueva ventana** — el pago lo gestiona nuestro proveedor de pagos en una ventana separada.
+5. **Pagar en nueva ventana** — el pago lo gestiona nuestro proveedor de pagos en una ventana separada.
 
 Cuando el pago se completa, Ingantt confirma que la suscripción — o la lista de suscripciones que compró para otros — ya está activa.
 
@@ -33,7 +33,7 @@ Si la ventana de pago indica que el pago aún se está procesando, es normal. Es
 
 ## Ver y administrar suscripciones
 
-**Administrar suscripciones** en el diálogo **Cuenta** muestra las suscripciones que ha comprado — el usuario al que corresponde cada una, la fecha de compra y quién la compró. **Actualizar** vuelve a leer el estado actual desde el servidor.
+**Gestionar suscripciones** en el diálogo **Cuenta** muestra las suscripciones que ha comprado — el usuario al que corresponde cada una, la fecha de compra y quién la compró. **Actualizar** vuelve a leer el estado actual desde el servidor.
 
 Aquí también se administran las compras para equipos: quien pagó los puestos los ve todos y puede cancelar cualquiera de ellos de forma individual.
 
@@ -41,7 +41,7 @@ Su propio estado se muestra en el cajón de navegación como **Suscriptor de pag
 
 ## Cancelar
 
-1. Abra **Cuenta** → **Administrar suscripciones**.
+1. Abra **Cuenta** → **Gestionar suscripciones**.
 2. Haga clic en **Cancelar** en la fila del usuario que desea cancelar y confirme.
 
 Cancelar detiene la próxima renovación. No interrumpe el acceso de inmediato: el mensaje *Suscripción cancelada, pero todas las funciones están disponibles hasta que finalice el período pagado* significa exactamente eso, y el cajón muestra entonces la cuenta regresiva con **El período pagado finaliza en N días**. Cuando el período pagado se agota, Ingantt cambia al modo de solo lectura.

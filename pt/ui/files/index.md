@@ -4,12 +4,12 @@ O Ingantt armazena seus arquivos de projeto no Google Drive para que você possa
 
 ## Fazer Login no Google
 
-Na tela de Projetos, clique em **Sign in with Google**. Uma caixa de diálogo padrão do Google é aberta e solicita as permissões abaixo. Você pode sair a qualquer momento com **Sign out of Google**.
+Na tela de Projetos, clique em **Entrar com o Google**. Uma caixa de diálogo padrão do Google é aberta e solicita as permissões abaixo. Você pode sair a qualquer momento com **Sair do Google**.
 
 O Ingantt solicita as seguintes permissões:
 
 - **See your profile info** — Usado para identificar sua conta.
-- **Connect itself to your Google Drive** — Apenas na versão **Web**. Permite criar ou abrir arquivos do Ingantt pela interface web do Google Drive (botão **New** ou menu **Open with**).
+- **Connect itself to your Google Drive** — Apenas na versão **Web**. Permite criar ou abrir arquivos do Ingantt pela interface web do Google Drive (botão **Novo** ou menu **Open with**).
 - **See, edit, create, and delete only the specific Google Drive files you use with this app** — Permite que o Ingantt crie e edite seus próprios arquivos no seu Google Drive. O Ingantt não pode acessar seus outros arquivos.
 
 > A terceira permissão é o escopo restrito do Google Drive: o Ingantt só vê os arquivos que você criou no Ingantt ou abriu com ele. O restante do seu Drive permanece invisível para o Ingantt, e é também por isso que o Ingantt não consegue navegar pelas pastas do seu Drive para você.
@@ -18,22 +18,22 @@ O Ingantt solicita as seguintes permissões:
 
 Depois de fazer login, a tela de Projetos é o seu Drive:
 
-- **Recent Projects** — projetos que você abriu mais recentemente, agrupados por data.
-- **Shared with me** — arquivos do Ingantt que outras pessoas compartilharam com você.
-- **Starred** — projetos que você marcou com **Add to Starred**.
-- **Trash** — projetos que você moveu para a Lixeira. Use **Restore** para trazer um de volta.
+- **Projetos Recentes** — projetos que você abriu mais recentemente, agrupados por data.
+- **Compartilhados comigo** — arquivos do Ingantt que outras pessoas compartilharam com você.
+- **Favoritos** — projetos que você marcou com **Adicionar aos Favoritos**.
+- **Lixeira** — projetos que você moveu para a Lixeira. Use **Restaurar** para trazer um de volta.
 
-Use **Open** → **Open from Google Drive** para escolher um arquivo existente, ou a aba **Upload** dessa caixa de diálogo para procurar um arquivo no seu dispositivo ou arrastá-lo para lá. Arquivos do Microsoft Project, Primavera e dos outros formatos compatíveis podem ser abertos dessa forma — consulte [Importar e Exportar](/pt/getting-started/import-export/index.md).
+Use **Abrir** → **Abrir do Google Drive** para escolher um arquivo existente, ou a aba **Enviar** dessa caixa de diálogo para procurar um arquivo no seu dispositivo ou arrastá-lo para lá. Arquivos do Microsoft Project, Primavera e dos outros formatos compatíveis podem ser abertos dessa forma — consulte [Importar e Exportar](/pt/getting-started/import-export/index.md).
 
-Novos projetos são criados a partir de **New** na tela de Projetos: **New project**, **New with AI** ou **New from template**. Quando você está com login feito na web, um novo projeto é direcionado ao Google Drive imediatamente e salvo automaticamente a partir daí.
+Novos projetos são criados a partir de **Novo** na tela de Projetos: **Novo projeto**, **Novo com IA** ou **Novo a partir de modelo**. Quando você está com login feito na web, um novo projeto é direcionado ao Google Drive imediatamente e salvo automaticamente a partir daí.
 
 > **Está faltando um arquivo em "Shared with me"?** O Google exige que você abra um arquivo compartilhado primeiro a partir do Google Drive. Clique com o botão direito no arquivo lá e escolha **Open with** → **Ingantt**. Ele então aparece na lista.
 
 ## Usando o Ingantt a partir da própria interface do Google Drive (web)
 
-Na web, o Ingantt pode ser iniciado a partir do Drive, e não apenas o contrário. É para isso que serve a permissão **Connect itself to your Google Drive**: ao concedê-la quando você faz login no Ingantt, o Ingantt é registrado como aplicativo do Drive para a sua conta e passa a aparecer no menu **New** do Drive e no menu **Open with** dos arquivos do Ingantt. Adicionar o Ingantt a partir do [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} faz a mesma coisa; não é preciso fazer os dois.
+Na web, o Ingantt pode ser iniciado a partir do Drive, e não apenas o contrário. É para isso que serve a permissão **Connect itself to your Google Drive**: ao concedê-la quando você faz login no Ingantt, o Ingantt é registrado como aplicativo do Drive para a sua conta e passa a aparecer no menu **Novo** do Drive e no menu **Open with** dos arquivos do Ingantt. Adicionar o Ingantt a partir do [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} faz a mesma coisa; não é preciso fazer os dois.
 
-- **New** → **More** → **Ingantt** cria um novo projeto do Ingantt na pasta do Drive em que você está.
+- **Novo** → **More** → **Ingantt** cria um novo projeto do Ingantt na pasta do Drive em que você está.
 - Clique com o botão direito em um arquivo do Ingantt → **Open with** → **Ingantt** para abri-lo no Ingantt para Web.
 
 Em ambos os casos, o Drive abre `web.ingantt.com` e repassa a pasta ou o arquivo a ser usado, para que você chegue diretamente ao projeto certo.

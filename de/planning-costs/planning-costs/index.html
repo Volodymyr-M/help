@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -214,14 +214,14 @@
 <p>Weisen Sie Vorgängen und Ressourcen Kosten zu, um den Gesamtpreis Ihres Projekts zu sehen. Der Projektsammelvorgang zeigt die Gesamtsumme — vergleichen Sie sie mit Budgetressourcen, um zu wissen, ob Ihr Projekt in das genehmigte Budget passt.</p>
 <h2 id="wie-vorgangskosten-berechnet-werden">Wie Vorgangskosten berechnet werden <a href="#wie-vorgangskosten-berechnet-werden" class="heading-anchor">#</a></h2>
 <p>Die Kosten jedes Vorgangs sind eine Kombination aus seinen eigenen Fixkosten und den Kosten seiner zugewiesenen Ressourcen. Ingantt berechnet die Gesamtkosten jedes Vorgangs und zeigt sie in der Spalte <strong>Kosten</strong> in der Vorgangsliste an.</p>
-<p><em>Vorgangs-<strong>Kosten</strong> = <strong>Fixkosten</strong> des Vorgangs + Kosten der dem Vorgang zugewiesenen Ressourcen</em></p>
+<p><em>Vorgangs-<strong>Kosten</strong> = <strong>Feste Kosten</strong> des Vorgangs + Kosten der dem Vorgang zugewiesenen Ressourcen</em></p>
 <blockquote>
-<p>Wenn Sie die Spalte <strong>Kosten</strong> in der Vorgangsliste nicht sehen, stellen Sie sicher, dass das Flag <strong>Kostenspalte</strong> auf dem Reiter <strong>Vorgangsspalten</strong> des Dialogs <strong>Optionen</strong> aktiviert ist.</p>
+<p>Wenn Sie die Spalte <strong>Kosten</strong> in der Vorgangsliste nicht sehen, stellen Sie sicher, dass das Flag <strong>Kostenspalte</strong> auf dem Reiter <strong>Aufgabenspalten</strong> des Dialogs <strong>Optionen</strong> aktiviert ist.</p>
 </blockquote>
 <h2 id="sammelvorgangskosten">Sammelvorgangskosten <a href="#sammelvorgangskosten" class="heading-anchor">#</a></h2>
 <p>Jeder <a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgang</a> zeigt in seinem Feld <strong>Kosten</strong> die Gesamtkosten aller seiner Teilvorgänge an.</p>
-<p>Wie ein regulärer Vorgang kann ein Sammelvorgang jedoch <a href="/de/building-schedule/assignments/#ressourcenzuweisungen-und-einheiten">zugewiesene Ressourcen</a> und <strong>Fixkosten</strong> haben. Diese werden zusätzlich zu den Gesamtkosten der Teilvorgänge hinzuaddiert und erhöhen die <strong>Kosten</strong> des Sammelvorgangs.</p>
-<p><em>Sammelvorgang-<strong>Kosten</strong> = Gesamtkosten aller Teilvorgänge + <strong>Fixkosten</strong> des Sammelvorgangs + Kosten der dem Sammelvorgang zugewiesenen Ressourcen</em></p>
+<p>Wie ein regulärer Vorgang kann ein Sammelvorgang jedoch <a href="/de/building-schedule/assignments/#ressourcenzuweisungen-und-einheiten">zugewiesene Ressourcen</a> und <strong>Feste Kosten</strong> haben. Diese werden zusätzlich zu den Gesamtkosten der Teilvorgänge hinzuaddiert und erhöhen die <strong>Kosten</strong> des Sammelvorgangs.</p>
+<p><em>Sammelvorgang-<strong>Kosten</strong> = Gesamtkosten aller Teilvorgänge + <strong>Feste Kosten</strong> des Sammelvorgangs + Kosten der dem Sammelvorgang zugewiesenen Ressourcen</em></p>
 <p>Verwenden Sie den <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgang</a>, um die Gesamtkosten Ihres gesamten Projekts einzusehen und zu verwalten.</p>
 <h2 id="budgetressourcen">Budgetressourcen <a href="#budgetressourcen" class="heading-anchor">#</a></h2>
 <p>Eine Ressource kann im Dialog <strong>Ressourceneigenschaften</strong> als <strong>Budget</strong>-Ressource markiert werden. Budgetressourcen stellen insgesamt zugewiesene Budgetbeträge auf Projektebene dar und können nur dem <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgang</a> zugewiesen werden.</p>

@@ -20,7 +20,7 @@ O Ingantt pode abrir arquivos de projeto de diversos aplicativos de agendamento,
 - **Ingantt YAML** — YAML, YML
 - E mais (SDEF e outros formatos)
 
-Para importar um arquivo, clique no botão **+** na tela de Projetos ou use a opção **Import** no menu **File**. Se você fizer alterações em um arquivo importado, o Ingantt as salva no formato XML.
+Para importar um arquivo, clique no botão **+** na tela de Projetos ou use a opção **Importar** no menu **Arquivo**. Se você fizer alterações em um arquivo importado, o Ingantt as salva no formato XML.
 
 > Para abrir arquivos de projeto que não são XML, o Ingantt os envia por meio de uma conexão segura ao serviço web do Ingantt para conversão. Seus arquivos não ficam armazenados no serviço. É necessária uma conexão com a internet. Arquivos YAML são processados localmente.
 
@@ -28,11 +28,11 @@ Para importar um arquivo, clique no botão **+** na tela de Projetos ou use a op
 
 Os arquivos que convertemos no nosso servidor são limitados a **30 MB**. Isso abrange MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP e PEP. Arquivos XML e YAML são processados dentro do aplicativo e nunca são enviados, então o limite do servidor não se aplica a eles.
 
-**Arquivo grande demais?** No Microsoft Project, use **File → Save As** e escolha **Project XML (.xml)**. O Ingantt processa XML dentro do aplicativo, então o limite de 30 MB do servidor não se aplica, e a exportação mantém sua estrutura de tarefas, dependências e recursos.
+**Arquivo grande demais?** No Microsoft Project, use **Arquivo → Save As** e escolha **Project XML (.xml)**. O Ingantt processa XML dentro do aplicativo, então o limite de 30 MB do servidor não se aplica, e a exportação mantém sua estrutura de tarefas, dependências e recursos.
 
 ## Exportando Seu Projeto
 
-O Ingantt oferece múltiplos formatos de exportação através da opção **Export** no menu **File** (ou **Download** na web). Ao escolher **Export**, uma caixa de diálogo aparece permitindo selecionar o formato desejado:
+O Ingantt oferece múltiplos formatos de exportação através da opção **Exportar** no menu **Arquivo** (ou **Baixar** na web). Ao escolher **Exportar**, uma caixa de diálogo aparece permitindo selecionar o formato desejado:
 
 | Formato | Descrição |
 |---------|-----------|
@@ -43,7 +43,7 @@ O Ingantt oferece múltiplos formatos de exportação através da opção **Expo
 | **YAML** | Definição de projeto compacta e legível por humanos, projetada para edição assistida por IA |
 | **Markdown** | Formato de texto para documentação, READMEs ou wikis |
 
-O arquivo exportado reflete as configurações atuais do seu gráfico de Gantt. Por exemplo, se os nomes das tarefas estiverem ocultos na caixa de diálogo **Options**, eles também não aparecerão na exportação. O nível de zoom também é preservado.
+O arquivo exportado reflete as configurações atuais do seu gráfico de Gantt. Por exemplo, se os nomes das tarefas estiverem ocultos na caixa de diálogo **Opções**, eles também não aparecerão na exportação. O nível de zoom também é preservado.
 
 > As exportações em PDF sempre usam cores do tema claro, enquanto as exportações em PNG usam o tema atual da interface (claro ou escuro). Exportações em CSV, YAML e Markdown são em texto simples. Quando visíveis na interface, tarefas divididas, barras de linha de base e barras fantasma de nivelamento são renderizadas nas exportações PDF e PNG.
 

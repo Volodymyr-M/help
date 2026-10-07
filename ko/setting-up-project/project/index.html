@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -213,25 +213,25 @@
       <h1 id="프로젝트-속성">프로젝트 속성 <a href="#프로젝트-속성" class="heading-anchor">#</a></h1>
 <p>프로젝트의 시작 날짜, 근무 시간 및 일정 규칙을 구성합니다. 이 설정은 프로젝트의 모든 작업이 계산되고 표시되는 방식에 영향을 미칩니다.</p>
 <h2 id="프로젝트-이름">프로젝트 이름 <a href="#프로젝트-이름" class="heading-anchor">#</a></h2>
-<p><strong>Project Properties</strong> 대화 상자의 <strong>General</strong> 탭에 있는 <strong>Name</strong> 필드에서 프로젝트 이름을 설정합니다. 이 이름은 프로젝트의 <a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a>에서도 사용됩니다.</p>
-<p>웹 및 Windows에서는 헤더의 프로젝트 이름을 클릭하면 <strong>Project Properties</strong> 대화 상자가 열립니다.</p>
+<p><strong>프로젝트 속성</strong> 대화 상자의 <strong>일반</strong> 탭에 있는 <strong>이름</strong> 필드에서 프로젝트 이름을 설정합니다. 이 이름은 프로젝트의 <a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a>에서도 사용됩니다.</p>
+<p>웹 및 Windows에서는 헤더의 프로젝트 이름을 클릭하면 <strong>프로젝트 속성</strong> 대화 상자가 열립니다.</p>
 <h2 id="시작-날짜-및-계획-방향">시작 날짜 및 계획 방향 <a href="#시작-날짜-및-계획-방향" class="heading-anchor">#</a></h2>
-<p>기본적으로 프로젝트는 시작 날짜 기준으로 계획되며, <strong>Project Properties</strong> 대화 상자의 <strong>Project Start Date</strong> 필드에서 설정할 수 있습니다.</p>
-<p>완료 날짜 기준으로 프로젝트를 계획하려면 <strong>Project Properties</strong> 대화 상자에서 <strong>Plan from Finish date</strong>로 전환하고 <strong>Project Finish Date</strong>를 설정하십시오.</p>
-<p><strong>Project Properties</strong> 대화 상자의 <strong>General</strong> 탭에는 시작 날짜와 완료 날짜가 모두 표시됩니다. 시작일 기준으로 일정을 잡으면 시작 날짜가 편집 가능하고 완료 날짜는 계산된 값으로 표시됩니다. 완료일 기준으로 일정을 잡으면 완료 날짜가 편집 가능하고 시작 날짜는 계산된 값으로 표시됩니다.</p>
+<p>기본적으로 프로젝트는 시작 날짜 기준으로 계획되며, <strong>프로젝트 속성</strong> 대화 상자의 <strong>프로젝트 시작 날짜</strong> 필드에서 설정할 수 있습니다.</p>
+<p>완료 날짜 기준으로 프로젝트를 계획하려면 <strong>프로젝트 속성</strong> 대화 상자에서 <strong>완료 날짜부터 계획</strong>으로 전환하고 <strong>프로젝트 완료 날짜</strong>를 설정하십시오.</p>
+<p><strong>프로젝트 속성</strong> 대화 상자의 <strong>일반</strong> 탭에는 시작 날짜와 완료 날짜가 모두 표시됩니다. 시작일 기준으로 일정을 잡으면 시작 날짜가 편집 가능하고 완료 날짜는 계산된 값으로 표시됩니다. 완료일 기준으로 일정을 잡으면 완료 날짜가 편집 가능하고 시작 날짜는 계산된 값으로 표시됩니다.</p>
 <p>유의 사항:</p>
 <ul>
-<li>시작 날짜 기준으로 계획된 프로젝트의 경우, 새로 생성되는 작업의 기본 <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>은 <strong>As soon as possible</strong>입니다.</li>
-<li>완료 날짜 기준으로 계획된 프로젝트의 경우, 새로 생성되는 작업의 기본 제약 조건은 <strong>As late as possible</strong>입니다.</li>
+<li>시작 날짜 기준으로 계획된 프로젝트의 경우, 새로 생성되는 작업의 기본 <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>은 <strong>가능한 빨리</strong>입니다.</li>
+<li>완료 날짜 기준으로 계획된 프로젝트의 경우, 새로 생성되는 작업의 기본 제약 조건은 <strong>가능한 늦게</strong>입니다.</li>
 </ul>
 <p>시작 기준과 완료 기준 사이를 전환할 때 기존 작업의 제약 조건은 <a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a>(<a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a> 포함)을 제외하고 변경되지 않습니다.</p>
 <p>요약 작업의 경우:</p>
 <ul>
-<li>시작 기준에서 완료 기준으로 전환 시 <strong>As soon as possible</strong> 제약 조건이 <strong>As late as possible</strong>로 대체됩니다.</li>
-<li>완료 기준에서 시작 기준으로 전환 시 <strong>As late as possible</strong> 제약 조건이 <strong>As soon as possible</strong>로 대체됩니다.</li>
+<li>시작 기준에서 완료 기준으로 전환 시 <strong>가능한 빨리</strong> 제약 조건이 <strong>가능한 늦게</strong>로 대체됩니다.</li>
+<li>완료 기준에서 시작 기준으로 전환 시 <strong>가능한 늦게</strong> 제약 조건이 <strong>가능한 빨리</strong>로 대체됩니다.</li>
 </ul>
 <h2 id="주의-시작-요일">주의 시작 요일 <a href="#주의-시작-요일" class="heading-anchor">#</a></h2>
-<p>국가에 따라 주의 시작이 일요일 또는 월요일일 수 있습니다. <strong>Project Properties</strong> 대화 상자의 <strong>Regional</strong> 탭에서 <strong>First Day of Week</strong> 필드를 업데이트하여 프로젝트의 기본 설정을 변경할 수 있습니다.</p>
+<p>국가에 따라 주의 시작이 일요일 또는 월요일일 수 있습니다. <strong>프로젝트 속성</strong> 대화 상자의 <strong>지역</strong> 탭에서 <strong>일주일의 첫 번째 날</strong> 필드를 업데이트하여 프로젝트의 기본 설정을 변경할 수 있습니다.</p>
 <p>이 속성을 변경하면 일부 확대/축소 수준에서의 Gantt 차트를 포함하여 사용자 인터페이스가 업데이트되지만, 일정에는 영향을 미치지 않습니다. 일정을 그에 맞게 조정하려면 <a href="/ko/setting-up-project/calendars/">달력</a>을 업데이트하십시오.</p>
 <h2 id="일당-시간-주당-일수-월당-일수">일당 시간, 주당 일수, 월당 일수 <a href="#일당-시간-주당-일수-월당-일수" class="heading-anchor">#</a></h2>
 <p>Ingantt에서는 <a href="/ko/building-schedule/task-properties/#%EA%B8%B0%EA%B0%84">기간</a>, <a href="/ko/building-schedule/task-properties/#%EC%9E%91%EC%97%85%EB%9F%89">작업량</a> 또는 <a href="/ko/building-schedule/dependencies/#%EC%A7%80%EC%97%B0-%EB%B0%8F-%EC%84%A0%ED%96%89-%EC%8B%9C%EA%B0%84">지연</a>을 시간, 일, 주, 월 단위로 지정할 수 있습니다.</p>
@@ -242,20 +242,20 @@
 <li>1주 = 5일 (40시간)</li>
 <li>1개월 = 20일 (160시간)</li>
 </ul>
-<p><strong>Project Properties</strong> 대화 상자의 <strong>Duration</strong> 탭에서 이 기본 설정을 변경할 수 있습니다.</p>
+<p><strong>프로젝트 속성</strong> 대화 상자의 <strong>기간</strong> 탭에서 이 기본 설정을 변경할 수 있습니다.</p>
 <blockquote>
 <p>대부분의 프로젝트는 기본값을 사용하는 것이 좋습니다. 다른 변환이 필요한 특정 요구 사항이 있는 경우에만 이 설정을 변경하십시오.</p>
 </blockquote>
 <h2 id="기간-및-작업량-표시-형식">기간 및 작업량 표시 형식 <a href="#기간-및-작업량-표시-형식" class="heading-anchor">#</a></h2>
-<p>기본적으로 기간은 일 단위로, 작업량은 시간 단위로 표시됩니다. <strong>Project Properties</strong> 대화 상자의 <strong>Time</strong> 탭에서 두 가지 모두의 표시 형식을 변경할 수 있습니다. 사용 가능한 단위는 분, 시간, 일, 주, 월입니다.</p>
+<p>기본적으로 기간은 일 단위로, 작업량은 시간 단위로 표시됩니다. <strong>프로젝트 속성</strong> 대화 상자의 <strong>시간</strong> 탭에서 두 가지 모두의 표시 형식을 변경할 수 있습니다. 사용 가능한 단위는 분, 시간, 일, 주, 월입니다.</p>
 <p>형식을 변경하면 모든 기존 값이 새 단위로 업데이트되어 표시됩니다.</p>
 <h2 id="기본-시작-및-완료-시간">기본 시작 및 완료 시간 <a href="#기본-시작-및-완료-시간" class="heading-anchor">#</a></h2>
-<p>기본 시작 시간(오전 8:00)과 완료 시간(오후 5:00)은 매일 작업이 시작되고 끝나는 시간을 제어합니다. <strong>Project Properties</strong> 대화 상자의 <strong>Time</strong> 탭에서 변경할 수 있습니다.</p>
+<p>기본 시작 시간(오전 8:00)과 완료 시간(오후 5:00)은 매일 작업이 시작되고 끝나는 시간을 제어합니다. <strong>프로젝트 속성</strong> 대화 상자의 <strong>시간</strong> 탭에서 변경할 수 있습니다.</p>
 <h2 id="일정-옵션">일정 옵션 <a href="#일정-옵션" class="heading-anchor">#</a></h2>
-<p><strong>Project Properties</strong> 대화 상자의 <strong>Scheduling</strong> 탭에는 작업 일정 방식을 제어하는 옵션이 포함되어 있습니다:</p>
+<p><strong>프로젝트 속성</strong> 대화 상자의 <strong>일정</strong> 탭에는 작업 일정 방식을 제어하는 옵션이 포함되어 있습니다:</p>
 <ul>
 <li><strong>Honor constraint dates</strong> — 활성화하면 반유연 제약 조건(예: Start No Later Than)이 종속성보다 우선하여 음의 여유가 발생할 수 있습니다. 비활성화(기본값)하면 종속성이 항상 우선합니다.</li>
-<li><strong>Split in-progress tasks</strong> — 활성화(기본값)하면 스케줄러가 순서에 맞지 않는 진행 상황이 있는 작업을 자동으로 분할할 수 있습니다.</li>
+<li><strong>진행 중인 작업 분할</strong> — 활성화(기본값)하면 스케줄러가 순서에 맞지 않는 진행 상황이 있는 작업을 자동으로 분할할 수 있습니다.</li>
 <li><strong>Move completed/remaining parts</strong> — 완료된 작업과 남은 작업 부분이 상태 날짜를 기준으로 어떻게 재배치되는지를 제어하는 네 가지 옵션입니다. 완료된 부분을 상태 날짜까지 앞당기거나 남은 부분을 상태 날짜 이후로 미루어 일정을 최신 상태로 유지하는 데 도움이 됩니다.</li>
 </ul>
 

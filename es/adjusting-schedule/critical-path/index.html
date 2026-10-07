@@ -224,13 +224,13 @@
 </ul>
 <p>Las tareas que están 100% completas nunca se marcan como críticas, independientemente de otras condiciones.</p>
 <p>Ingantt detecta automáticamente las tareas críticas. Si la opción <strong>Resaltar tareas críticas</strong> está habilitada (a través del menú <strong>Vista</strong>, el menú <strong>Gráfico</strong> en la barra de menú, o el diálogo <strong>Opciones</strong>), estas tareas se muestran en rojo.</p>
-<p>Las tareas con holgura negativa también muestran un icono de advertencia en la lista de tareas, indicando un conflicto de programación. Esto generalmente ocurre cuando una restricción <strong>No comenzar después del</strong> o <strong>No finalizar después del</strong> entra en conflicto con las dependencias de la tarea.</p>
+<p>Las tareas con holgura negativa también muestran un icono de advertencia en la lista de tareas, indicando un conflicto de programación. Esto generalmente ocurre cuando una restricción <strong>Comienzo no después de</strong> o <strong>Final no después de</strong> entra en conflicto con las dependencias de la tarea.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="Críticas" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="opciones-de-la-ruta-crítica">Opciones de la ruta crítica <a href="#opciones-de-la-ruta-crítica" class="heading-anchor">#</a></h2>
 <p>En la pestaña <strong>Otros</strong> del diálogo <strong>Propiedades del proyecto</strong>, puede configurar cómo se calcula la ruta crítica:</p>
 <ul>
 <li><strong>Calcular múltiples rutas críticas</strong> — Cuando está habilitado, cada grupo desconectado de tareas vinculadas obtiene su propia ruta crítica. Cuando está deshabilitado (el valor predeterminado), las tareas sin sucesoras derivan su fecha de finalización tardía de la fecha de finalización del proyecto.</li>
-<li><strong>Límite de holgura crítica</strong> — De forma predeterminada, las tareas con holgura cero o negativa son críticas. Puede aumentar este umbral para que las tareas con holgura de hasta el número especificado de días también se consideren críticas.</li>
+<li><strong>Las tareas son críticas si la holgura es menor o igual a</strong> — De forma predeterminada, las tareas con holgura cero o negativa son críticas. Puede aumentar este umbral para que las tareas con holgura de hasta el número especificado de días también se consideren críticas.</li>
 </ul>
 
     </main>

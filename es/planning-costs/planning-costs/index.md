@@ -8,7 +8,7 @@ El costo de cada tarea es una combinación de su propio costo fijo y los costos 
 
 *El **Costo** de la tarea = el **Costo fijo** de la tarea + costos de los recursos asignados a la tarea*
 
-> Si no ve la columna **Costo** en la lista de tareas, asegúrese de que la opción **Columna de costo** esté marcada en la pestaña **Columnas de tareas** del diálogo **Opciones**.
+> Si no ve la columna **Costo** en la lista de tareas, asegúrese de que la opción **Columna de costo** esté marcada en la pestaña **Columnas de tarea** del diálogo **Opciones**.
 
 ## Costos de las tareas de resumen
 
@@ -22,7 +22,7 @@ Use la [tarea de resumen raíz](/es/building-schedule/tasks/index.md#tarea-de-re
 
 ## Recursos presupuestarios
 
-Un recurso puede marcarse como recurso **Presupuestario** en el diálogo **Propiedades del recurso**. Los recursos presupuestarios representan montos de presupuesto asignados a nivel general del proyecto y solo pueden asignarse a la [tarea de resumen raíz](/es/building-schedule/tasks/index.md#tarea-de-resumen-raíz).
+Un recurso puede marcarse como recurso **Presupuesto** en el diálogo **Propiedades del recurso**. Los recursos presupuestarios representan montos de presupuesto asignados a nivel general del proyecto y solo pueden asignarse a la [tarea de resumen raíz](/es/building-schedule/tasks/index.md#tarea-de-resumen-raíz).
 
 Los recursos presupuestarios se excluyen de:
 

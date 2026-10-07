@@ -43,7 +43,7 @@ Abra el cajón de navegación y cambie a la vista **Recursos**.
 
 ![Nav](/images/getting-started/nav.png)
 
-Haga clic en el botón grande **+** para abrir el diálogo **Agregar recurso**, ingrese un **Nombre** para el recurso y guarde. Repita estos pasos para agregar otro recurso de trabajo.
+Haga clic en el botón grande **+** para abrir el diálogo **Añadir recurso**, ingrese un **Nombre** para el recurso y guarde. Repita estos pasos para agregar otro recurso de trabajo.
 
 ![Agregar recurso](/images/getting-started/add_resource.png)
 
@@ -67,7 +67,7 @@ Supongamos que el recurso que realiza la primera tarea en su proyecto necesita u
 
 Para configurar esto, use el cajón de navegación para ir a la vista **Recursos**.
 
-Haga doble clic en el recurso para ver las **Propiedades del recurso**. Vaya a la pestaña **Calendario** y haga clic en el botón **Agregar excepción**. Elija uno de los días durante su proyecto, deje la lista de horarios de trabajo vacía y guarde.
+Haga doble clic en el recurso para ver las **Propiedades del recurso**. Vaya a la pestaña **Calendario** y haga clic en el botón **Añadir excepción**. Elija uno de los días durante su proyecto, deje la lista de horarios de trabajo vacía y guarde.
 
 ![Día libre](/images/getting-started/day_off.png)
 
@@ -83,7 +83,7 @@ Imagine que hay un día festivo durante su proyecto, un día en el que no se tra
 
 Las vacaciones se configuran a través del calendario de cada recurso. Sin embargo, los días que afectan a todos se configuran en el calendario del proyecto. El calendario predeterminado del proyecto se llama **Estándar** y ya indica que no se trabaja los fines de semana.
 
-Para configurar días festivos, use el cajón de navegación para ir a la vista **Calendarios**. Haga doble clic en **Estándar** para ver las **Propiedades del calendario**. Haga clic en el botón **Agregar excepción**. Elija uno de los días durante su proyecto, deje la lista de horarios de trabajo vacía y guarde.
+Para configurar días festivos, use el cajón de navegación para ir a la vista **Calendarios**. Haga doble clic en **Estándar** para ver las **Propiedades del calendario**. Haga clic en el botón **Añadir excepción**. Elija uno de los días durante su proyecto, deje la lista de horarios de trabajo vacía y guarde.
 
 ![Día festivo](/images/getting-started/holiday.png)
 

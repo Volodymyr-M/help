@@ -213,18 +213,18 @@
       <h1 id="comprendre-les-coûts">Comprendre les coûts <a href="#comprendre-les-coûts" class="heading-anchor">#</a></h1>
 <p>Affectez des coûts aux tâches et aux ressources pour connaître le prix total de votre projet. La tâche récapitulative racine affiche le total général — comparez-le aux ressources budgétaires pour savoir si votre projet respecte le budget approuvé.</p>
 <h2 id="comment-le-coût-dune-tâche-est-calculé">Comment le coût d'une tâche est calculé <a href="#comment-le-coût-dune-tâche-est-calculé" class="heading-anchor">#</a></h2>
-<p>Le coût de chaque tâche est une combinaison de son propre coût fixe et des coûts de ses ressources affectées. Ingantt calcule le coût total de chaque tâche et l'affiche dans la colonne <strong>Cost</strong> de la liste des tâches.</p>
-<p><em>Tâche <strong>Cost</strong> = <strong>Fixed Cost</strong> de la tâche + coûts des ressources affectées à la tâche</em></p>
+<p>Le coût de chaque tâche est une combinaison de son propre coût fixe et des coûts de ses ressources affectées. Ingantt calcule le coût total de chaque tâche et l'affiche dans la colonne <strong>Coût</strong> de la liste des tâches.</p>
+<p><em>Tâche <strong>Coût</strong> = <strong>Coût fixe</strong> de la tâche + coûts des ressources affectées à la tâche</em></p>
 <blockquote>
-<p>Si vous ne voyez pas la colonne <strong>Cost</strong> dans la liste des tâches, vérifiez que l'option <strong>Cost Column</strong> est cochée dans l'onglet <strong>Task Columns</strong> de la boîte de dialogue <strong>Options</strong>.</p>
+<p>Si vous ne voyez pas la colonne <strong>Coût</strong> dans la liste des tâches, vérifiez que l'option <strong>Cost Column</strong> est cochée dans l'onglet <strong>Colonnes de tâches</strong> de la boîte de dialogue <strong>Options</strong>.</p>
 </blockquote>
 <h2 id="coûts-des-tâches-récapitulatives">Coûts des tâches récapitulatives <a href="#coûts-des-tâches-récapitulatives" class="heading-anchor">#</a></h2>
-<p>Dans son champ <strong>Cost</strong>, chaque <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâche récapitulative</a> affiche le coût total de toutes ses sous-tâches.</p>
-<p>Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">ressources affectées</a> et un <strong>Fixed Cost</strong>. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le <strong>Cost</strong> de la tâche récapitulative.</p>
-<p><em>Tâche récapitulative <strong>Cost</strong> = coût total de toutes les sous-tâches + <strong>Fixed Cost</strong> de la tâche récapitulative + coûts des ressources affectées à la tâche récapitulative</em></p>
+<p>Dans son champ <strong>Coût</strong>, chaque <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâche récapitulative</a> affiche le coût total de toutes ses sous-tâches.</p>
+<p>Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">ressources affectées</a> et un <strong>Coût fixe</strong>. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le <strong>Coût</strong> de la tâche récapitulative.</p>
+<p><em>Tâche récapitulative <strong>Coût</strong> = coût total de toutes les sous-tâches + <strong>Coût fixe</strong> de la tâche récapitulative + coûts des ressources affectées à la tâche récapitulative</em></p>
 <p>Utilisez la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a> pour visualiser et gérer le coût total de l'ensemble de votre projet.</p>
 <h2 id="ressources-budgétaires">Ressources budgétaires <a href="#ressources-budgétaires" class="heading-anchor">#</a></h2>
-<p>Une ressource peut être marquée comme ressource <strong>Budget</strong> dans la boîte de dialogue <strong>Resource Properties</strong>. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a>.</p>
+<p>Une ressource peut être marquée comme ressource <strong>Budget</strong> dans la boîte de dialogue <strong>Propriétés de la ressource</strong>. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a>.</p>
 <p>Les ressources budgétaires sont exclues :</p>
 <ul>
 <li>De la planification</li>
@@ -234,8 +234,8 @@
 </ul>
 <p>Elles permettent un suivi budgétaire descendant, distinct des calculs de coûts ascendants.</p>
 <h2 id="devise">Devise <a href="#devise" class="heading-anchor">#</a></h2>
-<p>Si votre projet utilise une devise différente de celle par défaut d'Ingantt, vous pouvez la modifier dans l'onglet <strong>Regional</strong> de la boîte de dialogue <strong>Project Properties</strong>. Spécifiez la devise sous forme de symbole (par ex., €), d'abréviation (EUR) ou de nom complet (euro).</p>
-<p>Dans le même onglet, vous pouvez également spécifier la <strong>Currency Position</strong> — avant ou après la valeur, avec ou sans espace.</p>
+<p>Si votre projet utilise une devise différente de celle par défaut d'Ingantt, vous pouvez la modifier dans l'onglet <strong>Régional</strong> de la boîte de dialogue <strong>Propriétés du projet</strong>. Spécifiez la devise sous forme de symbole (par ex., €), d'abréviation (EUR) ou de nom complet (euro).</p>
+<p>Dans le même onglet, vous pouvez également spécifier la <strong>Position de la devise</strong> — avant ou après la valeur, avec ou sans espace.</p>
 <blockquote>
 <p>Lorsque vous changez la devise, les valeurs de coût ne sont pas recalculées.</p>
 </blockquote>

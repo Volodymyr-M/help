@@ -218,26 +218,26 @@
 <li><strong>Exceções</strong>: Datas em que o trabalho não é realizado ou é realizado em horários diferentes dos definidos no cronograma semanal.</li>
 </ul>
 <h2 id="calendário-do-projeto">Calendário do Projeto <a href="#calendário-do-projeto" class="heading-anchor">#</a></h2>
-<p>Um projeto tem um <strong>Calendar</strong> associado a ele, conforme especificado na caixa de diálogo <strong>Project Properties</strong>. Esse calendário define como as tarefas que não estão atribuídas a recursos de trabalho são agendadas. Os dias de folga, como finais de semana, também são exibidos no gráfico de Gantt com base nesse calendário.</p>
+<p>Um projeto tem um <strong>Calendário</strong> associado a ele, conforme especificado na caixa de diálogo <strong>Propriedades do Projeto</strong>. Esse calendário define como as tarefas que não estão atribuídas a recursos de trabalho são agendadas. Os dias de folga, como finais de semana, também são exibidos no gráfico de Gantt com base nesse calendário.</p>
 <h2 id="calendário-do-recurso">Calendário do Recurso <a href="#calendário-do-recurso" class="heading-anchor">#</a></h2>
-<p>Cada <a href="/pt/building-schedule/resources/#tipo-de-recurso">recurso de trabalho</a> tem um calendário associado, conforme especificado no campo <strong>Base Calendar</strong> da caixa de diálogo <strong>Resource Properties</strong>. Uma vez que o recurso de trabalho é <a href="/pt/building-schedule/assignments/#atribui%C3%A7%C3%B5es-de-recursos-e-unidades">atribuído</a> a uma tarefa, seu calendário afeta o agendamento da tarefa.</p>
+<p>Cada <a href="/pt/building-schedule/resources/#tipo-de-recurso">recurso de trabalho</a> tem um calendário associado, conforme especificado no campo <strong>Calendário Base</strong> da caixa de diálogo <strong>Propriedades do Recurso</strong>. Uma vez que o recurso de trabalho é <a href="/pt/building-schedule/assignments/#atribui%C3%A7%C3%B5es-de-recursos-e-unidades">atribuído</a> a uma tarefa, seu calendário afeta o agendamento da tarefa.</p>
 <p>Quando múltiplos recursos de trabalho são atribuídos a uma tarefa, seus calendários são <strong>interseccionados</strong> — o que significa que o trabalho só é agendado durante os horários em que <strong>todos</strong> os recursos atribuídos estão disponíveis. Por exemplo, se o Recurso A trabalha de segunda a quarta e o Recurso B trabalha de quarta a sexta, uma tarefa atribuída a ambos será agendada apenas às quartas-feiras.</p>
 <blockquote>
-<p>Se múltiplos recursos compartilham um horário de trabalho semelhante, crie um único calendário e atribua-o a todos eles. Você ainda pode especificar exceções para cada recurso separadamente em <strong>Resource Properties</strong> — por exemplo, férias ou períodos de trabalho ajustados em datas específicas.</p>
+<p>Se múltiplos recursos compartilham um horário de trabalho semelhante, crie um único calendário e atribua-o a todos eles. Você ainda pode especificar exceções para cada recurso separadamente em <strong>Propriedades do Recurso</strong> — por exemplo, férias ou períodos de trabalho ajustados em datas específicas.</p>
 </blockquote>
 <h2 id="calendário-da-tarefa">Calendário da Tarefa <a href="#calendário-da-tarefa" class="heading-anchor">#</a></h2>
-<p>Cada tarefa tem uma propriedade <strong>Calendar</strong> na caixa de diálogo <strong>Task Properties</strong>, definida como <strong>NONE</strong> por padrão. Quando definida como <strong>NONE</strong>:</p>
+<p>Cada tarefa tem uma propriedade <strong>Calendário</strong> na caixa de diálogo <strong>Propriedades da Tarefa</strong>, definida como <strong>NENHUM</strong> por padrão. Quando definida como <strong>NENHUM</strong>:</p>
 <ul>
 <li>Se uma tarefa não está atribuída a nenhum recurso de trabalho, a tarefa é agendada de acordo com o calendário do projeto.</li>
 <li>Se uma tarefa está atribuída a recursos de trabalho, a tarefa é agendada de acordo com os calendários deles.</li>
 </ul>
-<p>Se a propriedade <strong>Calendar</strong> da tarefa estiver definida como um calendário em vez de <strong>NONE</strong>:</p>
+<p>Se a propriedade <strong>Calendário</strong> da tarefa estiver definida como um calendário em vez de <strong>NENHUM</strong>:</p>
 <ul>
 <li>Se uma tarefa não está atribuída a nenhum recurso de trabalho, a tarefa é agendada de acordo com o calendário especificado.</li>
-<li>Se uma tarefa está atribuída a recursos de trabalho, a tarefa é agendada de acordo com a <strong>interseção</strong> do calendário da tarefa e dos calendários dos recursos — o trabalho só é agendado durante os horários que são úteis tanto no calendário da tarefa quanto em todos os calendários dos recursos. Para usar apenas o calendário da tarefa, ignorando totalmente os calendários dos recursos, marque a opção <strong>Ignore resource calendars</strong>.</li>
+<li>Se uma tarefa está atribuída a recursos de trabalho, a tarefa é agendada de acordo com a <strong>interseção</strong> do calendário da tarefa e dos calendários dos recursos — o trabalho só é agendado durante os horários que são úteis tanto no calendário da tarefa quanto em todos os calendários dos recursos. Para usar apenas o calendário da tarefa, ignorando totalmente os calendários dos recursos, marque a opção <strong>Ignorar calendários de recursos</strong>.</li>
 </ul>
 <h2 id="calendários-predefinidos">Calendários Predefinidos <a href="#calendários-predefinidos" class="heading-anchor">#</a></h2>
-<p>O Ingantt possui 3 calendários predefinidos, sendo que um deles (<strong>Standard</strong>) é atribuído ao projeto por padrão.</p>
+<p>O Ingantt possui 3 calendários predefinidos, sendo que um deles (<strong>Padrão</strong>) é atribuído ao projeto por padrão.</p>
 <table>
 <thead>
 <tr>
@@ -247,23 +247,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Standard</strong></td>
+<td><strong>Padrão</strong></td>
 <td>O trabalho é realizado de segunda a sexta-feira, das 8h às 17h com intervalo de 1 hora (12h às 13h).</td>
 </tr>
 <tr>
-<td><strong>Night Shift</strong></td>
+<td><strong>Turno Noturno</strong></td>
 <td>O trabalho é realizado da noite de segunda à manhã de sábado, das 23h às 8h com intervalo de 1 hora (3h às 4h).</td>
 </tr>
 <tr>
-<td><strong>24 Hours</strong></td>
+<td><strong>24 Horas</strong></td>
 <td>O trabalho é realizado 24 horas por dia, todos os dias.</td>
 </tr>
 </tbody>
 </table>
-<p>Você pode editar qualquer um dos calendários predefinidos usando a caixa de diálogo <strong>Calendar Properties</strong> ou criar seus próprios calendários baseados neles usando a caixa de diálogo <strong>Add Calendar</strong>.</p>
-<h2 id="semanas-de-trabalho">Semanas de Trabalho <a href="#semanas-de-trabalho" class="heading-anchor">#</a></h2>
+<p>Você pode editar qualquer um dos calendários predefinidos usando a caixa de diálogo <strong>Propriedades do Calendário</strong> ou criar seus próprios calendários baseados neles usando a caixa de diálogo <strong>Adicionar Calendário</strong>.</p>
+<h2 id="semanas-de-trabalho">Semanas de trabalho <a href="#semanas-de-trabalho" class="heading-anchor">#</a></h2>
 <p>As semanas de trabalho permitem definir alterações na programação semanal para períodos específicos. Por exemplo, você pode ter um período em que todos trabalham 4 horas por dia em vez das 8 padrão, ou um período em que o sábado se torna dia útil.</p>
-<p>As semanas de trabalho são configuradas na aba <strong>Work Weeks</strong> da caixa de diálogo <strong>Calendar Properties</strong>. Cada semana de trabalho tem um nome, uma data de início e término, e definições de horário de trabalho por dia da semana.</p>
+<p>As semanas de trabalho são configuradas na aba <strong>Semanas de trabalho</strong> da caixa de diálogo <strong>Propriedades do Calendário</strong>. Cada semana de trabalho tem um nome, uma data de início e término, e definições de horário de trabalho por dia da semana.</p>
 <blockquote>
 <p>As exceções do calendário têm prioridade sobre as semanas de trabalho, que têm prioridade sobre o cronograma padrão dos dias da semana.</p>
 </blockquote>
@@ -271,17 +271,17 @@
 <p>As exceções do calendário são datas em que o trabalho difere do cronograma semanal regular — incluindo dias de folga.</p>
 <p>As exceções do calendário podem ser especificadas:</p>
 <ul>
-<li>Na caixa de diálogo <strong>Resource Properties</strong> para um recurso específico.</li>
-<li>Em <strong>Calendar Properties</strong> para um calendário específico, fazendo com que projetos, recursos ou tarefas que usam esse calendário tenham essa exceção.</li>
+<li>Na caixa de diálogo <strong>Propriedades do Recurso</strong> para um recurso específico.</li>
+<li>Em <strong>Propriedades do Calendário</strong> para um calendário específico, fazendo com que projetos, recursos ou tarefas que usam esse calendário tenham essa exceção.</li>
 </ul>
 <p>Por exemplo, se você deseja configurar férias para uma pessoa, adicione-as como exceção para esse recurso. Se você deseja configurar um feriado para todos, adicione-o como exceção ao calendário que todos utilizam.</p>
 <p>Ao adicionar ou editar exceções do calendário, você especifica períodos de horário de trabalho para a exceção. Se não especificar nenhum, a exceção não possui horário de trabalho, ou seja, define um dia de folga.</p>
-<p>Cada exceção pode receber um <strong>Name</strong> descritivo (como &quot;Feriado de Natal&quot; ou &quot;Escritório Fechado&quot;) que é exibido na lista de exceções.</p>
+<p>Cada exceção pode receber um <strong>Nome</strong> descritivo (como &quot;Feriado de Natal&quot; ou &quot;Escritório Fechado&quot;) que é exibido na lista de exceções.</p>
 <h3 id="exceções-recorrentes">Exceções Recorrentes <a href="#exceções-recorrentes" class="heading-anchor">#</a></h3>
 <p>As exceções do calendário podem ser configuradas para se repetir em um padrão, em vez de apenas uma data única. Os padrões de recorrência disponíveis incluem:</p>
 <ul>
-<li><strong>Daily</strong> — A cada N dias ou a cada N dias úteis</li>
-<li><strong>Weekly</strong> — A cada N semanas em dias da semana especificados</li>
+<li><strong>Diário</strong> — A cada N dias ou a cada N dias úteis</li>
+<li><strong>Semanal</strong> — A cada N semanas em dias da semana especificados</li>
 <li><strong>Monthly</strong> — Por dia do mês ou por posição (ex.: segunda terça-feira)</li>
 <li><strong>Yearly</strong> — Por data ou por posição (ex.: última sexta-feira de novembro)</li>
 </ul>

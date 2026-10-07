@@ -19,7 +19,7 @@ Digita la durata con una **`e`** prima dell'unità:
 
 Le unità sono `min`, `h`, `d`, `w` e `m` — minuti, ore, giorni, settimane, mesi — e ognuna di esse accetta la `e`. Le abbreviazioni sono tradotte, quindi in un'interfaccia non in inglese usa le lettere delle unità di quella lingua; il marcatore `e` resta invariato.
 
-Puoi anche usare la casella **Elapsed** invece di digitare, nell'editor della durata della finestra [Proprietà delle attività](/it/building-schedule/task-properties/index.md). Il suo suggerimento è la definizione stessa:
+Puoi anche usare la casella **Trascorso** invece di digitare, nell'editor della durata della finestra [Proprietà delle attività](/it/building-schedule/task-properties/index.md). Il suo suggerimento è la definizione stessa:
 
 > Trascorsa. Se selezionata, la durata conta ininterrottamente (24/7) invece che solo durante l'orario di lavoro definito dal calendario.
 
@@ -41,7 +41,7 @@ Confrontale con le unità lavorative, che derivano dalle [Proprietà del progett
 
 La stessa idea si applica al ritardo di una [dipendenza](/it/building-schedule/dependencies/index.md), ed è qui che conta di più. "Inizia l'attività successiva tre giorni dopo la fine di questa" di solito significa tre giorni di *calendario*, non tre giorni lavorativi — altrimenti una fine di venerdì sposta il successore a mercoledì.
 
-Nella scheda **Predecessors** di Task Properties, ogni collegamento ha la propria casella **Elapsed** accanto al ritardo, con lo stesso significato:
+Nella scheda **Predecessori** di Task Properties, ogni collegamento ha la propria casella **Trascorso** accanto al ritardo, con lo stesso significato:
 
 > Se selezionata, il ritardo conta ininterrottamente (24/7) invece che solo durante l'orario di lavoro definito dal calendario.
 

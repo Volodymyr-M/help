@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>자원 평준화 - 분석 및 조정 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 Gantt 보기를 통해 자원 과배정을 감지하고 해결합니다.">
+  <meta name="description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 간트 보기를 통해 자원 과배정을 감지하고 해결합니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/adjusting-schedule/leveling/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="자원 평준화">
-  <meta property="og:description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 Gantt 보기를 통해 자원 과배정을 감지하고 해결합니다.">
+  <meta property="og:description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 간트 보기를 통해 자원 과배정을 감지하고 해결합니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/adjusting-schedule/leveling/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="자원 평준화">
-  <meta name="twitter:description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 Gantt 보기를 통해 자원 과배정을 감지하고 해결합니다.">
+  <meta name="twitter:description" content="자동 평준화, 우선순위 기반 일정 관리 및 평준화 간트 보기를 통해 자원 과배정을 감지하고 해결합니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/leveling/">
@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -213,22 +213,22 @@
       <h1 id="자원-평준화">자원 평준화 <a href="#자원-평준화" class="heading-anchor">#</a></h1>
 <p>한 사람에게 하루에 감당할 수 있는 것보다 많은 작업을 배정하기 쉽습니다. 평준화는 아무도 과부하되지 않도록 작업을 자동으로 이동시키지만, 프로젝트 완료 날짜가 연장될 수 있습니다.</p>
 <h2 id="과배정된-자원">과배정된 자원 <a href="#과배정된-자원" class="heading-anchor">#</a></h2>
-<p>작업 자원이 <strong>과배정</strong>될 수 있습니다. 이는 달력과 가용성을 기반으로 완료할 수 있는 것보다 많은 작업이 배정된 것을 의미합니다. 예를 들어, 프로젝트에 두 개의 작업이 있고 각각 기간이 하루이며 서로 <a href="/ko/building-schedule/dependencies/#%EC%84%A0%ED%96%89-%EC%9E%91%EC%97%85%EA%B3%BC-%EC%A2%85%EC%86%8D%EC%84%B1">종속성</a>이 없고, 둘 다 같은 작업 자원에 배정된 경우 해당 자원은 과배정됩니다. 자원이 하루에 이틀분의 작업을 해야 합니다. 이를 해결하려면 두 작업을 종속성으로 연결하면 됩니다.</p>
+<p>작업 자원이 <strong>과할당</strong>될 수 있습니다. 이는 달력과 가용성을 기반으로 완료할 수 있는 것보다 많은 작업이 배정된 것을 의미합니다. 예를 들어, 프로젝트에 두 개의 작업이 있고 각각 기간이 하루이며 서로 <a href="/ko/building-schedule/dependencies/#%EC%84%A0%ED%96%89-%EC%9E%91%EC%97%85%EA%B3%BC-%EC%A2%85%EC%86%8D%EC%84%B1">종속성</a>이 없고, 둘 다 같은 작업 자원에 배정된 경우 해당 자원은 과배정됩니다. 자원이 하루에 이틀분의 작업을 해야 합니다. 이를 해결하려면 두 작업을 종속성으로 연결하면 됩니다.</p>
 <p>작업에 과배정된 자원이 배정되어 있으면 Ingantt는 작업 목록에 특수 아이콘을 표시합니다.</p>
-<p>자원이 과배정된 경우 Ingantt는 <strong>Resources</strong> 보기와 <strong>Resource Usage</strong> 보기에 특수 아이콘을 표시합니다.</p>
+<p>자원이 과배정된 경우 Ingantt는 <strong>자원</strong> 보기와 <strong>자원 사용량</strong> 보기에 특수 아이콘을 표시합니다.</p>
 <p>또한 Ingantt는 해당 작업과 자원의 수를 집계하여 탐색 서랍에 표시합니다.</p>
 <h2 id="자동-평준화">자동 평준화 <a href="#자동-평준화" class="heading-anchor">#</a></h2>
 <p>작업 간의 종속성은 타임라인 상의 위치를 제어합니다. 대규모 프로젝트에서는 종속성을 놓치기 쉬우며, 그 결과 같은 작업 자원에 배정된 여러 작업이 동시에 예약됩니다. 자원이 과배정되고, Ingantt는 작업 및 자원 목록에 특수 아이콘으로 알려줍니다.</p>
 <p>종속성이나 제약 조건을 설정하여 일부 작업을 이동시켜 동시에 작업이 수행되지 않도록 수동으로 과배정을 해결할 수 있습니다.</p>
-<p>과배정을 해결하는 대안으로 자동 평준화가 있습니다. <strong>Project</strong> 메뉴에서 <strong>Auto-level resources</strong>를 선택하면 Ingantt가 자원 과배정을 방지하기 위해 일부 작업을 타임라인에서 자동으로 뒤로 이동시킵니다. <strong>Project</strong> 메뉴에서 <strong>Clear leveling</strong>을 선택하여 이러한 자동 조정을 지울 수 있습니다.</p>
+<p>과배정을 해결하는 대안으로 자동 평준화가 있습니다. <strong>프로젝트</strong> 메뉴에서 <strong>자원 자동 평준화</strong>를 선택하면 Ingantt가 자원 과배정을 방지하기 위해 일부 작업을 타임라인에서 자동으로 뒤로 이동시킵니다. <strong>프로젝트</strong> 메뉴에서 <strong>평준화 지우기</strong>를 선택하여 이러한 자동 조정을 지울 수 있습니다.</p>
 <p>자동 평준화 명령은 세 가지 범위 옵션을 제공합니다:</p>
 <ul>
-<li><strong>All tasks</strong> — 프로젝트의 모든 작업을 평준화</li>
-<li><strong>Selected tasks</strong> — 현재 선택된 작업만 평준화</li>
-<li><strong>Selected resources</strong> — 선택된 자원의 과배정 충돌만 평준화 (Resources 및 Resource Usage 보기에서 사용 가능)</li>
+<li><strong>모든 작업</strong> — 프로젝트의 모든 작업을 평준화</li>
+<li><strong>선택한 작업</strong> — 현재 선택된 작업만 평준화</li>
+<li><strong>선택한 자원</strong> — 선택된 자원의 과배정 충돌만 평준화 (Resources 및 Resource Usage 보기에서 사용 가능)</li>
 </ul>
 <h3 id="자동-평준화-작동-방식">자동 평준화 작동 방식 <a href="#자동-평준화-작동-방식" class="heading-anchor">#</a></h3>
-<p><strong>Auto-level resources</strong>를 실행하면 Ingantt는 <strong>작업을 지연시키거나 분할</strong>하여 과배정을 해결합니다. 자원을 재배정하거나 배정 단위를 변경하지 않습니다.</p>
+<p><strong>자원 자동 평준화</strong>를 실행하면 Ingantt는 <strong>작업을 지연시키거나 분할</strong>하여 과배정을 해결합니다. 자원을 재배정하거나 배정 단위를 변경하지 않습니다.</p>
 <p>알고리즘은 자원에 용량 이상의 작업이 배정된 날을 식별한 다음 경합 작업 중 어느 것을 지연시킬지 결정합니다. 각 작업은 여러 요인을 기반으로 점수가 매겨지며, 점수가 높은 작업은 지연에서 보호됩니다:</p>
 <table>
 <thead>
@@ -269,36 +269,36 @@
 <p>자동 평준화는 프로젝트 완료 날짜를 연장할 수 있습니다. 가능한 한 많은 과배정을 해결하지만, 제약 조건으로 인해 추가 지연이 불가능한 경우 일부가 남을 수 있습니다.</p>
 </blockquote>
 <h3 id="평준화-옵션">평준화 옵션 <a href="#평준화-옵션" class="heading-anchor">#</a></h3>
-<p><strong>Project</strong> 메뉴에서 접근할 수 있는 <strong>Leveling Options</strong> 대화 상자에서 평준화 동작을 구성합니다:</p>
+<p><strong>프로젝트</strong> 메뉴에서 접근할 수 있는 <strong>평준화 옵션</strong> 대화 상자에서 평준화 동작을 구성합니다:</p>
 <ul>
-<li><strong>Leveling order</strong> — 작업의 우선순위 결정 방식을 제어: ID Only(ID 오름차순), Standard(다중 요인 점수), Priority Standard(우선순위 먼저, 그다음 표준 요인; 기본값)</li>
-<li><strong>Overallocation basis</strong> — 감지 세분도 제어: 분, 시간, 일, 주 또는 월. 분 및 시간 설정은 일일 총계가 용량 내에 있더라도 하루 내에 작업이 겹치는 충돌을 감지합니다.</li>
+<li><strong>평준화 순서</strong> — 작업의 우선순위 결정 방식을 제어: ID Only(ID 오름차순), Standard(다중 요인 점수), Priority Standard(우선순위 먼저, 그다음 표준 요인; 기본값)</li>
+<li><strong>과할당 기준</strong> — 감지 세분도 제어: 분, 시간, 일, 주 또는 월. 분 및 시간 설정은 일일 총계가 용량 내에 있더라도 하루 내에 작업이 겹치는 충돌을 감지합니다.</li>
 <li><strong>Adjust individual assignments</strong> — 활성화되고 작업에 여러 자원 배정이 있는 경우, 전체 작업이 아닌 과배정된 자원의 배정만 지연됩니다.</li>
 <li><strong>Create splits in remaining work</strong> — 활성화되면 평준화 알고리즘이 전체 작업을 지연하는 대신 충돌 주변으로 작업을 분할할 수 있습니다.</li>
-<li><strong>Level only within available slack</strong> — 평준화 지연이 작업의 총 여유를 초과하지 않도록 제한하여 프로젝트 완료 날짜 연장을 방지합니다.</li>
-<li><strong>Leveling range</strong> — 특정 날짜 범위 내의 작업으로 평준화를 제한합니다.</li>
+<li><strong>가용 여유 내에서만 평준화</strong> — 평준화 지연이 작업의 총 여유를 초과하지 않도록 제한하여 프로젝트 완료 날짜 연장을 방지합니다.</li>
+<li><strong>평준화 범위</strong> — 특정 날짜 범위 내의 작업으로 평준화를 제한합니다.</li>
 </ul>
 <h3 id="평준화-제외-대상">평준화 제외 대상 <a href="#평준화-제외-대상" class="heading-anchor">#</a></h3>
 <p>다음 작업 및 자원은 자동 평준화의 영향을 받지 않습니다:</p>
 <ul>
 <li><a href="#%EC%9A%B0%EC%84%A0%EC%88%9C%EC%9C%84">우선순위</a>가 <strong>1000</strong>으로 설정된 작업</li>
-<li><strong>Can Level</strong>이 <strong>false</strong>로 설정된 작업 (Task Properties 대화 상자의 <strong>Leveling</strong> 탭)</li>
-<li><strong>Must start on</strong> 또는 <strong>Must finish on</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 작업</li>
+<li><strong>평준화 가능</strong>이 <strong>false</strong>로 설정된 작업 (Task Properties 대화 상자의 <strong>평준화</strong> 탭)</li>
+<li><strong>반드시 시작</strong> 또는 <strong>반드시 완료</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 작업</li>
 <li><a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a></li>
 <li>기간이 0인 마일스톤</li>
 <li>완전히 완료된 작업(100%)</li>
-<li>Resource Properties 대화 상자에서 <strong>Can Level</strong>이 <strong>false</strong>로 설정된 자원</li>
-<li><a href="/ko/building-schedule/resources/#%EC%98%88%EC%95%BD-%EC%9C%A0%ED%98%95">예약 유형</a>이 <strong>Proposed</strong>인 자원 (제안된 자원을 포함하는 평준화 옵션이 활성화되지 않은 경우)</li>
+<li>Resource Properties 대화 상자에서 <strong>평준화 가능</strong>이 <strong>false</strong>로 설정된 자원</li>
+<li><a href="/ko/building-schedule/resources/#%EC%98%88%EC%95%BD-%EC%9C%A0%ED%98%95">예약 유형</a>이 <strong>제안</strong>인 자원 (제안된 자원을 포함하는 평준화 옵션이 활성화되지 않은 경우)</li>
 </ul>
 <h3 id="재평준화-및-지우기">재평준화 및 지우기 <a href="#재평준화-및-지우기" class="heading-anchor">#</a></h3>
-<p><strong>Auto-level resources</strong>를 실행할 때마다 이전 평준화가 먼저 자동으로 지워집니다. 평준화는 항상 깨끗한 비평준화 일정에서 시작하여 지연이 누적되는 것을 방지합니다.</p>
-<p>평준화 후 일정을 수정하면(작업 추가, 종속성 변경 등) 기존 평준화 지연은 유지되지만 더 이상 모든 과배정을 해결하지 못할 수 있습니다. <strong>Auto-level resources</strong>를 다시 실행하여 업데이트된 일정을 재평준화하십시오.</p>
-<p>모든 평준화 지연을 제거하고 원래 CPM 계산 일정으로 돌아가려면 <strong>Project</strong> 메뉴에서 <strong>Clear leveling</strong>을 선택하십시오.</p>
-<h3 id="평준화-gantt">평준화 Gantt <a href="#평준화-gantt" class="heading-anchor">#</a></h3>
-<p>자동 평준화를 실행한 후 Gantt 차트 영역에 <strong>Leveling Gantt</strong> 토글 버튼이 나타납니다. 활성화하면 평준화 전 위치(자동 평준화 전 작업의 위치)에 녹색 막대가 그려지고, 표준 작업 막대는 현재 평준화된 위치에 유지됩니다. 이를 통해 원래 일정과 평준화된 일정을 비교하여 각 작업이 얼마나 지연되었는지 확인할 수 있습니다.</p>
+<p><strong>자원 자동 평준화</strong>를 실행할 때마다 이전 평준화가 먼저 자동으로 지워집니다. 평준화는 항상 깨끗한 비평준화 일정에서 시작하여 지연이 누적되는 것을 방지합니다.</p>
+<p>평준화 후 일정을 수정하면(작업 추가, 종속성 변경 등) 기존 평준화 지연은 유지되지만 더 이상 모든 과배정을 해결하지 못할 수 있습니다. <strong>자원 자동 평준화</strong>를 다시 실행하여 업데이트된 일정을 재평준화하십시오.</p>
+<p>모든 평준화 지연을 제거하고 원래 CPM 계산 일정으로 돌아가려면 <strong>프로젝트</strong> 메뉴에서 <strong>평준화 지우기</strong>를 선택하십시오.</p>
+<h3 id="평준화-간트">평준화 간트 <a href="#평준화-간트" class="heading-anchor">#</a></h3>
+<p>자동 평준화를 실행한 후 Gantt 차트 영역에 <strong>평준화 간트</strong> 토글 버튼이 나타납니다. 활성화하면 평준화 전 위치(자동 평준화 전 작업의 위치)에 녹색 막대가 그려지고, 표준 작업 막대는 현재 평준화된 위치에 유지됩니다. 이를 통해 원래 일정과 평준화된 일정을 비교하여 각 작업이 얼마나 지연되었는지 확인할 수 있습니다.</p>
 <p>이 토글은 프로젝트에 평준화 데이터가 있을 때만 표시되며 평준화를 지우면 자동으로 숨겨집니다.</p>
 <h2 id="우선순위">우선순위 <a href="#우선순위" class="heading-anchor">#</a></h2>
-<p><strong>Priority</strong> 필드는 <strong>Task Properties</strong> 대화 상자의 <strong>Leveling</strong> 탭에서 사용할 수 있습니다. 0에서 1000까지의 정수 값을 입력하며, 기본값은 500입니다.</p>
+<p><strong>우선순위</strong> 필드는 <strong>작업 속성</strong> 대화 상자의 <strong>평준화</strong> 탭에서 사용할 수 있습니다. 0에서 1000까지의 정수 값을 입력하며, 기본값은 500입니다.</p>
 <p>우선순위는 자원 과배정 해결 시 어떤 작업을 지연시킬지 결정하기 위해 <a href="#%EC%9E%90%EB%8F%99-%ED%8F%89%EC%A4%80%ED%99%94">자동 평준화</a> 알고리즘에서 사용됩니다. 우선순위가 높은 작업은 지연될 가능성이 낮습니다:</p>
 <ul>
 <li><strong>0</strong> — 가장 낮은 우선순위, 가장 지연되기 쉬움</li>

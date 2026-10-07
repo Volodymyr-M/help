@@ -6,13 +6,13 @@ O Ingantt mantém o histórico completo de todos os planos armazenados no Google
 
 ## Abrindo o Histórico de Versões
 
-Escolha **File → Version history → See version history** ou pressione `Ctrl` + `Alt` + `Shift` + `H`.
+Escolha **Arquivo → Histórico de versões → Ver histórico de versões** ou pressione `Ctrl` + `Alt` + `Shift` + `H`.
 
 O painel é aberto na lateral e o Ingantt muda para tela cheia para que o gráfico tenha espaço. Fechar o painel coloca tudo de volta como estava.
 
 ## Navegando e Pré-visualizando
 
-As versões são listadas da mais recente para a mais antiga e agrupadas por dia — **Today**, **Yesterday** e depois a data. A mais recente é identificada como **Current version** e é selecionada para você quando o painel é aberto.
+As versões são listadas da mais recente para a mais antiga e agrupadas por dia — **Hoje**, **Ontem** e depois a data. A mais recente é identificada como **Versão atual** e é selecionada para você quando o painel é aberto.
 
 Clique em qualquer versão e o Ingantt a carrega no gráfico para que você possa examiná-la. A pré-visualização é apenas uma olhada, não uma edição:
 
@@ -26,14 +26,14 @@ O Google Drive remove revisões antigas de um arquivo com o tempo. Fixar uma ver
 
 Há duas maneiras de fixar:
 
-- **File → Version history → Pin current version** fixa a versão mais recente sem abrir o painel. Use-o logo após um salvamento que você quer preservar — antes de um replanejamento, ao final de uma fase ou quando um plano é aprovado.
-- No painel, abra o menu de qualquer versão e escolha **Pin this version**.
+- **Arquivo → Histórico de versões → Fixar versão atual** fixa a versão mais recente sem abrir o painel. Use-o logo após um salvamento que você quer preservar — antes de um replanejamento, ao final de uma fase ou quando um plano é aprovado.
+- No painel, abra o menu de qualquer versão e escolha **Fixar esta versão**.
 
-As versões fixadas são marcadas como **Pinned** na lista. Escolher o mesmo item de menu novamente desafixa.
+As versões fixadas são marcadas como **Fixada** na lista. Escolher o mesmo item de menu novamente desafixa.
 
 ## Restaurando uma Versão
 
-Selecione a versão desejada e escolha **Restore this version**. O Ingantt pede confirmação:
+Selecione a versão desejada e escolha **Restaurar esta versão**. O Ingantt pede confirmação:
 
 > Restore this version? Your current version will be saved first.
 

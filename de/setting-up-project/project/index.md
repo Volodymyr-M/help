@@ -12,21 +12,21 @@ Im Web und unter Windows öffnet ein Klick auf den Projektnamen in der Kopfzeile
 
 Standardmäßig wird Ihr Projekt vom Startdatum aus geplant, das Sie im Feld **Projektstartdatum** des Dialogs **Projekteigenschaften** festlegen können.
 
-Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu **Vom Enddatum planen** im Dialog **Projekteigenschaften** und legen Sie das **Projektenddatum** fest.
+Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu **Ab Enddatum planen** im Dialog **Projekteigenschaften** und legen Sie das **Projektenddatum** fest.
 
 Der Reiter **Allgemein** des Dialogs **Projekteigenschaften** zeigt sowohl das Startdatum als auch das Enddatum an. Bei der Planung vom Startdatum ist das Startdatum bearbeitbar und das Enddatum zeigt den berechneten Wert an. Bei der Planung vom Enddatum ist das Enddatum bearbeitbar und das Startdatum zeigt den berechneten Wert an.
 
 Beachten Sie:
 
-- Bei Projekten, die vom Startdatum geplant werden, ist die Standard-[Einschränkung](/de/building-schedule/constraints/index.md#einschränkungen) für neu erstellte Vorgänge **So früh wie möglich**.
+- Bei Projekten, die vom Startdatum geplant werden, ist die Standard-[Einschränkung](/de/building-schedule/constraints/index.md#einschränkungen) für neu erstellte Vorgänge **So bald wie möglich**.
 - Bei Projekten, die vom Enddatum geplant werden, ist die Standardeinschränkung für neu erstellte Vorgänge **So spät wie möglich**.
 
 Beim Wechsel zwischen der Planung vom Start- und Enddatum werden die Einschränkungen bestehender Vorgänge nicht geändert, mit Ausnahme von [Sammelvorgängen](/de/building-schedule/tasks/index.md#sammelvorgänge), einschließlich des [Projektsammelvorgangs](/de/building-schedule/tasks/index.md#projektsammelvorgang).
 
 Für Sammelvorgänge:
 
-- Die Einschränkung **So früh wie möglich** wird beim Wechsel von der Planung vom Start- zum Enddatum durch **So spät wie möglich** ersetzt.
-- Die Einschränkung **So spät wie möglich** wird beim Wechsel von der Planung vom End- zum Startdatum durch **So früh wie möglich** ersetzt.
+- Die Einschränkung **So bald wie möglich** wird beim Wechsel von der Planung vom Start- zum Enddatum durch **So spät wie möglich** ersetzt.
+- Die Einschränkung **So spät wie möglich** wird beim Wechsel von der Planung vom End- zum Startdatum durch **So bald wie möglich** ersetzt.
 
 ## Erster Wochentag
 
@@ -65,5 +65,5 @@ Die Standard-Startzeit (8:00 Uhr) und Endzeit (17:00 Uhr) steuern, wann die Arbe
 Der Reiter **Planung** des Dialogs **Projekteigenschaften** enthält Optionen, die steuern, wie Vorgänge geplant werden:
 
 - **Einschränkungstermine einhalten** — Wenn aktiviert, haben halbflexible Einschränkungen (wie Anfang nicht später als) Vorrang vor Abhängigkeiten, was möglicherweise negativen Puffer erzeugt. Wenn deaktiviert (die Standardeinstellung), haben Abhängigkeiten immer Vorrang.
-- **Laufende Vorgänge teilen** — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.
+- **Laufende Vorgänge unterbrechen** — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.
 - **Abgeschlossene/verbleibende Teile verschieben** — Vier Optionen, die steuern, wie abgeschlossene und verbleibende Arbeitsanteile relativ zum Statusdatum neu positioniert werden. Diese helfen, Ihren Terminplan aktuell zu halten, indem abgeschlossene Arbeit zum Statusdatum zurück oder verbleibende Arbeit nach vorne verschoben wird.

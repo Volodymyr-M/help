@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/" class="active" aria-current="page">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -214,9 +214,9 @@
 <p>Alcune attività devono iniziare o finire in date specifiche — una consegna arriva martedì, un permesso scade venerdì. I vincoli ti permettono di bloccare le date dove necessario mantenendo il resto del cronogramma flessibile.</p>
 <h2 id="come-funzionano-i-vincoli">Come funzionano i vincoli <a href="#come-funzionano-i-vincoli" class="heading-anchor">#</a></h2>
 <p>Insieme alle dipendenze tra attività (collegamenti ai predecessori), il vincolo di un'attività definisce come l'attività viene pianificata.</p>
-<p>I vincoli vengono impostati nella scheda <strong>Advanced</strong> della finestra <strong>Task Properties</strong>. Il vincolo predefinito è <strong>As soon as possible</strong>. Questo significa che l'attività viene posizionata il più vicino possibile alla data di inizio del progetto, nel rispetto delle dipendenze con le altre attività. Nei progetti pianificati dalla data di fine, il vincolo predefinito è invece <strong>As late as possible</strong>.</p>
-<p>Esistono due vincoli che forzano l'attività a iniziare o finire alla data specificata indipendentemente dalle dipendenze. Questi vincoli sono chiamati <em>vincoli inflessibili</em> e sono <strong>Must start on</strong> e <strong>Must finish on</strong>. Usa questi vincoli solo se sei certo che siano necessari.</p>
-<p>Gli altri vincoli (<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong> e <strong>Finish no later than</strong>) sono chiamati <em>flessibili</em>, poiché rispettano le dipendenze tra attività. Se le dipendenze spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità.</p>
+<p>I vincoli vengono impostati nella scheda <strong>Avanzato</strong> della finestra <strong>Proprietà del Compito</strong>. Il vincolo predefinito è <strong>Il prima possibile</strong>. Questo significa che l'attività viene posizionata il più vicino possibile alla data di inizio del progetto, nel rispetto delle dipendenze con le altre attività. Nei progetti pianificati dalla data di fine, il vincolo predefinito è invece <strong>Il più tardi possibile</strong>.</p>
+<p>Esistono due vincoli che forzano l'attività a iniziare o finire alla data specificata indipendentemente dalle dipendenze. Questi vincoli sono chiamati <em>vincoli inflessibili</em> e sono <strong>Deve iniziare il</strong> e <strong>Deve finire il</strong>. Usa questi vincoli solo se sei certo che siano necessari.</p>
+<p>Gli altri vincoli (<strong>Inizio non prima di</strong>, <strong>Inizio non dopo</strong>, <strong>Fine non prima di</strong> e <strong>Fine non dopo</strong>) sono chiamati <em>flessibili</em>, poiché rispettano le dipendenze tra attività. Se le dipendenze spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità.</p>
 <table>
 <thead>
 <tr>
@@ -226,42 +226,42 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>As soon as possible</strong></td>
+<td><strong>Il prima possibile</strong></td>
 <td>L'attività viene pianificata non appena i predecessori lo consentono. Se non ci sono predecessori collegati, l'attività inizia all'inizio dell'attività di riepilogo genitore.</td>
 </tr>
 <tr>
-<td><strong>As late as possible</strong></td>
+<td><strong>Il più tardi possibile</strong></td>
 <td>L'attività viene pianificata il più tardi possibile consentito dai predecessori. Se non ci sono predecessori collegati, l'attività termina alla fine dell'attività di riepilogo genitore.</td>
 </tr>
 <tr>
-<td><strong>Start no earlier than</strong></td>
+<td><strong>Inizio non prima di</strong></td>
 <td>Se l'attività inizia dopo la data specificata a causa dei predecessori, non cambia nulla. Altrimenti, l'attività viene pianificata per iniziare alla data specificata.</td>
 </tr>
 <tr>
-<td><strong>Start no later than</strong></td>
+<td><strong>Inizio non dopo</strong></td>
 <td>Se i predecessori spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità. Altrimenti, l'attività viene pianificata per iniziare entro la data specificata.</td>
 </tr>
 <tr>
-<td><strong>Finish no earlier than</strong></td>
+<td><strong>Fine non prima di</strong></td>
 <td>Se l'attività termina dopo la data specificata a causa dei predecessori, non cambia nulla. Altrimenti, l'attività viene pianificata per terminare alla data specificata.</td>
 </tr>
 <tr>
-<td><strong>Finish no later than</strong></td>
+<td><strong>Fine non dopo</strong></td>
 <td>Se i predecessori spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità. Altrimenti, l'attività viene pianificata per terminare entro la data specificata.</td>
 </tr>
 <tr>
-<td><strong>Must start on</strong></td>
+<td><strong>Deve iniziare il</strong></td>
 <td>La data di inizio dell'attività viene pianificata esattamente come specificato, indipendentemente dai predecessori.</td>
 </tr>
 <tr>
-<td><strong>Must finish on</strong></td>
+<td><strong>Deve finire il</strong></td>
 <td>La data di fine dell'attività viene pianificata esattamente come specificato, indipendentemente dai predecessori.</td>
 </tr>
 </tbody>
 </table>
 <p>Le attività con un vincolo flessibile o inflessibile mostrano un'icona speciale nell'elenco delle attività.</p>
 <blockquote>
-<p>Mantieni la maggior parte delle attività impostate su <strong>As soon as possible</strong> e usa i vincoli flessibili solo per le attività che devono iniziare o finire vicino a una data specifica.</p>
+<p>Mantieni la maggior parte delle attività impostate su <strong>Il prima possibile</strong> e usa i vincoli flessibili solo per le attività che devono iniziare o finire vicino a una data specifica.</p>
 </blockquote>
 
     </main>

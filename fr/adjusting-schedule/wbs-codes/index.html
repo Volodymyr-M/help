@@ -213,7 +213,7 @@
       <h1 id="codes-wbs">Codes WBS <a href="#codes-wbs" class="heading-anchor">#</a></h1>
 <p>Chaque tâche possède un code <strong>WBS</strong> — son adresse dans la hiérarchie. Par défaut, il s'agit du simple numéro hiérarchique : <code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>. Affichez-le en activant la colonne <strong>WBS</strong> dans le tableau des tâches.</p>
 <p>Un <strong>masque de code WBS</strong> remplace ces numéros hiérarchiques par un code structuré que vous concevez vous-même, de sorte que les tâches s'affichent comme <code>PROJ-A-01</code> ou <code>1.A.001</code> au lieu de <code>1.1.1</code>. Les organisations qui disposent d'une norme de numérotation — un contrat, un schéma de codes de coûts, le format de reporting d'un client — l'utilisent pour que les codes d'Ingantt s'y conforment.</p>
-<p>Ouvrez <strong>Project → WBS Code Definition</strong> pour en configurer un.</p>
+<p>Ouvrez <strong>Projet → Définition du code WBS</strong> pour en configurer un.</p>
 <h2 id="codes-wbs-et-codes-hiérarchiques-deux-choses-différentes">Codes WBS et codes hiérarchiques : deux choses différentes <a href="#codes-wbs-et-codes-hiérarchiques-deux-choses-différentes" class="heading-anchor">#</a></h2>
 <ul>
 <li>Un <strong>code WBS</strong> est structurel. Il y en a exactement un par tâche et il est dérivé de la position de la tâche dans la hiérarchie. Il se renumérote de lui-même lorsque vous déplacez des tâches.</li>
@@ -224,7 +224,7 @@
 <h3 id="préfixe-du-code-projet">Préfixe du code projet <a href="#préfixe-du-code-projet" class="heading-anchor">#</a></h3>
 <p>Texte fixe placé devant chaque code du projet. Avec le préfixe <code>PROJ</code>, les codes s'affichent comme <code>PROJ.1.1</code> ou <code>PROJ-A-01</code> selon vos séparateurs. Laissez-le vide pour ne pas avoir de préfixe.</p>
 <h3 id="masque-de-code">Masque de code <a href="#masque-de-code" class="heading-anchor">#</a></h3>
-<p>Une ligne par niveau hiérarchique, ajoutée avec <strong>Add Level</strong>. Chaque ligne définit :</p>
+<p>Une ligne par niveau hiérarchique, ajoutée avec <strong>Ajouter un niveau</strong>. Chaque ligne définit :</p>
 <table>
 <thead>
 <tr>
@@ -234,31 +234,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Level</strong></td>
+<td><strong>Niveau</strong></td>
 <td>La profondeur hiérarchique à laquelle cette ligne s'applique. Le niveau 1 correspond aux tâches de premier niveau, le niveau 2 à leurs enfants, et ainsi de suite.</td>
 </tr>
 <tr>
-<td><strong>Sequence</strong></td>
-<td>Les caractères utilisés à ce niveau : <strong>Numbers</strong> (1, 2, 3), <strong>Uppercase Letters</strong> (A, B, C … Z, AA), <strong>Lowercase Letters</strong> (a, b, c … z, aa) ou <strong>Characters</strong>.</td>
+<td><strong>Séquence</strong></td>
+<td>Les caractères utilisés à ce niveau : <strong>Nombres</strong> (1, 2, 3), <strong>Lettres majuscules</strong> (A, B, C … Z, AA), <strong>Lettres minuscules</strong> (a, b, c … z, aa) ou <strong>Caractères</strong>.</td>
 </tr>
 <tr>
-<td><strong>Length</strong></td>
-<td>Nombre maximal de caractères à ce niveau. Laissez-le vide — il affiche <em>Any</em> — pour ne pas imposer de limite.</td>
+<td><strong>Longueur</strong></td>
+<td>Nombre maximal de caractères à ce niveau. Laissez-le vide — il affiche <em>Quelconque</em> — pour ne pas imposer de limite.</td>
 </tr>
 <tr>
-<td><strong>Separator</strong></td>
+<td><strong>Séparateur</strong></td>
 <td>Le caractère entre ce niveau et le suivant, par exemple <code>.</code> ou <code>-</code>.</td>
 </tr>
 </tbody>
 </table>
 <p>Deux points méritent d'être connus sur le comportement des champs :</p>
 <ul>
-<li><strong>La longueur complète les nombres avec des zéros à gauche.</strong> Une longueur de <code>3</code> sur un niveau Numbers transforme la neuvième tâche en <code>009</code>. Elle ne complète pas les niveaux à base de lettres.</li>
-<li><strong>Characters</strong> se comporte comme Numbers pour les codes générés par Ingantt. Cette option existe pour la compatibilité avec Microsoft Project, où elle désigne un niveau que vous saisissez vous-même.</li>
+<li><strong>La longueur complète les nombres avec des zéros à gauche.</strong> Une longueur de <code>3</code> sur un niveau Nombres transforme la neuvième tâche en <code>009</code>. Elle ne complète pas les niveaux à base de lettres.</li>
+<li><strong>Caractères</strong> se comporte comme Nombres pour les codes générés par Ingantt. Cette option existe pour la compatibilité avec Microsoft Project, où elle désigne un niveau que vous saisissez vous-même.</li>
 </ul>
 <p>Vous n'avez pas à définir chaque niveau. <strong>Les niveaux plus profonds que la dernière ligne de votre masque reviennent à un nombre avec un séparateur <code>.</code></strong>, de sorte qu'un masque de trois lignes sur un planning à cinq niveaux produit tout de même un code complet.</p>
 <h3 id="options">Options <a href="#options" class="heading-anchor">#</a></h3>
-<p><strong>Generate WBS code for new task</strong> et <strong>Verify uniqueness of new WBS codes</strong> sont stockés avec le projet et conservés lors d'un aller-retour avec Microsoft Project. Dans Ingantt, un masque comportant au moins un niveau est appliqué automatiquement à chaque tâche, et les codes sont uniques par construction puisqu'ils suivent la hiérarchie.</p>
+<p><strong>Générer un code WBS pour la nouvelle tâche</strong> et <strong>Vérifier l'unicité des nouveaux codes WBS</strong> sont stockés avec le projet et conservés lors d'un aller-retour avec Microsoft Project. Dans Ingantt, un masque comportant au moins un niveau est appliqué automatiquement à chaque tâche, et les codes sont uniques par construction puisqu'ils suivent la hiérarchie.</p>
 <h2 id="ce-qui-se-passe-lorsque-vous-enregistrez-le-masque">Ce qui se passe lorsque vous enregistrez le masque <a href="#ce-qui-se-passe-lorsque-vous-enregistrez-le-masque" class="heading-anchor">#</a></h2>
 <p>Ingantt renumérote immédiatement l'ensemble du projet. Les codes sont reconstruits à partir de la hiérarchie à chaque changement de structure — lorsque vous ajoutez, supprimez ou déplacez une tâche, ou que vous augmentez ou diminuez son indentation — de sorte qu'ils décrivent toujours la position actuelle de la tâche.</p>
 <p>Il vaut la peine de le dire clairement : <strong>un code WBS n'est pas un identifiant permanent d'une tâche.</strong> Déplacez une tâche et son code change. Si vous avez besoin d'une étiquette qui suit une tâche, utilisez plutôt un code hiérarchique ou un <a href="/fr/adjusting-schedule/custom-fields/">champ personnalisé de type texte</a>.</p>

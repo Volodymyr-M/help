@@ -20,8 +20,8 @@
 
 ## Terminplan erstellen
 
-- [Vorgänge](https://help.ingantt.com/de/building-schedule/tasks/index.md)
-- [Vorgangseigenschaften](https://help.ingantt.com/de/building-schedule/task-properties/index.md)
+- [Aufgaben](https://help.ingantt.com/de/building-schedule/tasks/index.md)
+- [Aufgabeneigenschaften](https://help.ingantt.com/de/building-schedule/task-properties/index.md)
 - [Fortlaufende Dauern](https://help.ingantt.com/de/building-schedule/elapsed-durations/index.md)
 - [Abhängigkeiten](https://help.ingantt.com/de/building-schedule/dependencies/index.md)
 - [Einschränkungen](https://help.ingantt.com/de/building-schedule/constraints/index.md)
@@ -42,10 +42,10 @@
 
 ## Fortschritt verfolgen
 
-- [Basispläne](https://help.ingantt.com/de/tracking/baselines/index.md)
+- [Basislinien](https://help.ingantt.com/de/tracking/baselines/index.md)
 - [Fortschritt verfolgen](https://help.ingantt.com/de/tracking/progress/index.md)
 - [Ist-Werte](https://help.ingantt.com/de/tracking/actuals/index.md)
-- [Earned Value](https://help.ingantt.com/de/tracking/earned-value/index.md)
+- [Ertragswert](https://help.ingantt.com/de/tracking/earned-value/index.md)
 
 ## Ansichten
 

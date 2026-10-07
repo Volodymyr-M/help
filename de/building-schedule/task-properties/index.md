@@ -1,6 +1,6 @@
-# Vorgangseigenschaften
+# Aufgabeneigenschaften
 
-Jeder Vorgang hat Eigenschaften, die steuern, wie er geplant wird, wie Kosten berechnet werden und wie er im Gantt-Diagramm angezeigt wird. Legen Sie diese im Dialog **Vorgangseigenschaften** fest.
+Jeder Vorgang hat Eigenschaften, die steuern, wie er geplant wird, wie Kosten berechnet werden und wie er im Gantt-Diagramm angezeigt wird. Legen Sie diese im Dialog **Aufgabeneigenschaften** fest.
 
 ## Dauer
 
@@ -8,9 +8,9 @@ Bei der Planung Ihres Projekts geben Sie Dauern als Schätzungen ein, d. h. die 
 
 Verwechseln Sie **Dauer** nicht mit **Arbeit**. Wenn beispielsweise drei Personen an Ihrem Vorgang arbeiten und ihn in einer Stunde abschließen, setzen Sie die **Dauer** des Vorgangs auf eine Stunde. Wenn diese drei Personen dem Vorgang zugewiesen sind, berechnet Ingantt die Eigenschaft **Arbeit** für Sie als drei Stunden.
 
-Die Dauer kann über das Feld **Dauer** im Dialog **Vorgangseigenschaften** geändert werden.
+Die Dauer kann über das Feld **Dauer** im Dialog **Aufgabeneigenschaften** geändert werden.
 
-Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog **Vorgangseigenschaften** als **Schätzung** markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („**?**“) angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.
+Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog **Aufgabeneigenschaften** als **Schätzung** markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („**?**“) angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.
 
 Wenn mindestens ein Teilvorgang eines Sammelvorgangs **Schätzung** aktiviert hat, wird die Dauer des Sammelvorgangs ebenfalls als **Schätzung** markiert und zeigt somit auch „**?**“ an.
 
@@ -22,17 +22,17 @@ Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Grö
 
 Sobald einem Vorgang eine Arbeitsressource zugewiesen ist (z. B. eine Person, die den Vorgang ausführt), wird die Eigenschaft **Arbeit** des Vorgangs größer als 0. Sie zeigt die Zeit an, die alle Ressourcen für die Arbeit am Vorgang aufwenden werden. Wenn beispielsweise ein Vorgang mit einer **Dauer** von 5 Stunden 2 zugewiesene Ressourcen hat, die daran arbeiten, beträgt die **Arbeit** des Vorgangs 10 Stunden.
 
-Die Arbeit kann über das Feld **Arbeit** im Dialog **Vorgangseigenschaften** geändert werden.
+Die Arbeit kann über das Feld **Arbeit** im Dialog **Aufgabeneigenschaften** geändert werden.
 
 Genau wie die Dauer kann die Arbeit in Stunden, Tagen, Wochen oder Monaten angegeben werden, wobei die Definitionen auf dem Reiter **Dauer** des Dialogs **Projekteigenschaften** verwendet werden. Das Standard-Anzeigeformat für Arbeit kann auf dem Reiter **Zeit** geändert werden.
 
 Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß dem [Typ](#typ-und-leistungsgesteuert) des Vorgangs neu berechnet.
 
-## Stichtag
+## Frist
 
 Manchmal müssen Sie sicherstellen, dass ein Vorgang bis zu einem bestimmten Tag abgeschlossen ist, was üblicherweise als Stichtag bezeichnet wird.
 
-Der Stichtag eines Vorgangs kann über das Feld **Stichtag** im Dialog **Vorgangseigenschaften** festgelegt werden.
+Der Stichtag eines Vorgangs kann über das Feld **Frist** im Dialog **Aufgabeneigenschaften** festgelegt werden.
 
 Stichtage dienen nur zu Ihrer Information und beeinflussen die Planung nicht.
 
@@ -46,7 +46,7 @@ Stichtage werden im Gantt-Diagramm als spezielle Symbole angezeigt.
 
 ## Meilenstein
 
-Jeder Vorgang kann als Meilenstein markiert werden, indem das Kontrollkästchen **Meilenstein** im Dialog **Vorgangseigenschaften** aktiviert wird. Dies ändert weder seine Dauer noch beeinflusst es die Planung, aber der Vorgang wird im Gantt-Diagramm als Symbol dargestellt.
+Jeder Vorgang kann als Meilenstein markiert werden, indem das Kontrollkästchen **Meilenstein** im Dialog **Aufgabeneigenschaften** aktiviert wird. Dies ändert weder seine Dauer noch beeinflusst es die Planung, aber der Vorgang wird im Gantt-Diagramm als Symbol dargestellt.
 
 ![Meilenstein](/images/building-schedule/tasks/milestone.png)
 
@@ -54,7 +54,7 @@ Wenn Sie 0 als **Dauer** eines Vorgangs angeben, wird der Vorgang automatisch al
 
 ## Typ und Leistungsgesteuert
 
-Arbeitsressourcenzuweisungen (bzw. Einheiten zugewiesener Arbeitsressourcen), Arbeit und Dauer hängen voneinander ab. Wenn Sie eine dieser Größen ändern, müssen die anderen entsprechend neu berechnet werden. Die Eigenschaft **Typ** des Vorgangs (zusammen mit dem Flag **Leistungsgesteuert**) legt fest, welche der beiden verbleibenden Eigenschaften unverändert bleibt, sodass nur eine davon neu berechnet wird.
+Arbeitsressourcenzuweisungen (bzw. Einheiten zugewiesener Arbeitsressourcen), Arbeit und Dauer hängen voneinander ab. Wenn Sie eine dieser Größen ändern, müssen die anderen entsprechend neu berechnet werden. Die Eigenschaft **Typ** des Vorgangs (zusammen mit dem Flag **Aufwandsgetrieben**) legt fest, welche der beiden verbleibenden Eigenschaften unverändert bleibt, sodass nur eine davon neu berechnet wird.
 
 Beispielsweise können Sie **Typ** auf **Feste Einheiten** (den Standardwert) setzen. In diesem Fall wird bei einer Änderung der Dauer die Arbeit automatisch neu berechnet.
 
@@ -63,8 +63,8 @@ Beispielsweise können Sie **Typ** auf **Feste Einheiten** (den Standardwert) se
 | **Feste Einheiten**| Bei Änderung der Dauer: Arbeit wird neu berechnet.      |
 |                    | Bei Änderung der Arbeit: Dauer wird neu berechnet.      |
 |                    | Bei Änderung der Einheiten:                             |
-|                    | - Wenn **Leistungsgesteuert** aktiviert ist: Dauer wird neu berechnet. |
-|                    | - Wenn **Leistungsgesteuert** nicht aktiviert ist: Arbeit wird neu berechnet. |
+|                    | - Wenn **Aufwandsgetrieben** aktiviert ist: Dauer wird neu berechnet. |
+|                    | - Wenn **Aufwandsgetrieben** nicht aktiviert ist: Arbeit wird neu berechnet. |
 | **Feste Dauer**    | Bei Änderung der Dauer: Arbeit wird neu berechnet.      |
 |                    | Bei Änderung der Arbeit: Einheiten werden neu berechnet.|
 |                    | Bei Änderung der Einheiten: Arbeit wird neu berechnet.  |
@@ -72,25 +72,25 @@ Beispielsweise können Sie **Typ** auf **Feste Einheiten** (den Standardwert) se
 |                    | Bei Änderung der Arbeit: Dauer wird neu berechnet.      |
 |                    | Bei Änderung der Einheiten: Dauer wird neu berechnet.   |
 
-Mit anderen Worten: Die Eigenschaft **Typ** ermöglicht es Ihnen, eine der drei Größen einzufrieren, während das Flag **Leistungsgesteuert** festlegt, ob die Arbeit unter den verbleibenden zwei unverändert bleiben soll.
+Mit anderen Worten: Die Eigenschaft **Typ** ermöglicht es Ihnen, eine der drei Größen einzufrieren, während das Flag **Aufwandsgetrieben** festlegt, ob die Arbeit unter den verbleibenden zwei unverändert bleiben soll.
 
-> **Typ** und **Leistungsgesteuert** sind nicht verfügbar für [Sammelvorgänge](/de/building-schedule/tasks/index.md#sammelvorgänge), die immer vom Typ **Feste Dauer** und nicht leistungsgesteuert sind.
+> **Typ** und **Aufwandsgetrieben** sind nicht verfügbar für [Sammelvorgänge](/de/building-schedule/tasks/index.md#sammelvorgänge), die immer vom Typ **Feste Dauer** und nicht leistungsgesteuert sind.
 
 ## Notizen
 
-Sie können jedem Vorgang beliebigen Text hinzufügen, indem Sie das Feld **Notizen** auf dem Reiter **Notizen** des Dialogs **Vorgangseigenschaften** ausfüllen. Verwenden Sie es für Vorgangsbeschreibungen, Kontaktinformationen, Ideen oder andere Textdaten.
+Sie können jedem Vorgang beliebigen Text hinzufügen, indem Sie das Feld **Notizen** auf dem Reiter **Notizen** des Dialogs **Aufgabeneigenschaften** ausfüllen. Verwenden Sie es für Vorgangsbeschreibungen, Kontaktinformationen, Ideen oder andere Textdaten.
 
-Wenn bei einem Vorgang das Feld **Notizen** ausgefüllt ist, wird ein spezielles Symbol für den Vorgang in der Vorgangsliste angezeigt. Unter Windows, macOS und im Web zeigt das Überfahren des Symbols mit der Maus die Notiz an. Auf Mobilgeräten öffnen Sie den Dialog **Vorgangseigenschaften**, um die vollständige Notiz anzuzeigen.
+Wenn bei einem Vorgang das Feld **Notizen** ausgefüllt ist, wird ein spezielles Symbol für den Vorgang in der Vorgangsliste angezeigt. Unter Windows, macOS und im Web zeigt das Überfahren des Symbols mit der Maus die Notiz an. Auf Mobilgeräten öffnen Sie den Dialog **Aufgabeneigenschaften**, um die vollständige Notiz anzuzeigen.
 
 ## Hyperlink
 
-Sie können Ihrem Vorgang eine URL über das Feld **Hyperlink** auf dem Reiter **Notizen** des Dialogs **Vorgangseigenschaften** anhängen. Vorgänge mit einem Hyperlink zeigen ein Link-Symbol in der Vorgangsliste an. Durch Klicken auf das Link-Symbol wird die URL in Ihrem Browser geöffnet.
+Sie können Ihrem Vorgang eine URL über das Feld **Hyperlink** auf dem Reiter **Notizen** des Dialogs **Aufgabeneigenschaften** anhängen. Vorgänge mit einem Hyperlink zeigen ein Link-Symbol in der Vorgangsliste an. Durch Klicken auf das Link-Symbol wird die URL in Ihrem Browser geöffnet.
 
 ## Balken ausblenden und Rollup
 
-Auf dem Reiter **Visuell** des Dialogs **Vorgangseigenschaften**:
+Auf dem Reiter **Visuell** des Dialogs **Aufgabeneigenschaften**:
 
 - **Balken ausblenden** — Blendet den Balken des Vorgangs im Gantt-Diagramm aus, wobei die Zeile in der Vorgangsliste sichtbar bleibt. Der unsichtbare Balkenbereich reagiert weiterhin auf Klicks und Kontextmenüs.
-- **Rollup** — Zeigt den Balken des Teilvorgangs in der Zeile seines übergeordneten Sammelvorgangs im Gantt-Diagramm an. Dies bietet eine kompakte Ansicht, wenn Sammelvorgänge zugeklappt sind.
+- **Sammelbericht** — Zeigt den Balken des Teilvorgangs in der Zeile seines übergeordneten Sammelvorgangs im Gantt-Diagramm an. Dies bietet eine kompakte Ansicht, wenn Sammelvorgänge zugeklappt sind.
 
 Diese Optionen können auch über das Untermenü **Bearbeiten > Anzeige** oder das Rechtsklick-Kontextmenü umgeschaltet werden.

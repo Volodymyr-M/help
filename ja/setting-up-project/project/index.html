@@ -213,25 +213,25 @@
       <h1 id="プロジェクトのプロパティ">プロジェクトのプロパティ <a href="#プロジェクトのプロパティ" class="heading-anchor">#</a></h1>
 <p>プロジェクトの開始日、稼働時間、スケジューリングルールを設定します。これらの設定は、プロジェクト内のすべてのタスクの計算と表示に影響します。</p>
 <h2 id="プロジェクト名">プロジェクト名 <a href="#プロジェクト名" class="heading-anchor">#</a></h2>
-<p><strong>Project Properties</strong>ダイアログの<strong>General</strong>タブにある<strong>Name</strong>フィールドでプロジェクト名を設定します。この名前はプロジェクトの<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>にも使用されます。</p>
-<p>WebおよびWindowsでは、ヘッダーのプロジェクト名をクリックしても<strong>Project Properties</strong>ダイアログが開きます。</p>
+<p><strong>プロジェクトのプロパティ</strong>ダイアログの<strong>一般</strong>タブにある<strong>名前</strong>フィールドでプロジェクト名を設定します。この名前はプロジェクトの<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>にも使用されます。</p>
+<p>WebおよびWindowsでは、ヘッダーのプロジェクト名をクリックしても<strong>プロジェクトのプロパティ</strong>ダイアログが開きます。</p>
 <h2 id="開始日と計画の方向">開始日と計画の方向 <a href="#開始日と計画の方向" class="heading-anchor">#</a></h2>
-<p>デフォルトでは、プロジェクトは開始日から計画されます。開始日は<strong>Project Properties</strong>ダイアログの<strong>Project Start Date</strong>フィールドで設定できます。</p>
-<p>代わりに終了日から計画する場合は、<strong>Project Properties</strong>ダイアログで<strong>Plan from Finish date</strong>に切り替え、<strong>Project Finish Date</strong>を設定します。</p>
-<p><strong>Project Properties</strong>ダイアログの<strong>General</strong>タブには、開始日と終了日の両方が表示されます。開始日からスケジューリングする場合、開始日は編集可能で、終了日は計算値が表示されます。終了日からスケジューリングする場合、終了日は編集可能で、開始日は計算値が表示されます。</p>
+<p>デフォルトでは、プロジェクトは開始日から計画されます。開始日は<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>プロジェクトの開始日</strong>フィールドで設定できます。</p>
+<p>代わりに終了日から計画する場合は、<strong>プロジェクトのプロパティ</strong>ダイアログで<strong>終了日から計画</strong>に切り替え、<strong>プロジェクトの終了日</strong>を設定します。</p>
+<p><strong>プロジェクトのプロパティ</strong>ダイアログの<strong>一般</strong>タブには、開始日と終了日の両方が表示されます。開始日からスケジューリングする場合、開始日は編集可能で、終了日は計算値が表示されます。終了日からスケジューリングする場合、終了日は編集可能で、開始日は計算値が表示されます。</p>
 <p>注意点：</p>
 <ul>
-<li>開始日から計画するプロジェクトでは、新規作成タスクのデフォルト<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>は<strong>As soon as possible</strong>です。</li>
-<li>終了日から計画するプロジェクトでは、新規作成タスクのデフォルト制約は<strong>As late as possible</strong>です。</li>
+<li>開始日から計画するプロジェクトでは、新規作成タスクのデフォルト<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>は<strong>できるだけ早く</strong>です。</li>
+<li>終了日から計画するプロジェクトでは、新規作成タスクのデフォルト制約は<strong>できるだけ遅く</strong>です。</li>
 </ul>
 <p>開始日と終了日の計画方法を切り替える際、既存タスクの制約は変更されません。ただし、<a href="/ja/building-schedule/tasks/#%E3%83%AB%E3%83%BC%E3%83%88%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">ルートサマリータスク</a>を含む<a href="/ja/building-schedule/tasks/#%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">サマリータスク</a>は例外です。</p>
 <p>サマリータスクの場合：</p>
 <ul>
-<li>開始日から終了日への切り替え時に、<strong>As soon as possible</strong>制約は<strong>As late as possible</strong>に置き換えられます。</li>
-<li>終了日から開始日への切り替え時に、<strong>As late as possible</strong>制約は<strong>As soon as possible</strong>に置き換えられます。</li>
+<li>開始日から終了日への切り替え時に、<strong>できるだけ早く</strong>制約は<strong>できるだけ遅く</strong>に置き換えられます。</li>
+<li>終了日から開始日への切り替え時に、<strong>できるだけ遅く</strong>制約は<strong>できるだけ早く</strong>に置き換えられます。</li>
 </ul>
 <h2 id="週の最初の曜日">週の最初の曜日 <a href="#週の最初の曜日" class="heading-anchor">#</a></h2>
-<p>国によって、週の始まりが日曜日の場合と月曜日の場合があります。<strong>Project Properties</strong>ダイアログの<strong>Regional</strong>タブにある<strong>First Day of Week</strong>フィールドを変更して、プロジェクトのデフォルト設定を更新できます。</p>
+<p>国によって、週の始まりが日曜日の場合と月曜日の場合があります。<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>地域</strong>タブにある<strong>週の初めの日</strong>フィールドを変更して、プロジェクトのデフォルト設定を更新できます。</p>
 <p>このプロパティを変更すると、一部のズームレベルでのガントチャートを含むユーザーインターフェースが更新されますが、スケジューリングには影響しません。スケジュールを適切に調整するには、<a href="/ja/setting-up-project/calendars/">カレンダー</a>を更新してください。</p>
 <h2 id="1日の時間数1週間の日数1か月の日数">1日の時間数、1週間の日数、1か月の日数 <a href="#1日の時間数1週間の日数1か月の日数" class="heading-anchor">#</a></h2>
 <p>Inganttでは、<a href="/ja/building-schedule/task-properties/#%E6%9C%9F%E9%96%93">期間</a>、<a href="/ja/building-schedule/task-properties/#%E4%BD%9C%E6%A5%AD%E9%87%8F">作業量</a>、<a href="/ja/building-schedule/dependencies/#%E3%83%A9%E3%82%B0%E3%81%A8%E3%83%AA%E3%83%BC%E3%83%89%E3%82%BF%E3%82%A4%E3%83%A0">ラグ</a>を時間、日、週、月の単位で指定できます。</p>
@@ -242,20 +242,20 @@
 <li>1週間 = 5日（40時間）</li>
 <li>1か月 = 20日（160時間）</li>
 </ul>
-<p>これらのデフォルト設定は、<strong>Project Properties</strong>ダイアログの<strong>Duration</strong>タブで変更できます。</p>
+<p>これらのデフォルト設定は、<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>期間</strong>タブで変更できます。</p>
 <blockquote>
 <p>ほとんどのプロジェクトではデフォルト値をそのまま使用してください。プロジェクトに異なる換算が必要な特定の要件がある場合にのみ、これらの設定を変更してください。</p>
 </blockquote>
 <h2 id="期間と作業量の表示形式">期間と作業量の表示形式 <a href="#期間と作業量の表示形式" class="heading-anchor">#</a></h2>
-<p>デフォルトでは、期間は日単位、作業量は時間単位で表示されます。<strong>Project Properties</strong>ダイアログの<strong>Time</strong>タブで、両方の表示形式を変更できます。使用可能な単位は、分、時間、日、週、月です。</p>
+<p>デフォルトでは、期間は日単位、作業量は時間単位で表示されます。<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>時刻</strong>タブで、両方の表示形式を変更できます。使用可能な単位は、分、時間、日、週、月です。</p>
 <p>いずれかの形式を変更すると、すべての既存の値が新しい単位で表示されるよう更新されます。</p>
 <h2 id="デフォルトの開始時刻と終了時刻">デフォルトの開始時刻と終了時刻 <a href="#デフォルトの開始時刻と終了時刻" class="heading-anchor">#</a></h2>
-<p>デフォルトの開始時刻（午前8:00）と終了時刻（午後5:00）は、毎日の作業開始時刻と終了時刻を制御します。<strong>Project Properties</strong>ダイアログの<strong>Time</strong>タブで変更できます。</p>
+<p>デフォルトの開始時刻（午前8:00）と終了時刻（午後5:00）は、毎日の作業開始時刻と終了時刻を制御します。<strong>プロジェクトのプロパティ</strong>ダイアログの<strong>時刻</strong>タブで変更できます。</p>
 <h2 id="スケジューリングオプション">スケジューリングオプション <a href="#スケジューリングオプション" class="heading-anchor">#</a></h2>
-<p><strong>Project Properties</strong>ダイアログの<strong>Scheduling</strong>タブには、タスクのスケジューリング方法を制御するオプションがあります：</p>
+<p><strong>プロジェクトのプロパティ</strong>ダイアログの<strong>スケジュール</strong>タブには、タスクのスケジューリング方法を制御するオプションがあります：</p>
 <ul>
 <li><strong>Honor constraint dates</strong> — 有効にすると、半柔軟な制約（Start No Later Thanなど）が依存関係よりも優先され、マイナスの余裕が発生する場合があります。無効の場合（デフォルト）、依存関係が常に優先されます。</li>
-<li><strong>Split in-progress tasks</strong> — 有効の場合（デフォルト）、スケジューラーは順序外の進捗があるタスクを自動的に分割できます。</li>
+<li><strong>進行中のタスクを分割する</strong> — 有効の場合（デフォルト）、スケジューラーは順序外の進捗があるタスクを自動的に分割できます。</li>
 <li><strong>Move completed/remaining parts</strong> — 完了部分と残りの作業部分をステータス日付に対してどのように再配置するかを制御する4つのオプションです。完了した作業をステータス日付まで遡らせたり、残りの作業を先に進めたりして、スケジュールを最新の状態に保つのに役立ちます。</li>
 </ul>
 

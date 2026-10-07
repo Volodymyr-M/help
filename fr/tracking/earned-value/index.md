@@ -4,9 +4,9 @@ La gestion de la valeur acquise (Earned Value Management, EVM) combine des mesur
 
 ## Date d'état
 
-La **Status Date** définit la date utilisée pour le suivi de l'avancement et les calculs de valeur acquise. Lorsqu'elle est définie, une ligne verticale verte est affichée sur le diagramme de Gantt à cette date.
+La **Date d'état** définit la date utilisée pour le suivi de l'avancement et les calculs de valeur acquise. Lorsqu'elle est définie, une ligne verticale verte est affichée sur le diagramme de Gantt à cette date.
 
-Lorsque la date d'état n'est pas définie, la date du jour est utilisée pour les calculs. Vous pouvez définir la date d'état dans la boîte de dialogue **Earned Value Options**, accessible depuis le menu **Project**.
+Lorsque la date d'état n'est pas définie, la date du jour est utilisée pour les calculs. Vous pouvez définir la date d'état dans la boîte de dialogue **Options de valeur acquise**, accessible depuis le menu **Projet**.
 
 ## Gestion de la valeur acquise
 
@@ -15,7 +15,7 @@ Ingantt prend en charge la gestion de la valeur acquise (Earned Value Management
 ### Configurer la valeur acquise
 
 1. Créez une [référence de base](/fr/tracking/baselines/index.md#définir-une-référence-de-base) pour capturer le planning et les coûts prévus.
-2. Définissez la **Status Date** dans la boîte de dialogue **Earned Value Options** (accessible depuis le menu **Project**) ou laissez-la à la date du jour par défaut.
+2. Définissez la **Date d'état** dans la boîte de dialogue **Options de valeur acquise** (accessible depuis le menu **Projet**) ou laissez-la à la date du jour par défaut.
 3. Mettez à jour les valeurs de [% Complete](/fr/tracking/progress/index.md#-complete) des tâches au fur et à mesure de l'avancement des travaux.
 
 ### Métriques EVM disponibles
@@ -42,11 +42,11 @@ Les colonnes EVM suivantes peuvent être ajoutées à la liste des tâches via l
 
 Chaque tâche peut utiliser l'une des deux méthodes pour calculer le BCWP (valeur acquise) :
 
-- **% Complete** (par défaut) — Utilise le pourcentage d'achèvement de la tâche pour calculer la valeur acquise.
-- **Physical % Complete** — Utilise un pourcentage d'achèvement physique suivi séparément. Utile pour une mesure de l'avancement basée sur les livrables.
+- **% complété** (par défaut) — Utilise le pourcentage d'achèvement de la tâche pour calculer la valeur acquise.
+- **% physique achevé** — Utilise un pourcentage d'achèvement physique suivi séparément. Utile pour une mesure de l'avancement basée sur les livrables.
 
-Définissez la méthode pour chaque tâche dans l'onglet **Cost and EV** de la boîte de dialogue **Task Properties**. Modifiez la méthode par défaut pour les nouvelles tâches dans la boîte de dialogue **Earned Value Options**.
+Définissez la méthode pour chaque tâche dans l'onglet **Coût et VA** de la boîte de dialogue **Propriétés de la tâche**. Modifiez la méthode par défaut pour les nouvelles tâches dans la boîte de dialogue **Options de valeur acquise**.
 
 ### Référence de base pour la valeur acquise
 
-Les calculs EVM utilisent une référence de base spécifique. Vous pouvez choisir quelle référence (`Baseline 0` à `Baseline 10`) est utilisée pour la valeur acquise dans la boîte de dialogue **Earned Value Options**. La référence par défaut est `Baseline 0`.
+Les calculs EVM utilisent une référence de base spécifique. Vous pouvez choisir quelle référence (`Baseline 0` à `Baseline 10`) est utilisée pour la valeur acquise dans la boîte de dialogue **Options de valeur acquise**. La référence par défaut est `Baseline 0`.

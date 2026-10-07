@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -213,36 +213,36 @@
       <h1 id="configurazione-dei-costi">Configurazione dei costi <a href="#configurazione-dei-costi" class="heading-anchor">#</a></h1>
 <p>Imposta i costi fissi sulle attività e le tariffe sulle risorse. Ingantt li utilizza insieme al cronogramma per calcolare il costo di ogni attività e dell'intero progetto.</p>
 <h2 id="costo-fisso-dellattività">Costo fisso dell'attività <a href="#costo-fisso-dellattività" class="heading-anchor">#</a></h2>
-<p>Puoi impostare un costo per l'attività indipendentemente dalle sue risorse compilando il campo <strong>Fixed Cost</strong> nella scheda <strong>Cost and EV</strong> della finestra <strong>Task Properties</strong>. Ad esempio, usalo quando qualcuno ha già fornito una stima del costo totale per l'attività, o quando l'attività ha un costo aggiuntivo oltre ai costi delle risorse.</p>
+<p>Puoi impostare un costo per l'attività indipendentemente dalle sue risorse compilando il campo <strong>Costo Fisso</strong> nella scheda <strong>Costo</strong> della finestra <strong>Proprietà del Compito</strong>. Ad esempio, usalo quando qualcuno ha già fornito una stima del costo totale per l'attività, o quando l'attività ha un costo aggiuntivo oltre ai costi delle risorse.</p>
 <blockquote>
 <p>Se devi assegnare lo stesso costo fisso a più attività, considera la possibilità di creare una risorsa di tipo costo e di assegnarla a quelle attività. Se il costo cambia in futuro, dovrai aggiornarlo in un solo punto.</p>
 </blockquote>
 <h2 id="costo-della-risorsa-di-tipo-lavoro">Costo della risorsa di tipo lavoro <a href="#costo-della-risorsa-di-tipo-lavoro" class="heading-anchor">#</a></h2>
-<p>Le risorse di tipo <strong>lavoro</strong> sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi <a href="/it/setting-up-project/project/#ore-per-giorno-giorni-per-settimana-giorni-per-mese">Ore per giorno, giorni per settimana, giorni per mese</a>).</p>
-<p>Ad esempio, quando assegni una risorsa di tipo lavoro con una <strong>Standard Rate</strong> di 100 $/ora a un'attività con una <strong>Duration</strong> di 5 ore, 500 $ vengono aggiunti al <strong>Cost</strong> dell'attività.</p>
-<p>Le risorse di tipo lavoro supportano anche una <strong>Overtime Rate</strong> per il lavoro oltre l'orario di calendario regolare. Il costo totale viene calcolato come:</p>
+<p>Le risorse di tipo <strong>Lavoro</strong> sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi <a href="/it/setting-up-project/project/#ore-per-giorno-giorni-per-settimana-giorni-per-mese">Ore per giorno, giorni per settimana, giorni per mese</a>).</p>
+<p>Ad esempio, quando assegni una risorsa di tipo lavoro con una <strong>Tariffa standard</strong> di 100 $/ora a un'attività con una <strong>Durata</strong> di 5 ore, 500 $ vengono aggiunti al <strong>Costo</strong> dell'attività.</p>
+<p>Le risorse di tipo lavoro supportano anche una <strong>Tariffa straordinario</strong> per il lavoro oltre l'orario di calendario regolare. Il costo totale viene calcolato come:</p>
 <blockquote>
 <p><strong>Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use</strong></p>
 </blockquote>
-<p>Quando una risorsa di tipo lavoro viene assegnata a un'attività, puoi specificare il valore delle <strong>Units</strong> come un numero diverso da quello predefinito. Questo influisce sui calcoli dei costi. Ad esempio, se le <strong>Units</strong> sono al 50%, il costo calcolato per la risorsa nell'attività è la metà di quello che sarebbe con le Units al 100%.</p>
+<p>Quando una risorsa di tipo lavoro viene assegnata a un'attività, puoi specificare il valore delle <strong>Unità</strong> come un numero diverso da quello predefinito. Questo influisce sui calcoli dei costi. Ad esempio, se le <strong>Unità</strong> sono al 50%, il costo calcolato per la risorsa nell'attività è la metà di quello che sarebbe con le Units al 100%.</p>
 <h2 id="costo-della-risorsa-di-tipo-materiale">Costo della risorsa di tipo materiale <a href="#costo-della-risorsa-di-tipo-materiale" class="heading-anchor">#</a></h2>
-<p>Per le risorse di tipo <strong>materiale</strong>, il costo è specificato per unità in base a come definisci l'unità. Può essere un'unità di peso (ad es., libbra, chilogrammo, tonnellata), di lunghezza o volume (ad es., piede, metro, miglio, gallone, litro) o qualsiasi altra unità di misura (ad es., contenitore, scatola, pezzo, metro quadro). Puoi impostare un <strong>Material Label</strong> nella finestra <strong>Resource Properties</strong> per descrivere l'unità.</p>
+<p>Per le risorse di tipo <strong>materiale</strong>, il costo è specificato per unità in base a come definisci l'unità. Può essere un'unità di peso (ad es., libbra, chilogrammo, tonnellata), di lunghezza o volume (ad es., piede, metro, miglio, gallone, litro) o qualsiasi altra unità di misura (ad es., contenitore, scatola, pezzo, metro quadro). Puoi impostare un'<strong>Etichetta materiale</strong> nella finestra <strong>Proprietà della Risorsa</strong> per descrivere l'unità.</p>
 <p>Le risorse di tipo materiale supportano due modalità di consumo:</p>
 <ul>
 <li><strong>Fixed</strong> (predefinita) — Una quantità totale indipendente dalla durata dell'attività (ad es., 5 tonnellate di cemento)</li>
 <li><strong>Variable</strong> — Una tariffa per unità di tempo che scala con la durata dell'attività (ad es., 10 litri al giorno di carburante)</li>
 </ul>
-<p>Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa di tipo materiale &quot;carburante&quot; e specificare il costo per gallone nella finestra <strong>Resource Properties</strong>. Poi, quando assegni la risorsa a un'attività, specifichi il numero di galloni come <strong>Units</strong>, e Ingantt aggiunge il costo calcolato del carburante al <strong>Cost</strong> dell'attività.</p>
+<p>Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa di tipo materiale &quot;carburante&quot; e specificare il costo per gallone nella finestra <strong>Proprietà della Risorsa</strong>. Poi, quando assegni la risorsa a un'attività, specifichi il numero di galloni come <strong>Unità</strong>, e Ingantt aggiunge il costo calcolato del carburante al <strong>Costo</strong> dell'attività.</p>
 <h2 id="risorsa-di-tipo-costo">Risorsa di tipo costo <a href="#risorsa-di-tipo-costo" class="heading-anchor">#</a></h2>
 <p>Una risorsa di tipo <strong>costo</strong> è una spesa fissa che potresti voler assegnare a più attività. Le risorse di tipo costo supportano valori di costo per assegnazione — la stessa risorsa di tipo costo può avere importi diversi su assegnazioni di attività diverse (ad es., &quot;Viaggio&quot; = 800 $ sull'Attività A e 1.200 $ sull'Attività B).</p>
-<p>Usa questo tipo per spese fisse normalmente non specificate in unità di misura, come i costi di installazione. Se più attività hanno lo stesso costo fisso per la stessa ragione, crea una risorsa di tipo costo e assegnala a tutte queste attività anziché compilare il campo <strong>Fixed Cost</strong> per ogni attività separatamente.</p>
+<p>Usa questo tipo per spese fisse normalmente non specificate in unità di misura, come i costi di installazione. Se più attività hanno lo stesso costo fisso per la stessa ragione, crea una risorsa di tipo costo e assegnala a tutte queste attività anziché compilare il campo <strong>Costo Fisso</strong> per ogni attività separatamente.</p>
 <h2 id="tabelle-tariffarie">Tabelle tariffarie <a href="#tabelle-tariffarie" class="heading-anchor">#</a></h2>
 <p>Ogni risorsa di tipo lavoro e materiale supporta fino a 5 tabelle tariffarie (da A a E), ciascuna con più righe che entrano in vigore a date diverse. Questo ti permette di modellare variazioni tariffarie nel tempo o mantenere set di tariffe diverse per tipi diversi di lavoro.</p>
-<p>Le tabelle tariffarie vengono configurate nella scheda <strong>Costs</strong> della finestra <strong>Resource Properties</strong>. Quando assegni una risorsa a un'attività, puoi selezionare quale tabella tariffaria utilizzare nella finestra <strong>Edit Resource Assignment</strong>.</p>
+<p>Le tabelle tariffarie vengono configurate nella scheda <strong>Costi</strong> della finestra <strong>Proprietà della Risorsa</strong>. Quando assegni una risorsa a un'attività, puoi selezionare quale tabella tariffaria utilizzare nella finestra <strong>Modifica Assegnazione delle Risorse</strong>.</p>
 <h2 id="costo-per-utilizzo">Costo per utilizzo <a href="#costo-per-utilizzo" class="heading-anchor">#</a></h2>
-<p>Le risorse supportano un campo <strong>Cost Per Use</strong> — una tariffa fissa addebitata ogni volta che la risorsa viene assegnata a un'attività, indipendentemente da quanto lavoro viene svolto. Per le risorse di tipo lavoro, il <strong>Cost Per Use</strong> viene moltiplicato per le unità di assegnazione (ad es., unità al 200% significa che il costo per utilizzo viene addebitato due volte). Il <strong>Cost Per Use</strong> matura sempre all'inizio dell'attività.</p>
-<h2 id="maturazione-dei-costi">Maturazione dei costi <a href="#maturazione-dei-costi" class="heading-anchor">#</a></h2>
-<p>L'impostazione <strong>Cost Accrual</strong> controlla quando i costi vengono riconosciuti come costi effettivi man mano che il lavoro avanza:</p>
+<p>Le risorse supportano un campo <strong>Costo per utilizzo</strong> — una tariffa fissa addebitata ogni volta che la risorsa viene assegnata a un'attività, indipendentemente da quanto lavoro viene svolto. Per le risorse di tipo lavoro, il <strong>Costo per utilizzo</strong> viene moltiplicato per le unità di assegnazione (ad es., unità al 200% significa che il costo per utilizzo viene addebitato due volte). Il <strong>Costo per utilizzo</strong> matura sempre all'inizio dell'attività.</p>
+<h2 id="attribuzione-costi">Attribuzione costi <a href="#attribuzione-costi" class="heading-anchor">#</a></h2>
+<p>L'impostazione <strong>Attribuzione costi</strong> controlla quando i costi vengono riconosciuti come costi effettivi man mano che il lavoro avanza:</p>
 <table>
 <thead>
 <tr>
@@ -252,20 +252,20 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Start</strong></td>
+<td><strong>Inizio</strong></td>
 <td>Costo intero non appena viene registrato un avanzamento (% Complete &gt; 0%)</td>
 </tr>
 <tr>
-<td><strong>Prorated</strong></td>
+<td><strong>Proporzionale</strong></td>
 <td>Proporzionale alla percentuale di completamento (ad es., 50% completato = 50% del costo)</td>
 </tr>
 <tr>
-<td><strong>End</strong></td>
+<td><strong>Fine</strong></td>
 <td>Costo intero solo quando l'attività raggiunge il 100% di completamento</td>
 </tr>
 </tbody>
 </table>
-<p>Le risorse hanno un'impostazione <strong>Cost Accrual</strong> nella scheda <strong>Costs</strong> della finestra <strong>Resource Properties</strong>. Le attività hanno un'impostazione <strong>Fixed Cost Accrual</strong> nella scheda <strong>Cost and EV</strong> della finestra <strong>Task Properties</strong>. Il progetto ha un'impostazione <strong>Default Fixed Cost Accrual</strong> nella scheda <strong>Other</strong> della finestra <strong>Project Properties</strong>.</p>
+<p>Le risorse hanno un'impostazione <strong>Attribuzione costi</strong> nella scheda <strong>Costi</strong> della finestra <strong>Proprietà della Risorsa</strong>. Le attività hanno un'impostazione <strong>Attribuzione Costo Fisso</strong> nella scheda <strong>Costo</strong> della finestra <strong>Proprietà del Compito</strong>. Il progetto ha un'impostazione <strong>Attribuzione costi fissi predefinita</strong> nella scheda <strong>Altro</strong> della finestra <strong>Proprietà del Progetto</strong>.</p>
 
     </main>
     <aside class="toc" aria-label="Indice"></aside>

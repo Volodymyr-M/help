@@ -1,6 +1,6 @@
 # Códigos EDT
 
-Cada tarea tiene un código **EDT** (WBS, por sus siglas en inglés) — su dirección dentro del esquema. De forma predeterminada es el número de esquema simple: `1`, `1.1`, `1.2`, `1.2.1`. Para verlo, active la columna **EDT** en la tabla de tareas.
+Cada tarea tiene un código **WBS** (EDT, estructura de desglose del trabajo) — su dirección dentro del esquema. De forma predeterminada es el número de esquema simple: `1`, `1.1`, `1.2`, `1.2.1`. Para verlo, active la columna **WBS** en la tabla de tareas.
 
 Una **máscara de código EDT** reemplaza esos números de esquema por un código estructurado de su propio diseño, de modo que las tareas resultan como `PROJ-A-01` o `1.A.001` en lugar de `1.1.1`. Las organizaciones con un estándar de numeración — un contrato, un esquema de códigos de costo, el formato de informes de un cliente — lo usan para que los códigos de Ingantt coincidan con él.
 
@@ -39,7 +39,7 @@ No tiene que definir todos los niveles. **Los niveles más profundos que la últ
 
 ### Opciones
 
-**Generar código EDT para nueva tarea** y **Verificar unicidad de los nuevos códigos EDT** se almacenan con el proyecto y se conservan en un ciclo de ida y vuelta con Microsoft Project. En Ingantt, una máscara con al menos un nivel se aplica automáticamente a todas las tareas, y los códigos son únicos por construcción porque siguen el esquema.
+**Generar código EDT para nueva tarea** y **Verificar unicidad de nuevos códigos EDT** se almacenan con el proyecto y se conservan en un ciclo de ida y vuelta con Microsoft Project. En Ingantt, una máscara con al menos un nivel se aplica automáticamente a todas las tareas, y los códigos son únicos por construcción porque siguen el esquema.
 
 ## Qué sucede al guardar la máscara
 

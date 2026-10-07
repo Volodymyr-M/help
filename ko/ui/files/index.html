@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -213,11 +213,11 @@
       <h1 id="google-drive-연동">Google Drive 연동 <a href="#google-drive-연동" class="heading-anchor">#</a></h1>
 <p>Ingantt는 프로젝트 파일을 Google Drive에 저장하여 어떤 기기에서든 접근할 수 있습니다. 이 문서에서는 로그인, Ingantt가 요청하는 권한, Drive와 Ingantt가 함께 동작하는 방식, 그리고 Google 로그인이 제대로 되지 않을 때 대처하는 방법을 다룹니다.</p>
 <h2 id="google에-로그인">Google에 로그인 <a href="#google에-로그인" class="heading-anchor">#</a></h2>
-<p>프로젝트 화면에서 <strong>Sign in with Google</strong>을 클릭하십시오. 표준 Google 대화 상자가 열리고 아래 권한을 요청합니다. <strong>Sign out of Google</strong>로 언제든지 다시 로그아웃할 수 있습니다.</p>
+<p>프로젝트 화면에서 <strong>Google로 로그인</strong>을 클릭하십시오. 표준 Google 대화 상자가 열리고 아래 권한을 요청합니다. <strong>Google 로그아웃</strong>으로 언제든지 다시 로그아웃할 수 있습니다.</p>
 <p>Ingantt는 다음 권한을 요청합니다:</p>
 <ul>
 <li><strong>프로필 정보 보기</strong> — 계정을 식별하는 데 사용됩니다.</li>
-<li><strong>Google Drive에 연결</strong> — <strong>Web</strong> 버전에만 해당됩니다. Google Drive 웹 인터페이스(<strong>New</strong> 버튼 또는 <strong>Open with</strong> 메뉴)에서 Ingantt 파일을 만들거나 열 수 있습니다.</li>
+<li><strong>Google Drive에 연결</strong> — <strong>Web</strong> 버전에만 해당됩니다. Google Drive 웹 인터페이스(<strong>새로 만들기</strong> 버튼 또는 <strong>Open with</strong> 메뉴)에서 Ingantt 파일을 만들거나 열 수 있습니다.</li>
 <li><strong>이 앱에서 사용하는 특정 Google Drive 파일만 보기, 편집, 생성 및 삭제</strong> — Ingantt가 Google Drive에서 자체 파일을 만들고 편집할 수 있습니다. Ingantt는 다른 파일에 접근할 수 없습니다.</li>
 </ul>
 <blockquote>
@@ -226,20 +226,20 @@
 <h2 id="google-drive에서-프로젝트-만들기-및-열기">Google Drive에서 프로젝트 만들기 및 열기 <a href="#google-drive에서-프로젝트-만들기-및-열기" class="heading-anchor">#</a></h2>
 <p>로그인하면 프로젝트 화면이 곧 사용자의 Drive가 됩니다:</p>
 <ul>
-<li><strong>Recent Projects</strong> — 최근에 연 프로젝트가 날짜별로 묶여 표시됩니다.</li>
-<li><strong>Shared with me</strong> — 다른 사람이 공유한 Ingantt 파일입니다.</li>
-<li><strong>Starred</strong> — <strong>Add to Starred</strong>로 표시한 프로젝트입니다.</li>
-<li><strong>Trash</strong> — 휴지통으로 옮긴 프로젝트입니다. <strong>Restore</strong>로 되돌릴 수 있습니다.</li>
+<li><strong>최근 프로젝트</strong> — 최근에 연 프로젝트가 날짜별로 묶여 표시됩니다.</li>
+<li><strong>나와 공유된 파일</strong> — 다른 사람이 공유한 Ingantt 파일입니다.</li>
+<li><strong>즐겨찾기</strong> — <strong>즐겨찾기에 추가</strong>로 표시한 프로젝트입니다.</li>
+<li><strong>휴지통</strong> — 휴지통으로 옮긴 프로젝트입니다. <strong>복원</strong>으로 되돌릴 수 있습니다.</li>
 </ul>
-<p><strong>Open</strong> → <strong>Open from Google Drive</strong>로 기존 파일을 선택하거나, 해당 대화 상자의 <strong>Upload</strong> 탭에서 기기의 파일을 찾아보거나 끌어다 놓으십시오. Microsoft Project, Primavera 및 그 밖의 지원 형식도 이 방법으로 열 수 있습니다 — <a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a>를 참조하십시오.</p>
-<p>새 프로젝트는 프로젝트 화면의 <strong>New</strong>에서 만듭니다: <strong>New project</strong>, <strong>New with AI</strong> 또는 <strong>New from template</strong>. 웹에서 로그인한 상태라면 새 프로젝트는 처음부터 Google Drive를 대상으로 하며 그 이후로 자동 저장됩니다.</p>
+<p><strong>열기</strong> → <strong>Google Drive에서 열기</strong>로 기존 파일을 선택하거나, 해당 대화 상자의 <strong>업로드</strong> 탭에서 기기의 파일을 찾아보거나 끌어다 놓으십시오. Microsoft Project, Primavera 및 그 밖의 지원 형식도 이 방법으로 열 수 있습니다 — <a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a>를 참조하십시오.</p>
+<p>새 프로젝트는 프로젝트 화면의 <strong>새로 만들기</strong>에서 만듭니다: <strong>새 프로젝트</strong>, <strong>AI로 새로 만들기</strong> 또는 <strong>템플릿에서 새로 만들기</strong>. 웹에서 로그인한 상태라면 새 프로젝트는 처음부터 Google Drive를 대상으로 하며 그 이후로 자동 저장됩니다.</p>
 <blockquote>
 <p><strong>&quot;Shared with me&quot;에 파일이 보이지 않습니까?</strong> Google은 공유된 파일을 먼저 Google Drive에서 열도록 요구합니다. Drive에서 해당 파일을 마우스 오른쪽 버튼으로 클릭하고 <strong>Open with</strong> → <strong>Ingantt</strong>를 선택하십시오. 그러면 목록에 나타납니다.</p>
 </blockquote>
 <h2 id="google-drive-자체-인터페이스에서-ingantt-사용하기웹">Google Drive 자체 인터페이스에서 Ingantt 사용하기(웹) <a href="#google-drive-자체-인터페이스에서-ingantt-사용하기웹" class="heading-anchor">#</a></h2>
-<p>웹에서는 반대로 Drive에서 Ingantt를 실행할 수 있습니다. <strong>Google Drive에 연결</strong> 권한이 바로 이를 위한 것입니다. Ingantt에 로그인할 때 이 권한을 허용하면 Ingantt가 내 계정의 Drive 앱으로 등록되어 Drive의 <strong>New</strong> 메뉴와 Ingantt 파일의 <strong>Open with</strong> 메뉴에 표시됩니다. <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>에서 Ingantt를 추가해도 같은 결과를 얻으므로 둘 다 할 필요는 없습니다.</p>
+<p>웹에서는 반대로 Drive에서 Ingantt를 실행할 수 있습니다. <strong>Google Drive에 연결</strong> 권한이 바로 이를 위한 것입니다. Ingantt에 로그인할 때 이 권한을 허용하면 Ingantt가 내 계정의 Drive 앱으로 등록되어 Drive의 <strong>새로 만들기</strong> 메뉴와 Ingantt 파일의 <strong>Open with</strong> 메뉴에 표시됩니다. <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>에서 Ingantt를 추가해도 같은 결과를 얻으므로 둘 다 할 필요는 없습니다.</p>
 <ul>
-<li><strong>New</strong> → <strong>More</strong> → <strong>Ingantt</strong>는 현재 있는 Drive 폴더에 새 Ingantt 프로젝트를 만듭니다.</li>
+<li><strong>새로 만들기</strong> → <strong>More</strong> → <strong>Ingantt</strong>는 현재 있는 Drive 폴더에 새 Ingantt 프로젝트를 만듭니다.</li>
 <li>Ingantt 파일을 마우스 오른쪽 버튼으로 클릭 → <strong>Open with</strong> → <strong>Ingantt</strong>는 해당 파일을 Ingantt for Web에서 엽니다.</li>
 </ul>
 <p>두 경우 모두 Drive가 <code>web.ingantt.com</code>을 열고 사용할 폴더나 파일을 함께 전달하므로 바로 해당 프로젝트로 이동합니다.</p>

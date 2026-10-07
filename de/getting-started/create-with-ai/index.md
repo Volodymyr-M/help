@@ -7,7 +7,7 @@ Lassen Sie KI einen vollständigen Projektplan für Sie erstellen — beschreibe
 Um einen Projektterminplan mit KI zu erstellen:
 
 1. Klicken Sie auf die **+**-Schaltfläche auf dem Projekte-Bildschirm. Wenn Sie bereits ein Projekt bearbeiten, öffnen Sie stattdessen das Menü **Datei**.
-2. Wählen Sie **Neu erstellen mit KI**.
+2. Wählen Sie **Neu mit KI erstellen**.
 3. Geben Sie eine Beschreibung Ihres Projekts in das Dialogfeld ein.
 4. Klicken Sie auf **ERSTELLEN**.
 

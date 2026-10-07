@@ -19,7 +19,7 @@ Escriba la duración con una **`e`** antes de la unidad:
 
 Las unidades son `min`, `h`, `d`, `w` y `m` — minutos, horas, días, semanas, meses — y todas ellas admiten la `e`. Las abreviaturas están traducidas, así que en una interfaz que no esté en inglés use las letras de unidad de ese idioma; el marcador `e` se mantiene.
 
-También puede usar la casilla **Transcurrida** en lugar de escribirla, en el editor de duración del diálogo [Propiedades de la tarea](/es/building-schedule/task-properties/index.md). Su información emergente es la definición:
+También puede usar la casilla **Transcurrido** en lugar de escribirla, en el editor de duración del diálogo [Propiedades de la tarea](/es/building-schedule/task-properties/index.md). Su información emergente es la definición:
 
 > Transcurrida. Cuando está marcada, la duración cuenta de forma continua (24/7) en lugar de solo durante las horas de trabajo definidas por el calendario.
 
@@ -41,7 +41,7 @@ Compárelo con las unidades de trabajo, que provienen de [Propiedades del proyec
 
 La misma idea se aplica a la posposición de una [dependencia](/es/building-schedule/dependencies/index.md), y es aquí donde más importa. "Comenzar la siguiente tarea tres días después de que esta termine" normalmente significa tres días *calendario*, no tres días de trabajo — de lo contrario, un fin el viernes empuja la sucesora al miércoles.
 
-En la pestaña **Predecesoras** de Propiedades de la tarea, cada vínculo tiene su propia casilla **Transcurrida** junto a la posposición, con el mismo significado:
+En la pestaña **Predecesores** de Propiedades de la tarea, cada vínculo tiene su propia casilla **Transcurrido** junto a la posposición, con el mismo significado:
 
 > Cuando está marcada, el tiempo de posposición cuenta de forma continua (24/7) en lugar de solo durante las horas de trabajo definidas por el calendario.
 

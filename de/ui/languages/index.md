@@ -27,7 +27,7 @@ Dieselbe Liste gilt für alle Plattformen: Web, Android, iOS, Windows und macOS.
 
 Ingantt liest die Spracheinstellung Ihres Geräts — im Web die Sprache, die Ihr Browser meldet — und verwendet sie, wenn sie eine der oben genannten Sprachen ist. Es gibt keine Spracheinstellung innerhalb von Ingantt: Um die Oberflächensprache zu ändern, ändern Sie die Sprache Ihres Geräts oder Browsers und öffnen Sie Ingantt erneut.
 
-Ihre Sprache bestimmt auch einige regionale Standardwerte: ob Uhrzeiten im 12- oder 24-Stunden-Format angezeigt werden, an welchem Tag eine Woche beginnt und mit welchem Währungssymbol ein neues Projekt startet. Dies sind nur Ausgangspunkte — das **Datums-/Zeitformat** finden Sie im Dialog **Optionen**, und Wochenbeginn und Währung gehören zum Projekt und werden in den **Projekteigenschaften** festgelegt.
+Ihre Sprache bestimmt auch einige regionale Standardwerte: ob Uhrzeiten im 12- oder 24-Stunden-Format angezeigt werden, an welchem Tag eine Woche beginnt und mit welchem Währungssymbol ein neues Projekt startet. Dies sind nur Ausgangspunkte — das **Datums-/Uhrzeitformat** finden Sie im Dialog **Optionen**, und Wochenbeginn und Währung gehören zum Projekt und werden in den **Projekteigenschaften** festgelegt.
 
 ## Die Sprache Ihres Projekts
 

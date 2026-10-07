@@ -38,16 +38,16 @@ Ingantt tiene 3 calendarios predefinidos, uno de los cuales (**Estándar**) se a
 | Calendario | Descripción                                                                                     |
 |------------------|-------------------------------------------------------------------------------------------------|
 | **Estándar**     | Se trabaja de lunes a viernes, de 8 AM a 5 PM con un descanso de 1 hora (12 PM a 1 PM).       |
-| **Turno nocturno**  | Se trabaja de la noche del lunes a la mañana del sábado, de 11 PM a 8 AM con un descanso de 1 hora (3 AM a 4 AM). |
+| **Turno Nocturno**  | Se trabaja de la noche del lunes a la mañana del sábado, de 11 PM a 8 AM con un descanso de 1 hora (3 AM a 4 AM). |
 | **24 Horas**     | Se trabaja las 24 horas del día, todos los días.                                                         |
 
-Puede editar cualquiera de los calendarios predefinidos usando el diálogo **Propiedades del calendario** o crear sus propios calendarios basados en ellos usando el diálogo **Agregar calendario**.
+Puede editar cualquiera de los calendarios predefinidos usando el diálogo **Propiedades del calendario** o crear sus propios calendarios basados en ellos usando el diálogo **Añadir calendario**.
 
 ## Semanas laborales
 
 Las semanas laborales le permiten definir cambios específicos por rango de fechas en el horario semanal. Por ejemplo, podría tener un período en el que todos trabajan jornadas de 4 horas en lugar de las 8 estándar, o un período en el que el sábado se convierte en día laborable.
 
-Las semanas laborales se configuran en la pestaña **Semanas laborales** del diálogo **Propiedades del calendario**. Cada semana laboral tiene un nombre, una fecha de inicio y fin, y definiciones de horario de trabajo por día de la semana.
+Las semanas laborales se configuran en la pestaña **Semanas de trabajo** del diálogo **Propiedades del calendario**. Cada semana laboral tiene un nombre, una fecha de inicio y fin, y definiciones de horario de trabajo por día de la semana.
 
 > Las excepciones del calendario tienen prioridad sobre las semanas laborales, que a su vez tienen prioridad sobre el horario predeterminado de los días de la semana.
 

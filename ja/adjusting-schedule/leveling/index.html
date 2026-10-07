@@ -215,20 +215,20 @@
 <h2 id="過負荷リソース">過負荷リソース <a href="#過負荷リソース" class="heading-anchor">#</a></h2>
 <p>稼働リソースは<strong>過負荷</strong>になることがあります。つまり、カレンダーと稼働状況に基づいて完了できる量を超える作業が割り当てられている状態です。たとえば、プロジェクトに2つのタスクがあり、各タスクの期間が1日で、<a href="/ja/building-schedule/dependencies/#%E5%85%88%E8%A1%8C%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A8%E4%BE%9D%E5%AD%98%E9%96%A2%E4%BF%82">依存関係</a>がなく、両方が同じ稼働リソースに割り当てられている場合、そのリソースは過負荷です。リソースは1日に2日分の作業を行わなければなりません。これを解決するには、2つのタスクを依存関係でリンクするだけです。</p>
 <p>タスクに過負荷のリソースが割り当てられている場合、Inganttはタスクリストに特別なアイコンを表示します。</p>
-<p>リソースが過負荷の場合、Inganttは<strong>Resources</strong>ビューと<strong>Resource Usage</strong>ビューに特別なアイコンを表示します。</p>
+<p>リソースが過負荷の場合、Inganttは<strong>リソース</strong>ビューと<strong>リソース使用</strong>ビューに特別なアイコンを表示します。</p>
 <p>さらに、Inganttはそのようなタスクとリソースの数をカウントし、ナビゲーションドロワーに数値を表示します。</p>
 <h2 id="自動平準化">自動平準化 <a href="#自動平準化" class="heading-anchor">#</a></h2>
 <p>タスク間の依存関係がタイムライン上の位置を制御します。大規模なプロジェクトでは、依存関係の設定漏れが起きやすく、同じ稼働リソースに割り当てられた複数のタスクが同時にスケジュールされてしまいます。リソースは過負荷になり、Inganttはタスクリストとリソースリストに特別なアイコンで通知します。</p>
 <p>依存関係や制約を設定してタスクを移動し、作業が同時に行われないようにすることで、過負荷を手動で解決できます。</p>
-<p>過負荷を解決する別の方法が自動平準化です。<strong>Project</strong>メニューで<strong>Auto-level resources</strong>を選択すると、Inganttは一部のタスクをタイムライン上でさらに先にシフトし、リソースの過負荷を防ぎます。これらの自動調整は、<strong>Project</strong>メニューで<strong>Clear leveling</strong>を選択して解除できます。</p>
+<p>過負荷を解決する別の方法が自動平準化です。<strong>プロジェクト</strong>メニューで<strong>リソースの自動平準化</strong>を選択すると、Inganttは一部のタスクをタイムライン上でさらに先にシフトし、リソースの過負荷を防ぎます。これらの自動調整は、<strong>プロジェクト</strong>メニューで<strong>平準化をクリア</strong>を選択して解除できます。</p>
 <p>自動平準化コマンドには3つのスコープオプションがあります：</p>
 <ul>
-<li><strong>All tasks</strong> — プロジェクト内のすべてのタスクを平準化</li>
-<li><strong>Selected tasks</strong> — 現在選択されているタスクのみを平準化</li>
-<li><strong>Selected resources</strong> — 選択されたリソースの過負荷競合のみを平準化（ResourcesおよびResource Usageビューで利用可能）</li>
+<li><strong>すべてのタスク</strong> — プロジェクト内のすべてのタスクを平準化</li>
+<li><strong>選択したタスク</strong> — 現在選択されているタスクのみを平準化</li>
+<li><strong>選択したリソース</strong> — 選択されたリソースの過負荷競合のみを平準化（ResourcesおよびResource Usageビューで利用可能）</li>
 </ul>
 <h3 id="自動平準化の仕組み">自動平準化の仕組み <a href="#自動平準化の仕組み" class="heading-anchor">#</a></h3>
-<p><strong>Auto-level resources</strong>を実行すると、Inganttは<strong>タスクを遅延または分割</strong>することで過負荷を解消します。リソースの再割り当てや割り当て単位の変更は行いません。</p>
+<p><strong>リソースの自動平準化</strong>を実行すると、Inganttは<strong>タスクを遅延または分割</strong>することで過負荷を解消します。リソースの再割り当てや割り当て単位の変更は行いません。</p>
 <p>アルゴリズムは、リソースのキャパシティを超える割り当て作業がある日を特定し、どの競合タスクを遅延させるかを決定します。各タスクはいくつかの要因に基づいてスコアリングされ、スコアが高いタスクは遅延から保護されます：</p>
 <table>
 <thead>
@@ -269,36 +269,36 @@
 <p>自動平準化によりプロジェクトの終了日が延びる場合があります。可能な限り多くの過負荷を解消しますが、制約によりこれ以上の遅延ができない場合、一部の過負荷が残ることがあります。</p>
 </blockquote>
 <h3 id="平準化オプション">平準化オプション <a href="#平準化オプション" class="heading-anchor">#</a></h3>
-<p><strong>Project</strong>メニューからアクセスできる<strong>Leveling Options</strong>ダイアログで、平準化の動作を設定します：</p>
+<p><strong>プロジェクト</strong>メニューからアクセスできる<strong>平準化オプション</strong>ダイアログで、平準化の動作を設定します：</p>
 <ul>
-<li><strong>Leveling order</strong> — タスクの優先順位付け方法を制御：ID Only（IDの昇順）、Standard（複数要因スコアリング）、Priority Standard（優先度を最優先にし、次に標準要因；デフォルト）</li>
-<li><strong>Overallocation basis</strong> — 検出の粒度を制御：分、時間、日、週、月。分および時間の設定は、日次合計がキャパシティ内であってもタスクが日中に重複する場合の競合を検出します。</li>
+<li><strong>平準化の順序</strong> — タスクの優先順位付け方法を制御：ID Only（IDの昇順）、Standard（複数要因スコアリング）、Priority Standard（優先度を最優先にし、次に標準要因；デフォルト）</li>
+<li><strong>過剰割り当ての基準</strong> — 検出の粒度を制御：分、時間、日、週、月。分および時間の設定は、日次合計がキャパシティ内であってもタスクが日中に重複する場合の競合を検出します。</li>
 <li><strong>Adjust individual assignments</strong> — 有効にすると、タスクに複数のリソース割り当てがある場合、タスク全体ではなく過負荷のリソースの割り当てのみが遅延されます</li>
 <li><strong>Create splits in remaining work</strong> — 有効にすると、平準化アルゴリズムはタスク全体を遅延させる代わりに、競合箇所で作業を分割できます</li>
-<li><strong>Level only within available slack</strong> — 平準化の遅延をタスクの全余裕を超えないように制限し、プロジェクト終了日の延長を防止します</li>
-<li><strong>Leveling range</strong> — 特定の日付範囲内のタスクに平準化を制限します</li>
+<li><strong>利用可能なスラック内でのみ平準化</strong> — 平準化の遅延をタスクの全余裕を超えないように制限し、プロジェクト終了日の延長を防止します</li>
+<li><strong>平準化の範囲</strong> — 特定の日付範囲内のタスクに平準化を制限します</li>
 </ul>
 <h3 id="平準化の対象外">平準化の対象外 <a href="#平準化の対象外" class="heading-anchor">#</a></h3>
 <p>以下のタスクとリソースは自動平準化の影響を受けません：</p>
 <ul>
 <li><a href="#%E5%84%AA%E5%85%88%E5%BA%A6">優先度</a>が<strong>1000</strong>に設定されたタスク</li>
-<li><strong>Can Level</strong>が<strong>false</strong>に設定されたタスク（Task Propertiesダイアログの<strong>Leveling</strong>タブ）</li>
-<li><strong>Must start on</strong>または<strong>Must finish on</strong>の<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>があるタスク</li>
+<li><strong>平準化可能</strong>が<strong>false</strong>に設定されたタスク（Task Propertiesダイアログの<strong>平準化</strong>タブ）</li>
+<li><strong>必ず開始</strong>または<strong>必ず終了</strong>の<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>があるタスク</li>
 <li><a href="/ja/building-schedule/tasks/#%E3%82%B5%E3%83%9E%E3%83%AA%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%AF">サマリータスク</a></li>
 <li>期間ゼロのマイルストーン</li>
 <li>完全に完了したタスク（100%）</li>
-<li>Resource Propertiesダイアログで<strong>Can Level</strong>が<strong>false</strong>に設定されたリソース</li>
-<li><strong>Proposed</strong>の<a href="/ja/building-schedule/resources/#%E4%BA%88%E7%B4%84%E3%82%BF%E3%82%A4%E3%83%97">予約タイプ</a>のリソース（Proposedのリソースを含める平準化オプションが有効でない限り）</li>
+<li>Resource Propertiesダイアログで<strong>平準化可能</strong>が<strong>false</strong>に設定されたリソース</li>
+<li><strong>提案</strong>の<a href="/ja/building-schedule/resources/#%E4%BA%88%E7%B4%84%E3%82%BF%E3%82%A4%E3%83%97">予約タイプ</a>のリソース（Proposedのリソースを含める平準化オプションが有効でない限り）</li>
 </ul>
 <h3 id="再平準化とクリア">再平準化とクリア <a href="#再平準化とクリア" class="heading-anchor">#</a></h3>
-<p><strong>Auto-level resources</strong>を実行するたびに、以前の平準化は自動的にクリアされます。遅延が蓄積するのを防ぐため、平準化は常にクリーンな未平準化のスケジュールから開始されます。</p>
-<p>平準化後にスケジュールを変更した場合（タスクの追加、依存関係の変更など）、既存の平準化遅延は保持されますが、すべての過負荷を解消しきれない場合があります。更新されたスケジュールを再平準化するには、<strong>Auto-level resources</strong>をもう一度実行してください。</p>
-<p>すべての平準化遅延を除去し、元のCPM計算スケジュールに戻すには、<strong>Project</strong>メニューから<strong>Clear leveling</strong>を選択します。</p>
+<p><strong>リソースの自動平準化</strong>を実行するたびに、以前の平準化は自動的にクリアされます。遅延が蓄積するのを防ぐため、平準化は常にクリーンな未平準化のスケジュールから開始されます。</p>
+<p>平準化後にスケジュールを変更した場合（タスクの追加、依存関係の変更など）、既存の平準化遅延は保持されますが、すべての過負荷を解消しきれない場合があります。更新されたスケジュールを再平準化するには、<strong>リソースの自動平準化</strong>をもう一度実行してください。</p>
+<p>すべての平準化遅延を除去し、元のCPM計算スケジュールに戻すには、<strong>プロジェクト</strong>メニューから<strong>平準化をクリア</strong>を選択します。</p>
 <h3 id="平準化ガント">平準化ガント <a href="#平準化ガント" class="heading-anchor">#</a></h3>
-<p>自動平準化を実行した後、ガントチャート領域に<strong>Leveling Gantt</strong>トグルボタンが表示されます。有効にすると、平準化前の位置（平準化前にタスクがあった場所）に緑色のバーが描画され、標準のタスクバーは現在の平準化後の位置に残ります。これにより、元のスケジュールと平準化後のスケジュールを比較し、各タスクがどれだけ遅延されたかを確認できます。</p>
+<p>自動平準化を実行した後、ガントチャート領域に<strong>平準化ガント</strong>トグルボタンが表示されます。有効にすると、平準化前の位置（平準化前にタスクがあった場所）に緑色のバーが描画され、標準のタスクバーは現在の平準化後の位置に残ります。これにより、元のスケジュールと平準化後のスケジュールを比較し、各タスクがどれだけ遅延されたかを確認できます。</p>
 <p>トグルは、プロジェクトに平準化データがある場合にのみ表示され、平準化をクリアすると自動的に非表示になります。</p>
 <h2 id="優先度">優先度 <a href="#優先度" class="heading-anchor">#</a></h2>
-<p><strong>Priority</strong>フィールドは<strong>Task Properties</strong>ダイアログの<strong>Leveling</strong>タブにあります。0から1000までの整数値を受け付け、デフォルトは500です。</p>
+<p><strong>優先度</strong>フィールドは<strong>タスクのプロパティ</strong>ダイアログの<strong>平準化</strong>タブにあります。0から1000までの整数値を受け付け、デフォルトは500です。</p>
 <p>優先度は、リソースの過負荷を解消する際にどのタスクを遅延させるかを<a href="#%E8%87%AA%E5%8B%95%E5%B9%B3%E6%BA%96%E5%8C%96">自動平準化</a>アルゴリズムが決定するために使用されます。優先度の高いタスクほど遅延される可能性が低くなります：</p>
 <ul>
 <li><strong>0</strong> — 最も低い優先度、最も遅延されやすい</li>

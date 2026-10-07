@@ -212,7 +212,7 @@
     <main id="main-content" class="content">
       <h1 id="オフラインでの作業">オフラインでの作業 <a href="#オフラインでの作業" class="heading-anchor">#</a></h1>
 <p>自動保存をオフにして、意図的に保存するまでGoogle Driveに何も書き込まれないようにします。接続が切れそうなときに便利です。</p>
-<p><strong>Web</strong>版では、メニュー項目は<strong>File → Work offline (no autosave)</strong>です。Windows、macOS、Android、iOSでは、同じスイッチが<strong>Enable autosave</strong>という名前になっています。</p>
+<p><strong>Web</strong>版では、メニュー項目は<strong>ファイル → オフラインで作業 (自動保存なし)</strong>です。Windows、macOS、Android、iOSでは、同じスイッチが<strong>自動保存を有効にする</strong>という名前になっています。</p>
 <h2 id="work-offlineの機能">Work offlineの機能 <a href="#work-offlineの機能" class="heading-anchor">#</a></h2>
 <p><strong>File → Work offline</strong>は、現在のタブの自動保存をオフにします。それがすべてです。オンの間、Inganttは20秒ごとにプロジェクトをGoogle Driveに書き込むのをやめ、保存するまでブラウザから何も送信されません。</p>
 <p>オンにすると、一度だけ注意が表示されます：</p>
@@ -226,10 +226,10 @@
 <li>まだ接続があるうちに計画を開きます。</li>
 <li><strong>File → Work offline</strong>をオンにします。</li>
 <li>通常どおり編集します。すべてはブラウザ内で行われます。スケジュールは再計算され、元に戻す／やり直しも機能し、どこにも何も送信されません。</li>
-<li>オンラインに戻ったら、<strong>Work offline</strong>をオフに戻し、<strong>Save</strong>を押します（または<code>Ctrl</code>/<code>Cmd</code> + <code>S</code>）。この手順で作業がDriveに保存されます。</li>
+<li>オンラインに戻ったら、<strong>Work offline</strong>をオフに戻し、<strong>保存</strong>を押します（または<code>Ctrl</code>/<code>Cmd</code> + <code>S</code>）。この手順で作業がDriveに保存されます。</li>
 <li>この時点から自動保存が再開されます。</li>
 </ol>
-<p>手順4を覚えておくことに頼りたくない場合は、接続が切れる前にコピーをエクスポートしてください。<strong>File → Export → XML</strong>で計画がデバイスにダウンロードされ、後でそのファイルを再び開くことができます。</p>
+<p>手順4を覚えておくことに頼りたくない場合は、接続が切れる前にコピーをエクスポートしてください。<strong>ファイル → エクスポート → XML</strong>で計画がデバイスにダウンロードされ、後でそのファイルを再び開くことができます。</p>
 <h2 id="saveボタンが現在の状態を示す">Saveボタンが現在の状態を示す <a href="#saveボタンが現在の状態を示す" class="heading-anchor">#</a></h2>
 <p>ツールバーのSaveボタンが注目すべきインジケーターです：</p>
 <table>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>File saved to Google Drive</strong></td>
+<td><strong>Googleドライブに保存されました</strong></td>
 <td>すべてDriveに保存されています。</td>
 </tr>
 <tr>
-<td><strong>Autosave pending…</strong></td>
+<td><strong>自動保存が保留中...</strong></td>
 <td>未保存の編集があり、まもなく自動保存が行われます。</td>
 </tr>
 <tr>
-<td><strong>Saving…</strong></td>
+<td><strong>保存中...</strong></td>
 <td>保存が進行中です。</td>
 </tr>
 <tr>
-<td><strong>Save file to Google Drive</strong></td>
+<td><strong>Googleドライブに保存</strong></td>
 <td>未保存の編集があり、自動保存がオフです。保存が必要です。</td>
 </tr>
 <tr>
-<td><strong>Error saving file to Google Drive</strong></td>
+<td><strong>Googleドライブに保存する際のエラー</strong></td>
 <td>保存が試みられ、失敗しました。編集内容はまだタブ内にあり、未保存のままです。</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="プラットフォームによる違い">プラットフォームによる違い <a href="#プラットフォームによる違い" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Webではこの設定は保持されません。</strong> タブごと、セッションごとの設定です。新しいタブを開いたり再読み込みしたりすると、自動保存は再びオンになります。これは意図的なものです。自動保存オンのほうが安全なデフォルトであり、オフラインスイッチの切り忘れが付いて回ることがないようにしています。Windows、macOS、Android、iOSでは、自動保存の設定は<em>記憶されます</em>。</li>
-<li><strong>デフォルトが異なります。</strong> Webでは、自動保存は初期状態でオンです。デスクトップ版とモバイル版では初期状態でオフで、同じメニュー項目が<strong>Enable autosave</strong>と表示されます。</li>
+<li><strong>デフォルトが異なります。</strong> Webでは、自動保存は初期状態でオンです。デスクトップ版とモバイル版では初期状態でオフで、同じメニュー項目が<strong>自動保存を有効にする</strong>と表示されます。</li>
 <li><strong>まだ保存していないプロジェクトは、オフラインモードであるかどうかにかかわらず、まったく自動保存されません。</strong> 自動保存は、Driveにすでに存在するファイルしか更新できません。一度保存すれば、あとは自動保存が引き継ぎます。</li>
 <li><strong>Web版でデバイスから開いたファイルは、決して自動保存されません。</strong> Ingantt for Webはディスク上のファイルに書き戻すことができません。自動保存を利用するには、<a href="/ja/ui/files/">Google Drive</a>に保存してください。</li>
 </ul>

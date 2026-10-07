@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -217,20 +217,20 @@
 <p>Andere Vorgänge haben keinen Puffer — jede Verzögerung verschiebt das Enddatum des Projekts. Diese werden als <em>kritische Vorgänge</em> bezeichnet. Um Ihr Projekt im Zeitplan zu halten, achten Sie besonders auf sie, wenn Sie den Fortschritt verfolgen.</p>
 <p>Ein Vorgang ist auch kritisch, wenn:</p>
 <ul>
-<li>Er eine <strong>Muss anfangen am</strong>- oder <strong>Muss enden am</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> hat</li>
+<li>Er eine <strong>Muss beginnen am</strong>- oder <strong>Muss enden am</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> hat</li>
 <li>Er eine <strong>So spät wie möglich</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> in einem vom Startdatum geplanten Projekt hat</li>
-<li>Sein Enddatum seinen <a href="/de/building-schedule/task-properties/#stichtag">Stichtag</a> erreicht oder überschreitet</li>
+<li>Sein Enddatum seinen <a href="/de/building-schedule/task-properties/#frist">Stichtag</a> erreicht oder überschreitet</li>
 <li>Er <strong>negativen Puffer</strong> hat — ein Planungskonflikt, bei dem Einschränkungen den Vorgang auf einen früheren Zeitpunkt zwingen, als seine Abhängigkeiten erlauben</li>
 </ul>
 <p>Vorgänge, die zu 100 % abgeschlossen sind, werden nie als kritisch markiert, unabhängig von anderen Bedingungen.</p>
-<p>Ingantt erkennt kritische Vorgänge automatisch. Wenn die Option <strong>Kritische Vorgänge hervorheben</strong> aktiviert ist (über das Menü <strong>Ansicht</strong>, das Menü <strong>Diagramm</strong> in der Menüleiste oder den Dialog <strong>Optionen</strong>), werden diese Vorgänge rot dargestellt.</p>
-<p>Vorgänge mit negativem Puffer zeigen auch ein Warnsymbol in der Vorgangsliste an, das auf einen Planungskonflikt hinweist. Dies tritt typischerweise auf, wenn eine <strong>Anfang nicht später als</strong>- oder <strong>Ende nicht später als</strong>-Einschränkung mit den Abhängigkeiten des Vorgangs in Konflikt steht.</p>
+<p>Ingantt erkennt kritische Vorgänge automatisch. Wenn die Option <strong>Kritische Aufgaben hervorheben</strong> aktiviert ist (über das Menü <strong>Ansicht</strong>, das Menü <strong>Diagramm</strong> in der Menüleiste oder den Dialog <strong>Optionen</strong>), werden diese Vorgänge rot dargestellt.</p>
+<p>Vorgänge mit negativem Puffer zeigen auch ein Warnsymbol in der Vorgangsliste an, das auf einen Planungskonflikt hinweist. Dies tritt typischerweise auf, wenn eine <strong>Beginn nicht nach</strong>- oder <strong>Ende nicht nach</strong>-Einschränkung mit den Abhängigkeiten des Vorgangs in Konflikt steht.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="Kritisch" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="optionen-für-den-kritischen-pfad">Optionen für den kritischen Pfad <a href="#optionen-für-den-kritischen-pfad" class="heading-anchor">#</a></h2>
 <p>Auf dem Reiter <strong>Sonstiges</strong> des Dialogs <strong>Projekteigenschaften</strong> können Sie konfigurieren, wie der kritische Pfad berechnet wird:</p>
 <ul>
 <li><strong>Mehrere kritische Pfade berechnen</strong> — Wenn aktiviert, erhält jede unverbundene Gruppe verknüpfter Vorgänge ihren eigenen kritischen Pfad. Wenn deaktiviert (die Standardeinstellung), leiten Vorgänge ohne Nachfolger ihr spätes Ende vom Projektendtermin ab.</li>
-<li><strong>Grenzwert für kritischen Puffer</strong> — Standardmäßig sind Vorgänge mit null oder negativem Puffer kritisch. Sie können diesen Schwellenwert erhöhen, sodass Vorgänge mit Puffer bis zur angegebenen Anzahl von Tagen ebenfalls als kritisch betrachtet werden.</li>
+<li><strong>Aufgaben sind kritisch, wenn der Puffer kleiner oder gleich ist</strong> — Standardmäßig sind Vorgänge mit null oder negativem Puffer kritisch. Sie können diesen Schwellenwert erhöhen, sodass Vorgänge mit Puffer bis zur angegebenen Anzahl von Tagen ebenfalls als kritisch betrachtet werden.</li>
 </ul>
 
     </main>

@@ -6,17 +6,17 @@ Weisen Sie Vorgängen und Ressourcen Kosten zu, um den Gesamtpreis Ihres Projekt
 
 Die Kosten jedes Vorgangs sind eine Kombination aus seinen eigenen Fixkosten und den Kosten seiner zugewiesenen Ressourcen. Ingantt berechnet die Gesamtkosten jedes Vorgangs und zeigt sie in der Spalte **Kosten** in der Vorgangsliste an.
 
-*Vorgangs-**Kosten** = **Fixkosten** des Vorgangs + Kosten der dem Vorgang zugewiesenen Ressourcen*
+*Vorgangs-**Kosten** = **Feste Kosten** des Vorgangs + Kosten der dem Vorgang zugewiesenen Ressourcen*
 
-> Wenn Sie die Spalte **Kosten** in der Vorgangsliste nicht sehen, stellen Sie sicher, dass das Flag **Kostenspalte** auf dem Reiter **Vorgangsspalten** des Dialogs **Optionen** aktiviert ist.
+> Wenn Sie die Spalte **Kosten** in der Vorgangsliste nicht sehen, stellen Sie sicher, dass das Flag **Kostenspalte** auf dem Reiter **Aufgabenspalten** des Dialogs **Optionen** aktiviert ist.
 
 ## Sammelvorgangskosten
 
 Jeder [Sammelvorgang](/de/building-schedule/tasks/index.md#sammelvorgänge) zeigt in seinem Feld **Kosten** die Gesamtkosten aller seiner Teilvorgänge an.
 
-Wie ein regulärer Vorgang kann ein Sammelvorgang jedoch [zugewiesene Ressourcen](/de/building-schedule/assignments/index.md#ressourcenzuweisungen-und-einheiten) und **Fixkosten** haben. Diese werden zusätzlich zu den Gesamtkosten der Teilvorgänge hinzuaddiert und erhöhen die **Kosten** des Sammelvorgangs.
+Wie ein regulärer Vorgang kann ein Sammelvorgang jedoch [zugewiesene Ressourcen](/de/building-schedule/assignments/index.md#ressourcenzuweisungen-und-einheiten) und **Feste Kosten** haben. Diese werden zusätzlich zu den Gesamtkosten der Teilvorgänge hinzuaddiert und erhöhen die **Kosten** des Sammelvorgangs.
 
-*Sammelvorgang-**Kosten** = Gesamtkosten aller Teilvorgänge + **Fixkosten** des Sammelvorgangs + Kosten der dem Sammelvorgang zugewiesenen Ressourcen*
+*Sammelvorgang-**Kosten** = Gesamtkosten aller Teilvorgänge + **Feste Kosten** des Sammelvorgangs + Kosten der dem Sammelvorgang zugewiesenen Ressourcen*
 
 Verwenden Sie den [Projektsammelvorgang](/de/building-schedule/tasks/index.md#projektsammelvorgang), um die Gesamtkosten Ihres gesamten Projekts einzusehen und zu verwalten.
 

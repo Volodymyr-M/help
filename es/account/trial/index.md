@@ -15,14 +15,14 @@ Todo. No hay ninguna función restringida durante la prueba — la generación d
 El cajón de navegación muestra su estado:
 
 - **La prueba gratuita finaliza en N días**
-- **La prueba gratuita está a punto de finalizar**
-- **La prueba gratuita ha finalizado**
+- **La prueba gratuita casi ha terminado**
+- **Prueba gratuita terminada**
 
 También recibe un correo electrónico un par de días antes de que finalice la prueba y otro cuando ha finalizado.
 
 ## Cuando finaliza la prueba
 
-Ingantt cambia al modo de **solo lectura** y la interfaz indica *Modo de solo lectura porque la prueba ha finalizado*.
+Ingantt cambia al modo de **solo lectura** y la interfaz indica *Modo solo lectura porque terminó la prueba gratuita*.
 
 - **No se elimina nada.** Sus archivos de proyecto permanecen en su Google Drive, exactamente donde estaban. Son suyos; Ingantt no almacena sus proyectos en sus propios servidores.
 - Puede seguir abriendo sus proyectos y leerlos.

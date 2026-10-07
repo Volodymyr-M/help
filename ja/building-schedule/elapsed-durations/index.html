@@ -243,7 +243,7 @@
 </tbody>
 </table>
 <p>単位は<code>min</code>、<code>h</code>、<code>d</code>、<code>w</code>、<code>m</code>（分、時間、日、週、月）で、いずれにも<code>e</code>を付けることができます。略語は翻訳されているため、英語以外のインターフェースではその言語の単位文字を使用してください。<code>e</code>マーカーはそのままです。</p>
-<p>入力する代わりに、<a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a>ダイアログの期間エディターにある<strong>Elapsed</strong>チェックボックスを使用することもできます。そのツールチップがそのまま定義になっています：</p>
+<p>入力する代わりに、<a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a>ダイアログの期間エディターにある<strong>経過</strong>チェックボックスを使用することもできます。そのツールチップがそのまま定義になっています：</p>
 <blockquote>
 <p>Elapsed（経過）。チェックすると、期間はカレンダーで定義された稼働時間中だけでなく、連続して（24時間365日）カウントされます。</p>
 </blockquote>
@@ -275,7 +275,7 @@
 <p>これを稼働単位と比較してみましょう。稼働単位は<a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a>で決まり、デフォルトでは1日8時間、1週間5日、1か月20日です。したがって、<code>1w</code>は40稼働時間ですが、<code>1ew</code>は暦上の168時間です。</p>
 <h2 id="依存関係の経過ラグ">依存関係の経過ラグ <a href="#依存関係の経過ラグ" class="heading-anchor">#</a></h2>
 <p>同じ考え方は<a href="/ja/building-schedule/dependencies/">依存関係</a>のラグにも当てはまり、ここが最も重要なところです。「このタスクの終了の3日後に次のタスクを開始する」は、通常3稼働日ではなく3<em>暦日</em>を意味します。そうでなければ、金曜日の終了は後続タスクを水曜日まで押しやってしまいます。</p>
-<p>タスクのプロパティの<strong>Predecessors</strong>タブでは、各リンクのラグの隣に独自の<strong>Elapsed</strong>チェックボックスがあり、意味は同じです：</p>
+<p>タスクのプロパティの<strong>先行タスク</strong>タブでは、各リンクのラグの隣に独自の<strong>経過</strong>チェックボックスがあり、意味は同じです：</p>
 <blockquote>
 <p>チェックすると、ラグはカレンダーで定義された稼働時間中だけでなく、連続して（24時間365日）カウントされます。</p>
 </blockquote>

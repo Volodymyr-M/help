@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/" class="active" aria-current="page">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -218,23 +218,23 @@
 <li><strong>Eccezioni</strong>: Date in cui non si lavora o si lavora in orari diversi rispetto a quelli definiti nel programma settimanale.</li>
 </ul>
 <h2 id="calendario-del-progetto">Calendario del progetto <a href="#calendario-del-progetto" class="heading-anchor">#</a></h2>
-<p>Un progetto ha un <strong>Calendar</strong> associato, come specificato nella finestra <strong>Project Properties</strong>. Questo calendario definisce come vengono pianificate le attività che non sono assegnate a risorse di tipo lavoro. I giorni non lavorativi come i fine settimana vengono mostrati nel diagramma di Gantt in base a questo calendario.</p>
+<p>Un progetto ha un <strong>Calendario</strong> associato, come specificato nella finestra <strong>Proprietà del Progetto</strong>. Questo calendario definisce come vengono pianificate le attività che non sono assegnate a risorse di tipo lavoro. I giorni non lavorativi come i fine settimana vengono mostrati nel diagramma di Gantt in base a questo calendario.</p>
 <h2 id="calendario-della-risorsa">Calendario della risorsa <a href="#calendario-della-risorsa" class="heading-anchor">#</a></h2>
-<p>Ogni <a href="/it/building-schedule/resources/#tipo-di-risorsa">risorsa di tipo lavoro</a> ha un calendario associato, come specificato nel campo <strong>Base Calendar</strong> della finestra <strong>Resource Properties</strong>. Quando la risorsa di tipo lavoro viene <a href="/it/building-schedule/assignments/#assegnazioni-delle-risorse-e-unit%C3%A0">assegnata</a> a un'attività, il suo calendario influenza la pianificazione dell'attività.</p>
+<p>Ogni <a href="/it/building-schedule/resources/#tipo-di-risorsa">risorsa di tipo lavoro</a> ha un calendario associato, come specificato nel campo <strong>Calendario di Base</strong> della finestra <strong>Proprietà della Risorsa</strong>. Quando la risorsa di tipo lavoro viene <a href="/it/building-schedule/assignments/#assegnazioni-delle-risorse-e-unit%C3%A0">assegnata</a> a un'attività, il suo calendario influenza la pianificazione dell'attività.</p>
 <p>Quando più risorse di tipo lavoro sono assegnate a un'attività, i loro calendari vengono <strong>intersecati</strong> — il che significa che il lavoro viene pianificato solo negli orari in cui <strong>tutte</strong> le risorse assegnate sono disponibili. Ad esempio, se la Risorsa A lavora lun-mer e la Risorsa B lavora mer-ven, un'attività assegnata a entrambe verrà pianificata solo il mercoledì.</p>
 <blockquote>
-<p>Se più risorse condividono un programma di lavoro simile, crea un unico calendario e assegnalo a tutte. Puoi comunque specificare eccezioni per ogni risorsa separatamente nelle <strong>Resource Properties</strong> — ad esempio, ferie o periodi di lavoro modificati in date specifiche.</p>
+<p>Se più risorse condividono un programma di lavoro simile, crea un unico calendario e assegnalo a tutte. Puoi comunque specificare eccezioni per ogni risorsa separatamente nelle <strong>Proprietà della Risorsa</strong> — ad esempio, ferie o periodi di lavoro modificati in date specifiche.</p>
 </blockquote>
 <h2 id="calendario-dellattività">Calendario dell'attività <a href="#calendario-dellattività" class="heading-anchor">#</a></h2>
-<p>Ogni attività ha una proprietà <strong>Calendar</strong> nella finestra <strong>Task Properties</strong>, impostata su <strong>NONE</strong> per impostazione predefinita. Quando è impostata su <strong>NONE</strong>:</p>
+<p>Ogni attività ha una proprietà <strong>Calendario</strong> nella finestra <strong>Proprietà del Compito</strong>, impostata su <strong>NESSUNO</strong> per impostazione predefinita. Quando è impostata su <strong>NESSUNO</strong>:</p>
 <ul>
 <li>Se un'attività non è assegnata ad alcuna risorsa di tipo lavoro, l'attività viene pianificata secondo il calendario del progetto.</li>
 <li>Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo i loro calendari.</li>
 </ul>
-<p>Se la proprietà <strong>Calendar</strong> dell'attività è impostata su un calendario anziché su <strong>NONE</strong>:</p>
+<p>Se la proprietà <strong>Calendario</strong> dell'attività è impostata su un calendario anziché su <strong>NESSUNO</strong>:</p>
 <ul>
 <li>Se un'attività non è assegnata ad alcuna risorsa di tipo lavoro, l'attività viene pianificata secondo il calendario specificato.</li>
-<li>Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo l'<strong>intersezione</strong> del calendario dell'attività e dei calendari delle risorse — il lavoro viene pianificato solo negli orari che sono lavorativi sia nel calendario dell'attività che in tutti i calendari delle risorse. Per utilizzare solo il calendario dell'attività, ignorando completamente i calendari delle risorse, seleziona il flag <strong>Ignore resource calendars</strong>.</li>
+<li>Se un'attività è assegnata a risorse di tipo lavoro, l'attività viene pianificata secondo l'<strong>intersezione</strong> del calendario dell'attività e dei calendari delle risorse — il lavoro viene pianificato solo negli orari che sono lavorativi sia nel calendario dell'attività che in tutti i calendari delle risorse. Per utilizzare solo il calendario dell'attività, ignorando completamente i calendari delle risorse, seleziona il flag <strong>Ignora calendari delle risorse</strong>.</li>
 </ul>
 <h2 id="calendari-predefiniti">Calendari predefiniti <a href="#calendari-predefiniti" class="heading-anchor">#</a></h2>
 <p>Ingantt dispone di 3 calendari predefiniti, uno dei quali (<strong>Standard</strong>) viene assegnato al progetto per impostazione predefinita.</p>
@@ -251,19 +251,19 @@
 <td>Si lavora dal lunedì al venerdì, dalle 8:00 alle 17:00 con una pausa di 1 ora (dalle 12:00 alle 13:00).</td>
 </tr>
 <tr>
-<td><strong>Night Shift</strong></td>
+<td><strong>Turno di Notte</strong></td>
 <td>Si lavora dalla notte di lunedì alla mattina di sabato, dalle 23:00 alle 8:00 con una pausa di 1 ora (dalle 3:00 alle 4:00).</td>
 </tr>
 <tr>
-<td><strong>24 Hours</strong></td>
+<td><strong>24 Ore</strong></td>
 <td>Si lavora 24 ore al giorno, tutti i giorni.</td>
 </tr>
 </tbody>
 </table>
-<p>Puoi modificare qualsiasi calendario predefinito tramite la finestra <strong>Calendar Properties</strong> o creare calendari personalizzati basandoti su di essi tramite la finestra <strong>Add Calendar</strong>.</p>
-<h2 id="settimane-lavorative">Settimane lavorative <a href="#settimane-lavorative" class="heading-anchor">#</a></h2>
+<p>Puoi modificare qualsiasi calendario predefinito tramite la finestra <strong>Proprietà del Calendario</strong> o creare calendari personalizzati basandoti su di essi tramite la finestra <strong>Aggiungi Calendario</strong>.</p>
+<h2 id="settimane-lavorative">Settimane Lavorative <a href="#settimane-lavorative" class="heading-anchor">#</a></h2>
 <p>Le settimane lavorative consentono di definire modifiche al programma settimanale specifiche per un intervallo di date. Ad esempio, potresti avere un periodo in cui tutti lavorano 4 ore al giorno invece delle 8 standard, o un periodo in cui il sabato diventa un giorno lavorativo.</p>
-<p>Le settimane lavorative vengono configurate nella scheda <strong>Work Weeks</strong> della finestra <strong>Calendar Properties</strong>. Ogni settimana lavorativa ha un nome, una data di inizio e fine, e definizioni degli orari di lavoro per ogni giorno della settimana.</p>
+<p>Le settimane lavorative vengono configurate nella scheda <strong>Settimane Lavorative</strong> della finestra <strong>Proprietà del Calendario</strong>. Ogni settimana lavorativa ha un nome, una data di inizio e fine, e definizioni degli orari di lavoro per ogni giorno della settimana.</p>
 <blockquote>
 <p>Le eccezioni del calendario hanno la priorità sulle settimane lavorative, che a loro volta hanno la priorità sul programma settimanale predefinito.</p>
 </blockquote>
@@ -271,17 +271,17 @@
 <p>Le eccezioni del calendario sono date in cui il lavoro differisce dal programma settimanale regolare — inclusi i giorni non lavorativi.</p>
 <p>Le eccezioni del calendario possono essere specificate:</p>
 <ul>
-<li>Nella finestra <strong>Resource Properties</strong> per una determinata risorsa.</li>
-<li>Nelle <strong>Calendar Properties</strong> per un determinato calendario, in modo che progetti, risorse o attività che utilizzano questo calendario abbiano questa eccezione.</li>
+<li>Nella finestra <strong>Proprietà della Risorsa</strong> per una determinata risorsa.</li>
+<li>Nelle <strong>Proprietà del Calendario</strong> per un determinato calendario, in modo che progetti, risorse o attività che utilizzano questo calendario abbiano questa eccezione.</li>
 </ul>
 <p>Ad esempio, se vuoi configurare le ferie per una persona, aggiungile come eccezione per questa risorsa. Se vuoi configurare una festività per tutti, aggiungila come eccezione a un calendario utilizzato da tutti.</p>
 <p>Quando aggiungi o modifichi le eccezioni del calendario, specifichi i periodi di orario di lavoro per l'eccezione. Se non ne specifichi nessuno, l'eccezione non ha orario di lavoro, il che significa che definisce un giorno non lavorativo.</p>
-<p>A ogni eccezione può essere assegnato un <strong>Name</strong> descrittivo (come &quot;Festività di Natale&quot; o &quot;Ufficio chiuso&quot;) che viene mostrato nell'elenco delle eccezioni.</p>
+<p>A ogni eccezione può essere assegnato un <strong>Nome</strong> descrittivo (come &quot;Festività di Natale&quot; o &quot;Ufficio chiuso&quot;) che viene mostrato nell'elenco delle eccezioni.</p>
 <h3 id="eccezioni-ricorrenti">Eccezioni ricorrenti <a href="#eccezioni-ricorrenti" class="heading-anchor">#</a></h3>
 <p>Le eccezioni del calendario possono essere impostate per ricorrere secondo uno schema anziché su una singola data. Gli schemi di ricorrenza disponibili includono:</p>
 <ul>
-<li><strong>Daily</strong> — Ogni N giorni o ogni N giorni lavorativi</li>
-<li><strong>Weekly</strong> — Ogni N settimane nei giorni specificati</li>
+<li><strong>Giornaliero</strong> — Ogni N giorni o ogni N giorni lavorativi</li>
+<li><strong>Settimanale</strong> — Ogni N settimane nei giorni specificati</li>
 <li><strong>Monthly</strong> — Per giorno del mese o per posizione (ad es., secondo martedì)</li>
 <li><strong>Yearly</strong> — Per data o per posizione (ad es., ultimo venerdì di novembre)</li>
 </ul>

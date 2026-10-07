@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/" class="active" aria-current="page">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -217,20 +217,20 @@
 <p>Altre attività hanno margine zero — qualsiasi ritardo sposta la data di fine del progetto. Queste sono chiamate <em>attività critiche</em>. Per mantenere il progetto nei tempi previsti, presta particolare attenzione a queste attività durante il monitoraggio dell'avanzamento.</p>
 <p>Un'attività è anche critica se:</p>
 <ul>
-<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Must start on</strong> o <strong>Must finish on</strong></li>
-<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>As late as possible</strong> in un progetto pianificato dalla data di inizio</li>
+<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Deve iniziare il</strong> o <strong>Deve finire il</strong></li>
+<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Il più tardi possibile</strong> in un progetto pianificato dalla data di inizio</li>
 <li>La sua data di fine è uguale o supera la sua <a href="/it/building-schedule/task-properties/#scadenza">scadenza</a></li>
 <li>Ha <strong>margine negativo</strong> — un conflitto di pianificazione in cui i vincoli forzano l'attività prima di quanto le dipendenze consentano</li>
 </ul>
 <p>Le attività completate al 100% non vengono mai contrassegnate come critiche, indipendentemente dalle altre condizioni.</p>
-<p>Ingantt rileva automaticamente le attività critiche. Se l'opzione <strong>Highlight critical tasks</strong> è attivata (tramite il menu <strong>View</strong>, il menu <strong>Chart</strong> nella barra dei menu o la finestra <strong>Options</strong>), queste attività vengono visualizzate in rosso.</p>
-<p>Le attività con margine negativo mostrano anche un'icona di avviso nell'elenco delle attività, che indica un conflitto di pianificazione. Questo si verifica tipicamente quando un vincolo <strong>Start no later than</strong> o <strong>Finish no later than</strong> è in conflitto con le dipendenze dell'attività.</p>
+<p>Ingantt rileva automaticamente le attività critiche. Se l'opzione <strong>Evidenzia attività critiche</strong> è attivata (tramite il menu <strong>Visualizza</strong>, il menu <strong>Grafico</strong> nella barra dei menu o la finestra <strong>Opzioni</strong>), queste attività vengono visualizzate in rosso.</p>
+<p>Le attività con margine negativo mostrano anche un'icona di avviso nell'elenco delle attività, che indica un conflitto di pianificazione. Questo si verifica tipicamente quando un vincolo <strong>Inizio non dopo</strong> o <strong>Fine non dopo</strong> è in conflitto con le dipendenze dell'attività.</p>
 <p><img src="/images/building-schedule/tasks/critical.png" alt="Critical" / data-dark-src="/images/building-schedule/tasks/critical_d.png"></p>
 <h2 id="opzioni-del-percorso-critico">Opzioni del percorso critico <a href="#opzioni-del-percorso-critico" class="heading-anchor">#</a></h2>
-<p>Nella scheda <strong>Other</strong> della finestra <strong>Project Properties</strong>, puoi configurare come viene calcolato il percorso critico:</p>
+<p>Nella scheda <strong>Altro</strong> della finestra <strong>Proprietà del Progetto</strong>, puoi configurare come viene calcolato il percorso critico:</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — Quando attivata, ogni gruppo disconnesso di attività collegate ottiene il proprio percorso critico. Quando disattivata (impostazione predefinita), le attività senza successori derivano la data di fine al più tardi dalla data di fine del progetto.</li>
-<li><strong>Critical slack limit</strong> — Per impostazione predefinita, le attività con margine zero o negativo sono critiche. Puoi aumentare questa soglia in modo che anche le attività con margine fino al numero di giorni specificato siano considerate critiche.</li>
+<li><strong>Calcola percorsi critici multipli</strong> — Quando attivata, ogni gruppo disconnesso di attività collegate ottiene il proprio percorso critico. Quando disattivata (impostazione predefinita), le attività senza successori derivano la data di fine al più tardi dalla data di fine del progetto.</li>
+<li><strong>Le attività sono critiche se lo slittamento è minore o uguale a</strong> — Per impostazione predefinita, le attività con margine zero o negativo sono critiche. Puoi aumentare questa soglia in modo che anche le attività con margine fino al numero di giorni specificato siano considerate critiche.</li>
 </ul>
 
     </main>

@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -211,34 +211,34 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="진행-추적">진행 추적 <a href="#진행-추적" class="heading-anchor">#</a></h1>
-<p>작업이 시작되면 각 작업의 <strong>% Complete</strong>를 업데이트하여 실제 진행 상황이 계획과 어떻게 비교되는지 추적합니다. <strong>Update Project</strong>를 사용하여 진행 상황을 일괄 설정합니다. 진행 상황이 기록되면 Ingantt가 자동으로 <a href="/ko/tracking/actuals/">실적</a>을 계산합니다 — 기간, 작업량, 비용 및 날짜에 대한 실적 및 잔여 값입니다.</p>
+<p>작업이 시작되면 각 작업의 <strong>완료율</strong>을 업데이트하여 실제 진행 상황이 계획과 어떻게 비교되는지 추적합니다. <strong>프로젝트 업데이트</strong>를 사용하여 진행 상황을 일괄 설정합니다. 진행 상황이 기록되면 Ingantt가 자동으로 <a href="/ko/tracking/actuals/">실적</a>을 계산합니다 — 기간, 작업량, 비용 및 날짜에 대한 실적 및 잔여 값입니다.</p>
 <h2 id="완료율">완료율 <a href="#완료율" class="heading-anchor">#</a></h2>
-<p>프로젝트가 실행 중이면 진행 상황을 추적해야 합니다. 각 작업의 <strong>% Complete</strong>를 최신 상태로 유지하면 루트 요약 작업에서 프로젝트의 전체 <strong>% Complete</strong>를 확인할 수 있습니다.</p>
-<p><strong>Task Properties</strong> 대화 상자의 <strong>% Complete</strong> 필드를 사용하여 특정 작업의 완료율을 설정합니다. 100% 완료된 작업은 작업 목록에 녹색 체크 표시 아이콘이 표시됩니다.</p>
+<p>프로젝트가 실행 중이면 진행 상황을 추적해야 합니다. 각 작업의 <strong>완료율</strong>을 최신 상태로 유지하면 루트 요약 작업에서 프로젝트의 전체 <strong>완료율</strong>을 확인할 수 있습니다.</p>
+<p><strong>작업 속성</strong> 대화 상자의 <strong>완료율</strong> 필드를 사용하여 특정 작업의 완료율을 설정합니다. 100% 완료된 작업은 작업 목록에 녹색 체크 표시 아이콘이 표시됩니다.</p>
 <p>완료율을 업데이트할 때:</p>
 <ul>
-<li>0% 이상으로 설정하면 작업의 <strong>Actual Start</strong>가 작업의 예정 시작 날짜로 설정됩니다.</li>
-<li>100%로 설정하면 작업의 <strong>Actual Finish</strong>가 작업의 예정 완료 날짜로 설정됩니다.</li>
-<li><strong>Actual Duration</strong>과 <strong>Remaining Duration</strong>은 완료율을 기반으로 자동 계산됩니다.</li>
-<li>프로젝트 설정에서 <strong>Updating task status updates resource status</strong>가 활성화(기본값)되어 있으면 <strong>Actual Work</strong>와 <strong>Remaining Work</strong>도 비례적으로 업데이트됩니다.</li>
+<li>0% 이상으로 설정하면 작업의 <strong>실제 시작</strong>이 작업의 예정 시작 날짜로 설정됩니다.</li>
+<li>100%로 설정하면 작업의 <strong>실제 완료</strong>가 작업의 예정 완료 날짜로 설정됩니다.</li>
+<li><strong>실제 기간</strong>과 <strong>남은 기간</strong>은 완료율을 기반으로 자동 계산됩니다.</li>
+<li>프로젝트 설정에서 <strong>작업 상태 업데이트 시 자원 상태도 업데이트</strong>가 활성화(기본값)되어 있으면 <strong>실제 작업</strong>과 <strong>남은 작업</strong>도 비례적으로 업데이트됩니다.</li>
 </ul>
-<p>요약 작업의 <strong>% Complete</strong>는 모든 하위 비요약 작업의 기간 가중 평균으로 계산됩니다.</p>
+<p>요약 작업의 <strong>완료율</strong>은 모든 하위 비요약 작업의 기간 가중 평균으로 계산됩니다.</p>
 <blockquote>
 <p><a href="#%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-%EC%97%85%EB%8D%B0%EC%9D%B4%ED%8A%B8">프로젝트 업데이트</a> 명령을 사용하여 기준 날짜를 기반으로 여러 작업의 완료율을 한 번에 설정할 수도 있습니다.</p>
 </blockquote>
 <h2 id="프로젝트-업데이트">프로젝트 업데이트 <a href="#프로젝트-업데이트" class="heading-anchor">#</a></h2>
-<p><strong>Update Project</strong> 명령은 <strong>Project</strong> 메뉴에서 접근할 수 있는 일괄 진행 추적 작업을 제공합니다.</p>
+<p><strong>프로젝트 업데이트</strong> 명령은 <strong>프로젝트</strong> 메뉴에서 접근할 수 있는 일괄 진행 추적 작업을 제공합니다.</p>
 <h3 id="작업을-완료로-업데이트">작업을 완료로 업데이트 <a href="#작업을-완료로-업데이트" class="heading-anchor">#</a></h3>
 <p>지정된 날짜까지 작업을 완료로 표시합니다:</p>
 <ul>
-<li><strong>Proportional (0%–100%)</strong>(비례) — 각 작업의 근무 기간 중 기준 날짜 이전에 해당하는 부분을 기반으로 완료율을 계산합니다.</li>
-<li><strong>All-or-nothing (0% or 100%)</strong>(전부 또는 전무) — 기준 날짜까지 완료 여부에 따라 작업을 0% 또는 100%로 설정합니다.</li>
+<li><strong>비례 (0%~100%)</strong> — 각 작업의 근무 기간 중 기준 날짜 이전에 해당하는 부분을 기반으로 완료율을 계산합니다.</li>
+<li><strong>전부 또는 전무 (0% 또는 100%)</strong> — 기준 날짜까지 완료 여부에 따라 작업을 0% 또는 100%로 설정합니다.</li>
 </ul>
 <h3 id="미완료-작업-재예약">미완료 작업 재예약 <a href="#미완료-작업-재예약" class="heading-anchor">#</a></h3>
 <p>미완료 작업을 지정된 날짜 이후에 시작하도록 이동합니다:</p>
 <ul>
-<li>시작되지 않은 작업은 <strong>Start No Earlier Than</strong> 제약 조건을 받습니다.</li>
-<li>진행 중인 작업은 프로젝트 일정 옵션에서 <strong>Split in-progress tasks</strong>가 활성화된 경우 분할됩니다.</li>
+<li>시작되지 않은 작업은 <strong>이전에는 시작 불가</strong> 제약 조건을 받습니다.</li>
+<li>진행 중인 작업은 프로젝트 일정 옵션에서 <strong>진행 중인 작업 분할</strong>이 활성화된 경우 분할됩니다.</li>
 <li>완료된 작업은 수정되지 않습니다.</li>
 </ul>
 

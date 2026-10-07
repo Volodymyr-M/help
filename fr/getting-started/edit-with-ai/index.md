@@ -9,7 +9,7 @@ Connectez votre projet à un assistant de codage IA comme Claude Code, Codex ou 
 1. Ouvrez le projet que vous souhaitez modifier.
 2. Cliquez sur l'icône **Edit with AI** (✨) dans le coin supérieur droit, à côté du bouton d'historique des versions.
 3. La boîte de dialogue affiche un ensemble d'instructions décrivant comment votre outil IA doit lire et écrire le projet.
-4. Cliquez sur **Copy instructions**. Cela démarre la session d'édition et copie les instructions dans votre presse-papiers.
+4. Cliquez sur **Copier les instructions**. Cela démarre la session d'édition et copie les instructions dans votre presse-papiers.
 5. Collez les instructions dans votre outil IA (par exemple, comme premier message dans une conversation Claude Code ou Codex).
 6. Demandez à l'IA d'effectuer des modifications en langage naturel — par exemple, _« ajouter une phase de QA de deux semaines après le développement »_ ou _« affecter Alex à toutes les tâches de conception »_.
 
@@ -24,7 +24,7 @@ L'IA suit les instructions pour récupérer le YAML actuel, le modifier et renvo
 
 ## Arrêter la session
 
-Cliquez sur l'icône ✨ pendant qu'une session est active et choisissez **Stop session**. Vous pouvez également simplement fermer l'onglet du navigateur — la session se termine automatiquement après une période d'inactivité.
+Cliquez sur l'icône ✨ pendant qu'une session est active et choisissez **Arrêter la session**. Vous pouvez également simplement fermer l'onglet du navigateur — la session se termine automatiquement après une période d'inactivité.
 
 ## Outils IA pris en charge
 

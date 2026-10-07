@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -223,23 +223,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Work</strong></td>
+<td><strong>Lavoro</strong></td>
 <td>Qualcuno o qualcosa che esegue la tua attività. Può essere una persona, un team, un'azienda appaltatrice o un'attrezzatura.</td>
 </tr>
 <tr>
-<td><strong>Material</strong></td>
+<td><strong>Materiale</strong></td>
 <td>Elementi utilizzati per completare l'attività, come materiali, ingredienti o componenti.</td>
 </tr>
 <tr>
-<td><strong>Cost</strong></td>
+<td><strong>Costo</strong></td>
 <td>Costi che possono essere applicati a più attività, come costi di consegna, costi di distribuzione o qualsiasi costo fisso.</td>
 </tr>
 </tbody>
 </table>
 <p>Solo le risorse di tipo lavoro, quando assegnate alle attività, influiscono sulla pianificazione.</p>
-<p>Tutti i tipi di risorse influiscono sul calcolo dei costi se il campo <strong>Cost</strong> della risorsa è compilato.</p>
+<p>Tutti i tipi di risorse influiscono sul calcolo dei costi se il campo <strong>Costo</strong> della risorsa è compilato.</p>
 <h2 id="unità-massime">Unità massime <a href="#unità-massime" class="heading-anchor">#</a></h2>
-<p>Le risorse di tipo lavoro hanno una proprietà <strong>Max Units</strong> (predefinita 100%) che rappresenta la capacità disponibile della risorsa. Ad esempio:</p>
+<p>Le risorse di tipo lavoro hanno una proprietà <strong>Unità max.</strong> (predefinita 100%) che rappresenta la capacità disponibile della risorsa. Ad esempio:</p>
 <ul>
 <li><strong>100%</strong> — Una risorsa a tempo pieno</li>
 <li><strong>50%</strong> — Una risorsa a tempo parziale (disponibile metà del tempo)</li>
@@ -248,17 +248,17 @@
 <p>Le unità massime vengono utilizzate dal <a href="/it/adjusting-schedule/leveling/#risorse-sovrallocate">rilevamento della sovrallocazione</a> e dal <a href="/it/adjusting-schedule/leveling/#livellamento-automatico">livellamento automatico</a> per determinare se una risorsa ha più lavoro di quanto possa gestire. Quando si assegna una risorsa di tipo lavoro a un'attività, le unità di assegnazione predefinite corrispondono alle unità massime della risorsa.</p>
 <h2 id="periodi-di-disponibilità-delle-risorse">Periodi di disponibilità delle risorse <a href="#periodi-di-disponibilità-delle-risorse" class="heading-anchor">#</a></h2>
 <p>La disponibilità di una risorsa di tipo lavoro può cambiare nel tempo. Ad esempio, un membro del team potrebbe essere a tempo pieno per i primi tre mesi e poi passare a tempo parziale.</p>
-<p>Nella scheda <strong>Availability</strong> della finestra <strong>Resource Properties</strong>, puoi definire più periodi di disponibilità, ciascuno con un intervallo di date e una percentuale di disponibilità. Per le date che ricadono in un periodo definito, le unità del periodo sostituiscono le unità massime base della risorsa per i calcoli di capacità.</p>
+<p>Nella scheda <strong>Disponibilita</strong> della finestra <strong>Proprietà della Risorsa</strong>, puoi definire più periodi di disponibilità, ciascuno con un intervallo di date e una percentuale di disponibilità. Per le date che ricadono in un periodo definito, le unità del periodo sostituiscono le unità massime base della risorsa per i calcoli di capacità.</p>
 <h2 id="risorse-generiche">Risorse generiche <a href="#risorse-generiche" class="heading-anchor">#</a></h2>
-<p>Una risorsa può essere contrassegnata come <strong>Generic</strong> usando la casella di controllo nella finestra <strong>Resource Properties</strong>. Le risorse generiche sono segnaposto che rappresentano un ruolo (ad es., &quot;Sviluppatore&quot;, &quot;Designer&quot;) anziché una persona specifica. Sono utili nelle fasi iniziali della pianificazione quando i membri specifici del team non sono ancora identificati.</p>
+<p>Una risorsa può essere contrassegnata come <strong>Generica</strong> usando la casella di controllo nella finestra <strong>Proprietà della Risorsa</strong>. Le risorse generiche sono segnaposto che rappresentano un ruolo (ad es., &quot;Sviluppatore&quot;, &quot;Designer&quot;) anziché una persona specifica. Sono utili nelle fasi iniziali della pianificazione quando i membri specifici del team non sono ancora identificati.</p>
 <p>Le risorse generiche sono indicate da un'icona distintiva nell'elenco delle risorse. Il flag generico è puramente informativo — non influisce sulla pianificazione né sul calcolo dei costi.</p>
 <h2 id="tipo-di-prenotazione">Tipo di prenotazione <a href="#tipo-di-prenotazione" class="heading-anchor">#</a></h2>
-<p>Ogni risorsa ha un <strong>Booking Type</strong> che può essere impostato su <strong>Committed</strong> (predefinito) o <strong>Proposed</strong> nella finestra <strong>Resource Properties</strong>.</p>
+<p>Ogni risorsa ha un <strong>Tipo di prenotazione</strong> che può essere impostato su <strong>Confermato</strong> (predefinito) o <strong>Proposto</strong> nella finestra <strong>Proprietà della Risorsa</strong>.</p>
 <ul>
-<li><strong>Committed</strong> — La risorsa è prenotata in modo definitivo per il progetto.</li>
-<li><strong>Proposed</strong> — La risorsa è assegnata provvisoriamente a fini di pianificazione.</li>
+<li><strong>Confermato</strong> — La risorsa è prenotata in modo definitivo per il progetto.</li>
+<li><strong>Proposto</strong> — La risorsa è assegnata provvisoriamente a fini di pianificazione.</li>
 </ul>
-<p>Per impostazione predefinita, il livellamento automatico esclude le risorse proposte. Puoi includerle abilitando &quot;Level resources with the proposed booking type&quot; nelle <a href="/it/adjusting-schedule/leveling/#opzioni-di-livellamento">opzioni di livellamento</a>.</p>
+<p>Per impostazione predefinita, il livellamento automatico esclude le risorse proposte. Puoi includerle abilitando &quot;Level resources with the proposed booking type&quot; nelle <a href="/it/adjusting-schedule/leveling/#opzioni-livellamento">opzioni di livellamento</a>.</p>
 
     </main>
     <aside class="toc" aria-label="Indice"></aside>

@@ -215,14 +215,14 @@
 <h2 id="avant-de-commencer">Avant de commencer <a href="#avant-de-commencer" class="heading-anchor">#</a></h2>
 <p>Le partage ne fonctionne que pour les fichiers Google Drive. Vous devez être connecté avec Google et le projet doit être enregistré dans Drive ; un projet qui se trouve dans un fichier local sur votre appareil n'a rien à partager. Voir <a href="/fr/getting-started/saving/">Enregistrer votre projet</a>.</p>
 <blockquote>
-<p>Le bouton <strong>Share</strong> fait partie d'Ingantt pour Web. Sur Android, iOS, Windows et macOS, partagez plutôt le fichier depuis Google Drive — ouvrez Drive, trouvez le fichier Ingantt et utilisez la commande <strong>Share</strong> de Drive. Le résultat est identique, car les autorisations sont dans tous les cas portées par le fichier Drive.</p>
+<p>Le bouton <strong>Partager</strong> fait partie d'Ingantt pour Web. Sur Android, iOS, Windows et macOS, partagez plutôt le fichier depuis Google Drive — ouvrez Drive, trouvez le fichier Ingantt et utilisez la commande <strong>Partager</strong> de Drive. Le résultat est identique, car les autorisations sont dans tous les cas portées par le fichier Drive.</p>
 </blockquote>
 <h2 id="partager-avec-des-personnes-spécifiques">Partager avec des personnes spécifiques <a href="#partager-avec-des-personnes-spécifiques" class="heading-anchor">#</a></h2>
 <ol>
-<li>Ouvrez le projet et cliquez sur <strong>Share</strong> dans l'en-tête, ou choisissez <strong>Share</strong> dans le menu <strong>File</strong>. La boîte de dialogue <strong>Share on Google Drive</strong> s'ouvre.</li>
-<li>Sous <strong>People with access</strong>, vous voyez toutes les personnes qui ont déjà accès, les propriétaires en premier.</li>
-<li>Cliquez sur <strong>Add</strong>, saisissez l'adresse e-mail de la personne, choisissez le rôle que vous souhaitez lui attribuer et confirmez.</li>
-<li>Fermez la boîte de dialogue. Ingantt enregistre les nouvelles autorisations dans Drive et confirme avec <em>Access updated</em>.</li>
+<li>Ouvrez le projet et cliquez sur <strong>Partager</strong> dans l'en-tête, ou choisissez <strong>Partager</strong> dans le menu <strong>Fichier</strong>. La boîte de dialogue <strong>Partager sur Google Drive</strong> s'ouvre.</li>
+<li>Sous <strong>Personnes avec accès</strong>, vous voyez toutes les personnes qui ont déjà accès, les propriétaires en premier.</li>
+<li>Cliquez sur <strong>Ajouter</strong>, saisissez l'adresse e-mail de la personne, choisissez le rôle que vous souhaitez lui attribuer et confirmez.</li>
+<li>Fermez la boîte de dialogue. Ingantt enregistre les nouvelles autorisations dans Drive et confirme avec <em>Accès mis à jour</em>.</li>
 </ol>
 <p>Les rôles sont ceux de Google Drive :</p>
 <table>
@@ -234,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Viewer</strong></td>
+<td><strong>Lecteur</strong></td>
 <td>Ouvrir le projet et le consulter. Ne peut pas enregistrer de modifications.</td>
 </tr>
 <tr>
-<td><strong>Commenter</strong></td>
-<td>Comme Viewer, plus la possibilité de commenter le fichier dans Google Drive. Ne peut pas enregistrer de modifications.</td>
+<td><strong>Commentateur</strong></td>
+<td>Comme Lecteur, plus la possibilité de commenter le fichier dans Google Drive. Ne peut pas enregistrer de modifications.</td>
 </tr>
 <tr>
-<td><strong>Editor</strong></td>
+<td><strong>Éditeur</strong></td>
 <td>Ouvrir le projet et y enregistrer des modifications.</td>
 </tr>
 <tr>
-<td><strong>Owner</strong></td>
+<td><strong>Propriétaire</strong></td>
 <td>Tout, y compris supprimer le fichier et transférer la propriété.</td>
 </tr>
 </tbody>
@@ -256,21 +256,21 @@
 <p>Saisissez une adresse avec laquelle la personne peut réellement se connecter à Google. Si Ingantt ne peut pas confirmer que l'adresse correspond à Gmail ou Google Workspace, il vous avertit, car un partage Drive vers une adresse sans compte Google derrière ne lui permettra pas d'ouvrir le projet.</p>
 </blockquote>
 <h2 id="accès-général-liens-et-organisations">Accès général — liens et organisations <a href="#accès-général-liens-et-organisations" class="heading-anchor">#</a></h2>
-<p><strong>General access</strong> contrôle tous ceux que vous n'avez pas nommés individuellement :</p>
+<p><strong>Accès général</strong> contrôle tous ceux que vous n'avez pas nommés individuellement :</p>
 <ul>
-<li><strong>Restricted</strong> — uniquement les personnes listées sous <strong>People with access</strong>. C'est la valeur par défaut.</li>
-<li><strong>Anyone with the link</strong> — toute personne disposant du lien, avec le rôle que vous choisissez (Viewer, Commenter ou Editor).</li>
-<li><strong>Domain</strong> — toutes les personnes de votre organisation Google Workspace, avec le rôle que vous choisissez. Cette option n'apparaît que lorsque le propriétaire du projet est sur un domaine Workspace ; elle n'est pas proposée pour les comptes Gmail personnels.</li>
+<li><strong>Restreint</strong> — uniquement les personnes listées sous <strong>Personnes avec accès</strong>. C'est la valeur par défaut.</li>
+<li><strong>Toute personne avec le lien</strong> — toute personne disposant du lien, avec le rôle que vous choisissez (Lecteur, Commentateur ou Éditeur).</li>
+<li><strong>Domaine</strong> — toutes les personnes de votre organisation Google Workspace, avec le rôle que vous choisissez. Cette option n'apparaît que lorsque le propriétaire du projet est sur un domaine Workspace ; elle n'est pas proposée pour les comptes Gmail personnels.</li>
 </ul>
-<p><strong>Copy link</strong> copie le lien Google Drive du projet. Toute personne dont l'accès le permet peut ouvrir ce lien et modifier le planning dans Ingantt.</p>
-<p>L'info-bulle du bouton <strong>Share</strong> vous indique l'état actuel d'un coup d'œil — <em>Private — only you can access</em>, <em>Shared with specific people</em>, <em>Anyone with the link can view/comment/edit</em>, ou l'équivalent pour votre domaine.</p>
+<p><strong>Copier le lien</strong> copie le lien Google Drive du projet. Toute personne dont l'accès le permet peut ouvrir ce lien et modifier le planning dans Ingantt.</p>
+<p>L'info-bulle du bouton <strong>Partager</strong> vous indique l'état actuel d'un coup d'œil — <em>Privé - Vous seul pouvez accéder</em>, <em>Partagé avec des personnes spécifiques</em>, <em>Anyone with the link can view/comment/edit</em>, ou l'équivalent pour votre domaine.</p>
 <h2 id="qui-est-autorisé-à-modifier-laccès">Qui est autorisé à modifier l'accès <a href="#qui-est-autorisé-à-modifier-laccès" class="heading-anchor">#</a></h2>
 <p>Seul le <strong>propriétaire</strong> du fichier peut toujours gérer l'accès. Un <strong>éditeur</strong> peut également gérer l'accès, sauf si le propriétaire a désactivé cette possibilité dans Google Drive.</p>
-<p>Si vous ouvrez la boîte de dialogue sur un projet partagé avec vous en tant que lecteur ou commentateur, elle indique <strong>You are a viewer and cannot manage access</strong> et affiche l'accès général actuel sans vous permettre de le modifier. Demandez au propriétaire si vous avez besoin de davantage.</p>
+<p>Si vous ouvrez la boîte de dialogue sur un projet partagé avec vous en tant que lecteur ou commentateur, elle indique <strong>Vous êtes lecteur et ne pouvez pas gérer l'accès</strong> et affiche l'accès général actuel sans vous permettre de le modifier. Demandez au propriétaire si vous avez besoin de davantage.</p>
 <h2 id="travailler-sur-un-projet-partagé">Travailler sur un projet partagé <a href="#travailler-sur-un-projet-partagé" class="heading-anchor">#</a></h2>
 <ul>
 <li>Tout le monde ouvre le même fichier Drive, mais Ingantt n'est pas un outil d'édition collaborative en temps réel. Chaque enregistrement écrit le fichier de projet entier ; si deux personnes ont le planning ouvert et enregistrent toutes les deux, le dernier enregistrement l'emporte et les modifications de l'autre personne sont remplacées. Convenez de qui modifie avant de commencer, et consultez l'historique des versions du fichier dans Google Drive si vous pensez que quelque chose a été perdu.</li>
-<li>Un lecteur ou un commentateur qui tente d'enregistrer voit <strong>You are a viewer and cannot save</strong>. Utilisez plutôt <strong>Save file as</strong> pour conserver une copie personnelle.</li>
+<li>Un lecteur ou un commentateur qui tente d'enregistrer voit <strong>Vous êtes lecteur et ne pouvez pas enregistrer</strong>. Utilisez plutôt <strong>Enregistrer le fichier sous</strong> pour conserver une copie personnelle.</li>
 <li>Chaque collaborateur a besoin de son propre abonnement ou essai Ingantt actif pour modifier — partager un planning ne partage pas votre abonnement. Voir <a href="/fr/account/subscription/">Abonnements et paiement</a>.</li>
 <li>Le partage avec une adresse de <strong>groupe</strong> Google n'est pas pris en charge par la boîte de dialogue Share d'Ingantt. Partagez avec des adresses individuelles, ou gérez un partage de groupe depuis Google Drive.</li>
 </ul>

@@ -15,13 +15,13 @@
 
 ## Configurazione del progetto
 
-- [Proprietà del progetto](https://help.ingantt.com/it/setting-up-project/project/index.md)
+- [Proprietà del Progetto](https://help.ingantt.com/it/setting-up-project/project/index.md)
 - [Calendari](https://help.ingantt.com/it/setting-up-project/calendars/index.md)
 
 ## Costruire un cronogramma
 
 - [Attività](https://help.ingantt.com/it/building-schedule/tasks/index.md)
-- [Proprietà delle attività](https://help.ingantt.com/it/building-schedule/task-properties/index.md)
+- [Proprietà del Compito](https://help.ingantt.com/it/building-schedule/task-properties/index.md)
 - [Durate trascorse](https://help.ingantt.com/it/building-schedule/elapsed-durations/index.md)
 - [Dipendenze](https://help.ingantt.com/it/building-schedule/dependencies/index.md)
 - [Vincoli](https://help.ingantt.com/it/building-schedule/constraints/index.md)
@@ -32,7 +32,7 @@
 
 - [Percorso critico](https://help.ingantt.com/it/adjusting-schedule/critical-path/index.md)
 - [Livellamento delle risorse](https://help.ingantt.com/it/adjusting-schedule/leveling/index.md)
-- [Campi personalizzati](https://help.ingantt.com/it/adjusting-schedule/custom-fields/index.md)
+- [Campi Personalizzati](https://help.ingantt.com/it/adjusting-schedule/custom-fields/index.md)
 - [Codici WBS](https://help.ingantt.com/it/adjusting-schedule/wbs-codes/index.md)
 
 ## Pianificazione dei costi
@@ -60,7 +60,7 @@
 - [Integrazione con Google Drive](https://help.ingantt.com/it/ui/files/index.md)
 - [Condividere un progetto](https://help.ingantt.com/it/ui/sharing/index.md)
 - [Lavorare offline](https://help.ingantt.com/it/ui/offline-mode/index.md)
-- [Cronologia delle versioni](https://help.ingantt.com/it/ui/version-history/index.md)
+- [Cronologia versioni](https://help.ingantt.com/it/ui/version-history/index.md)
 - [Lingue](https://help.ingantt.com/it/ui/languages/index.md)
 - [Scorciatoie da tastiera](https://help.ingantt.com/it/ui/shortcuts/index.md)
 - [Contattare l'assistenza](https://help.ingantt.com/it/ui/contact-support/index.md)

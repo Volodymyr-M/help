@@ -26,10 +26,10 @@ Google Drive bereinigt alte Überarbeitungen einer Datei im Laufe der Zeit. Das 
 
 Es gibt zwei Möglichkeiten zum Anheften:
 
-- **Datei → Versionsverlauf → Aktuelle Version anheften** heftet die neueste Version an, ohne den Bereich zu öffnen. Verwenden Sie es direkt nach einem Speichern, das Sie behalten möchten — vor einer Neuplanung, am Ende einer Phase oder wenn ein Plan abgenommen wurde.
-- Öffnen Sie im Bereich das Menü einer beliebigen Version und wählen Sie **Diese Version anheften**.
+- **Datei → Versionsverlauf → Aktuelle Version anpinnen** heftet die neueste Version an, ohne den Bereich zu öffnen. Verwenden Sie es direkt nach einem Speichern, das Sie behalten möchten — vor einer Neuplanung, am Ende einer Phase oder wenn ein Plan abgenommen wurde.
+- Öffnen Sie im Bereich das Menü einer beliebigen Version und wählen Sie **Diese Version anpinnen**.
 
-Angeheftete Versionen sind in der Liste mit **Angeheftet** markiert. Wählen Sie denselben Menüeintrag erneut, wird die Anheftung aufgehoben.
+Angeheftete Versionen sind in der Liste mit **Angepinnt** markiert. Wählen Sie denselben Menüeintrag erneut, wird die Anheftung aufgehoben.
 
 ## Eine Version wiederherstellen
 

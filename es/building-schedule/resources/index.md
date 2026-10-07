@@ -40,9 +40,9 @@ Los recursos genéricos se indican con un icono de insignia en la lista de recur
 
 ## Tipo de reserva
 
-Cada recurso tiene un **Tipo de reserva** que puede establecerse como **Comprometido** (predeterminado) o **Propuesto** en el diálogo **Propiedades del recurso**.
+Cada recurso tiene un **Tipo de reserva** que puede establecerse como **Confirmado** (predeterminado) o **Propuesto** en el diálogo **Propiedades del recurso**.
 
-- **Comprometido** — El recurso está firmemente reservado para el proyecto.
+- **Confirmado** — El recurso está firmemente reservado para el proyecto.
 - **Propuesto** — El recurso está asignado provisionalmente para fines de planificación.
 
 De forma predeterminada, la nivelación automática excluye los recursos propuestos. Puede incluirlos habilitando "Nivelar recursos con tipo de reserva propuesto" en el diálogo de [Opciones de nivelación](/es/adjusting-schedule/leveling/index.md#opciones-de-nivelación).

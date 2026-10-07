@@ -6,10 +6,10 @@ Deixe a IA criar um plano de projeto completo para você — basta descrever seu
 
 Para criar um cronograma de projeto com IA:
 
-1. Clique no botão **+** na tela de Projetos. Se você já estiver editando um projeto, abra o menu **File** em vez disso.
-2. Escolha **Create new with AI**.
+1. Clique no botão **+** na tela de Projetos. Se você já estiver editando um projeto, abra o menu **Arquivo** em vez disso.
+2. Escolha **Criar novo com IA**.
 3. Insira uma descrição do seu projeto na caixa de diálogo.
-4. Clique em **CREATE**.
+4. Clique em **CRIAR**.
 
 ![Create new with AI](/images/getting-started/create_with_ai.png)
 

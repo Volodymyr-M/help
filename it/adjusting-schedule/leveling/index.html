@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Livellamento delle risorse - Analisi e regolazione - Guida di Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Leveling Gantt.">
+  <meta name="description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Gantt livellamento.">
   <link rel="canonical" href="https://help.ingantt.com/it/adjusting-schedule/leveling/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Livellamento delle risorse">
-  <meta property="og:description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Leveling Gantt.">
+  <meta property="og:description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Gantt livellamento.">
   <meta property="og:url" content="https://help.ingantt.com/it/adjusting-schedule/leveling/">
   <meta property="og:site_name" content="Guida di Ingantt">
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Livellamento delle risorse">
-  <meta name="twitter:description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Leveling Gantt.">
+  <meta name="twitter:description" content="Rileva e risolvi la sovrallocazione delle risorse con il livellamento automatico, la pianificazione basata sulle priorità e la vista Gantt livellamento.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/leveling/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/leveling/">
@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/" class="active" aria-current="page">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -215,20 +215,20 @@
 <h2 id="risorse-sovrallocate">Risorse sovrallocate <a href="#risorse-sovrallocate" class="heading-anchor">#</a></h2>
 <p>Una risorsa di tipo lavoro può essere <strong>sovrallocata</strong>, il che significa che ha più lavoro assegnato di quanto possa completare in base al suo calendario e alla sua disponibilità. Ad esempio, se il tuo progetto ha due attività, ciascuna con una durata di un giorno e senza <a href="/it/building-schedule/dependencies/#predecessori-e-dipendenze">dipendenza</a> tra di esse, entrambe assegnate alla stessa risorsa di tipo lavoro, la risorsa è sovrallocata. La risorsa deve svolgere due giorni di lavoro in un solo giorno di calendario. Per risolvere il problema, basta collegare le due attività con una dipendenza.</p>
 <p>Se un'attività ha risorse sovrallocate assegnate, Ingantt mostra un'icona speciale nell'elenco delle attività.</p>
-<p>Se una risorsa è sovrallocata, Ingantt mostra un'icona speciale nella vista <strong>Resources</strong> e nella vista <strong>Resource Usage</strong>.</p>
+<p>Se una risorsa è sovrallocata, Ingantt mostra un'icona speciale nella vista <strong>Risorse</strong> e nella vista <strong>Utilizzo delle Risorse</strong>.</p>
 <p>Inoltre, Ingantt conta tali attività e risorse e mostra i numeri nel menu di navigazione.</p>
 <h2 id="livellamento-automatico">Livellamento automatico <a href="#livellamento-automatico" class="heading-anchor">#</a></h2>
 <p>Le dipendenze tra attività controllano la loro posizione sulla linea temporale. Nei progetti più grandi, è facile dimenticare una dipendenza — con il risultato che più attività assegnate alla stessa risorsa di tipo lavoro vengono pianificate contemporaneamente. La risorsa diventa sovrallocata e Ingantt ti avvisa con icone speciali negli elenchi delle attività e delle risorse.</p>
 <p>Puoi risolvere la sovrallocazione manualmente impostando dipendenze o vincoli per spostare alcune attività in modo che il lavoro non venga svolto simultaneamente.</p>
-<p>Un modo alternativo per risolvere la sovrallocazione è il livellamento automatico. Se scegli <strong>Auto-level resources</strong> nel menu <strong>Project</strong>, Ingantt sposta automaticamente alcune attività più avanti nella linea temporale per prevenire la sovrallocazione delle risorse. Puoi annullare queste regolazioni automatiche scegliendo <strong>Clear leveling</strong> nel menu <strong>Project</strong>.</p>
+<p>Un modo alternativo per risolvere la sovrallocazione è il livellamento automatico. Se scegli <strong>Livella automaticamente le risorse</strong> nel menu <strong>Progetto</strong>, Ingantt sposta automaticamente alcune attività più avanti nella linea temporale per prevenire la sovrallocazione delle risorse. Puoi annullare queste regolazioni automatiche scegliendo <strong>Cancella livellamento</strong> nel menu <strong>Progetto</strong>.</p>
 <p>Il comando di livellamento automatico offre tre opzioni di ambito:</p>
 <ul>
-<li><strong>All tasks</strong> — Livella tutte le attività del progetto</li>
-<li><strong>Selected tasks</strong> — Livella solo le attività attualmente selezionate</li>
-<li><strong>Selected resources</strong> — Livella solo i conflitti di sovrallocazione per le risorse selezionate (disponibile nelle viste Resources e Resource Usage)</li>
+<li><strong>Tutte le attivita</strong> — Livella tutte le attività del progetto</li>
+<li><strong>Attivita selezionate</strong> — Livella solo le attività attualmente selezionate</li>
+<li><strong>Risorse selezionate</strong> — Livella solo i conflitti di sovrallocazione per le risorse selezionate (disponibile nelle viste Risorse e Utilizzo delle Risorse)</li>
 </ul>
 <h3 id="come-funziona-il-livellamento-automatico">Come funziona il livellamento automatico <a href="#come-funziona-il-livellamento-automatico" class="heading-anchor">#</a></h3>
-<p>Quando esegui <strong>Auto-level resources</strong>, Ingantt risolve le sovrallocazioni <strong>ritardando o suddividendo le attività</strong>. Non riassegna le risorse né modifica le unità di assegnazione.</p>
+<p>Quando esegui <strong>Livella automaticamente le risorse</strong>, Ingantt risolve le sovrallocazioni <strong>ritardando o suddividendo le attività</strong>. Non riassegna le risorse né modifica le unità di assegnazione.</p>
 <p>L'algoritmo identifica i giorni in cui una risorsa ha più lavoro assegnato di quanto la sua capacità consenta, poi decide quali attività in conflitto ritardare. Ogni attività riceve un punteggio basato su diversi fattori — le attività con punteggi più alti sono protette dal ritardo:</p>
 <table>
 <thead>
@@ -268,37 +268,37 @@
 <blockquote>
 <p>Il livellamento automatico potrebbe posticipare la data di fine del progetto. Risolve il maggior numero possibile di sovrallocazioni, ma alcune potrebbero restare se i vincoli impediscono ulteriori ritardi.</p>
 </blockquote>
-<h3 id="opzioni-di-livellamento">Opzioni di livellamento <a href="#opzioni-di-livellamento" class="heading-anchor">#</a></h3>
-<p>Configura il comportamento del livellamento nella finestra <strong>Leveling Options</strong>, accessibile dal menu <strong>Project</strong>:</p>
+<h3 id="opzioni-livellamento">Opzioni Livellamento <a href="#opzioni-livellamento" class="heading-anchor">#</a></h3>
+<p>Configura il comportamento del livellamento nella finestra <strong>Opzioni Livellamento</strong>, accessibile dal menu <strong>Progetto</strong>:</p>
 <ul>
-<li><strong>Leveling order</strong> — Controlla l'ordine di priorità delle attività: ID Only (ID crescente), Standard (punteggio multi-fattore) o Priority Standard (priorità prima, poi fattori standard; l'impostazione predefinita)</li>
-<li><strong>Overallocation basis</strong> — Controlla la granularità del rilevamento: minuto, ora, giorno, settimana o mese. Le impostazioni per minuto e ora rilevano conflitti anche quando i totali giornalieri sono nella capacità ma le attività si sovrappongono all'interno di una giornata.</li>
+<li><strong>Ordine di livellamento</strong> — Controlla l'ordine di priorità delle attività: ID Only (ID crescente), Standard (punteggio multi-fattore) o Priority Standard (priorità prima, poi fattori standard; l'impostazione predefinita)</li>
+<li><strong>Base sovrallocazione</strong> — Controlla la granularità del rilevamento: minuto, ora, giorno, settimana o mese. Le impostazioni per minuto e ora rilevano conflitti anche quando i totali giornalieri sono nella capacità ma le attività si sovrappongono all'interno di una giornata.</li>
 <li><strong>Adjust individual assignments</strong> — Quando attivata e un'attività ha più assegnazioni di risorse, solo l'assegnazione della risorsa sovrallocata viene ritardata anziché l'intera attività</li>
 <li><strong>Create splits in remaining work</strong> — Quando attivata, l'algoritmo di livellamento può suddividere il lavoro attorno ai conflitti anziché ritardare intere attività</li>
-<li><strong>Level only within available slack</strong> — Limita i ritardi del livellamento a non superare il margine totale di un'attività, impedendo lo slittamento della data di fine del progetto</li>
-<li><strong>Leveling range</strong> — Limita il livellamento alle attività all'interno di una finestra temporale specifica</li>
+<li><strong>Livella solo entro lo slack disponibile</strong> — Limita i ritardi del livellamento a non superare il margine totale di un'attività, impedendo lo slittamento della data di fine del progetto</li>
+<li><strong>Intervallo di livellamento</strong> — Limita il livellamento alle attività all'interno di una finestra temporale specifica</li>
 </ul>
 <h3 id="esenti-dal-livellamento">Esenti dal livellamento <a href="#esenti-dal-livellamento" class="heading-anchor">#</a></h3>
 <p>Le seguenti attività e risorse non vengono mai influenzate dal livellamento automatico:</p>
 <ul>
 <li>Attività con <a href="#priorit%C3%A0">priorità</a> impostata a <strong>1000</strong></li>
-<li>Attività con <strong>Can Level</strong> impostato a <strong>false</strong> (nella scheda <strong>Leveling</strong> della finestra Task Properties)</li>
-<li>Attività con un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Must start on</strong> o <strong>Must finish on</strong></li>
+<li>Attività con <strong>Puo livellare</strong> impostato a <strong>false</strong> (nella scheda <strong>Livellamento</strong> della finestra Task Properties)</li>
+<li>Attività con un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Deve iniziare il</strong> o <strong>Deve finire il</strong></li>
 <li><a href="/it/building-schedule/tasks/#attivit%C3%A0-di-riepilogo">Attività di riepilogo</a></li>
 <li>Milestone con durata zero</li>
 <li>Attività completate al 100%</li>
-<li>Risorse con <strong>Can Level</strong> impostato a <strong>false</strong> nella finestra Resource Properties</li>
-<li>Risorse con <a href="/it/building-schedule/resources/#tipo-di-prenotazione">tipo di prenotazione</a> <strong>Proposed</strong> (a meno che l'opzione di livellamento per includere le risorse proposte sia abilitata)</li>
+<li>Risorse con <strong>Puo livellare</strong> impostato a <strong>false</strong> nella finestra Resource Properties</li>
+<li>Risorse con <a href="/it/building-schedule/resources/#tipo-di-prenotazione">tipo di prenotazione</a> <strong>Proposto</strong> (a meno che l'opzione di livellamento per includere le risorse proposte sia abilitata)</li>
 </ul>
 <h3 id="ri-livellamento-e-cancellazione">Ri-livellamento e cancellazione <a href="#ri-livellamento-e-cancellazione" class="heading-anchor">#</a></h3>
-<p>Ogni volta che esegui <strong>Auto-level resources</strong>, qualsiasi livellamento precedente viene automaticamente cancellato prima. Il livellamento parte sempre da un cronogramma pulito e non livellato per evitare che i ritardi si accumulino.</p>
-<p>Se modifichi il cronogramma dopo il livellamento (aggiungi attività, cambi dipendenze, ecc.), i ritardi di livellamento esistenti vengono preservati ma potrebbero non risolvere più tutte le sovrallocazioni. Esegui di nuovo <strong>Auto-level resources</strong> per ri-livellare il cronogramma aggiornato.</p>
-<p>Per rimuovere tutti i ritardi di livellamento e tornare al cronogramma originale calcolato con il CPM, scegli <strong>Clear leveling</strong> dal menu <strong>Project</strong>.</p>
-<h3 id="leveling-gantt">Leveling Gantt <a href="#leveling-gantt" class="heading-anchor">#</a></h3>
-<p>Dopo aver eseguito il livellamento automatico, appare un pulsante di attivazione/disattivazione <strong>Leveling Gantt</strong> nell'area del diagramma di Gantt. Quando attivato, disegna barre verdi nelle posizioni pre-livellamento — dove si trovavano le attività prima del livellamento — mentre le barre standard delle attività rimangono nelle posizioni livellate correnti. Questo ti permette di confrontare il cronogramma originale con quello livellato per vedere quanto ogni attività è stata ritardata.</p>
+<p>Ogni volta che esegui <strong>Livella automaticamente le risorse</strong>, qualsiasi livellamento precedente viene automaticamente cancellato prima. Il livellamento parte sempre da un cronogramma pulito e non livellato per evitare che i ritardi si accumulino.</p>
+<p>Se modifichi il cronogramma dopo il livellamento (aggiungi attività, cambi dipendenze, ecc.), i ritardi di livellamento esistenti vengono preservati ma potrebbero non risolvere più tutte le sovrallocazioni. Esegui di nuovo <strong>Livella automaticamente le risorse</strong> per ri-livellare il cronogramma aggiornato.</p>
+<p>Per rimuovere tutti i ritardi di livellamento e tornare al cronogramma originale calcolato con il CPM, scegli <strong>Cancella livellamento</strong> dal menu <strong>Progetto</strong>.</p>
+<h3 id="gantt-livellamento">Gantt livellamento <a href="#gantt-livellamento" class="heading-anchor">#</a></h3>
+<p>Dopo aver eseguito il livellamento automatico, appare un pulsante di attivazione/disattivazione <strong>Gantt livellamento</strong> nell'area del diagramma di Gantt. Quando attivato, disegna barre verdi nelle posizioni pre-livellamento — dove si trovavano le attività prima del livellamento — mentre le barre standard delle attività rimangono nelle posizioni livellate correnti. Questo ti permette di confrontare il cronogramma originale con quello livellato per vedere quanto ogni attività è stata ritardata.</p>
 <p>Il pulsante è visibile solo quando il progetto ha dati di livellamento e viene automaticamente nascosto quando cancelli il livellamento.</p>
 <h2 id="priorità">Priorità <a href="#priorità" class="heading-anchor">#</a></h2>
-<p>Il campo <strong>Priority</strong> è disponibile nella scheda <strong>Leveling</strong> della finestra <strong>Task Properties</strong>. Accetta un valore intero da 0 a 1000, con un valore predefinito di 500.</p>
+<p>Il campo <strong>Priorità</strong> è disponibile nella scheda <strong>Livellamento</strong> della finestra <strong>Proprietà del Compito</strong>. Accetta un valore intero da 0 a 1000, con un valore predefinito di 500.</p>
 <p>La priorità viene utilizzata dall'algoritmo di <a href="#livellamento-automatico">livellamento automatico</a> per decidere quali attività ritardare quando si risolvono le sovrallocazioni delle risorse. Le attività con una priorità più alta hanno meno probabilità di essere ritardate:</p>
 <ul>
 <li><strong>0</strong> — Priorità più bassa, più probabile che venga ritardata</li>

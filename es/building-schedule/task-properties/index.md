@@ -54,7 +54,7 @@ Si especifica 0 como la **Duración** de una tarea, la tarea se marca automátic
 
 ## Tipo y basado en el esfuerzo
 
-Las asignaciones de recursos de trabajo (o unidades de recursos de trabajo asignados), el trabajo y la duración dependen entre sí. Cuando cambia uno de estos, los demás deben recalcularse en consecuencia. El **Tipo** de la tarea (con la ayuda de la opción **Basado en el esfuerzo**) define cuál de las dos propiedades restantes permanece sin cambios, de modo que solo una de ellas se recalcula.
+Las asignaciones de recursos de trabajo (o unidades de recursos de trabajo asignados), el trabajo y la duración dependen entre sí. Cuando cambia uno de estos, los demás deben recalcularse en consecuencia. El **Tipo** de la tarea (con la ayuda de la opción **Impulsado por esfuerzo**) define cuál de las dos propiedades restantes permanece sin cambios, de modo que solo una de ellas se recalcula.
 
 Por ejemplo, puede establecer el **Tipo** en **Unidades fijas** (el valor predeterminado), en cuyo caso cuando cambia la Duración, el Trabajo se recalcula automáticamente.
 
@@ -63,8 +63,8 @@ Por ejemplo, puede establecer el **Tipo** en **Unidades fijas** (el valor predet
 | **Unidades fijas**    | Al cambiar la Duración: el Trabajo se recalcula.         |
 |                    | Al cambiar el Trabajo: la Duración se recalcula.         |
 |                    | Al cambiar las Unidades:                                  |
-|                    | - Si **Basado en el esfuerzo** está activado: la Duración se recalcula. |
-|                    | - Si **Basado en el esfuerzo** no está activado: el Trabajo se recalcula. |
+|                    | - Si **Impulsado por esfuerzo** está activado: la Duración se recalcula. |
+|                    | - Si **Impulsado por esfuerzo** no está activado: el Trabajo se recalcula. |
 | **Duración fija** | Al cambiar la Duración: el Trabajo se recalcula.         |
 |                    | Al cambiar el Trabajo: las Unidades se recalculan.           |
 |                    | Al cambiar las Unidades: el Trabajo se recalcula.            |
@@ -72,9 +72,9 @@ Por ejemplo, puede establecer el **Tipo** en **Unidades fijas** (el valor predet
 |                    | Al cambiar el Trabajo: la Duración se recalcula.         |
 |                    | Al cambiar las Unidades: la Duración se recalcula.        |
 
-En otras palabras, el **Tipo** le permite congelar una de las tres propiedades, mientras que la opción **Basado en el esfuerzo** define si el Trabajo debe permanecer sin cambios de las dos restantes.
+En otras palabras, el **Tipo** le permite congelar una de las tres propiedades, mientras que la opción **Impulsado por esfuerzo** define si el Trabajo debe permanecer sin cambios de las dos restantes.
 
-> Los ajustes de **Tipo** y **Basado en el esfuerzo** no están disponibles para [tareas de resumen](/es/building-schedule/tasks/index.md#tareas-de-resumen), que siempre son de Duración fija y no están basadas en el esfuerzo.
+> Los ajustes de **Tipo** y **Impulsado por esfuerzo** no están disponibles para [tareas de resumen](/es/building-schedule/tasks/index.md#tareas-de-resumen), que siempre son de Duración fija y no están basadas en el esfuerzo.
 
 ## Notas
 
@@ -91,6 +91,6 @@ Puede adjuntar una URL a su tarea usando el campo **Hipervínculo** en la pesta�
 En la pestaña **Visual** del diálogo **Propiedades de la tarea**:
 
 - **Ocultar barra** — Oculta la barra de la tarea en el diagrama de Gantt mientras mantiene la fila visible en la lista de tareas. El área de la barra invisible sigue respondiendo a clics y menús contextuales.
-- **Acumulación** — Muestra la barra de la subtarea en la fila de su tarea de resumen padre en el diagrama de Gantt. Esto proporciona una vista condensada cuando las tareas de resumen están contraídas.
+- **Resumen visual** — Muestra la barra de la subtarea en la fila de su tarea de resumen padre en el diagrama de Gantt. Esto proporciona una vista condensada cuando las tareas de resumen están contraídas.
 
 Estas opciones también se pueden alternar desde el submenú **Editar > Visualización** o el menú contextual de clic derecho.

@@ -213,13 +213,13 @@
       <h1 id="salvando-seu-projeto">Salvando Seu Projeto <a href="#salvando-seu-projeto" class="heading-anchor">#</a></h1>
 <p>O Ingantt salva seu projeto como um arquivo no seu dispositivo ou como um arquivo no seu Google Drive. O salvamento automático então mantém esse arquivo atualizado enquanto você trabalha. Este artigo explica qual destino você obtém, quando o salvamento automático se aplica e o único caso em que ele não é possível.</p>
 <h2 id="salvando-pela-primeira-vez">Salvando pela primeira vez <a href="#salvando-pela-primeira-vez" class="heading-anchor">#</a></h2>
-<p>Clique no botão <strong>Save</strong> na barra de ferramentas ou use <strong>Save file</strong> no menu <strong>File</strong>.</p>
-<p>Se o projeto nunca foi salvo, o Ingantt pergunta onde ele deve ficar. <strong>Save project as</strong> oferece dois destinos:</p>
+<p>Clique no botão <strong>Save</strong> na barra de ferramentas ou use <strong>Salvar arquivo</strong> no menu <strong>Arquivo</strong>.</p>
+<p>Se o projeto nunca foi salvo, o Ingantt pergunta onde ele deve ficar. <strong>Salvar projeto como</strong> oferece dois destinos:</p>
 <ul>
-<li><strong>Save to new local file</strong> — um arquivo no seu dispositivo.</li>
-<li><strong>Save to new Google Drive file</strong> — um arquivo no seu Google Drive. Requer login com o Google.</li>
+<li><strong>Salvar em um novo arquivo local</strong> — um arquivo no seu dispositivo.</li>
+<li><strong>Salvar em um novo arquivo no Google Drive</strong> — um arquivo no seu Google Drive. Requer login com o Google.</li>
 </ul>
-<p>Você pode alterar o destino mais tarde com <strong>Save file as</strong> no menu <strong>File</strong>, que sempre cria um novo arquivo e continua trabalhando nele.</p>
+<p>Você pode alterar o destino mais tarde com <strong>Salvar arquivo como</strong> no menu <strong>Arquivo</strong>, que sempre cria um novo arquivo e continua trabalhando nele.</p>
 <p>Seu projeto é salvo em um formato XML totalmente compatível com o Microsoft Project. Nada no seu plano fica preso ao Ingantt.</p>
 <blockquote>
 <p>Na web, se você já estiver com login feito no Google ao criar um projeto, o Ingantt escolhe o Google Drive para você e dá ao arquivo o nome do projeto. Você não precisa salvar uma vez antes que o salvamento automático comece a funcionar, e renomear o projeto renomeia o arquivo no Drive.</p>
@@ -239,16 +239,16 @@
 <tr>
 <td><strong>Web</strong></td>
 <td>Ativado</td>
-<td>Menu <strong>File</strong> → <strong>Work offline (no autosave)</strong></td>
+<td>Menu <strong>Arquivo</strong> → <strong>Trabalhar offline (sem salvamento automático)</strong></td>
 </tr>
 <tr>
 <td><strong>Android, iOS, Windows, macOS</strong></td>
 <td>Desativado</td>
-<td><strong>Enable autosave</strong> na caixa de diálogo <strong>Options</strong> ou no menu <strong>File</strong></td>
+<td><strong>Ativar salvamento automático</strong> na caixa de diálogo <strong>Opções</strong> ou no menu <strong>Arquivo</strong></td>
 </tr>
 </tbody>
 </table>
-<p>O botão <strong>Save</strong> também funciona como indicador do salvamento automático. Ele mostra <em>Saving…</em>, <em>File saved</em>, <em>File saved to Google Drive</em>, <em>Autosave pending…</em> ou um erro se um salvamento não foi concluído.</p>
+<p>O botão <strong>Save</strong> também funciona como indicador do salvamento automático. Ele mostra <em>Salvando…</em>, <em>Arquivo salvo</em>, <em>Arquivo salvo no Google Drive</em>, <em>Salvamento automático pendente…</em> ou um erro se um salvamento não foi concluído.</p>
 <p>O salvamento automático não pode ajudar em duas situações:</p>
 <ul>
 <li><strong>O projeto nunca foi salvo.</strong> Ainda não há arquivo para atualizar, então salve-o uma vez você mesmo.</li>
@@ -256,25 +256,25 @@
 </ul>
 <h2 id="salvamento-automático-e-arquivos-locais-na-web">Salvamento automático e arquivos locais na web <a href="#salvamento-automático-e-arquivos-locais-na-web" class="heading-anchor">#</a></h2>
 <p>Um navegador não pode gravar de volta em um arquivo que você escolheu do seu disco. Quando o Ingantt para Web salva em &quot;um arquivo local&quot;, ele baixa uma nova cópia do arquivo — o que é o comportamento correto para um <strong>Save</strong> explícito, mas não algo que você quer que aconteça a cada 20 segundos.</p>
-<p>Portanto: <strong>o Ingantt para Web não salva automaticamente em arquivos locais.</strong> Se você abriu um arquivo de projeto local no navegador e quer que suas alterações sejam mantidas automaticamente, use <strong>Save file as</strong> → <strong>Save to new Google Drive file</strong> uma vez. A partir daí, o salvamento automático mantém o arquivo do Drive atualizado.</p>
+<p>Portanto: <strong>o Ingantt para Web não salva automaticamente em arquivos locais.</strong> Se você abriu um arquivo de projeto local no navegador e quer que suas alterações sejam mantidas automaticamente, use <strong>Salvar arquivo como</strong> → <strong>Salvar em um novo arquivo no Google Drive</strong> uma vez. A partir daí, o salvamento automático mantém o arquivo do Drive atualizado.</p>
 <p>Isso afeta o <a href="/pt/getting-started/edit-with-ai/">Editar com IA</a> da mesma forma: sem salvamento automático, tudo o que a IA altera permanece não salvo até que você salve, e o Ingantt avisa sobre isso antes de a sessão começar.</p>
 <h2 id="trabalhando-offline-na-web">Trabalhando offline na web <a href="#trabalhando-offline-na-web" class="heading-anchor">#</a></h2>
-<p><strong>Work offline (no autosave)</strong> no menu <strong>File</strong> desativa o salvamento automático para a aba atual do navegador. Use-o quando quiser continuar editando sem que cada alteração vá para o Google Drive.</p>
+<p><strong>Trabalhar offline (sem salvamento automático)</strong> no menu <strong>Arquivo</strong> desativa o salvamento automático para a aba atual do navegador. Use-o quando quiser continuar editando sem que cada alteração vá para o Google Drive.</p>
 <p>Duas coisas a saber sobre ele:</p>
 <ul>
 <li>Nada é salvo enquanto está ativado, então salve manualmente antes de fechar a aba. O Ingantt lembra você disso ao ativá-lo.</li>
-<li>A configuração é por sessão. Recarregar a página ou abrir uma nova aba começa com o salvamento automático ativado novamente. No Android, iOS, Windows e macOS, por outro lado, a configuração <strong>Enable autosave</strong> é lembrada.</li>
+<li>A configuração é por sessão. Recarregar a página ou abrir uma nova aba começa com o salvamento automático ativado novamente. No Android, iOS, Windows e macOS, por outro lado, a configuração <strong>Ativar salvamento automático</strong> é lembrada.</li>
 </ul>
 <h2 id="baixando-uma-cópia">Baixando uma cópia <a href="#baixando-uma-cópia" class="heading-anchor">#</a></h2>
-<p>Na web, <strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong> salva uma cópia do projeto no seu computador sem alterar onde o projeto em si é salvo. Use-o para um backup ou para entregar o arquivo a alguém que usa o Microsoft Project.</p>
+<p>Na web, <strong>Arquivo</strong> → <strong>Baixar</strong> → <strong>Baixar XML</strong> salva uma cópia do projeto no seu computador sem alterar onde o projeto em si é salvo. Use-o para um backup ou para entregar o arquivo a alguém que usa o Microsoft Project.</p>
 <p>Outros formatos — PDF, PNG, CSV, XML, YAML e Markdown — são abordados em <a href="/pt/getting-started/import-export/">Importar e Exportar</a>.</p>
 <h2 id="fechando-com-alterações-não-salvas">Fechando com alterações não salvas <a href="#fechando-com-alterações-não-salvas" class="heading-anchor">#</a></h2>
 <p>Se você fechar um projeto com alterações não salvas, o Ingantt pergunta <strong>Save changes to</strong> seu projeto e avisa que as alterações não salvas serão perdidas. O mesmo aviso aparece antes de mover um projeto para a Lixeira.</p>
 <h2 id="se-o-ingantt-não-permitir-salvar">Se o Ingantt não permitir salvar <a href="#se-o-ingantt-não-permitir-salvar" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>&quot;View only mode as trial ended&quot;</strong> ou <strong>&quot;Subscription inactive&quot;</strong> — seus projetos ainda estão lá e continuam legíveis, mas salvar fica desativado até que sua assinatura esteja ativa. Consulte <a href="/pt/account/trial/">Avaliação Gratuita</a> e <a href="/pt/account/subscription/">Assinaturas e Pagamento</a>.</li>
-<li><strong>&quot;You are a viewer and cannot save&quot;</strong> — o arquivo do Google Drive foi compartilhado com você como leitor ou comentarista. Peça acesso de edição ao proprietário ou use <strong>Save file as</strong> para manter sua própria cópia. Consulte <a href="/pt/ui/sharing/">Compartilhando um Projeto</a>.</li>
-<li><strong>&quot;Error saving file to Google Drive&quot;</strong> — geralmente um problema de conexão ou um login do Google expirado. Verifique sua conexão e faça login novamente; consulte <a href="/pt/ui/files/">Integração com Google Drive</a>.</li>
+<li><strong>&quot;Modo de somente visualização porque o período de teste terminou&quot;</strong> ou <strong>&quot;Assinatura inativa&quot;</strong> — seus projetos ainda estão lá e continuam legíveis, mas salvar fica desativado até que sua assinatura esteja ativa. Consulte <a href="/pt/account/trial/">Avaliação Gratuita</a> e <a href="/pt/account/subscription/">Assinaturas e Pagamento</a>.</li>
+<li><strong>&quot;Você é um visualizador e não pode salvar&quot;</strong> — o arquivo do Google Drive foi compartilhado com você como leitor ou comentarista. Peça acesso de edição ao proprietário ou use <strong>Salvar arquivo como</strong> para manter sua própria cópia. Consulte <a href="/pt/ui/sharing/">Compartilhando um Projeto</a>.</li>
+<li><strong>&quot;Erro ao salvar arquivo no Google Drive&quot;</strong> — geralmente um problema de conexão ou um login do Google expirado. Verifique sua conexão e faça login novamente; consulte <a href="/pt/ui/files/">Integração com Google Drive</a>.</li>
 </ul>
 
     </main>

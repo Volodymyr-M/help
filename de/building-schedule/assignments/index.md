@@ -4,7 +4,7 @@ Steuern Sie, wie Ressourcen Vorgängen zugeordnet werden — wer woran arbeitet,
 
 ## Ressourcenzuweisungen und Einheiten
 
-Ressourcen können einem Vorgang auf dem Reiter **Ressourcen** des Dialogs **Vorgangseigenschaften** zugewiesen werden.
+Ressourcen können einem Vorgang auf dem Reiter **Ressourcen** des Dialogs **Aufgabeneigenschaften** zugewiesen werden.
 
 Um eine Ressource zuzuweisen, aktivieren Sie das Kontrollkästchen in der Zeile mit der Ressource. Um eine Ressource zu entfernen, deaktivieren Sie das Kontrollkästchen.
 

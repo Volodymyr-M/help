@@ -213,13 +213,13 @@
       <h1 id="プロジェクトの保存">プロジェクトの保存 <a href="#プロジェクトの保存" class="heading-anchor">#</a></h1>
 <p>Inganttは、プロジェクトをデバイス上のファイルまたはGoogle Drive上のファイルとして保存します。その後は、自動保存が作業中にそのファイルを最新の状態に保ちます。この記事では、どの保存先になるか、自動保存がいつ適用されるか、そして自動保存が機能しない唯一のケースについて説明します。</p>
 <h2 id="初めて保存する">初めて保存する <a href="#初めて保存する" class="heading-anchor">#</a></h2>
-<p>ツールバーの<strong>Save</strong>ボタンをクリックするか、<strong>File</strong>メニューの<strong>Save file</strong>を使用します。</p>
-<p>プロジェクトが一度も保存されていない場合、Inganttは保存先を尋ねます。<strong>Save project as</strong>では2つの保存先を選べます：</p>
+<p>ツールバーの<strong>保存</strong>ボタンをクリックするか、<strong>ファイル</strong>メニューの<strong>ファイルを保存</strong>を使用します。</p>
+<p>プロジェクトが一度も保存されていない場合、Inganttは保存先を尋ねます。<strong>プロジェクトを保存</strong>では2つの保存先を選べます：</p>
 <ul>
-<li><strong>Save to new local file</strong> — デバイス上のファイル。</li>
-<li><strong>Save to new Google Drive file</strong> — Google Drive上のファイル。Googleでのサインインが必要です。</li>
+<li><strong>新しいローカルファイルに保存</strong> — デバイス上のファイル。</li>
+<li><strong>新しいGoogleドライブファイルに保存</strong> — Google Drive上のファイル。Googleでのサインインが必要です。</li>
 </ul>
-<p>保存先は後から<strong>File</strong>メニューの<strong>Save file as</strong>で変更できます。これは常に新しいファイルを作成し、以降はそのファイルで作業を続けます。</p>
+<p>保存先は後から<strong>ファイル</strong>メニューの<strong>ファイルを保存</strong>で変更できます。これは常に新しいファイルを作成し、以降はそのファイルで作業を続けます。</p>
 <p>プロジェクトはMicrosoft Projectと完全に互換性のあるXML形式で保存されます。計画のどの部分もInganttに縛られることはありません。</p>
 <blockquote>
 <p>Webでは、プロジェクト作成時にすでにGoogleにサインインしていれば、InganttがGoogle Driveを自動的に選択し、プロジェクト名にちなんだファイル名を付けます。自動保存が機能し始める前に一度保存する必要はなく、プロジェクト名を変更するとDriveのファイル名も変更されます。</p>
@@ -239,42 +239,42 @@
 <tr>
 <td><strong>Web</strong></td>
 <td>オン</td>
-<td><strong>File</strong>メニュー → <strong>Work offline (no autosave)</strong></td>
+<td><strong>ファイル</strong>メニュー → <strong>オフラインで作業 (自動保存なし)</strong></td>
 </tr>
 <tr>
 <td><strong>Android、iOS、Windows、macOS</strong></td>
 <td>オフ</td>
-<td><strong>Options</strong>ダイアログまたは<strong>File</strong>メニューの<strong>Enable autosave</strong></td>
+<td><strong>オプション</strong>ダイアログまたは<strong>ファイル</strong>メニューの<strong>自動保存を有効にする</strong></td>
 </tr>
 </tbody>
 </table>
-<p><strong>Save</strong>ボタンは自動保存のインジケーターも兼ねています。<em>Saving…</em>、<em>File saved</em>、<em>File saved to Google Drive</em>、<em>Autosave pending…</em>、または保存が完了しなかった場合のエラーが表示されます。</p>
+<p><strong>保存</strong>ボタンは自動保存のインジケーターも兼ねています。<em>保存中...</em>、<em>ファイルが保存されました</em>、<em>Googleドライブに保存されました</em>、<em>自動保存が保留中...</em>、または保存が完了しなかった場合のエラーが表示されます。</p>
 <p>自動保存が役に立たない状況が2つあります：</p>
 <ul>
 <li><strong>プロジェクトが一度も保存されていない。</strong> 更新すべきファイルがまだ存在しないため、一度自分で保存してください。</li>
 <li><strong>ブラウザでInganttを使用中に、ローカルファイルからプロジェクトを開いた。</strong> 以下をご覧ください。</li>
 </ul>
 <h2 id="webでの自動保存とローカルファイル">Webでの自動保存とローカルファイル <a href="#webでの自動保存とローカルファイル" class="heading-anchor">#</a></h2>
-<p>ブラウザは、ディスクから選択したファイルに書き戻すことができません。Ingantt for Webが「ローカルファイル」に保存する場合、代わりにファイルの新しいコピーをダウンロードします。これは明示的な<strong>Save</strong>に対しては正しい動作ですが、20秒ごとに起きてほしいものではありません。</p>
-<p>つまり、<strong>Ingantt for Webはローカルファイルには自動保存しません。</strong> ブラウザでローカルのプロジェクトファイルを開き、変更を自動的に保存したい場合は、一度<strong>Save file as</strong> → <strong>Save to new Google Drive file</strong>を使用してください。それ以降は、自動保存がDriveのファイルを最新の状態に保ちます。</p>
+<p>ブラウザは、ディスクから選択したファイルに書き戻すことができません。Ingantt for Webが「ローカルファイル」に保存する場合、代わりにファイルの新しいコピーをダウンロードします。これは明示的な<strong>保存</strong>に対しては正しい動作ですが、20秒ごとに起きてほしいものではありません。</p>
+<p>つまり、<strong>Ingantt for Webはローカルファイルには自動保存しません。</strong> ブラウザでローカルのプロジェクトファイルを開き、変更を自動的に保存したい場合は、一度<strong>ファイルを保存</strong> → <strong>新しいGoogleドライブファイルに保存</strong>を使用してください。それ以降は、自動保存がDriveのファイルを最新の状態に保ちます。</p>
 <p>これは<a href="/ja/getting-started/edit-with-ai/">AIで編集</a>にも同様に影響します。自動保存がない場合、AIが変更した内容はあなた自身が保存するまで未保存のままとなり、Inganttはセッション開始前にそのことを警告します。</p>
 <h2 id="webでのオフライン作業">Webでのオフライン作業 <a href="#webでのオフライン作業" class="heading-anchor">#</a></h2>
-<p><strong>File</strong>メニューの<strong>Work offline (no autosave)</strong>は、現在のブラウザタブの自動保存をオフにします。すべての変更がGoogle Driveに送られることなく編集を続けたい場合に使用します。</p>
+<p><strong>ファイル</strong>メニューの<strong>オフラインで作業 (自動保存なし)</strong>は、現在のブラウザタブの自動保存をオフにします。すべての変更がGoogle Driveに送られることなく編集を続けたい場合に使用します。</p>
 <p>知っておくべき点が2つあります：</p>
 <ul>
 <li>オンの間は何も保存されないため、タブを閉じる前に手動で保存してください。オンにするとInganttがその旨を通知します。</li>
-<li>この設定はセッションごとです。ページを再読み込みしたり新しいタブを開いたりすると、再び自動保存がオンの状態で始まります。Android、iOS、Windows、macOSでは、代わりに<strong>Enable autosave</strong>の設定が記憶されます。</li>
+<li>この設定はセッションごとです。ページを再読み込みしたり新しいタブを開いたりすると、再び自動保存がオンの状態で始まります。Android、iOS、Windows、macOSでは、代わりに<strong>自動保存を有効にする</strong>の設定が記憶されます。</li>
 </ul>
 <h2 id="コピーのダウンロード">コピーのダウンロード <a href="#コピーのダウンロード" class="heading-anchor">#</a></h2>
-<p>Webでは、<strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong>で、プロジェクト自体の保存場所を変えることなく、プロジェクトのコピーをコンピューターに保存できます。バックアップや、Microsoft Projectを使用している相手にファイルを渡す際に使用します。</p>
+<p>Webでは、<strong>ファイル</strong> → <strong>ダウンロード</strong> → <strong>XMLをダウンロード</strong>で、プロジェクト自体の保存場所を変えることなく、プロジェクトのコピーをコンピューターに保存できます。バックアップや、Microsoft Projectを使用している相手にファイルを渡す際に使用します。</p>
 <p>その他の形式（PDF、PNG、CSV、XML、YAML、Markdown）については、<a href="/ja/getting-started/import-export/">インポートとエクスポート</a>で説明しています。</p>
 <h2 id="未保存の変更がある状態で閉じる">未保存の変更がある状態で閉じる <a href="#未保存の変更がある状態で閉じる" class="heading-anchor">#</a></h2>
 <p>未保存の変更があるプロジェクトを閉じると、Inganttは<strong>Save changes to</strong>ダイアログでプロジェクトへの変更を保存するかどうかを尋ね、未保存の変更が失われることを警告します。プロジェクトをゴミ箱に移動する前にも同じ確認が表示されます。</p>
 <h2 id="inganttで保存できない場合">Inganttで保存できない場合 <a href="#inganttで保存できない場合" class="heading-anchor">#</a></h2>
 <ul>
-<li><strong>「View only mode as trial ended」</strong>または<strong>「Subscription inactive」</strong> — プロジェクトはそのまま残っており閲覧できますが、サブスクリプションが有効になるまで保存はオフになります。<a href="/ja/account/trial/">無料トライアル</a>と<a href="/ja/account/subscription/">サブスクリプションと支払い</a>をご覧ください。</li>
-<li><strong>「You are a viewer and cannot save」</strong> — Google Driveのファイルが閲覧者またはコメント投稿者としてあなたに共有されています。オーナーに編集権限を依頼するか、<strong>Save file as</strong>を使用して自分のコピーを保存してください。<a href="/ja/ui/sharing/">プロジェクトの共有</a>をご覧ください。</li>
-<li><strong>「Error saving file to Google Drive」</strong> — 通常は接続の問題か、Googleのサインインの期限切れです。接続を確認して再度サインインしてください。<a href="/ja/ui/files/">Google Driveとの連携</a>をご覧ください。</li>
+<li><strong>「試用期間が終了したため、閲覧専用モードです」</strong>または<strong>「購読が無効です」</strong> — プロジェクトはそのまま残っており閲覧できますが、サブスクリプションが有効になるまで保存はオフになります。<a href="/ja/account/trial/">無料トライアル</a>と<a href="/ja/account/subscription/">サブスクリプションと支払い</a>をご覧ください。</li>
+<li><strong>「閲覧者のみで保存できません」</strong> — Google Driveのファイルが閲覧者またはコメント投稿者としてあなたに共有されています。オーナーに編集権限を依頼するか、<strong>ファイルを保存</strong>を使用して自分のコピーを保存してください。<a href="/ja/ui/sharing/">プロジェクトの共有</a>をご覧ください。</li>
+<li><strong>「Googleドライブに保存する際のエラー」</strong> — 通常は接続の問題か、Googleのサインインの期限切れです。接続を確認して再度サインインしてください。<a href="/ja/ui/files/">Google Driveとの連携</a>をご覧ください。</li>
 </ul>
 
     </main>

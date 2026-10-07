@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/" class="active" aria-current="page">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -214,13 +214,13 @@
 <p>Sobald die Arbeit beginnt, aktualisieren Sie <strong>% Abgeschlossen</strong> für jeden Vorgang, um zu verfolgen, wie der tatsächliche Fortschritt im Vergleich zum Plan steht. Verwenden Sie <strong>Projekt aktualisieren</strong>, um den Fortschritt für mehrere Vorgänge gleichzeitig festzulegen. Während der Fortschritt erfasst wird, berechnet Ingantt automatisch <a href="/de/tracking/actuals/">Ist-Werte</a> — tatsächliche und verbleibende Werte für Dauer, Arbeit, Kosten und Termine.</p>
 <h2 id="-abgeschlossen">% Abgeschlossen <a href="#-abgeschlossen" class="heading-anchor">#</a></h2>
 <p>Sobald Ihr Projekt läuft, müssen Sie seinen Fortschritt verfolgen. Wenn Sie <strong>% Abgeschlossen</strong> für jeden Vorgang aktuell halten, können Sie den Gesamtwert <strong>% Abgeschlossen</strong> des Projekts in seinem Projektsammelvorgang sehen.</p>
-<p>Verwenden Sie das Feld <strong>% Abgeschlossen</strong> im Dialog <strong>Vorgangseigenschaften</strong>, um den Fertigstellungsgrad eines bestimmten Vorgangs festzulegen. Vorgänge, die zu 100 % abgeschlossen sind, zeigen ein grünes Häkchen in der Vorgangsliste an.</p>
+<p>Verwenden Sie das Feld <strong>% Abgeschlossen</strong> im Dialog <strong>Aufgabeneigenschaften</strong>, um den Fertigstellungsgrad eines bestimmten Vorgangs festzulegen. Vorgänge, die zu 100 % abgeschlossen sind, zeigen ein grünes Häkchen in der Vorgangsliste an.</p>
 <p>Wenn Sie % Abgeschlossen aktualisieren:</p>
 <ul>
 <li>Das Setzen über 0 % setzt den <strong>Ist-Anfang</strong> des Vorgangs auf das geplante Startdatum des Vorgangs.</li>
 <li>Das Setzen auf 100 % setzt das <strong>Ist-Ende</strong> des Vorgangs auf das geplante Enddatum des Vorgangs.</li>
-<li><strong>Ist-Dauer</strong> und <strong>Verbleibende Dauer</strong> werden automatisch basierend auf dem Fertigstellungsgrad berechnet.</li>
-<li>Wenn <strong>Vorgangsstatus aktualisiert Ressourcenstatus</strong> in den Projekteinstellungen aktiviert ist (die Standardeinstellung), werden <strong>Ist-Arbeit</strong> und <strong>Verbleibende Arbeit</strong> ebenfalls proportional aktualisiert.</li>
+<li><strong>Ist-Dauer</strong> und <strong>Restdauer</strong> werden automatisch basierend auf dem Fertigstellungsgrad berechnet.</li>
+<li>Wenn <strong>Aktualisierung des Vorgangsstatus aktualisiert den Ressourcenstatus</strong> in den Projekteinstellungen aktiviert ist (die Standardeinstellung), werden <strong>Ist-Arbeit</strong> und <strong>Restarbeit</strong> ebenfalls proportional aktualisiert.</li>
 </ul>
 <p>Der <strong>% Abgeschlossen</strong> eines Sammelvorgangs wird als dauergewichteter Durchschnitt aller seiner untergeordneten Nicht-Sammelvorgänge berechnet.</p>
 <blockquote>
@@ -231,14 +231,14 @@
 <h3 id="arbeit-als-abgeschlossen-aktualisieren">Arbeit als abgeschlossen aktualisieren <a href="#arbeit-als-abgeschlossen-aktualisieren" class="heading-anchor">#</a></h3>
 <p>Markieren Sie Vorgänge als abgeschlossen bis zu einem bestimmten Datum:</p>
 <ul>
-<li><strong>Proportional (0 %–100 %)</strong> — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem angegebenen Datum liegt.</li>
-<li><strong>Alles oder nichts (0 % oder 100 %)</strong> — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum angegebenen Datum abgeschlossen sind.</li>
+<li><strong>Proportional (0%–100%)</strong> — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem angegebenen Datum liegt.</li>
+<li><strong>Alles-oder-nichts (0% oder 100%)</strong> — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum angegebenen Datum abgeschlossen sind.</li>
 </ul>
 <h3 id="nicht-abgeschlossene-arbeit-umplanen">Nicht abgeschlossene Arbeit umplanen <a href="#nicht-abgeschlossene-arbeit-umplanen" class="heading-anchor">#</a></h3>
 <p>Verschiebt nicht abgeschlossene Arbeit, damit sie nach einem bestimmten Datum beginnt:</p>
 <ul>
 <li>Vorgänge, die noch nicht begonnen haben, erhalten eine <strong>Anfang nicht früher als</strong>-Einschränkung.</li>
-<li>Laufende Vorgänge werden geteilt, wenn <strong>Laufende Vorgänge teilen</strong> in den Projektplanungsoptionen aktiviert ist.</li>
+<li>Laufende Vorgänge werden geteilt, wenn <strong>Laufende Vorgänge unterbrechen</strong> in den Projektplanungsoptionen aktiviert ist.</li>
 <li>Abgeschlossene Vorgänge werden nicht verändert.</li>
 </ul>
 

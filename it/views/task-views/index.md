@@ -2,21 +2,21 @@
 
 Oltre al diagramma di Gantt, visualizza le attività su una bacheca Kanban, un calendario mensile, un diagramma reticolare o una linea temporale. Ogni vista evidenzia aspetti diversi del cronogramma.
 
-## Task Board
+## Board Attivita
 
-La vista **Task Board** mostra le attività come schede organizzate in colonne che rappresentano le fasi del flusso di lavoro (stile Kanban).
+La vista **Board Attivita** mostra le attività come schede organizzate in colonne che rappresentano le fasi del flusso di lavoro (stile Kanban).
 
 I nuovi progetti iniziano con tre colonne predefinite: "Not Started" (0%), "In Progress" (50%) e "Complete" (100%). Ogni colonna ha una corrispondenza con la % di completamento — quando trascini una scheda in una colonna, la percentuale di completamento dell'attività viene aggiornata automaticamente.
 
-Puoi aggiungere, modificare, rinominare, riordinare ed eliminare le colonne. Ogni colonna ha un pulsante **Add Task** in fondo per creare attività direttamente in quella fase.
+Puoi aggiungere, modificare, rinominare, riordinare ed eliminare le colonne. Ogni colonna ha un pulsante **Aggiungi Compito** in fondo per creare attività direttamente in quella fase.
 
-Solo le attività non di riepilogo, attive e con "Show on board" abilitato appaiono nella bacheca. L'impostazione "Show on board" è disponibile nella scheda **Visual** della finestra **Task Properties**.
+Solo le attività non di riepilogo, attive e con "Mostra sulla bacheca" abilitato appaiono nella bacheca. L'impostazione "Mostra sulla bacheca" è disponibile nella scheda **Visuale** della finestra **Proprietà del Compito**.
 
-> Trascina le schede delle attività tra le colonne per cambiarne lo stato. Quando la % di completamento di un'attività cambia altrove (tramite finestra di dialogo, modifica in linea o Update Project), la scheda si sposta automaticamente nella colonna corrispondente.
+> Trascina le schede delle attività tra le colonne per cambiarne lo stato. Quando la % di completamento di un'attività cambia altrove (tramite finestra di dialogo, modifica in linea o Aggiorna Progetto), la scheda si sposta automaticamente nella colonna corrispondente.
 
-## Network Diagram
+## Diagramma Reticolare
 
-La vista **Network Diagram** mostra le attività come nodi rettangolari disposti in un layout a diagramma di flusso da sinistra a destra. Le attività senza predecessori appaiono nella colonna più a sinistra, e ogni attività successiva appare dopo tutti i suoi predecessori.
+La vista **Diagramma Reticolare** mostra le attività come nodi rettangolari disposti in un layout a diagramma di flusso da sinistra a destra. Le attività senza predecessori appaiono nella colonna più a sinistra, e ogni attività successiva appare dopo tutti i suoi predecessori.
 
 - Le attività normali mostrano ID, durata, date di inizio/fine e risorse
 - Le attività di riepilogo mostrano ID, durata, date di inizio/fine e percentuale di completamento
@@ -26,12 +26,12 @@ La vista **Network Diagram** mostra le attività come nodi rettangolari disposti
 
 Puoi comprimere/espandere le attività di riepilogo, fare clic per selezionare, doppio clic per modificare e clic destro per il menu contestuale. Le frecce delle dipendenze vengono disegnate tra i nodi per tutti e quattro i tipi di collegamento.
 
-## Calendar View
+## Vista Calendario
 
-La **Calendar View** mostra una griglia calendario mensile con le attività visualizzate come barre orizzontali che coprono le date pianificate.
+La **Vista Calendario** mostra una griglia calendario mensile con le attività visualizzate come barre orizzontali che coprono le date pianificate.
 
-- Passa tra le viste **Month** e **Week** usando il pulsante nell'intestazione
-- Abilita la modalità **Work week** per mostrare solo i giorni lavorativi (vista a 5 giorni)
+- Passa tra le viste **Mese** e **Settimana** usando il pulsante nell'intestazione
+- Abilita la modalità **Settimana lavorativa** per mostrare solo i giorni lavorativi (vista a 5 giorni)
 - Naviga con i pulsanti Previous/Next o vai direttamente a oggi
 - I giorni non lavorativi sono mostrati con uno sfondo distinto
 - Le milestone appaiono come icone a forma di diamante
@@ -39,18 +39,18 @@ La **Calendar View** mostra una griglia calendario mensile con le attività visu
 
 Le attività che superano il confine di una settimana proseguono nella riga successiva. Quando più attività si sovrappongono nello stesso giorno, si impilano verticalmente.
 
-## Timeline
+## Sequenza temporale
 
-La **Timeline** è un pannello comprimibile che appare sopra il diagramma di Gantt, mostrando una panoramica semplificata delle attività selezionate dall'utente su un asse temporale orizzontale.
+La **Sequenza temporale** è un pannello comprimibile che appare sopra il diagramma di Gantt, mostrando una panoramica semplificata delle attività selezionate dall'utente su un asse temporale orizzontale.
 
-Per aggiungere un'attività alla timeline, fai clic destro su di essa e scegli **Display on Timeline**, oppure seleziona l'opzione nella scheda **Visual** della finestra Task Properties.
+Per aggiungere un'attività alla timeline, fai clic destro su di essa e scegli **Mostra nella sequenza temporale**, oppure seleziona l'opzione nella scheda **Visuale** della finestra Task Properties.
 
 Le attività sulla timeline possono essere visualizzate come barre o didascalie (etichette di testo con linee di collegamento verticali). Puoi passare da una modalità all'altra trascinando la barra di un'attività sopra o sotto la linea separatrice orizzontale nel pannello della timeline. La timeline mostra anche un indicatore della data odierna e una sovrapposizione della finestra di visualizzazione che puoi trascinare per scorrere il diagramma di Gantt.
 
-Attiva la Timeline dal menu **View**.
+Attiva la Sequenza temporale dal menu **Visualizza**.
 
-## Tracking Gantt
+## Gantt di Tracciamento
 
-La vista **Tracking Gantt** è simile alla vista Tasks standard, ma con l'evidenziazione del percorso critico sempre attiva e la Baseline 0 mostrata se è stata salvata. Quando navighi fuori dal Tracking Gantt, le impostazioni di visibilità del percorso critico e della baseline vengono ripristinate allo stato precedente.
+La vista **Gantt di Tracciamento** è simile alla vista Compiti standard, ma con l'evidenziazione del percorso critico sempre attiva e la Baseline 0 mostrata se è stata salvata. Quando navighi fuori dal Gantt di Tracciamento, le impostazioni di visibilità del percorso critico e della baseline vengono ripristinate allo stato precedente.
 
-Usa il Tracking Gantt per monitorare l'avanzamento del progetto rispetto al piano di baseline.
+Usa il Gantt di Tracciamento per monitorare l'avanzamento del progetto rispetto al piano di baseline.

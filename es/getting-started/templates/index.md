@@ -28,7 +28,7 @@ Depende de cómo esté ejecutando Ingantt.
 - **Ingantt para Web, con sesión iniciada en Google.** El nuevo plan se escribe en su [Google Drive](/es/ui/files/index.md) de inmediato y se abre en una **nueva pestaña del navegador**. El proyecto en el que estaba trabajando permanece abierto e intacto en la pestaña original. Como está en Drive desde el primer momento, el guardado automático está activado de inmediato.
 - **En todos los demás casos.** El plan se abre como un proyecto sin guardar. No tiene ubicación hasta que lo guarde, y no se guarda automáticamente hasta entonces — use **Guardar** o **Guardar como** y elija dónde va.
 
-Si la plantilla no se puede leer, verá *Error al cargar la plantilla. Inténtelo de nuevo.* Si no se puede escribir en Drive, verá *Error al guardar en Google Drive.* En ambos casos no se ha cambiado nada y su proyecto existente no se ve afectado.
+Si la plantilla no se puede leer, verá *Error al cargar la plantilla. Por favor, inténtelo de nuevo.* Si no se puede escribir en Drive, verá *Error al guardar en Google Drive.* En ambos casos no se ha cambiado nada y su proyecto existente no se ve afectado.
 
 ## Después de que se abre la plantilla
 

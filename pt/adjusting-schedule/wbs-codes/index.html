@@ -213,7 +213,7 @@
       <h1 id="códigos-wbs">Códigos WBS <a href="#códigos-wbs" class="heading-anchor">#</a></h1>
 <p>Cada tarefa tem um código <strong>WBS</strong> — seu endereço na estrutura de tópicos. Por padrão, é o simples número da estrutura: <code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>. Exiba-o ativando a coluna <strong>WBS</strong> na tabela de tarefas.</p>
 <p>Uma <strong>máscara de código WBS</strong> substitui esses números da estrutura por um código estruturado criado por você, de modo que as tarefas apareçam como <code>PROJ-A-01</code> ou <code>1.A.001</code> em vez de <code>1.1.1</code>. Organizações com um padrão de numeração — um contrato, um esquema de códigos de custo, o formato de relatório de um cliente — usam isso para fazer os códigos do Ingantt corresponderem a esse padrão.</p>
-<p>Abra <strong>Project → WBS Code Definition</strong> para configurar uma.</p>
+<p>Abra <strong>Projeto → Definição de código WBS</strong> para configurar uma.</p>
 <h2 id="códigos-wbs-e-códigos-de-estrutura-são-diferentes">Códigos WBS e Códigos de Estrutura São Diferentes <a href="#códigos-wbs-e-códigos-de-estrutura-são-diferentes" class="heading-anchor">#</a></h2>
 <ul>
 <li>Um <strong>código WBS</strong> é estrutural. Existe exatamente um por tarefa e ele é derivado da posição da tarefa na estrutura de tópicos. Ele se renumera quando você move tarefas de lugar.</li>
@@ -221,10 +221,10 @@
 </ul>
 <h2 id="definindo-a-máscara">Definindo a Máscara <a href="#definindo-a-máscara" class="heading-anchor">#</a></h2>
 <p>A caixa de diálogo tem três partes.</p>
-<h3 id="prefixo-de-código-do-projeto">Prefixo de Código do Projeto <a href="#prefixo-de-código-do-projeto" class="heading-anchor">#</a></h3>
+<h3 id="prefixo-de-código-do-projeto">Prefixo de código do projeto <a href="#prefixo-de-código-do-projeto" class="heading-anchor">#</a></h3>
 <p>Texto fixo colocado antes de todos os códigos do projeto. Com o prefixo <code>PROJ</code>, os códigos aparecem como <code>PROJ.1.1</code> ou <code>PROJ-A-01</code>, dependendo dos seus separadores. Deixe-o vazio para não usar prefixo.</p>
-<h3 id="máscara-de-código">Máscara de Código <a href="#máscara-de-código" class="heading-anchor">#</a></h3>
-<p>Uma linha por nível da estrutura, adicionada com <strong>Add Level</strong>. Cada linha define:</p>
+<h3 id="máscara-de-código">Máscara de código <a href="#máscara-de-código" class="heading-anchor">#</a></h3>
+<p>Uma linha por nível da estrutura, adicionada com <strong>Adicionar nível</strong>. Cada linha define:</p>
 <table>
 <thead>
 <tr>
@@ -234,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Level</strong></td>
+<td><strong>Nível</strong></td>
 <td>A profundidade da estrutura à qual esta linha se aplica. O nível 1 são as tarefas de nível superior, o nível 2 suas filhas, e assim por diante.</td>
 </tr>
 <tr>
-<td><strong>Sequence</strong></td>
-<td>Os caracteres usados neste nível: <strong>Numbers</strong> (1, 2, 3), <strong>Uppercase Letters</strong> (A, B, C … Z, AA), <strong>Lowercase Letters</strong> (a, b, c … z, aa) ou <strong>Characters</strong>.</td>
+<td><strong>Sequência</strong></td>
+<td>Os caracteres usados neste nível: <strong>Números</strong> (1, 2, 3), <strong>Letras maiúsculas</strong> (A, B, C … Z, AA), <strong>Letras minúsculas</strong> (a, b, c … z, aa) ou <strong>Caracteres</strong>.</td>
 </tr>
 <tr>
-<td><strong>Length</strong></td>
-<td>Número máximo de caracteres neste nível. Deixe-o vazio — ele mostra <em>Any</em> — para não haver limite.</td>
+<td><strong>Comprimento</strong></td>
+<td>Número máximo de caracteres neste nível. Deixe-o vazio — ele mostra <em>Qualquer</em> — para não haver limite.</td>
 </tr>
 <tr>
-<td><strong>Separator</strong></td>
+<td><strong>Separador</strong></td>
 <td>O caractere entre este nível e o próximo, como <code>.</code> ou <code>-</code>.</td>
 </tr>
 </tbody>
@@ -254,11 +254,11 @@
 <p>Vale a pena saber duas coisas sobre como os campos se comportam:</p>
 <ul>
 <li><strong>Length preenche os números com zeros à esquerda.</strong> Um comprimento de <code>3</code> em um nível Numbers transforma a nona tarefa em <code>009</code>. Ele não preenche níveis de letras.</li>
-<li><strong>Characters</strong> se comporta da mesma forma que Numbers para os códigos gerados pelo Ingantt. Ele existe por compatibilidade com o Microsoft Project, onde significa um nível digitado por você.</li>
+<li><strong>Caracteres</strong> se comporta da mesma forma que Numbers para os códigos gerados pelo Ingantt. Ele existe por compatibilidade com o Microsoft Project, onde significa um nível digitado por você.</li>
 </ul>
 <p>Você não precisa definir todos os níveis. <strong>Níveis mais profundos que a última linha da sua máscara usam um número com separador <code>.</code></strong>, então uma máscara de três linhas em um plano com cinco níveis de profundidade ainda produz um código completo.</p>
 <h3 id="opções">Opções <a href="#opções" class="heading-anchor">#</a></h3>
-<p><strong>Generate WBS code for new task</strong> e <strong>Verify uniqueness of new WBS codes</strong> são armazenados com o projeto e preservados em uma ida e volta pelo Microsoft Project. No Ingantt, uma máscara com pelo menos um nível é aplicada a todas as tarefas automaticamente, e os códigos são únicos por construção, porque seguem a estrutura de tópicos.</p>
+<p><strong>Gerar código WBS para nova tarefa</strong> e <strong>Verificar unicidade de novos códigos WBS</strong> são armazenados com o projeto e preservados em uma ida e volta pelo Microsoft Project. No Ingantt, uma máscara com pelo menos um nível é aplicada a todas as tarefas automaticamente, e os códigos são únicos por construção, porque seguem a estrutura de tópicos.</p>
 <h2 id="o-que-acontece-quando-você-salva-a-máscara">O Que Acontece Quando Você Salva a Máscara <a href="#o-que-acontece-quando-você-salva-a-máscara" class="heading-anchor">#</a></h2>
 <p>O Ingantt renumera o projeto inteiro imediatamente. Os códigos são reconstruídos a partir da estrutura de tópicos sempre que a estrutura muda — quando você adiciona, exclui, recua, avança ou move uma tarefa — de modo que sempre descrevem onde a tarefa está agora.</p>
 <p>Vale dizer isso claramente: <strong>um código WBS não é um identificador permanente de uma tarefa.</strong> Mova uma tarefa e seu código muda. Se você precisa de um rótulo que acompanhe a tarefa, use um código de estrutura ou um <a href="/pt/adjusting-schedule/custom-fields/">campo de texto personalizado</a>.</p>

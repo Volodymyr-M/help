@@ -211,34 +211,34 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="進捗の追跡">進捗の追跡 <a href="#進捗の追跡" class="heading-anchor">#</a></h1>
-<p>作業が開始されたら、各タスクの<strong>% Complete</strong>を更新して、実際の進捗が計画とどのように比較されるかを追跡します。<strong>Update Project</strong>を使用して、一括で進捗を設定できます。進捗が記録されると、Inganttは自動的に<a href="/ja/tracking/actuals/">実績値</a>を計算します — 期間、作業量、コスト、日付の実績値と残りの値です。</p>
-<h2 id="達成率-complete">達成率（% Complete） <a href="#達成率-complete" class="heading-anchor">#</a></h2>
-<p>プロジェクトが進行中の場合、進捗を追跡する必要があります。各タスクの<strong>% Complete</strong>を最新の状態に保てば、ルートサマリータスクでプロジェクト全体の<strong>% Complete</strong>を確認できます。</p>
-<p>特定のタスクの達成率を設定するには、<strong>Task Properties</strong>ダイアログの<strong>% Complete</strong>フィールドを使用します。100%完了したタスクは、タスクリストに緑色のチェックマークアイコンが表示されます。</p>
-<p>% Completeを更新すると：</p>
+<p>作業が開始されたら、各タスクの<strong>% 完了</strong>を更新して、実際の進捗が計画とどのように比較されるかを追跡します。<strong>プロジェクトの更新</strong>を使用して、一括で進捗を設定できます。進捗が記録されると、Inganttは自動的に<a href="/ja/tracking/actuals/">実績値</a>を計算します — 期間、作業量、コスト、日付の実績値と残りの値です。</p>
+<h2 id="-完了">% 完了 <a href="#-完了" class="heading-anchor">#</a></h2>
+<p>プロジェクトが進行中の場合、進捗を追跡する必要があります。各タスクの<strong>% 完了</strong>を最新の状態に保てば、ルートサマリータスクでプロジェクト全体の<strong>% 完了</strong>を確認できます。</p>
+<p>特定のタスクの達成率を設定するには、<strong>タスクのプロパティ</strong>ダイアログの<strong>% 完了</strong>フィールドを使用します。100%完了したタスクは、タスクリストに緑色のチェックマークアイコンが表示されます。</p>
+<p>% 完了を更新すると：</p>
 <ul>
-<li>0%より上に設定すると、タスクの<strong>Actual Start</strong>がタスクのスケジュール上の開始日に設定されます。</li>
-<li>100%に設定すると、タスクの<strong>Actual Finish</strong>がタスクのスケジュール上の終了日に設定されます。</li>
-<li><strong>Actual Duration</strong>と<strong>Remaining Duration</strong>は達成率に基づいて自動的に計算されます。</li>
-<li>プロジェクト設定で<strong>Updating task status updates resource status</strong>が有効になっている場合（デフォルト）、<strong>Actual Work</strong>と<strong>Remaining Work</strong>も比例して更新されます。</li>
+<li>0%より上に設定すると、タスクの<strong>実績開始</strong>がタスクのスケジュール上の開始日に設定されます。</li>
+<li>100%に設定すると、タスクの<strong>実績終了</strong>がタスクのスケジュール上の終了日に設定されます。</li>
+<li><strong>実績期間</strong>と<strong>残存期間</strong>は達成率に基づいて自動的に計算されます。</li>
+<li>プロジェクト設定で<strong>タスクの状態の更新でリソースの状態も更新する</strong>が有効になっている場合（デフォルト）、<strong>実績作業時間</strong>と<strong>残存作業時間</strong>も比例して更新されます。</li>
 </ul>
-<p>サマリータスクの<strong>% Complete</strong>は、すべての子孫の非サマリータスクの期間加重平均として計算されます。</p>
+<p>サマリータスクの<strong>% 完了</strong>は、すべての子孫の非サマリータスクの期間加重平均として計算されます。</p>
 <blockquote>
-<p><a href="#update-project%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">Update Project</a>コマンドを使用して、基準日に基づいて複数のタスクの% Completeを一括で設定することもできます。</p>
+<p><a href="#%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AE%E6%9B%B4%E6%96%B0%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">プロジェクトの更新</a>コマンドを使用して、基準日に基づいて複数のタスクの% 完了を一括で設定することもできます。</p>
 </blockquote>
-<h2 id="update-projectコマンド">Update Projectコマンド <a href="#update-projectコマンド" class="heading-anchor">#</a></h2>
-<p><strong>Update Project</strong>コマンドは、<strong>Project</strong>メニューからアクセスできる、進捗の追跡を一括で行う操作を提供します。</p>
+<h2 id="プロジェクトの更新コマンド">プロジェクトの更新コマンド <a href="#プロジェクトの更新コマンド" class="heading-anchor">#</a></h2>
+<p><strong>プロジェクトの更新</strong>コマンドは、<strong>プロジェクト</strong>メニューからアクセスできる、進捗の追跡を一括で行う操作を提供します。</p>
 <h3 id="作業完了の更新">作業完了の更新 <a href="#作業完了の更新" class="heading-anchor">#</a></h3>
 <p>指定した日付までのタスクを完了としてマークします：</p>
 <ul>
-<li><strong>Proportional (0%–100%)</strong> — 各タスクの稼働期間のうち基準日までにどれだけ経過したかに基づいて、達成率を計算します。</li>
-<li><strong>All-or-nothing (0% or 100%)</strong> — 基準日までに終了するかどうかに基づいて、タスクを0%または100%に設定します。</li>
+<li><strong>比例 (0%〜100%)</strong> — 各タスクの稼働期間のうち基準日までにどれだけ経過したかに基づいて、達成率を計算します。</li>
+<li><strong>完了か未完了 (0% または 100%)</strong> — 基準日までに終了するかどうかに基づいて、タスクを0%または100%に設定します。</li>
 </ul>
 <h3 id="未完了作業の再スケジュール">未完了作業の再スケジュール <a href="#未完了作業の再スケジュール" class="heading-anchor">#</a></h3>
 <p>未完了の作業を指定した日付以降に開始されるようにします：</p>
 <ul>
-<li>まだ開始されていないタスクには<strong>Start No Earlier Than</strong>制約が設定されます。</li>
-<li>進行中のタスクは、プロジェクトのスケジューリングオプションで<strong>Split in-progress tasks</strong>が有効な場合に分割されます。</li>
+<li>まだ開始されていないタスクには<strong>これより前には開始しない</strong>制約が設定されます。</li>
+<li>進行中のタスクは、プロジェクトのスケジューリングオプションで<strong>進行中のタスクを分割する</strong>が有効な場合に分割されます。</li>
 <li>完了したタスクは変更されません。</li>
 </ul>
 

@@ -4,7 +4,7 @@ Ogni attività ha un codice **WBS** — il suo indirizzo nella struttura. Per im
 
 Una **maschera del codice WBS** sostituisce quei numeri di struttura con un codice strutturato di tua progettazione, così le attività risultano come `PROJ-A-01` o `1.A.001` invece di `1.1.1`. Le organizzazioni con uno standard di numerazione — un contratto, uno schema di codici di costo, il formato di reportistica di un cliente — lo usano per far corrispondere i codici di Ingantt a quello standard.
 
-Apri **Project → WBS Code Definition** per configurarne una.
+Apri **Progetto → Definizione Codice WBS** per configurarne una.
 
 ## I codici WBS e i codici struttura sono diversi
 
@@ -15,31 +15,31 @@ Apri **Project → WBS Code Definition** per configurarne una.
 
 La finestra ha tre parti.
 
-### Prefisso del codice di progetto
+### Prefisso Codice Progetto
 
 Testo fisso anteposto a ogni codice del progetto. Con il prefisso `PROJ`, i codici risultano come `PROJ.1.1` o `PROJ-A-01` a seconda dei separatori. Lascialo vuoto per non avere alcun prefisso.
 
 ### Maschera del codice
 
-Una riga per ogni livello della struttura, aggiunta con **Add Level**. Ogni riga imposta:
+Una riga per ogni livello della struttura, aggiunta con **Aggiungi Livello**. Ogni riga imposta:
 
 | Campo | Cosa fa |
 |-------|---------|
-| **Level** | La profondità della struttura a cui si applica la riga. Il livello 1 corrisponde alle attività di primo livello, il livello 2 alle loro sottoattività, e così via. |
-| **Sequence** | I caratteri usati a questo livello: **Numbers** (1, 2, 3), **Uppercase Letters** (A, B, C … Z, AA), **Lowercase Letters** (a, b, c … z, aa) o **Characters**. |
-| **Length** | Numero massimo di caratteri a questo livello. Lascialo vuoto — mostra *Any* — per nessun limite. |
-| **Separator** | Il carattere tra questo livello e il successivo, ad esempio `.` o `-`. |
+| **Livello** | La profondità della struttura a cui si applica la riga. Il livello 1 corrisponde alle attività di primo livello, il livello 2 alle loro sottoattività, e così via. |
+| **Sequenza** | I caratteri usati a questo livello: **Numeri** (1, 2, 3), **Lettere Maiuscole** (A, B, C … Z, AA), **Lettere Minuscole** (a, b, c … z, aa) o **Caratteri**. |
+| **Lunghezza** | Numero massimo di caratteri a questo livello. Lascialo vuoto — mostra *Qualsiasi* — per nessun limite. |
+| **Separatore** | Il carattere tra questo livello e il successivo, ad esempio `.` o `-`. |
 
 Due cose sono utili da sapere sul comportamento dei campi:
 
 - **La lunghezza completa i numeri con zeri iniziali.** Una lunghezza di `3` su un livello Numbers trasforma la nona attività in `009`. Non completa i livelli con lettere.
-- **Characters** si comporta come Numbers per i codici generati da Ingantt. Esiste per compatibilità con Microsoft Project, dove indica un livello che digiti tu stesso.
+- **Caratteri** si comporta come Numbers per i codici generati da Ingantt. Esiste per compatibilità con Microsoft Project, dove indica un livello che digiti tu stesso.
 
 Non devi definire ogni livello. **I livelli più profondi dell'ultima riga della maschera tornano a un numero con separatore `.`**, quindi una maschera di tre righe su un piano a cinque livelli produce comunque un codice completo.
 
 ### Opzioni
 
-**Generate WBS code for new task** e **Verify uniqueness of new WBS codes** vengono memorizzati con il progetto e preservati in un ciclo di andata e ritorno con Microsoft Project. In Ingantt, una maschera con almeno un livello viene applicata automaticamente a ogni attività, e i codici sono unici per costruzione perché seguono la struttura.
+**Genera codice WBS per nuove attivita** e **Verifica unicita dei nuovi codici WBS** vengono memorizzati con il progetto e preservati in un ciclo di andata e ritorno con Microsoft Project. In Ingantt, una maschera con almeno un livello viene applicata automaticamente a ogni attività, e i codici sono unici per costruzione perché seguono la struttura.
 
 ## Cosa succede quando salvi la maschera
 

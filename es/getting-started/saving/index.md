@@ -25,7 +25,7 @@ Que esté activado de forma predeterminada depende de la plataforma:
 
 | Plataforma | Guardado automático predeterminado | Dónde cambiarlo |
 |----------|--------------------|--------------------|
-| **Web** | Activado | Menú **Archivo** → **Trabajar sin conexión (sin guardado automático)** |
+| **Web** | Activado | Menú **Archivo** → **Trabajar sin conexión (sin autoguardado)** |
 | **Android, iOS, Windows, macOS** | Desactivado | **Habilitar guardado automático** en el diálogo **Opciones** o en el menú **Archivo** |
 
 El botón **Guardar** funciona también como indicador del guardado automático. Muestra *Guardando…*, *Archivo guardado*, *Archivo guardado en Google Drive*, *Guardado automático pendiente…* o un error si un guardado no se completó.
@@ -45,7 +45,7 @@ Esto afecta a [Editar con IA](/es/getting-started/edit-with-ai/index.md) de la m
 
 ## Trabajar sin conexión en la web
 
-**Trabajar sin conexión (sin guardado automático)** en el menú **Archivo** desactiva el guardado automático para la pestaña actual del navegador. Úselo cuando quiera seguir editando sin que cada cambio vaya a Google Drive.
+**Trabajar sin conexión (sin autoguardado)** en el menú **Archivo** desactiva el guardado automático para la pestaña actual del navegador. Úselo cuando quiera seguir editando sin que cada cambio vaya a Google Drive.
 
 Dos cosas que debe saber al respecto:
 
@@ -64,6 +64,6 @@ Si cierra un proyecto que tiene cambios sin guardar, Ingantt pregunta **Guardar 
 
 ## Si Ingantt no le permite guardar
 
-- **"Modo de solo lectura porque la prueba ha finalizado"** o **"Suscripción inactiva"** — sus proyectos siguen ahí y siguen siendo legibles, pero el guardado está desactivado hasta que su suscripción esté activa. Consulte [Prueba gratuita](/es/account/trial/index.md) y [Suscripciones y pago](/es/account/subscription/index.md).
-- **"Usted es un lector y no puede guardar"** — el archivo de Google Drive se compartió con usted como lector o comentador. Pida al propietario acceso de edición o use **Guardar archivo como** para conservar su propia copia. Consulte [Compartir un proyecto](/es/ui/sharing/index.md).
+- **"Modo solo lectura porque terminó la prueba gratuita"** o **"Suscripción inactiva"** — sus proyectos siguen ahí y siguen siendo legibles, pero el guardado está desactivado hasta que su suscripción esté activa. Consulte [Prueba gratuita](/es/account/trial/index.md) y [Suscripciones y pago](/es/account/subscription/index.md).
+- **"Solo tiene permisos de lectura y no puede guardar"** — el archivo de Google Drive se compartió con usted como lector o comentador. Pida al propietario acceso de edición o use **Guardar archivo como** para conservar su propia copia. Consulte [Compartir un proyecto](/es/ui/sharing/index.md).
 - **"Error al guardar el archivo en Google Drive"** — normalmente un problema de conexión o una sesión de Google caducada. Compruebe su conexión y vuelva a iniciar sesión; consulte [Integración con Google Drive](/es/ui/files/index.md).

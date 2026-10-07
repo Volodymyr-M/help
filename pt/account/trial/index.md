@@ -15,21 +15,21 @@ Tudo. Nenhuma funcionalidade é bloqueada durante a avaliação — geração de
 O menu de navegação mostra seu status:
 
 - **Free trial ends in N days**
-- **Free trial almost ended**
-- **Free trial ended**
+- **Período de teste gratuito quase terminado**
+- **Período de teste gratuito terminado**
 
 Você também recebe um e-mail alguns dias antes do fim da avaliação e outro quando ela termina.
 
 ## Quando a avaliação termina
 
-O Ingantt muda para o modo **view only** (somente visualização) e a interface exibe *View only mode as trial ended*.
+O Ingantt muda para o modo **view only** (somente visualização) e a interface exibe *Modo de somente visualização porque o período de teste terminou*.
 
 - **Nada é excluído.** Seus arquivos de projeto permanecem no seu Google Drive, exatamente onde estavam. Eles são seus; o Ingantt não armazena seus projetos em servidores próprios.
 - Você ainda pode abrir seus projetos e lê-los.
 - Você não pode salvar alterações até assinar. Se tentar, o Ingantt oferece a caixa de diálogo de assinatura.
-- Para extrair seus planos, use **File** → **Download** → **Download XML**, ou abra os arquivos do Google Drive com qualquer ferramenta que leia XML do Microsoft Project.
+- Para extrair seus planos, use **Arquivo** → **Baixar** → **Baixar XML**, ou abra os arquivos do Google Drive com qualquer ferramenta que leia XML do Microsoft Project.
 
-Assine por meio de **Subscribe now** na mensagem ou pela caixa de diálogo **Account**. Consulte [Assinaturas e Pagamento](/pt/account/subscription/index.md).
+Assine por meio de **Assinar agora** na mensagem ou pela caixa de diálogo **Conta**. Consulte [Assinaturas e Pagamento](/pt/account/subscription/index.md).
 
 ## Aplicativos instalados
 

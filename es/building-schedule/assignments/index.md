@@ -20,21 +20,21 @@ Cuando un recurso de trabajo se asigna a una tarea, el esfuerzo (trabajo) se dis
 
 | Perfil | Descripción |
 |---------|-------------|
-| **Plano** | Esfuerzo uniforme durante toda la duración (predeterminado) |
+| **Uniforme** | Esfuerzo uniforme durante toda la duración (predeterminado) |
 | **Carga posterior** | El esfuerzo aumenta hacia el final de la tarea |
-| **Carga inicial** | El esfuerzo es más intenso al principio y disminuye |
-| **Doble pico** | Dos picos de intensidad durante la tarea |
-| **Pico temprano** | Alcanza el pico temprano, luego disminuye |
-| **Pico tardío** | Aumenta hasta un pico cerca del final |
+| **Carga anterior** | El esfuerzo es más intenso al principio y disminuye |
+| **Campana doble** | Dos picos de intensidad durante la tarea |
+| **Pico inicial** | Alcanza el pico temprano, luego disminuye |
+| **Pico final** | Aumenta hasta un pico cerca del final |
 | **Campana** | Curva de campana — alcanza el pico en el medio |
 | **Tortuga** | Curva de campana más plana — distribución más suave |
-| **Con perfil** | Su propia distribución por día. Se establece automáticamente al editar el trabajo en una vista de uso; no se puede elegir en la lista desplegable. |
+| **Perfil** | Su propia distribución por día. Se establece automáticamente al editar el trabajo en una vista de uso; no se puede elegir en la lista desplegable. |
 
 Los perfiles de trabajo afectan cómo se distribuye el trabajo a lo largo de los períodos de tiempo y se preservan al abrir y guardar archivos de proyecto.
 
 ### El perfil Con perfil
 
-**Con perfil** es el perfil personalizado y se comporta de manera diferente a los otros ocho. No puede elegirlo en la lista desplegable de una asignación que aún no lo tenga — la opción está deshabilitada. Se obtiene **editando el trabajo directamente en una celda de [Uso de recursos o Uso de tareas](/es/views/resource-views/index.md)**: en el momento en que escribe un valor de trabajo por día, el perfil de esa asignación pasa a ser *Con perfil* y la distribución que escribió es la que se usa.
+**Perfil** es el perfil personalizado y se comporta de manera diferente a los otros ocho. No puede elegirlo en la lista desplegable de una asignación que aún no lo tenga — la opción está deshabilitada. Se obtiene **editando el trabajo directamente en una celda de [Uso de recursos o Uso de tareas](/es/views/resource-views/index.md)**: en el momento en que escribe un valor de trabajo por día, el perfil de esa asignación pasa a ser *Perfil* y la distribución que escribió es la que se usa.
 
 Vale la pena conocer dos consecuencias:
 
@@ -55,4 +55,4 @@ El impacto en los costos de las horas extra se trata en [Configuración de costo
 
 Para tareas de Unidades fijas y Trabajo fijo, ingresar trabajo en horas extra reduce la duración de la tarea porque la duración se basa únicamente en el trabajo regular.
 
-Establezca el trabajo en horas extra en el diálogo **Editar asignación de recurso**. Tres columnas opcionales están disponibles en la tabla de tareas: **Trabajo en horas extra**, **Costo de horas extra** y **Trabajo regular**.
+Establezca el trabajo en horas extra en el diálogo **Editar asignación de recurso**. Tres columnas opcionales están disponibles en la tabla de tareas: **Trabajo de horas extra**, **Costo de horas extra** y **Trabajo regular**.

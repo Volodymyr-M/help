@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -243,7 +243,7 @@
 </tbody>
 </table>
 <p>단위는 <code>min</code>, <code>h</code>, <code>d</code>, <code>w</code>, <code>m</code>(분, 시간, 일, 주, 월)이며 모두 <code>e</code>를 붙일 수 있습니다. 약어는 번역되므로 영어가 아닌 인터페이스에서는 해당 언어의 단위 문자를 사용하되, <code>e</code> 표시는 그대로 유지됩니다.</p>
-<p>직접 입력하는 대신 <a href="/ko/building-schedule/task-properties/">작업 속성</a> 대화 상자의 기간 편집기에 있는 <strong>Elapsed</strong> 체크박스를 사용할 수도 있습니다. 툴팁이 곧 정의입니다:</p>
+<p>직접 입력하는 대신 <a href="/ko/building-schedule/task-properties/">작업 속성</a> 대화 상자의 기간 편집기에 있는 <strong>경과</strong> 체크박스를 사용할 수도 있습니다. 툴팁이 곧 정의입니다:</p>
 <blockquote>
 <p>경과. 체크하면 기간이 달력에 정의된 근무 시간 동안만이 아니라 연속으로(24/7) 계산됩니다.</p>
 </blockquote>
@@ -275,7 +275,7 @@
 <p>이를 <a href="/ko/setting-up-project/project/">프로젝트 속성</a>에서 정해지는 근무 단위(기본값: 하루 8시간, 주 5일, 월 20일)와 비교해 보십시오. 따라서 <code>1w</code>는 40근무시간이지만 <code>1ew</code>는 시계 시간으로 168시간입니다.</p>
 <h2 id="종속성의-경과-지연">종속성의 경과 지연 <a href="#종속성의-경과-지연" class="heading-anchor">#</a></h2>
 <p>같은 개념이 <a href="/ko/building-schedule/dependencies/">종속성</a>의 지연에도 적용되며, 바로 여기에서 가장 중요합니다. &quot;이 작업이 끝나고 3일 후에 다음 작업을 시작&quot;한다는 말은 보통 3근무일이 아니라 <em>달력</em> 기준 3일을 뜻합니다. 그렇지 않으면 금요일 완료가 후속 작업을 수요일로 밀어냅니다.</p>
-<p>Task Properties의 <strong>Predecessors</strong> 탭에서 각 링크에는 지연 옆에 같은 의미의 <strong>Elapsed</strong> 체크박스가 따로 있습니다:</p>
+<p>Task Properties의 <strong>선행 작업</strong> 탭에서 각 링크에는 지연 옆에 같은 의미의 <strong>경과</strong> 체크박스가 따로 있습니다:</p>
 <blockquote>
 <p>체크하면 지연 시간이 달력에 정의된 근무 시간 동안만이 아니라 연속으로(24/7) 계산됩니다.</p>
 </blockquote>

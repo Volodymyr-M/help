@@ -220,7 +220,7 @@
 <h2 id="nivelación-automática">Nivelación automática <a href="#nivelación-automática" class="heading-anchor">#</a></h2>
 <p>Las dependencias entre tareas controlan su posición en la línea de tiempo. En proyectos más grandes, es fácil omitir una dependencia — resultando en múltiples tareas asignadas al mismo recurso de trabajo programadas al mismo tiempo. El recurso queda sobreasignado, e Ingantt le notifica con iconos especiales en las listas de tareas y recursos.</p>
 <p>Puede resolver la sobreasignación manualmente estableciendo dependencias o restricciones para mover algunas tareas de modo que el trabajo no se realice simultáneamente.</p>
-<p>Una forma alternativa de resolver la sobreasignación es la nivelación automática. Si elige <strong>Nivelar recursos automáticamente</strong> en el menú <strong>Proyecto</strong>, Ingantt desplaza automáticamente algunas tareas más adelante en la línea de tiempo para evitar la sobreasignación de recursos. Puede eliminar estos ajustes automáticos eligiendo <strong>Borrar nivelación</strong> en el menú <strong>Proyecto</strong>.</p>
+<p>Una forma alternativa de resolver la sobreasignación es la nivelación automática. Si elige <strong>Auto nivelar recursos</strong> en el menú <strong>Proyecto</strong>, Ingantt desplaza automáticamente algunas tareas más adelante en la línea de tiempo para evitar la sobreasignación de recursos. Puede eliminar estos ajustes automáticos eligiendo <strong>Borrar nivelación</strong> en el menú <strong>Proyecto</strong>.</p>
 <p>El comando de nivelación automática ofrece tres opciones de alcance:</p>
 <ul>
 <li><strong>Todas las tareas</strong> — Nivela todas las tareas del proyecto</li>
@@ -228,7 +228,7 @@
 <li><strong>Recursos seleccionados</strong> — Nivela solo los conflictos de sobreasignación de los recursos seleccionados (disponible en las vistas de Recursos y Uso de recursos)</li>
 </ul>
 <h3 id="cómo-funciona-la-nivelación-automática">Cómo funciona la nivelación automática <a href="#cómo-funciona-la-nivelación-automática" class="heading-anchor">#</a></h3>
-<p>Cuando ejecuta <strong>Nivelar recursos automáticamente</strong>, Ingantt resuelve las sobreasignaciones <strong>retrasando o dividiendo tareas</strong>. No reasigna recursos ni cambia las unidades de asignación.</p>
+<p>Cuando ejecuta <strong>Auto nivelar recursos</strong>, Ingantt resuelve las sobreasignaciones <strong>retrasando o dividiendo tareas</strong>. No reasigna recursos ni cambia las unidades de asignación.</p>
 <p>El algoritmo identifica los días en que un recurso tiene más trabajo asignado del que su capacidad permite, luego decide qué tareas en conflicto retrasar. Cada tarea se puntúa según varios factores — las tareas con puntuaciones más altas están protegidas del retraso:</p>
 <table>
 <thead>
@@ -291,8 +291,8 @@
 <li>Recursos con <a href="/es/building-schedule/resources/#tipo-de-reserva">tipo de reserva</a> <strong>Propuesto</strong> (a menos que la opción de nivelación para incluir recursos propuestos esté habilitada)</li>
 </ul>
 <h3 id="renivelación-y-borrado">Renivelación y borrado <a href="#renivelación-y-borrado" class="heading-anchor">#</a></h3>
-<p>Cada vez que ejecuta <strong>Nivelar recursos automáticamente</strong>, cualquier nivelación anterior se borra automáticamente primero. La nivelación siempre comienza desde un cronograma limpio y sin nivelar para evitar que los retrasos se acumulen.</p>
-<p>Si modifica el cronograma después de la nivelación (agrega tareas, cambia dependencias, etc.), los retrasos de nivelación existentes se preservan pero pueden ya no resolver todas las sobreasignaciones. Ejecute <strong>Nivelar recursos automáticamente</strong> de nuevo para renivelar el cronograma actualizado.</p>
+<p>Cada vez que ejecuta <strong>Auto nivelar recursos</strong>, cualquier nivelación anterior se borra automáticamente primero. La nivelación siempre comienza desde un cronograma limpio y sin nivelar para evitar que los retrasos se acumulen.</p>
+<p>Si modifica el cronograma después de la nivelación (agrega tareas, cambia dependencias, etc.), los retrasos de nivelación existentes se preservan pero pueden ya no resolver todas las sobreasignaciones. Ejecute <strong>Auto nivelar recursos</strong> de nuevo para renivelar el cronograma actualizado.</p>
 <p>Para eliminar todos los retrasos de nivelación y volver al cronograma original calculado por CPM, elija <strong>Borrar nivelación</strong> del menú <strong>Proyecto</strong>.</p>
 <h3 id="gantt-de-nivelación">Gantt de nivelación <a href="#gantt-de-nivelación" class="heading-anchor">#</a></h3>
 <p>Después de ejecutar la nivelación automática, aparece un botón de alternancia <strong>Gantt de nivelación</strong> en el área del diagrama de Gantt. Cuando está habilitado, dibuja barras verdes en las posiciones previas a la nivelación — donde estaban las tareas antes de la nivelación — mientras que las barras de tareas estándar permanecen en sus posiciones niveladas actuales. Esto le permite comparar el cronograma original con el cronograma nivelado para ver cuánto se retrasó cada tarea.</p>

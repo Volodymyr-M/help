@@ -211,59 +211,59 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="valores-reais">Valores Reais <a href="#valores-reais" class="heading-anchor">#</a></h1>
-<p>Conforme o trabalho progride e você atualiza o <a href="/pt/tracking/progress/#-conclu%C3%ADdo">% Concluído</a>, o Ingantt calcula automaticamente os valores reais e restantes para duração, trabalho, custo e datas. Esses campos permitem ver exatamente o que foi gasto, o que resta e como o projeto está se comparando ao plano.</p>
-<p>As colunas de valores reais e restantes mais comuns são <strong>Actual Cost</strong> / <strong>Remaining Cost</strong>, <strong>Actual Work</strong> / <strong>Remaining Work</strong> e <strong>Actual Duration</strong> / <strong>Remaining Duration</strong>. Ao observar esses valores na <a href="/pt/building-schedule/tasks/#tarefa-resumo-raiz">tarefa resumo raiz</a>, você pode ver os totais de todo o projeto de relance — quanto foi gasto, quanto esforço foi investido e quanto falta. Certifique-se de que a tarefa resumo raiz esteja visível: marque <strong>Show root summary task</strong> no menu <strong>View</strong> ou na caixa de diálogo <strong>Options</strong>.</p>
+<p>Conforme o trabalho progride e você atualiza o <a href="/pt/tracking/progress/#-conclu%C3%ADdo">% concluído</a>, o Ingantt calcula automaticamente os valores reais e restantes para duração, trabalho, custo e datas. Esses campos permitem ver exatamente o que foi gasto, o que resta e como o projeto está se comparando ao plano.</p>
+<p>As colunas de valores reais e restantes mais comuns são <strong>Custo Real</strong> / <strong>Custo Restante</strong>, <strong>Trabalho Real</strong> / <strong>Trabalho Restante</strong> e <strong>Duração Real</strong> / <strong>Duração Restante</strong>. Ao observar esses valores na <a href="/pt/building-schedule/tasks/#tarefa-resumo-raiz">tarefa resumo raiz</a>, você pode ver os totais de todo o projeto de relance — quanto foi gasto, quanto esforço foi investido e quanto falta. Certifique-se de que a tarefa resumo raiz esteja visível: marque <strong>Mostrar tarefa raiz de resumo</strong> no menu <strong>Visualizar</strong> ou na caixa de diálogo <strong>Opções</strong>.</p>
 <h2 id="exibindo-colunas-de-valores-reais-e-restantes">Exibindo Colunas de Valores Reais e Restantes <a href="#exibindo-colunas-de-valores-reais-e-restantes" class="heading-anchor">#</a></h2>
-<p>As colunas de valores reais e restantes não são visíveis por padrão. Para adicioná-las à lista de tarefas, abra a caixa de diálogo <strong>Options</strong> (aba <strong>Task Columns</strong>) e ative as colunas desejadas. Você também pode clicar com o botão direito no cabeçalho de uma coluna na grade de tarefas para acesso rápido às configurações de colunas.</p>
+<p>As colunas de valores reais e restantes não são visíveis por padrão. Para adicioná-las à lista de tarefas, abra a caixa de diálogo <strong>Opções</strong> (aba <strong>Colunas de Tarefas</strong>) e ative as colunas desejadas. Você também pode clicar com o botão direito no cabeçalho de uma coluna na grade de tarefas para acesso rápido às configurações de colunas.</p>
 <h3 id="duração">Duração <a href="#duração" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Actual Duration</strong> — A quantidade de tempo útil gasto em uma tarefa até o momento. Calculado como a duração da tarefa multiplicada pelo seu % Concluído.</li>
-<li><strong>Remaining Duration</strong> — O tempo útil ainda necessário para concluir a tarefa: Duração − Duração Real.</li>
+<li><strong>Duração Real</strong> — A quantidade de tempo útil gasto em uma tarefa até o momento. Calculado como a duração da tarefa multiplicada pelo seu % concluído.</li>
+<li><strong>Duração Restante</strong> — O tempo útil ainda necessário para concluir a tarefa: Duração − Duração Real.</li>
 </ul>
 <p>Por exemplo, uma tarefa de 10 dias com 40% concluída tem uma Duração Real de 4 dias e uma Duração Restante de 6 dias.</p>
 <h3 id="trabalho">Trabalho <a href="#trabalho" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Actual Work</strong> — O esforço total (em horas) que os recursos gastaram em uma tarefa. Quando <strong>Updating task status updates resource status</strong> está ativado nas configurações do projeto (o padrão), o Trabalho Real é atualizado proporcionalmente quando você altera o % Concluído.</li>
-<li><strong>Remaining Work</strong> — O esforço ainda necessário para concluir a tarefa: Trabalho − Trabalho Real.</li>
+<li><strong>Trabalho Real</strong> — O esforço total (em horas) que os recursos gastaram em uma tarefa. Quando <strong>A atualização do estado da tarefa atualiza o estado do recurso</strong> está ativada nas configurações do projeto (o padrão), o Trabalho Real é atualizado proporcionalmente quando você altera o % concluído.</li>
+<li><strong>Trabalho Restante</strong> — O esforço ainda necessário para concluir a tarefa: Trabalho − Trabalho Real.</li>
 </ul>
 <h3 id="custo">Custo <a href="#custo" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Actual Cost</strong> — Os custos incorridos até o momento: a soma dos custos fixos acumulados e dos custos de recursos acumulados. Como os custos são acumulados depende da configuração <strong>Cost Accrual</strong> de cada recurso:
+<li><strong>Custo Real</strong> — Os custos incorridos até o momento: a soma dos custos fixos acumulados e dos custos de recursos acumulados. Como os custos são acumulados depende da configuração <strong>Acumulação de custos</strong> de cada recurso:
 <ul>
-<li><strong>Start</strong> — O custo total é reconhecido quando o Início Real é definido.</li>
-<li><strong>Prorated</strong> — O custo é reconhecido proporcionalmente com base no progresso do trabalho real.</li>
-<li><strong>End</strong> — O custo é reconhecido somente quando a tarefa atinge 100% concluída.</li>
+<li><strong>Início</strong> — O custo total é reconhecido quando o Início Real é definido.</li>
+<li><strong>Rateio</strong> — O custo é reconhecido proporcionalmente com base no progresso do trabalho real.</li>
+<li><strong>Fim</strong> — O custo é reconhecido somente quando a tarefa atinge 100% concluída.</li>
 </ul>
 </li>
-<li><strong>Remaining Cost</strong> — O orçamento ainda necessário para concluir a tarefa: Custo Total − Custo Real.</li>
+<li><strong>Custo Restante</strong> — O orçamento ainda necessário para concluir a tarefa: Custo Total − Custo Real.</li>
 </ul>
 <h3 id="datas">Datas <a href="#datas" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Actual Start</strong> — A data em que o trabalho realmente começou. Definida automaticamente como a data de início agendada da tarefa quando o % Concluído ultrapassa 0%.</li>
-<li><strong>Actual Finish</strong> — A data em que o trabalho foi realmente concluído. Definida automaticamente como a data de término agendada da tarefa quando o % Concluído atinge 100%.</li>
+<li><strong>Início real</strong> — A data em que o trabalho realmente começou. Definida automaticamente como a data de início agendada da tarefa quando o % concluído ultrapassa 0%.</li>
+<li><strong>Término real</strong> — A data em que o trabalho foi realmente concluído. Definida automaticamente como a data de término agendada da tarefa quando o % concluído atinge 100%.</li>
 </ul>
 <h3 id="horas-extras">Horas Extras <a href="#horas-extras" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Actual Overtime Work</strong> — Horas extras já trabalhadas na tarefa.</li>
-<li><strong>Remaining Overtime Work</strong> — Horas extras ainda esperadas.</li>
-<li><strong>Actual Overtime Cost</strong> — Custos de horas extras já incorridos.</li>
-<li><strong>Remaining Overtime Cost</strong> — Custos de horas extras ainda esperados.</li>
+<li><strong>Trabalho extra real</strong> — Horas extras já trabalhadas na tarefa.</li>
+<li><strong>Trabalho extra restante</strong> — Horas extras ainda esperadas.</li>
+<li><strong>Custo real de hora extra</strong> — Custos de horas extras já incorridos.</li>
+<li><strong>Custo restante de hora extra</strong> — Custos de horas extras ainda esperados.</li>
 </ul>
 <h2 id="como-os-valores-reais-são-calculados">Como os Valores Reais São Calculados <a href="#como-os-valores-reais-são-calculados" class="heading-anchor">#</a></h2>
 <p>Todos os campos de valores reais e restantes mantêm a relação:</p>
 <blockquote>
 <p><strong>Total = Real + Restante</strong></p>
 </blockquote>
-<p>Quando você altera um valor, o Ingantt atualiza os outros para mantê-los consistentes. O fluxo de trabalho mais comum é atualizar o <strong>% Complete</strong>, que automaticamente propaga para todos os campos de valores reais e restantes:</p>
+<p>Quando você altera um valor, o Ingantt atualiza os outros para mantê-los consistentes. O fluxo de trabalho mais comum é atualizar o <strong>% concluído</strong>, que automaticamente propaga para todos os campos de valores reais e restantes:</p>
 <ol>
-<li><strong>Actual Duration</strong> e <strong>Remaining Duration</strong> são recalculados a partir do novo percentual.</li>
-<li><strong>Actual Work</strong> e <strong>Remaining Work</strong> são atualizados (se a configuração do projeto estiver ativada).</li>
-<li><strong>Actual Start</strong> e <strong>Actual Finish</strong> são definidos com base no progresso.</li>
-<li><strong>Actual Cost</strong> e <strong>Remaining Cost</strong> são recalculados com base no método de acumulação.</li>
+<li><strong>Duração Real</strong> e <strong>Duração Restante</strong> são recalculados a partir do novo percentual.</li>
+<li><strong>Trabalho Real</strong> e <strong>Trabalho Restante</strong> são atualizados (se a configuração do projeto estiver ativada).</li>
+<li><strong>Início real</strong> e <strong>Término real</strong> são definidos com base no progresso.</li>
+<li><strong>Custo Real</strong> e <strong>Custo Restante</strong> são recalculados com base no método de acumulação.</li>
 </ol>
-<p>Para tarefas resumo, <strong>Actual Work</strong>, <strong>Remaining Work</strong>, <strong>Actual Cost</strong> e <strong>Remaining Cost</strong> são acumulados (somados) de todas as tarefas filhas. <strong>Actual Start</strong> é o início real mais cedo entre as tarefas filhas, e <strong>Actual Finish</strong> é o término real mais tardio.</p>
-<h2 id="colunas-de-tarefa">Colunas de Tarefa <a href="#colunas-de-tarefa" class="heading-anchor">#</a></h2>
-<p>Além dos valores reais e restantes, o Ingantt suporta uma ampla variedade de colunas de tarefa — dados de agendamento, informações de caminho crítico, custo, trabalho, métricas de valor agregado, linhas de base, campos personalizados e códigos de estrutura. Todas as colunas podem ser ativadas ou desativadas e reorganizadas usando a caixa de diálogo <strong>Options</strong> (aba <strong>Task Columns</strong>). Você também pode clicar com o botão direito no cabeçalho de uma coluna na grade de tarefas para acessar rapidamente as configurações de colunas.</p>
+<p>Para tarefas resumo, <strong>Trabalho Real</strong>, <strong>Trabalho Restante</strong>, <strong>Custo Real</strong> e <strong>Custo Restante</strong> são acumulados (somados) de todas as tarefas filhas. <strong>Início real</strong> é o início real mais cedo entre as tarefas filhas, e <strong>Término real</strong> é o término real mais tardio.</p>
+<h2 id="colunas-de-tarefas">Colunas de Tarefas <a href="#colunas-de-tarefas" class="heading-anchor">#</a></h2>
+<p>Além dos valores reais e restantes, o Ingantt suporta uma ampla variedade de colunas de tarefa — dados de agendamento, informações de caminho crítico, custo, trabalho, métricas de valor agregado, linhas de base, campos personalizados e códigos de estrutura. Todas as colunas podem ser ativadas ou desativadas e reorganizadas usando a caixa de diálogo <strong>Opções</strong> (aba <strong>Colunas de Tarefas</strong>). Você também pode clicar com o botão direito no cabeçalho de uma coluna na grade de tarefas para acessar rapidamente as configurações de colunas.</p>
 
     </main>
     <aside class="toc" aria-label="Índice"></aside>

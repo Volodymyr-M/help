@@ -4,11 +4,11 @@ Contrôlez la manière dont les ressources sont allouées aux tâches — qui tr
 
 ## Affectations de ressources et unités
 
-Les ressources peuvent être affectées à une tâche dans l'onglet **Resources** de la boîte de dialogue **Task Properties**.
+Les ressources peuvent être affectées à une tâche dans l'onglet **Ressources** de la boîte de dialogue **Propriétés de la tâche**.
 
 Pour affecter une ressource, cochez la case dans la ligne correspondant à la ressource. Pour retirer l'affectation d'une ressource, décochez la case.
 
-Les affectations de ressources de travail ou matérielles possèdent des **Units**, affichées dans la colonne correspondante. Cliquez sur le bouton **Edit** pour modifier la valeur par défaut des **Units** de l'affectation.
+Les affectations de ressources de travail ou matérielles possèdent des **Unités**, affichées dans la colonne correspondante. Cliquez sur le bouton **Modifier** pour modifier la valeur par défaut des **Unités** de l'affectation.
 
 Par défaut, les ressources de travail sont affectées avec des unités correspondant aux [unités maximales](/fr/building-schedule/resources/index.md#unités-maximales) de la ressource (100 % pour une ressource à temps plein). Cela signifie que la ressource consacrera la totalité de son temps calendaire disponible à la tâche. Vous pouvez modifier cette valeur à votre convenance.
 
@@ -20,32 +20,32 @@ Lorsqu'une ressource de travail est affectée à une tâche, l'effort (travail) 
 
 | Profil | Description |
 |--------|-------------|
-| **Flat** | Effort uniforme sur toute la durée (par défaut) |
-| **Back Loaded** | L'effort augmente vers la fin de la tâche |
-| **Front Loaded** | L'effort est le plus important au début et diminue progressivement |
-| **Double Peak** | Deux pics d'intensité pendant la tâche |
-| **Early Peak** | Pic en début de tâche, puis décroissance progressive |
-| **Late Peak** | Montée progressive vers un pic en fin de tâche |
-| **Bell** | Courbe en cloche — pic au milieu |
-| **Turtle** | Courbe en cloche aplatie — distribution plus lissée |
-| **Contoured** | Votre propre répartition jour par jour. Défini automatiquement lorsque vous modifiez le travail dans une vue d'utilisation ; il ne peut pas être choisi dans la liste déroulante. |
+| **Plat** | Effort uniforme sur toute la durée (par défaut) |
+| **Chargé en fin** | L'effort augmente vers la fin de la tâche |
+| **Chargé en début** | L'effort est le plus important au début et diminue progressivement |
+| **Double pic** | Deux pics d'intensité pendant la tâche |
+| **Pic initial** | Pic en début de tâche, puis décroissance progressive |
+| **Pic final** | Montée progressive vers un pic en fin de tâche |
+| **Cloche** | Courbe en cloche — pic au milieu |
+| **Tortue** | Courbe en cloche aplatie — distribution plus lissée |
+| **Personnalisé** | Votre propre répartition jour par jour. Défini automatiquement lorsque vous modifiez le travail dans une vue d'utilisation ; il ne peut pas être choisi dans la liste déroulante. |
 
 Les profils de charge de travail affectent la répartition du travail sur les différentes périodes et sont préservés lors de l'ouverture et de l'enregistrement des fichiers de projet.
 
-### Le profil Contoured
+### Le profil Personnalisé
 
-**Contoured** est le profil personnalisé, et il se comporte différemment des huit autres. Vous ne pouvez pas le choisir dans la liste déroulante pour une affectation qui ne l'a pas déjà — l'option est désactivée. Vous l'obtenez en **modifiant directement le travail dans une cellule de la vue [Resource Usage ou Task Usage](/fr/views/resource-views/index.md)** : dès que vous saisissez une valeur de travail pour un jour, le profil de cette affectation devient *Contoured* et c'est la répartition que vous avez saisie qui est utilisée.
+**Personnalisé** est le profil personnalisé, et il se comporte différemment des huit autres. Vous ne pouvez pas le choisir dans la liste déroulante pour une affectation qui ne l'a pas déjà — l'option est désactivée. Vous l'obtenez en **modifiant directement le travail dans une cellule de la vue [Resource Usage ou Task Usage](/fr/views/resource-views/index.md)** : dès que vous saisissez une valeur de travail pour un jour, le profil de cette affectation devient *Personnalisé* et c'est la répartition que vous avez saisie qui est utilisée.
 
 Deux conséquences méritent d'être connues :
 
-- **Quitter le profil Contoured efface la répartition saisie à la main.** Choisissez l'un des huit autres profils et les valeurs journalières que vous aviez saisies sont effacées. Elles ne sont pas conservées ni restaurées si vous revenez à Contoured.
-- **Le travail Contoured survit à un aller-retour avec le format Microsoft Project.** L'import lit le travail chronologique jour par jour dans l'affectation, et l'export le réécrit. Un planning venant de Microsoft Project avec un profil modifié à la main le conserve.
+- **Quitter le profil Personnalisé efface la répartition saisie à la main.** Choisissez l'un des huit autres profils et les valeurs journalières que vous aviez saisies sont effacées. Elles ne sont pas conservées ni restaurées si vous revenez à Personnalisé.
+- **Le travail Personnalisé survit à un aller-retour avec le format Microsoft Project.** L'import lit le travail chronologique jour par jour dans l'affectation, et l'export le réécrit. Un planning venant de Microsoft Project avec un profil modifié à la main le conserve.
 
 ## Délai d'affectation
 
-Chaque affectation de ressource sur une tâche possède une propriété **Delay** qui décale le moment où la ressource commence à travailler par rapport à la date de début de la tâche. Par exemple, si une tâche commence le lundi et qu'une ressource a un délai de 2 jours, cette ressource commence à travailler le mercredi.
+Chaque affectation de ressource sur une tâche possède une propriété **Retard** qui décale le moment où la ressource commence à travailler par rapport à la date de début de la tâche. Par exemple, si une tâche commence le lundi et qu'une ressource a un délai de 2 jours, cette ressource commence à travailler le mercredi.
 
-Le délai est défini dans la boîte de dialogue **Edit Resource Assignment** et ne s'applique qu'aux affectations de ressources de travail. Il peut être utilisé pour échelonner les dates de début des ressources sur une tâche.
+Le délai est défini dans la boîte de dialogue **Modifier l'affectation de ressource** et ne s'applique qu'aux affectations de ressources de travail. Il peut être utilisé pour échelonner les dates de début des ressources sur une tâche.
 
 ## Heures supplémentaires
 
@@ -55,4 +55,4 @@ L'impact des heures supplémentaires sur les coûts est traité dans [Configurat
 
 Pour les tâches de type Fixed Units et Fixed Work, la saisie d'heures supplémentaires réduit la durée de la tâche car la durée est basée uniquement sur le travail normal.
 
-Définissez les heures supplémentaires dans la boîte de dialogue **Edit Resource Assignment**. Trois colonnes optionnelles sont disponibles dans le tableau des tâches : **Overtime Work**, **Overtime Cost** et **Regular Work**.
+Définissez les heures supplémentaires dans la boîte de dialogue **Modifier l'affectation de ressource**. Trois colonnes optionnelles sont disponibles dans le tableau des tâches : **Travail en heures sup**, **Coût des heures sup** et **Travail régulier**.

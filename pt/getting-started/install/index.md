@@ -8,7 +8,7 @@ Ao fazer login com o Google, o Ingantt para Web pode manter seus projetos no seu
 
 ## Adicionar o Ingantt para Web ao Google Drive
 
-O Ingantt para Web está disponível no [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}. Adicioná-lo a partir de lá é uma das formas de fazer o **Ingantt** aparecer no menu **New** do Google Drive e no menu **Open with** dos seus arquivos do Ingantt, permitindo criar e abrir projetos diretamente do Drive. Fazer login no Ingantt para Web e conceder a permissão **Connect itself to your Google Drive** tem o mesmo efeito. Consulte [Integração com Google Drive](/pt/ui/files/index.md) para mais detalhes.
+O Ingantt para Web está disponível no [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}. Adicioná-lo a partir de lá é uma das formas de fazer o **Ingantt** aparecer no menu **Novo** do Google Drive e no menu **Open with** dos seus arquivos do Ingantt, permitindo criar e abrir projetos diretamente do Drive. Fazer login no Ingantt para Web e conceder a permissão **Connect itself to your Google Drive** tem o mesmo efeito. Consulte [Integração com Google Drive](/pt/ui/files/index.md) para mais detalhes.
 
 ## Próximos passos
 

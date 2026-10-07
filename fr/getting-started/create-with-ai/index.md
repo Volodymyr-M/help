@@ -6,12 +6,12 @@ Laissez l'IA construire un plan de projet complet pour vous — décrivez simple
 
 Pour créer un planning de projet avec l'IA :
 
-1. Cliquez sur le bouton **+** sur l'écran des projets. Si vous êtes déjà en train de modifier un projet, ouvrez plutôt le menu **File**.
-2. Choisissez **Create new with AI**.
+1. Cliquez sur le bouton **+** sur l'écran des projets. Si vous êtes déjà en train de modifier un projet, ouvrez plutôt le menu **Fichier**.
+2. Choisissez **Créer nouveau avec l'IA**.
 3. Saisissez une description de votre projet dans la boîte de dialogue.
-4. Cliquez sur **CREATE**.
+4. Cliquez sur **CRÉER**.
 
-![Create new with AI](/images/getting-started/create_with_ai.png)
+![Créer nouveau avec l'IA](/images/getting-started/create_with_ai.png)
 
 ## Rédiger une bonne description
 

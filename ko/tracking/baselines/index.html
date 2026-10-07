@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -214,23 +214,23 @@
 <p>작업이 시작되기 전에 일정의 스냅샷을 저장한 다음 현재 상태와 비교하여 프로젝트가 어디서 벗어났는지 확인합니다.</p>
 <p>기준선은 특정 시점의 모든 작업의 시작 날짜, 완료 날짜, 기간, 작업량 및 비용을 캡처합니다.</p>
 <h2 id="기준선-설정">기준선 설정 <a href="#기준선-설정" class="heading-anchor">#</a></h2>
-<p><strong>Project</strong> 메뉴의 <strong>Set baseline</strong> 하위 메뉴에서 기준선을 설정합니다:</p>
+<p><strong>프로젝트</strong> 메뉴의 <strong>초기 계획 설정</strong> 하위 메뉴에서 기준선을 설정합니다:</p>
 <ul>
 <li>모든 작업 또는 선택한 작업에 대해 기준선을 설정할 수 있습니다.</li>
 <li>Ingantt는 최대 11개의 기준선을 지원합니다.</li>
 </ul>
 <h2 id="기준선-보기">기준선 보기 <a href="#기준선-보기" class="heading-anchor">#</a></h2>
-<p>기준선이 저장되면 <strong>Baselines</strong> 대화 상자에서 기준선 표시를 전환하여 Gantt 차트에서 확인할 수 있습니다. 기준선 막대는 현재 작업 막대 아래에 가느다란 막대로 나타나며, 기준선 번호별로 고유한 색상을 사용합니다.</p>
-<p>기준선을 관리하려면 <strong>Project</strong> 메뉴의 <strong>Baselines</strong> 항목을 사용하십시오. <strong>Baselines</strong> 대화 상자에서 다음을 수행할 수 있습니다:</p>
+<p>기준선이 저장되면 <strong>초기 계획</strong> 대화 상자에서 기준선 표시를 전환하여 Gantt 차트에서 확인할 수 있습니다. 기준선 막대는 현재 작업 막대 아래에 가느다란 막대로 나타나며, 기준선 번호별로 고유한 색상을 사용합니다.</p>
+<p>기준선을 관리하려면 <strong>프로젝트</strong> 메뉴의 <strong>초기 계획</strong> 항목을 사용하십시오. <strong>초기 계획</strong> 대화 상자에서 다음을 수행할 수 있습니다:</p>
 <ul>
 <li>저장된 모든 기준선 보기</li>
 <li>더 이상 필요하지 않은 기준선 제거</li>
 <li><a href="/ko/tracking/earned-value/#%ED%9A%8D%EB%93%9D%EA%B0%80%EC%B9%98-%EA%B4%80%EB%A6%AC">획득가치</a> 계산에 사용할 기준선 지정</li>
 </ul>
 <h2 id="기준선-및-차이-열">기준선 및 차이 열 <a href="#기준선-및-차이-열" class="heading-anchor">#</a></h2>
-<p><strong>Options</strong> 대화 상자를 통해 작업 목록에 기준선 열과 차이 열을 추가할 수 있습니다. 총 <strong>55개의 기준선 열</strong>과 <strong>5개의 차이 열</strong>이 있습니다.</p>
+<p><strong>옵션</strong> 대화 상자를 통해 작업 목록에 기준선 열과 차이 열을 추가할 수 있습니다. 총 <strong>55개의 기준선 열</strong>과 <strong>5개의 차이 열</strong>이 있습니다.</p>
 <h3 id="55개의-기준선-열">55개의 기준선 열 <a href="#55개의-기준선-열" class="heading-anchor">#</a></h3>
-<p>Ingantt는 <strong>11개의 기준선</strong>을 저장합니다: 번호 없는 <strong>Baseline</strong>과 <strong>Baseline 1</strong>부터 <strong>Baseline 10</strong>까지입니다. 각 기준선은 동일한 다섯 개의 작업 열을 제공합니다:</p>
+<p>Ingantt는 <strong>11개의 기준선</strong>을 저장합니다: 번호 없는 <strong>초기 계획</strong>과 <strong>초기 계획 1</strong>부터 <strong>초기 계획 10</strong>까지입니다. 각 기준선은 동일한 다섯 개의 작업 열을 제공합니다:</p>
 <ul>
 <li>Baseline Start</li>
 <li>Baseline Finish</li>
@@ -238,7 +238,7 @@
 <li>Baseline Work</li>
 <li>Baseline Cost</li>
 </ul>
-<p>기준선 11개 × 필드 5개 = <strong>55개의 기준선 열</strong>이며, 모두 작업 테이블의 열 선택기에서 사용할 수 있습니다. 번호 없는 세트는 그대로 이름이 붙고(<em>Baseline Start</em>), 번호가 있는 세트는 번호가 함께 표시됩니다(<em>Baseline 3 Start</em>).</p>
+<p>기준선 11개 × 필드 5개 = <strong>55개의 기준선 열</strong>이며, 모두 작업 테이블의 열 선택기에서 사용할 수 있습니다. 번호 없는 세트는 그대로 이름이 붙고(<em>초기 계획 시작</em>), 번호가 있는 세트는 번호가 함께 표시됩니다(<em>초기 계획 3 시작</em>).</p>
 <h3 id="5개의-차이-열">5개의 차이 열 <a href="#5개의-차이-열" class="heading-anchor">#</a></h3>
 <p>차이 열은 계산된 값 — 현재 일정에서 기준선을 뺀 값 — 이며 다섯 개가 있습니다:</p>
 <ul>
@@ -248,14 +248,14 @@
 <li>Work Variance</li>
 <li>Cost Variance</li>
 </ul>
-<p>차이 열은 기준선마다 한 세트씩이 아니라 다섯 개짜리 한 세트만 있습니다. 현재 일정을 <strong>하나의</strong> 기준선과 비교하는데, 이는 <strong>Project → Earned Value Options</strong>에서 <a href="/ko/tracking/earned-value/#%ED%9A%8D%EB%93%9D%EA%B0%80%EC%B9%98-%EA%B8%B0%EC%A4%80%EC%84%A0">획득가치 기준선</a>으로 선택된 기준선이며 기본값은 번호 없는 Baseline입니다. 이 설정을 바꾸면 모든 차이 열이 선택한 기준선을 기준으로 다시 계산됩니다. 선택된 기준선이 설정된 적이 없는 작업은 0이 아니라 빈 차이 값을 표시합니다.</p>
+<p>차이 열은 기준선마다 한 세트씩이 아니라 다섯 개짜리 한 세트만 있습니다. 현재 일정을 <strong>하나의</strong> 기준선과 비교하는데, 이는 <strong>프로젝트 → 성과 측정 옵션</strong>에서 <a href="/ko/tracking/earned-value/#%ED%9A%8D%EB%93%9D%EA%B0%80%EC%B9%98-%EA%B8%B0%EC%A4%80%EC%84%A0">획득가치 기준선</a>으로 선택된 기준선이며 기본값은 번호 없는 Baseline입니다. 이 설정을 바꾸면 모든 차이 열이 선택한 기준선을 기준으로 다시 계산됩니다. 선택된 기준선이 설정된 적이 없는 작업은 0이 아니라 빈 차이 값을 표시합니다.</p>
 <h2 id="기준선이-저장되는-위치">기준선이 저장되는 위치 <a href="#기준선이-저장되는-위치" class="heading-anchor">#</a></h2>
 <p>기준선은 별도의 파일이 아니라 <strong>프로젝트 파일 안에</strong> 저장됩니다. 프로젝트를 저장하면 기준선도 함께 저장됩니다.</p>
-<p>열두 번째 기준선을 설정하려고 하면 Ingantt는 <em>All baseline slots are in use. Clear one in the Baselines dialog first.</em>라고 알려 줍니다. <strong>Project → Baselines</strong>를 열어 하나를 지우십시오.</p>
+<p>열두 번째 기준선을 설정하려고 하면 Ingantt는 <em>모든 초기 계획 슬롯이 사용 중입니다. 먼저 초기 계획 대화 상자에서 하나를 삭제하세요.</em>라고 알려 줍니다. <strong>프로젝트 → 초기 계획</strong>을 열어 하나를 지우십시오.</p>
 <p>기준선은 파일 자체를 시간 순으로 기록하는 <a href="/ko/ui/version-history/">버전 기록</a>과 같지 않습니다. 이전 계획으로 돌아가려면 버전 기록을, 현재 계획이 얼마나 벗어났는지 측정하려면 기준선을 사용하십시오.</p>
 <h2 id="중간-계획">중간 계획 <a href="#중간-계획" class="heading-anchor">#</a></h2>
-<p>중간 계획은 전체 기준선의 부담 없이 빠른 비교를 위해 경량 일정 스냅샷(<strong>Start</strong> 및 <strong>Finish</strong> 날짜만)을 저장합니다. Ingantt는 최대 10개의 중간 계획(<code>Interim Plan 1</code>~<code>Interim Plan 10</code>)을 지원합니다.</p>
-<p><strong>Project</strong> 메뉴의 <strong>Interim Plans</strong> 항목에서 중간 계획을 설정하고 지울 수 있습니다. 작업 목록에 중간 계획 날짜를 열로 표시할 수 있습니다.</p>
+<p>중간 계획은 전체 기준선의 부담 없이 빠른 비교를 위해 경량 일정 스냅샷(<strong>시작</strong> 및 <strong>완료</strong> 날짜만)을 저장합니다. Ingantt는 최대 10개의 중간 계획(<code>Interim Plan 1</code>~<code>Interim Plan 10</code>)을 지원합니다.</p>
+<p><strong>프로젝트</strong> 메뉴의 <strong>중간 계획</strong> 항목에서 중간 계획을 설정하고 지울 수 있습니다. 작업 목록에 중간 계획 날짜를 열로 표시할 수 있습니다.</p>
 
     </main>
     <aside class="toc" aria-label="목차"></aside>

@@ -8,7 +8,7 @@ Une ressource de travail peut être **surutilisée**, ce qui signifie qu'elle a 
 
 Si une tâche a des ressources surutilisées affectées, Ingantt affiche une icône spéciale dans la liste des tâches.
 
-Si une ressource est surutilisée, Ingantt affiche une icône spéciale dans la vue **Resources** et la vue **Resource Usage**.
+Si une ressource est surutilisée, Ingantt affiche une icône spéciale dans la vue **Ressources** et la vue **Utilisation des ressources**.
 
 De plus, Ingantt comptabilise ces tâches et ressources et affiche les totaux dans le tiroir de navigation.
 
@@ -18,17 +18,17 @@ Les dépendances entre les tâches contrôlent leur position sur la ligne tempor
 
 Vous pouvez résoudre la surutilisation manuellement en définissant des dépendances ou des contraintes pour décaler certaines tâches afin que le travail ne soit pas effectué simultanément.
 
-Une autre façon de résoudre la surutilisation est le nivellement automatique. Si vous choisissez **Auto-level resources** dans le menu **Project**, Ingantt décale automatiquement certaines tâches plus loin sur la ligne temporelle pour éviter la surutilisation des ressources. Vous pouvez annuler ces ajustements automatiques en choisissant **Clear leveling** dans le menu **Project**.
+Une autre façon de résoudre la surutilisation est le nivellement automatique. Si vous choisissez **Auto - nivellement des ressources** dans le menu **Projet**, Ingantt décale automatiquement certaines tâches plus loin sur la ligne temporelle pour éviter la surutilisation des ressources. Vous pouvez annuler ces ajustements automatiques en choisissant **Effacer le nivellement** dans le menu **Projet**.
 
 La commande de nivellement automatique propose trois options de portée :
 
-- **All tasks** — Nivelle toutes les tâches du projet
-- **Selected tasks** — Nivelle uniquement les tâches actuellement sélectionnées
-- **Selected resources** — Nivelle uniquement les conflits de surutilisation pour les ressources sélectionnées (disponible dans les vues Resources et Resource Usage)
+- **Toutes les tâches** — Nivelle toutes les tâches du projet
+- **Tâches sélectionnées** — Nivelle uniquement les tâches actuellement sélectionnées
+- **Ressources sélectionnées** — Nivelle uniquement les conflits de surutilisation pour les ressources sélectionnées (disponible dans les vues Ressources et Utilisation des ressources)
 
 ### Fonctionnement du nivellement automatique
 
-Lorsque vous exécutez **Auto-level resources**, Ingantt résout les surutilisations en **retardant ou fractionnant les tâches**. Il ne réaffecte pas les ressources et ne modifie pas les unités d'affectation.
+Lorsque vous exécutez **Auto - nivellement des ressources**, Ingantt résout les surutilisations en **retardant ou fractionnant les tâches**. Il ne réaffecte pas les ressources et ne modifie pas les unités d'affectation.
 
 L'algorithme identifie les jours où une ressource a plus de travail affecté que sa capacité ne le permet, puis détermine quelles tâches concurrentes retarder. Chaque tâche reçoit un score basé sur plusieurs facteurs — les tâches avec un score plus élevé sont protégées contre le retard :
 
@@ -36,10 +36,10 @@ L'algorithme identifie les jours où une ressource a plus de travail affecté qu
 |---------|-------|
 | **Dependencies** | Les tâches qui sont prédécesseurs d'autres tâches sont protégées |
 | **Slack** | Les tâches critiques ou quasi critiques (moins de marge) sont protégées |
-| **Priority** | Les tâches avec une valeur de priorité plus élevée sont protégées |
+| **Priorité** | Les tâches avec une valeur de priorité plus élevée sont protégées |
 | **Constraints** | Les tâches avec des contraintes de planification sont protégées |
 | **Start Date** | Les tâches qui commencent plus tôt sont quelque peu protégées |
-| **Duration** | Les tâches plus longues sont quelque peu protégées |
+| **Durée** | Les tâches plus longues sont quelque peu protégées |
 
 La tâche avec le score le plus bas est retardée pour résoudre chaque conflit. Le processus se répète jusqu'à ce que toutes les surutilisations soient résolues ou qu'aucun retard supplémentaire ne puisse être appliqué.
 
@@ -47,45 +47,45 @@ La tâche avec le score le plus bas est retardée pour résoudre chaque conflit.
 
 ### Options de nivellement
 
-Configurez le comportement du nivellement dans la boîte de dialogue **Leveling Options**, accessible depuis le menu **Project** :
+Configurez le comportement du nivellement dans la boîte de dialogue **Options de nivellement**, accessible depuis le menu **Projet** :
 
-- **Leveling order** — Contrôle la priorité des tâches : ID Only (ID croissant), Standard (score multi-facteurs), ou Priority Standard (priorité d'abord, puis facteurs standard ; valeur par défaut)
-- **Overallocation basis** — Contrôle la granularité de détection : minute, heure, jour, semaine ou mois. Les paramètres minute et heure détectent les conflits même lorsque les totaux journaliers sont dans les limites de capacité mais que les tâches se chevauchent au sein d'une même journée.
+- **Ordre de nivellement** — Contrôle la priorité des tâches : ID Only (ID croissant), Standard (score multi-facteurs), ou Priority Standard (priorité d'abord, puis facteurs standard ; valeur par défaut)
+- **Base de surcharge** — Contrôle la granularité de détection : minute, heure, jour, semaine ou mois. Les paramètres minute et heure détectent les conflits même lorsque les totaux journaliers sont dans les limites de capacité mais que les tâches se chevauchent au sein d'une même journée.
 - **Adjust individual assignments** — Lorsque cette option est activée et qu'une tâche comporte plusieurs affectations de ressources, seule l'affectation de la ressource surutilisée est retardée au lieu de la tâche entière
 - **Create splits in remaining work** — Lorsque cette option est activée, l'algorithme de nivellement peut fractionner le travail autour des conflits au lieu de retarder des tâches entières
-- **Level only within available slack** — Limite les retards de nivellement à ne pas dépasser la marge totale d'une tâche, empêchant ainsi le report de la date de fin du projet
-- **Leveling range** — Restreint le nivellement aux tâches comprises dans une fenêtre de dates spécifique
+- **Niveler uniquement dans la marge disponible** — Limite les retards de nivellement à ne pas dépasser la marge totale d'une tâche, empêchant ainsi le report de la date de fin du projet
+- **Plage de nivellement** — Restreint le nivellement aux tâches comprises dans une fenêtre de dates spécifique
 
 ### Exemptions du nivellement
 
 Les tâches et ressources suivantes ne sont jamais affectées par le nivellement automatique :
 
 - Les tâches dont la [priorité](#priorité) est définie à **1000**
-- Les tâches dont **Can Level** est défini à **false** (dans l'onglet **Leveling** de la boîte de dialogue Task Properties)
-- Les tâches avec une [contrainte](/fr/building-schedule/constraints/index.md#contraintes) **Must start on** ou **Must finish on**
+- Les tâches dont **Peut niveler** est défini à **false** (dans l'onglet **Nivellement** de la boîte de dialogue Propriétés de la tâche)
+- Les tâches avec une [contrainte](/fr/building-schedule/constraints/index.md#contraintes) **Doit commencer le** ou **Doit finir le**
 - Les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#tâches-récapitulatives)
 - Les jalons de durée nulle
 - Les tâches entièrement achevées (100 %)
-- Les ressources dont **Can Level** est défini à **false** dans la boîte de dialogue Resource Properties
-- Les ressources avec un [type de réservation](/fr/building-schedule/resources/index.md#type-de-réservation) **Proposed** (sauf si l'option de nivellement pour inclure les ressources proposées est activée)
+- Les ressources dont **Peut niveler** est défini à **false** dans la boîte de dialogue Propriétés de la ressource
+- Les ressources avec un [type de réservation](/fr/building-schedule/resources/index.md#type-de-réservation) **Proposé** (sauf si l'option de nivellement pour inclure les ressources proposées est activée)
 
 ### Renivellement et suppression
 
-Chaque fois que vous exécutez **Auto-level resources**, tout nivellement précédent est automatiquement supprimé au préalable. Le nivellement repart toujours d'un planning vierge, non nivelé, pour éviter l'accumulation des retards.
+Chaque fois que vous exécutez **Auto - nivellement des ressources**, tout nivellement précédent est automatiquement supprimé au préalable. Le nivellement repart toujours d'un planning vierge, non nivelé, pour éviter l'accumulation des retards.
 
-Si vous modifiez le planning après le nivellement (ajout de tâches, modification de dépendances, etc.), les retards de nivellement existants sont conservés mais peuvent ne plus résoudre toutes les surutilisations. Exécutez à nouveau **Auto-level resources** pour reniveler le planning mis à jour.
+Si vous modifiez le planning après le nivellement (ajout de tâches, modification de dépendances, etc.), les retards de nivellement existants sont conservés mais peuvent ne plus résoudre toutes les surutilisations. Exécutez à nouveau **Auto - nivellement des ressources** pour reniveler le planning mis à jour.
 
-Pour supprimer tous les retards de nivellement et revenir au planning d'origine calculé par la méthode du chemin critique, choisissez **Clear leveling** dans le menu **Project**.
+Pour supprimer tous les retards de nivellement et revenir au planning d'origine calculé par la méthode du chemin critique, choisissez **Effacer le nivellement** dans le menu **Projet**.
 
 ### Gantt de nivellement
 
-Après avoir exécuté le nivellement automatique, un bouton bascule **Leveling Gantt** apparaît dans la zone du diagramme de Gantt. Lorsqu'il est activé, il affiche des barres vertes aux positions d'avant nivellement — là où se trouvaient les tâches avant le nivellement — tandis que les barres de tâches standard restent à leurs positions nivelées actuelles. Cela vous permet de comparer le planning initial avec le planning nivelé pour visualiser le décalage de chaque tâche.
+Après avoir exécuté le nivellement automatique, un bouton bascule **Gantt de nivellement** apparaît dans la zone du diagramme de Gantt. Lorsqu'il est activé, il affiche des barres vertes aux positions d'avant nivellement — là où se trouvaient les tâches avant le nivellement — tandis que les barres de tâches standard restent à leurs positions nivelées actuelles. Cela vous permet de comparer le planning initial avec le planning nivelé pour visualiser le décalage de chaque tâche.
 
 Ce bouton bascule n'est visible que lorsque le projet contient des données de nivellement et il est automatiquement masqué lorsque vous supprimez le nivellement.
 
 ## Priorité
 
-Le champ **Priority** est disponible dans l'onglet **Leveling** de la boîte de dialogue **Task Properties**. Il accepte une valeur entière de 0 à 1000, avec une valeur par défaut de 500.
+Le champ **Priorité** est disponible dans l'onglet **Nivellement** de la boîte de dialogue **Propriétés de la tâche**. Il accepte une valeur entière de 0 à 1000, avec une valeur par défaut de 500.
 
 La priorité est utilisée par l'algorithme de [nivellement automatique](#nivellement-automatique) pour déterminer quelles tâches retarder lors de la résolution des surutilisations de ressources. Les tâches avec une priorité plus élevée sont moins susceptibles d'être retardées :
 

@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -213,18 +213,18 @@
       <h1 id="비용-이해하기">비용 이해하기 <a href="#비용-이해하기" class="heading-anchor">#</a></h1>
 <p>작업과 자원에 비용을 배정하여 프로젝트의 총 비용을 확인합니다. 루트 요약 작업에 총합이 표시되며, 이를 예산 자원과 비교하여 프로젝트가 승인된 예산에 맞는지 확인할 수 있습니다.</p>
 <h2 id="작업-비용-계산-방법">작업 비용 계산 방법 <a href="#작업-비용-계산-방법" class="heading-anchor">#</a></h2>
-<p>각 작업의 비용은 자체 고정 비용과 배정된 자원의 비용의 합입니다. Ingantt는 각 작업의 총 비용을 계산하여 작업 목록의 <strong>Cost</strong> 열에 표시합니다.</p>
-<p><em>작업의 <strong>Cost</strong> = 작업의 <strong>Fixed Cost</strong> + 작업에 배정된 자원의 비용</em></p>
+<p>각 작업의 비용은 자체 고정 비용과 배정된 자원의 비용의 합입니다. Ingantt는 각 작업의 총 비용을 계산하여 작업 목록의 <strong>비용</strong> 열에 표시합니다.</p>
+<p><em>작업의 <strong>비용</strong> = 작업의 <strong>고정 비용</strong> + 작업에 배정된 자원의 비용</em></p>
 <blockquote>
-<p>작업 목록에 <strong>Cost</strong> 열이 보이지 않으면 <strong>Options</strong> 대화 상자의 <strong>Task Columns</strong> 탭에서 <strong>Cost Column</strong> 플래그가 체크되어 있는지 확인하십시오.</p>
+<p>작업 목록에 <strong>비용</strong> 열이 보이지 않으면 <strong>옵션</strong> 대화 상자의 <strong>작업 열</strong> 탭에서 <strong>Cost Column</strong> 플래그가 체크되어 있는지 확인하십시오.</p>
 </blockquote>
 <h2 id="요약-작업-비용">요약 작업 비용 <a href="#요약-작업-비용" class="heading-anchor">#</a></h2>
-<p><a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a>은 <strong>Cost</strong> 필드에 모든 하위 작업의 총 비용을 표시합니다.</p>
-<p>그러나 일반 작업과 마찬가지로 요약 작업에도 <a href="/ko/building-schedule/assignments/#%EC%9E%90%EC%9B%90-%EB%B0%B0%EC%A0%95-%EB%B0%8F-%EB%8B%A8%EC%9C%84">배정된 자원</a>과 <strong>Fixed Cost</strong>가 있을 수 있습니다. 이는 하위 작업의 총 비용에 추가되어 요약 작업의 <strong>Cost</strong>를 증가시킵니다.</p>
-<p><em>요약 작업의 <strong>Cost</strong> = 모든 하위 작업의 총 비용 + 요약 작업의 <strong>Fixed Cost</strong> + 요약 작업에 배정된 자원의 비용</em></p>
+<p><a href="/ko/building-schedule/tasks/#%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">요약 작업</a>은 <strong>비용</strong> 필드에 모든 하위 작업의 총 비용을 표시합니다.</p>
+<p>그러나 일반 작업과 마찬가지로 요약 작업에도 <a href="/ko/building-schedule/assignments/#%EC%9E%90%EC%9B%90-%EB%B0%B0%EC%A0%95-%EB%B0%8F-%EB%8B%A8%EC%9C%84">배정된 자원</a>과 <strong>고정 비용</strong>이 있을 수 있습니다. 이는 하위 작업의 총 비용에 추가되어 요약 작업의 <strong>비용</strong>을 증가시킵니다.</p>
+<p><em>요약 작업의 <strong>비용</strong> = 모든 하위 작업의 총 비용 + 요약 작업의 <strong>고정 비용</strong> + 요약 작업에 배정된 자원의 비용</em></p>
 <p><a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a>을 사용하여 전체 프로젝트의 총 비용을 확인하고 관리하십시오.</p>
 <h2 id="예산-자원">예산 자원 <a href="#예산-자원" class="heading-anchor">#</a></h2>
-<p><strong>Resource Properties</strong> 대화 상자에서 자원을 <strong>Budget</strong> 자원으로 표시할 수 있습니다. 예산 자원은 프로젝트 수준의 전체 할당 예산 금액을 나타내며 <a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a>에만 배정할 수 있습니다.</p>
+<p><strong>자원 속성</strong> 대화 상자에서 자원을 <strong>예산</strong> 자원으로 표시할 수 있습니다. 예산 자원은 프로젝트 수준의 전체 할당 예산 금액을 나타내며 <a href="/ko/building-schedule/tasks/#%EB%A3%A8%ED%8A%B8-%EC%9A%94%EC%95%BD-%EC%9E%91%EC%97%85">루트 요약 작업</a>에만 배정할 수 있습니다.</p>
 <p>예산 자원은 다음에서 제외됩니다:</p>
 <ul>
 <li>일정</li>
@@ -234,8 +234,8 @@
 </ul>
 <p>예산 자원은 상향식 비용 계산과 별도로 하향식 예산 추적을 제공합니다.</p>
 <h2 id="통화">통화 <a href="#통화" class="heading-anchor">#</a></h2>
-<p>프로젝트가 Ingantt 기본값과 다른 통화를 사용하는 경우, <strong>Project Properties</strong> 대화 상자의 <strong>Regional</strong> 탭에서 변경할 수 있습니다. 통화를 기호(예: €), 약어(EUR) 또는 전체 이름(유로)으로 지정하십시오.</p>
-<p>같은 탭에서 <strong>Currency Position</strong>(값 앞 또는 뒤, 공백 포함 여부)도 지정할 수 있습니다.</p>
+<p>프로젝트가 Ingantt 기본값과 다른 통화를 사용하는 경우, <strong>프로젝트 속성</strong> 대화 상자의 <strong>지역</strong> 탭에서 변경할 수 있습니다. 통화를 기호(예: €), 약어(EUR) 또는 전체 이름(유로)으로 지정하십시오.</p>
+<p>같은 탭에서 <strong>통화 위치</strong>(값 앞 또는 뒤, 공백 포함 여부)도 지정할 수 있습니다.</p>
 <blockquote>
 <p>통화를 변경해도 비용 값은 재계산되지 않습니다.</p>
 </blockquote>

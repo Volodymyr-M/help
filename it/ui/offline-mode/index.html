@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/" class="active" aria-current="page">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -212,9 +212,9 @@
     <main id="main-content" class="content">
       <h1 id="lavorare-offline">Lavorare offline <a href="#lavorare-offline" class="heading-anchor">#</a></h1>
 <p>Disattiva il salvataggio automatico così nulla viene scritto su Google Drive finché non salvi deliberatamente — utile quando stai per perdere la connessione.</p>
-<p>Nella versione <strong>Web</strong> la voce di menu è <strong>File → Work offline (no autosave)</strong>. Su Windows, macOS, Android e iOS lo stesso interruttore si chiama <strong>Enable autosave</strong>.</p>
-<h2 id="cosa-fa-work-offline">Cosa fa Work offline <a href="#cosa-fa-work-offline" class="heading-anchor">#</a></h2>
-<p><strong>File → Work offline</strong> disattiva il salvataggio automatico per la scheda corrente. Tutto qui. Mentre è attivo, Ingantt smette di scrivere il progetto su Google Drive ogni 20 secondi, e nulla lascia il tuo browser finché non salvi.</p>
+<p>Nella versione <strong>Web</strong> la voce di menu è <strong>File → Lavora offline (senza salvataggio automatico)</strong>. Su Windows, macOS, Android e iOS lo stesso interruttore si chiama <strong>Abilita salvataggio automatico</strong>.</p>
+<h2 id="cosa-fa-lavora-offline">Cosa fa Lavora offline <a href="#cosa-fa-lavora-offline" class="heading-anchor">#</a></h2>
+<p><strong>File → Lavora offline</strong> disattiva il salvataggio automatico per la scheda corrente. Tutto qui. Mentre è attivo, Ingantt smette di scrivere il progetto su Google Drive ogni 20 secondi, e nulla lascia il tuo browser finché non salvi.</p>
 <p>Attivandolo compare un promemoria una tantum:</p>
 <blockquote>
 <p>La modalità offline è attiva. Ricordati di salvare manualmente le modifiche prima di chiudere la scheda.</p>
@@ -224,12 +224,12 @@
 <p>Non puoi salvare su Google Drive senza connessione, quindi la sequenza che funziona è:</p>
 <ol>
 <li>Apri il piano mentre hai ancora la connessione.</li>
-<li>Attiva <strong>File → Work offline</strong>.</li>
+<li>Attiva <strong>File → Lavora offline</strong>.</li>
 <li>Modifica normalmente. Tutto avviene nel browser — il cronogramma viene ricalcolato, annulla e ripeti funzionano, nulla viene inviato da nessuna parte.</li>
-<li>Quando sei di nuovo online, disattiva <strong>Work offline</strong> e poi premi <strong>Save</strong> (oppure <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). È questo il passaggio che mette il tuo lavoro su Drive.</li>
+<li>Quando sei di nuovo online, disattiva <strong>Lavora offline</strong> e poi premi <strong>Salva</strong> (oppure <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). È questo il passaggio che mette il tuo lavoro su Drive.</li>
 <li>Il salvataggio automatico riprende da quel momento.</li>
 </ol>
-<p>Se preferisci non dover ricordare il passaggio 4, esporta una copia prima di perdere la connessione: <strong>File → Export → XML</strong> scarica il piano sul tuo dispositivo, e potrai riaprire quel file in seguito.</p>
+<p>Se preferisci non dover ricordare il passaggio 4, esporta una copia prima di perdere la connessione: <strong>File → Esporta → XML</strong> scarica il piano sul tuo dispositivo, e potrai riaprire quel file in seguito.</p>
 <h2 id="il-pulsante-save-ti-dice-a-che-punto-sei">Il pulsante Save ti dice a che punto sei <a href="#il-pulsante-save-ti-dice-a-che-punto-sei" class="heading-anchor">#</a></h2>
 <p>Il pulsante Save nella barra degli strumenti è l'indicatore da tenere d'occhio:</p>
 <table>
@@ -241,23 +241,23 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>File saved to Google Drive</strong></td>
+<td><strong>File salvato su Google Drive</strong></td>
 <td>Tutto è su Drive.</td>
 </tr>
 <tr>
-<td><strong>Autosave pending…</strong></td>
+<td><strong>Salvataggio automatico in sospeso...</strong></td>
 <td>Ci sono modifiche non salvate; il salvataggio automatico le prenderà a breve.</td>
 </tr>
 <tr>
-<td><strong>Saving…</strong></td>
+<td><strong>Salvataggio...</strong></td>
 <td>Un salvataggio è in corso.</td>
 </tr>
 <tr>
-<td><strong>Save file to Google Drive</strong></td>
+<td><strong>Salva file su Google Drive</strong></td>
 <td>Ci sono modifiche non salvate e il salvataggio automatico è disattivato — devi salvare.</td>
 </tr>
 <tr>
-<td><strong>Error saving file to Google Drive</strong></td>
+<td><strong>Errore nel salvataggio del file su Google Drive</strong></td>
 <td>È stato tentato un salvataggio ed è fallito. Le tue modifiche sono ancora nella scheda e ancora non salvate.</td>
 </tr>
 </tbody>
@@ -266,7 +266,7 @@
 <h2 id="differenze-tra-piattaforme">Differenze tra piattaforme <a href="#differenze-tra-piattaforme" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Sul Web l'impostazione non viene conservata.</strong> Vale per scheda e per sessione. Apri una nuova scheda o ricarica, e il salvataggio automatico è di nuovo attivo. È voluto — il salvataggio automatico attivo è l'impostazione predefinita più sicura, così un interruttore offline dimenticato non può seguirti. Su Windows, macOS, Android e iOS l'impostazione del salvataggio automatico <em>viene</em> ricordata.</li>
-<li><strong>Le impostazioni predefinite sono diverse.</strong> Sul Web, il salvataggio automatico è attivo fin dall'inizio. Nelle versioni desktop e mobile è disattivato fin dall'inizio, e la stessa voce di menu si chiama <strong>Enable autosave</strong>.</li>
+<li><strong>Le impostazioni predefinite sono diverse.</strong> Sul Web, il salvataggio automatico è attivo fin dall'inizio. Nelle versioni desktop e mobile è disattivato fin dall'inizio, e la stessa voce di menu si chiama <strong>Abilita salvataggio automatico</strong>.</li>
 <li><strong>Un progetto che non hai ancora salvato non viene mai salvato automaticamente</strong>, modalità offline o meno. Il salvataggio automatico può solo aggiornare un file che esiste già su Drive. Salva una volta, e il salvataggio automatico prende il sopravvento.</li>
 <li><strong>Un file aperto dal tuo dispositivo nella versione Web non viene mai salvato automaticamente.</strong> Ingantt per Web non può scrivere di nuovo in un file sul tuo disco. Salvalo su <a href="/it/ui/files/">Google Drive</a> per ottenere il salvataggio automatico.</li>
 </ul>

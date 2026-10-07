@@ -4,7 +4,7 @@ Legen Sie Fixkosten für Vorgänge und Sätze für Ressourcen fest. Ingantt verw
 
 ## Vorgangs-Fixkosten
 
-Sie können Kosten für einen Vorgang unabhängig von seinen Ressourcen festlegen, indem Sie das Feld **Fixkosten** auf dem Reiter **Kosten und EV** des Dialogs **Vorgangseigenschaften** ausfüllen. Verwenden Sie dies zum Beispiel, wenn jemand bereits eine Gesamtkostenschätzung für den Vorgang geliefert hat oder wenn der Vorgang zusätzliche Kosten über seine Ressourcenkosten hinaus hat.
+Sie können Kosten für einen Vorgang unabhängig von seinen Ressourcen festlegen, indem Sie das Feld **Feste Kosten** auf dem Reiter **Kosten und EW** des Dialogs **Aufgabeneigenschaften** ausfüllen. Verwenden Sie dies zum Beispiel, wenn jemand bereits eine Gesamtkostenschätzung für den Vorgang geliefert hat oder wenn der Vorgang zusätzliche Kosten über seine Ressourcenkosten hinaus hat.
 
 > Wenn Sie die gleichen Fixkosten mehreren Vorgängen zuweisen müssen, erwägen Sie, eine Kostenressource zu erstellen und sie diesen Vorgängen zuzuweisen. Wenn sich die Kosten in Zukunft ändern, müssen Sie sie nur an einer Stelle aktualisieren.
 
@@ -22,7 +22,7 @@ Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, können Sie den **Einh
 
 ## Materialressourcenkosten
 
-Für **Material**-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog **Ressourceneigenschaften** eine **Materialbezeichnung** festlegen, um die Einheit zu beschreiben.
+Für **Material**-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog **Ressourceneigenschaften** eine **Materialkennzeichnung** festlegen, um die Einheit zu beschreiben.
 
 Materialressourcen unterstützen zwei Verbrauchsmodi:
 - **Fest** (Standard) — Eine Gesamtmenge unabhängig von der Vorgangsdauer (z. B. 5 Tonnen Zement)
@@ -34,7 +34,7 @@ Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine �
 
 Eine **Kosten**-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise“ = 800 € bei Vorgang A und 1.200 € bei Vorgang B).
 
-Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld **Fixkosten** für jeden Vorgang einzeln auszufüllen.
+Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld **Feste Kosten** für jeden Vorgang einzeln auszufüllen.
 
 ## Kostensatztabellen
 
@@ -56,4 +56,4 @@ Die Einstellung **Kostenabgrenzung** steuert, wann Kosten als Ist-Kosten erfasst
 | **Anteilig** | Proportional zum Fertigstellungsgrad (z. B. 50 % abgeschlossen = 50 % der Kosten) |
 | **Ende** | Volle Kosten erst, wenn der Vorgang 100 % abgeschlossen erreicht |
 
-Ressourcen haben eine **Kostenabgrenzung**-Einstellung auf dem Reiter **Kosten** des Dialogs **Ressourceneigenschaften**. Vorgänge haben eine **Fixkosten-Abgrenzung**-Einstellung auf dem Reiter **Kosten und EV** des Dialogs **Vorgangseigenschaften**. Das Projekt hat eine **Standard-Fixkosten-Abgrenzung**-Einstellung auf dem Reiter **Sonstiges** des Dialogs **Projekteigenschaften**.
+Ressourcen haben eine **Kostenabgrenzung**-Einstellung auf dem Reiter **Kosten** des Dialogs **Ressourceneigenschaften**. Vorgänge haben eine **Feste Kostenfälligkeit**-Einstellung auf dem Reiter **Kosten und EW** des Dialogs **Aufgabeneigenschaften**. Das Projekt hat eine **Standard-Fixkosten-Abgrenzung**-Einstellung auf dem Reiter **Sonstiges** des Dialogs **Projekteigenschaften**.

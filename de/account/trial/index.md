@@ -15,14 +15,14 @@ Alles. Während der Testphase wird keine Funktion zurückgehalten — KI-Projekt
 Die Navigationsleiste zeigt Ihren Status an:
 
 - **Kostenlose Testphase endet in N Tagen**
-- **Kostenlose Testphase fast beendet**
-- **Kostenlose Testphase beendet**
+- **Kostenlose Testversion fast beendet**
+- **Kostenlose Testversion beendet**
 
 Außerdem erhalten Sie einige Tage vor Ablauf der Testphase eine E-Mail und eine weitere, sobald sie beendet ist.
 
 ## Wenn die Testphase endet
 
-Ingantt wechselt in den **Nur-Ansicht**-Modus, und die Oberfläche zeigt *Nur-Ansicht-Modus, da die Testphase beendet ist* an.
+Ingantt wechselt in den **Nur-Ansicht**-Modus, und die Oberfläche zeigt *Nur-Anzeige-Modus, da die Testversion abgelaufen ist* an.
 
 - **Nichts wird gelöscht.** Ihre Projektdateien bleiben in Ihrem Google Drive, genau dort, wo sie waren. Sie gehören Ihnen; Ingantt speichert Ihre Projekte nicht auf eigenen Servern.
 - Sie können Ihre Projekte weiterhin öffnen und lesen.

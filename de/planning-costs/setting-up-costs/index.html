@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -213,7 +213,7 @@
       <h1 id="kosten-einrichten">Kosten einrichten <a href="#kosten-einrichten" class="heading-anchor">#</a></h1>
 <p>Legen Sie Fixkosten für Vorgänge und Sätze für Ressourcen fest. Ingantt verwendet diese zusammen mit dem Terminplan, um die Kosten jedes Vorgangs und des gesamten Projekts zu berechnen.</p>
 <h2 id="vorgangs-fixkosten">Vorgangs-Fixkosten <a href="#vorgangs-fixkosten" class="heading-anchor">#</a></h2>
-<p>Sie können Kosten für einen Vorgang unabhängig von seinen Ressourcen festlegen, indem Sie das Feld <strong>Fixkosten</strong> auf dem Reiter <strong>Kosten und EV</strong> des Dialogs <strong>Vorgangseigenschaften</strong> ausfüllen. Verwenden Sie dies zum Beispiel, wenn jemand bereits eine Gesamtkostenschätzung für den Vorgang geliefert hat oder wenn der Vorgang zusätzliche Kosten über seine Ressourcenkosten hinaus hat.</p>
+<p>Sie können Kosten für einen Vorgang unabhängig von seinen Ressourcen festlegen, indem Sie das Feld <strong>Feste Kosten</strong> auf dem Reiter <strong>Kosten und EW</strong> des Dialogs <strong>Aufgabeneigenschaften</strong> ausfüllen. Verwenden Sie dies zum Beispiel, wenn jemand bereits eine Gesamtkostenschätzung für den Vorgang geliefert hat oder wenn der Vorgang zusätzliche Kosten über seine Ressourcenkosten hinaus hat.</p>
 <blockquote>
 <p>Wenn Sie die gleichen Fixkosten mehreren Vorgängen zuweisen müssen, erwägen Sie, eine Kostenressource zu erstellen und sie diesen Vorgängen zuzuweisen. Wenn sich die Kosten in Zukunft ändern, müssen Sie sie nur an einer Stelle aktualisieren.</p>
 </blockquote>
@@ -226,7 +226,7 @@
 </blockquote>
 <p>Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, können Sie den <strong>Einheiten</strong>-Wert als eine vom Standard abweichende Zahl angeben. Dies beeinflusst die Kostenberechnung. Wenn zum Beispiel <strong>Einheiten</strong> 50 % beträgt, sind die berechneten Kosten für die Ressource im Vorgang halb so hoch wie bei 100 % Einheiten.</p>
 <h2 id="materialressourcenkosten">Materialressourcenkosten <a href="#materialressourcenkosten" class="heading-anchor">#</a></h2>
-<p>Für <strong>Material</strong>-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog <strong>Ressourceneigenschaften</strong> eine <strong>Materialbezeichnung</strong> festlegen, um die Einheit zu beschreiben.</p>
+<p>Für <strong>Material</strong>-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog <strong>Ressourceneigenschaften</strong> eine <strong>Materialkennzeichnung</strong> festlegen, um die Einheit zu beschreiben.</p>
 <p>Materialressourcen unterstützen zwei Verbrauchsmodi:</p>
 <ul>
 <li><strong>Fest</strong> (Standard) — Eine Gesamtmenge unabhängig von der Vorgangsdauer (z. B. 5 Tonnen Zement)</li>
@@ -235,7 +235,7 @@
 <p>Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff“-Materialressource hinzufügen und die Kosten pro Gallone im Dialog <strong>Ressourceneigenschaften</strong> angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als <strong>Einheiten</strong> an, und Ingantt addiert die berechneten Kraftstoffkosten zu den <strong>Kosten</strong> des Vorgangs.</p>
 <h2 id="kostenressource">Kostenressource <a href="#kostenressource" class="heading-anchor">#</a></h2>
 <p>Eine <strong>Kosten</strong>-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise“ = 800 € bei Vorgang A und 1.200 € bei Vorgang B).</p>
-<p>Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld <strong>Fixkosten</strong> für jeden Vorgang einzeln auszufüllen.</p>
+<p>Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld <strong>Feste Kosten</strong> für jeden Vorgang einzeln auszufüllen.</p>
 <h2 id="kostensatztabellen">Kostensatztabellen <a href="#kostensatztabellen" class="heading-anchor">#</a></h2>
 <p>Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Kostensatzgruppen für verschiedene Arbeitsarten zu pflegen.</p>
 <p>Kostensatztabellen werden auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong> konfiguriert. Bei der Zuweisung einer Ressource zu einem Vorgang können Sie im Dialog <strong>Ressourcenzuweisung bearbeiten</strong> auswählen, welche Kostensatztabelle verwendet werden soll.</p>
@@ -265,7 +265,7 @@
 </tr>
 </tbody>
 </table>
-<p>Ressourcen haben eine <strong>Kostenabgrenzung</strong>-Einstellung auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong>. Vorgänge haben eine <strong>Fixkosten-Abgrenzung</strong>-Einstellung auf dem Reiter <strong>Kosten und EV</strong> des Dialogs <strong>Vorgangseigenschaften</strong>. Das Projekt hat eine <strong>Standard-Fixkosten-Abgrenzung</strong>-Einstellung auf dem Reiter <strong>Sonstiges</strong> des Dialogs <strong>Projekteigenschaften</strong>.</p>
+<p>Ressourcen haben eine <strong>Kostenabgrenzung</strong>-Einstellung auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong>. Vorgänge haben eine <strong>Feste Kostenfälligkeit</strong>-Einstellung auf dem Reiter <strong>Kosten und EW</strong> des Dialogs <strong>Aufgabeneigenschaften</strong>. Das Projekt hat eine <strong>Standard-Fixkosten-Abgrenzung</strong>-Einstellung auf dem Reiter <strong>Sonstiges</strong> des Dialogs <strong>Projekteigenschaften</strong>.</p>
 
     </main>
     <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>

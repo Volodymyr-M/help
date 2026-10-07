@@ -118,8 +118,8 @@
     Terminplan erstellen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
-    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/tasks/">Aufgaben</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Aufgabeneigenschaften</a></li>
     <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
@@ -155,10 +155,10 @@
     Fortschritt verfolgen
   </button>
   <ul class="theme-pages">
-    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/baselines/">Basislinien</a></li>
     <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
     <li><a href="/de/tracking/actuals/" class="active" aria-current="page">Ist-Werte</a></li>
-    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+    <li><a href="/de/tracking/earned-value/">Ertragswert</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -212,23 +212,23 @@
     <main id="main-content" class="content">
       <h1 id="ist-werte">Ist-Werte <a href="#ist-werte" class="heading-anchor">#</a></h1>
 <p>Während die Arbeit fortschreitet und Sie <a href="/de/tracking/progress/#-abgeschlossen">% Abgeschlossen</a> aktualisieren, berechnet Ingantt automatisch Ist- und Restwerte für Dauer, Arbeit, Kosten und Termine. Diese Felder zeigen Ihnen genau, was ausgegeben wurde, was übrig ist und wie das Projekt im Vergleich zum Plan steht.</p>
-<p>Die häufigsten Ist- und Restspalten sind <strong>Ist-Kosten</strong> / <strong>Verbleibende Kosten</strong>, <strong>Ist-Arbeit</strong> / <strong>Verbleibende Arbeit</strong> und <strong>Ist-Dauer</strong> / <strong>Verbleibende Dauer</strong>. Wenn Sie diese Werte am <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgang</a> betrachten, sehen Sie die Gesamtwerte für das gesamte Projekt auf einen Blick — wie viel ausgegeben wurde, wie viel Aufwand investiert wurde und wie viel noch übrig ist. Stellen Sie sicher, dass der Projektsammelvorgang sichtbar ist: Aktivieren Sie <strong>Projektsammelvorgang anzeigen</strong> im Menü <strong>Ansicht</strong> oder im Dialog <strong>Optionen</strong>.</p>
+<p>Die häufigsten Ist- und Restspalten sind <strong>Istkosten</strong> / <strong>Verbleibende Kosten</strong>, <strong>Ist-Arbeit</strong> / <strong>Restarbeit</strong> und <strong>Ist-Dauer</strong> / <strong>Restdauer</strong>. Wenn Sie diese Werte am <a href="/de/building-schedule/tasks/#projektsammelvorgang">Projektsammelvorgang</a> betrachten, sehen Sie die Gesamtwerte für das gesamte Projekt auf einen Blick — wie viel ausgegeben wurde, wie viel Aufwand investiert wurde und wie viel noch übrig ist. Stellen Sie sicher, dass der Projektsammelvorgang sichtbar ist: Aktivieren Sie <strong>Root-Zusammenfassungsaufgabe anzeigen</strong> im Menü <strong>Ansicht</strong> oder im Dialog <strong>Optionen</strong>.</p>
 <h2 id="ist-und-restspalten-anzeigen">Ist- und Restspalten anzeigen <a href="#ist-und-restspalten-anzeigen" class="heading-anchor">#</a></h2>
-<p>Ist- und Restspalten sind standardmäßig nicht sichtbar. Um sie zur Vorgangsliste hinzuzufügen, öffnen Sie den Dialog <strong>Optionen</strong> (Reiter <strong>Vorgangsspalten</strong>) und aktivieren Sie die benötigten Spalten. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
+<p>Ist- und Restspalten sind standardmäßig nicht sichtbar. Um sie zur Vorgangsliste hinzuzufügen, öffnen Sie den Dialog <strong>Optionen</strong> (Reiter <strong>Aufgabenspalten</strong>) und aktivieren Sie die benötigten Spalten. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
 <h3 id="dauer">Dauer <a href="#dauer" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Ist-Dauer</strong> — Die bisher für einen Vorgang aufgewendete Arbeitszeit. Berechnet als Dauer des Vorgangs multipliziert mit seinem % Abgeschlossen.</li>
-<li><strong>Verbleibende Dauer</strong> — Die noch benötigte Arbeitszeit, um den Vorgang abzuschließen: Dauer − Ist-Dauer.</li>
+<li><strong>Restdauer</strong> — Die noch benötigte Arbeitszeit, um den Vorgang abzuschließen: Dauer − Ist-Dauer.</li>
 </ul>
 <p>Beispiel: Ein 10-Tage-Vorgang bei 40 % abgeschlossen hat eine Ist-Dauer von 4 Tagen und eine Verbleibende Dauer von 6 Tagen.</p>
 <h3 id="arbeit">Arbeit <a href="#arbeit" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Ist-Arbeit</strong> — Der gesamte Aufwand (in Stunden), den Ressourcen für einen Vorgang aufgewendet haben. Wenn <strong>Vorgangsstatus aktualisiert Ressourcenstatus</strong> in den Projekteinstellungen aktiviert ist (die Standardeinstellung), wird die Ist-Arbeit proportional aktualisiert, wenn Sie % Abgeschlossen ändern.</li>
-<li><strong>Verbleibende Arbeit</strong> — Der noch erforderliche Aufwand, um den Vorgang abzuschließen: Arbeit − Ist-Arbeit.</li>
+<li><strong>Ist-Arbeit</strong> — Der gesamte Aufwand (in Stunden), den Ressourcen für einen Vorgang aufgewendet haben. Wenn <strong>Aktualisierung des Vorgangsstatus aktualisiert den Ressourcenstatus</strong> in den Projekteinstellungen aktiviert ist (die Standardeinstellung), wird die Ist-Arbeit proportional aktualisiert, wenn Sie % Abgeschlossen ändern.</li>
+<li><strong>Restarbeit</strong> — Der noch erforderliche Aufwand, um den Vorgang abzuschließen: Arbeit − Ist-Arbeit.</li>
 </ul>
 <h3 id="kosten">Kosten <a href="#kosten" class="heading-anchor">#</a></h3>
 <ul>
-<li><strong>Ist-Kosten</strong> — Die bisher angefallenen Kosten: die Summe der aufgelaufenen Fixkosten und aufgelaufenen Ressourcenkosten. Wie Kosten auflaufen, hängt von der <strong>Kostenabgrenzung</strong>-Einstellung jeder Ressource ab:
+<li><strong>Istkosten</strong> — Die bisher angefallenen Kosten: die Summe der aufgelaufenen Fixkosten und aufgelaufenen Ressourcenkosten. Wie Kosten auflaufen, hängt von der <strong>Kostenabgrenzung</strong>-Einstellung jeder Ressource ab:
 <ul>
 <li><strong>Anfang</strong> — Die gesamten Kosten werden erfasst, wenn der Ist-Anfang gesetzt wird.</li>
 <li><strong>Anteilig</strong> — Kosten werden proportional basierend auf dem tatsächlichen Arbeitsfortschritt erfasst.</li>
@@ -256,14 +256,14 @@
 </blockquote>
 <p>Wenn Sie einen Wert ändern, aktualisiert Ingantt die anderen, um sie konsistent zu halten. Der häufigste Arbeitsablauf besteht darin, <strong>% Abgeschlossen</strong> zu aktualisieren, was sich automatisch auf alle Ist- und Restfelder auswirkt:</p>
 <ol>
-<li><strong>Ist-Dauer</strong> und <strong>Verbleibende Dauer</strong> werden aus dem neuen Prozentsatz neu berechnet.</li>
-<li><strong>Ist-Arbeit</strong> und <strong>Verbleibende Arbeit</strong> werden aktualisiert (wenn die Projekteinstellung aktiviert ist).</li>
+<li><strong>Ist-Dauer</strong> und <strong>Restdauer</strong> werden aus dem neuen Prozentsatz neu berechnet.</li>
+<li><strong>Ist-Arbeit</strong> und <strong>Restarbeit</strong> werden aktualisiert (wenn die Projekteinstellung aktiviert ist).</li>
 <li><strong>Ist-Anfang</strong> und <strong>Ist-Ende</strong> werden basierend auf dem Fortschritt gesetzt.</li>
-<li><strong>Ist-Kosten</strong> und <strong>Verbleibende Kosten</strong> werden basierend auf der Abgrenzungsmethode neu berechnet.</li>
+<li><strong>Istkosten</strong> und <strong>Verbleibende Kosten</strong> werden basierend auf der Abgrenzungsmethode neu berechnet.</li>
 </ol>
-<p>Für Sammelvorgänge werden <strong>Ist-Arbeit</strong>, <strong>Verbleibende Arbeit</strong>, <strong>Ist-Kosten</strong> und <strong>Verbleibende Kosten</strong> von allen untergeordneten Vorgängen aufsummiert (Rollup). <strong>Ist-Anfang</strong> ist der früheste Ist-Anfang unter den untergeordneten Vorgängen, und <strong>Ist-Ende</strong> ist das späteste Ist-Ende.</p>
-<h2 id="vorgangsspalten">Vorgangsspalten <a href="#vorgangsspalten" class="heading-anchor">#</a></h2>
-<p>Über Ist- und Restwerte hinaus unterstützt Ingantt eine breite Palette von Vorgangsspalten — Planungsdaten, Informationen zum kritischen Pfad, Kosten, Arbeit, Earned-Value-Kennzahlen, Basispläne, benutzerdefinierte Felder und Gliederungscodes. Alle Spalten können über den Dialog <strong>Optionen</strong> (Reiter <strong>Vorgangsspalten</strong>) ein- oder ausgeblendet und neu angeordnet werden. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
+<p>Für Sammelvorgänge werden <strong>Ist-Arbeit</strong>, <strong>Restarbeit</strong>, <strong>Istkosten</strong> und <strong>Verbleibende Kosten</strong> von allen untergeordneten Vorgängen aufsummiert (Rollup). <strong>Ist-Anfang</strong> ist der früheste Ist-Anfang unter den untergeordneten Vorgängen, und <strong>Ist-Ende</strong> ist das späteste Ist-Ende.</p>
+<h2 id="aufgabenspalten">Aufgabenspalten <a href="#aufgabenspalten" class="heading-anchor">#</a></h2>
+<p>Über Ist- und Restwerte hinaus unterstützt Ingantt eine breite Palette von Vorgangsspalten — Planungsdaten, Informationen zum kritischen Pfad, Kosten, Arbeit, Earned-Value-Kennzahlen, Basispläne, benutzerdefinierte Felder und Gliederungscodes. Alle Spalten können über den Dialog <strong>Optionen</strong> (Reiter <strong>Aufgabenspalten</strong>) ein- oder ausgeblendet und neu angeordnet werden. Sie können auch mit der rechten Maustaste auf eine Spaltenüberschrift im Vorgangsraster klicken, um schnell auf die Spalteneinstellungen zuzugreifen.</p>
 
     </main>
     <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>

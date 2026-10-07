@@ -14,22 +14,22 @@ Tutto. Nessuna funzionalità è esclusa durante la prova — generazione di prog
 
 Il menu di navigazione mostra il tuo stato:
 
-- **Free trial ends in N days**
-- **Free trial almost ended**
-- **Free trial ended**
+- **Prova gratuita termina in N giorni**
+- **Prova gratuita quasi terminata**
+- **Prova gratuita terminata**
 
 Ricevi anche un'email un paio di giorni prima della fine della prova e un'altra quando è terminata.
 
 ## Alla fine della prova
 
-Ingantt passa alla modalità di **sola visualizzazione** e l'interfaccia mostra *View only mode as trial ended*.
+Ingantt passa alla modalità di **solo visualizzazione** e l'interfaccia mostra *Modalità solo visualizzazione poiché il periodo di prova è terminato*.
 
 - **Nulla viene eliminato.** I tuoi file di progetto restano nel tuo Google Drive, esattamente dove erano. Sono tuoi; Ingantt non archivia i tuoi progetti sui propri server.
 - Puoi ancora aprire i tuoi progetti e leggerli.
 - Non puoi salvare le modifiche finché non ti abboni. Se ci provi, Ingantt ti propone la finestra di abbonamento.
-- Per esportare i tuoi piani, usa **File** → **Download** → **Download XML**, oppure apri i file da Google Drive con qualsiasi strumento in grado di leggere l'XML di Microsoft Project.
+- Per esportare i tuoi piani, usa **File** → **Scarica** → **Scarica XML**, oppure apri i file da Google Drive con qualsiasi strumento in grado di leggere l'XML di Microsoft Project.
 
-Abbonati da **Subscribe now** nel messaggio, oppure dalla finestra **Account**. Vedi [Abbonamenti e pagamento](/it/account/subscription/index.md).
+Abbonati da **Abbonati ora** nel messaggio, oppure dalla finestra **Account**. Vedi [Abbonamenti e pagamento](/it/account/subscription/index.md).
 
 ## App installate
 

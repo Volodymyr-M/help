@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>제약 조건 - 일정 작성 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta name="description" content="유연한 제약(가능한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/building-schedule/constraints/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="제약 조건">
-  <meta property="og:description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta property="og:description" content="유연한 제약(가능한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/building-schedule/constraints/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="제약 조건">
-  <meta name="twitter:description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta name="twitter:description" content="유연한 제약(가능한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
@@ -167,7 +167,7 @@
     보기
   </button>
   <ul class="theme-pages">
-    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/gantt/">간트 차트</a></li>
     <li><a href="/ko/views/task-views/">작업 보기</a></li>
     <li><a href="/ko/views/resource-views/">자원 보기</a></li>
     <li><a href="/ko/views/filtering/">작업 필터링</a></li>
@@ -214,9 +214,9 @@
 <p>일부 작업은 특정 날짜에 시작하거나 완료해야 합니다 — 배송이 화요일에 도착하거나 허가가 금요일에 만료되는 경우 등이 있습니다. 제약 조건을 사용하면 필요한 곳에 날짜를 고정하면서 일정의 나머지 부분은 유연하게 유지할 수 있습니다.</p>
 <h2 id="제약-조건의-작동-방식">제약 조건의 작동 방식 <a href="#제약-조건의-작동-방식" class="heading-anchor">#</a></h2>
 <p>작업 종속성(선행 작업 링크)과 함께 작업의 제약 조건은 작업의 일정 방식을 정의합니다.</p>
-<p>제약 조건은 <strong>Task Properties</strong> 대화 상자의 <strong>Advanced</strong> 탭에서 설정됩니다. 기본 제약 조건은 <strong>As soon as possible</strong>입니다. 이는 다른 작업과의 종속성을 고려하여 작업이 프로젝트 시작 날짜에 가능한 한 가깝게 설정됨을 의미합니다. 완료 날짜 기준으로 계획된 프로젝트에서는 기본값이 <strong>As late as possible</strong>입니다.</p>
-<p>지정된 날짜에 종속성에 관계없이 작업이 시작되거나 완료되도록 강제하는 두 가지 제약 조건이 있습니다. 이를 <em>고정 제약 조건</em>이라 하며, <strong>Must start on</strong>과 <strong>Must finish on</strong>이 해당됩니다. 반드시 필요한 경우에만 이 제약 조건을 사용하십시오.</p>
-<p>다른 제약 조건(<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong>, <strong>Finish no later than</strong>)은 작업 종속성을 존중하므로 <em>유연한 제약 조건</em>이라고 합니다. 종속성이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다.</p>
+<p>제약 조건은 <strong>작업 속성</strong> 대화 상자의 <strong>고급</strong> 탭에서 설정됩니다. 기본 제약 조건은 <strong>가능한 빨리</strong>입니다. 이는 다른 작업과의 종속성을 고려하여 작업이 프로젝트 시작 날짜에 가능한 한 가깝게 설정됨을 의미합니다. 완료 날짜 기준으로 계획된 프로젝트에서는 기본값이 <strong>가능한 늦게</strong>입니다.</p>
+<p>지정된 날짜에 종속성에 관계없이 작업이 시작되거나 완료되도록 강제하는 두 가지 제약 조건이 있습니다. 이를 <em>고정 제약 조건</em>이라 하며, <strong>반드시 시작</strong>과 <strong>반드시 완료</strong>가 해당됩니다. 반드시 필요한 경우에만 이 제약 조건을 사용하십시오.</p>
+<p>다른 제약 조건(<strong>이전에는 시작 불가</strong>, <strong>이후에는 시작 불가</strong>, <strong>이전에는 완료 불가</strong>, <strong>이후에는 완료 불가</strong>)은 작업 종속성을 존중하므로 <em>유연한 제약 조건</em>이라고 합니다. 종속성이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다.</p>
 <table>
 <thead>
 <tr>
@@ -226,42 +226,42 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>As soon as possible</strong></td>
+<td><strong>가능한 빨리</strong></td>
 <td>선행 작업이 허용하는 한 가능한 빨리 일정이 잡힙니다. 연결된 선행 작업이 없으면 상위 요약 작업의 시작 시점에 시작됩니다.</td>
 </tr>
 <tr>
-<td><strong>As late as possible</strong></td>
+<td><strong>가능한 늦게</strong></td>
 <td>선행 작업이 허용하는 한 가능한 늦게 일정이 잡힙니다. 연결된 선행 작업이 없으면 상위 요약 작업의 종료 시점에 완료됩니다.</td>
 </tr>
 <tr>
-<td><strong>Start no earlier than</strong></td>
+<td><strong>이전에는 시작 불가</strong></td>
 <td>선행 작업으로 인해 지정된 날짜보다 늦게 시작되면 변경 사항이 없습니다. 그렇지 않으면 지정된 날짜에 시작되도록 일정이 잡힙니다.</td>
 </tr>
 <tr>
-<td><strong>Start no later than</strong></td>
+<td><strong>이후에는 시작 불가</strong></td>
 <td>선행 작업이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다. 그렇지 않으면 지정된 날짜까지 시작되도록 일정이 잡힙니다.</td>
 </tr>
 <tr>
-<td><strong>Finish no earlier than</strong></td>
+<td><strong>이전에는 완료 불가</strong></td>
 <td>선행 작업으로 인해 지정된 날짜보다 늦게 완료되면 변경 사항이 없습니다. 그렇지 않으면 지정된 날짜에 완료되도록 일정이 잡힙니다.</td>
 </tr>
 <tr>
-<td><strong>Finish no later than</strong></td>
+<td><strong>이후에는 완료 불가</strong></td>
 <td>선행 작업이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다. 그렇지 않으면 지정된 날짜까지 완료되도록 일정이 잡힙니다.</td>
 </tr>
 <tr>
-<td><strong>Must start on</strong></td>
+<td><strong>반드시 시작</strong></td>
 <td>선행 작업에 관계없이 작업의 시작 날짜가 정확히 지정된 대로 예약됩니다.</td>
 </tr>
 <tr>
-<td><strong>Must finish on</strong></td>
+<td><strong>반드시 완료</strong></td>
 <td>선행 작업에 관계없이 작업의 완료 날짜가 정확히 지정된 대로 예약됩니다.</td>
 </tr>
 </tbody>
 </table>
 <p>유연한 제약 조건 또는 고정 제약 조건이 있는 작업은 작업 목록에 특수 아이콘이 표시됩니다.</p>
 <blockquote>
-<p>대부분의 작업은 <strong>As soon as possible</strong>로 유지하고 특정 날짜 근처에서 시작하거나 완료해야 하는 작업에만 유연한 제약 조건을 사용하십시오.</p>
+<p>대부분의 작업은 <strong>가능한 빨리</strong>로 유지하고 특정 날짜 근처에서 시작하거나 완료해야 하는 작업에만 유연한 제약 조건을 사용하십시오.</p>
 </blockquote>
 
     </main>

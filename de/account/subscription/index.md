@@ -23,7 +23,7 @@ Abonnements verlängern sich am Ende jedes Abrechnungszeitraums automatisch, bis
 2. **Wählen Sie den Tarif** — monatlich oder jährlich.
 3. **Geben Sie Ihre Rechnungsdaten ein** — Name, Adresse, Stadt, Postleitzahl, Bundesland oder Region, Land und Telefonnummer.
 4. **Überprüfen Sie** die gekauften Positionen und die Rechnungsdaten.
-5. **In neuem Fenster bezahlen** — die Zahlung wird von unserem Zahlungsanbieter in einem separaten Fenster abgewickelt.
+5. **Im neuen Fenster bezahlen** — die Zahlung wird von unserem Zahlungsanbieter in einem separaten Fenster abgewickelt.
 
 Sobald die Zahlung durchgeht, bestätigt Ingantt, dass das Abonnement — oder die Liste der Abonnements, die Sie für andere gekauft haben — jetzt aktiv ist.
 
@@ -37,7 +37,7 @@ Wenn das Zahlungsfenster meldet, dass die Zahlung noch verarbeitet wird, ist das
 
 Hier werden auch Teamkäufe verwaltet: Wer die Lizenzen bezahlt hat, sieht alle und kann jede einzeln kündigen.
 
-Ihr eigener Status wird in der Navigationsleiste als **Zahlender Abonnent**, **Abonnement inaktiv** oder als verbleibende Tage Ihrer Testphase oder Ihres bezahlten Zeitraums angezeigt.
+Ihr eigener Status wird in der Navigationsleiste als **Bezahlter Abonnent**, **Abonnement inaktiv** oder als verbleibende Tage Ihrer Testphase oder Ihres bezahlten Zeitraums angezeigt.
 
 ## Kündigen
 

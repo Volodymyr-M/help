@@ -218,23 +218,23 @@
 <li><strong>Exceptions</strong> : dates où le travail n'est pas effectué ou est effectué à des horaires différents de ceux du planning hebdomadaire.</li>
 </ul>
 <h2 id="calendrier-du-projet">Calendrier du projet <a href="#calendrier-du-projet" class="heading-anchor">#</a></h2>
-<p>Un projet possède un <strong>Calendar</strong> qui lui est associé, tel que spécifié dans la boîte de dialogue <strong>Project Properties</strong>. Ce calendrier détermine comment les tâches non affectées à des ressources de travail sont planifiées. Les jours chômés tels que les week-ends sont également affichés dans le diagramme de Gantt en fonction de ce calendrier.</p>
+<p>Un projet possède un <strong>Calendrier</strong> qui lui est associé, tel que spécifié dans la boîte de dialogue <strong>Propriétés du projet</strong>. Ce calendrier détermine comment les tâches non affectées à des ressources de travail sont planifiées. Les jours chômés tels que les week-ends sont également affichés dans le diagramme de Gantt en fonction de ce calendrier.</p>
 <h2 id="calendrier-des-ressources">Calendrier des ressources <a href="#calendrier-des-ressources" class="heading-anchor">#</a></h2>
-<p>Chaque <a href="/fr/building-schedule/resources/#type-de-ressource">ressource de travail</a> possède un calendrier qui lui est associé, tel que spécifié dans le champ <strong>Base Calendar</strong> de la boîte de dialogue <strong>Resource Properties</strong>. Une fois la ressource de travail <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">affectée</a> à une tâche, son calendrier influence la planification de la tâche.</p>
+<p>Chaque <a href="/fr/building-schedule/resources/#type-de-ressource">ressource de travail</a> possède un calendrier qui lui est associé, tel que spécifié dans le champ <strong>Calendrier de base</strong> de la boîte de dialogue <strong>Propriétés de la ressource</strong>. Une fois la ressource de travail <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">affectée</a> à une tâche, son calendrier influence la planification de la tâche.</p>
 <p>Lorsque plusieurs ressources de travail sont affectées à une tâche, leurs calendriers sont <strong>croisés</strong> — ce qui signifie que le travail n'est planifié que pendant les périodes où <strong>toutes</strong> les ressources affectées sont disponibles. Par exemple, si la ressource A travaille du lundi au mercredi et la ressource B du mercredi au vendredi, une tâche affectée aux deux ne sera planifiée que le mercredi.</p>
 <blockquote>
-<p>Si plusieurs ressources partagent un planning de travail similaire, créez un seul calendrier et attribuez-le à toutes. Vous pouvez néanmoins spécifier des exceptions pour chaque ressource individuellement dans <strong>Resource Properties</strong> — par exemple, des congés ou des périodes de travail ajustées à des dates spécifiques.</p>
+<p>Si plusieurs ressources partagent un planning de travail similaire, créez un seul calendrier et attribuez-le à toutes. Vous pouvez néanmoins spécifier des exceptions pour chaque ressource individuellement dans <strong>Propriétés de la ressource</strong> — par exemple, des congés ou des périodes de travail ajustées à des dates spécifiques.</p>
 </blockquote>
 <h2 id="calendrier-des-tâches">Calendrier des tâches <a href="#calendrier-des-tâches" class="heading-anchor">#</a></h2>
-<p>Chaque tâche possède une propriété <strong>Calendar</strong> dans la boîte de dialogue <strong>Task Properties</strong>, définie sur <strong>NONE</strong> par défaut. Lorsqu'elle est définie sur <strong>NONE</strong> :</p>
+<p>Chaque tâche possède une propriété <strong>Calendrier</strong> dans la boîte de dialogue <strong>Propriétés de la tâche</strong>, définie sur <strong>AUCUN</strong> par défaut. Lorsqu'elle est définie sur <strong>AUCUN</strong> :</p>
 <ul>
 <li>Si la tâche n'est affectée à aucune ressource de travail, elle est planifiée selon le calendrier du projet.</li>
 <li>Si la tâche est affectée à des ressources de travail, elle est planifiée selon leurs calendriers.</li>
 </ul>
-<p>Si la propriété <strong>Calendar</strong> de la tâche est définie sur un calendrier au lieu de <strong>NONE</strong> :</p>
+<p>Si la propriété <strong>Calendrier</strong> de la tâche est définie sur un calendrier au lieu de <strong>AUCUN</strong> :</p>
 <ul>
 <li>Si la tâche n'est affectée à aucune ressource de travail, elle est planifiée selon le calendrier spécifié.</li>
-<li>Si la tâche est affectée à des ressources de travail, elle est planifiée selon le <strong>croisement</strong> du calendrier de la tâche et des calendriers des ressources — le travail n'est planifié que pendant les périodes ouvrées à la fois dans le calendrier de la tâche et dans tous les calendriers des ressources. Pour utiliser uniquement le calendrier de la tâche en ignorant les calendriers des ressources, cochez l'option <strong>Ignore resource calendars</strong>.</li>
+<li>Si la tâche est affectée à des ressources de travail, elle est planifiée selon le <strong>croisement</strong> du calendrier de la tâche et des calendriers des ressources — le travail n'est planifié que pendant les périodes ouvrées à la fois dans le calendrier de la tâche et dans tous les calendriers des ressources. Pour utiliser uniquement le calendrier de la tâche en ignorant les calendriers des ressources, cochez l'option <strong>Ignorer les calendriers des ressources</strong>.</li>
 </ul>
 <h2 id="calendriers-prédéfinis">Calendriers prédéfinis <a href="#calendriers-prédéfinis" class="heading-anchor">#</a></h2>
 <p>Ingantt dispose de 3 calendriers prédéfinis, dont l'un (<strong>Standard</strong>) est attribué au projet par défaut.</p>
@@ -251,19 +251,19 @@
 <td>Le travail est effectué du lundi au vendredi, de 8 h à 17 h avec une pause d'une heure (de 12 h à 13 h).</td>
 </tr>
 <tr>
-<td><strong>Night Shift</strong></td>
+<td><strong>Travail de Nuit</strong></td>
 <td>Le travail est effectué du lundi soir au samedi matin, de 23 h à 8 h avec une pause d'une heure (de 3 h à 4 h).</td>
 </tr>
 <tr>
-<td><strong>24 Hours</strong></td>
+<td><strong>24 Heures</strong></td>
 <td>Le travail est effectué 24 heures sur 24, tous les jours.</td>
 </tr>
 </tbody>
 </table>
-<p>Vous pouvez modifier n'importe quel calendrier prédéfini via la boîte de dialogue <strong>Calendar Properties</strong> ou créer vos propres calendriers à partir de ceux-ci via la boîte de dialogue <strong>Add Calendar</strong>.</p>
+<p>Vous pouvez modifier n'importe quel calendrier prédéfini via la boîte de dialogue <strong>Propriétés du calendrier</strong> ou créer vos propres calendriers à partir de ceux-ci via la boîte de dialogue <strong>Ajouter un calendrier</strong>.</p>
 <h2 id="semaines-de-travail">Semaines de travail <a href="#semaines-de-travail" class="heading-anchor">#</a></h2>
 <p>Les semaines de travail permettent de définir des modifications du planning hebdomadaire sur une plage de dates donnée. Par exemple, vous pourriez avoir une période où tout le monde travaille des journées de 4 heures au lieu des 8 heures habituelles, ou une période où le samedi devient un jour ouvré.</p>
-<p>Les semaines de travail sont configurées dans l'onglet <strong>Work Weeks</strong> de la boîte de dialogue <strong>Calendar Properties</strong>. Chaque semaine de travail possède un nom, une date de début et de fin, ainsi que des horaires de travail définis pour chaque jour de la semaine.</p>
+<p>Les semaines de travail sont configurées dans l'onglet <strong>Semaines de travail</strong> de la boîte de dialogue <strong>Propriétés du calendrier</strong>. Chaque semaine de travail possède un nom, une date de début et de fin, ainsi que des horaires de travail définis pour chaque jour de la semaine.</p>
 <blockquote>
 <p>Les exceptions de calendrier ont la priorité sur les semaines de travail, qui elles-mêmes ont la priorité sur le planning hebdomadaire par défaut.</p>
 </blockquote>
@@ -271,17 +271,17 @@
 <p>Les exceptions de calendrier sont des dates où le travail diffère du planning hebdomadaire habituel, y compris les jours chômés.</p>
 <p>Les exceptions de calendrier peuvent être spécifiées :</p>
 <ul>
-<li>Dans la boîte de dialogue <strong>Resource Properties</strong> pour une ressource particulière.</li>
-<li>Dans la boîte de dialogue <strong>Calendar Properties</strong> pour un calendrier particulier, afin que les projets, ressources ou tâches utilisant ce calendrier bénéficient de cette exception.</li>
+<li>Dans la boîte de dialogue <strong>Propriétés de la ressource</strong> pour une ressource particulière.</li>
+<li>Dans la boîte de dialogue <strong>Propriétés du calendrier</strong> pour un calendrier particulier, afin que les projets, ressources ou tâches utilisant ce calendrier bénéficient de cette exception.</li>
 </ul>
 <p>Par exemple, si vous souhaitez configurer des congés pour une personne, ajoutez-les comme exception pour cette ressource. Si vous souhaitez configurer un jour férié pour tout le monde, ajoutez-le comme exception au calendrier utilisé par tous.</p>
 <p>Lors de l'ajout ou de la modification d'exceptions de calendrier, vous spécifiez les périodes de travail pour l'exception. Si vous n'en spécifiez aucune, l'exception ne comporte pas de temps de travail, ce qui signifie qu'elle définit un jour chômé.</p>
-<p>Chaque exception peut recevoir un <strong>Name</strong> descriptif (comme « Vacances de Noël » ou « Bureau fermé ») qui s'affiche dans la liste des exceptions.</p>
+<p>Chaque exception peut recevoir un <strong>Nom</strong> descriptif (comme « Vacances de Noël » ou « Bureau fermé ») qui s'affiche dans la liste des exceptions.</p>
 <h3 id="exceptions-récurrentes">Exceptions récurrentes <a href="#exceptions-récurrentes" class="heading-anchor">#</a></h3>
 <p>Les exceptions de calendrier peuvent être configurées pour se répéter selon un schéma plutôt que sur une seule date. Les schémas de récurrence disponibles sont :</p>
 <ul>
-<li><strong>Daily</strong> — Tous les N jours ou tous les N jours ouvrés</li>
-<li><strong>Weekly</strong> — Toutes les N semaines les jours spécifiés</li>
+<li><strong>Quotidien</strong> — Tous les N jours ou tous les N jours ouvrés</li>
+<li><strong>Hebdomadaire</strong> — Toutes les N semaines les jours spécifiés</li>
 <li><strong>Monthly</strong> — Par jour du mois ou par position (par ex., le deuxième mardi)</li>
 <li><strong>Yearly</strong> — Par date ou par position (par ex., le dernier vendredi de novembre)</li>
 </ul>

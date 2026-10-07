@@ -1,4 +1,4 @@
-# Basispläne
+# Basislinien
 
 Speichern Sie einen Schnappschuss Ihres Terminplans, bevor die Arbeit beginnt, und vergleichen Sie ihn dann mit dem aktuellen Stand, um zu sehen, wo das Projekt abgewichen ist.
 
@@ -6,16 +6,16 @@ Ein Basisplan erfasst das Startdatum, das Enddatum, die Dauer, die Arbeit und di
 
 ## Basisplan festlegen
 
-Legen Sie einen Basisplan über das Menü **Projekt** im Untermenü **Basisplan festlegen** fest:
+Legen Sie einen Basisplan über das Menü **Projekt** im Untermenü **Basislinie setzen** fest:
 
 - Sie können einen Basisplan für alle Vorgänge oder nur für ausgewählte Vorgänge festlegen.
 - Ingantt unterstützt bis zu 11 Basispläne.
 
 ## Basispläne anzeigen
 
-Sobald ein Basisplan gespeichert wurde, können Sie ihn im Gantt-Diagramm anzeigen, indem Sie die Sichtbarkeit des Basisplans im Dialog **Basispläne** umschalten. Basisplan-Balken erscheinen als dünnere Balken unterhalb der aktuellen Vorgangsbalken und verwenden eine eigene Farbe pro Basisplannummer.
+Sobald ein Basisplan gespeichert wurde, können Sie ihn im Gantt-Diagramm anzeigen, indem Sie die Sichtbarkeit des Basisplans im Dialog **Basislinien** umschalten. Basisplan-Balken erscheinen als dünnere Balken unterhalb der aktuellen Vorgangsbalken und verwenden eine eigene Farbe pro Basisplannummer.
 
-Um Basispläne zu verwalten, verwenden Sie den Eintrag **Basispläne** im Menü **Projekt**. Der Dialog **Basispläne** ermöglicht Ihnen:
+Um Basispläne zu verwalten, verwenden Sie den Eintrag **Basislinien** im Menü **Projekt**. Der Dialog **Basislinien** ermöglicht Ihnen:
 
 - Alle gespeicherten Basispläne anzeigen
 - Nicht mehr benötigte Basispläne entfernen
@@ -27,7 +27,7 @@ Sie können Basisplan- und Abweichungsspalten über den Dialog **Optionen** zur 
 
 ### Die 55 Basisplanspalten
 
-Ingantt speichert **11 Basispläne**: den unnummerierten **Basisplan** sowie **Basisplan 1** bis **Basisplan 10**. Jeder stellt dieselben fünf Vorgangsspalten bereit:
+Ingantt speichert **11 Basispläne**: den unnummerierten **Basislinie** sowie **Basislinie 1** bis **Basislinie 10**. Jeder stellt dieselben fünf Vorgangsspalten bereit:
 
 - Geplanter Anfang
 - Geplantes Ende
@@ -35,7 +35,7 @@ Ingantt speichert **11 Basispläne**: den unnummerierten **Basisplan** sowie **B
 - Geplante Arbeit
 - Geplante Kosten
 
-11 Basispläne × 5 Felder = **55 Basisplanspalten**, alle über die Spaltenauswahl in der Vorgangstabelle verfügbar. Der unnummerierte Satz ist schlicht benannt (*Geplanter Anfang*); die nummerierten tragen ihre Nummer (*Basisplan 3 Anfang*).
+11 Basispläne × 5 Felder = **55 Basisplanspalten**, alle über die Spaltenauswahl in der Vorgangstabelle verfügbar. Der unnummerierte Satz ist schlicht benannt (*Basislinienanfang*); die nummerierten tragen ihre Nummer (*Basislinie 3 Anfang*).
 
 ### Die 5 Abweichungsspalten
 
@@ -47,13 +47,13 @@ Abweichungsspalten werden berechnet — aktueller Terminplan minus Basisplan —
 - Arbeitsabweichung
 - Kostenabweichung
 
-Es gibt einen Satz von fünf, nicht einen Satz pro Basisplan. Sie vergleichen den aktuellen Terminplan mit **einem** Basisplan — demjenigen, der unter **Projekt → Earned-Value-Optionen** als [Earned-Value-Basisplan](/de/tracking/earned-value/index.md#earned-value-basisplan) ausgewählt ist; standardmäßig ist das der unnummerierte Basisplan. Ändern Sie diese Einstellung, werden alle Abweichungsspalten gegen den gewählten Basisplan neu berechnet. Ein Vorgang, dessen gewählter Basisplan nie festgelegt wurde, zeigt eine leere Abweichung statt einer Null.
+Es gibt einen Satz von fünf, nicht einen Satz pro Basisplan. Sie vergleichen den aktuellen Terminplan mit **einem** Basisplan — demjenigen, der unter **Projekt → Ertragswert-Optionen** als [Earned-Value-Basisplan](/de/tracking/earned-value/index.md#earned-value-basisplan) ausgewählt ist; standardmäßig ist das der unnummerierte Basisplan. Ändern Sie diese Einstellung, werden alle Abweichungsspalten gegen den gewählten Basisplan neu berechnet. Ein Vorgang, dessen gewählter Basisplan nie festgelegt wurde, zeigt eine leere Abweichung statt einer Null.
 
 ## Wo Basispläne gespeichert werden
 
 Basispläne werden **in der Projektdatei** gespeichert, nicht in einer separaten Datei. Mit dem Speichern des Projekts werden auch seine Basispläne gespeichert.
 
-Wenn Sie versuchen, einen zwölften Basisplan festzulegen, meldet Ingantt *Alle Basisplan-Plätze sind belegt. Löschen Sie zuerst einen im Dialog „Basispläne“.* Öffnen Sie **Projekt → Basispläne** und löschen Sie einen.
+Wenn Sie versuchen, einen zwölften Basisplan festzulegen, meldet Ingantt *Alle Basislinien-Slots sind belegt. Löschen Sie zuerst einen im Basislinien-Dialog.* Öffnen Sie **Projekt → Basislinien** und löschen Sie einen.
 
 Basispläne sind nicht dasselbe wie der [Versionsverlauf](/de/ui/version-history/index.md), der die Datei selbst im Zeitverlauf aufzeichnet. Verwenden Sie den Versionsverlauf, um zu einem früheren Plan zurückzukehren; verwenden Sie Basispläne, um zu messen, wie weit der aktuelle Plan abgewichen ist.
 

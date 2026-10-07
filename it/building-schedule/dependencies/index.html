@@ -108,7 +108,7 @@
     Configurazione del progetto
   </button>
   <ul class="theme-pages">
-    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/project/">Proprietà del Progetto</a></li>
     <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
   </ul>
 </div>
@@ -119,7 +119,7 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
-    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà del Compito</a></li>
     <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/" class="active" aria-current="page">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
@@ -135,7 +135,7 @@
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
-    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi Personalizzati</a></li>
     <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
@@ -183,7 +183,7 @@
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
     <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
     <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
-    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia versioni</a></li>
     <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
     <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
@@ -213,7 +213,7 @@
       <h1 id="dipendenze">Dipendenze <a href="#dipendenze" class="heading-anchor">#</a></h1>
 <p>I progetti reali hanno un ordine — non puoi testare prima di costruire. Collega le attività tra loro in modo che Ingantt calcoli la sequenza corretta e sposti tutto automaticamente quando un'attività cambia.</p>
 <h2 id="predecessori-e-dipendenze">Predecessori e dipendenze <a href="#predecessori-e-dipendenze" class="heading-anchor">#</a></h2>
-<p>Quando colleghi le attività usando il pulsante <strong>Link selected tasks</strong> nella barra degli strumenti, crei una dipendenza tra le attività. La dipendenza è chiamata <strong>Finish to Start</strong>, ed è una delle quattro dipendenze disponibili:</p>
+<p>Quando colleghi le attività usando il pulsante <strong>Link selected tasks</strong> nella barra degli strumenti, crei una dipendenza tra le attività. La dipendenza è chiamata <strong>Fine a Inizio</strong>, ed è una delle quattro dipendenze disponibili:</p>
 <table>
 <thead>
 <tr>
@@ -223,31 +223,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Finish to Start</strong></td>
+<td><strong>Fine a Inizio</strong></td>
 <td>La seconda attività può iniziare una volta che la prima è terminata.</td>
 </tr>
 <tr>
-<td><strong>Finish to Finish</strong></td>
+<td><strong>Fine a Fine</strong></td>
 <td>La seconda attività termina quando la prima termina.</td>
 </tr>
 <tr>
-<td><strong>Start to Finish</strong></td>
+<td><strong>Inizio a Fine</strong></td>
 <td>La seconda attività termina quando la prima inizia.</td>
 </tr>
 <tr>
-<td><strong>Start to Start</strong></td>
+<td><strong>Inizio a Inizio</strong></td>
 <td>La seconda attività inizia quando la prima inizia.</td>
 </tr>
 </tbody>
 </table>
 <p><img src="/images/building-schedule/tasks/dependencies.png" alt="Dependencies" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
-<p>Per assegnare predecessori e modificare le dipendenze, usa la scheda <strong>Predecessors</strong> della finestra <strong>Task Properties</strong>.</p>
+<p>Per assegnare predecessori e modificare le dipendenze, usa la scheda <strong>Predecessori</strong> della finestra <strong>Proprietà del Compito</strong>.</p>
 <h2 id="ritardo-e-anticipo">Ritardo e anticipo <a href="#ritardo-e-anticipo" class="heading-anchor">#</a></h2>
 <p>A volte potresti aver bisogno di impostare un tempo di attesa tra due attività dipendenti.</p>
-<p>Supponiamo che la prima attività sia &quot;Dipingere il muro&quot; e la seconda sia &quot;Appendere i quadri al muro&quot;. Queste attività sono collegate (hanno una dipendenza <strong>Finish to Start</strong>). Non è possibile appendere i quadri finché la vernice non è asciutta, quindi è necessario attendere. Per riflettere questo nel cronogramma, imposta il <strong>Lag</strong> (ad esempio, 2 giorni) per la dipendenza tra le due attività.</p>
+<p>Supponiamo che la prima attività sia &quot;Dipingere il muro&quot; e la seconda sia &quot;Appendere i quadri al muro&quot;. Queste attività sono collegate (hanno una dipendenza <strong>Fine a Inizio</strong>). Non è possibile appendere i quadri finché la vernice non è asciutta, quindi è necessario attendere. Per riflettere questo nel cronogramma, imposta il <strong>Ritardo</strong> (ad esempio, 2 giorni) per la dipendenza tra le due attività.</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="Lag" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
-<p>I ritardi possono anche rappresentare lo scenario opposto — quando un'attività dipendente deve iniziare prima che il predecessore termini. Per impostarlo, rendi il <strong>Lag</strong> negativo (ad esempio, -1 giorno). Questo è chiamato <em>anticipo</em>.</p>
-<p>Per impostare un ritardo o un anticipo, seleziona il predecessore nella scheda <strong>Predecessors</strong> della finestra <strong>Task Properties</strong> e fai clic sul pulsante <strong>Edit</strong>.</p>
+<p>I ritardi possono anche rappresentare lo scenario opposto — quando un'attività dipendente deve iniziare prima che il predecessore termini. Per impostarlo, rendi il <strong>Ritardo</strong> negativo (ad esempio, -1 giorno). Questo è chiamato <em>anticipo</em>.</p>
+<p>Per impostare un ritardo o un anticipo, seleziona il predecessore nella scheda <strong>Predecessori</strong> della finestra <strong>Proprietà del Compito</strong> e fai clic sul pulsante <strong>Modifica</strong>.</p>
 <blockquote>
 <p>I ritardi possono essere impostati in ore, giorni, settimane, mesi o come frazione della durata dell'attività predecessore (ad esempio, 50%).</p>
 </blockquote>

@@ -223,21 +223,21 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Work</strong></td>
+<td><strong>作業</strong></td>
 <td>タスクを実行する人やもの。個人、チーム、請負会社、機材などです。</td>
 </tr>
 <tr>
-<td><strong>Material</strong></td>
+<td><strong>材料</strong></td>
 <td>タスクの完了に使用されるもの。資材、原料、部品などです。</td>
 </tr>
 <tr>
-<td><strong>Cost</strong></td>
+<td><strong>コスト</strong></td>
 <td>複数のタスクに適用できるコスト。配送費、展開費、その他の固定費などです。</td>
 </tr>
 </tbody>
 </table>
 <p>スケジューリングに影響するのは、タスクに割り当てられた稼働リソースのみです。</p>
-<p>リソースの<strong>Cost</strong>フィールドが入力されていれば、すべてのタイプのリソースがコスト計算に影響します。</p>
+<p>リソースの<strong>コスト</strong>フィールドが入力されていれば、すべてのタイプのリソースがコスト計算に影響します。</p>
 <h2 id="最大単位">最大単位 <a href="#最大単位" class="heading-anchor">#</a></h2>
 <p>稼働リソースには<strong>Max Units</strong>プロパティ（デフォルト100%）があり、リソースの利用可能なキャパシティを表します。たとえば：</p>
 <ul>
@@ -248,15 +248,15 @@
 <p>最大単位は、<a href="/ja/adjusting-schedule/leveling/#%E9%81%8E%E8%B2%A0%E8%8D%B7%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9">過負荷検出</a>と<a href="/ja/adjusting-schedule/leveling/#%E8%87%AA%E5%8B%95%E5%B9%B3%E6%BA%96%E5%8C%96">自動平準化</a>で、リソースが処理しきれない量の作業を抱えているかどうかを判断するために使用されます。稼働リソースをタスクに割り当てる際、デフォルトの割り当て単位はリソースの最大単位と一致します。</p>
 <h2 id="リソースの稼働期間">リソースの稼働期間 <a href="#リソースの稼働期間" class="heading-anchor">#</a></h2>
 <p>稼働リソースの稼働状況は時間の経過とともに変化する場合があります。たとえば、チームメンバーが最初の3か月はフルタイムで、その後パートタイムに切り替わることがあります。</p>
-<p><strong>Resource Properties</strong>ダイアログの<strong>Availability</strong>タブで、複数の稼働期間を定義でき、それぞれに日付範囲と稼働率を指定します。定義された期間内の日付については、その期間の単位がキャパシティ計算でリソースの基本最大単位を上書きします。</p>
+<p><strong>リソースのプロパティ</strong>ダイアログの<strong>稼働率</strong>タブで、複数の稼働期間を定義でき、それぞれに日付範囲と稼働率を指定します。定義された期間内の日付については、その期間の単位がキャパシティ計算でリソースの基本最大単位を上書きします。</p>
 <h2 id="汎用リソース">汎用リソース <a href="#汎用リソース" class="heading-anchor">#</a></h2>
-<p><strong>Resource Properties</strong>ダイアログのチェックボックスを使用して、リソースを<strong>Generic</strong>としてマークできます。汎用リソースは、特定の個人ではなく役割（「開発者」「デザイナー」など）を表すプレースホルダーです。具体的なチームメンバーがまだ決まっていない計画初期段階で便利です。</p>
+<p><strong>リソースのプロパティ</strong>ダイアログのチェックボックスを使用して、リソースを<strong>ジェネリック</strong>としてマークできます。汎用リソースは、特定の個人ではなく役割（「開発者」「デザイナー」など）を表すプレースホルダーです。具体的なチームメンバーがまだ決まっていない計画初期段階で便利です。</p>
 <p>汎用リソースはリソースリストにバッジアイコンで表示されます。汎用フラグは情報提供目的のみで、スケジューリングやコスト計算には影響しません。</p>
 <h2 id="予約タイプ">予約タイプ <a href="#予約タイプ" class="heading-anchor">#</a></h2>
-<p>各リソースには<strong>Booking Type</strong>があり、<strong>Resource Properties</strong>ダイアログで<strong>Committed</strong>（デフォルト）または<strong>Proposed</strong>に設定できます。</p>
+<p>各リソースには<strong>予約の種類</strong>があり、<strong>リソースのプロパティ</strong>ダイアログで<strong>確定</strong>（デフォルト）または<strong>提案</strong>に設定できます。</p>
 <ul>
-<li><strong>Committed</strong> — リソースはプロジェクトに確定的に予約されています。</li>
-<li><strong>Proposed</strong> — リソースは計画目的で仮に割り当てられています。</li>
+<li><strong>確定</strong> — リソースはプロジェクトに確定的に予約されています。</li>
+<li><strong>提案</strong> — リソースは計画目的で仮に割り当てられています。</li>
 </ul>
 <p>デフォルトでは、自動平準化は予約タイプが<strong>Proposed</strong>のリソースを除外します。<a href="/ja/adjusting-schedule/leveling/#%E5%B9%B3%E6%BA%96%E5%8C%96%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3">平準化オプション</a>ダイアログで「Level resources with the proposed booking type」を有効にすることで、含めることができます。</p>
 

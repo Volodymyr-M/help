@@ -213,36 +213,36 @@
       <h1 id="configuration-des-coûts">Configuration des coûts <a href="#configuration-des-coûts" class="heading-anchor">#</a></h1>
 <p>Définissez des coûts fixes sur les tâches et des taux sur les ressources. Ingantt les utilise conjointement avec le planning pour calculer le coût de chaque tâche et de l'ensemble du projet.</p>
 <h2 id="coût-fixe-de-la-tâche">Coût fixe de la tâche <a href="#coût-fixe-de-la-tâche" class="heading-anchor">#</a></h2>
-<p>Vous pouvez définir un coût pour la tâche indépendamment de ses ressources en renseignant le champ <strong>Fixed Cost</strong> dans l'onglet <strong>Cost and EV</strong> de la boîte de dialogue <strong>Task Properties</strong>. Utilisez-le par exemple lorsque quelqu'un a déjà fourni une estimation du coût total de la tâche, ou lorsque la tâche comporte un coût supplémentaire au-delà de ses coûts de ressources.</p>
+<p>Vous pouvez définir un coût pour la tâche indépendamment de ses ressources en renseignant le champ <strong>Coût fixe</strong> dans l'onglet <strong>Coût et VA</strong> de la boîte de dialogue <strong>Propriétés de la tâche</strong>. Utilisez-le par exemple lorsque quelqu'un a déjà fourni une estimation du coût total de la tâche, ou lorsque la tâche comporte un coût supplémentaire au-delà de ses coûts de ressources.</p>
 <blockquote>
 <p>Si vous devez affecter le même coût fixe à plusieurs tâches, envisagez de créer une ressource de coût et de l'affecter à ces tâches. Si le coût change ultérieurement, vous n'aurez besoin de le mettre à jour qu'à un seul endroit.</p>
 </blockquote>
 <h2 id="coût-des-ressources-de-travail">Coût des ressources de travail <a href="#coût-des-ressources-de-travail" class="heading-anchor">#</a></h2>
-<p>Les ressources de type <strong>Work</strong> sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir <a href="/fr/setting-up-project/project/#heures-par-jour-jours-par-semaine-jours-par-mois">Heures par jour, jours par semaine, jours par mois</a>).</p>
-<p>Par exemple, lorsque vous affectez une ressource de travail avec un <strong>Standard Rate</strong> de 100 $ par heure à une tâche d'une <strong>Duration</strong> de 5 heures, 500 $ sont ajoutés au <strong>Cost</strong> de la tâche.</p>
-<p>Les ressources de travail prennent également en charge un <strong>Overtime Rate</strong> pour le travail effectué en dehors des heures normales du calendrier. Le coût total est calculé ainsi :</p>
+<p>Les ressources de type <strong>Travail</strong> sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir <a href="/fr/setting-up-project/project/#heures-par-jour-jours-par-semaine-jours-par-mois">Heures par jour, jours par semaine, jours par mois</a>).</p>
+<p>Par exemple, lorsque vous affectez une ressource de travail avec un <strong>Taux standard</strong> de 100 $ par heure à une tâche d'une <strong>Durée</strong> de 5 heures, 500 $ sont ajoutés au <strong>Coût</strong> de la tâche.</p>
+<p>Les ressources de travail prennent également en charge un <strong>Taux heures sup</strong> pour le travail effectué en dehors des heures normales du calendrier. Le coût total est calculé ainsi :</p>
 <blockquote>
 <p><strong>Coût = Travail normal × Taux standard + Heures supplémentaires × Taux des heures supplémentaires + Coût par utilisation</strong></p>
 </blockquote>
-<p>Lorsqu'une ressource de travail est affectée à une tâche, vous pouvez spécifier la valeur <strong>Units</strong> comme un nombre différent de la valeur par défaut. Cela impacte le calcul des coûts. Par exemple, si <strong>Units</strong> est de 50 %, le coût calculé pour la ressource dans la tâche est la moitié de ce qu'il serait avec 100 % d'unités.</p>
+<p>Lorsqu'une ressource de travail est affectée à une tâche, vous pouvez spécifier la valeur <strong>Unités</strong> comme un nombre différent de la valeur par défaut. Cela impacte le calcul des coûts. Par exemple, si <strong>Unités</strong> est de 50 %, le coût calculé pour la ressource dans la tâche est la moitié de ce qu'il serait avec 100 % d'unités.</p>
 <h2 id="coût-des-ressources-matérielles">Coût des ressources matérielles <a href="#coût-des-ressources-matérielles" class="heading-anchor">#</a></h2>
-<p>Pour les ressources <strong>material</strong>, le coût est spécifié par unité en fonction de la manière dont vous définissez l'unité. Il peut s'agir d'une unité de poids (par ex., livre, kilogramme, tonne), de longueur ou de volume (par ex., pied, mètre, mile, gallon, litre), ou de toute autre mesure (par ex., conteneur, boîte, pièce, mètre carré). Vous pouvez définir un <strong>Material Label</strong> dans la boîte de dialogue <strong>Resource Properties</strong> pour décrire l'unité.</p>
+<p>Pour les ressources <strong>Matériel</strong>, le coût est spécifié par unité en fonction de la manière dont vous définissez l'unité. Il peut s'agir d'une unité de poids (par ex., livre, kilogramme, tonne), de longueur ou de volume (par ex., pied, mètre, mile, gallon, litre), ou de toute autre mesure (par ex., conteneur, boîte, pièce, mètre carré). Vous pouvez définir une <strong>Étiquette matériau</strong> dans la boîte de dialogue <strong>Propriétés de la ressource</strong> pour décrire l'unité.</p>
 <p>Les ressources matérielles prennent en charge deux modes de consommation :</p>
 <ul>
 <li><strong>Fixed</strong> (par défaut) — Une quantité totale indépendante de la durée de la tâche (par ex., 5 tonnes de ciment)</li>
 <li><strong>Variable</strong> — Un taux par unité de temps proportionnel à la durée de la tâche (par ex., 10 litres de carburant par jour)</li>
 </ul>
-<p>Par exemple, si du carburant est utilisé dans votre projet, vous pouvez ajouter une ressource matérielle « carburant » et spécifier le coût par gallon dans la boîte de dialogue <strong>Resource Properties</strong>. Ensuite, lors de l'affectation de la ressource à une tâche, vous indiquez le nombre de gallons dans <strong>Units</strong>, et Ingantt ajoute le coût calculé du carburant au <strong>Cost</strong> de la tâche.</p>
+<p>Par exemple, si du carburant est utilisé dans votre projet, vous pouvez ajouter une ressource matérielle « carburant » et spécifier le coût par gallon dans la boîte de dialogue <strong>Propriétés de la ressource</strong>. Ensuite, lors de l'affectation de la ressource à une tâche, vous indiquez le nombre de gallons dans <strong>Unités</strong>, et Ingantt ajoute le coût calculé du carburant au <strong>Coût</strong> de la tâche.</p>
 <h2 id="ressource-de-coût">Ressource de coût <a href="#ressource-de-coût" class="heading-anchor">#</a></h2>
-<p>Une ressource de type <strong>cost</strong> est une dépense fixe que vous pouvez affecter à plusieurs tâches. Les ressources de coût prennent en charge des valeurs de coût par affectation — la même ressource de coût peut avoir des montants différents selon les affectations de tâches (par ex., « Déplacement » = 800 $ pour la tâche A et 1 200 $ pour la tâche B).</p>
-<p>Utilisez ce type pour les dépenses fixes qui ne sont pas habituellement exprimées en unités de mesure, comme les frais d'installation. Si plusieurs tâches ont le même coût fixe pour la même raison, créez une ressource de coût et affectez-la à toutes ces tâches plutôt que de renseigner le champ <strong>Fixed Cost</strong> pour chaque tâche séparément.</p>
+<p>Une ressource de type <strong>Coût</strong> est une dépense fixe que vous pouvez affecter à plusieurs tâches. Les ressources de coût prennent en charge des valeurs de coût par affectation — la même ressource de coût peut avoir des montants différents selon les affectations de tâches (par ex., « Déplacement » = 800 $ pour la tâche A et 1 200 $ pour la tâche B).</p>
+<p>Utilisez ce type pour les dépenses fixes qui ne sont pas habituellement exprimées en unités de mesure, comme les frais d'installation. Si plusieurs tâches ont le même coût fixe pour la même raison, créez une ressource de coût et affectez-la à toutes ces tâches plutôt que de renseigner le champ <strong>Coût fixe</strong> pour chaque tâche séparément.</p>
 <h2 id="tables-de-taux">Tables de taux <a href="#tables-de-taux" class="heading-anchor">#</a></h2>
 <p>Chaque ressource de travail et matérielle prend en charge jusqu'à 5 tables de taux de coûts (A à E), chacune comportant plusieurs lignes qui entrent en vigueur à des dates différentes. Cela vous permet de modéliser les évolutions de taux dans le temps ou de maintenir différents ensembles de taux pour différents types de travail.</p>
-<p>Les tables de taux sont configurées dans l'onglet <strong>Costs</strong> de la boîte de dialogue <strong>Resource Properties</strong>. Lors de l'affectation d'une ressource à une tâche, vous pouvez sélectionner la table de taux à utiliser dans la boîte de dialogue <strong>Edit Resource Assignment</strong>.</p>
+<p>Les tables de taux sont configurées dans l'onglet <strong>Coûts</strong> de la boîte de dialogue <strong>Propriétés de la ressource</strong>. Lors de l'affectation d'une ressource à une tâche, vous pouvez sélectionner la table de taux à utiliser dans la boîte de dialogue <strong>Modifier l'affectation de ressource</strong>.</p>
 <h2 id="coût-par-utilisation">Coût par utilisation <a href="#coût-par-utilisation" class="heading-anchor">#</a></h2>
-<p>Les ressources prennent en charge un champ <strong>Cost Per Use</strong> — un montant forfaitaire facturé chaque fois que la ressource est affectée à une tâche, quel que soit le volume de travail effectué. Pour les ressources de travail, le <strong>Cost Per Use</strong> est multiplié par les unités d'affectation (par ex., 200 % d'unités signifie que le coût par utilisation est facturé deux fois). Le <strong>Cost Per Use</strong> est toujours comptabilisé au début de la tâche.</p>
+<p>Les ressources prennent en charge un champ <strong>Coût par utilisation</strong> — un montant forfaitaire facturé chaque fois que la ressource est affectée à une tâche, quel que soit le volume de travail effectué. Pour les ressources de travail, le <strong>Coût par utilisation</strong> est multiplié par les unités d'affectation (par ex., 200 % d'unités signifie que le coût par utilisation est facturé deux fois). Le <strong>Coût par utilisation</strong> est toujours comptabilisé au début de la tâche.</p>
 <h2 id="comptabilisation-des-coûts">Comptabilisation des coûts <a href="#comptabilisation-des-coûts" class="heading-anchor">#</a></h2>
-<p>Le paramètre <strong>Cost Accrual</strong> contrôle le moment où les coûts sont comptabilisés en tant que coûts réels à mesure que le travail progresse :</p>
+<p>Le paramètre <strong>Allocation des coûts</strong> contrôle le moment où les coûts sont comptabilisés en tant que coûts réels à mesure que le travail progresse :</p>
 <table>
 <thead>
 <tr>
@@ -252,20 +252,20 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Start</strong></td>
+<td><strong>Début</strong></td>
 <td>Coût total dès qu'un avancement est enregistré (% d'achèvement &gt; 0 %)</td>
 </tr>
 <tr>
-<td><strong>Prorated</strong></td>
+<td><strong>Proportion</strong></td>
 <td>Proportionnel au pourcentage d'achèvement (par ex., 50 % achevé = 50 % du coût)</td>
 </tr>
 <tr>
-<td><strong>End</strong></td>
+<td><strong>Fin</strong></td>
 <td>Coût total uniquement lorsque la tâche atteint 100 % d'achèvement</td>
 </tr>
 </tbody>
 </table>
-<p>Les ressources disposent d'un paramètre <strong>Cost Accrual</strong> dans l'onglet <strong>Costs</strong> de la boîte de dialogue <strong>Resource Properties</strong>. Les tâches disposent d'un paramètre <strong>Fixed Cost Accrual</strong> dans l'onglet <strong>Cost and EV</strong> de la boîte de dialogue <strong>Task Properties</strong>. Le projet dispose d'un paramètre <strong>Default Fixed Cost Accrual</strong> dans l'onglet <strong>Other</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
+<p>Les ressources disposent d'un paramètre <strong>Allocation des coûts</strong> dans l'onglet <strong>Coûts</strong> de la boîte de dialogue <strong>Propriétés de la ressource</strong>. Les tâches disposent d'un paramètre <strong>Allocation de coût fixe</strong> dans l'onglet <strong>Coût et VA</strong> de la boîte de dialogue <strong>Propriétés de la tâche</strong>. Le projet dispose d'un paramètre <strong>Allocation des coûts fixes par défaut</strong> dans l'onglet <strong>Autre</strong> de la boîte de dialogue <strong>Propriétés du projet</strong>.</p>
 
     </main>
     <aside class="toc" aria-label="Table des matières"></aside>

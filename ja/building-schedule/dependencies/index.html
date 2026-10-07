@@ -213,7 +213,7 @@
       <h1 id="依存関係">依存関係 <a href="#依存関係" class="heading-anchor">#</a></h1>
 <p>実際のプロジェクトには順序があります。テストはビルドの前にはできません。タスクをリンクすることで、Inganttが正しい順序を計算し、1つのタスクが変更されるとすべてが自動的にシフトされます。</p>
 <h2 id="先行タスクと依存関係">先行タスクと依存関係 <a href="#先行タスクと依存関係" class="heading-anchor">#</a></h2>
-<p>ツールバーの<strong>Link selected tasks</strong>ボタンを使用してタスクをリンクすると、タスク間に依存関係が作成されます。この依存関係は<strong>Finish to Start</strong>と呼ばれ、利用可能な4つの依存関係の1つです：</p>
+<p>ツールバーの<strong>Link selected tasks</strong>ボタンを使用してタスクをリンクすると、タスク間に依存関係が作成されます。この依存関係は<strong>終了から開始</strong>と呼ばれ、利用可能な4つの依存関係の1つです：</p>
 <table>
 <thead>
 <tr>
@@ -223,31 +223,31 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Finish to Start</strong></td>
+<td><strong>終了から開始</strong></td>
 <td>最初のタスクが終了すると、2番目のタスクを開始できます。</td>
 </tr>
 <tr>
-<td><strong>Finish to Finish</strong></td>
+<td><strong>終了から終了</strong></td>
 <td>最初のタスクが終了すると、2番目のタスクが終了します。</td>
 </tr>
 <tr>
-<td><strong>Start to Finish</strong></td>
+<td><strong>開始から終了</strong></td>
 <td>最初のタスクが開始すると、2番目のタスクが終了します。</td>
 </tr>
 <tr>
-<td><strong>Start to Start</strong></td>
+<td><strong>開始から開始</strong></td>
 <td>最初のタスクが開始すると、2番目のタスクが開始します。</td>
 </tr>
 </tbody>
 </table>
 <p><img src="/images/building-schedule/tasks/dependencies.png" alt="依存関係" / data-dark-src="/images/building-schedule/tasks/dependencies_d.png"></p>
-<p>先行タスクの割り当てと依存関係の編集は、<strong>Task Properties</strong>ダイアログの<strong>Predecessors</strong>タブで行います。</p>
+<p>先行タスクの割り当てと依存関係の編集は、<strong>タスクのプロパティ</strong>ダイアログの<strong>先行タスク</strong>タブで行います。</p>
 <h2 id="ラグとリードタイム">ラグとリードタイム <a href="#ラグとリードタイム" class="heading-anchor">#</a></h2>
 <p>依存関係のある2つのタスクの間に待機時間を設定する必要がある場合があります。</p>
-<p>たとえば、最初のタスクが「壁を塗装する」、2番目のタスクが「壁に絵を掛ける」だとします。これらのタスクはリンクされています（<strong>Finish to Start</strong>の依存関係があります）。塗装が乾くまで絵を掛けることはできないため、待つ必要があります。これをスケジュールに反映するには、2つのタスク間の依存関係に<strong>Lag</strong>（たとえば2日）を設定します。</p>
+<p>たとえば、最初のタスクが「壁を塗装する」、2番目のタスクが「壁に絵を掛ける」だとします。これらのタスクはリンクされています（<strong>終了から開始</strong>の依存関係があります）。塗装が乾くまで絵を掛けることはできないため、待つ必要があります。これをスケジュールに反映するには、2つのタスク間の依存関係に<strong>遅延</strong>（たとえば2日）を設定します。</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="ラグ" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
-<p>ラグは逆のシナリオ、つまり先行タスクの終了前に後続タスクを開始すべき場合にも使用できます。これを設定するには、<strong>Lag</strong>を負の値（たとえば-1日）にします。これは<em>リードタイム</em>と呼ばれます。</p>
-<p>ラグまたはリードタイムを設定するには、<strong>Task Properties</strong>ダイアログの<strong>Predecessors</strong>タブで先行タスクを選択し、<strong>Edit</strong>ボタンをクリックします。</p>
+<p>ラグは逆のシナリオ、つまり先行タスクの終了前に後続タスクを開始すべき場合にも使用できます。これを設定するには、<strong>遅延</strong>を負の値（たとえば-1日）にします。これは<em>リードタイム</em>と呼ばれます。</p>
+<p>ラグまたはリードタイムを設定するには、<strong>タスクのプロパティ</strong>ダイアログの<strong>先行タスク</strong>タブで先行タスクを選択し、<strong>編集</strong>ボタンをクリックします。</p>
 <blockquote>
 <p>ラグは時間、日、週、月の単位、または先行タスクの期間に対する割合（たとえば50%）で設定できます。</p>
 </blockquote>

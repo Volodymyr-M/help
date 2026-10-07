@@ -8,7 +8,7 @@ Googleでサインインすると、Ingantt for Webはプロジェクトをあ�
 
 ## Ingantt for WebをGoogle Driveに追加する
 
-Ingantt for Webは[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}に掲載されています。そこから追加するのは、Google Driveの**New**メニューと、Inganttファイルの**Open with**メニューに**Ingantt**を表示させ、Driveから直接プロジェクトを作成したり開いたりできるようにする方法の一つです。Ingantt for Webにサインインして**Connect itself to your Google Drive**権限を許可しても、同じ結果になります。詳しくは[Google Driveとの連携](/ja/ui/files/index.md)をご覧ください。
+Ingantt for Webは[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}に掲載されています。そこから追加するのは、Google Driveの**新規**メニューと、Inganttファイルの**Open with**メニューに**Ingantt**を表示させ、Driveから直接プロジェクトを作成したり開いたりできるようにする方法の一つです。Ingantt for Webにサインインして**Connect itself to your Google Drive**権限を許可しても、同じ結果になります。詳しくは[Google Driveとの連携](/ja/ui/files/index.md)をご覧ください。
 
 ## 次のステップ
 

@@ -20,7 +20,7 @@ Ingantt peut ouvrir des fichiers de projet provenant de nombreuses applications 
 - **Ingantt YAML** — YAML, YML
 - Et d'autres (SDEF et autres formats)
 
-Pour importer un fichier, cliquez sur le bouton **+** sur l'écran des projets, ou utilisez l'option **Import** dans le menu **File**. Si vous apportez des modifications à un fichier importé, Ingantt les enregistre au format XML.
+Pour importer un fichier, cliquez sur le bouton **+** sur l'écran des projets, ou utilisez l'option **Importer** dans le menu **Fichier**. Si vous apportez des modifications à un fichier importé, Ingantt les enregistre au format XML.
 
 > Pour ouvrir des fichiers de projet non-XML, Ingantt les envoie via une connexion sécurisée au service web Ingantt pour conversion. Vos fichiers ne sont pas stockés sur le service. Une connexion internet est requise. Les fichiers YAML sont analysés localement.
 
@@ -28,11 +28,11 @@ Pour importer un fichier, cliquez sur le bouton **+** sur l'écran des projets, 
 
 Les fichiers que nous convertissons sur notre serveur sont limités à **30 Mo**. Cela concerne les formats MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP et PEP. Les fichiers XML et YAML sont analysés dans l'application et ne sont jamais envoyés, la limite du serveur ne s'applique donc pas à eux.
 
-**Fichier trop volumineux ?** Dans Microsoft Project, utilisez **File → Save As** et choisissez **Project XML (.xml)**. Ingantt analyse le XML dans l'application, la limite de 30 Mo du serveur ne s'applique donc pas, et l'export conserve votre structure de tâches, vos dépendances et vos ressources.
+**Fichier trop volumineux ?** Dans Microsoft Project, utilisez **Fichier → Enregistrer sous** et choisissez **Project XML (.xml)**. Ingantt analyse le XML dans l'application, la limite de 30 Mo du serveur ne s'applique donc pas, et l'export conserve votre structure de tâches, vos dépendances et vos ressources.
 
 ## Exporter votre projet
 
-Ingantt propose plusieurs formats d'export via l'option **Export** dans le menu **File** (ou **Download** sur le web). Lorsque vous choisissez **Export**, une boîte de dialogue apparaît vous permettant de sélectionner le format souhaité :
+Ingantt propose plusieurs formats d'export via l'option **Exporter** dans le menu **Fichier** (ou **Télécharger** sur le web). Lorsque vous choisissez **Exporter**, une boîte de dialogue apparaît vous permettant de sélectionner le format souhaité :
 
 | Format | Description |
 |--------|-------------|

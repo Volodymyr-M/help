@@ -49,7 +49,7 @@
 
 ## 보기
 
-- [Gantt 차트](https://help.ingantt.com/ko/views/gantt/index.md)
+- [간트 차트](https://help.ingantt.com/ko/views/gantt/index.md)
 - [작업 보기](https://help.ingantt.com/ko/views/task-views/index.md)
 - [자원 보기](https://help.ingantt.com/ko/views/resource-views/index.md)
 - [작업 필터링](https://help.ingantt.com/ko/views/filtering/index.md)

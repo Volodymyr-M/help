@@ -19,7 +19,7 @@ Digite a duração com um **`e`** antes da unidade:
 
 As unidades são `min`, `h`, `d`, `w` e `m` — minutos, horas, dias, semanas, meses — e todas elas aceitam o `e`. As abreviações são traduzidas, então em uma interface que não esteja em inglês use as letras de unidade desse idioma; o marcador `e` permanece.
 
-Você também pode usar a caixa de seleção **Elapsed** em vez de digitar, no editor de duração da caixa de diálogo [Propriedades da Tarefa](/pt/building-schedule/task-properties/index.md). Sua dica de ferramenta é a definição:
+Você também pode usar a caixa de seleção **Decorrido** em vez de digitar, no editor de duração da caixa de diálogo [Propriedades da Tarefa](/pt/building-schedule/task-properties/index.md). Sua dica de ferramenta é a definição:
 
 > Elapsed. When checked, duration counts continuously (24/7) instead of only during working hours defined by the calendar. (Decorrida. Quando marcada, a duração conta continuamente, 24/7, em vez de apenas durante o horário de trabalho definido pelo calendário.)
 
@@ -41,7 +41,7 @@ Compare com as unidades de trabalho, que vêm das [Propriedades do Projeto](/pt/
 
 A mesma ideia se aplica à latência de uma [dependência](/pt/building-schedule/dependencies/index.md), e é aí que ela mais importa. "Iniciar a próxima tarefa três dias depois que esta terminar" normalmente significa três dias *corridos*, não três dias úteis — caso contrário, um término na sexta-feira empurra a sucessora para a quarta-feira.
 
-Na aba **Predecessors** de Task Properties, cada vínculo tem sua própria caixa de seleção **Elapsed** ao lado da latência, com o mesmo significado:
+Na aba **Predecessores** de Task Properties, cada vínculo tem sua própria caixa de seleção **Decorrido** ao lado da latência, com o mesmo significado:
 
 > When checked, lag time counts continuously (24/7) instead of only during working hours defined by the calendar. (Quando marcada, a latência conta continuamente, 24/7, em vez de apenas durante o horário de trabalho definido pelo calendário.)
 
