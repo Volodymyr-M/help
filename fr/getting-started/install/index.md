@@ -2,15 +2,13 @@
 
 Ingantt pour Web s'exécute dans votre navigateur. Il n'y a rien à télécharger ni à installer : ouvrez [web.ingantt.com](https://web.ingantt.com){:target="_blank"} et commencez à travailler. Vos projets sont enregistrés dans un format entièrement compatible avec Microsoft Project, vous pouvez donc échanger des fichiers avec toute personne qui l'utilise.
 
-## Travailler avec ou sans compte
-
-Vous pouvez utiliser Ingantt pour Web sans vous connecter : ouvrez un fichier de projet depuis votre appareil, modifiez-le et téléchargez le résultat.
+## Se connecter avec Google
 
 En vous connectant avec Google, Ingantt pour Web peut conserver vos projets dans votre Google Drive, les enregistrer au fur et à mesure de votre travail et les partager avec d'autres personnes. Voir [Intégration Google Drive](/fr/ui/files/index.md) et [Partager un projet](/fr/ui/sharing/index.md).
 
 ## Ajouter Ingantt pour Web à Google Drive
 
-Ingantt pour Web est référencé sur le [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}. En l'ajoutant depuis cette page, **Ingantt** apparaît dans le menu **New** de Google Drive et dans le menu **Open with** de vos fichiers Ingantt, ce qui vous permet de créer et d'ouvrir des projets directement depuis Drive. Voir [Intégration Google Drive](/fr/ui/files/index.md) pour plus de détails.
+Ingantt pour Web est référencé sur le [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}. L'ajouter depuis cette page est une façon de faire apparaître **Ingantt** dans le menu **New** de Google Drive et dans le menu **Open with** de vos fichiers Ingantt, ce qui vous permet de créer et d'ouvrir des projets directement depuis Drive. Vous connecter à Ingantt pour Web et accorder l'autorisation **Connect itself to your Google Drive** produit le même résultat. Voir [Intégration Google Drive](/fr/ui/files/index.md) pour plus de détails.
 
 ## Et ensuite
 

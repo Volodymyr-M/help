@@ -2,12 +2,6 @@
 
 Ingantt archivia i file di progetto in Google Drive così puoi accedervi da qualsiasi dispositivo. Questo articolo spiega come accedere, quali autorizzazioni richiede Ingantt, come Drive e Ingantt lavorano insieme e cosa fare quando l'accesso a Google non funziona come previsto.
 
-## Lavorare senza accedere
-
-Non sei obbligato ad accedere. Senza un account Google puoi aprire e modificare i file di progetto archiviati sul tuo dispositivo e salvarli di nuovo (sul web, salvare un file locale scarica una nuova copia — vedi [Salvare il progetto](/it/getting-started/saving/index.md)).
-
-Accedi con Google quando vuoi che i tuoi progetti siano conservati nel cloud, salvati automaticamente mentre lavori, disponibili sugli altri tuoi dispositivi e condivisibili con altre persone.
-
 ## Accesso a Google
 
 Nella schermata dei progetti, fai clic su **Sign in with Google**. Si apre una finestra standard di Google che richiede le autorizzazioni elencate di seguito. Puoi uscire in qualsiasi momento con **Sign out of Google**.
@@ -37,7 +31,7 @@ I nuovi progetti si creano da **New** nella schermata dei progetti: **New projec
 
 ## Usare Ingantt dall'interfaccia di Google Drive (web)
 
-Sul web, Ingantt può essere avviato da Drive anziché il contrario. È a questo che serve l'autorizzazione **Collegarsi al tuo Google Drive**, e funziona solo dopo che Ingantt è stato aggiunto al tuo Drive dal [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}.
+Sul web, Ingantt può essere avviato da Drive anziché il contrario. È a questo che serve l'autorizzazione **Collegarsi al tuo Google Drive**: concedendola quando accedi a Ingantt, Ingantt viene registrato come app di Drive per il tuo account e compare nel menu **Nuovo** di Drive e nel menu **Apri con** dei file Ingantt. Aggiungere Ingantt dal [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} produce lo stesso risultato; non servono entrambe le cose.
 
 - **Nuovo** → **Altro** → **Ingantt** crea un nuovo progetto Ingantt nella cartella di Drive in cui ti trovi.
 - Fai clic destro su un file Ingantt → **Apri con** → **Ingantt** per aprirlo in Ingantt per Web.
@@ -46,7 +40,7 @@ In entrambi i casi Drive apre `web.ingantt.com` e gli passa la cartella o il fil
 
 ## Risoluzione dei problemi di accesso a Google (Web)
 
-**Google Drive non offre Ingantt nei menu Nuovo o Apri con.** Esci da Google in Ingantt, accedi di nuovo e assicurati di concedere l'autorizzazione **Collegarsi al tuo Google Drive**. Google aggiunge le voci ai menu di Drive solo dopo che quell'autorizzazione è stata concessa, ed è facile saltarla nella schermata di consenso. Se le voci mancano ancora, verifica che Ingantt sia stato aggiunto al tuo account dal Google Workspace Marketplace.
+**Google Drive non offre Ingantt nei menu Nuovo o Apri con.** Esci da Google in Ingantt, accedi di nuovo e assicurati di concedere l'autorizzazione **Collegarsi al tuo Google Drive** nella schermata di consenso; Google aggiunge le voci ai menu di Drive solo dopo che quell'autorizzazione è stata concessa, ed è facile saltarla. Aggiungere Ingantt dal Google Workspace Marketplace concede la stessa autorizzazione. Poi ricarica Drive. Se usi un account Google Workspace della tua azienda o scuola, l'amministratore potrebbe aver disattivato le app di terze parti per Drive o limitato le installazioni dal Marketplace.
 
 **Un file che qualcuno ha condiviso con te non è in "Shared with me".** Aprilo una volta da Google Drive con **Apri con** → **Ingantt**. Poiché Ingantt ha accesso solo ai file che usi con Ingantt, un file condiviso gli resta invisibile finché non lo hai aperto in quel modo almeno una volta.
 

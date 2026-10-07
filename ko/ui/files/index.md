@@ -2,12 +2,6 @@
 
 Ingantt는 프로젝트 파일을 Google Drive에 저장하여 어떤 기기에서든 접근할 수 있습니다. 이 문서에서는 로그인, Ingantt가 요청하는 권한, Drive와 Ingantt가 함께 동작하는 방식, 그리고 Google 로그인이 제대로 되지 않을 때 대처하는 방법을 다룹니다.
 
-## 로그인하지 않고 사용하기
-
-반드시 로그인할 필요는 없습니다. Google 계정 없이도 기기에 저장된 프로젝트 파일을 열고 편집한 다음 다시 저장할 수 있습니다(웹에서는 로컬 파일을 저장하면 새 복사본이 다운로드됩니다 — [프로젝트 저장](/ko/getting-started/saving/index.md)을 참조하십시오).
-
-프로젝트를 클라우드에 보관하고, 작업하는 동안 자동으로 저장하며, 다른 기기에서도 사용하고, 다른 사람과 공유하고 싶을 때 Google로 로그인하십시오.
-
 ## Google에 로그인
 
 프로젝트 화면에서 **Sign in with Google**을 클릭하십시오. 표준 Google 대화 상자가 열리고 아래 권한을 요청합니다. **Sign out of Google**로 언제든지 다시 로그아웃할 수 있습니다.
@@ -37,7 +31,7 @@ Ingantt는 다음 권한을 요청합니다:
 
 ## Google Drive 자체 인터페이스에서 Ingantt 사용하기(웹)
 
-웹에서는 반대로 Drive에서 Ingantt를 실행할 수 있습니다. **Google Drive에 연결** 권한이 바로 이를 위한 것이며, [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}에서 Ingantt를 Drive에 추가한 뒤에만 동작합니다.
+웹에서는 반대로 Drive에서 Ingantt를 실행할 수 있습니다. **Google Drive에 연결** 권한이 바로 이를 위한 것입니다. Ingantt에 로그인할 때 이 권한을 허용하면 Ingantt가 내 계정의 Drive 앱으로 등록되어 Drive의 **New** 메뉴와 Ingantt 파일의 **Open with** 메뉴에 표시됩니다. [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}에서 Ingantt를 추가해도 같은 결과를 얻으므로 둘 다 할 필요는 없습니다.
 
 - **New** → **More** → **Ingantt**는 현재 있는 Drive 폴더에 새 Ingantt 프로젝트를 만듭니다.
 - Ingantt 파일을 마우스 오른쪽 버튼으로 클릭 → **Open with** → **Ingantt**는 해당 파일을 Ingantt for Web에서 엽니다.
@@ -46,7 +40,7 @@ Ingantt는 다음 권한을 요청합니다:
 
 ## Google 로그인 문제 해결(웹)
 
-**Google Drive의 New 또는 Open with 메뉴에 Ingantt가 없습니다.** Ingantt에서 Google 로그아웃 후 다시 로그인하고, **Google Drive에 연결** 권한을 반드시 허용하십시오. Google은 이 권한이 허용된 뒤에야 Drive 메뉴 항목을 추가하는데, 동의 화면에서 이 권한을 건너뛰기 쉽습니다. 그래도 항목이 보이지 않으면 Google Workspace Marketplace에서 Ingantt가 계정에 추가되어 있는지 확인하십시오.
+**Google Drive의 New 또는 Open with 메뉴에 Ingantt가 없습니다.** Ingantt에서 Google 로그아웃 후 다시 로그인하고, 동의 화면에서 **Google Drive에 연결** 권한을 반드시 허용하십시오. Google은 이 권한이 허용된 뒤에야 Drive 메뉴 항목을 추가하는데, 이 권한은 건너뛰기 쉽습니다. Google Workspace Marketplace에서 Ingantt를 추가해도 같은 권한이 부여됩니다. 그런 다음 Drive를 새로 고치십시오. 직장이나 학교의 Google Workspace 계정을 사용하는 경우 관리자가 타사 Drive 앱을 비활성화했거나 Marketplace 설치를 제한했을 수 있습니다.
 
 **다른 사람이 공유한 파일이 "Shared with me"에 없습니다.** Google Drive에서 **Open with** → **Ingantt**로 한 번 열어 주십시오. Ingantt는 Ingantt로 사용하는 파일에만 접근할 수 있으므로, 공유된 파일은 그렇게 최소 한 번 열기 전까지는 Ingantt에 보이지 않습니다.
 

@@ -2,12 +2,6 @@
 
 InganttはプロジェクトファイルをGoogle Driveに保存するため、どのデバイスからでもアクセスできます。この記事では、サインインの方法、Inganttがリクエストする権限、DriveとInganttがどのように連携するか、そしてGoogleサインインが正常に動作しない場合の対処法を説明します。
 
-## サインインせずに使う
-
-サインインは必須ではありません。Googleアカウントがなくても、デバイスに保存されたプロジェクトファイルを開いて編集し、保存し直すことができます（Webでは、ローカルファイルの保存は新しいコピーのダウンロードになります。[プロジェクトの保存](/ja/getting-started/saving/index.md)をご覧ください）。
-
-プロジェクトをクラウドに保管し、作業中に自動保存し、他のデバイスからも利用し、他の人と共有したい場合は、Googleでサインインしてください。
-
 ## Googleへのサインイン
 
 プロジェクト画面で**Sign in with Google**をクリックします。標準のGoogleダイアログが開き、以下の権限を求められます。**Sign out of Google**でいつでもサインアウトできます。
@@ -37,7 +31,7 @@ Inganttは以下の権限をリクエストします：
 
 ## Google Drive自体のインターフェースからInganttを使う（Web）
 
-Webでは、逆にDriveからInganttを起動することもできます。これが**Connect itself to your Google Drive**権限の目的で、[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}からInganttをDriveに追加した後にのみ機能します。
+Webでは、逆にDriveからInganttを起動することもできます。これが**Connect itself to your Google Drive**権限の目的です。Inganttにサインインするときにこの権限を許可すると、Inganttがあなたのアカウントのドライブアプリとして登録され、Driveの**New**メニューとInganttファイルの**Open with**メニューに表示されます。[Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}からInganttを追加しても同じ結果になります。両方を行う必要はありません。
 
 - **New** → **More** → **Ingantt**で、現在開いているDriveフォルダーに新しいInganttプロジェクトを作成します。
 - Inganttファイルを右クリック → **Open with** → **Ingantt**で、Ingantt for Webでそのファイルを開きます。
@@ -46,7 +40,7 @@ Webでは、逆にDriveからInganttを起動することもできます。こ�
 
 ## Googleへのサインインのトラブルシューティング（Web）
 
-**Google Driveの「New」や「Open with」メニューにInganttが表示されない。** InganttでGoogleからサインアウトし、再度サインインして、**Connect itself to your Google Drive**権限を必ず許可してください。GoogleがDriveのメニュー項目を追加するのはこの権限が許可された後だけで、同意画面では見落としやすい項目です。それでも表示されない場合は、Google Workspace MarketplaceからInganttがアカウントに追加されているか確認してください。
+**Google Driveの「New」や「Open with」メニューにInganttが表示されない。** InganttでGoogleからサインアウトし、再度サインインして、同意画面で**Connect itself to your Google Drive**権限を必ず許可してください。GoogleがDriveのメニュー項目を追加するのはこの権限が許可された後だけで、見落としやすい項目です。Google Workspace MarketplaceからInganttを追加しても同じ権限が付与されます。その後、Driveを再読み込みしてください。職場や学校のGoogle Workspaceアカウントを使用している場合は、管理者がサードパーティのDriveアプリを無効にしているか、Marketplaceからのインストールを制限している可能性があります。
 
 **共有されたファイルが「Shared with me」にない。** Google Driveから**Open with** → **Ingantt**で一度開いてください。InganttはInganttで使用したファイルにしかアクセスできないため、共有ファイルはこの方法で少なくとも一度開くまでInganttからは見えません。
 

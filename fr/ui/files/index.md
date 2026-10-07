@@ -2,12 +2,6 @@
 
 Ingantt stocke vos fichiers de projet dans Google Drive afin que vous puissiez y accéder depuis n'importe quel appareil. Cet article couvre la connexion, les autorisations demandées par Ingantt, la manière dont Drive et Ingantt fonctionnent ensemble, et ce qu'il faut faire lorsque la connexion Google ne se comporte pas comme prévu.
 
-## Travailler sans se connecter
-
-Vous n'êtes pas obligé de vous connecter. Sans compte Google, vous pouvez ouvrir et modifier des fichiers de projet stockés sur votre appareil, puis les enregistrer (sur le web, enregistrer un fichier local télécharge une nouvelle copie — voir [Enregistrer votre projet](/fr/getting-started/saving/index.md)).
-
-Connectez-vous avec Google lorsque vous souhaitez que vos projets soient conservés dans le cloud, enregistrés automatiquement pendant que vous travaillez, disponibles sur vos autres appareils et partageables avec d'autres personnes.
-
 ## Se connecter à Google
 
 Sur l'écran des projets, cliquez sur **Sign in with Google**. Une boîte de dialogue Google standard s'ouvre et demande les autorisations ci-dessous. Vous pouvez vous déconnecter à tout moment avec **Sign out of Google**.
@@ -37,7 +31,7 @@ Les nouveaux projets se créent depuis **New** sur l'écran des projets : **New 
 
 ## Utiliser Ingantt depuis l'interface de Google Drive (web)
 
-Sur le web, Ingantt peut être lancé depuis Drive plutôt que l'inverse. C'est à cela que sert l'autorisation **Connect itself to your Google Drive**, et cela ne fonctionne qu'une fois Ingantt ajouté à votre Drive depuis le [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}.
+Sur le web, Ingantt peut être lancé depuis Drive plutôt que l'inverse. C'est à cela que sert l'autorisation **Connect itself to your Google Drive** : en l'accordant lorsque vous vous connectez à Ingantt, vous enregistrez Ingantt comme application Drive pour votre compte, et il apparaît dans le menu **New** de Drive ainsi que dans le menu **Open with** des fichiers Ingantt. Ajouter Ingantt depuis le [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} produit le même résultat ; les deux ne sont pas nécessaires.
 
 - **New** → **More** → **Ingantt** crée un nouveau projet Ingantt dans le dossier Drive où vous vous trouvez.
 - Clic droit sur un fichier Ingantt → **Open with** → **Ingantt** l'ouvre dans Ingantt pour Web.
@@ -46,7 +40,7 @@ Dans les deux cas, Drive ouvre `web.ingantt.com` et lui transmet le dossier ou l
 
 ## Résoudre les problèmes de connexion à Google (web)
 
-**Google Drive ne propose pas Ingantt dans ses menus New ou Open with.** Déconnectez-vous de Google dans Ingantt, reconnectez-vous et assurez-vous d'accorder l'autorisation **Connect itself to your Google Drive**. Google n'ajoute les entrées de menu Drive qu'une fois cette autorisation accordée, et il est facile de la sauter sur l'écran de consentement. Si les entrées manquent toujours, vérifiez qu'Ingantt est bien ajouté à votre compte depuis le Google Workspace Marketplace.
+**Google Drive ne propose pas Ingantt dans ses menus New ou Open with.** Déconnectez-vous de Google dans Ingantt, reconnectez-vous et assurez-vous d'accorder l'autorisation **Connect itself to your Google Drive** sur l'écran de consentement ; Google n'ajoute les entrées de menu Drive qu'une fois cette autorisation accordée, et il est facile de la sauter. Ajouter Ingantt depuis le Google Workspace Marketplace accorde la même autorisation. Rechargez ensuite Drive. Si vous utilisez un compte Google Workspace de votre entreprise ou de votre école, votre administrateur a peut-être désactivé les applications Drive tierces ou restreint les installations depuis le Marketplace.
 
 **Un fichier que quelqu'un a partagé avec vous n'est pas dans « Shared with me ».** Ouvrez-le une fois depuis Google Drive avec **Open with** → **Ingantt**. Comme Ingantt n'a accès qu'aux fichiers que vous utilisez avec Ingantt, un fichier partagé lui reste invisible tant que vous ne l'avez pas ouvert de cette façon au moins une fois.
 

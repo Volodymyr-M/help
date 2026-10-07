@@ -2,12 +2,6 @@
 
 Ingantt speichert Ihre Projektdateien in Google Drive, damit Sie von jedem Gerät darauf zugreifen können. Dieser Artikel behandelt die Anmeldung, die Berechtigungen, die Ingantt anfordert, wie Drive und Ingantt zusammenspielen und was zu tun ist, wenn die Google-Anmeldung nicht wie erwartet funktioniert.
 
-## Arbeiten ohne Anmeldung
-
-Sie müssen sich nicht anmelden. Ohne Google-Konto können Sie auf Ihrem Gerät gespeicherte Projektdateien öffnen, bearbeiten und wieder speichern (im Web lädt das Speichern einer lokalen Datei eine neue Kopie herunter — siehe [Projekt speichern](/de/getting-started/saving/index.md)).
-
-Melden Sie sich mit Google an, wenn Ihre Projekte in der Cloud liegen, während der Arbeit automatisch gespeichert werden, auf Ihren anderen Geräten verfügbar sein und für andere Personen freigegeben werden sollen.
-
 ## Bei Google anmelden
 
 Klicken Sie auf dem Projekte-Bildschirm auf **Mit Google anmelden**. Ein Standard-Google-Dialog öffnet sich und fragt nach den unten aufgeführten Berechtigungen. Sie können sich jederzeit mit **Von Google abmelden** wieder abmelden.
@@ -37,7 +31,7 @@ Neue Projekte entstehen über **Neu** auf dem Projekte-Bildschirm: **Neues Proje
 
 ## Ingantt aus der Google-Drive-Oberfläche heraus verwenden (Web)
 
-Im Web kann Ingantt aus Drive heraus gestartet werden statt umgekehrt. Dafür ist die Berechtigung **Verbindung mit Google Drive herstellen** gedacht, und es funktioniert erst, wenn Ingantt aus dem [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} zu Ihrem Drive hinzugefügt wurde.
+Im Web kann Ingantt aus Drive heraus gestartet werden statt umgekehrt. Dafür ist die Berechtigung **Verbindung mit Google Drive herstellen** gedacht: Wenn Sie sie bei der Anmeldung in Ingantt erteilen, wird Ingantt für Ihr Konto als Drive-App registriert und erscheint im Menü **Neu** von Drive sowie im Menü **Öffnen mit** Ihrer Ingantt-Dateien. Ingantt aus dem [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} hinzuzufügen bewirkt dasselbe; beides zusammen ist nicht nötig.
 
 - **Neu** → **Mehr** → **Ingantt** erstellt ein neues Ingantt-Projekt in dem Drive-Ordner, in dem Sie sich befinden.
 - Rechtsklick auf eine Ingantt-Datei → **Öffnen mit** → **Ingantt** öffnet sie in Ingantt für Web.
@@ -46,7 +40,7 @@ In beiden Fällen öffnet Drive `web.ingantt.com` und übergibt den zu verwenden
 
 ## Fehlerbehebung bei der Google-Anmeldung (Web)
 
-**Google Drive bietet Ingantt in den Menüs „Neu“ oder „Öffnen mit“ nicht an.** Melden Sie sich in Ingantt von Google ab, melden Sie sich erneut an und stellen Sie sicher, dass Sie die Berechtigung **Verbindung mit Google Drive herstellen** erteilen. Google fügt die Drive-Menüeinträge erst hinzu, wenn diese Berechtigung erteilt wurde, und sie lässt sich auf dem Zustimmungsbildschirm leicht übersehen. Fehlen die Einträge weiterhin, prüfen Sie, ob Ingantt aus dem Google Workspace Marketplace zu Ihrem Konto hinzugefügt ist.
+**Google Drive bietet Ingantt in den Menüs „Neu“ oder „Öffnen mit“ nicht an.** Melden Sie sich in Ingantt von Google ab, melden Sie sich erneut an und stellen Sie sicher, dass Sie auf dem Zustimmungsbildschirm die Berechtigung **Verbindung mit Google Drive herstellen** erteilen. Google fügt die Drive-Menüeinträge erst hinzu, wenn diese Berechtigung erteilt wurde, und sie lässt sich leicht übersehen. Wenn Sie Ingantt aus dem Google Workspace Marketplace hinzufügen, wird dieselbe Berechtigung erteilt. Laden Sie Drive anschließend neu. Wenn Sie ein Google-Workspace-Konto Ihrer Arbeit oder Schule verwenden, hat Ihr Administrator möglicherweise Drive-Apps von Drittanbietern deaktiviert oder Marketplace-Installationen eingeschränkt.
 
 **Eine Datei, die jemand für Sie freigegeben hat, fehlt unter „Für mich freigegeben“.** Öffnen Sie sie einmal aus Google Drive mit **Öffnen mit** → **Ingantt**. Da Ingantt nur auf Dateien zugreifen kann, die Sie mit Ingantt verwenden, bleibt eine freigegebene Datei für Ingantt unsichtbar, bis Sie sie mindestens einmal auf diesem Weg geöffnet haben.
 

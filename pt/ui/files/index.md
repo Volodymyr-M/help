@@ -2,12 +2,6 @@
 
 O Ingantt armazena seus arquivos de projeto no Google Drive para que você possa acessá-los de qualquer dispositivo. Este artigo aborda o login, as permissões que o Ingantt solicita, como o Drive e o Ingantt se encaixam e o que fazer quando o login no Google não se comporta como esperado.
 
-## Trabalhando sem fazer login
-
-Você não precisa fazer login. Sem uma conta Google, você pode abrir e editar arquivos de projeto armazenados no seu dispositivo e salvá-los de volta (na web, salvar um arquivo local baixa uma nova cópia — consulte [Salvando Seu Projeto](/pt/getting-started/saving/index.md)).
-
-Faça login com o Google quando quiser que seus projetos fiquem na nuvem, sejam salvos automaticamente enquanto você trabalha, estejam disponíveis nos seus outros dispositivos e possam ser compartilhados com outras pessoas.
-
 ## Fazer Login no Google
 
 Na tela de Projetos, clique em **Sign in with Google**. Uma caixa de diálogo padrão do Google é aberta e solicita as permissões abaixo. Você pode sair a qualquer momento com **Sign out of Google**.
@@ -37,7 +31,7 @@ Novos projetos são criados a partir de **New** na tela de Projetos: **New proje
 
 ## Usando o Ingantt a partir da própria interface do Google Drive (web)
 
-Na web, o Ingantt pode ser iniciado a partir do Drive, e não apenas o contrário. É para isso que serve a permissão **Connect itself to your Google Drive**, e isso só funciona depois que o Ingantt foi adicionado ao seu Drive a partir do [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"}.
+Na web, o Ingantt pode ser iniciado a partir do Drive, e não apenas o contrário. É para isso que serve a permissão **Connect itself to your Google Drive**: ao concedê-la quando você faz login no Ingantt, o Ingantt é registrado como aplicativo do Drive para a sua conta e passa a aparecer no menu **New** do Drive e no menu **Open with** dos arquivos do Ingantt. Adicionar o Ingantt a partir do [Google Workspace Marketplace](https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331){:target="_blank"} faz a mesma coisa; não é preciso fazer os dois.
 
 - **New** → **More** → **Ingantt** cria um novo projeto do Ingantt na pasta do Drive em que você está.
 - Clique com o botão direito em um arquivo do Ingantt → **Open with** → **Ingantt** para abri-lo no Ingantt para Web.
@@ -46,7 +40,7 @@ Em ambos os casos, o Drive abre `web.ingantt.com` e repassa a pasta ou o arquivo
 
 ## Solução de problemas de login no Google (Web)
 
-**O Google Drive não oferece o Ingantt nos menus New ou Open with.** Saia do Google no Ingantt, faça login novamente e certifique-se de conceder a permissão **Connect itself to your Google Drive**. O Google só adiciona as entradas de menu do Drive depois que essa permissão foi concedida, e é fácil pulá-la na tela de consentimento. Se as entradas ainda estiverem faltando, verifique se o Ingantt está adicionado à sua conta a partir do Google Workspace Marketplace.
+**O Google Drive não oferece o Ingantt nos menus New ou Open with.** Saia do Google no Ingantt, faça login novamente e certifique-se de conceder a permissão **Connect itself to your Google Drive** na tela de consentimento; o Google só adiciona as entradas de menu do Drive depois que essa permissão é concedida, e é fácil pulá-la. Adicionar o Ingantt a partir do Google Workspace Marketplace concede a mesma permissão. Depois, recarregue o Drive. Se você usa uma conta do Google Workspace do trabalho ou da escola, o administrador pode ter desativado aplicativos de terceiros para o Drive ou restringido instalações pelo Marketplace.
 
 **Um arquivo que alguém compartilhou com você não está em "Shared with me".** Abra-o uma vez a partir do Google Drive com **Open with** → **Ingantt**. Como o Ingantt só tem acesso aos arquivos que você usa com o Ingantt, um arquivo compartilhado fica invisível para ele até que você o tenha aberto dessa forma pelo menos uma vez.
 
