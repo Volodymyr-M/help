@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -192,13 +212,13 @@
     <main id="main-content" class="content">
       <h1 id="valeurs-réelles">Valeurs réelles <a href="#valeurs-réelles" class="heading-anchor">#</a></h1>
 <p>Au fur et à mesure de l'avancement des travaux et de la mise à jour du <a href="/fr/tracking/progress/#-complete">% Complete</a>, Ingantt calcule automatiquement les valeurs réelles et restantes pour la durée, le travail, le coût et les dates. Ces champs vous permettent de voir précisément ce qui a été dépensé, ce qui reste et comment le projet se situe par rapport au plan.</p>
-<p>Les colonnes réelles et restantes les plus courantes sont <strong>Actual Cost</strong> / <strong>Remaining Cost</strong>, <strong>Actual Work</strong> / <strong>Remaining Work</strong>, et <strong>Actual Duration</strong> / <strong>Remaining Duration</strong>. En consultant ces valeurs sur la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a>, vous pouvez visualiser d'un coup d'œil les totaux de l'ensemble du projet — combien a été dépensé, quel effort a été fourni et combien il reste à faire. Assurez-vous que la tâche récapitulative racine est visible : cochez <strong>Show root summary task</strong> dans le menu <strong>View</strong> ou dans la boîte de dialogue <strong>Options</strong>.</p>
+<p>Les colonnes réelles et restantes les plus courantes sont <strong>Actual Cost</strong> / <strong>Remaining Cost</strong>, <strong>Actual Work</strong> / <strong>Remaining Work</strong>, et <strong>Actual Duration</strong> / <strong>Remaining Duration</strong>. En consultant ces valeurs sur la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a>, vous pouvez visualiser d'un coup d'œil les totaux de l'ensemble du projet — combien a été dépensé, quel effort a été fourni et combien il reste à faire. Assurez-vous que la tâche récapitulative racine est visible : cochez <strong>Show root summary task</strong> dans le menu <strong>View</strong> ou dans la boîte de dialogue <strong>Options</strong>.</p>
 <h2 id="afficher-les-colonnes-réelles-et-restantes">Afficher les colonnes réelles et restantes <a href="#afficher-les-colonnes-réelles-et-restantes" class="heading-anchor">#</a></h2>
 <p>Les colonnes réelles et restantes ne sont pas visibles par défaut. Pour les ajouter à la liste des tâches, ouvrez la boîte de dialogue <strong>Options</strong> (onglet <strong>Task Columns</strong>) et activez les colonnes souhaitées. Vous pouvez également faire un clic droit sur un en-tête de colonne dans la grille des tâches pour accéder rapidement aux paramètres des colonnes.</p>
 <h3 id="durée">Durée <a href="#durée" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Actual Duration</strong> — Le temps de travail consacré à une tâche jusqu'à présent. Calculé comme la durée de la tâche multipliée par son % Complete.</li>
-<li><strong>Remaining Duration</strong> — Le temps de travail encore nécessaire pour terminer la tâche : Durée − Actual Duration.</li>
+<li><strong>Remaining Duration</strong> — Le temps de travail encore nécessaire pour terminer la tâche : Duration − Actual Duration.</li>
 </ul>
 <p>Par exemple, une tâche de 10 jours achevée à 40 % a une Actual Duration de 4 jours et une Remaining Duration de 6 jours.</p>
 <h3 id="travail">Travail <a href="#travail" class="heading-anchor">#</a></h3>

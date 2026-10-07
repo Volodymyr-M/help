@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Шаблони проектів - Початок роботи - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Почніть з одного з чотирьох вбудованих шаблонів — Навчальний, Процес PMI, План розробки ПЗ та План весілля — і дізнайтеся, де зберігається копія.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/getting-started/templates/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Шаблони проектів">
+  <meta property="og:description" content="Почніть з одного з чотирьох вбудованих шаблонів — Навчальний, Процес PMI, План розробки ПЗ та План весілля — і дізнайтеся, де зберігається копія.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/getting-started/templates/">
+  <meta property="og:site_name" content="Довідка Ingantt">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Шаблони проектів">
+  <meta name="twitter:description" content="Почніть з одного з чотирьох вбудованих шаблонів — Навчальний, Процес PMI, План розробки ПЗ та План весілля — і дізнайтеся, де зберігається копія.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/templates/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/templates/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/templates/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/templates/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/templates/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/templates/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/templates/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/templates/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/templates/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/templates/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/" class="active" aria-current="page">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Зв'язатися з підтримкою</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="шаблони-проектів">Шаблони проектів <a href="#шаблони-проектів" class="heading-anchor">#</a></h1>
+<p>Шаблон — це готовий план, який ви копіюєте та редагуєте. Він надходить із уже наявними завданнями, тривалостями, залежностями та структурою, тож ви коригуєте структуру, а не набираєте її з нуля.</p>
+<h2 id="вбудовані-шаблони">Вбудовані шаблони <a href="#вбудовані-шаблони" class="heading-anchor">#</a></h2>
+<p>Вбудовано чотири шаблони — нічого не потрібно завантажувати, і магазину шаблонів немає.</p>
+<table>
+<thead>
+<tr>
+<th>Шаблон</th>
+<th>Для чого він</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Навчальний шаблон</strong></td>
+<td>План із підказками, що знайомить із функціями Ingantt. Найкращий перший проект, якщо ви новачок у застосунку.</td>
+</tr>
+<tr>
+<td><strong>Шаблон процесу PMI</strong></td>
+<td>Групи процесів PMI — ініціація, планування, виконання, моніторинг і контроль, закриття — у вигляді структури завдань.</td>
+</tr>
+<tr>
+<td><strong>Шаблон плану розробки ПЗ</strong></td>
+<td>План постачання програмного забезпечення: вимоги, проектування, розробка, тестування, випуск.</td>
+</tr>
+<tr>
+<td><strong>Шаблон плану весілля</strong></td>
+<td>Опрацьований приклад не з галузі ПЗ із жорстким дедлайном.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="початок-плану-з-шаблону">Початок плану з шаблону <a href="#початок-плану-з-шаблону" class="heading-anchor">#</a></h2>
+<p><strong>З екрана проектів.</strong> Смуга у верхній частині, <strong>Розпочати новий план проекту</strong>, показує кожен шаблон із зображенням попереднього перегляду. Натисніть на один із них, і він відкриється. Поруч картка <strong>+</strong> натомість починає <strong>Порожній план проекту</strong>. <strong>Галерея шаблонів</strong> відкриває повний список у діалозі, а меню <strong>⋮</strong> містить пункт <strong>Сховати всі шаблони</strong>, якщо ви не хочете бачити цю смугу.</p>
+<p><strong>Зсередини проекту.</strong> Виберіть <strong>Файл → Створити з шаблону</strong>.</p>
+<p>У будь-якому випадку ви отримуєте копію. Сам вбудований шаблон ніколи не змінюється, тож ви можете починати з того самого шаблону скільки завгодно разів.</p>
+<h2 id="де-зберігається-новий-план">Де зберігається новий план <a href="#де-зберігається-новий-план" class="heading-anchor">#</a></h2>
+<p>Це залежить від того, як ви використовуєте Ingantt.</p>
+<ul>
+<li><strong>Ingantt для Web з входом у Google.</strong> Новий план одразу записується у ваш <a href="/uk/ui/files/">Google Drive</a> та відкривається в <strong>новій вкладці браузера</strong>. Проект, у якому ви працювали, залишається відкритим і незмінним у початковій вкладці. Оскільки план у Drive із першої миті, автозбереження ввімкнене одразу.</li>
+<li><strong>В усіх інших випадках.</strong> План відкривається як незбережений проект. У нього немає місця зберігання, доки ви його не збережете, і до того часу він не зберігається автоматично — скористайтеся <strong>Зберегти</strong> або <strong>Зберегти як</strong> і виберіть, куди його зберегти.</li>
+</ul>
+<p>Якщо шаблон не вдається прочитати, ви бачите <em>Помилка завантаження шаблону. Спробуйте ще раз.</em> Якщо його не вдається записати в Drive, ви бачите <em>Помилка збереження в Google Drive.</em> В обох випадках нічого не змінено, і ваш наявний проект не зачеплено.</p>
+<h2 id="після-відкриття-шаблону">Після відкриття шаблону <a href="#після-відкриття-шаблону" class="heading-anchor">#</a></h2>
+<p>Копія — це звичайний проект. Перейменуйте його через <strong>Файл → Перейменувати</strong>, видаліть непотрібні завдання та встановіть дату початку проекту у <a href="/uk/setting-up-project/project/">Властивостях проекту</a> — дати шаблону задані відносно його власного початку й усі зсунуться, коли ви її зміните.</p>
+<p>Створення нового проекту з шаблону потребує активного пробного періоду або підписки, так само як і створення порожнього.</p>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

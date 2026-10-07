@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
     <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
     <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
     <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
     <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
     <li><a href="/pt/building-schedule/resources/" class="active" aria-current="page">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
     <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
     <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
     <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
     <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
   </ul>
 </div>
 
@@ -231,14 +251,14 @@
 <p>Na aba <strong>Availability</strong> da caixa de diálogo <strong>Resource Properties</strong>, você pode definir múltiplos períodos de disponibilidade, cada um com um intervalo de datas e um percentual de disponibilidade. Para datas que estão dentro de um período definido, as unidades do período substituem as Unidades Máximas base do recurso para cálculos de capacidade.</p>
 <h2 id="recursos-genéricos">Recursos Genéricos <a href="#recursos-genéricos" class="heading-anchor">#</a></h2>
 <p>Um recurso pode ser marcado como <strong>Generic</strong> usando a caixa de seleção na caixa de diálogo <strong>Resource Properties</strong>. Recursos genéricos são marcadores de posição que representam uma função (ex.: &quot;Desenvolvedor&quot;, &quot;Designer&quot;) em vez de uma pessoa específica. São úteis durante o planejamento inicial, quando os membros específicos da equipe ainda não foram identificados.</p>
-<p>Os recursos genéricos são indicados por um ícone de crachá na lista de recursos. A flag de genérico é puramente informativa — não afeta o agendamento ou os cálculos de custo.</p>
+<p>Os recursos genéricos são indicados por um ícone de crachá na lista de recursos. A marcação de genérico é puramente informativa — não afeta o agendamento ou os cálculos de custo.</p>
 <h2 id="tipo-de-reserva">Tipo de Reserva <a href="#tipo-de-reserva" class="heading-anchor">#</a></h2>
 <p>Cada recurso tem um <strong>Booking Type</strong> que pode ser definido como <strong>Committed</strong> (padrão) ou <strong>Proposed</strong> na caixa de diálogo <strong>Resource Properties</strong>.</p>
 <ul>
 <li><strong>Committed</strong> — O recurso está firmemente reservado para o projeto.</li>
 <li><strong>Proposed</strong> — O recurso está provisoriamente atribuído para fins de planejamento.</li>
 </ul>
-<p>Por padrão, o nivelamento automático exclui recursos propostos. Você pode incluí-los ativando &quot;Level resources with the proposed booking type&quot; na caixa de diálogo <a href="/pt/adjusting-schedule/leveling/#op%C3%A7%C3%B5es-de-nivelamento">Leveling Options</a>.</p>
+<p>Por padrão, o nivelamento automático exclui recursos propostos. Você pode incluí-los ativando &quot;Level resources with the proposed booking type&quot; na caixa de diálogo <a href="/pt/adjusting-schedule/leveling/#op%C3%A7%C3%B5es-de-nivelamento">Opções de Nivelamento</a>.</p>
 
     </main>
     <aside class="toc" aria-label="Índice"></aside>

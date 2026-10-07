@@ -6,7 +6,7 @@ Algunas tareas deben comenzar o terminar en fechas específicas — una entrega 
 
 Junto con las dependencias de tareas (vínculos de predecesoras), la restricción de una tarea define cómo se programa la tarea.
 
-Las restricciones se establecen en la pestaña **Avanzado** del diálogo **Propiedades de la tarea**. La restricción predeterminada es **Lo antes posible**. Esto significa que la tarea se establece lo más cerca posible de la fecha de inicio del proyecto respetando las dependencias con otras tareas. En proyectos planificados desde la fecha de Fin, el valor predeterminado es **Lo más tarde posible**.
+Las restricciones se establecen en la pestaña **Avanzado** del diálogo **Propiedades de la tarea**. La restricción predeterminada es **Lo antes posible**. Esto significa que la tarea se establece lo más cerca posible de la fecha de inicio del proyecto respetando las dependencias con otras tareas. En proyectos planificados desde la fecha de finalización, el valor predeterminado es **Lo más tarde posible**.
 
 Hay dos restricciones que obligan a la tarea a comenzar o terminar en la fecha especificada independientemente de las dependencias. Estas restricciones se llaman _restricciones inflexibles_ y son **Debe comenzar el** y **Debe finalizar el**. Use estas restricciones solo si está seguro de que son necesarias.
 

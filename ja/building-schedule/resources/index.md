@@ -45,4 +45,4 @@ Inganttは3種類のリソースに対応しています：
 - **Committed** — リソースはプロジェクトに確定的に予約されています。
 - **Proposed** — リソースは計画目的で仮に割り当てられています。
 
-デフォルトでは、自動平準化は提案済みリソースを除外します。[Leveling Options](/ja/adjusting-schedule/leveling/index.md#平準化オプション)ダイアログで「Level resources with the proposed booking type」を有効にすることで、含めることができます。
+デフォルトでは、自動平準化は予約タイプが**Proposed**のリソースを除外します。[平準化オプション](/ja/adjusting-schedule/leveling/index.md#平準化オプション)ダイアログで「Level resources with the proposed booking type」を有効にすることで、含めることができます。

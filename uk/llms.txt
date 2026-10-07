@@ -5,7 +5,10 @@
 ## Початок роботи
 
 - [Огляд](https://help.ingantt.com/uk/getting-started/overview/index.md)
+- [Відкрити Ingantt для Web](https://help.ingantt.com/uk/getting-started/install/index.md)
 - [Початок роботи](https://help.ingantt.com/uk/getting-started/getting-started/index.md)
+- [Шаблони проектів](https://help.ingantt.com/uk/getting-started/templates/index.md)
+- [Збереження проекту](https://help.ingantt.com/uk/getting-started/saving/index.md)
 - [Створення за допомогою ШІ](https://help.ingantt.com/uk/getting-started/create-with-ai/index.md)
 - [Редагування за допомогою ШІ](https://help.ingantt.com/uk/getting-started/edit-with-ai/index.md)
 - [Імпорт та експорт](https://help.ingantt.com/uk/getting-started/import-export/index.md)
@@ -19,6 +22,7 @@
 
 - [Завдання](https://help.ingantt.com/uk/building-schedule/tasks/index.md)
 - [Властивості завдання](https://help.ingantt.com/uk/building-schedule/task-properties/index.md)
+- [Астрономічна тривалість](https://help.ingantt.com/uk/building-schedule/elapsed-durations/index.md)
 - [Залежності](https://help.ingantt.com/uk/building-schedule/dependencies/index.md)
 - [Обмеження](https://help.ingantt.com/uk/building-schedule/constraints/index.md)
 - [Ресурси](https://help.ingantt.com/uk/building-schedule/resources/index.md)
@@ -29,6 +33,7 @@
 - [Критичний шлях](https://help.ingantt.com/uk/adjusting-schedule/critical-path/index.md)
 - [Вирівнювання ресурсів](https://help.ingantt.com/uk/adjusting-schedule/leveling/index.md)
 - [Настроювані поля](https://help.ingantt.com/uk/adjusting-schedule/custom-fields/index.md)
+- [WBS-коди](https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/index.md)
 
 ## Планування витрат
 
@@ -53,4 +58,14 @@
 
 - [Додавання та вибір](https://help.ingantt.com/uk/ui/ui/index.md)
 - [Інтеграція з Google Drive](https://help.ingantt.com/uk/ui/files/index.md)
+- [Спільний доступ до проекту](https://help.ingantt.com/uk/ui/sharing/index.md)
+- [Робота офлайн](https://help.ingantt.com/uk/ui/offline-mode/index.md)
+- [Історія версій](https://help.ingantt.com/uk/ui/version-history/index.md)
+- [Мови](https://help.ingantt.com/uk/ui/languages/index.md)
 - [Клавіатурні скорочення](https://help.ingantt.com/uk/ui/shortcuts/index.md)
+- [Звернення до підтримки](https://help.ingantt.com/uk/ui/contact-support/index.md)
+
+## Обліковий запис і оплата
+
+- [Безкоштовний пробний період](https://help.ingantt.com/uk/account/trial/index.md)
+- [Підписки та оплата](https://help.ingantt.com/uk/account/subscription/index.md)

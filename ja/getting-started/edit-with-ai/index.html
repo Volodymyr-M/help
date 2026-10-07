@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/" class="active" aria-current="page">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -198,11 +218,11 @@
 <h2 id="ai編集セッションの開始">AI編集セッションの開始 <a href="#ai編集セッションの開始" class="heading-anchor">#</a></h2>
 <ol>
 <li>編集したいプロジェクトを開きます。</li>
-<li>右上隅のバージョン履歴ボタンの隣にある<strong>AIで編集</strong>アイコン（✨）をクリックします。</li>
+<li>右上隅のバージョン履歴ボタンの隣にある<strong>Edit with AI</strong>アイコン（✨）をクリックします。</li>
 <li>ダイアログには、AIツールがプロジェクトをどのように読み書きすべきかを説明する一連の指示が表示されます。</li>
-<li><strong>指示をコピー</strong>をクリックします。これで編集セッションが開始され、指示がクリップボードにコピーされます。</li>
+<li><strong>Copy instructions</strong>をクリックします。これで編集セッションが開始され、指示がクリップボードにコピーされます。</li>
 <li>AIツールに指示を貼り付けます（例：Claude CodeやCodexの会話の最初のメッセージとして）。</li>
-<li>自然言語でAIに変更を依頼します — たとえば、<em>「開発の後に2週間のQAフェーズを追加する」</em> や <em>「すべてのデザインタスクにAlexを割り当てる」</em> など。</li>
+<li>自然言語でAIに変更を依頼します — たとえば、「<em>開発の後に2週間のQAフェーズを追加する</em>」や「<em>すべてのデザインタスクにAlexを割り当てる</em>」など。</li>
 </ol>
 <p>AIは指示に従って現在のYAMLを取得し、編集し、その結果をInganttに送信します。Inganttは受け入れる前にすべての編集を検証します。</p>
 <h2 id="セッション中に起こること">セッション中に起こること <a href="#セッション中に起こること" class="heading-anchor">#</a></h2>
@@ -210,10 +230,10 @@
 <li><strong>✨アイコンの隣の緑色の点</strong>はアクティブなセッションを示します。接続が再接続中のときは点がアンバー色になり、セッションでエラーが発生したときは赤色になります。</li>
 <li><strong>すべてのAIの変更は</strong>、適用される前にInganttのプロジェクトルールに対して検証されます。AIが無効なデータを送信した場合、Inganttは変更を拒否し、AIに何が問題だったかを伝えて自己修正できるようにします。</li>
 <li><strong>あなた自身の編集もセッションに反映されます。</strong> セッションがアクティブな間にInganttのUIで何かを変更すると、AIは次回の読み取り時にあなたの更新を認識します。</li>
-<li><strong>スケジューラが最終的な権限を持ちます。</strong> AIが日付や期間を設定すると、Inganttはクリティカルパスメソッドを再実行して最終的なスケジュールを計算し、他のタスクが移動する可能性があります。</li>
+<li><strong>スケジューラーが最終的な権限を持ちます。</strong> AIが日付や期間を設定すると、Inganttはクリティカルパスメソッドを再実行して最終的なスケジュールを計算し、他のタスクが移動する可能性があります。</li>
 </ul>
 <h2 id="セッションの停止">セッションの停止 <a href="#セッションの停止" class="heading-anchor">#</a></h2>
-<p>セッションがアクティブな間に✨アイコンをクリックし、<strong>セッションを停止</strong>を選択します。ブラウザのタブを閉じるだけでもかまいません — 一定時間の非アクティブ後にセッションは自動的に終了します。</p>
+<p>セッションがアクティブな間に✨アイコンをクリックし、<strong>Stop session</strong>を選択します。ブラウザのタブを閉じるだけでもかまいません — 一定時間の非アクティブ後にセッションは自動的に終了します。</p>
 <h2 id="サポートされているaiツール">サポートされているAIツール <a href="#サポートされているaiツール" class="heading-anchor">#</a></h2>
 <p>HTTPリクエストを行うことができるAIツールであれば、AIで編集を利用できます。一般的な選択肢は以下のとおりです：</p>
 <ul>

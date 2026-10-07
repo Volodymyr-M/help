@@ -11,14 +11,14 @@ As colunas de valores reais e restantes não são visíveis por padrão. Para ad
 ### Duração
 
 - **Actual Duration** — A quantidade de tempo útil gasto em uma tarefa até o momento. Calculado como a duração da tarefa multiplicada pelo seu % Concluído.
-- **Remaining Duration** — O tempo útil ainda necessário para concluir a tarefa: Duração - Duração Real.
+- **Remaining Duration** — O tempo útil ainda necessário para concluir a tarefa: Duração − Duração Real.
 
 Por exemplo, uma tarefa de 10 dias com 40% concluída tem uma Duração Real de 4 dias e uma Duração Restante de 6 dias.
 
 ### Trabalho
 
 - **Actual Work** — O esforço total (em horas) que os recursos gastaram em uma tarefa. Quando **Updating task status updates resource status** está ativado nas configurações do projeto (o padrão), o Trabalho Real é atualizado proporcionalmente quando você altera o % Concluído.
-- **Remaining Work** — O esforço ainda necessário para concluir a tarefa: Trabalho - Trabalho Real.
+- **Remaining Work** — O esforço ainda necessário para concluir a tarefa: Trabalho − Trabalho Real.
 
 ### Custo
 
@@ -26,7 +26,7 @@ Por exemplo, uma tarefa de 10 dias com 40% concluída tem uma Duração Real de 
   - **Start** — O custo total é reconhecido quando o Início Real é definido.
   - **Prorated** — O custo é reconhecido proporcionalmente com base no progresso do trabalho real.
   - **End** — O custo é reconhecido somente quando a tarefa atinge 100% concluída.
-- **Remaining Cost** — O orçamento ainda necessário para concluir a tarefa: Custo Total - Custo Real.
+- **Remaining Cost** — O orçamento ainda necessário para concluir a tarefa: Custo Total − Custo Real.
 
 ### Datas
 

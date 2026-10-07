@@ -8,9 +8,9 @@ La vue **Resource Usage** vous permet de visualiser toutes les affectations de r
 
 Comme pour le diagramme de Gantt, vous pouvez zoomer en avant ou en arrière sur la ligne temporelle pour obtenir une vue plus ou moins détaillée.
 
-Si une ressource doit effectuer plus de travail que ce que les calendriers autorisent pour une période donnée, le **travail** correspondant est mis en évidence en rouge.
+Si une ressource doit effectuer plus de travail que ce que les calendriers autorisent pour une période donnée, la valeur **Work** correspondante est mise en évidence en rouge.
 
-Dans la vue Resource Usage, vous pouvez double-cliquer sur les cellules de travail au niveau des affectations pour modifier directement la répartition du travail. Lorsque vous modifiez une cellule de travail, le profil de charge de l'affectation passe automatiquement à « Contoured » et les données de travail personnalisées par jour sont enregistrées.
+Dans la vue Resource Usage, vous pouvez double-cliquer sur les cellules de travail au niveau des affectations pour modifier directement la répartition du travail. Lorsque vous modifiez une cellule de travail, le profil de charge de travail de l'affectation passe automatiquement à « Contoured » et les données de travail personnalisées par jour sont enregistrées.
 
 ## Task Usage
 
@@ -24,7 +24,7 @@ La vue **Team Planner** est une vue de planification centrée sur les ressources
 
 Fonctionnalités principales :
 
-- **Glissez horizontalement** pour replanifier une tâche — la tâche reçoit une contrainte Début au plus tôt le à la nouvelle position
+- **Glissez horizontalement** pour replanifier une tâche — la tâche reçoit une contrainte Start No Earlier Than à la nouvelle position
 - **Glissez verticalement** pour réaffecter une tâche à une autre ressource
 - **Glissez en diagonale** pour replanifier et réaffecter en une seule opération
 - Glissez vers ou depuis la section **Unassigned Tasks** pour ajouter ou supprimer des affectations de ressources

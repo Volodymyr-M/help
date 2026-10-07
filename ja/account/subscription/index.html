@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>サブスクリプションと支払い - アカウントと請求 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="月額・年額プラン、自分用またはチーム用のサブスクリプション購入、シートの管理とキャンセル、領収書と返金、アカウントの削除について説明します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/account/subscription/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="サブスクリプションと支払い">
+  <meta property="og:description" content="月額・年額プラン、自分用またはチーム用のサブスクリプション購入、シートの管理とキャンセル、領収書と返金、アカウントの削除について説明します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/account/subscription/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="サブスクリプションと支払い">
+  <meta name="twitter:description" content="月額・年額プラン、自分用またはチーム用のサブスクリプション購入、シートの管理とキャンセル、領収書と返金、アカウントの削除について説明します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/account/subscription/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/account/subscription/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/account/subscription/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/account/subscription/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/account/subscription/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/account/subscription/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/account/subscription/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/account/subscription/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/" class="active" aria-current="page">サブスクリプションと支払い</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">サポートに問い合わせ</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="サブスクリプションと支払い">サブスクリプションと支払い <a href="#サブスクリプションと支払い" class="heading-anchor">#</a></h1>
+<p>Ingantt for Webはユーザー単位で課金されるサブスクリプションです。この記事では、プラン、自分用またはチーム用の購入、サブスクリプションの確認とキャンセルを行う場所、キャンセル後に何が起こるかについて説明します。</p>
+<blockquote>
+<p>App Store、Google Play、Mac App Store、またはMicrosoft StoreからInganttをインストールした場合、購入はそのストアに属し、ここではなくストアで管理されます。確認や変更にはストアのサブスクリプションまたは購入画面を開き、返金にはストアの返金手続きをご利用ください。<a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">利用規約</a>もあわせてご覧ください。</p>
+</blockquote>
+<h2 id="プラン">プラン <a href="#プラン" class="heading-anchor">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>プラン</th>
+<th>価格</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Monthly</strong>（月額）</td>
+<td>1ユーザーあたり月額$7.99</td>
+</tr>
+<tr>
+<td><strong>Yearly</strong>（年額）</td>
+<td>1ユーザーあたり年額$71.88</td>
+</tr>
+</tbody>
+</table>
+<p>どちらのプランにもすべての機能が含まれます。年額プランは同じ製品を一括払いにしたもので、1ユーザーあたり月額$5.99に相当します。この金額が「〜から」の価格として表示されることがあるのはそのためです。</p>
+<p>サブスクリプションは、キャンセルするまで各請求期間の終了時に自動的に更新されます。</p>
+<h2 id="サブスクリプションの購入">サブスクリプションの購入 <a href="#サブスクリプションの購入" class="heading-anchor">#</a></h2>
+<p><strong>Account</strong>ダイアログを開くか、トライアルが終了したことをInganttが通知した際に<strong>Subscribe now</strong>をクリックし、次の手順に従います：</p>
+<ol>
+<li><strong>Choose who it is for</strong> — 自分自身、または他の人。チーム用に購入するには、<em>I want to purchase subscriptions for others</em>を選択し、1行に1つずつメールアドレスを入力します。各アドレスは、その人がGoogleにサインインできるアドレスである必要があります。</li>
+<li><strong>Choose the plan</strong> — 月額または年額。</li>
+<li><strong>Enter your billing details</strong> — 氏名、住所、市区町村、郵便番号、都道府県または地域、国、電話番号。</li>
+<li><strong>Review</strong> — 購入項目と請求先情報を確認します。</li>
+<li><strong>Pay in new window</strong> — 支払いは決済代行会社により別ウィンドウで処理されます。</li>
+</ol>
+<p>支払いが完了すると、Inganttはサブスクリプション（または他の人のために購入したサブスクリプションの一覧）が有効になったことを確認表示します。</p>
+<p>支払いウィンドウに支払いがまだ処理中と表示されても、それは正常です。<em>Notice of successful payment</em>メールが届くのを待ってから、ダイアログの<strong>Refresh</strong>をクリックして新しい状態を取得してください。</p>
+<blockquote>
+<p>サブスクリプションは、サインインに使用しているGoogleアカウントに紐付けられます。どのデバイスでも、そのアカウントでサインインすれば利用できます。すでに有効なサブスクリプションを持つアドレスに対して、2つ目を購入することはできません。</p>
+</blockquote>
+<h2 id="サブスクリプションの確認と管理">サブスクリプションの確認と管理 <a href="#サブスクリプションの確認と管理" class="heading-anchor">#</a></h2>
+<p><strong>Account</strong>ダイアログの<strong>Manage subscriptions</strong>には、購入したサブスクリプションの一覧（それぞれの対象ユーザー、購入日、購入者）が表示されます。<strong>Refresh</strong>はサーバーから現在の状態を再読み込みします。</p>
+<p>チーム購入の管理もここで行います。シートの支払いをした人は、すべてのシートを確認でき、それぞれを個別にキャンセルできます。</p>
+<p>自分自身のステータスは、ナビゲーションドロワーに<strong>Paid subscriber</strong>、<strong>Subscription inactive</strong>、またはトライアルや有料期間の残り日数として表示されます。</p>
+<h2 id="キャンセル">キャンセル <a href="#キャンセル" class="heading-anchor">#</a></h2>
+<ol>
+<li><strong>Account</strong> → <strong>Manage subscriptions</strong>を開きます。</li>
+<li>キャンセルしたいユーザーの行で<strong>Cancel</strong>をクリックし、確認します。</li>
+</ol>
+<p>キャンセルすると、次回の更新が停止します。アクセスがすぐに打ち切られるわけではありません。<em>Subscription canceled, but all features available until the paid period ends</em>というメッセージはまさにその意味で、ドロワーには<strong>Paid period ends in N days</strong>とカウントダウンが表示されます。有料期間が終了すると、Inganttは閲覧専用モードに切り替わります。</p>
+<p>キャンセルしてもプロジェクトには影響しません。プロジェクトはGoogle Driveに保存されたままで、Microsoft Project XMLとして読み取りやダウンロードが可能です。</p>
+<h2 id="支払い領収書返金">支払い、領収書、返金 <a href="#支払い領収書返金" class="heading-anchor">#</a></h2>
+<ul>
+<li>Ingantt for Webのカード決済は、決済代行会社のWayForPayによって処理されます。Inganttがカード情報を参照したり保存したりすることはありません。</li>
+<li>支払い確認メールは決済代行会社から送られます。サブスクリプションが有効化またはキャンセルされた際には、Inganttから別途メールをお送りします。</li>
+<li>Webサブスクリプションの返金：<a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">利用規約</a>に定めるとおり、購入から7日以内に<a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a>までご連絡ください。</li>
+<li>App Store、Google Play、Microsoft Storeでの購入に対する返金は、Apple、Google、Microsoftがそれぞれのポリシーに基づいて対応します。</li>
+</ul>
+<p>その他のご要望（VAT請求書や会社宛の請求書、月額プランと年額プランの切り替え、シートの別の人への移行、二重に請求された支払いなど）については、アカウントのアドレスと、お持ちであれば支払いの参照番号を添えて<a href="mailto:support@ingantt.com">サポートにメール</a>してください。</p>
+<h2 id="アカウントとデータ">アカウントとデータ <a href="#アカウントとデータ" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>プロジェクトの保存場所：</strong> あなたのGoogle Driveです。InganttはWeb版のためにユーザー情報（メールアドレス、名前、サブスクリプションの状態）を保持しますが、プロジェクトデータは保持しません。<a href="https://www.ingantt.com/privacy_policy.html" target="_blank" rel="noopener noreferrer">プライバシーポリシー</a>をご覧ください。</li>
+<li>InganttでGoogleから<strong>サインアウト</strong>しても、サブスクリプションはキャンセルされず、ファイルにも影響しません。</li>
+<li><strong>アカウントの削除：</strong> <a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a>にリクエストをお送りください。Inganttアカウントを削除しても、Google Driveやデバイス上のプロジェクトファイルは削除されません。それらはあなたのものであり、保持するか削除するかは自由です。</li>
+</ul>
+<h2 id="関連項目">関連項目 <a href="#関連項目" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/ja/account/trial/">無料トライアル</a> — 上記のいずれかが適用される前の7日間。</li>
+<li><a href="/ja/getting-started/saving/">プロジェクトの保存</a> — 閲覧専用モードが保存にとって何を意味するか。</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

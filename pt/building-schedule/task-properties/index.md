@@ -54,7 +54,7 @@ Se você especificar 0 como a **Duration** de uma tarefa, ela é automaticamente
 
 ## Tipo e Orientado ao Esforço
 
-As atribuições de recursos de trabalho (ou unidades de recursos de trabalho atribuídos), trabalho e duração dependem uns dos outros. Quando você altera um deles, os outros precisam ser recalculados. O **Type** da tarefa (com a ajuda da flag **Effort Driven**) define qual das duas propriedades restantes permanece inalterada, de modo que apenas uma delas é recalculada.
+As atribuições de recursos de trabalho (ou unidades de recursos de trabalho atribuídos), trabalho e duração dependem uns dos outros. Quando você altera um deles, os outros precisam ser recalculados. O **Type** da tarefa (com a ajuda da opção **Effort Driven**) define qual das duas propriedades restantes permanece inalterada, de modo que apenas uma delas é recalculada.
 
 Por exemplo, você pode definir o **Type** como **Fixed units** (o padrão), nesse caso, quando você altera a Duração, o Trabalho é recalculado automaticamente.
 
@@ -72,9 +72,9 @@ Por exemplo, você pode definir o **Type** como **Fixed units** (o padrão), nes
 |                    | Ao alterar o Trabalho: a Duração é recalculada.         |
 |                    | Ao alterar as Unidades: a Duração é recalculada.        |
 
-Em outras palavras, o **Type** permite congelar uma das três propriedades, enquanto a flag **Effort Driven** define se o Trabalho deve permanecer inalterado entre as duas restantes.
+Em outras palavras, o **Type** permite congelar uma das três propriedades, enquanto a opção **Effort Driven** define se o Trabalho deve permanecer inalterado entre as duas restantes.
 
-> As configurações **Type** e **Effort Driven** não estão disponíveis para [tarefas resumo](/pt/building-schedule/tasks/index.md#tarefas-resumo), que são sempre do tipo Duração Fixa e não orientadas ao esforço.
+> As configurações **Type** e **Effort Driven** não estão disponíveis para [tarefas resumo](/pt/building-schedule/tasks/index.md#tarefas-resumo), que são sempre do tipo Fixed duration e não orientadas ao esforço.
 
 ## Notas
 
@@ -82,9 +82,9 @@ Você pode adicionar qualquer texto à sua tarefa preenchendo o campo **Notes** 
 
 Se uma tarefa tem o campo **Notes** preenchido, um ícone especial é exibido na lista de tarefas. No Windows, macOS e Web, passar o mouse sobre o ícone mostra a nota. Em dispositivos móveis, abra a caixa de diálogo **Task Properties** para ver a nota completa.
 
-## Hyperlink
+## Hiperlink
 
-Você pode anexar uma URL à sua tarefa usando o campo **Hyperlink** na aba **Notes** da caixa de diálogo **Task Properties**. Tarefas com hyperlink exibem um ícone de link na lista de tarefas. Clicar no ícone de link abre a URL no seu navegador.
+Você pode anexar uma URL à sua tarefa usando o campo **Hyperlink** na aba **Notes** da caixa de diálogo **Task Properties**. Tarefas com hiperlink exibem um ícone de link na lista de tarefas. Clicar no ícone de link abre a URL no seu navegador.
 
 ## Ocultar Barra e Rollup
 

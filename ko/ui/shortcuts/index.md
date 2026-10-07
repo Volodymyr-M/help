@@ -22,7 +22,7 @@
 | `Enter`                | 선택한 항목의 **Properties** 대화 상자를 표시합니다. 여러 항목이 선택된 경우 첫 번째 항목의 대화 상자가 표시됩니다.                       |
 | `Arrow Up`             | 이전 항목을 선택합니다.                                                                                                                         |
 | `Arrow Down`           | 다음 항목을 선택합니다.                                                                                                                             |
-| `Shift + Arrow Up/Down` | 목록 보기에서 선택 범위를 위 또는 아래로 확장합니다.                                                                                                |
+| `Shift + Arrow Up/Down` | 모든 목록 보기에서 선택 범위를 위 또는 아래로 확장합니다.                                                                                             |
 | `Ctrl + Arrow Up`      | 선택한 작업을 위로 이동합니다.                                                                                                                           |
 | `Ctrl + Arrow Down`    | 선택한 작업을 아래로 이동합니다.                                                                                                                         |
 | `Ctrl + Arrow Left`    | 선택한 작업의 들여쓰기를 줄입니다.                                                                                                                |

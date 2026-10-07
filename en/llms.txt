@@ -5,7 +5,7 @@
 ## Getting Started
 
 - [Overview](https://help.ingantt.com/en/getting-started/overview/index.md)
-- [Install Ingantt](https://help.ingantt.com/en/getting-started/install/index.md)
+- [Open Ingantt for Web](https://help.ingantt.com/en/getting-started/install/index.md)
 - [Getting Started](https://help.ingantt.com/en/getting-started/getting-started/index.md)
 - [Project Templates](https://help.ingantt.com/en/getting-started/templates/index.md)
 - [Saving Your Project](https://help.ingantt.com/en/getting-started/saving/index.md)
@@ -59,11 +59,11 @@
 - [Adding and Selecting](https://help.ingantt.com/en/ui/ui/index.md)
 - [Google Drive Integration](https://help.ingantt.com/en/ui/files/index.md)
 - [Sharing a Project](https://help.ingantt.com/en/ui/sharing/index.md)
+- [Working Offline](https://help.ingantt.com/en/ui/offline-mode/index.md)
+- [Version History](https://help.ingantt.com/en/ui/version-history/index.md)
 - [Languages](https://help.ingantt.com/en/ui/languages/index.md)
 - [Keyboard Shortcuts](https://help.ingantt.com/en/ui/shortcuts/index.md)
 - [Contacting Support](https://help.ingantt.com/en/ui/contact-support/index.md)
-- [Working Offline](https://help.ingantt.com/en/ui/offline-mode/index.md)
-- [Version History](https://help.ingantt.com/en/ui/version-history/index.md)
 
 ## Account & Billing
 

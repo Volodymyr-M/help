@@ -5,7 +5,10 @@
 ## 시작하기
 
 - [개요](https://help.ingantt.com/ko/getting-started/overview/index.md)
+- [Ingantt for Web 열기](https://help.ingantt.com/ko/getting-started/install/index.md)
 - [시작하기](https://help.ingantt.com/ko/getting-started/getting-started/index.md)
+- [프로젝트 템플릿](https://help.ingantt.com/ko/getting-started/templates/index.md)
+- [프로젝트 저장](https://help.ingantt.com/ko/getting-started/saving/index.md)
 - [AI로 생성하기](https://help.ingantt.com/ko/getting-started/create-with-ai/index.md)
 - [AI로 편집하기](https://help.ingantt.com/ko/getting-started/edit-with-ai/index.md)
 - [가져오기 및 내보내기](https://help.ingantt.com/ko/getting-started/import-export/index.md)
@@ -19,6 +22,7 @@
 
 - [작업](https://help.ingantt.com/ko/building-schedule/tasks/index.md)
 - [작업 속성](https://help.ingantt.com/ko/building-schedule/task-properties/index.md)
+- [경과 기간](https://help.ingantt.com/ko/building-schedule/elapsed-durations/index.md)
 - [종속성](https://help.ingantt.com/ko/building-schedule/dependencies/index.md)
 - [제약 조건](https://help.ingantt.com/ko/building-schedule/constraints/index.md)
 - [자원](https://help.ingantt.com/ko/building-schedule/resources/index.md)
@@ -29,6 +33,7 @@
 - [주공정경로](https://help.ingantt.com/ko/adjusting-schedule/critical-path/index.md)
 - [자원 평준화](https://help.ingantt.com/ko/adjusting-schedule/leveling/index.md)
 - [사용자 정의 필드](https://help.ingantt.com/ko/adjusting-schedule/custom-fields/index.md)
+- [WBS 코드](https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/index.md)
 
 ## 비용 계획
 
@@ -53,4 +58,14 @@
 
 - [추가 및 선택](https://help.ingantt.com/ko/ui/ui/index.md)
 - [Google Drive 연동](https://help.ingantt.com/ko/ui/files/index.md)
+- [프로젝트 공유](https://help.ingantt.com/ko/ui/sharing/index.md)
+- [오프라인으로 작업하기](https://help.ingantt.com/ko/ui/offline-mode/index.md)
+- [버전 기록](https://help.ingantt.com/ko/ui/version-history/index.md)
+- [언어](https://help.ingantt.com/ko/ui/languages/index.md)
 - [키보드 단축키](https://help.ingantt.com/ko/ui/shortcuts/index.md)
+- [지원 문의](https://help.ingantt.com/ko/ui/contact-support/index.md)
+
+## 계정 및 결제
+
+- [무료 체험](https://help.ingantt.com/ko/account/trial/index.md)
+- [구독 및 결제](https://help.ingantt.com/ko/account/subscription/index.md)

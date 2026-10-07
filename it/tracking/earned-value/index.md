@@ -16,7 +16,7 @@ Ingantt supporta l'Earned Value Management — una tecnica di gestione dei proge
 
 1. Crea una [baseline](/it/tracking/baselines/index.md#impostare-una-baseline) per catturare il cronogramma pianificato e i costi.
 2. Imposta la **Status Date** nella finestra **Earned Value Options** (accessibile dal menu **Project**) o lascia che utilizzi la data corrente per impostazione predefinita.
-3. Aggiorna i valori di [% Complete](/it/tracking/progress/index.md#-di-completamento) delle attività man mano che il lavoro avanza.
+3. Aggiorna i valori di [% di completamento](/it/tracking/progress/index.md#-di-completamento) delle attività man mano che il lavoro avanza.
 
 ### Metriche EVM disponibili
 
@@ -35,8 +35,8 @@ Le seguenti colonne EVM possono essere aggiunte all'elenco delle attività trami
 | **SPI** | Schedule Performance Index |
 | **CPI** | Cost Performance Index |
 | **TCPI** | To-Complete Performance Index |
-| **SV%** | Percentuale di Schedule Variance |
-| **CV%** | Percentuale di Cost Variance |
+| **SV%** | Schedule Variance (percentuale) |
+| **CV%** | Cost Variance (percentuale) |
 
 ### Metodo Earned Value
 
@@ -49,4 +49,4 @@ Imposta il metodo per le singole attività nella scheda **Cost and EV** della fi
 
 ### Baseline Earned Value
 
-I calcoli EVM utilizzano una baseline specifica. Puoi scegliere quale baseline (`Baseline 0` fino a `Baseline 10`) viene utilizzata per l'Earned Value nella finestra **Earned Value Options**. L'impostazione predefinita è `Baseline 0`.
+I calcoli EVM utilizzano una baseline specifica. Puoi scegliere quale baseline (da `Baseline 0` a `Baseline 10`) viene utilizzata per l'Earned Value nella finestra **Earned Value Options**. L'impostazione predefinita è `Baseline 0`.

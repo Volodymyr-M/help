@@ -64,6 +64,6 @@ O horário padrão de início (8:00) e término (17:00) controlam quando o traba
 
 A aba **Scheduling** da caixa de diálogo **Project Properties** contém opções que controlam como as tarefas são agendadas:
 
-- **Honor constraint dates** — Quando ativada, restrições semiflexíveis (como Não Iniciar Depois De) têm prioridade sobre dependências, potencialmente criando folga negativa. Quando desativada (o padrão), as dependências sempre têm prioridade.
+- **Honor constraint dates** — Quando ativada, restrições semiflexíveis (como Start No Later Than) têm prioridade sobre dependências, potencialmente criando folga negativa. Quando desativada (o padrão), as dependências sempre têm prioridade.
 - **Split in-progress tasks** — Quando ativada (o padrão), o agendador pode dividir automaticamente tarefas que possuem progresso fora de sequência.
 - **Move completed/remaining parts** — Quatro opções que controlam como as partes concluídas e restantes do trabalho são reposicionadas em relação à data de status. Isso ajuda a manter seu cronograma atualizado, movendo o trabalho concluído para antes da data de status ou empurrando o trabalho restante para frente.

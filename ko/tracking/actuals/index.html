@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -198,13 +218,13 @@
 <h3 id="기간">기간 <a href="#기간" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Actual Duration</strong> — 작업에 지금까지 소요된 근무 시간입니다. 작업 기간에 완료율을 곱하여 계산됩니다.</li>
-<li><strong>Remaining Duration</strong> — 작업을 완료하는 데 아직 필요한 근무 시간입니다: Duration - Actual Duration.</li>
+<li><strong>Remaining Duration</strong> — 작업을 완료하는 데 아직 필요한 근무 시간입니다: Duration − Actual Duration.</li>
 </ul>
 <p>예를 들어, 10일 작업이 40% 완료되면 Actual Duration은 4일이고 Remaining Duration은 6일입니다.</p>
 <h3 id="작업량">작업량 <a href="#작업량" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Actual Work</strong> — 자원이 작업에 투입한 총 노력(시간)입니다. 프로젝트 설정에서 <strong>Updating task status updates resource status</strong>가 활성화(기본값)되어 있으면 완료율을 변경할 때 Actual Work가 비례적으로 업데이트됩니다.</li>
-<li><strong>Remaining Work</strong> — 작업을 완료하는 데 아직 필요한 노력입니다: Work - Actual Work.</li>
+<li><strong>Remaining Work</strong> — 작업을 완료하는 데 아직 필요한 노력입니다: Work − Actual Work.</li>
 </ul>
 <h3 id="비용">비용 <a href="#비용" class="heading-anchor">#</a></h3>
 <ul>
@@ -215,7 +235,7 @@
 <li><strong>End</strong> — 작업이 100% 완료될 때만 비용이 인식됩니다.</li>
 </ul>
 </li>
-<li><strong>Remaining Cost</strong> — 작업을 완료하는 데 아직 필요한 예산입니다: Total Cost - Actual Cost.</li>
+<li><strong>Remaining Cost</strong> — 작업을 완료하는 데 아직 필요한 예산입니다: Total Cost − Actual Cost.</li>
 </ul>
 <h3 id="날짜">날짜 <a href="#날짜" class="heading-anchor">#</a></h3>
 <ul>
@@ -234,10 +254,10 @@
 <blockquote>
 <p><strong>Total = Actual + Remaining</strong></p>
 </blockquote>
-<p>하나의 값을 변경하면 Ingantt가 일관성을 유지하기 위해 나머지를 업데이트합니다. 가장 일반적인 워크플로우는 <strong>% Complete</strong>를 업데이트하는 것이며, 이는 모든 실적 및 잔여 필드에 자동으로 연쇄적으로 적용됩니다:</p>
+<p>하나의 값을 변경하면 Ingantt가 일관성을 유지하기 위해 나머지를 업데이트합니다. 가장 일반적인 워크플로는 <strong>% Complete</strong>를 업데이트하는 것이며, 이는 모든 실적 및 잔여 필드에 자동으로 연쇄적으로 적용됩니다:</p>
 <ol>
 <li><strong>Actual Duration</strong> 및 <strong>Remaining Duration</strong>이 새 완료율에서 재계산됩니다.</li>
-<li><strong>Actual Work</strong> 및 <strong>Remaining Work</strong>가 업데이트됩니다 (프로젝트 설정이 활성화된 경우).</li>
+<li><strong>Actual Work</strong> 및 <strong>Remaining Work</strong>가 업데이트됩니다(프로젝트 설정이 활성화된 경우).</li>
 <li><strong>Actual Start</strong> 및 <strong>Actual Finish</strong>가 진행 상황에 따라 설정됩니다.</li>
 <li><strong>Actual Cost</strong> 및 <strong>Remaining Cost</strong>가 발생 방식에 따라 재계산됩니다.</li>
 </ol>

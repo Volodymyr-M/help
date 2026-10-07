@@ -69,11 +69,11 @@ Las siguientes tareas y recursos nunca son afectados por la nivelación automát
 - Recursos con **Se puede nivelar** establecido en **falso** en el diálogo Propiedades del recurso
 - Recursos con [tipo de reserva](/es/building-schedule/resources/index.md#tipo-de-reserva) **Propuesto** (a menos que la opción de nivelación para incluir recursos propuestos esté habilitada)
 
-### Re-nivelación y borrado
+### Renivelación y borrado
 
 Cada vez que ejecuta **Nivelar recursos automáticamente**, cualquier nivelación anterior se borra automáticamente primero. La nivelación siempre comienza desde un cronograma limpio y sin nivelar para evitar que los retrasos se acumulen.
 
-Si modifica el cronograma después de la nivelación (agrega tareas, cambia dependencias, etc.), los retrasos de nivelación existentes se preservan pero pueden ya no resolver todas las sobreasignaciones. Ejecute **Nivelar recursos automáticamente** de nuevo para re-nivelar el cronograma actualizado.
+Si modifica el cronograma después de la nivelación (agrega tareas, cambia dependencias, etc.), los retrasos de nivelación existentes se preservan pero pueden ya no resolver todas las sobreasignaciones. Ejecute **Nivelar recursos automáticamente** de nuevo para renivelar el cronograma actualizado.
 
 Para eliminar todos los retrasos de nivelación y volver al cronograma original calculado por CPM, elija **Borrar nivelación** del menú **Proyecto**.
 

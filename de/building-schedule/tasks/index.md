@@ -34,7 +34,7 @@ Sie können einen Vorgang über das Kontrollkästchen im Dialog **Vorgangseigens
 
 - Er wird **nicht vom Planungsalgorithmus beeinflusst** — seine Termine werden von Ihnen festgelegt
 - Sie können **Anfang**- und **Ende**-Termine über die Datumsfelder oder die Datumsauswahl eingeben
-- Sie können **Textwerte** (wie „TBD", „Anfang März" oder „2–3 Wochen") anstelle tatsächlicher Termine eingeben, wenn Sie sich über den Zeitpunkt noch nicht sicher sind
+- Sie können **Textwerte** (wie „TBD“, „Anfang März“ oder „2–3 Wochen“) anstelle tatsächlicher Termine eingeben, wenn Sie sich über den Zeitpunkt noch nicht sicher sind
 - Ein Nadelsymbol wird für manuell geplante Vorgänge in der Vorgangsliste angezeigt
 
 > Verwenden Sie manuell geplante Vorgänge als Platzhalter, wenn der genaue Zeitpunkt unbekannt ist oder wenn Termine durch externe Faktoren festgelegt werden.
@@ -45,11 +45,11 @@ Wiederkehrende Vorgänge stellen Aktivitäten dar, die sich nach einem regelmä�
 
 Beim Erstellen eines wiederkehrenden Vorgangs legen Sie Folgendes fest:
 
-- **Dauer des Vorkommens** — Die Dauer jedes einzelnen Vorkommens
-- **Wiederholungsmuster** — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Vorkommnissen)
-- **Nur Arbeitstage** — Beschränkt Vorkommnisse auf Arbeitstage
+- **Dauer der Wiederholung** — Die Dauer jeder einzelnen Wiederholung
+- **Wiederholungsmuster** — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Wiederholungen)
+- **Nur Arbeitstage** — Beschränkt Wiederholungen auf Arbeitstage
 
-Wiederkehrende Vorgänge erscheinen als Sammelvorgang, der die einzelnen Vorkommnisse enthält. Jedes Vorkommnis kann unabhängig abgeschlossen werden. Beim Löschen eines wiederkehrenden Vorgangs werden Sie gefragt, ob Sie die gesamte Serie oder nur das ausgewählte Vorkommnis löschen möchten.
+Wiederkehrende Vorgänge erscheinen als Sammelvorgang, der die einzelnen Wiederholungen enthält. Jede Wiederholung kann unabhängig abgeschlossen werden. Beim Löschen eines wiederkehrenden Vorgangs werden Sie gefragt, ob Sie die gesamte Serie oder nur die ausgewählte Wiederholung löschen möchten.
 
 ## Geteilte Vorgänge
 
@@ -67,12 +67,12 @@ Ein Vorgang kann als **inaktiv** markiert werden, indem das Kontrollkästchen **
 Inaktive Vorgänge sind:
 
 - Von der Planung ausgeschlossen — sie beeinflussen weder den kritischen Pfad noch andere Vorgänge
-- Von den Zusammenfassungen des Sammelvorgangs für Dauer, Arbeit, Kosten und % Complete ausgeschlossen
-- Von der Erkennung von Ressourcenüberlastung und der automatischen Kapazitätsabgleichung ausgeschlossen
+- Von den Rollups des Sammelvorgangs für Dauer, Arbeit, Kosten und % Abgeschlossen ausgeschlossen
+- Von der Erkennung von Ressourcenüberlastung und dem automatischen Abgleich ausgeschlossen
 - Von Earned-Value-Berechnungen ausgeschlossen
 
 Inaktive Vorgänge bleiben in der Vorgangsliste und im Gantt-Diagramm sichtbar, werden jedoch mit reduzierter Deckkraft und durchgestrichenem Text angezeigt. Ihre Termine werden als Referenz beibehalten.
 
-Das Deaktivieren eines Sammelvorgangs wirkt sich auf alle seine Teilvorgänge aus. Das Reaktivieren eines Teilvorgangs reaktiviert bei Bedarf automatisch seinen übergeordneten Sammelvorgang. Vorgänge mit tatsächlichem Fortschritt (% Complete > 0) können nicht deaktiviert werden.
+Das Deaktivieren eines Sammelvorgangs wirkt sich auf alle seine Teilvorgänge aus. Das Reaktivieren eines Teilvorgangs reaktiviert bei Bedarf automatisch seinen übergeordneten Sammelvorgang. Vorgänge mit tatsächlichem Fortschritt (% Abgeschlossen > 0) können nicht deaktiviert werden.
 
-> Verwenden Sie inaktive Vorgänge, um „Was-wäre-wenn"-Szenarien in Ihrem Terminplan zu behalten, ohne den aktiven Plan zu beeinflussen.
+> Verwenden Sie inaktive Vorgänge, um „Was-wäre-wenn“-Szenarien in Ihrem Terminplan zu behalten, ohne den aktiven Plan zu beeinflussen.

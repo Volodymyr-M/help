@@ -5,7 +5,10 @@
 ## はじめに
 
 - [概要](https://help.ingantt.com/ja/getting-started/overview/index.md)
+- [Ingantt for Webを開く](https://help.ingantt.com/ja/getting-started/install/index.md)
 - [はじめに](https://help.ingantt.com/ja/getting-started/getting-started/index.md)
+- [プロジェクトテンプレート](https://help.ingantt.com/ja/getting-started/templates/index.md)
+- [プロジェクトの保存](https://help.ingantt.com/ja/getting-started/saving/index.md)
 - [AIで作成](https://help.ingantt.com/ja/getting-started/create-with-ai/index.md)
 - [AIで編集](https://help.ingantt.com/ja/getting-started/edit-with-ai/index.md)
 - [インポートとエクスポート](https://help.ingantt.com/ja/getting-started/import-export/index.md)
@@ -19,6 +22,7 @@
 
 - [タスク](https://help.ingantt.com/ja/building-schedule/tasks/index.md)
 - [タスクのプロパティ](https://help.ingantt.com/ja/building-schedule/task-properties/index.md)
+- [経過期間](https://help.ingantt.com/ja/building-schedule/elapsed-durations/index.md)
 - [依存関係](https://help.ingantt.com/ja/building-schedule/dependencies/index.md)
 - [制約](https://help.ingantt.com/ja/building-schedule/constraints/index.md)
 - [リソース](https://help.ingantt.com/ja/building-schedule/resources/index.md)
@@ -29,6 +33,7 @@
 - [クリティカルパス](https://help.ingantt.com/ja/adjusting-schedule/critical-path/index.md)
 - [リソースの平準化](https://help.ingantt.com/ja/adjusting-schedule/leveling/index.md)
 - [カスタムフィールド](https://help.ingantt.com/ja/adjusting-schedule/custom-fields/index.md)
+- [WBSコード](https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/index.md)
 
 ## コスト計画
 
@@ -53,4 +58,14 @@
 
 - [追加と選択](https://help.ingantt.com/ja/ui/ui/index.md)
 - [Google Driveとの連携](https://help.ingantt.com/ja/ui/files/index.md)
+- [プロジェクトの共有](https://help.ingantt.com/ja/ui/sharing/index.md)
+- [オフラインでの作業](https://help.ingantt.com/ja/ui/offline-mode/index.md)
+- [バージョン履歴](https://help.ingantt.com/ja/ui/version-history/index.md)
+- [言語](https://help.ingantt.com/ja/ui/languages/index.md)
 - [キーボードショートカット](https://help.ingantt.com/ja/ui/shortcuts/index.md)
+- [サポートへの問い合わせ](https://help.ingantt.com/ja/ui/contact-support/index.md)
+
+## アカウントと請求
+
+- [無料トライアル](https://help.ingantt.com/ja/account/trial/index.md)
+- [サブスクリプションと支払い](https://help.ingantt.com/ja/account/subscription/index.md)

@@ -1,6 +1,6 @@
 # Créer avec l'IA
 
-Laissez l'IA construire un plan de projet complet pour vous — décrivez simplement votre projet et Ingantt génère les tâches, les dépendances et un calendrier en quelques secondes.
+Laissez l'IA construire un plan de projet complet pour vous — décrivez simplement votre projet et Ingantt génère les tâches, les dépendances et une ligne temporelle en quelques secondes.
 
 ## Créer un projet
 

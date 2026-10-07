@@ -1,6 +1,6 @@
 # Valori effettivi
 
-Man mano che il lavoro avanza e aggiorni la [% Complete](/it/tracking/progress/index.md#-di-completamento), Ingantt calcola automaticamente i valori effettivi e residui per durata, lavoro, costo e date. Questi campi ti permettono di vedere esattamente cosa è stato speso, cosa resta e come il progetto sta procedendo rispetto al piano.
+Man mano che il lavoro avanza e aggiorni la [% di completamento](/it/tracking/progress/index.md#-di-completamento), Ingantt calcola automaticamente i valori effettivi e residui per durata, lavoro, costo e date. Questi campi ti permettono di vedere esattamente cosa è stato speso, cosa resta e come il progetto sta procedendo rispetto al piano.
 
 Le colonne più comuni di valori effettivi e residui sono **Actual Cost** / **Remaining Cost**, **Actual Work** / **Remaining Work** e **Actual Duration** / **Remaining Duration**. Guardando questi valori nell'[attività di riepilogo radice](/it/building-schedule/tasks/index.md#attività-di-riepilogo-radice), puoi vedere i totali dell'intero progetto a colpo d'occhio — quanto è stato speso, quanto sforzo è stato impiegato e quanto resta da fare. Assicurati che l'attività di riepilogo radice sia visibile: seleziona **Show root summary task** nel menu **View** o nella finestra **Options**.
 
@@ -11,14 +11,14 @@ Le colonne di valori effettivi e residui non sono visibili per impostazione pred
 ### Durata
 
 - **Actual Duration** — La quantità di tempo lavorativo dedicata a un'attività finora. Calcolata come la durata dell'attività moltiplicata per la sua % di completamento.
-- **Remaining Duration** — Il tempo lavorativo ancora necessario per completare l'attività: Duration - Actual Duration.
+- **Remaining Duration** — Il tempo lavorativo ancora necessario per completare l'attività: Duration − Actual Duration.
 
 Ad esempio, un'attività di 10 giorni al 40% di completamento ha una Actual Duration di 4 giorni e una Remaining Duration di 6 giorni.
 
 ### Lavoro
 
 - **Actual Work** — Lo sforzo totale (in ore) che le risorse hanno dedicato a un'attività. Quando **Updating task status updates resource status** è abilitato nelle impostazioni del progetto (impostazione predefinita), l'Actual Work viene aggiornato proporzionalmente quando modifichi la % di completamento.
-- **Remaining Work** — Lo sforzo ancora necessario per completare l'attività: Work - Actual Work.
+- **Remaining Work** — Lo sforzo ancora necessario per completare l'attività: Work − Actual Work.
 
 ### Costo
 
@@ -26,7 +26,7 @@ Ad esempio, un'attività di 10 giorni al 40% di completamento ha una Actual Dura
   - **Start** — L'intero costo viene riconosciuto quando viene impostata l'Actual Start.
   - **Prorated** — Il costo viene riconosciuto proporzionalmente in base all'avanzamento effettivo del lavoro.
   - **End** — Il costo viene riconosciuto solo quando l'attività raggiunge il 100% di completamento.
-- **Remaining Cost** — Il budget ancora necessario per completare l'attività: Total Cost - Actual Cost.
+- **Remaining Cost** — Il budget ancora necessario per completare l'attività: Total Cost − Actual Cost.
 
 ### Date
 

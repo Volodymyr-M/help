@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -208,7 +228,31 @@
 <li>Festlegen, welcher Basisplan für <a href="/de/tracking/earned-value/#earned-value-management">Earned-Value</a>-Berechnungen verwendet wird</li>
 </ul>
 <h2 id="basisplan-und-abweichungsspalten">Basisplan- und Abweichungsspalten <a href="#basisplan-und-abweichungsspalten" class="heading-anchor">#</a></h2>
-<p>Sie können Basisplan-Spalten (<strong>Anfang</strong>, <strong>Ende</strong>, <strong>Dauer</strong>, <strong>Arbeit</strong>, <strong>Kosten</strong>) und Abweichungsspalten (<strong>Anfangsabweichung</strong>, <strong>Endabweichung</strong> usw.) über den Dialog <strong>Optionen</strong> zur Vorgangsliste hinzufügen. Abweichungsspalten zeigen die Differenz zwischen dem aktuellen Terminplan und dem <a href="/de/tracking/earned-value/#earned-value-basisplan">Earned-Value-Basisplan</a>.</p>
+<p>Sie können Basisplan- und Abweichungsspalten über den Dialog <strong>Optionen</strong> zur Vorgangsliste hinzufügen. Insgesamt gibt es <strong>55 Basisplanspalten</strong> und <strong>5 Abweichungsspalten</strong>.</p>
+<h3 id="die-55-basisplanspalten">Die 55 Basisplanspalten <a href="#die-55-basisplanspalten" class="heading-anchor">#</a></h3>
+<p>Ingantt speichert <strong>11 Basispläne</strong>: den unnummerierten <strong>Basisplan</strong> sowie <strong>Basisplan 1</strong> bis <strong>Basisplan 10</strong>. Jeder stellt dieselben fünf Vorgangsspalten bereit:</p>
+<ul>
+<li>Geplanter Anfang</li>
+<li>Geplantes Ende</li>
+<li>Geplante Dauer</li>
+<li>Geplante Arbeit</li>
+<li>Geplante Kosten</li>
+</ul>
+<p>11 Basispläne × 5 Felder = <strong>55 Basisplanspalten</strong>, alle über die Spaltenauswahl in der Vorgangstabelle verfügbar. Der unnummerierte Satz ist schlicht benannt (<em>Geplanter Anfang</em>); die nummerierten tragen ihre Nummer (<em>Basisplan 3 Anfang</em>).</p>
+<h3 id="die-5-abweichungsspalten">Die 5 Abweichungsspalten <a href="#die-5-abweichungsspalten" class="heading-anchor">#</a></h3>
+<p>Abweichungsspalten werden berechnet — aktueller Terminplan minus Basisplan — und es gibt fünf davon:</p>
+<ul>
+<li>Anfangsabweichung</li>
+<li>Endabweichung</li>
+<li>Dauerabweichung</li>
+<li>Arbeitsabweichung</li>
+<li>Kostenabweichung</li>
+</ul>
+<p>Es gibt einen Satz von fünf, nicht einen Satz pro Basisplan. Sie vergleichen den aktuellen Terminplan mit <strong>einem</strong> Basisplan — demjenigen, der unter <strong>Projekt → Earned-Value-Optionen</strong> als <a href="/de/tracking/earned-value/#earned-value-basisplan">Earned-Value-Basisplan</a> ausgewählt ist; standardmäßig ist das der unnummerierte Basisplan. Ändern Sie diese Einstellung, werden alle Abweichungsspalten gegen den gewählten Basisplan neu berechnet. Ein Vorgang, dessen gewählter Basisplan nie festgelegt wurde, zeigt eine leere Abweichung statt einer Null.</p>
+<h2 id="wo-basispläne-gespeichert-werden">Wo Basispläne gespeichert werden <a href="#wo-basispläne-gespeichert-werden" class="heading-anchor">#</a></h2>
+<p>Basispläne werden <strong>in der Projektdatei</strong> gespeichert, nicht in einer separaten Datei. Mit dem Speichern des Projekts werden auch seine Basispläne gespeichert.</p>
+<p>Wenn Sie versuchen, einen zwölften Basisplan festzulegen, meldet Ingantt <em>Alle Basisplan-Plätze sind belegt. Löschen Sie zuerst einen im Dialog „Basispläne“.</em> Öffnen Sie <strong>Projekt → Basispläne</strong> und löschen Sie einen.</p>
+<p>Basispläne sind nicht dasselbe wie der <a href="/de/ui/version-history/">Versionsverlauf</a>, der die Datei selbst im Zeitverlauf aufzeichnet. Verwenden Sie den Versionsverlauf, um zu einem früheren Plan zurückzukehren; verwenden Sie Basispläne, um zu messen, wie weit der aktuelle Plan abgewichen ist.</p>
 <h2 id="zwischenpläne">Zwischenpläne <a href="#zwischenpläne" class="heading-anchor">#</a></h2>
 <p>Zwischenpläne speichern leichtgewichtige Terminplan-Schnappschüsse (nur <strong>Anfangs-</strong> und <strong>Enddatum</strong>) für einen schnellen Vergleich ohne den Aufwand vollständiger Basispläne. Ingantt unterstützt bis zu 10 Zwischenpläne (<code>Zwischenplan 1</code> bis <code>Zwischenplan 10</code>).</p>
 <p>Legen Sie Zwischenpläne über den Eintrag <strong>Zwischenpläne</strong> im Menü <strong>Projekt</strong> fest und löschen Sie sie dort. Sie können Zwischenplandaten als Spalten in der Vorgangsliste anzeigen.</p>

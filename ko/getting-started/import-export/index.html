@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/" class="active" aria-current="page">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -207,12 +227,15 @@
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
 <li><strong>Ingantt YAML</strong> — YAML, YML</li>
-<li>기타 (SDEF 및 기타 형식)</li>
+<li>그 외 형식(SDEF 등)</li>
 </ul>
 <p>파일을 가져오려면 프로젝트 화면에서 <strong>+</strong> 버튼을 클릭하거나 <strong>File</strong> 메뉴의 <strong>Import</strong> 옵션을 사용하십시오. 가져온 파일을 변경하면 Ingantt는 XML 형식으로 저장합니다.</p>
 <blockquote>
 <p>비 XML 프로젝트 파일을 열기 위해 Ingantt는 보안 연결을 통해 Ingantt 웹 서비스로 파일을 전송하여 변환합니다. 파일은 서비스에 저장되지 않습니다. 인터넷 연결이 필요합니다. YAML 파일은 로컬에서 처리됩니다.</p>
 </blockquote>
+<h3 id="파일-크기">파일 크기 <a href="#파일-크기" class="heading-anchor">#</a></h3>
+<p>서버에서 변환하는 파일은 <strong>30 MB</strong>로 제한됩니다. MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP, PEP가 여기에 해당합니다. XML과 YAML 파일은 앱 안에서 처리되며 업로드되지 않으므로 서버 제한이 적용되지 않습니다.</p>
+<p><strong>파일이 너무 큽니까?</strong> Microsoft Project에서 <strong>File → Save As</strong>를 사용하여 <strong>Project XML (.xml)</strong>을 선택하십시오. Ingantt는 XML을 앱 안에서 처리하므로 30 MB 서버 제한이 적용되지 않으며, 내보낸 파일에는 작업 구조, 종속성, 자원이 그대로 유지됩니다.</p>
 <h2 id="프로젝트-내보내기">프로젝트 내보내기 <a href="#프로젝트-내보내기" class="heading-anchor">#</a></h2>
 <p>Ingantt는 <strong>File</strong> 메뉴(또는 웹에서 <strong>Download</strong>)의 <strong>Export</strong> 옵션을 통해 여러 내보내기 형식을 제공합니다. <strong>Export</strong>를 선택하면 원하는 형식을 선택할 수 있는 대화 상자가 나타납니다:</p>
 <table>
@@ -255,7 +278,7 @@
 </blockquote>
 <h2 id="ai-에이전트로-yaml-편집하기">AI 에이전트로 YAML 편집하기 <a href="#ai-에이전트로-yaml-편집하기" class="heading-anchor">#</a></h2>
 <p>YAML 내보내기는 AI 코딩 도우미(Claude Code, Codex 또는 파일을 읽고 쓸 수 있는 모든 도구)로 편집할 수 있도록 설계되었습니다. 프로젝트를 내보내고, 원하는 변경 사항을 자연어로 설명한 다음 — <em>&quot;개발 후 2주간의 QA 단계를 추가해 줘&quot;</em>, <em>&quot;Alex를 모든 디자인 작업에 배정해 줘&quot;</em> — 결과를 다시 가져옵니다.</p>
-<p>이 형식은 <strong>입력만</strong> (기간, 종속성, 제약 조건, 배정, 달력, 요율) 담고 있습니다. 파생된 값 — 작업 시작/종료 날짜, 총 비용, 임계 경로, 여유 시간, 요약 집계 — 은 의도적으로 생략되어 있으며, Ingantt가 가져오기 시 이를 다시 계산합니다. 에이전트는 날짜를 스스로 계산하려고 해서는 안 됩니다.</p>
+<p>이 형식은 <strong>입력만</strong>(기간, 종속성, 제약 조건, 배정, 달력, 단가) 담고 있습니다. 파생된 값 — 작업 시작/종료 날짜, 총 비용, 주공정경로, 여유, 요약 작업 롤업 — 은 의도적으로 생략되어 있으며, Ingantt가 가져오기 시 이를 다시 계산합니다. 에이전트는 날짜를 스스로 계산하려고 해서는 안 됩니다.</p>
 <p>에이전트가 스키마를 알 수 있도록 <a href="/yaml-reference.md">YAML 형식 참조</a>로 안내하십시오.</p>
 <blockquote>
 <p>내보내기/가져오기 왕복 없이 실시간으로 편집하려면 <a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a>를 참조하십시오 — AI는 실시간 세션을 통해 동일한 YAML 스키마를 읽고 쓰며, 각 변경 사항이 발생하는 즉시 Gantt 차트에 나타나는 것을 볼 수 있습니다.</p>

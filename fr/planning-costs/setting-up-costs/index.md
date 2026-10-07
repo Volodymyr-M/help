@@ -10,13 +10,13 @@ Vous pouvez définir un coût pour la tâche indépendamment de ses ressources e
 
 ## Coût des ressources de travail
 
-Les ressources de type **Work** sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir [Heures par jour, jours par semaine, jours par mois](/fr/setting-up-project/project/index.md#hours-per-day-days-per-week-days-per-month)).
+Les ressources de type **Work** sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir [Heures par jour, jours par semaine, jours par mois](/fr/setting-up-project/project/index.md#heures-par-jour-jours-par-semaine-jours-par-mois)).
 
 Par exemple, lorsque vous affectez une ressource de travail avec un **Standard Rate** de 100 $ par heure à une tâche d'une **Duration** de 5 heures, 500 $ sont ajoutés au **Cost** de la tâche.
 
 Les ressources de travail prennent également en charge un **Overtime Rate** pour le travail effectué en dehors des heures normales du calendrier. Le coût total est calculé ainsi :
 
-> **Cost = Travail normal × Standard Rate + Travail en heures supplémentaires × Overtime Rate + Cost Per Use**
+> **Coût = Travail normal × Taux standard + Heures supplémentaires × Taux des heures supplémentaires + Coût par utilisation**
 
 Lorsqu'une ressource de travail est affectée à une tâche, vous pouvez spécifier la valeur **Units** comme un nombre différent de la valeur par défaut. Cela impacte le calcul des coûts. Par exemple, si **Units** est de 50 %, le coût calculé pour la ressource dans la tâche est la moitié de ce qu'il serait avec 100 % d'unités.
 

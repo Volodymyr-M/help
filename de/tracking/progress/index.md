@@ -4,7 +4,7 @@ Sobald die Arbeit beginnt, aktualisieren Sie **% Abgeschlossen** für jeden Vorg
 
 ## % Abgeschlossen
 
-Sobald Ihr Projekt läuft, müssen Sie seinen Fortschritt verfolgen. Wenn Sie **% Abgeschlossen** für jeden Vorgang aktuell halten, können Sie den gesamten **% Abgeschlossen** des Projekts in seinem Projektsammelvorgang sehen.
+Sobald Ihr Projekt läuft, müssen Sie seinen Fortschritt verfolgen. Wenn Sie **% Abgeschlossen** für jeden Vorgang aktuell halten, können Sie den Gesamtwert **% Abgeschlossen** des Projekts in seinem Projektsammelvorgang sehen.
 
 Verwenden Sie das Feld **% Abgeschlossen** im Dialog **Vorgangseigenschaften**, um den Fertigstellungsgrad eines bestimmten Vorgangs festzulegen. Vorgänge, die zu 100 % abgeschlossen sind, zeigen ein grünes Häkchen in der Vorgangsliste an.
 
@@ -17,7 +17,7 @@ Wenn Sie % Abgeschlossen aktualisieren:
 
 Der **% Abgeschlossen** eines Sammelvorgangs wird als dauergewichteter Durchschnitt aller seiner untergeordneten Nicht-Sammelvorgänge berechnet.
 
-> Sie können den Fortschritt auch mit dem Befehl [Projekt aktualisieren](#projekt-aktualisieren) verfolgen, um % Abgeschlossen für mehrere Vorgänge gleichzeitig basierend auf einem Stichtag festzulegen.
+> Sie können den Fortschritt auch mit dem Befehl [Projekt aktualisieren](#projekt-aktualisieren) verfolgen, um % Abgeschlossen für mehrere Vorgänge gleichzeitig bis zu einem angegebenen Datum festzulegen.
 
 ## Projekt aktualisieren
 
@@ -27,8 +27,8 @@ Der Befehl **Projekt aktualisieren** bietet Massenoperationen zur Fortschrittsve
 
 Markieren Sie Vorgänge als abgeschlossen bis zu einem bestimmten Datum:
 
-- **Proportional (0 %–100 %)** — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem Stichtag liegt.
-- **Alles oder nichts (0 % oder 100 %)** — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum Stichtag abgeschlossen sind.
+- **Proportional (0 %–100 %)** — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem angegebenen Datum liegt.
+- **Alles oder nichts (0 % oder 100 %)** — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum angegebenen Datum abgeschlossen sind.
 
 ### Nicht abgeschlossene Arbeit umplanen
 

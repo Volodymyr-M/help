@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Збереження проекту - Початок роботи - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Збереження проекту в локальний файл або Google Drive, як працює автозбереження на кожній платформі, чому веб-версія не може автоматично зберігати локальні файли, та робота офлайн.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/getting-started/saving/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Збереження проекту">
+  <meta property="og:description" content="Збереження проекту в локальний файл або Google Drive, як працює автозбереження на кожній платформі, чому веб-версія не може автоматично зберігати локальні файли, та робота офлайн.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/getting-started/saving/">
+  <meta property="og:site_name" content="Довідка Ingantt">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Збереження проекту">
+  <meta name="twitter:description" content="Збереження проекту в локальний файл або Google Drive, як працює автозбереження на кожній платформі, чому веб-версія не може автоматично зберігати локальні файли, та робота офлайн.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/saving/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/saving/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/saving/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/saving/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/saving/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/saving/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/saving/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/saving/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/" class="active" aria-current="page">Збереження проекту</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Зв'язатися з підтримкою</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="збереження-проекту">Збереження проекту <a href="#збереження-проекту" class="heading-anchor">#</a></h1>
+<p>Ingantt зберігає ваш проект або як файл на вашому пристрої, або як файл у вашому Google Drive. Далі автозбереження підтримує цей файл в актуальному стані, поки ви працюєте. У цій статті пояснюється, яке місце призначення ви отримуєте, коли діє автозбереження та єдиний випадок, коли воно неможливе.</p>
+<h2 id="перше-збереження">Перше збереження <a href="#перше-збереження" class="heading-anchor">#</a></h2>
+<p>Натисніть кнопку <strong>Зберегти</strong> на панелі інструментів або скористайтеся пунктом <strong>Зберегти файл</strong> у меню <strong>Файл</strong>.</p>
+<p>Якщо проект ще ніколи не зберігався, Ingantt запитує, куди його зберегти. Діалог <strong>Зберегти проект як</strong> пропонує два місця призначення:</p>
+<ul>
+<li><strong>Зберегти в новий локальний файл</strong> — файл на вашому пристрої.</li>
+<li><strong>Зберегти в новий файл Google Drive</strong> — файл у вашому Google Drive. Потребує входу через Google.</li>
+</ul>
+<p>Пізніше ви можете змінити місце призначення за допомогою пункту <strong>Зберегти файл як</strong> у меню <strong>Файл</strong>, який завжди створює новий файл і продовжує роботу в ньому.</p>
+<p>Ваш проект зберігається у форматі XML, повністю сумісному з Microsoft Project. Ніщо у вашому плані не прив'язане до Ingantt.</p>
+<blockquote>
+<p>У веб-версії, якщо ви вже увійшли в Google на момент створення проекту, Ingantt сам обирає Google Drive і називає файл за назвою проекту. Вам не потрібно зберігати проект один раз, щоб запрацювало автозбереження, а перейменування проекту перейменовує файл у Drive.</p>
+</blockquote>
+<h2 id="автозбереження">Автозбереження <a href="#автозбереження" class="heading-anchor">#</a></h2>
+<p>Коли автозбереження ввімкнено, Ingantt записує кожну зміну в наявний файл проекту у фоновому режимі, приблизно кожні 20 секунд, і лише тоді, коли є щось незбережене. Воно завжди записує в те місце призначення, яке проект уже має, і ніколи не обирає нове.</p>
+<p>Чи ввімкнене воно за замовчуванням, залежить від платформи:</p>
+<table>
+<thead>
+<tr>
+<th>Платформа</th>
+<th>Автозбереження за замовчуванням</th>
+<th>Де змінити</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>Увімкнено</td>
+<td>Меню <strong>Файл</strong> → <strong>Працювати офлайн (без автозбереження)</strong></td>
+</tr>
+<tr>
+<td><strong>Android, iOS, Windows, macOS</strong></td>
+<td>Вимкнено</td>
+<td><strong>Увімкнути автозбереження</strong> в діалозі <strong>Параметри</strong> або в меню <strong>Файл</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Кнопка <strong>Зберегти</strong> одночасно є індикатором автозбереження. Вона показує <em>Збереження…</em>, <em>Файл збережено</em>, <em>Файл збережено в Google Drive</em>, <em>Очікується автозбереження…</em> або помилку, якщо збереження не вдалося.</p>
+<p>Автозбереження не допоможе у двох ситуаціях:</p>
+<ul>
+<li><strong>Проект ще ніколи не зберігався.</strong> Файлу для оновлення ще немає, тож збережіть його один раз самостійно.</li>
+<li><strong>Проект відкрито з локального файлу, поки ви використовуєте Ingantt у браузері.</strong> Див. нижче.</li>
+</ul>
+<h2 id="автозбереження-та-локальні-файли-у-веб-версії">Автозбереження та локальні файли у веб-версії <a href="#автозбереження-та-локальні-файли-у-веб-версії" class="heading-anchor">#</a></h2>
+<p>Браузер не може записувати назад у файл, який ви вибрали на своєму диску. Коли Ingantt для Web зберігає «в локальний файл», він натомість завантажує нову копію файлу — це правильна поведінка для явного натискання <strong>Зберегти</strong>, але не те, що ви хотіли б бачити кожні 20 секунд.</p>
+<p>Отже: <strong>Ingantt для Web не виконує автозбереження в локальні файли.</strong> Якщо ви відкрили локальний файл проекту в браузері та хочете, щоб ваші зміни зберігалися автоматично, один раз скористайтеся <strong>Зберегти файл як</strong> → <strong>Зберегти в новий файл Google Drive</strong>. Відтоді автозбереження підтримуватиме файл у Drive в актуальному стані.</p>
+<p>Це так само впливає на <a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a>: без автозбереження все, що змінює ШІ, залишається незбереженим, доки ви не збережете самостійно, і Ingantt попереджає вас про це перед початком сесії.</p>
+<h2 id="робота-офлайн-у-веб-версії">Робота офлайн у веб-версії <a href="#робота-офлайн-у-веб-версії" class="heading-anchor">#</a></h2>
+<p>Пункт <strong>Працювати офлайн (без автозбереження)</strong> у меню <strong>Файл</strong> вимикає автозбереження для поточної вкладки браузера. Використовуйте його, коли хочете продовжити редагування, не надсилаючи кожну зміну в Google Drive.</p>
+<p>Дві речі, які варто про нього знати:</p>
+<ul>
+<li>Поки він увімкнений, нічого не зберігається, тож збережіть вручну перед закриттям вкладки. Ingantt нагадує про це, коли ви його вмикаєте.</li>
+<li>Налаштування діє в межах сесії. Після перезавантаження сторінки або відкриття нової вкладки автозбереження знову ввімкнене. На Android, iOS, Windows та macOS натомість запам'ятовується налаштування <strong>Увімкнути автозбереження</strong>.</li>
+</ul>
+<h2 id="завантаження-копії">Завантаження копії <a href="#завантаження-копії" class="heading-anchor">#</a></h2>
+<p>У веб-версії <strong>Файл</strong> → <strong>Завантажити</strong> → <strong>Завантажити XML</strong> зберігає копію проекту на ваш комп'ютер, не змінюючи місце, де зберігається сам проект. Використовуйте це для резервної копії або щоб передати файл користувачеві Microsoft Project.</p>
+<p>Інші формати — PDF, PNG, CSV, XML, YAML та Markdown — описані в розділі <a href="/uk/getting-started/import-export/">Імпорт та експорт</a>.</p>
+<h2 id="закриття-з-незбереженими-змінами">Закриття з незбереженими змінами <a href="#закриття-з-незбереженими-змінами" class="heading-anchor">#</a></h2>
+<p>Якщо ви закриваєте проект із незбереженими змінами, Ingantt запитує <strong>Зберегти зміни</strong> у вашому проекті та попереджає, що незбережені зміни буде втрачено. Той самий запит з'являється перед переміщенням проекту в Кошик.</p>
+<h2 id="якщо-ingantt-не-дозволяє-зберегти">Якщо Ingantt не дозволяє зберегти <a href="#якщо-ingantt-не-дозволяє-зберегти" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>«Режим лише для перегляду, оскільки пробний період закінчився»</strong> або <strong>«Підписка неактивна»</strong> — ваші проекти на місці та доступні для перегляду, але збереження вимкнене, доки ваша підписка не стане активною. Див. <a href="/uk/account/trial/">Безкоштовний пробний період</a> та <a href="/uk/account/subscription/">Підписки та оплата</a>.</li>
+<li><strong>«Ви читач і не можете зберігати»</strong> — файл Google Drive надано вам як читачу або коментатору. Попросіть у власника доступ на редагування або скористайтеся <strong>Зберегти файл як</strong>, щоб зберегти власну копію. Див. <a href="/uk/ui/sharing/">Спільний доступ до проекту</a>.</li>
+<li><strong>«Помилка збереження файлу в Google Drive»</strong> — зазвичай проблема зі з'єднанням або прострочений вхід у Google. Перевірте з'єднання та увійдіть знову; див. <a href="/uk/ui/files/">Інтеграція з Google Drive</a>.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

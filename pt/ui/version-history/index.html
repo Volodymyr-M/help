@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Histórico de Versões - Interface do Usuário - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Navegue pelo histórico completo de um plano armazenado no Google Drive, visualize qualquer versão anterior no gráfico de Gantt, fixe as que importam e restaure uma como plano atual.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/ui/version-history/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Histórico de Versões">
+  <meta property="og:description" content="Navegue pelo histórico completo de um plano armazenado no Google Drive, visualize qualquer versão anterior no gráfico de Gantt, fixe as que importam e restaure uma como plano atual.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/ui/version-history/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Histórico de Versões">
+  <meta name="twitter:description" content="Navegue pelo histórico completo de um plano armazenado no Google Drive, visualize qualquer versão anterior no gráfico de Gantt, fixe as que importam e restaure uma como plano atual.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/version-history/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/version-history/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/version-history/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/version-history/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/version-history/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/version-history/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/version-history/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/version-history/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/" class="active" aria-current="page">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contatar o suporte</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="histórico-de-versões">Histórico de Versões <a href="#histórico-de-versões" class="heading-anchor">#</a></h1>
+<p>O Ingantt mantém o histórico completo de todos os planos armazenados no Google Drive. Você pode navegar por ele, pré-visualizar qualquer versão anterior no gráfico de Gantt, fixar as que importam e restaurar uma como o plano atual.</p>
+<p><strong>O projeto precisa estar aberto a partir do Google Drive.</strong> O histórico de versões é o histórico de revisões do Google Drive, então os dois itens de menu de histórico de versões ficam ocultos para um projeto aberto do seu dispositivo ou que nunca foi salvo. Salve-o no <a href="/pt/ui/files/">Drive</a> e eles aparecem.</p>
+<h2 id="abrindo-o-histórico-de-versões">Abrindo o Histórico de Versões <a href="#abrindo-o-histórico-de-versões" class="heading-anchor">#</a></h2>
+<p>Escolha <strong>File → Version history → See version history</strong> ou pressione <code>Ctrl</code> + <code>Alt</code> + <code>Shift</code> + <code>H</code>.</p>
+<p>O painel é aberto na lateral e o Ingantt muda para tela cheia para que o gráfico tenha espaço. Fechar o painel coloca tudo de volta como estava.</p>
+<h2 id="navegando-e-pré-visualizando">Navegando e Pré-visualizando <a href="#navegando-e-pré-visualizando" class="heading-anchor">#</a></h2>
+<p>As versões são listadas da mais recente para a mais antiga e agrupadas por dia — <strong>Today</strong>, <strong>Yesterday</strong> e depois a data. A mais recente é identificada como <strong>Current version</strong> e é selecionada para você quando o painel é aberto.</p>
+<p>Clique em qualquer versão e o Ingantt a carrega no gráfico para que você possa examiná-la. A pré-visualização é apenas uma olhada, não uma edição:</p>
+<ul>
+<li>Seu plano aberto é guardado à parte, intacto, incluindo o histórico de desfazer e quaisquer alterações não salvas.</li>
+<li>Feche o painel e seu plano volta exatamente como você o deixou.</li>
+<li>Nada é gravado no Drive ao pré-visualizar.</li>
+</ul>
+<h2 id="fixando-uma-versão">Fixando uma Versão <a href="#fixando-uma-versão" class="heading-anchor">#</a></h2>
+<p>O Google Drive remove revisões antigas de um arquivo com o tempo. Fixar uma versão a marca como <strong>keep forever</strong>, de modo que ela sobrevive a essa limpeza e permanece na lista.</p>
+<p>Há duas maneiras de fixar:</p>
+<ul>
+<li><strong>File → Version history → Pin current version</strong> fixa a versão mais recente sem abrir o painel. Use-o logo após um salvamento que você quer preservar — antes de um replanejamento, ao final de uma fase ou quando um plano é aprovado.</li>
+<li>No painel, abra o menu de qualquer versão e escolha <strong>Pin this version</strong>.</li>
+</ul>
+<p>As versões fixadas são marcadas como <strong>Pinned</strong> na lista. Escolher o mesmo item de menu novamente desafixa.</p>
+<h2 id="restaurando-uma-versão">Restaurando uma Versão <a href="#restaurando-uma-versão" class="heading-anchor">#</a></h2>
+<p>Selecione a versão desejada e escolha <strong>Restore this version</strong>. O Ingantt pede confirmação:</p>
+<blockquote>
+<p>Restore this version? Your current version will be saved first.</p>
+</blockquote>
+<p>Restaurar não descarta seu plano atual. Ele salva o conteúdo restaurado como uma <strong>nova</strong> versão no topo do histórico, então a versão em que você estava continua na lista e também pode ser restaurada. O histórico só cresce — restaurar nunca exclui nada.</p>
+<p>Após a confirmação, o plano restaurado se torna o projeto aberto e é salvo no Drive imediatamente.</p>
+<h2 id="histórico-de-versões-não-é-o-mesmo-que-linhas-de-base">Histórico de Versões Não É o Mesmo que Linhas de Base <a href="#histórico-de-versões-não-é-o-mesmo-que-linhas-de-base" class="heading-anchor">#</a></h2>
+<p>Os dois são fáceis de confundir:</p>
+<ul>
+<li><strong>Histórico de versões</strong> é um registro do <em>arquivo</em> ao longo do tempo, mantido pelo Google Drive. Ele responde &quot;como estava este plano na terça-feira passada?&quot;</li>
+<li><strong><a href="/pt/tracking/baselines/">Linhas de base</a></strong> são instantâneos do <em>cronograma</em> armazenados dentro do plano, com os quais você compara na mesma visualização — barras de linha de base no gráfico de Gantt, colunas de linha de base e variação na tabela. Elas respondem &quot;quanto nos desviamos do plano aprovado?&quot;</li>
+</ul>
+<p>Use o histórico de versões para voltar atrás. Use as linhas de base para medir.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

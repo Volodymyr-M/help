@@ -7,7 +7,7 @@ L'opzione **Filter** nel menu **View** ti permette di filtrare quali attività v
 Le opzioni di filtro includono:
 
 - **Hide complete tasks** — Nasconde le attività completate al 100%
-- **Hide non-critical tasks** — Mostra solo le attività sul percorso critico (e le attività di riepilogo antenate)
+- **Hide non-critical tasks** — Mostra solo le attività sul percorso critico (e le attività di riepilogo che le contengono)
 - **Filter by resource** — Mostra solo le attività assegnate a risorse specifiche
 
 Per applicare un filtro:

@@ -8,7 +8,7 @@ O custo de cada tarefa é uma combinação do seu próprio custo fixo e dos cust
 
 *O **Cost** da tarefa = **Fixed Cost** da tarefa + custos dos recursos atribuídos à tarefa*
 
-> Se você não vê a coluna **Cost** na lista de tarefas, certifique-se de que a flag **Cost Column** esteja marcada na aba **Task Columns** da caixa de diálogo **Options**.
+> Se você não vê a coluna **Cost** na lista de tarefas, certifique-se de que a opção **Cost Column** esteja marcada na aba **Task Columns** da caixa de diálogo **Options**.
 
 ## Custos de Tarefas Resumo
 

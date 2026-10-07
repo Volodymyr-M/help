@@ -1,6 +1,6 @@
 # Seguimiento del progreso
 
-Una vez que el trabajo comienza, actualice el **% completado** en cada tarea para rastrear cómo el progreso real se compara con el plan. Use **Actualizar proyecto** para establecer el progreso en masa. A medida que se registra el progreso, Ingantt calcula automáticamente los [valores reales](/es/tracking/actuals/index.md) — valores reales y restantes de duración, trabajo, costo y fechas.
+Una vez que el trabajo comienza, actualice el **% completado** en cada tarea para hacer seguimiento de cómo el progreso real se compara con el plan. Use **Actualizar proyecto** para establecer el progreso de forma masiva. A medida que se registra el progreso, Ingantt calcula automáticamente los [valores reales](/es/tracking/actuals/index.md) — valores reales y restantes de duración, trabajo, costo y fechas.
 
 ## % completado
 
@@ -21,7 +21,7 @@ El **% completado** de una tarea de resumen se calcula como un promedio ponderad
 
 ## Actualizar proyecto
 
-El comando **Actualizar proyecto** proporciona operaciones de seguimiento de progreso en masa, accesible desde el menú **Proyecto**.
+El comando **Actualizar proyecto** proporciona operaciones masivas de seguimiento del progreso, accesible desde el menú **Proyecto**.
 
 ### Actualizar trabajo como completado
 

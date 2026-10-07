@@ -32,7 +32,7 @@ La **Calendar View** mostra una griglia calendario mensile con le attività visu
 
 - Passa tra le viste **Month** e **Week** usando il pulsante nell'intestazione
 - Abilita la modalità **Work week** per mostrare solo i giorni lavorativi (vista a 5 giorni)
-- Naviga con i pulsanti Precedente/Successivo o vai direttamente a oggi
+- Naviga con i pulsanti Previous/Next o vai direttamente a oggi
 - I giorni non lavorativi sono mostrati con uno sfondo distinto
 - Le milestone appaiono come icone a forma di diamante
 - Fai doppio clic su un giorno vuoto per creare una nuova attività di 1 giorno in quella data

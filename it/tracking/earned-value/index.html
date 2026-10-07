@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -201,7 +221,7 @@
 <ol>
 <li>Crea una <a href="/it/tracking/baselines/#impostare-una-baseline">baseline</a> per catturare il cronogramma pianificato e i costi.</li>
 <li>Imposta la <strong>Status Date</strong> nella finestra <strong>Earned Value Options</strong> (accessibile dal menu <strong>Project</strong>) o lascia che utilizzi la data corrente per impostazione predefinita.</li>
-<li>Aggiorna i valori di <a href="/it/tracking/progress/#-di-completamento">% Complete</a> delle attività man mano che il lavoro avanza.</li>
+<li>Aggiorna i valori di <a href="/it/tracking/progress/#-di-completamento">% di completamento</a> delle attività man mano che il lavoro avanza.</li>
 </ol>
 <h3 id="metriche-evm-disponibili">Metriche EVM disponibili <a href="#metriche-evm-disponibili" class="heading-anchor">#</a></h3>
 <p>Le seguenti colonne EVM possono essere aggiunte all'elenco delle attività tramite la finestra <strong>Options</strong>:</p>
@@ -259,11 +279,11 @@
 </tr>
 <tr>
 <td><strong>SV%</strong></td>
-<td>Percentuale di Schedule Variance</td>
+<td>Schedule Variance (percentuale)</td>
 </tr>
 <tr>
 <td><strong>CV%</strong></td>
-<td>Percentuale di Cost Variance</td>
+<td>Cost Variance (percentuale)</td>
 </tr>
 </tbody>
 </table>
@@ -275,7 +295,7 @@
 </ul>
 <p>Imposta il metodo per le singole attività nella scheda <strong>Cost and EV</strong> della finestra <strong>Task Properties</strong>. Modifica il metodo predefinito per le nuove attività nella finestra <strong>Earned Value Options</strong>.</p>
 <h3 id="baseline-earned-value">Baseline Earned Value <a href="#baseline-earned-value" class="heading-anchor">#</a></h3>
-<p>I calcoli EVM utilizzano una baseline specifica. Puoi scegliere quale baseline (<code>Baseline 0</code> fino a <code>Baseline 10</code>) viene utilizzata per l'Earned Value nella finestra <strong>Earned Value Options</strong>. L'impostazione predefinita è <code>Baseline 0</code>.</p>
+<p>I calcoli EVM utilizzano una baseline specifica. Puoi scegliere quale baseline (da <code>Baseline 0</code> a <code>Baseline 10</code>) viene utilizzata per l'Earned Value nella finestra <strong>Earned Value Options</strong>. L'impostazione predefinita è <code>Baseline 0</code>.</p>
 
     </main>
     <aside class="toc" aria-label="Indice"></aside>

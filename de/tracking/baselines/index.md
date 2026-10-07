@@ -23,7 +23,39 @@ Um Basispläne zu verwalten, verwenden Sie den Eintrag **Basispläne** im Menü 
 
 ## Basisplan- und Abweichungsspalten
 
-Sie können Basisplan-Spalten (**Anfang**, **Ende**, **Dauer**, **Arbeit**, **Kosten**) und Abweichungsspalten (**Anfangsabweichung**, **Endabweichung** usw.) über den Dialog **Optionen** zur Vorgangsliste hinzufügen. Abweichungsspalten zeigen die Differenz zwischen dem aktuellen Terminplan und dem [Earned-Value-Basisplan](/de/tracking/earned-value/index.md#earned-value-basisplan).
+Sie können Basisplan- und Abweichungsspalten über den Dialog **Optionen** zur Vorgangsliste hinzufügen. Insgesamt gibt es **55 Basisplanspalten** und **5 Abweichungsspalten**.
+
+### Die 55 Basisplanspalten
+
+Ingantt speichert **11 Basispläne**: den unnummerierten **Basisplan** sowie **Basisplan 1** bis **Basisplan 10**. Jeder stellt dieselben fünf Vorgangsspalten bereit:
+
+- Geplanter Anfang
+- Geplantes Ende
+- Geplante Dauer
+- Geplante Arbeit
+- Geplante Kosten
+
+11 Basispläne × 5 Felder = **55 Basisplanspalten**, alle über die Spaltenauswahl in der Vorgangstabelle verfügbar. Der unnummerierte Satz ist schlicht benannt (*Geplanter Anfang*); die nummerierten tragen ihre Nummer (*Basisplan 3 Anfang*).
+
+### Die 5 Abweichungsspalten
+
+Abweichungsspalten werden berechnet — aktueller Terminplan minus Basisplan — und es gibt fünf davon:
+
+- Anfangsabweichung
+- Endabweichung
+- Dauerabweichung
+- Arbeitsabweichung
+- Kostenabweichung
+
+Es gibt einen Satz von fünf, nicht einen Satz pro Basisplan. Sie vergleichen den aktuellen Terminplan mit **einem** Basisplan — demjenigen, der unter **Projekt → Earned-Value-Optionen** als [Earned-Value-Basisplan](/de/tracking/earned-value/index.md#earned-value-basisplan) ausgewählt ist; standardmäßig ist das der unnummerierte Basisplan. Ändern Sie diese Einstellung, werden alle Abweichungsspalten gegen den gewählten Basisplan neu berechnet. Ein Vorgang, dessen gewählter Basisplan nie festgelegt wurde, zeigt eine leere Abweichung statt einer Null.
+
+## Wo Basispläne gespeichert werden
+
+Basispläne werden **in der Projektdatei** gespeichert, nicht in einer separaten Datei. Mit dem Speichern des Projekts werden auch seine Basispläne gespeichert.
+
+Wenn Sie versuchen, einen zwölften Basisplan festzulegen, meldet Ingantt *Alle Basisplan-Plätze sind belegt. Löschen Sie zuerst einen im Dialog „Basispläne“.* Öffnen Sie **Projekt → Basispläne** und löschen Sie einen.
+
+Basispläne sind nicht dasselbe wie der [Versionsverlauf](/de/ui/version-history/index.md), der die Datei selbst im Zeitverlauf aufzeichnet. Verwenden Sie den Versionsverlauf, um zu einem früheren Plan zurückzukehren; verwenden Sie Basispläne, um zu messen, wie weit der aktuelle Plan abgewichen ist.
 
 ## Zwischenpläne
 

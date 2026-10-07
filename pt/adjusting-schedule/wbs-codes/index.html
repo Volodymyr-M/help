@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Códigos WBS - Análise e Ajustes - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Substitua a numeração de estrutura padrão por uma máscara de código WBS personalizada — prefixo de código do projeto, sequência por nível, comprimento e separadores.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Códigos WBS">
+  <meta property="og:description" content="Substitua a numeração de estrutura padrão por uma máscara de código WBS personalizada — prefixo de código do projeto, sequência por nível, comprimento e separadores.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Códigos WBS">
+  <meta name="twitter:description" content="Substitua a numeração de estrutura padrão por uma máscara de código WBS personalizada — prefixo de código do projeto, sequência por nível, comprimento e separadores.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/" class="active" aria-current="page">Códigos WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contatar o suporte</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="códigos-wbs">Códigos WBS <a href="#códigos-wbs" class="heading-anchor">#</a></h1>
+<p>Cada tarefa tem um código <strong>WBS</strong> — seu endereço na estrutura de tópicos. Por padrão, é o simples número da estrutura: <code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>. Exiba-o ativando a coluna <strong>WBS</strong> na tabela de tarefas.</p>
+<p>Uma <strong>máscara de código WBS</strong> substitui esses números da estrutura por um código estruturado criado por você, de modo que as tarefas apareçam como <code>PROJ-A-01</code> ou <code>1.A.001</code> em vez de <code>1.1.1</code>. Organizações com um padrão de numeração — um contrato, um esquema de códigos de custo, o formato de relatório de um cliente — usam isso para fazer os códigos do Ingantt corresponderem a esse padrão.</p>
+<p>Abra <strong>Project → WBS Code Definition</strong> para configurar uma.</p>
+<h2 id="códigos-wbs-e-códigos-de-estrutura-são-diferentes">Códigos WBS e Códigos de Estrutura São Diferentes <a href="#códigos-wbs-e-códigos-de-estrutura-são-diferentes" class="heading-anchor">#</a></h2>
+<ul>
+<li>Um <strong>código WBS</strong> é estrutural. Existe exatamente um por tarefa e ele é derivado da posição da tarefa na estrutura de tópicos. Ele se renumera quando você move tarefas de lugar.</li>
+<li>Um <strong><a href="/pt/adjusting-schedule/custom-fields/">código de estrutura</a></strong> é uma etiqueta. Você define uma lista de valores — departamento, fase, centro de custo — e atribui valores às tarefas independentemente da hierarquia. Uma tarefa pode ter vários, de vários códigos de estrutura.</li>
+</ul>
+<h2 id="definindo-a-máscara">Definindo a Máscara <a href="#definindo-a-máscara" class="heading-anchor">#</a></h2>
+<p>A caixa de diálogo tem três partes.</p>
+<h3 id="prefixo-de-código-do-projeto">Prefixo de Código do Projeto <a href="#prefixo-de-código-do-projeto" class="heading-anchor">#</a></h3>
+<p>Texto fixo colocado antes de todos os códigos do projeto. Com o prefixo <code>PROJ</code>, os códigos aparecem como <code>PROJ.1.1</code> ou <code>PROJ-A-01</code>, dependendo dos seus separadores. Deixe-o vazio para não usar prefixo.</p>
+<h3 id="máscara-de-código">Máscara de Código <a href="#máscara-de-código" class="heading-anchor">#</a></h3>
+<p>Uma linha por nível da estrutura, adicionada com <strong>Add Level</strong>. Cada linha define:</p>
+<table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>O que faz</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level</strong></td>
+<td>A profundidade da estrutura à qual esta linha se aplica. O nível 1 são as tarefas de nível superior, o nível 2 suas filhas, e assim por diante.</td>
+</tr>
+<tr>
+<td><strong>Sequence</strong></td>
+<td>Os caracteres usados neste nível: <strong>Numbers</strong> (1, 2, 3), <strong>Uppercase Letters</strong> (A, B, C … Z, AA), <strong>Lowercase Letters</strong> (a, b, c … z, aa) ou <strong>Characters</strong>.</td>
+</tr>
+<tr>
+<td><strong>Length</strong></td>
+<td>Número máximo de caracteres neste nível. Deixe-o vazio — ele mostra <em>Any</em> — para não haver limite.</td>
+</tr>
+<tr>
+<td><strong>Separator</strong></td>
+<td>O caractere entre este nível e o próximo, como <code>.</code> ou <code>-</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Vale a pena saber duas coisas sobre como os campos se comportam:</p>
+<ul>
+<li><strong>Length preenche os números com zeros à esquerda.</strong> Um comprimento de <code>3</code> em um nível Numbers transforma a nona tarefa em <code>009</code>. Ele não preenche níveis de letras.</li>
+<li><strong>Characters</strong> se comporta da mesma forma que Numbers para os códigos gerados pelo Ingantt. Ele existe por compatibilidade com o Microsoft Project, onde significa um nível digitado por você.</li>
+</ul>
+<p>Você não precisa definir todos os níveis. <strong>Níveis mais profundos que a última linha da sua máscara usam um número com separador <code>.</code></strong>, então uma máscara de três linhas em um plano com cinco níveis de profundidade ainda produz um código completo.</p>
+<h3 id="opções">Opções <a href="#opções" class="heading-anchor">#</a></h3>
+<p><strong>Generate WBS code for new task</strong> e <strong>Verify uniqueness of new WBS codes</strong> são armazenados com o projeto e preservados em uma ida e volta pelo Microsoft Project. No Ingantt, uma máscara com pelo menos um nível é aplicada a todas as tarefas automaticamente, e os códigos são únicos por construção, porque seguem a estrutura de tópicos.</p>
+<h2 id="o-que-acontece-quando-você-salva-a-máscara">O Que Acontece Quando Você Salva a Máscara <a href="#o-que-acontece-quando-você-salva-a-máscara" class="heading-anchor">#</a></h2>
+<p>O Ingantt renumera o projeto inteiro imediatamente. Os códigos são reconstruídos a partir da estrutura de tópicos sempre que a estrutura muda — quando você adiciona, exclui, recua, avança ou move uma tarefa — de modo que sempre descrevem onde a tarefa está agora.</p>
+<p>Vale dizer isso claramente: <strong>um código WBS não é um identificador permanente de uma tarefa.</strong> Mova uma tarefa e seu código muda. Se você precisa de um rótulo que acompanhe a tarefa, use um código de estrutura ou um <a href="/pt/adjusting-schedule/custom-fields/">campo de texto personalizado</a>.</p>
+<h2 id="importação-e-exportação">Importação e Exportação <a href="#importação-e-exportação" class="heading-anchor">#</a></h2>
+<p>A máscara faz parte do formato do Microsoft Project e sobrevive a uma ida e volta. Um projeto importado com uma máscara a mantém, é exportado com ela, e seus códigos de tarefa correspondem ao que o Microsoft Project produziu.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

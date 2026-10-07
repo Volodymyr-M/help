@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/" class="active" aria-current="page">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="вирівнювання-ресурсів">Вирівнювання ресурсів <a href="#вирівнювання-ресурсів" class="heading-anchor">#</a></h1>
-<p>Легко випадково призначити людині більше роботи, ніж вона може виконати за день. Вирівнювання автоматично зсуває завдання, щоб ніхто не був перевантажений, хоча це може подовжити дату завершення проекту.</p>
+<p>Легко випадково призначити людині більше роботи, ніж вона може виконати за день. Вирівнювання автоматично зсуває завдання, щоб ніхто не був перевантажений, хоча це може відсунути дату завершення проекту.</p>
 <h2 id="перевантажені-ресурси">Перевантажені ресурси <a href="#перевантажені-ресурси" class="heading-anchor">#</a></h2>
 <p>Робочий ресурс може бути <strong>перевантажений</strong>, тобто йому призначено більше роботи, ніж він може виконати відповідно до свого календаря та доступності. Наприклад, якщо у вашому проекті є два завдання, кожне тривалістю один день і без <a href="/uk/building-schedule/dependencies/#%D0%BF%D0%BE%D0%BF%D0%B5%D1%80%D0%B5%D0%B4%D0%BD%D0%B8%D0%BA%D0%B8-%D1%82%D0%B0-%D0%B7%D0%B0%D0%BB%D0%B5%D0%B6%D0%BD%D0%BE%D1%81%D1%82%D1%96">залежності</a> між ними, обидва призначені одному робочому ресурсу, цей ресурс перевантажений. Ресурс має виконати два дні роботи за один календарний день. Щоб вирішити це, просто зв'яжіть два завдання залежністю.</p>
 <p>Якщо на завдання призначені перевантажені ресурси, Ingantt показує спеціальну іконку у списку завдань.</p>
@@ -246,7 +266,7 @@
 </table>
 <p>Завдання з найнижчою оцінкою затримується для розв'язання кожного конфлікту. Процес повторюється, доки всі перевантаження не будуть розв'язані або подальші затримки неможливі.</p>
 <blockquote>
-<p>Автовирівнювання може подовжити дату завершення проекту. Воно розв'язує якомога більше перевантажень, але деякі можуть залишитися, якщо обмеження запобігають подальшим затримкам.</p>
+<p>Автовирівнювання може відсунути дату завершення проекту. Воно розв'язує якомога більше перевантажень, але деякі можуть залишитися, якщо обмеження запобігають подальшим затримкам.</p>
 </blockquote>
 <h3 id="параметри-вирівнювання">Параметри вирівнювання <a href="#параметри-вирівнювання" class="heading-anchor">#</a></h3>
 <p>Налаштуйте поведінку вирівнювання в діалозі <strong>Параметри вирівнювання</strong>, доступному з меню <strong>Проект</strong>:</p>
@@ -262,12 +282,12 @@
 <p>Наступні завдання та ресурси ніколи не піддаються автовирівнюванню:</p>
 <ul>
 <li>Завдання з <a href="#%D0%BF%D1%80%D1%96%D0%BE%D1%80%D0%B8%D1%82%D0%B5%D1%82">пріоритетом</a> <strong>1000</strong></li>
-<li>Завдання з параметром <strong>Дозволити вирівнювання</strong> встановленим на <strong>ні</strong> (на вкладці <strong>Вирівнювання</strong> діалогу «Властивості завдання»)</li>
-<li>Завдання з обмеженням <strong>Повинно початись</strong> або <strong>Повинно завершитись</strong> (<a href="/uk/building-schedule/constraints/#%D1%8F%D0%BA-%D0%BF%D1%80%D0%B0%D1%86%D1%8E%D1%8E%D1%82%D1%8C-%D0%BE%D0%B1%D0%BC%D0%B5%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F">обмеження</a>)</li>
+<li>Завдання, у яких параметр <strong>Дозволити вирівнювання</strong> встановлено на <strong>ні</strong> (на вкладці <strong>Вирівнювання</strong> діалогу «Властивості завдання»)</li>
+<li>Завдання з <a href="/uk/building-schedule/constraints/#%D0%BE%D0%B1%D0%BC%D0%B5%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F">обмеженням</a> <strong>Повинно початись</strong> або <strong>Повинно завершитись</strong></li>
 <li><a href="/uk/building-schedule/tasks/#%D1%81%D1%83%D0%BC%D0%B0%D1%80%D0%BD%D1%96-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F">Сумарні завдання</a></li>
 <li>Віхи з нульовою тривалістю</li>
 <li>Повністю завершені завдання (100%)</li>
-<li>Ресурси з параметром <strong>Дозволити вирівнювання</strong> встановленим на <strong>ні</strong> у діалозі «Властивості ресурсу»</li>
+<li>Ресурси, у яких параметр <strong>Дозволити вирівнювання</strong> встановлено на <strong>ні</strong> у діалозі «Властивості ресурсу»</li>
 <li>Ресурси із <strong>Запропонованим</strong> <a href="/uk/building-schedule/resources/#%D1%82%D0%B8%D0%BF-%D0%B1%D1%80%D0%BE%D0%BD%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">типом бронювання</a> (якщо не ввімкнено параметр вирівнювання для включення запропонованих ресурсів)</li>
 </ul>
 <h3 id="повторне-вирівнювання-та-очищення">Повторне вирівнювання та очищення <a href="#повторне-вирівнювання-та-очищення" class="heading-anchor">#</a></h3>

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -196,7 +216,7 @@
 <p>Les ressources peuvent être affectées à une tâche dans l'onglet <strong>Resources</strong> de la boîte de dialogue <strong>Task Properties</strong>.</p>
 <p>Pour affecter une ressource, cochez la case dans la ligne correspondant à la ressource. Pour retirer l'affectation d'une ressource, décochez la case.</p>
 <p>Les affectations de ressources de travail ou matérielles possèdent des <strong>Units</strong>, affichées dans la colonne correspondante. Cliquez sur le bouton <strong>Edit</strong> pour modifier la valeur par défaut des <strong>Units</strong> de l'affectation.</p>
-<p>Par défaut, les ressources de travail sont affectées avec des unités correspondant aux <a href="/fr/building-schedule/resources/#max-units">Max Units</a> de la ressource (100 % pour une ressource à temps plein). Cela signifie que la ressource consacrera la totalité de son temps calendaire disponible à la tâche. Vous pouvez modifier cette valeur à votre convenance.</p>
+<p>Par défaut, les ressources de travail sont affectées avec des unités correspondant aux <a href="/fr/building-schedule/resources/#unit%C3%A9s-maximales">unités maximales</a> de la ressource (100 % pour une ressource à temps plein). Cela signifie que la ressource consacrera la totalité de son temps calendaire disponible à la tâche. Vous pouvez modifier cette valeur à votre convenance.</p>
 <p>Par défaut, les ressources matérielles sont affectées avec 1 unité. Cela signifie qu'une unité de ce matériau sera utilisée lors de la réalisation de la tâche. L'unité représente ce que vous avez défini pour le matériau (boîte, litre, tonne, etc.). Vous pouvez modifier la valeur par défaut et définir n'importe quel nombre d'unités.</p>
 <h2 id="profils-de-charge-de-travail">Profils de charge de travail <a href="#profils-de-charge-de-travail" class="heading-anchor">#</a></h2>
 <p>Lorsqu'une ressource de travail est affectée à une tâche, l'effort (travail) est réparti sur la durée de la tâche selon un <strong>profil de charge de travail</strong>. Par défaut, le travail est réparti uniformément (profil Flat), mais Ingantt prend en charge plusieurs profils qui modifient la distribution de l'effort dans le temps :</p>
@@ -240,9 +260,20 @@
 <td><strong>Turtle</strong></td>
 <td>Courbe en cloche aplatie — distribution plus lissée</td>
 </tr>
+<tr>
+<td><strong>Contoured</strong></td>
+<td>Votre propre répartition jour par jour. Défini automatiquement lorsque vous modifiez le travail dans une vue d'utilisation ; il ne peut pas être choisi dans la liste déroulante.</td>
+</tr>
 </tbody>
 </table>
 <p>Les profils de charge de travail affectent la répartition du travail sur les différentes périodes et sont préservés lors de l'ouverture et de l'enregistrement des fichiers de projet.</p>
+<h3 id="le-profil-contoured">Le profil Contoured <a href="#le-profil-contoured" class="heading-anchor">#</a></h3>
+<p><strong>Contoured</strong> est le profil personnalisé, et il se comporte différemment des huit autres. Vous ne pouvez pas le choisir dans la liste déroulante pour une affectation qui ne l'a pas déjà — l'option est désactivée. Vous l'obtenez en <strong>modifiant directement le travail dans une cellule de la vue <a href="/fr/views/resource-views/">Resource Usage ou Task Usage</a></strong> : dès que vous saisissez une valeur de travail pour un jour, le profil de cette affectation devient <em>Contoured</em> et c'est la répartition que vous avez saisie qui est utilisée.</p>
+<p>Deux conséquences méritent d'être connues :</p>
+<ul>
+<li><strong>Quitter le profil Contoured efface la répartition saisie à la main.</strong> Choisissez l'un des huit autres profils et les valeurs journalières que vous aviez saisies sont effacées. Elles ne sont pas conservées ni restaurées si vous revenez à Contoured.</li>
+<li><strong>Le travail Contoured survit à un aller-retour avec le format Microsoft Project.</strong> L'import lit le travail chronologique jour par jour dans l'affectation, et l'export le réécrit. Un planning venant de Microsoft Project avec un profil modifié à la main le conserve.</li>
+</ul>
 <h2 id="délai-daffectation">Délai d'affectation <a href="#délai-daffectation" class="heading-anchor">#</a></h2>
 <p>Chaque affectation de ressource sur une tâche possède une propriété <strong>Delay</strong> qui décale le moment où la ressource commence à travailler par rapport à la date de début de la tâche. Par exemple, si une tâche commence le lundi et qu'une ressource a un délai de 2 jours, cette ressource commence à travailler le mercredi.</p>
 <p>Le délai est défini dans la boîte de dialogue <strong>Edit Resource Assignment</strong> et ne s'applique qu'aux affectations de ressources de travail. Il peut être utilisé pour échelonner les dates de début des ressources sur une tâche.</p>

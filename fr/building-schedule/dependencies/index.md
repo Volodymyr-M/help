@@ -15,7 +15,7 @@ Lorsque vous liez des tâches à l'aide du bouton **Link selected tasks** dans l
 
 ![Dependencies](/images/building-schedule/tasks/dependencies.png)
 
-Pour assigner des prédécesseurs et modifier les dépendances, utilisez l'onglet **Predecessors** de la boîte de dialogue **Task Properties**.
+Pour définir des prédécesseurs et modifier les dépendances, utilisez l'onglet **Predecessors** de la boîte de dialogue **Task Properties**.
 
 ## Décalage positif et négatif
 

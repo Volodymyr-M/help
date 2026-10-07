@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/" class="active" aria-current="page">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -193,7 +213,7 @@
       <h1 id="リソースの平準化">リソースの平準化 <a href="#リソースの平準化" class="heading-anchor">#</a></h1>
 <p>1日に処理しきれないほどの作業を誤って割り当ててしまうことは容易に起こります。平準化はタスクを自動的にシフトして、誰も過負荷にならないようにします。ただし、プロジェクトの終了日が延びる場合があります。</p>
 <h2 id="過負荷リソース">過負荷リソース <a href="#過負荷リソース" class="heading-anchor">#</a></h2>
-<p>稼働リソースは<strong>過負荷</strong>になることがあります。つまり、カレンダーと稼働状況に基づいて完了できる量を超える作業が割り当てられている状態です。たとえば、プロジェクトに2つのタスクがあり、各タスクの期間が1日で、<a href="/ja/building-schedule/dependencies/#%E5%85%88%E8%A1%8C%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A8%E4%BE%9D%E5%AD%98%E9%96%A2%E4%BF%82">依存関係</a>がなく、両方が同じ稼働リソースに割り当てられている場合、そのリソースは過負荷です。リソースは1営業日に2日分の作業を行わなければなりません。これを解決するには、2つのタスクを依存関係でリンクするだけです。</p>
+<p>稼働リソースは<strong>過負荷</strong>になることがあります。つまり、カレンダーと稼働状況に基づいて完了できる量を超える作業が割り当てられている状態です。たとえば、プロジェクトに2つのタスクがあり、各タスクの期間が1日で、<a href="/ja/building-schedule/dependencies/#%E5%85%88%E8%A1%8C%E3%82%BF%E3%82%B9%E3%82%AF%E3%81%A8%E4%BE%9D%E5%AD%98%E9%96%A2%E4%BF%82">依存関係</a>がなく、両方が同じ稼働リソースに割り当てられている場合、そのリソースは過負荷です。リソースは1日に2日分の作業を行わなければなりません。これを解決するには、2つのタスクを依存関係でリンクするだけです。</p>
 <p>タスクに過負荷のリソースが割り当てられている場合、Inganttはタスクリストに特別なアイコンを表示します。</p>
 <p>リソースが過負荷の場合、Inganttは<strong>Resources</strong>ビューと<strong>Resource Usage</strong>ビューに特別なアイコンを表示します。</p>
 <p>さらに、Inganttはそのようなタスクとリソースの数をカウントし、ナビゲーションドロワーに数値を表示します。</p>
@@ -268,7 +288,7 @@
 <li>期間ゼロのマイルストーン</li>
 <li>完全に完了したタスク（100%）</li>
 <li>Resource Propertiesダイアログで<strong>Can Level</strong>が<strong>false</strong>に設定されたリソース</li>
-<li><strong>Proposed</strong>の<a href="/ja/building-schedule/resources/#%E4%BA%88%E7%B4%84%E3%82%BF%E3%82%A4%E3%83%97">予約タイプ</a>のリソース（提案済みリソースを含める平準化オプションが有効でない限り）</li>
+<li><strong>Proposed</strong>の<a href="/ja/building-schedule/resources/#%E4%BA%88%E7%B4%84%E3%82%BF%E3%82%A4%E3%83%97">予約タイプ</a>のリソース（Proposedのリソースを含める平準化オプションが有効でない限り）</li>
 </ul>
 <h3 id="再平準化とクリア">再平準化とクリア <a href="#再平準化とクリア" class="heading-anchor">#</a></h3>
 <p><strong>Auto-level resources</strong>を実行するたびに、以前の平準化は自動的にクリアされます。遅延が蓄積するのを防ぐため、平準化は常にクリーンな未平準化のスケジュールから開始されます。</p>

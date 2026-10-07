@@ -38,7 +38,7 @@ O algoritmo identifica os dias em que um recurso tem mais trabalho atribuído do
 | **Slack** | Tarefas críticas ou quase críticas (menos folga) são protegidas |
 | **Priority** | Tarefas com valor de Prioridade mais alto são protegidas |
 | **Constraints** | Tarefas com restrições de agendamento são protegidas |
-| **Start Date** | Tarefas mais antigas são parcialmente protegidas |
+| **Start Date** | Tarefas que começam mais cedo são parcialmente protegidas |
 | **Duration** | Tarefas mais longas são parcialmente protegidas |
 
 A tarefa com a menor pontuação é atrasada para resolver cada conflito. O processo se repete até que todas as superalocações sejam resolvidas ou nenhum atraso adicional possa ser aplicado.
@@ -60,7 +60,7 @@ Configure o comportamento do nivelamento na caixa de diálogo **Leveling Options
 
 As seguintes tarefas e recursos nunca são afetados pelo nivelamento automático:
 
-- Tarefas com [Priority](#prioridade) definida como **1000**
+- Tarefas com [Prioridade](#prioridade) definida como **1000**
 - Tarefas com **Can Level** definido como **false** (na aba **Leveling** da caixa de diálogo Task Properties)
 - Tarefas com [restrição](/pt/building-schedule/constraints/index.md#restrições) **Must start on** ou **Must finish on**
 - [Tarefas resumo](/pt/building-schedule/tasks/index.md#tarefas-resumo)

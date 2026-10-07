@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WBS 코드 - 분석 및 조정 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="기본 개요 번호를 프로젝트 코드 접두사, 수준별 순서, 길이, 구분 기호로 구성된 사용자 정의 WBS 코드 마스크로 대체합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WBS 코드">
+  <meta property="og:description" content="기본 개요 번호를 프로젝트 코드 접두사, 수준별 순서, 길이, 구분 기호로 구성된 사용자 정의 WBS 코드 마스크로 대체합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WBS 코드">
+  <meta name="twitter:description" content="기본 개요 번호를 프로젝트 코드 접두사, 수준별 순서, 길이, 구분 기호로 구성된 사용자 정의 WBS 코드 마스크로 대체합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/" class="active" aria-current="page">WBS 코드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">지원 문의</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="wbs-코드">WBS 코드 <a href="#wbs-코드" class="heading-anchor">#</a></h1>
+<p>모든 작업에는 개요에서의 주소인 <strong>WBS</strong> 코드가 있습니다. 기본적으로 이는 단순한 개요 번호(<code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>)입니다. 작업 테이블에서 <strong>WBS</strong> 열을 켜면 표시됩니다.</p>
+<p><strong>WBS 코드 마스크</strong>는 이러한 개요 번호를 직접 설계한 구조화된 코드로 대체하므로, 작업이 <code>1.1.1</code> 대신 <code>PROJ-A-01</code>이나 <code>1.A.001</code>로 표시됩니다. 계약, 비용 코드 체계, 고객의 보고 형식 등 번호 부여 표준이 있는 조직에서는 이를 사용하여 Ingantt의 코드를 그 표준에 맞춥니다.</p>
+<p>설정하려면 <strong>Project → WBS Code Definition</strong>을 여십시오.</p>
+<h2 id="wbs-코드와-개요-코드는-다릅니다">WBS 코드와 개요 코드는 다릅니다 <a href="#wbs-코드와-개요-코드는-다릅니다" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>WBS 코드</strong>는 구조적입니다. 작업당 정확히 하나씩 있으며 작업이 개요에서 차지하는 위치에서 파생됩니다. 작업을 이동하면 자동으로 번호가 다시 매겨집니다.</li>
+<li><strong><a href="/ko/adjusting-schedule/custom-fields/">개요 코드</a></strong>는 태그입니다. 부서, 단계, 비용 센터 등의 조회 목록을 정의하고 계층 구조와 무관하게 작업에 값을 지정합니다. 하나의 작업이 여러 개요 코드에서 여러 값을 가질 수 있습니다.</li>
+</ul>
+<h2 id="마스크-정의">마스크 정의 <a href="#마스크-정의" class="heading-anchor">#</a></h2>
+<p>대화 상자는 세 부분으로 구성됩니다.</p>
+<h3 id="프로젝트-코드-접두사">프로젝트 코드 접두사 <a href="#프로젝트-코드-접두사" class="heading-anchor">#</a></h3>
+<p>프로젝트의 모든 코드 앞에 붙는 고정 텍스트입니다. 접두사가 <code>PROJ</code>이면 구분 기호에 따라 코드가 <code>PROJ.1.1</code> 또는 <code>PROJ-A-01</code>로 표시됩니다. 접두사를 사용하지 않으려면 비워 두십시오.</p>
+<h3 id="코드-마스크">코드 마스크 <a href="#코드-마스크" class="heading-anchor">#</a></h3>
+<p><strong>Add Level</strong>로 추가하는 개요 수준당 한 행입니다. 각 행에서 다음을 설정합니다:</p>
+<table>
+<thead>
+<tr>
+<th>필드</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level</strong></td>
+<td>이 행이 적용되는 개요 깊이입니다. 수준 1은 최상위 작업, 수준 2는 그 하위 작업이며, 이런 식으로 이어집니다.</td>
+</tr>
+<tr>
+<td><strong>Sequence</strong></td>
+<td>이 수준에서 사용하는 문자입니다: <strong>Numbers</strong>(1, 2, 3), <strong>Uppercase Letters</strong>(A, B, C … Z, AA), <strong>Lowercase Letters</strong>(a, b, c … z, aa) 또는 <strong>Characters</strong>.</td>
+</tr>
+<tr>
+<td><strong>Length</strong></td>
+<td>이 수준의 최대 문자 수입니다. 비워 두면(<em>Any</em>로 표시됨) 제한이 없습니다.</td>
+</tr>
+<tr>
+<td><strong>Separator</strong></td>
+<td>이 수준과 다음 수준 사이의 문자입니다(예: <code>.</code> 또는 <code>-</code>).</td>
+</tr>
+</tbody>
+</table>
+<p>필드 동작에 관해 알아 둘 두 가지가 있습니다:</p>
+<ul>
+<li><strong>Length는 숫자 앞에 0을 채웁니다.</strong> Numbers 수준에서 길이가 <code>3</code>이면 아홉 번째 작업은 <code>009</code>가 됩니다. 문자 수준에는 채우지 않습니다.</li>
+<li><strong>Characters</strong>는 Ingantt가 생성하는 코드에서는 Numbers와 똑같이 동작합니다. 이 옵션은 직접 입력하는 수준을 뜻하는 Microsoft Project와의 호환성을 위해 존재합니다.</li>
+</ul>
+<p>모든 수준을 정의할 필요는 없습니다. <strong>마지막 마스크 행보다 깊은 수준은 <code>.</code> 구분 기호가 있는 숫자로 대체되므로</strong>, 다섯 단계 깊이의 계획에 세 행짜리 마스크를 적용해도 완전한 코드가 생성됩니다.</p>
+<h3 id="옵션">옵션 <a href="#옵션" class="heading-anchor">#</a></h3>
+<p><strong>Generate WBS code for new task</strong>와 <strong>Verify uniqueness of new WBS codes</strong>는 프로젝트와 함께 저장되며 Microsoft Project 왕복 과정에서도 유지됩니다. Ingantt에서는 수준이 하나 이상인 마스크가 모든 작업에 자동으로 적용되며, 코드는 개요를 따르므로 구조상 고유합니다.</p>
+<h2 id="마스크를-저장하면-일어나는-일">마스크를 저장하면 일어나는 일 <a href="#마스크를-저장하면-일어나는-일" class="heading-anchor">#</a></h2>
+<p>Ingantt는 즉시 프로젝트 전체의 번호를 다시 매깁니다. 코드는 작업을 추가, 삭제, 들여쓰기, 내어쓰기 또는 이동하는 등 구조가 바뀔 때마다 개요에서 다시 생성되므로 항상 작업의 현재 위치를 나타냅니다.</p>
+<p>이 점은 분명히 말해 둘 필요가 있습니다. <strong>WBS 코드는 작업의 영구적인 식별자가 아닙니다.</strong> 작업을 이동하면 코드가 바뀝니다. 작업을 따라다니는 레이블이 필요하다면 개요 코드나 <a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 텍스트 필드</a>를 대신 사용하십시오.</p>
+<h2 id="가져오기-및-내보내기">가져오기 및 내보내기 <a href="#가져오기-및-내보내기" class="heading-anchor">#</a></h2>
+<p>마스크는 Microsoft Project 형식의 일부이며 왕복 과정에서 유지됩니다. 마스크와 함께 가져온 프로젝트는 마스크를 유지하고, 마스크와 함께 내보내지며, 작업 코드는 Microsoft Project가 생성한 것과 일치합니다.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

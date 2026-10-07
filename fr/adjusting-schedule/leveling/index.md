@@ -4,13 +4,13 @@ Il est facile d'affecter accidentellement plus de travail qu'une personne ne peu
 
 ## Ressources surutilisées
 
-Une ressource de travail peut être **surutilisée**, ce qui signifie qu'elle a plus de travail affecté qu'elle ne peut en accomplir selon son calendrier et sa disponibilité. Par exemple, si votre projet comporte deux tâches d'une durée d'un jour chacune, sans [dépendance](/fr/building-schedule/dependencies/index.md#predecessors-and-dependencies) entre elles, toutes deux affectées à la même ressource de travail, cette ressource est surutilisée. Elle doit effectuer deux jours de travail en un seul jour calendaire. Pour résoudre ce problème, il suffit de lier les deux tâches par une dépendance.
+Une ressource de travail peut être **surutilisée**, ce qui signifie qu'elle a plus de travail affecté qu'elle ne peut en accomplir selon son calendrier et sa disponibilité. Par exemple, si votre projet comporte deux tâches d'une durée d'un jour chacune, sans [dépendance](/fr/building-schedule/dependencies/index.md#prédécesseurs-et-dépendances) entre elles, toutes deux affectées à la même ressource de travail, cette ressource est surutilisée. Elle doit effectuer deux jours de travail en un seul jour calendaire. Pour résoudre ce problème, il suffit de lier les deux tâches par une dépendance.
 
 Si une tâche a des ressources surutilisées affectées, Ingantt affiche une icône spéciale dans la liste des tâches.
 
 Si une ressource est surutilisée, Ingantt affiche une icône spéciale dans la vue **Resources** et la vue **Resource Usage**.
 
-De plus, Ingantt comptabilise ces tâches et ressources et affiche les totaux dans le panneau de navigation.
+De plus, Ingantt comptabilise ces tâches et ressources et affiche les totaux dans le tiroir de navigation.
 
 ## Nivellement automatique
 
@@ -60,14 +60,14 @@ Configurez le comportement du nivellement dans la boîte de dialogue **Leveling 
 
 Les tâches et ressources suivantes ne sont jamais affectées par le nivellement automatique :
 
-- Les tâches dont la [priorité](#priority) est définie à **1000**
+- Les tâches dont la [priorité](#priorité) est définie à **1000**
 - Les tâches dont **Can Level** est défini à **false** (dans l'onglet **Leveling** de la boîte de dialogue Task Properties)
-- Les tâches avec une contrainte **Must start on** ou **Must finish on** [constraint](/fr/building-schedule/constraints/index.md#constraints)
-- Les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#summary-tasks)
+- Les tâches avec une [contrainte](/fr/building-schedule/constraints/index.md#contraintes) **Must start on** ou **Must finish on**
+- Les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#tâches-récapitulatives)
 - Les jalons de durée nulle
 - Les tâches entièrement achevées (100 %)
 - Les ressources dont **Can Level** est défini à **false** dans la boîte de dialogue Resource Properties
-- Les ressources avec un [type de réservation](/fr/building-schedule/resources/index.md#booking-type) **Proposed** (sauf si l'option de nivellement pour inclure les ressources proposées est activée)
+- Les ressources avec un [type de réservation](/fr/building-schedule/resources/index.md#type-de-réservation) **Proposed** (sauf si l'option de nivellement pour inclure les ressources proposées est activée)
 
 ### Renivellement et suppression
 
@@ -75,7 +75,7 @@ Chaque fois que vous exécutez **Auto-level resources**, tout nivellement préc�
 
 Si vous modifiez le planning après le nivellement (ajout de tâches, modification de dépendances, etc.), les retards de nivellement existants sont conservés mais peuvent ne plus résoudre toutes les surutilisations. Exécutez à nouveau **Auto-level resources** pour reniveler le planning mis à jour.
 
-Pour supprimer tous les retards de nivellement et revenir au planning calculé par la méthode du chemin critique, choisissez **Clear leveling** dans le menu **Project**.
+Pour supprimer tous les retards de nivellement et revenir au planning d'origine calculé par la méthode du chemin critique, choisissez **Clear leveling** dans le menu **Project**.
 
 ### Gantt de nivellement
 
@@ -87,9 +87,9 @@ Ce bouton bascule n'est visible que lorsque le projet contient des données de n
 
 Le champ **Priority** est disponible dans l'onglet **Leveling** de la boîte de dialogue **Task Properties**. Il accepte une valeur entière de 0 à 1000, avec une valeur par défaut de 500.
 
-La priorité est utilisée par l'algorithme de [nivellement automatique](#auto-leveling) pour déterminer quelles tâches retarder lors de la résolution des surutilisations de ressources. Les tâches avec une priorité plus élevée sont moins susceptibles d'être retardées :
+La priorité est utilisée par l'algorithme de [nivellement automatique](#nivellement-automatique) pour déterminer quelles tâches retarder lors de la résolution des surutilisations de ressources. Les tâches avec une priorité plus élevée sont moins susceptibles d'être retardées :
 
-- **0** — Priorité la plus basse, la tâche sera très probablement retardée
+- **0** — Priorité la plus basse, la plus susceptible d'être retardée
 - **500** — Priorité par défaut
 - **1000** — « Ne pas niveler » — la tâche n'est jamais retardée par le nivellement automatique
 

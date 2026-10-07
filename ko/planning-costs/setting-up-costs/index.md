@@ -16,7 +16,7 @@
 
 작업 자원은 정규 달력 시간 이외의 작업에 대한 **Overtime Rate**도 지원합니다. 총 비용은 다음과 같이 계산됩니다:
 
-> **Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use**
+> **Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use**
 
 작업 자원이 작업에 배정될 때 **Units** 값을 기본값과 다른 숫자로 지정할 수 있습니다. 이는 비용 계산에 영향을 미칩니다. 예를 들어, **Units**가 50%이면 작업에서 해당 자원의 계산된 비용은 100% Units일 때의 절반입니다.
 
@@ -42,9 +42,9 @@
 
 단가 테이블은 **Resource Properties** 대화 상자의 **Costs** 탭에서 구성됩니다. 자원을 작업에 배정할 때 **Edit Resource Assignment** 대화 상자에서 사용할 단가 테이블을 선택할 수 있습니다.
 
-## 사용 당 비용
+## 사용당 비용
 
-자원은 **Cost Per Use** 필드를 지원합니다 — 수행된 작업량에 관계없이 자원이 작업에 배정될 때마다 부과되는 정액 요금입니다. 작업 자원의 경우 **Cost Per Use**는 배정 단위에 곱해집니다(예: 200% 단위는 사용 당 비용이 두 번 부과됨을 의미). **Cost Per Use**는 항상 작업 시작 시 발생합니다.
+자원은 **Cost Per Use** 필드를 지원합니다 — 수행된 작업량에 관계없이 자원이 작업에 배정될 때마다 부과되는 정액 요금입니다. 작업 자원의 경우 **Cost Per Use**는 배정 단위에 곱해집니다(예: 200% 단위는 사용당 비용이 두 번 부과됨을 의미). **Cost Per Use**는 항상 작업 시작 시 발생합니다.
 
 ## 비용 발생
 

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -211,12 +231,12 @@
 <li><strong><a href="/fr/views/resource-views/#resource-graph">Resource Graph</a></strong></li>
 </ul>
 <h2 id="vue-tasks">Vue Tasks <a href="#vue-tasks" class="heading-anchor">#</a></h2>
-<p>La vue <strong>Tasks</strong> est la vue principale combinant une liste de tâches et le diagramme de Gantt (vue fractionnée). Vous pouvez configurer les panneaux affichés via le sous-menu <strong>View &gt; Panels in Tasks</strong> : la liste des tâches et le diagramme de Gantt peuvent être activés ou désactivés indépendamment.</p>
+<p>La vue <strong>Tasks</strong> est la vue principale combinant une liste de tâches et le diagramme de Gantt (vue divisée). Vous pouvez configurer les panneaux affichés via le sous-menu <strong>View &gt; Panels in Tasks</strong> : la liste des tâches et le diagramme de Gantt peuvent être activés ou désactivés indépendamment.</p>
 <h2 id="inspecteur-de-tâche">Inspecteur de tâche <a href="#inspecteur-de-tâche" class="heading-anchor">#</a></h2>
 <p>Le <strong>Task Inspector</strong> est un panneau latéral qui affiche les détails de la tâche sélectionnée, notamment les facteurs de planification (ce qui détermine les dates de la tâche), les propriétés générales, les ressources, les prédécesseurs, le coût, et bien plus encore. Activez ou désactivez l'inspecteur de tâche depuis la barre d'outils.</p>
-<p>La section <strong>Scheduling Factors</strong> en haut de l'inspecteur indique ce qui détermine les dates planifiées de la tâche : prédécesseurs déterminants (affichés en gras avec un badge « Driving »), prédécesseurs non déterminants (avec leur marge relative), contraintes, délais de nivellement, calendriers et valeurs de marge. Les tâches critiques affichent un badge « Critical ».</p>
+<p>La section <strong>Scheduling Factors</strong> en haut de l'inspecteur indique ce qui détermine les dates planifiées de la tâche : prédécesseurs déterminants (affichés en gras avec un badge « Driving »), prédécesseurs non déterminants (avec leur marge relative), contraintes, retards de nivellement, calendriers et valeurs de marge. Les tâches critiques affichent un badge « Critical ».</p>
 <h2 id="gantt-de-nivellement">Gantt de nivellement <a href="#gantt-de-nivellement" class="heading-anchor">#</a></h2>
-<p>Lorsque le <a href="/fr/adjusting-schedule/leveling/#auto-leveling">nivellement automatique</a> a été appliqué à votre projet, un bouton bascule <strong>Leveling Gantt</strong> apparaît dans la zone du diagramme de Gantt.</p>
+<p>Lorsque le <a href="/fr/adjusting-schedule/leveling/#nivellement-automatique">nivellement automatique</a> a été appliqué à votre projet, un bouton bascule <strong>Leveling Gantt</strong> apparaît dans la zone du diagramme de Gantt.</p>
 <p>Lorsqu'il est activé, le diagramme de Gantt affiche des <strong>barres vertes</strong> à la position pré-nivellement de chaque tâche (là où elle se trouvait avant le nivellement automatique). Les barres de tâches standard restent à leur position nivelée actuelle. Cela vous permet de comparer visuellement le planning initial avec le planning nivelé et de constater le décalage de chaque tâche.</p>
 <p>Lorsque la bascule est désactivée, seules les barres de tâches standard sont affichées.</p>
 <blockquote>

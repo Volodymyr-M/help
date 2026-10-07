@@ -24,13 +24,13 @@ Ingantt offre molteplici viste per lavorare con il progetto, accessibili dal men
 
 ## Vista Tasks
 
-La vista **Tasks** è la vista principale che combina un elenco attività e il diagramma di Gantt (vista divisa). Puoi configurare quali pannelli mostrare tramite il sottomenu **View > Panels in Tasks**: l'elenco attività e il diagramma di Gantt possono essere attivati indipendentemente.
+La vista **Tasks** è la vista principale che combina un elenco attività e il diagramma di Gantt (vista divisa). Puoi configurare quali pannelli mostrare tramite il sottomenu **View > Panels in Tasks**: l'elenco attività e il diagramma di Gantt possono essere attivati o disattivati indipendentemente.
 
 ## Task Inspector
 
 Il **Task Inspector** è un pannello laterale che mostra i dettagli dell'attività selezionata, inclusi i fattori di pianificazione (cosa determina le date dell'attività), le proprietà generali, le risorse, i predecessori, il costo e altro. Attiva il Task Inspector dalla barra degli strumenti.
 
-La sezione **Scheduling Factors** nella parte superiore dell'Inspector mostra cosa determina le date pianificate dell'attività: predecessori determinanti (mostrati in grassetto con un badge "Driving"), predecessori non determinanti (con il relativo margine), vincoli, ritardi di livellamento, calendari e valori di margine. Le attività critiche mostrano un badge "Critical".
+La sezione **Scheduling Factors** nella parte superiore dell'Inspector mostra cosa determina le date pianificate dell'attività: predecessori determinanti (mostrati in grassetto con un badge "Driving"), predecessori non determinanti (con il loro margine relativo), vincoli, ritardi di livellamento, calendari e valori di margine. Le attività critiche mostrano un badge "Critical".
 
 ## Leveling Gantt
 

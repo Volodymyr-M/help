@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -198,11 +218,11 @@
 <p>Si vous devez affecter le même coût fixe à plusieurs tâches, envisagez de créer une ressource de coût et de l'affecter à ces tâches. Si le coût change ultérieurement, vous n'aurez besoin de le mettre à jour qu'à un seul endroit.</p>
 </blockquote>
 <h2 id="coût-des-ressources-de-travail">Coût des ressources de travail <a href="#coût-des-ressources-de-travail" class="heading-anchor">#</a></h2>
-<p>Les ressources de type <strong>Work</strong> sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir <a href="/fr/setting-up-project/project/#hours-per-day-days-per-week-days-per-month">Heures par jour, jours par semaine, jours par mois</a>).</p>
+<p>Les ressources de type <strong>Work</strong> sont les seules à disposer d'un calendrier, leur coût est donc spécifié par heure, par jour, par semaine ou par mois (voir <a href="/fr/setting-up-project/project/#heures-par-jour-jours-par-semaine-jours-par-mois">Heures par jour, jours par semaine, jours par mois</a>).</p>
 <p>Par exemple, lorsque vous affectez une ressource de travail avec un <strong>Standard Rate</strong> de 100 $ par heure à une tâche d'une <strong>Duration</strong> de 5 heures, 500 $ sont ajoutés au <strong>Cost</strong> de la tâche.</p>
 <p>Les ressources de travail prennent également en charge un <strong>Overtime Rate</strong> pour le travail effectué en dehors des heures normales du calendrier. Le coût total est calculé ainsi :</p>
 <blockquote>
-<p><strong>Cost = Travail normal × Standard Rate + Travail en heures supplémentaires × Overtime Rate + Cost Per Use</strong></p>
+<p><strong>Coût = Travail normal × Taux standard + Heures supplémentaires × Taux des heures supplémentaires + Coût par utilisation</strong></p>
 </blockquote>
 <p>Lorsqu'une ressource de travail est affectée à une tâche, vous pouvez spécifier la valeur <strong>Units</strong> comme un nombre différent de la valeur par défaut. Cela impacte le calcul des coûts. Par exemple, si <strong>Units</strong> est de 50 %, le coût calculé pour la ressource dans la tâche est la moitié de ce qu'il serait avec 100 % d'unités.</p>
 <h2 id="coût-des-ressources-matérielles">Coût des ressources matérielles <a href="#coût-des-ressources-matérielles" class="heading-anchor">#</a></h2>

@@ -10,13 +10,13 @@ Verwechseln Sie **Dauer** nicht mit **Arbeit**. Wenn beispielsweise drei Persone
 
 Die Dauer kann über das Feld **Dauer** im Dialog **Vorgangseigenschaften** geändert werden.
 
-Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog **Vorgangseigenschaften** als **Schätzung** markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („**?**") angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.
+Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog **Vorgangseigenschaften** als **Schätzung** markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („**?**“) angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.
 
-Wenn mindestens ein Teilvorgang eines Sammelvorgangs **Schätzung** aktiviert hat, wird die Dauer des Sammelvorgangs ebenfalls als **Schätzung** markiert und zeigt somit auch „**?**" an.
+Wenn mindestens ein Teilvorgang eines Sammelvorgangs **Schätzung** aktiviert hat, wird die Dauer des Sammelvorgangs ebenfalls als **Schätzung** markiert und zeigt somit auch „**?**“ an.
 
-Die Dauer kann in Stunden, Tagen, Wochen oder Monaten angegeben werden. Standardmäßig bedeutet „1 Tag" 8 Stunden, „1 Woche" 5 Tage (40 Stunden) und „1 Monat" 20 Tage. Diese Standardwerte können auf dem Reiter **Dauer** des Dialogs **Projekteigenschaften** geändert werden.
+Die Dauer kann in Stunden, Tagen, Wochen oder Monaten angegeben werden. Standardmäßig bedeutet „1 Tag“ 8 Stunden, „1 Woche“ 5 Tage (40 Stunden) und „1 Monat“ 20 Tage. Diese Standardwerte können auf dem Reiter **Dauer** des Dialogs **Projekteigenschaften** geändert werden.
 
-Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß der [Vorgangsart](#typ-und-leistungsgesteuert) neu berechnet.
+Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß dem [Typ](#typ-und-leistungsgesteuert) des Vorgangs neu berechnet.
 
 ## Arbeit
 
@@ -26,7 +26,7 @@ Die Arbeit kann über das Feld **Arbeit** im Dialog **Vorgangseigenschaften** ge
 
 Genau wie die Dauer kann die Arbeit in Stunden, Tagen, Wochen oder Monaten angegeben werden, wobei die Definitionen auf dem Reiter **Dauer** des Dialogs **Projekteigenschaften** verwendet werden. Das Standard-Anzeigeformat für Arbeit kann auf dem Reiter **Zeit** geändert werden.
 
-Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß der [Vorgangsart](#typ-und-leistungsgesteuert) neu berechnet.
+Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß dem [Typ](#typ-und-leistungsgesteuert) des Vorgangs neu berechnet.
 
 ## Stichtag
 
@@ -38,7 +38,7 @@ Stichtage dienen nur zu Ihrer Information und beeinflussen die Planung nicht.
 
 Stichtage werden im Gantt-Diagramm als spezielle Symbole angezeigt.
 
-> Wenn Ihr Terminplan zeigt, dass ein Vorgang später als sein festgelegter Stichtag endet, zeigt Ingantt ein Symbol in der Vorgangsliste an und zählt solche Vorgänge im Navigationsmenü.
+> Wenn Ihr Terminplan zeigt, dass ein Vorgang später als sein festgelegter Stichtag endet, zeigt Ingantt ein Symbol in der Vorgangsliste an und zählt solche Vorgänge in der Navigationsleiste.
 
 ![Stichtag](/images/building-schedule/tasks/deadline.png)
 
@@ -74,7 +74,7 @@ Beispielsweise können Sie **Typ** auf **Feste Einheiten** (den Standardwert) se
 
 Mit anderen Worten: Die Eigenschaft **Typ** ermöglicht es Ihnen, eine der drei Größen einzufrieren, während das Flag **Leistungsgesteuert** festlegt, ob die Arbeit unter den verbleibenden zwei unverändert bleiben soll.
 
-> **Typ** und **Leistungsgesteuert** sind nicht verfügbar für [Sammelvorgänge](/de/building-schedule/tasks/index.md#sammelvorgänge), die immer Feste Dauer und nicht Leistungsgesteuert sind.
+> **Typ** und **Leistungsgesteuert** sind nicht verfügbar für [Sammelvorgänge](/de/building-schedule/tasks/index.md#sammelvorgänge), die immer vom Typ **Feste Dauer** und nicht leistungsgesteuert sind.
 
 ## Notizen
 

@@ -66,4 +66,4 @@ Ingantt에서는 [기간](/ko/building-schedule/task-properties/index.md#기간)
 
 - **Honor constraint dates** — 활성화하면 반유연 제약 조건(예: Start No Later Than)이 종속성보다 우선하여 음의 여유가 발생할 수 있습니다. 비활성화(기본값)하면 종속성이 항상 우선합니다.
 - **Split in-progress tasks** — 활성화(기본값)하면 스케줄러가 순서에 맞지 않는 진행 상황이 있는 작업을 자동으로 분할할 수 있습니다.
-- **Move completed/remaining parts** — 완료된 작업과 남은 작업 부분이 상태 날짜를 기준으로 어떻게 재배치되는지를 제어하는 네 가지 옵션입니다. 완료된 작업을 상태 날짜 이전으로 이동하거나 남은 작업을 앞으로 밀어서 일정을 최신 상태로 유지하는 데 도움이 됩니다.
+- **Move completed/remaining parts** — 완료된 작업과 남은 작업 부분이 상태 날짜를 기준으로 어떻게 재배치되는지를 제어하는 네 가지 옵션입니다. 완료된 부분을 상태 날짜까지 앞당기거나 남은 부분을 상태 날짜 이후로 미루어 일정을 최신 상태로 유지하는 데 도움이 됩니다.

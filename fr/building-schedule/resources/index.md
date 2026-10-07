@@ -1,6 +1,6 @@
 # Ressources
 
-Ajoutez les personnes, les équipements et les matériaux qui effectueront le travail. Une fois les ressources affectées aux tâches, Ingantt peut calculer la charge de travail, détecter les suraffectations et prendre en compte la disponibilité de chaque personne.
+Ajoutez les personnes, les équipements et les matériaux qui effectueront le travail. Une fois les ressources affectées aux tâches, Ingantt peut calculer la charge de travail, détecter les surutilisations et prendre en compte la disponibilité de chaque personne.
 
 ## Type de ressource
 
@@ -24,7 +24,7 @@ Les ressources de travail possèdent une propriété **Max Units** (100 % par d�
 - **50 %** — Une ressource à temps partiel (disponible la moitié du temps)
 - **300 %** — Une équipe de 3 membres à temps plein représentée comme une seule ressource
 
-Les unités maximales sont utilisées par la [détection de surallocation](/fr/adjusting-schedule/leveling/index.md#overallocated-resources) et le [nivellement automatique](/fr/adjusting-schedule/leveling/index.md#auto-leveling) pour déterminer si une ressource a plus de travail qu'elle ne peut en gérer. Lors de l'affectation d'une ressource de travail à une tâche, les unités d'affectation par défaut correspondent aux unités maximales de la ressource.
+Les unités maximales sont utilisées par la [détection de surutilisation](/fr/adjusting-schedule/leveling/index.md#ressources-surutilisées) et le [nivellement automatique](/fr/adjusting-schedule/leveling/index.md#nivellement-automatique) pour déterminer si une ressource a plus de travail qu'elle ne peut en gérer. Lors de l'affectation d'une ressource de travail à une tâche, les unités d'affectation par défaut correspondent aux unités maximales de la ressource.
 
 ## Périodes de disponibilité des ressources
 
@@ -45,4 +45,4 @@ Chaque ressource possède un **Booking Type** qui peut être défini sur **Commi
 - **Committed** — La ressource est fermement réservée pour le projet.
 - **Proposed** — La ressource est affectée à titre provisoire à des fins de planification.
 
-Par défaut, le nivellement automatique exclut les ressources proposées. Vous pouvez les inclure en activant l'option « Level resources with the proposed booking type » dans la boîte de dialogue [Leveling Options](/fr/adjusting-schedule/leveling/index.md#leveling-options).
+Par défaut, le nivellement automatique exclut les ressources proposées. Vous pouvez les inclure en activant l'option « Level resources with the proposed booking type » dans la boîte de dialogue [Options de nivellement](/fr/adjusting-schedule/leveling/index.md#options-de-nivellement).

@@ -5,7 +5,10 @@
 ## Premiers pas
 
 - [Vue d'ensemble](https://help.ingantt.com/fr/getting-started/overview/index.md)
+- [Ouvrir Ingantt pour Web](https://help.ingantt.com/fr/getting-started/install/index.md)
 - [Premiers pas](https://help.ingantt.com/fr/getting-started/getting-started/index.md)
+- [Modèles de projet](https://help.ingantt.com/fr/getting-started/templates/index.md)
+- [Enregistrer votre projet](https://help.ingantt.com/fr/getting-started/saving/index.md)
 - [Créer avec l'IA](https://help.ingantt.com/fr/getting-started/create-with-ai/index.md)
 - [Modifier avec l'IA](https://help.ingantt.com/fr/getting-started/edit-with-ai/index.md)
 - [Import et export](https://help.ingantt.com/fr/getting-started/import-export/index.md)
@@ -19,6 +22,7 @@
 
 - [Tâches](https://help.ingantt.com/fr/building-schedule/tasks/index.md)
 - [Propriétés des tâches](https://help.ingantt.com/fr/building-schedule/task-properties/index.md)
+- [Durées écoulées](https://help.ingantt.com/fr/building-schedule/elapsed-durations/index.md)
 - [Dépendances](https://help.ingantt.com/fr/building-schedule/dependencies/index.md)
 - [Contraintes](https://help.ingantt.com/fr/building-schedule/constraints/index.md)
 - [Ressources](https://help.ingantt.com/fr/building-schedule/resources/index.md)
@@ -29,6 +33,7 @@
 - [Chemin critique](https://help.ingantt.com/fr/adjusting-schedule/critical-path/index.md)
 - [Nivellement des ressources](https://help.ingantt.com/fr/adjusting-schedule/leveling/index.md)
 - [Champs personnalisés](https://help.ingantt.com/fr/adjusting-schedule/custom-fields/index.md)
+- [Codes WBS](https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/index.md)
 
 ## Planification des coûts
 
@@ -53,4 +58,14 @@
 
 - [Ajout et sélection](https://help.ingantt.com/fr/ui/ui/index.md)
 - [Intégration Google Drive](https://help.ingantt.com/fr/ui/files/index.md)
+- [Partager un projet](https://help.ingantt.com/fr/ui/sharing/index.md)
+- [Travailler hors ligne](https://help.ingantt.com/fr/ui/offline-mode/index.md)
+- [Historique des versions](https://help.ingantt.com/fr/ui/version-history/index.md)
+- [Langues](https://help.ingantt.com/fr/ui/languages/index.md)
 - [Raccourcis clavier](https://help.ingantt.com/fr/ui/shortcuts/index.md)
+- [Contacter le support](https://help.ingantt.com/fr/ui/contact-support/index.md)
+
+## Compte et facturation
+
+- [Essai gratuit](https://help.ingantt.com/fr/account/trial/index.md)
+- [Abonnements et paiement](https://help.ingantt.com/fr/account/subscription/index.md)

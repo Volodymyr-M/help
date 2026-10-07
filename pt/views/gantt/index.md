@@ -44,6 +44,6 @@ Quando desativado, apenas as barras de tarefa padrão são exibidas.
 
 ## Linhas de Progresso
 
-Quando ativadas, o gráfico de Gantt exibe uma **linha de progresso** — uma linha em ziguezague que indica visualmente se as tarefas estão atrasadas ou adiantadas em relação à data de status. Tarefas atrasadas fazem a linha inclinar para a esquerda; tarefas adiantadas fazem a linha inclinar para a direita; tarefas no prazo mantêm a linha reta.
+Quando ativadas, o gráfico de Gantt exibe uma **linha de progresso** — uma linha em ziguezague que indica visualmente se as tarefas estão atrasadas ou adiantadas em relação à data de status. Tarefas atrasadas fazem a linha formar um pico para a esquerda; tarefas adiantadas fazem a linha formar um pico para a direita; tarefas no prazo mantêm a linha reta.
 
 Alterne as linhas de progresso pelo botão flutuante da barra de ferramentas no gráfico de Gantt ou pelo menu **View**. A linha de progresso também é incluída na saída de PDF/impressão quando ativada.

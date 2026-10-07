@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/" class="active" aria-current="page">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -224,7 +244,7 @@
 <li><strong>Recurrence pattern</strong> — Un schéma quotidien, hebdomadaire, mensuel ou annuel avec une date de début et une condition de fin (pas de fin, fin à une date donnée, ou fin après N occurrences)</li>
 <li><strong>Working days only</strong> — Limite les occurrences aux jours ouvrés</li>
 </ul>
-<p>Les tâches récurrentes apparaissent sous forme de tâche récapitulative contenant les occurrences individuelles. Chaque occurrence peut être complétée indépendamment. La suppression d'une tâche récurrente vous invite à choisir entre supprimer la série entière ou uniquement l'occurrence sélectionnée.</p>
+<p>Les tâches récurrentes apparaissent sous forme de tâche récapitulative contenant les occurrences individuelles. Chaque occurrence peut être achevée indépendamment. La suppression d'une tâche récurrente vous invite à choisir entre supprimer la série entière ou uniquement l'occurrence sélectionnée.</p>
 <h2 id="tâches-fractionnées">Tâches fractionnées <a href="#tâches-fractionnées" class="heading-anchor">#</a></h2>
 <p>Une tâche peut être fractionnée en parties non contiguës, représentant des interruptions de travail. Pour fractionner une tâche, sélectionnez-la et choisissez <strong>Split task</strong> dans la barre d'outils ou le menu contextuel du clic droit. La boîte de dialogue <strong>Split Task</strong> propose deux modes :</p>
 <ul>
@@ -238,7 +258,7 @@
 <ul>
 <li>Exclues de la planification — elles n'affectent ni le chemin critique ni les autres tâches</li>
 <li>Exclues des cumuls des tâches récapitulatives pour la durée, le travail, le coût et le % d'achèvement</li>
-<li>Exclues de la détection de surallocation des ressources et du nivellement automatique</li>
+<li>Exclues de la détection de surutilisation des ressources et du nivellement automatique</li>
 <li>Exclues des calculs de Valeur acquise</li>
 </ul>
 <p>Les tâches inactives restent visibles dans la liste des tâches et le diagramme de Gantt, mais apparaissent avec une opacité réduite et un texte barré. Leurs dates sont conservées à titre de référence.</p>

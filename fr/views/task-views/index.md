@@ -45,7 +45,7 @@ La **Timeline** est un volet rétractable qui apparaît au-dessus du diagramme d
 
 Pour ajouter une tâche à la chronologie, faites un clic droit dessus et choisissez **Display on Timeline**, ou cochez l'option dans l'onglet **Visual** de la boîte de dialogue Task Properties.
 
-Les tâches sur la chronologie peuvent être affichées sous forme de barres ou de légendes (libellés textuels avec des lignes de connexion verticales). Vous pouvez basculer entre les modes en faisant glisser une barre de tâche au-dessus ou en dessous de la ligne de séparation horizontale dans le volet de la chronologie. La chronologie affiche également un marqueur de la date du jour et une zone de vue que vous pouvez faire glisser pour faire défiler le diagramme de Gantt.
+Les tâches sur la chronologie peuvent être affichées sous forme de barres ou d'étiquettes (libellés textuels reliés par des lignes verticales). Vous pouvez basculer entre les modes en faisant glisser une barre de tâche au-dessus ou en dessous de la ligne de séparation horizontale dans le volet de la chronologie. La chronologie affiche également un marqueur de la date du jour et une zone de vue que vous pouvez faire glisser pour faire défiler le diagramme de Gantt.
 
 Activez ou désactivez la chronologie depuis le menu **View**.
 

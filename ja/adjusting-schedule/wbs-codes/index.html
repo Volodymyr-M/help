@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WBSコード - 分析と調整 - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="デフォルトのアウトライン番号を、プロジェクトコードのプレフィックス、レベルごとの連番、長さ、区切り文字からなるカスタムWBSコードマスクに置き換えます。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WBSコード">
+  <meta property="og:description" content="デフォルトのアウトライン番号を、プロジェクトコードのプレフィックス、レベルごとの連番、長さ、区切り文字からなるカスタムWBSコードマスクに置き換えます。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WBSコード">
+  <meta name="twitter:description" content="デフォルトのアウトライン番号を、プロジェクトコードのプレフィックス、レベルごとの連番、長さ、区切り文字からなるカスタムWBSコードマスクに置き換えます。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/" class="active" aria-current="page">WBSコード</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">サポートに問い合わせ</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="wbsコード">WBSコード <a href="#wbsコード" class="heading-anchor">#</a></h1>
+<p>すべてのタスクには<strong>WBS</strong>コードがあります。これはアウトライン内でのタスクの所在を示すものです。初期状態では、<code>1</code>、<code>1.1</code>、<code>1.2</code>、<code>1.2.1</code>のような単純なアウトライン番号です。タスクテーブルで<strong>WBS</strong>列をオンにすると表示されます。</p>
+<p><strong>WBSコードマスク</strong>は、これらのアウトライン番号を独自に設計した構造化コードに置き換えます。これにより、タスクは<code>1.1.1</code>ではなく<code>PROJ-A-01</code>や<code>1.A.001</code>のように表示されます。契約、コストコード体系、顧客の報告形式など、番号付けの標準を持つ組織は、Inganttのコードをその標準に合わせるためにこれを使用します。</p>
+<p>設定するには、<strong>Project → WBS Code Definition</strong>を開きます。</p>
+<h2 id="wbsコードとアウトラインコードの違い">WBSコードとアウトラインコードの違い <a href="#wbsコードとアウトラインコードの違い" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>WBSコード</strong>は構造的なものです。タスクごとに1つだけ存在し、アウトライン内でのタスクの位置から導出されます。タスクを移動すると自動的に番号が振り直されます。</li>
+<li><strong><a href="/ja/adjusting-schedule/custom-fields/">アウトラインコード</a></strong>はタグです。部門、フェーズ、コストセンターなどのルックアップリストを定義し、階層とは無関係にタスクに値を割り当てます。1つのタスクは、複数のアウトラインコードから複数の値を持つことができます。</li>
+</ul>
+<h2 id="マスクの定義">マスクの定義 <a href="#マスクの定義" class="heading-anchor">#</a></h2>
+<p>ダイアログは3つの部分で構成されています。</p>
+<h3 id="プロジェクトコードのプレフィックス">プロジェクトコードのプレフィックス <a href="#プロジェクトコードのプレフィックス" class="heading-anchor">#</a></h3>
+<p>プロジェクト内のすべてのコードの先頭に付く固定テキストです。プレフィックスを<code>PROJ</code>にすると、区切り文字に応じて<code>PROJ.1.1</code>や<code>PROJ-A-01</code>のようなコードになります。プレフィックスを付けない場合は空のままにします。</p>
+<h3 id="コードマスク">コードマスク <a href="#コードマスク" class="heading-anchor">#</a></h3>
+<p>アウトラインレベルごとに1行で、<strong>Add Level</strong>で追加します。各行では以下を設定します：</p>
+<table>
+<thead>
+<tr>
+<th>フィールド</th>
+<th>機能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Level</strong></td>
+<td>この行が適用されるアウトラインの深さ。レベル1は最上位のタスク、レベル2はその子タスク、というように続きます。</td>
+</tr>
+<tr>
+<td><strong>Sequence</strong></td>
+<td>このレベルで使用する文字：<strong>Numbers</strong>（1、2、3）、<strong>Uppercase Letters</strong>（A、B、C … Z、AA）、<strong>Lowercase Letters</strong>（a、b、c … z、aa）、または<strong>Characters</strong>。</td>
+</tr>
+<tr>
+<td><strong>Length</strong></td>
+<td>このレベルの最大文字数。空のままにすると<em>Any</em>と表示され、制限なしになります。</td>
+</tr>
+<tr>
+<td><strong>Separator</strong></td>
+<td>このレベルと次のレベルの間の文字（<code>.</code>や<code>-</code>など）。</td>
+</tr>
+</tbody>
+</table>
+<p>フィールドの動作について知っておくべき点が2つあります：</p>
+<ul>
+<li><strong>Lengthは数字の先頭をゼロで埋めます。</strong> Numbersレベルで長さを<code>3</code>にすると、9番目のタスクは<code>009</code>になります。文字のレベルは埋められません。</li>
+<li><strong>Characters</strong>は、Inganttが生成するコードではNumbersと同じように動作します。これはMicrosoft Projectとの互換性のために存在するもので、Microsoft Projectでは自分で入力するレベルを意味します。</li>
+</ul>
+<p>すべてのレベルを定義する必要はありません。<strong>マスクの最後の行より深いレベルは、<code>.</code>区切りの数字にフォールバックする</strong>ため、5階層の計画に3行のマスクを適用しても完全なコードが生成されます。</p>
+<h3 id="オプション">オプション <a href="#オプション" class="heading-anchor">#</a></h3>
+<p><strong>Generate WBS code for new task</strong>と<strong>Verify uniqueness of new WBS codes</strong>はプロジェクトとともに保存され、Microsoft Projectとのラウンドトリップでも保持されます。Inganttでは、少なくとも1つのレベルを持つマスクはすべてのタスクに自動的に適用され、コードはアウトラインに従うため構造上一意になります。</p>
+<h2 id="マスクを保存すると何が起こるか">マスクを保存すると何が起こるか <a href="#マスクを保存すると何が起こるか" class="heading-anchor">#</a></h2>
+<p>Inganttはプロジェクト全体の番号をすぐに振り直します。コードは、タスクの追加、削除、インデント、アウトデント、移動など、構造が変わるたびにアウトラインから再構築されるため、常にタスクの現在の位置を表します。</p>
+<p>はっきり言っておくべきことがあります：<strong>WBSコードはタスクの永続的な識別子ではありません。</strong> タスクを移動すると、そのコードは変わります。タスクに付いて回るラベルが必要な場合は、代わりにアウトラインコードまたは<a href="/ja/adjusting-schedule/custom-fields/">カスタムテキストフィールド</a>を使用してください。</p>
+<h2 id="インポートとエクスポート">インポートとエクスポート <a href="#インポートとエクスポート" class="heading-anchor">#</a></h2>
+<p>マスクはMicrosoft Project形式の一部であり、ラウンドトリップでも保持されます。マスク付きでインポートされたプロジェクトはマスクを保持したままエクスポートされ、そのタスクコードはMicrosoft Projectが生成したものと一致します。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

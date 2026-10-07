@@ -10,7 +10,7 @@ Ne confondez pas **Duration** et **Work**. Par exemple, si trois personnes trava
 
 La durée peut être modifiée à l'aide du champ **Duration** dans la boîte de dialogue **Task Properties**.
 
-Lorsque vous n'êtes pas encore confiant dans votre estimation de la durée, vous pouvez la marquer comme **Estimate** dans la boîte de dialogue **Task Properties**. Cela provoque l'affichage permanent d'un point d'interrogation (« **?** ») à côté de la durée. Cocher ou décocher cette option n'affecte pas la planification.
+Lorsque vous n'êtes pas encore confiant dans votre estimation de la durée, vous pouvez la marquer comme **Estimate** dans la boîte de dialogue **Task Properties**. La durée affiche alors toujours un point d'interrogation (« **?** »). Cocher ou décocher cette option n'affecte pas la planification.
 
 Si au moins une sous-tâche d'une tâche récapitulative a l'option **Estimate** cochée, la durée de la tâche récapitulative est également marquée comme **Estimate** et affiche donc aussi « **?** ».
 
@@ -74,7 +74,7 @@ Par exemple, vous pouvez définir le **Type** sur **Fixed units** (la valeur par
 
 En d'autres termes, le **Type** vous permet de figer l'une des trois propriétés, tandis que l'indicateur **Effort Driven** définit si le travail doit rester inchangé parmi les deux propriétés restantes.
 
-> Les paramètres **Type** et **Effort Driven** ne sont pas disponibles pour les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#summary-tasks), qui sont toujours de type Fixed duration et non pilotées par l'effort.
+> Les paramètres **Type** et **Effort Driven** ne sont pas disponibles pour les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#tâches-récapitulatives), qui sont toujours de type Fixed duration et non pilotées par l'effort.
 
 ## Notes
 

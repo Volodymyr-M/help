@@ -8,7 +8,7 @@ Pour gérer les champs personnalisés, ouvrez l'élément **Custom Fields** dans
 
 Pour modifier les valeurs des champs personnalisés, utilisez l'onglet **Custom Fields** de la boîte de dialogue **Task Properties**. Pour ajouter des colonnes de champs personnalisés au tableau des tâches, utilisez la boîte de dialogue **Options**.
 
-Les champs personnalisés prennent également en charge les formules (évaluées automatiquement) et la consolidation vers les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#summary-tasks) — Sum, Max, Min, Count et Average.
+Les champs personnalisés prennent également en charge les formules (évaluées automatiquement) et la consolidation vers les [tâches récapitulatives](/fr/building-schedule/tasks/index.md#tâches-récapitulatives) — Sum, Max, Min, Count et Average.
 
 ## Codes hiérarchiques
 

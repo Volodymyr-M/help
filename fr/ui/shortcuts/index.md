@@ -25,8 +25,8 @@ Accélérez votre travail grâce aux raccourcis clavier pour les actions courant
 | `Shift + Arrow Up/Down` | Étendre la sélection vers le haut ou le bas dans n'importe quelle vue en liste.                                                                 |
 | `Ctrl + Arrow Up`      | Déplacer les tâches sélectionnées vers le haut.                                                                                                   |
 | `Ctrl + Arrow Down`    | Déplacer les tâches sélectionnées vers le bas.                                                                                                    |
-| `Ctrl + Arrow Left`    | Diminuer le retrait des tâches sélectionnées.                                                                                                     |
-| `Ctrl + Arrow Right`   | Augmenter le retrait des tâches sélectionnées.                                                                                                    |
+| `Ctrl + Arrow Left`    | Diminuer l'indentation des tâches sélectionnées.                                                                                                  |
+| `Ctrl + Arrow Right`   | Augmenter l'indentation des tâches sélectionnées.                                                                                                 |
 | `Tab / Shift + Tab`    | Passer à la cellule modifiable suivante ou précédente. Valide la modification en cours avant de se déplacer.                                      |
 | `R`                    | Basculer vers la vue **Resources**.                                                                                                               |
 | `C`                    | Basculer vers la vue **Calendars**.                                                                                                               |

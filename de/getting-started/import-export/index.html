@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/" class="active" aria-current="page">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -211,8 +231,11 @@
 </ul>
 <p>Um eine Datei zu importieren, klicken Sie auf die <strong>+</strong>-Schaltfläche auf dem Projekte-Bildschirm oder verwenden Sie die Option <strong>Importieren</strong> im Menü <strong>Datei</strong>. Wenn Sie Änderungen an einer importierten Datei vornehmen, speichert Ingantt diese im XML-Format.</p>
 <blockquote>
-<p>Um Projektdateien außer XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich. YAML-Dateien werden lokal verarbeitet.</p>
+<p>Um andere Projektdateien als XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich. YAML-Dateien werden lokal verarbeitet.</p>
 </blockquote>
+<h3 id="dateigröße">Dateigröße <a href="#dateigröße" class="heading-anchor">#</a></h3>
+<p>Dateien, die wir auf unserem Server konvertieren, sind auf <strong>30 MB</strong> begrenzt. Das betrifft MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP und PEP. XML- und YAML-Dateien werden in der App verarbeitet und nie hochgeladen, daher gilt die Servergrenze für sie nicht.</p>
+<p><strong>Datei zu groß?</strong> Verwenden Sie in Microsoft Project <strong>Datei → Speichern unter</strong> und wählen Sie <strong>Projekt-XML (.xml)</strong>. Ingantt verarbeitet XML in der App, sodass die 30-MB-Servergrenze nicht gilt, und der Export behält Ihre Vorgangsstruktur, Abhängigkeiten und Ressourcen.</p>
 <h2 id="ihr-projekt-exportieren">Ihr Projekt exportieren <a href="#ihr-projekt-exportieren" class="heading-anchor">#</a></h2>
 <p>Ingantt bietet mehrere Exportformate über die Option <strong>Exportieren</strong> im Menü <strong>Datei</strong> (oder <strong>Herunterladen</strong> im Web). Wenn Sie <strong>Exportieren</strong> wählen, erscheint ein Dialog, in dem Sie das gewünschte Format auswählen können:</p>
 <table>
@@ -254,8 +277,8 @@
 <p>PDF-Exporte verwenden immer helle Designfarben, während PNG-Exporte das aktuelle UI-Design (hell oder dunkel) verwenden. CSV-, YAML- und Markdown-Exporte sind reiner Text. Wenn sie in der Benutzeroberfläche sichtbar sind, werden geteilte Vorgänge, Basisplan-Balken und Abgleich-Geisterbalken in PDF- und PNG-Exporten gerendert.</p>
 </blockquote>
 <h2 id="yaml-mit-ki-agenten-bearbeiten">YAML mit KI-Agenten bearbeiten <a href="#yaml-mit-ki-agenten-bearbeiten" class="heading-anchor">#</a></h2>
-<p>Der YAML-Export ist für die Bearbeitung mit einem KI-Coding-Assistenten (Claude Code, Codex oder jedem Tool, das Dateien lesen und schreiben kann) konzipiert. Exportieren Sie das Projekt, beschreiben Sie die gewünschten Änderungen in natürlicher Sprache — <em>„eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen&quot;</em>, <em>„Alex allen Design-Vorgängen zuweisen&quot;</em> — und importieren Sie das Ergebnis zurück.</p>
-<p>Das Format enthält <strong>nur Eingaben</strong> (Dauern, Abhängigkeiten, Einschränkungen, Zuweisungen, Kalender, Raten). Abgeleitete Werte — Start-/Endtermine von Vorgängen, Gesamtkosten, kritischer Pfad, Pufferzeit, Sammelvorgangsaggregationen — werden bewusst weggelassen; Ingantt berechnet sie beim Import neu. Der Agent sollte nicht versuchen, Termine selbst zu ermitteln.</p>
+<p>Der YAML-Export ist für die Bearbeitung mit einem KI-Coding-Assistenten (Claude Code, Codex oder jedem Tool, das Dateien lesen und schreiben kann) konzipiert. Exportieren Sie das Projekt, beschreiben Sie die gewünschten Änderungen in natürlicher Sprache — <em>„eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen“</em>, <em>„Alex allen Design-Vorgängen zuweisen“</em> — und importieren Sie das Ergebnis zurück.</p>
+<p>Das Format enthält <strong>nur Eingaben</strong> (Dauern, Abhängigkeiten, Einschränkungen, Zuweisungen, Kalender, Kostensätze). Abgeleitete Werte — Start-/Endtermine von Vorgängen, Gesamtkosten, kritischer Pfad, Puffer, Sammelvorgangsaggregationen — werden bewusst weggelassen; Ingantt berechnet sie beim Import neu. Der Agent sollte nicht versuchen, Termine selbst zu ermitteln.</p>
 <p>Verweisen Sie den Agenten auf die <a href="/yaml-reference.md">YAML-Formatreferenz</a>, damit er das Schema kennt.</p>
 <blockquote>
 <p>Für die Echtzeitbearbeitung ohne den Export-/Import-Umweg siehe <a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a> — die KI liest und schreibt dasselbe YAML-Schema über eine Live-Sitzung, und Sie sehen jede Änderung im Gantt-Diagramm, sobald sie vorgenommen wird.</p>

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -206,18 +226,18 @@
 </blockquote>
 <p>Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, können Sie den <strong>Einheiten</strong>-Wert als eine vom Standard abweichende Zahl angeben. Dies beeinflusst die Kostenberechnung. Wenn zum Beispiel <strong>Einheiten</strong> 50 % beträgt, sind die berechneten Kosten für die Ressource im Vorgang halb so hoch wie bei 100 % Einheiten.</p>
 <h2 id="materialressourcenkosten">Materialressourcenkosten <a href="#materialressourcenkosten" class="heading-anchor">#</a></h2>
-<p>Für <strong>Material</strong>-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog <strong>Ressourceneigenschaften</strong> ein <strong>Materialbezeichnung</strong> festlegen, um die Einheit zu beschreiben.</p>
+<p>Für <strong>Material</strong>-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog <strong>Ressourceneigenschaften</strong> eine <strong>Materialbezeichnung</strong> festlegen, um die Einheit zu beschreiben.</p>
 <p>Materialressourcen unterstützen zwei Verbrauchsmodi:</p>
 <ul>
 <li><strong>Fest</strong> (Standard) — Eine Gesamtmenge unabhängig von der Vorgangsdauer (z. B. 5 Tonnen Zement)</li>
 <li><strong>Variabel</strong> — Ein Satz pro Zeiteinheit, der mit der Vorgangsdauer skaliert (z. B. 10 Liter Kraftstoff pro Tag)</li>
 </ul>
-<p>Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff&quot;-Materialressource hinzufügen und die Kosten pro Gallone im Dialog <strong>Ressourceneigenschaften</strong> angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als <strong>Einheiten</strong> an, und Ingantt addiert die berechneten Kraftstoffkosten zu den <strong>Kosten</strong> des Vorgangs.</p>
+<p>Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff“-Materialressource hinzufügen und die Kosten pro Gallone im Dialog <strong>Ressourceneigenschaften</strong> angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als <strong>Einheiten</strong> an, und Ingantt addiert die berechneten Kraftstoffkosten zu den <strong>Kosten</strong> des Vorgangs.</p>
 <h2 id="kostenressource">Kostenressource <a href="#kostenressource" class="heading-anchor">#</a></h2>
-<p>Eine <strong>Kosten</strong>-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise&quot; = 800 € bei Vorgang A und 1.200 € bei Vorgang B).</p>
+<p>Eine <strong>Kosten</strong>-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise“ = 800 € bei Vorgang A und 1.200 € bei Vorgang B).</p>
 <p>Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld <strong>Fixkosten</strong> für jeden Vorgang einzeln auszufüllen.</p>
 <h2 id="kostensatztabellen">Kostensatztabellen <a href="#kostensatztabellen" class="heading-anchor">#</a></h2>
-<p>Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Satzsätze für verschiedene Arbeitsarten zu pflegen.</p>
+<p>Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Kostensatzgruppen für verschiedene Arbeitsarten zu pflegen.</p>
 <p>Kostensatztabellen werden auf dem Reiter <strong>Kosten</strong> des Dialogs <strong>Ressourceneigenschaften</strong> konfiguriert. Bei der Zuweisung einer Ressource zu einem Vorgang können Sie im Dialog <strong>Ressourcenzuweisung bearbeiten</strong> auswählen, welche Kostensatztabelle verwendet werden soll.</p>
 <h2 id="kosten-pro-einsatz">Kosten pro Einsatz <a href="#kosten-pro-einsatz" class="heading-anchor">#</a></h2>
 <p>Ressourcen unterstützen ein Feld <strong>Kosten pro Einsatz</strong> — eine Pauschalgebühr, die jedes Mal berechnet wird, wenn die Ressource einem Vorgang zugewiesen wird, unabhängig von der geleisteten Arbeit. Bei Arbeitsressourcen werden die <strong>Kosten pro Einsatz</strong> mit den Zuweisungseinheiten multipliziert (z. B. 200 % Einheiten bedeutet, dass die Kosten pro Einsatz zweimal berechnet werden). <strong>Kosten pro Einsatz</strong> fallen immer zu Beginn des Vorgangs an.</p>
@@ -233,7 +253,7 @@
 <tbody>
 <tr>
 <td><strong>Anfang</strong></td>
-<td>Volle Kosten, sobald Fortschritt verzeichnet wird (% abgeschlossen &gt; 0 %)</td>
+<td>Volle Kosten, sobald Fortschritt verzeichnet wird (% Abgeschlossen &gt; 0 %)</td>
 </tr>
 <tr>
 <td><strong>Anteilig</strong></td>

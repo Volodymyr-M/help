@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/" class="active" aria-current="page">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -210,19 +230,19 @@
 <h2 id="налаштування-назви-та-дати-початку-проекту">Налаштування назви та дати початку проекту <a href="#налаштування-назви-та-дати-початку-проекту" class="heading-anchor">#</a></h2>
 <p>Ваш проект може починатися в інший день, ніж стандартний день, який використовує Ingantt.</p>
 <p>Відкрийте <strong>Властивості проекту</strong> через навігаційну панель або, у веб-версії та на Windows, клацнувши на назві проекту в заголовку.</p>
-<p>Встановіть нову дату початку проекту в полі <strong>Дата початку проекту</strong> та змініть <strong>Назву</strong> проекту.</p>
+<p>Встановіть нову дату початку проекту в полі <strong>Дата початку проекту</strong> та заразом змініть <strong>Назву</strong> проекту.</p>
 <p><img src="/images/getting-started/project_name.png" alt="Назва проекту" / data-dark-src="/images/getting-started/project_name_d.png"></p>
 <blockquote>
 <p>З простотою базового розкладу ви вже можете визначити, коли проект має завершитись, поглянувши на діаграму Ганта.</p>
 </blockquote>
 <h2 id="додавання-та-призначення-ресурсів">Додавання та призначення ресурсів <a href="#додавання-та-призначення-ресурсів" class="heading-anchor">#</a></h2>
 <p>Припустімо, кожне завдання у вашому проекті виконуватиме інша людина.</p>
-<p>Відкрийте навігаційну панель та переключіться на подання <strong>Ресурси</strong>.</p>
+<p>Відкрийте навігаційну панель та перемкніться на подання <strong>Ресурси</strong>.</p>
 <p><img src="/images/getting-started/nav.png" alt="Навігація" / data-dark-src="/images/getting-started/nav_d.png"></p>
 <p>Натисніть велику кнопку <strong>+</strong>, щоб відкрити діалог <strong>Додати ресурс</strong>, введіть <strong>Назву</strong> ресурсу та збережіть. Повторіть ці кроки, щоб додати ще один робочий ресурс.</p>
 <p><img src="/images/getting-started/add_resource.png" alt="Додати ресурс" / data-dark-src="/images/getting-started/add_resource_d.png"></p>
 <p><img src="/images/getting-started/resources.png" alt="Ресурси" / data-dark-src="/images/getting-started/resources_d.png"></p>
-<p>Через навігаційну панель переключіться назад на подання <strong>Завдання</strong>. Двічі клацніть на першому завданні у списку або на діаграмі Ганта, щоб відкрити діалог <strong>Властивості завдання</strong>.</p>
+<p>Через навігаційну панель перемкніться назад на подання <strong>Завдання</strong>. Двічі клацніть на першому завданні у списку або на діаграмі Ганта, щоб відкрити діалог <strong>Властивості завдання</strong>.</p>
 <p>Переключіться на вкладку <strong>Ресурси</strong>, позначте перший ресурс, щоб призначити цю людину на завдання, та збережіть.</p>
 <p><img src="/images/getting-started/assignments.png" alt="Призначення" / data-dark-src="/images/getting-started/assignments_d.png"></p>
 <p>Повторіть ті самі кроки для другого завдання та другого ресурсу.</p>
@@ -246,8 +266,8 @@
 <p>Через навігаційну панель поверніться до подання <strong>Завдання</strong> та подивіться, як змінився ваш проект. Завдання зсунулись, і свято відображається так само, як вихідні дні на діаграмі Ганта.</p>
 <p><img src="/images/getting-started/final.png" alt="Фінальний вигляд" / data-dark-src="/images/getting-started/final_d.png"></p>
 <blockquote>
-<p>Використовуючи такий самий підхід, ви можете налаштувати не лише свята, а й інші зміни в загальному розкладі. Наприклад, додавши робочий час до винятку, ви можете вказати, що всі працюють лише у певні години в цей конкретний день.</p>
-<p>Ви також можете перевірити вкладки, що представляють кожен день тижня, у <strong>Властивостях календаря</strong>. Якщо вся команда іде раніше у п'ятницю або працює у суботу, ви можете налаштувати це на відповідних вкладках.</p>
+<p>Використовуючи такий самий підхід, ви можете налаштувати не лише свята, а й інші зміни в розкладі всіх. Наприклад, додавши робочий час до винятку, ви можете вказати, що всі працюють лише у певні години в цей конкретний день.</p>
+<p>Ви також можете перевірити вкладки, що представляють кожен день тижня, у <strong>Властивостях календаря</strong>. Якщо вся команда йде раніше у п'ятницю або працює у суботу, ви можете налаштувати це на відповідних вкладках.</p>
 </blockquote>
 
     </main>

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -248,7 +268,7 @@
 <p>달력 예외는 근무 주간보다 우선하며, 근무 주간은 기본 요일 일정보다 우선합니다.</p>
 </blockquote>
 <h2 id="달력-예외">달력 예외 <a href="#달력-예외" class="heading-anchor">#</a></h2>
-<p>달력 예외는 일반 요일 일정과 다른 작업이 수행되는 날짜이며, 비근무일도 포함됩니다.</p>
+<p>달력 예외는 작업이 일반 요일 일정과 다르게 수행되는 날짜이며, 비근무일도 포함됩니다.</p>
 <p>달력 예외는 다음에서 지정할 수 있습니다:</p>
 <ul>
 <li>특정 자원에 대한 <strong>Resource Properties</strong> 대화 상자.</li>
@@ -260,10 +280,10 @@
 <h3 id="반복-예외">반복 예외 <a href="#반복-예외" class="heading-anchor">#</a></h3>
 <p>달력 예외는 단일 날짜가 아닌 패턴에 따라 반복되도록 설정할 수 있습니다. 사용 가능한 반복 패턴은 다음과 같습니다:</p>
 <ul>
-<li><strong>매일</strong> — N일마다 또는 N 근무일마다</li>
-<li><strong>매주</strong> — N주마다 지정된 요일에</li>
-<li><strong>매월</strong> — 날짜별 또는 위치별(예: 둘째 화요일)</li>
-<li><strong>매년</strong> — 날짜별 또는 위치별(예: 11월 마지막 금요일)</li>
+<li><strong>Daily</strong>(매일) — N일마다 또는 N 근무일마다</li>
+<li><strong>Weekly</strong>(매주) — N주마다 지정된 요일에</li>
+<li><strong>Monthly</strong>(매월) — 날짜별 또는 위치별(예: 둘째 화요일)</li>
+<li><strong>Yearly</strong>(매년) — 날짜별 또는 위치별(예: 11월 마지막 금요일)</li>
 </ul>
 <p>반복 예외에는 종료 조건이 있습니다: 종료 없음, 날짜까지 종료, N회 발생 후 종료.</p>
 <h2 id="빈-달력-및-부분-달력">빈 달력 및 부분 달력 <a href="#빈-달력-및-부분-달력" class="heading-anchor">#</a></h2>

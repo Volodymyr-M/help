@@ -11,14 +11,14 @@
 ### 기간
 
 - **Actual Duration** — 작업에 지금까지 소요된 근무 시간입니다. 작업 기간에 완료율을 곱하여 계산됩니다.
-- **Remaining Duration** — 작업을 완료하는 데 아직 필요한 근무 시간입니다: Duration - Actual Duration.
+- **Remaining Duration** — 작업을 완료하는 데 아직 필요한 근무 시간입니다: Duration − Actual Duration.
 
 예를 들어, 10일 작업이 40% 완료되면 Actual Duration은 4일이고 Remaining Duration은 6일입니다.
 
 ### 작업량
 
 - **Actual Work** — 자원이 작업에 투입한 총 노력(시간)입니다. 프로젝트 설정에서 **Updating task status updates resource status**가 활성화(기본값)되어 있으면 완료율을 변경할 때 Actual Work가 비례적으로 업데이트됩니다.
-- **Remaining Work** — 작업을 완료하는 데 아직 필요한 노력입니다: Work - Actual Work.
+- **Remaining Work** — 작업을 완료하는 데 아직 필요한 노력입니다: Work − Actual Work.
 
 ### 비용
 
@@ -26,7 +26,7 @@
   - **Start** — Actual Start가 설정되면 전체 비용이 인식됩니다.
   - **Prorated** — 실제 작업 진행 상황에 비례하여 비용이 인식됩니다.
   - **End** — 작업이 100% 완료될 때만 비용이 인식됩니다.
-- **Remaining Cost** — 작업을 완료하는 데 아직 필요한 예산입니다: Total Cost - Actual Cost.
+- **Remaining Cost** — 작업을 완료하는 데 아직 필요한 예산입니다: Total Cost − Actual Cost.
 
 ### 날짜
 
@@ -46,10 +46,10 @@
 
 > **Total = Actual + Remaining**
 
-하나의 값을 변경하면 Ingantt가 일관성을 유지하기 위해 나머지를 업데이트합니다. 가장 일반적인 워크플로우는 **% Complete**를 업데이트하는 것이며, 이는 모든 실적 및 잔여 필드에 자동으로 연쇄적으로 적용됩니다:
+하나의 값을 변경하면 Ingantt가 일관성을 유지하기 위해 나머지를 업데이트합니다. 가장 일반적인 워크플로는 **% Complete**를 업데이트하는 것이며, 이는 모든 실적 및 잔여 필드에 자동으로 연쇄적으로 적용됩니다:
 
 1. **Actual Duration** 및 **Remaining Duration**이 새 완료율에서 재계산됩니다.
-2. **Actual Work** 및 **Remaining Work**가 업데이트됩니다 (프로젝트 설정이 활성화된 경우).
+2. **Actual Work** 및 **Remaining Work**가 업데이트됩니다(프로젝트 설정이 활성화된 경우).
 3. **Actual Start** 및 **Actual Finish**가 진행 상황에 따라 설정됩니다.
 4. **Actual Cost** 및 **Remaining Cost**가 발생 방식에 따라 재계산됩니다.
 

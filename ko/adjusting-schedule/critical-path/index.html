@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/" class="active" aria-current="page">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -193,8 +213,8 @@
       <h1 id="주공정경로">주공정경로 <a href="#주공정경로" class="heading-anchor">#</a></h1>
 <p>이 작업들은 절대 지연되어서는 안 됩니다 — 어떤 지연이든 전체 프로젝트를 늦추게 됩니다. 일찍 식별하고, 면밀히 관찰하면 마감일을 지키기 위해 어디에 집중해야 하는지 정확히 알 수 있습니다.</p>
 <h2 id="주공정-작업">주공정 작업 <a href="#주공정-작업" class="heading-anchor">#</a></h2>
-<p>계획을 실행에 옮기면 일부 작업은 예정보다 빨리 끝나고 다른 작업은 그렇지 않습니다. 일부 작업은 프로젝트 타임라인을 연장하지 않고도 더 오래 걸릴 수 있습니다. 이러한 작업에는 _여유_라고 하는 여분의 시간이 있습니다.</p>
-<p>다른 작업들은 여유가 전혀 없어 조금이라도 지연되면 프로젝트 종료 날짜가 밀립니다. 이를 _주공정 작업_이라고 합니다. 진행 상황을 추적할 때 이 작업들에 특히 주의를 기울여 프로젝트 일정을 유지하십시오.</p>
+<p>계획을 실행에 옮기면 일부 작업은 예정보다 빨리 끝나고 다른 작업은 그렇지 않습니다. 일부 작업은 프로젝트 타임라인을 연장하지 않고도 더 오래 걸릴 수 있습니다. 이러한 작업에는 <em>여유</em>라고 하는 여분의 시간이 있습니다.</p>
+<p>다른 작업들은 여유가 전혀 없어 조금이라도 지연되면 프로젝트 종료 날짜가 밀립니다. 이를 <em>주공정 작업</em>이라고 합니다. 진행 상황을 추적할 때 이 작업들에 특히 주의를 기울여 프로젝트 일정을 유지하십시오.</p>
 <p>다음과 같은 경우에도 작업이 주공정 작업이 됩니다:</p>
 <ul>
 <li><strong>Must start on</strong> 또는 <strong>Must finish on</strong> <a href="/ko/building-schedule/constraints/#%EC%A0%9C%EC%95%BD-%EC%A1%B0%EA%B1%B4">제약 조건</a>이 있는 경우</li>
@@ -209,7 +229,7 @@
 <h2 id="주공정경로-옵션">주공정경로 옵션 <a href="#주공정경로-옵션" class="heading-anchor">#</a></h2>
 <p><strong>Project Properties</strong> 대화 상자의 <strong>Other</strong> 탭에서 주공정경로 계산 방법을 구성할 수 있습니다:</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — 활성화하면 연결되지 않은 각 작업 그룹이 자체 주공정경로를 갖습니다. 비활성화(기본값)하면 후속 작업이 없는 작업은 프로젝트 완료 날짜에서 늦은 완료를 도출합니다.</li>
+<li><strong>Calculate multiple critical paths</strong> — 활성화하면 연결되지 않은 각 작업 그룹이 자체 주공정경로를 갖습니다. 비활성화(기본값)하면 후속 작업이 없는 작업의 늦은 완료일은 프로젝트 완료 날짜를 기준으로 계산됩니다.</li>
 <li><strong>Critical slack limit</strong> — 기본적으로 여유가 0이거나 음수인 작업이 주공정 작업입니다. 이 임계값을 높이면 지정된 일수까지의 여유가 있는 작업도 주공정 작업으로 간주됩니다.</li>
 </ul>
 

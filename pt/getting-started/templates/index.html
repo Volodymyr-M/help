@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelos de Projeto - Primeiros Passos - Ajuda do Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Comece a partir de um dos quatro modelos integrados — Tutorial, PMI Process, Software Development Plan e Wedding Plan — e saiba onde a cópia é salva.">
+  <link rel="canonical" href="https://help.ingantt.com/pt/getting-started/templates/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Modelos de Projeto">
+  <meta property="og:description" content="Comece a partir de um dos quatro modelos integrados — Tutorial, PMI Process, Software Development Plan e Wedding Plan — e saiba onde a cópia é salva.">
+  <meta property="og:url" content="https://help.ingantt.com/pt/getting-started/templates/">
+  <meta property="og:site_name" content="Ajuda do Ingantt">
+  <meta property="og:locale" content="pt_BR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Modelos de Projeto">
+  <meta name="twitter:description" content="Comece a partir de um dos quatro modelos integrados — Tutorial, PMI Process, Software Development Plan e Wedding Plan — e saiba onde a cópia é salva.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/templates/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/templates/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/templates/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/templates/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/templates/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/templates/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/templates/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/templates/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/templates/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/templates/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Pular para o conteúdo</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegação" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/pt/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ajuda do Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Pesquisar..." aria-label="Pesquisar documentação">
+      <div class="search-results" data-loading="Carregando…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Pesquisar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/" selected>Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegação da documentação">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeiros Passos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
+    <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/" class="active" aria-current="page">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
+    <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
+    <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
+    <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurando Seu Projeto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/setting-up-project/project/">Propriedades do Projeto</a></li>
+    <li><a href="/pt/setting-up-project/calendars/">Calendários</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construindo um Cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
+    <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
+    <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
+    <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
+    <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/pt/building-schedule/assignments/">Atribuições</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análise e Ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
+    <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
+    <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planejamento de Custos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/planning-costs/planning-costs/">Entendendo os Custos</a></li>
+    <li><a href="/pt/planning-costs/setting-up-costs/">Configurando Custos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Acompanhamento do Progresso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/tracking/baselines/">Linhas de Base</a></li>
+    <li><a href="/pt/tracking/progress/">Acompanhamento do Progresso</a></li>
+    <li><a href="/pt/tracking/actuals/">Valores Reais</a></li>
+    <li><a href="/pt/tracking/earned-value/">Valor Agregado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Visualizações
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/views/gantt/">Gráfico de Gantt</a></li>
+    <li><a href="/pt/views/task-views/">Visualizações de Tarefas</a></li>
+    <li><a href="/pt/views/resource-views/">Visualizações de Recursos</a></li>
+    <li><a href="/pt/views/filtering/">Filtrando Tarefas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface do Usuário
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
+    <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
+    <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatar o suporte" title="Contatar o suporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contatar o suporte</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="modelos-de-projeto">Modelos de Projeto <a href="#modelos-de-projeto" class="heading-anchor">#</a></h1>
+<p>Um modelo é um plano pronto que você copia e edita. Ele vem com tarefas, durações, dependências e estrutura de tópicos já definidas, então você está corrigindo uma estrutura em vez de digitar uma do zero.</p>
+<h2 id="os-modelos-incluídos">Os Modelos Incluídos <a href="#os-modelos-incluídos" class="heading-anchor">#</a></h2>
+<p>Quatro modelos são integrados — não há nada para baixar nem uma loja de modelos.</p>
+<table>
+<thead>
+<tr>
+<th>Modelo</th>
+<th>Para que serve</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Tutorial Template</strong></td>
+<td>Um plano guiado que percorre as funcionalidades do Ingantt. O melhor primeiro projeto se você é novo no aplicativo.</td>
+</tr>
+<tr>
+<td><strong>PMI Process Template</strong></td>
+<td>Os grupos de processos do PMI — iniciação, planejamento, execução, monitoramento e controle, encerramento — como uma estrutura de tarefas.</td>
+</tr>
+<tr>
+<td><strong>Software Development Plan Template</strong></td>
+<td>Um plano de entrega de software: requisitos, design, construção, testes, lançamento.</td>
+</tr>
+<tr>
+<td><strong>Wedding Plan Template</strong></td>
+<td>Um exemplo prático fora da área de software, com um prazo fixo.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="iniciando-um-plano-a-partir-de-um-modelo">Iniciando um Plano a partir de um Modelo <a href="#iniciando-um-plano-a-partir-de-um-modelo" class="heading-anchor">#</a></h2>
+<p><strong>Pela tela de projetos.</strong> A faixa no topo, <strong>Start a new project plan</strong>, mostra cada modelo com uma imagem de pré-visualização. Clique em um e ele é aberto. Ao lado, o cartão <strong>+</strong> inicia um <strong>Blank project plan</strong>. <strong>Template gallery</strong> abre a lista completa em uma caixa de diálogo, e o menu <strong>⋮</strong> tem <strong>Hide all templates</strong> caso você prefira não ver a faixa.</p>
+<p><strong>De dentro de um projeto.</strong> Escolha <strong>File → New from template</strong>.</p>
+<p>De qualquer forma, você obtém uma cópia. O modelo integrado em si nunca é modificado, então você pode começar a partir do mesmo modelo quantas vezes quiser.</p>
+<h2 id="onde-o-novo-plano-é-salvo">Onde o Novo Plano É Salvo <a href="#onde-o-novo-plano-é-salvo" class="heading-anchor">#</a></h2>
+<p>Isso depende de como você está executando o Ingantt.</p>
+<ul>
+<li><strong>Ingantt para Web, com login no Google.</strong> O novo plano é gravado no seu <a href="/pt/ui/files/">Google Drive</a> imediatamente e é aberto em uma <strong>nova aba do navegador</strong>. O projeto em que você estava trabalhando permanece aberto e intacto na aba original. Como ele está no Drive desde o primeiro momento, o salvamento automático fica ativado imediatamente.</li>
+<li><strong>Em todos os outros casos.</strong> O plano é aberto como um projeto não salvo. Ele não tem um lugar até que você o salve, e não é salvo automaticamente até lá — use <strong>Save</strong> ou <strong>Save as</strong> e escolha onde ele fica.</li>
+</ul>
+<p>Se o modelo não puder ser lido, você verá <em>Error loading template. Please try again.</em> Se ele não puder ser gravado no Drive, você verá <em>Error saving to Google Drive.</em> Em ambos os casos, nada foi alterado e seu projeto existente não é afetado.</p>
+<h2 id="depois-que-o-modelo-é-aberto">Depois que o Modelo É Aberto <a href="#depois-que-o-modelo-é-aberto" class="heading-anchor">#</a></h2>
+<p>A cópia é um projeto normal. Renomeie-a com <strong>File → Rename</strong>, exclua as tarefas de que não precisa e defina a data de início do projeto em <a href="/pt/setting-up-project/project/">Propriedades do Projeto</a> — as datas do modelo são relativas ao seu próprio início e serão todas deslocadas quando você a alterar.</p>
+<p>Iniciar um novo projeto a partir de um modelo requer uma avaliação ou assinatura ativa, assim como criar um em branco.</p>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

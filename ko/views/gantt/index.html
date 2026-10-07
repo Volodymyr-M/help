@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gantt 차트 - 보기 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+  <meta name="description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, Task Inspector, 평준화 Gantt 및 진행선입니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/views/gantt/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Gantt 차트">
-  <meta property="og:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+  <meta property="og:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, Task Inspector, 평준화 Gantt 및 진행선입니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/views/gantt/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Gantt 차트">
-  <meta name="twitter:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, 작업 검사기, 평준화 Gantt 및 진행선입니다.">
+  <meta name="twitter:description" content="프로젝트의 기본 보기 — 작업 목록, Gantt 차트, Task Inspector, 평준화 Gantt 및 진행선입니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/views/gantt/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/views/gantt/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -193,7 +213,7 @@
       <h1 id="gantt-차트">Gantt 차트 <a href="#gantt-차트" class="heading-anchor">#</a></h1>
 <p>Gantt 차트는 프로젝트의 타임라인입니다. 평준화 조정, 진행선, 기준선 이후 일정이 어떻게 변경되었는지 확인할 수 있습니다.</p>
 <h2 id="사용-가능한-보기">사용 가능한 보기 <a href="#사용-가능한-보기" class="heading-anchor">#</a></h2>
-<p>Ingantt는 탐색 서랍이나 <strong>View</strong> 메뉴에서 접근할 수 있는 프로젝트 작업을 위한 다양한 보기를 제공합니다. 모든 보기에서 작업에 대해 사용 가능한 모든 작업을 수행할 수 있습니다.</p>
+<p>Ingantt는 탐색 서랍이나 <strong>View</strong> 메뉴에서 접근할 수 있는 프로젝트 작업을 위한 다양한 보기를 제공합니다. 모든 보기는 완전한 기능을 제공하므로, 어느 보기에서든 작업에 대해 가능한 모든 동작을 수행할 수 있습니다.</p>
 <p><strong>작업 보기:</strong></p>
 <ul>
 <li><strong>Tasks</strong> — 작업 목록 및 Gantt 차트</li>
@@ -212,9 +232,9 @@
 </ul>
 <h2 id="tasks-보기">Tasks 보기 <a href="#tasks-보기" class="heading-anchor">#</a></h2>
 <p><strong>Tasks</strong> 보기는 작업 목록과 Gantt 차트(분할 보기)를 결합한 기본 보기입니다. <strong>View &gt; Panels in Tasks</strong> 하위 메뉴에서 표시할 패널을 구성할 수 있습니다: Task List와 Gantt Chart를 각각 독립적으로 전환할 수 있습니다.</p>
-<h2 id="작업-검사기">작업 검사기 <a href="#작업-검사기" class="heading-anchor">#</a></h2>
-<p><strong>Task Inspector</strong>는 선택한 작업의 세부 정보를 보여주는 측면 패널로, 일정 결정 요인(작업 날짜를 결정하는 요소), 일반 속성, 자원, 선행 작업, 비용 등이 포함됩니다. 도구 모음에서 Task Inspector를 전환합니다.</p>
-<p>상단의 <strong>Scheduling Factors</strong> 섹션은 작업의 예정 날짜를 결정하는 요소를 보여줍니다: 추진 선행 작업(&quot;Driving&quot; 배지가 있는 굵은 글씨), 비추진 선행 작업(상대적 여유 포함), 제약 조건, 평준화 지연, 달력 및 여유 값. 주공정 작업에는 &quot;Critical&quot; 배지가 표시됩니다.</p>
+<h2 id="task-inspector">Task Inspector <a href="#task-inspector" class="heading-anchor">#</a></h2>
+<p><strong>Task Inspector</strong>(작업 검사기)는 선택한 작업의 세부 정보를 보여주는 측면 패널로, 일정 결정 요인(작업 날짜를 결정하는 요소), 일반 속성, 자원, 선행 작업, 비용 등이 포함됩니다. 도구 모음에서 Task Inspector를 전환합니다.</p>
+<p>상단의 <strong>Scheduling Factors</strong> 섹션은 작업의 예정 날짜를 결정하는 요소를 보여줍니다: 날짜를 결정하는 선행 작업(&quot;Driving&quot; 배지가 있는 굵은 글씨), 날짜를 결정하지 않는 선행 작업(상대적 여유 포함), 제약 조건, 평준화 지연, 달력 및 여유 값. 주공정 작업에는 &quot;Critical&quot; 배지가 표시됩니다.</p>
 <h2 id="평준화-gantt">평준화 Gantt <a href="#평준화-gantt" class="heading-anchor">#</a></h2>
 <p><a href="/ko/adjusting-schedule/leveling/#%EC%9E%90%EB%8F%99-%ED%8F%89%EC%A4%80%ED%99%94">자동 평준화</a>가 프로젝트에 적용된 경우, Gantt 차트 영역에 <strong>Leveling Gantt</strong> 토글 버튼이 나타납니다.</p>
 <p>활성화하면 Gantt 차트에 각 작업의 평준화 전 위치(자동 평준화 전 작업의 위치)에 <strong>녹색 막대</strong>가 표시됩니다. 표준 작업 막대는 현재 평준화된 위치에 유지됩니다. 이를 통해 원래 일정과 평준화된 일정을 시각적으로 비교하고 각 작업이 얼마나 지연되었는지 확인할 수 있습니다.</p>

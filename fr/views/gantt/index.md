@@ -24,17 +24,17 @@ Ingantt propose plusieurs vues pour travailler avec votre projet, accessibles de
 
 ## Vue Tasks
 
-La vue **Tasks** est la vue principale combinant une liste de tâches et le diagramme de Gantt (vue fractionnée). Vous pouvez configurer les panneaux affichés via le sous-menu **View > Panels in Tasks** : la liste des tâches et le diagramme de Gantt peuvent être activés ou désactivés indépendamment.
+La vue **Tasks** est la vue principale combinant une liste de tâches et le diagramme de Gantt (vue divisée). Vous pouvez configurer les panneaux affichés via le sous-menu **View > Panels in Tasks** : la liste des tâches et le diagramme de Gantt peuvent être activés ou désactivés indépendamment.
 
 ## Inspecteur de tâche
 
 Le **Task Inspector** est un panneau latéral qui affiche les détails de la tâche sélectionnée, notamment les facteurs de planification (ce qui détermine les dates de la tâche), les propriétés générales, les ressources, les prédécesseurs, le coût, et bien plus encore. Activez ou désactivez l'inspecteur de tâche depuis la barre d'outils.
 
-La section **Scheduling Factors** en haut de l'inspecteur indique ce qui détermine les dates planifiées de la tâche : prédécesseurs déterminants (affichés en gras avec un badge « Driving »), prédécesseurs non déterminants (avec leur marge relative), contraintes, délais de nivellement, calendriers et valeurs de marge. Les tâches critiques affichent un badge « Critical ».
+La section **Scheduling Factors** en haut de l'inspecteur indique ce qui détermine les dates planifiées de la tâche : prédécesseurs déterminants (affichés en gras avec un badge « Driving »), prédécesseurs non déterminants (avec leur marge relative), contraintes, retards de nivellement, calendriers et valeurs de marge. Les tâches critiques affichent un badge « Critical ».
 
 ## Gantt de nivellement
 
-Lorsque le [nivellement automatique](/fr/adjusting-schedule/leveling/index.md#auto-leveling) a été appliqué à votre projet, un bouton bascule **Leveling Gantt** apparaît dans la zone du diagramme de Gantt.
+Lorsque le [nivellement automatique](/fr/adjusting-schedule/leveling/index.md#nivellement-automatique) a été appliqué à votre projet, un bouton bascule **Leveling Gantt** apparaît dans la zone du diagramme de Gantt.
 
 Lorsqu'il est activé, le diagramme de Gantt affiche des **barres vertes** à la position pré-nivellement de chaque tâche (là où elle se trouvait avant le nivellement automatique). Les barres de tâches standard restent à leur position nivelée actuelle. Cela vous permet de comparer visuellement le planning initial avec le planning nivelé et de constater le décalage de chaque tâche.
 

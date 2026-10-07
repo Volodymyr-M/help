@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -191,20 +211,20 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="valori-effettivi">Valori effettivi <a href="#valori-effettivi" class="heading-anchor">#</a></h1>
-<p>Man mano che il lavoro avanza e aggiorni la <a href="/it/tracking/progress/#-di-completamento">% Complete</a>, Ingantt calcola automaticamente i valori effettivi e residui per durata, lavoro, costo e date. Questi campi ti permettono di vedere esattamente cosa è stato speso, cosa resta e come il progetto sta procedendo rispetto al piano.</p>
+<p>Man mano che il lavoro avanza e aggiorni la <a href="/it/tracking/progress/#-di-completamento">% di completamento</a>, Ingantt calcola automaticamente i valori effettivi e residui per durata, lavoro, costo e date. Questi campi ti permettono di vedere esattamente cosa è stato speso, cosa resta e come il progetto sta procedendo rispetto al piano.</p>
 <p>Le colonne più comuni di valori effettivi e residui sono <strong>Actual Cost</strong> / <strong>Remaining Cost</strong>, <strong>Actual Work</strong> / <strong>Remaining Work</strong> e <strong>Actual Duration</strong> / <strong>Remaining Duration</strong>. Guardando questi valori nell'<a href="/it/building-schedule/tasks/#attivit%C3%A0-di-riepilogo-radice">attività di riepilogo radice</a>, puoi vedere i totali dell'intero progetto a colpo d'occhio — quanto è stato speso, quanto sforzo è stato impiegato e quanto resta da fare. Assicurati che l'attività di riepilogo radice sia visibile: seleziona <strong>Show root summary task</strong> nel menu <strong>View</strong> o nella finestra <strong>Options</strong>.</p>
 <h2 id="visualizzare-le-colonne-effettive-e-residue">Visualizzare le colonne effettive e residue <a href="#visualizzare-le-colonne-effettive-e-residue" class="heading-anchor">#</a></h2>
 <p>Le colonne di valori effettivi e residui non sono visibili per impostazione predefinita. Per aggiungerle all'elenco delle attività, apri la finestra <strong>Options</strong> (scheda <strong>Task Columns</strong>) e abilita le colonne necessarie. Puoi anche fare clic destro sull'intestazione di una colonna nella griglia delle attività per accedere rapidamente alle impostazioni delle colonne.</p>
 <h3 id="durata">Durata <a href="#durata" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Actual Duration</strong> — La quantità di tempo lavorativo dedicata a un'attività finora. Calcolata come la durata dell'attività moltiplicata per la sua % di completamento.</li>
-<li><strong>Remaining Duration</strong> — Il tempo lavorativo ancora necessario per completare l'attività: Duration - Actual Duration.</li>
+<li><strong>Remaining Duration</strong> — Il tempo lavorativo ancora necessario per completare l'attività: Duration − Actual Duration.</li>
 </ul>
 <p>Ad esempio, un'attività di 10 giorni al 40% di completamento ha una Actual Duration di 4 giorni e una Remaining Duration di 6 giorni.</p>
 <h3 id="lavoro">Lavoro <a href="#lavoro" class="heading-anchor">#</a></h3>
 <ul>
 <li><strong>Actual Work</strong> — Lo sforzo totale (in ore) che le risorse hanno dedicato a un'attività. Quando <strong>Updating task status updates resource status</strong> è abilitato nelle impostazioni del progetto (impostazione predefinita), l'Actual Work viene aggiornato proporzionalmente quando modifichi la % di completamento.</li>
-<li><strong>Remaining Work</strong> — Lo sforzo ancora necessario per completare l'attività: Work - Actual Work.</li>
+<li><strong>Remaining Work</strong> — Lo sforzo ancora necessario per completare l'attività: Work − Actual Work.</li>
 </ul>
 <h3 id="costo">Costo <a href="#costo" class="heading-anchor">#</a></h3>
 <ul>
@@ -215,7 +235,7 @@
 <li><strong>End</strong> — Il costo viene riconosciuto solo quando l'attività raggiunge il 100% di completamento.</li>
 </ul>
 </li>
-<li><strong>Remaining Cost</strong> — Il budget ancora necessario per completare l'attività: Total Cost - Actual Cost.</li>
+<li><strong>Remaining Cost</strong> — Il budget ancora necessario per completare l'attività: Total Cost − Actual Cost.</li>
 </ul>
 <h3 id="date">Date <a href="#date" class="heading-anchor">#</a></h3>
 <ul>

@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>제약 조건 - 일정 작성 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta name="description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/building-schedule/constraints/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="제약 조건">
-  <meta property="og:description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta property="og:description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/building-schedule/constraints/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="제약 조건">
-  <meta name="twitter:description" content="유연한 제약(가능한 한 빨리)부터 고정 제약(반드시 시작, 반드시 완료)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
+  <meta name="twitter:description" content="유연한 제약(As soon as possible)부터 고정 제약(Must start on, Must finish on)까지 8가지 제약 유형으로 작업 일정을 제어합니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/" class="active" aria-current="page">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -195,8 +215,8 @@
 <h2 id="제약-조건의-작동-방식">제약 조건의 작동 방식 <a href="#제약-조건의-작동-방식" class="heading-anchor">#</a></h2>
 <p>작업 종속성(선행 작업 링크)과 함께 작업의 제약 조건은 작업의 일정 방식을 정의합니다.</p>
 <p>제약 조건은 <strong>Task Properties</strong> 대화 상자의 <strong>Advanced</strong> 탭에서 설정됩니다. 기본 제약 조건은 <strong>As soon as possible</strong>입니다. 이는 다른 작업과의 종속성을 고려하여 작업이 프로젝트 시작 날짜에 가능한 한 가깝게 설정됨을 의미합니다. 완료 날짜 기준으로 계획된 프로젝트에서는 기본값이 <strong>As late as possible</strong>입니다.</p>
-<p>지정된 날짜에 종속성에 관계없이 작업이 시작되거나 완료되도록 강제하는 두 가지 제약 조건이 있습니다. 이를 _고정 제약 조건_이라 하며, <strong>Must start on</strong>과 <strong>Must finish on</strong>이 해당됩니다. 반드시 필요한 경우에만 이 제약 조건을 사용하십시오.</p>
-<p>다른 제약 조건(<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong>, <strong>Finish no later than</strong>)은 작업 종속성을 존중하므로 _유연한 제약 조건_이라고 합니다. 종속성이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다.</p>
+<p>지정된 날짜에 종속성에 관계없이 작업이 시작되거나 완료되도록 강제하는 두 가지 제약 조건이 있습니다. 이를 <em>고정 제약 조건</em>이라 하며, <strong>Must start on</strong>과 <strong>Must finish on</strong>이 해당됩니다. 반드시 필요한 경우에만 이 제약 조건을 사용하십시오.</p>
+<p>다른 제약 조건(<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong>, <strong>Finish no later than</strong>)은 작업 종속성을 존중하므로 <em>유연한 제약 조건</em>이라고 합니다. 종속성이 작업을 제약 날짜 이후로 밀면 종속성에 의한 날짜가 우선합니다.</p>
 <table>
 <thead>
 <tr>

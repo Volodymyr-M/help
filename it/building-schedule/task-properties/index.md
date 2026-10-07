@@ -86,7 +86,7 @@ Se un'attività ha il campo **Notes** compilato, un'icona speciale viene mostrat
 
 Puoi allegare un URL alla tua attività usando il campo **Hyperlink** nella scheda **Notes** della finestra **Task Properties**. Le attività con un collegamento ipertestuale mostrano un'icona a forma di link nell'elenco delle attività. Facendo clic sull'icona del link si apre l'URL nel browser.
 
-## Nascondi barra e riepilogo visivo
+## Nascondi barra e rollup
 
 Nella scheda **Visual** della finestra **Task Properties**:
 

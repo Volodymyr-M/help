@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kritischer Pfad - Analysieren &amp; Anpassen - Ingantt-Hilfe</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Identifizieren Sie kritische Vorgänge und Pufferzeiten in Ihrem Terminplan, konfigurieren Sie kritische Puffergrenzen und verstehen Sie, wie der kritische Pfad berechnet wird.">
+  <meta name="description" content="Identifizieren Sie kritische Vorgänge und Puffer in Ihrem Terminplan, konfigurieren Sie den Grenzwert für kritischen Puffer und verstehen Sie, wie der kritische Pfad berechnet wird.">
   <link rel="canonical" href="https://help.ingantt.com/de/adjusting-schedule/critical-path/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Kritischer Pfad">
-  <meta property="og:description" content="Identifizieren Sie kritische Vorgänge und Pufferzeiten in Ihrem Terminplan, konfigurieren Sie kritische Puffergrenzen und verstehen Sie, wie der kritische Pfad berechnet wird.">
+  <meta property="og:description" content="Identifizieren Sie kritische Vorgänge und Puffer in Ihrem Terminplan, konfigurieren Sie den Grenzwert für kritischen Puffer und verstehen Sie, wie der kritische Pfad berechnet wird.">
   <meta property="og:url" content="https://help.ingantt.com/de/adjusting-schedule/critical-path/">
   <meta property="og:site_name" content="Ingantt-Hilfe">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Kritischer Pfad">
-  <meta name="twitter:description" content="Identifizieren Sie kritische Vorgänge und Pufferzeiten in Ihrem Terminplan, konfigurieren Sie kritische Puffergrenzen und verstehen Sie, wie der kritische Pfad berechnet wird.">
+  <meta name="twitter:description" content="Identifizieren Sie kritische Vorgänge und Puffer in Ihrem Terminplan, konfigurieren Sie den Grenzwert für kritischen Puffer und verstehen Sie, wie der kritische Pfad berechnet wird.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/critical-path/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/critical-path/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/" class="active" aria-current="page">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="kritischer-pfad">Kritischer Pfad <a href="#kritischer-pfad" class="heading-anchor">#</a></h1>
-<p>Dies sind die Vorgänge, bei denen Sie sich keine Verzögerung leisten können — jede Verschiebung verschiebt das gesamte Projekt. Identifizieren Sie sie frühzeitig, beobachten Sie sie genau, und Sie wissen genau, worauf Sie sich konzentrieren müssen, um Ihren Termin einzuhalten.</p>
+<p>Dies sind die Vorgänge, bei denen Sie sich keine Verzögerung leisten können — jeder Rückstand verschiebt das gesamte Projekt. Identifizieren Sie sie frühzeitig, beobachten Sie sie genau, und Sie wissen genau, worauf Sie sich konzentrieren müssen, um Ihren Termin einzuhalten.</p>
 <h2 id="kritische-vorgänge">Kritische Vorgänge <a href="#kritische-vorgänge" class="heading-anchor">#</a></h2>
 <p>Sobald Sie Ihren Plan umsetzen, werden einige Vorgänge früher als geplant fertig — und andere nicht. Manche Vorgänge können länger dauern, ohne den Projektzeitplan zu verlängern. Diese Vorgänge haben Spielraum, der als <em>Puffer</em> bezeichnet wird.</p>
 <p>Andere Vorgänge haben keinen Puffer — jede Verzögerung verschiebt das Enddatum des Projekts. Diese werden als <em>kritische Vorgänge</em> bezeichnet. Um Ihr Projekt im Zeitplan zu halten, achten Sie besonders auf sie, wenn Sie den Fortschritt verfolgen.</p>
@@ -200,7 +220,7 @@
 <li>Er eine <strong>Muss anfangen am</strong>- oder <strong>Muss enden am</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> hat</li>
 <li>Er eine <strong>So spät wie möglich</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a> in einem vom Startdatum geplanten Projekt hat</li>
 <li>Sein Enddatum seinen <a href="/de/building-schedule/task-properties/#stichtag">Stichtag</a> erreicht oder überschreitet</li>
-<li>Er <strong>negativen Puffer</strong> hat — ein Planungskonflikt, bei dem Einschränkungen den Vorgang früher als seine Abhängigkeiten es erlauben erzwingen</li>
+<li>Er <strong>negativen Puffer</strong> hat — ein Planungskonflikt, bei dem Einschränkungen den Vorgang auf einen früheren Zeitpunkt zwingen, als seine Abhängigkeiten erlauben</li>
 </ul>
 <p>Vorgänge, die zu 100 % abgeschlossen sind, werden nie als kritisch markiert, unabhängig von anderen Bedingungen.</p>
 <p>Ingantt erkennt kritische Vorgänge automatisch. Wenn die Option <strong>Kritische Vorgänge hervorheben</strong> aktiviert ist (über das Menü <strong>Ansicht</strong>, das Menü <strong>Diagramm</strong> in der Menüleiste oder den Dialog <strong>Optionen</strong>), werden diese Vorgänge rot dargestellt.</p>
@@ -210,7 +230,7 @@
 <p>Auf dem Reiter <strong>Sonstiges</strong> des Dialogs <strong>Projekteigenschaften</strong> können Sie konfigurieren, wie der kritische Pfad berechnet wird:</p>
 <ul>
 <li><strong>Mehrere kritische Pfade berechnen</strong> — Wenn aktiviert, erhält jede unverbundene Gruppe verknüpfter Vorgänge ihren eigenen kritischen Pfad. Wenn deaktiviert (die Standardeinstellung), leiten Vorgänge ohne Nachfolger ihr spätes Ende vom Projektendtermin ab.</li>
-<li><strong>Kritische Pufferzeit-Grenze</strong> — Standardmäßig sind Vorgänge mit null oder negativem Puffer kritisch. Sie können diesen Schwellenwert erhöhen, sodass Vorgänge mit Puffer bis zur angegebenen Anzahl von Tagen ebenfalls als kritisch betrachtet werden.</li>
+<li><strong>Grenzwert für kritischen Puffer</strong> — Standardmäßig sind Vorgänge mit null oder negativem Puffer kritisch. Sie können diesen Schwellenwert erhöhen, sodass Vorgänge mit Puffer bis zur angegebenen Anzahl von Tagen ebenfalls als kritisch betrachtet werden.</li>
 </ul>
 
     </main>

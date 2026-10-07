@@ -1,0 +1,40 @@
+# 무료 체험
+
+Ingantt for Web은 모든 기능을 완전히 사용할 수 있는 7일 무료 체험으로 시작됩니다. 체험을 시작하는 데 신용카드는 필요하지 않습니다.
+
+## 체험 시작
+
+체험은 Google로 처음 로그인할 때 시작됩니다. 별도로 활성화할 것은 없습니다. Ingantt가 Google 계정을 등록하고 환영 이메일을 보내면 7일이 시작됩니다. 체험은 기기나 브라우저가 아니라 Google 계정에 연결되므로, 다른 기기에서 로그인해도 같은 체험이 이어집니다.
+
+## 포함 내용
+
+모든 기능이 포함됩니다. 체험 기간 중 제한되는 기능은 없습니다. AI 프로젝트 생성, Microsoft Project 가져오기 및 내보내기, Google Drive 연동, 자원 평준화, 기준선, 획득가치 모두 유료 구독과 똑같이 작동합니다.
+
+## 남은 기간 확인
+
+탐색 서랍에 상태가 표시됩니다:
+
+- **Free trial ends in N days**
+- **Free trial almost ended**
+- **Free trial ended**
+
+체험 종료 며칠 전에 이메일을 한 번 받고, 종료된 후에 다시 한 번 받게 됩니다.
+
+## 체험이 끝나면
+
+Ingantt는 **보기 전용** 모드로 전환되고 인터페이스에 *View only mode as trial ended*라고 표시됩니다.
+
+- **아무것도 삭제되지 않습니다.** 프로젝트 파일은 Google Drive에 원래 있던 자리에 그대로 남아 있습니다. 파일은 사용자의 것이며, Ingantt는 프로젝트를 자체 서버에 저장하지 않습니다.
+- 프로젝트를 열어 읽는 것은 계속 가능합니다.
+- 구독하기 전까지는 변경 사항을 저장할 수 없습니다. 저장을 시도하면 Ingantt가 구독 대화 상자를 표시합니다.
+- 계획을 꺼내려면 **File** → **Download** → **Download XML**을 사용하거나, Microsoft Project XML을 읽을 수 있는 아무 도구로 Google Drive에서 파일을 여십시오.
+
+메시지의 **Subscribe now** 또는 **Account** 대화 상자에서 구독할 수 있습니다. [구독 및 결제](/ko/account/subscription/index.md)를 참조하십시오.
+
+## 설치형 앱
+
+이 문서는 Ingantt for Web에 대해 설명합니다. App Store, Google Play, Mac App Store 또는 Microsoft Store에서 Ingantt를 설치한 경우, 사용 권한은 해당 스토어의 구매에 따릅니다. [구독 및 결제](/ko/account/subscription/index.md)를 참조하십시오.
+
+## 체험에 관한 문의
+
+체험 연장, 재시작, 예상보다 일찍 끝난 체험 등 체험과 관련된 모든 문의는 로그인에 사용한 Google 계정 주소와 함께 [지원팀에 이메일](mailto:support@ingantt.com)을 보내 주시면 계정을 확인해 드리겠습니다.

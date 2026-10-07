@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>버전 기록 - 사용자 인터페이스 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Google Drive에 저장된 계획의 전체 기록을 살펴보고, 과거 버전을 Gantt 차트에서 미리 보고, 중요한 버전을 고정하고, 원하는 버전을 현재 계획으로 복원합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/ui/version-history/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="버전 기록">
+  <meta property="og:description" content="Google Drive에 저장된 계획의 전체 기록을 살펴보고, 과거 버전을 Gantt 차트에서 미리 보고, 중요한 버전을 고정하고, 원하는 버전을 현재 계획으로 복원합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/ui/version-history/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="버전 기록">
+  <meta name="twitter:description" content="Google Drive에 저장된 계획의 전체 기록을 살펴보고, 과거 버전을 Gantt 차트에서 미리 보고, 중요한 버전을 고정하고, 원하는 버전을 현재 계획으로 복원합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/version-history/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/version-history/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/version-history/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/version-history/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/version-history/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/version-history/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/version-history/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/version-history/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/" class="active" aria-current="page">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">지원 문의</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="버전-기록">버전 기록 <a href="#버전-기록" class="heading-anchor">#</a></h1>
+<p>Ingantt는 Google Drive에 저장된 모든 계획의 전체 기록을 보관합니다. 기록을 둘러보고, 과거의 어떤 버전이든 Gantt 차트에서 미리 보고, 중요한 버전을 고정하고, 하나를 현재 계획으로 복원할 수 있습니다.</p>
+<p><strong>프로젝트가 Google Drive에서 열려 있어야 합니다.</strong> 버전 기록은 Google Drive의 수정 기록이므로, 기기에서 연 프로젝트나 한 번도 저장하지 않은 프로젝트에서는 두 개의 버전 기록 메뉴 항목이 숨겨집니다. <a href="/ko/ui/files/">Drive</a>에 저장하면 표시됩니다.</p>
+<h2 id="버전-기록-열기">버전 기록 열기 <a href="#버전-기록-열기" class="heading-anchor">#</a></h2>
+<p><strong>File → Version history → See version history</strong>를 선택하거나 <code>Ctrl</code> + <code>Alt</code> + <code>Shift</code> + <code>H</code>를 누르십시오.</p>
+<p>패널이 측면에 열리고 차트에 공간을 확보하기 위해 Ingantt가 전체 화면으로 전환됩니다. 패널을 닫으면 모든 것이 원래대로 돌아갑니다.</p>
+<h2 id="둘러보기-및-미리보기">둘러보기 및 미리보기 <a href="#둘러보기-및-미리보기" class="heading-anchor">#</a></h2>
+<p>버전은 최신 순으로 나열되며 <strong>Today</strong>, <strong>Yesterday</strong>, 그다음 날짜 순으로 일별로 묶입니다. 최신 버전에는 <strong>Current version</strong> 레이블이 붙으며 패널이 열릴 때 자동으로 선택됩니다.</p>
+<p>아무 버전이나 클릭하면 Ingantt가 차트에 해당 버전을 불러와 살펴볼 수 있습니다. 미리보기는 보기만 할 뿐 편집이 아닙니다:</p>
+<ul>
+<li>열려 있던 계획은 실행 취소 기록과 저장하지 않은 변경 사항을 포함하여 손대지 않은 채 따로 보관됩니다.</li>
+<li>패널을 닫으면 계획이 떠나기 전 상태 그대로 돌아옵니다.</li>
+<li>미리보기로는 Drive에 아무것도 기록되지 않습니다.</li>
+</ul>
+<h2 id="버전-고정">버전 고정 <a href="#버전-고정" class="heading-anchor">#</a></h2>
+<p>Google Drive는 시간이 지나면 파일의 오래된 수정 버전을 정리합니다. 버전을 고정하면 <strong>영구 보관</strong>으로 표시되어 이 정리에서 살아남아 목록에 계속 남습니다.</p>
+<p>고정하는 방법은 두 가지입니다:</p>
+<ul>
+<li><strong>File → Version history → Pin current version</strong>은 패널을 열지 않고 가장 최근 버전을 고정합니다. 재계획 전, 단계 종료 시점, 계획 승인 시점 등 보관하고 싶은 저장 직후에 사용하십시오.</li>
+<li>패널에서 아무 버전의 메뉴를 열고 <strong>Pin this version</strong>을 선택합니다.</li>
+</ul>
+<p>고정된 버전은 목록에 <strong>Pinned</strong>로 표시됩니다. 같은 메뉴 항목을 다시 선택하면 고정이 해제됩니다.</p>
+<h2 id="버전-복원">버전 복원 <a href="#버전-복원" class="heading-anchor">#</a></h2>
+<p>원하는 버전을 선택하고 <strong>Restore this version</strong>을 선택하십시오. Ingantt가 확인을 요청합니다:</p>
+<blockquote>
+<p><em>Restore this version? Your current version will be saved first.</em> (이 버전을 복원하시겠습니까? 현재 버전이 먼저 저장됩니다.)</p>
+</blockquote>
+<p>복원해도 현재 계획이 버려지지 않습니다. 복원된 내용이 기록 위에 <strong>새</strong> 버전으로 저장되므로, 복원 전에 있던 버전도 여전히 목록에 남아 있으며 그 자체로 다시 복원할 수 있습니다. 기록은 늘어나기만 하며, 복원으로 삭제되는 것은 없습니다.</p>
+<p>확인하면 복원된 계획이 열린 프로젝트가 되고 즉시 Drive에 저장됩니다.</p>
+<h2 id="버전-기록은-기준선과-다릅니다">버전 기록은 기준선과 다릅니다 <a href="#버전-기록은-기준선과-다릅니다" class="heading-anchor">#</a></h2>
+<p>둘은 혼동하기 쉽습니다:</p>
+<ul>
+<li><strong>버전 기록</strong>은 Google Drive가 보관하는 시간에 따른 <em>파일</em>의 기록입니다. &quot;지난 화요일에 이 계획은 어떤 모습이었나?&quot;에 답합니다.</li>
+<li><strong><a href="/ko/tracking/baselines/">기준선</a></strong>은 계획 안에 저장되는 <em>일정</em>의 스냅샷으로, 같은 보기에서 비교합니다. Gantt 차트의 기준선 막대, 테이블의 기준선 및 차이 열이 그것입니다. &quot;승인된 계획에서 얼마나 벗어났나?&quot;에 답합니다.</li>
+</ul>
+<p>되돌아가려면 버전 기록을 사용하십시오. 측정하려면 기준선을 사용하십시오.</p>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

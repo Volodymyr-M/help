@@ -6,7 +6,7 @@ Configura la data di inizio, gli orari di lavoro e le regole di pianificazione d
 
 Imposta il nome del progetto nel campo **Name** della scheda **General** della finestra **Project Properties**. Questo nome viene utilizzato anche dall'[attività di riepilogo radice](/it/building-schedule/tasks/index.md#attività-di-riepilogo-radice) del progetto.
 
-Su web e Windows, facendo clic sul nome del progetto nell'intestazione si apre la finestra **Project Properties**.
+Su web e Windows, facendo clic sul nome del progetto nell'intestazione si apre anche la finestra **Project Properties**.
 
 ## Data di inizio e direzione di pianificazione
 

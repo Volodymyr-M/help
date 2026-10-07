@@ -23,10 +23,42 @@ Per gestire le baseline, usa la voce **Baselines** nel menu **Project**. La fine
 
 ## Colonne di baseline e scostamento
 
-Puoi aggiungere colonne di baseline (**Start**, **Finish**, **Duration**, **Work**, **Cost**) e colonne di scostamento (**Start Variance**, **Finish Variance**, ecc.) all'elenco delle attività tramite la finestra **Options**. Le colonne di scostamento mostrano la differenza tra il cronogramma attuale e la [baseline Earned Value](/it/tracking/earned-value/index.md#baseline-earned-value).
+Puoi aggiungere colonne di baseline e di scostamento all'elenco delle attività tramite la finestra **Options**. In totale ci sono **55 colonne di baseline** e **5 colonne di scostamento**.
+
+### Le 55 colonne di baseline
+
+Ingantt memorizza **11 baseline**: la **Baseline** senza numero, più da **Baseline 1** a **Baseline 10**. Ognuna espone le stesse cinque colonne di attività:
+
+- Baseline Start
+- Baseline Finish
+- Baseline Duration
+- Baseline Work
+- Baseline Cost
+
+11 baseline × 5 campi = **55 colonne di baseline**, tutte disponibili dal selettore delle colonne nella tabella delle attività. Il set senza numero ha il nome semplice (*Baseline Start*); quelli numerati portano il proprio numero (*Baseline 3 Start*).
+
+### Le 5 colonne di scostamento
+
+Le colonne di scostamento sono calcolate — cronogramma attuale meno baseline — e sono cinque:
+
+- Start Variance
+- Finish Variance
+- Duration Variance
+- Work Variance
+- Cost Variance
+
+Esiste un solo set di cinque, non un set per ogni baseline. Confrontano il cronogramma attuale con **una** baseline — quella selezionata come [baseline Earned Value](/it/tracking/earned-value/index.md#baseline-earned-value) in **Project → Earned Value Options**, che per impostazione predefinita è la Baseline senza numero. Cambia quell'impostazione e ogni colonna di scostamento viene ricalcolata rispetto alla baseline scelta. Un'attività la cui baseline scelta non è mai stata impostata mostra uno scostamento vuoto anziché zero.
+
+## Dove vengono memorizzate le baseline
+
+Le baseline sono memorizzate **all'interno del file di progetto**, non in un file separato. Salvando il progetto si salvano anche le sue baseline.
+
+Se provi a impostare una dodicesima baseline, Ingantt ti avvisa: *All baseline slots are in use. Clear one in the Baselines dialog first.* Apri **Project → Baselines** e liberane uno.
+
+Le baseline non sono la stessa cosa della [cronologia delle versioni](/it/ui/version-history/index.md), che registra il file stesso nel tempo. Usa la cronologia delle versioni per tornare a un piano precedente; usa le baseline per misurare di quanto il piano attuale si è discostato.
 
 ## Piani intermedi
 
-I piani intermedi memorizzano istantanee leggere del cronogramma (solo le date di **Start** e **Finish**) per un confronto rapido senza il sovraccarico delle baseline complete. Ingantt supporta fino a 10 piani intermedi (`Interim Plan 1` fino a `Interim Plan 10`).
+I piani intermedi memorizzano istantanee leggere del cronogramma (solo le date di **Start** e **Finish**) per un confronto rapido senza il sovraccarico delle baseline complete. Ingantt supporta fino a 10 piani intermedi (da `Interim Plan 1` a `Interim Plan 10`).
 
 Imposta e cancella i piani intermedi dalla voce **Interim Plans** nel menu **Project**. Puoi visualizzare le date dei piani intermedi come colonne nell'elenco delle attività.

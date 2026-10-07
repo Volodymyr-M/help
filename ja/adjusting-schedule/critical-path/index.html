@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/" class="active" aria-current="page">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -193,14 +213,14 @@
       <h1 id="クリティカルパス">クリティカルパス <a href="#クリティカルパス" class="heading-anchor">#</a></h1>
 <p>これらは遅延が許されないタスクです。いずれかが遅れると、プロジェクト全体が遅れます。早期に特定し、注意深く監視することで、期限を守るためにどこに集中すべきかを正確に把握できます。</p>
 <h2 id="クリティカルタスク">クリティカルタスク <a href="#クリティカルタスク" class="heading-anchor">#</a></h2>
-<p>計画を実行に移すと、一部のタスクは予定より早く終わり、他のタスクはそうならない場合があります。プロジェクトのタイムラインを延ばさずに長引く可能性のあるタスクもあります。これらのタスクには余裕があり、_余裕（スラック）_と呼ばれます。</p>
-<p>一方、余裕がゼロのタスクもあります。いかなる遅延もプロジェクトの終了日をシフトさせます。これらは_クリティカルタスク_と呼ばれます。プロジェクトをスケジュール通りに進めるために、進捗管理の際にはこれらに特に注意を払ってください。</p>
+<p>計画を実行に移すと、一部のタスクは予定より早く終わり、他のタスクはそうならない場合があります。プロジェクトのタイムラインを延ばさずに長引く可能性のあるタスクもあります。これらのタスクには時間的なゆとりがあり、これを<em>余裕（スラック）</em>と呼びます。</p>
+<p>一方、余裕がゼロのタスクもあります。いかなる遅延もプロジェクトの終了日をシフトさせます。これらは<em>クリティカルタスク</em>と呼ばれます。プロジェクトをスケジュール通りに進めるために、進捗を追跡する際にはこれらに特に注意を払ってください。</p>
 <p>以下の場合もタスクはクリティカルとみなされます：</p>
 <ul>
 <li><strong>Must start on</strong>または<strong>Must finish on</strong>の<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>がある場合</li>
 <li>開始日から計画するプロジェクトで<strong>As late as possible</strong>の<a href="/ja/building-schedule/constraints/#%E5%88%B6%E7%B4%84%E3%81%AE%E4%BB%95%E7%B5%84%E3%81%BF">制約</a>がある場合</li>
 <li>終了日が<a href="/ja/building-schedule/task-properties/#%E6%9C%9F%E9%99%90">期限</a>と同じかそれを超えている場合</li>
-<li><strong>マイナスの余裕</strong>がある場合 — 制約がタスクを依存関係が許すよりも前に強制するスケジューリング競合</li>
+<li><strong>マイナスの余裕</strong>がある場合 — 依存関係が許すよりも前にタスクを開始させるよう制約が強制する、スケジューリング上の競合</li>
 </ul>
 <p>達成率が100%のタスクは、他の条件に関係なくクリティカルとマークされることはありません。</p>
 <p>Inganttはクリティカルタスクを自動的に検出します。<strong>Highlight critical tasks</strong>オプションが有効になっている場合（<strong>View</strong>メニュー、メニューバーの<strong>Chart</strong>メニュー、または<strong>Options</strong>ダイアログで設定可能）、これらのタスクは赤色で表示されます。</p>
@@ -209,7 +229,7 @@
 <h2 id="クリティカルパスのオプション">クリティカルパスのオプション <a href="#クリティカルパスのオプション" class="heading-anchor">#</a></h2>
 <p><strong>Project Properties</strong>ダイアログの<strong>Other</strong>タブで、クリティカルパスの計算方法を設定できます：</p>
 <ul>
-<li><strong>Calculate multiple critical paths</strong> — 有効にすると、リンクされたタスクの各独立グループが独自のクリティカルパスを持ちます。無効の場合（デフォルト）、後続タスクのないタスクはプロジェクト終了日から遅延終了日を算出します。</li>
+<li><strong>Calculate multiple critical paths</strong> — 有効にすると、リンクされたタスクの各独立グループが独自のクリティカルパスを持ちます。無効の場合（デフォルト）、後続タスクのないタスクはプロジェクト終了日から最遅終了日を算出します。</li>
 <li><strong>Critical slack limit</strong> — デフォルトでは、余裕がゼロまたはマイナスのタスクがクリティカルです。このしきい値を増やすと、指定した日数以下の余裕を持つタスクもクリティカルとみなされます。</li>
 </ul>
 

@@ -14,7 +14,7 @@ En la vista de Uso de recursos, puede hacer doble clic en las celdas de trabajo 
 
 ## Uso de tareas
 
-La vista **Uso de tareas** es la inversa de Uso de recursos — muestra una vista centrada en la tarea de la distribución del trabajo. Cada tarea aparece como una fila de nivel superior con sus asignaciones de recursos indentadas debajo.
+La vista **Uso de tareas** es la inversa de Uso de recursos — muestra una vista centrada en la tarea de la distribución del trabajo. Cada tarea aparece como una fila de nivel superior con sus asignaciones de recursos con sangría debajo de ella.
 
 El panel izquierdo muestra los detalles de la tarea y la asignación, mientras que el panel derecho muestra los valores de trabajo distribuidos a lo largo de los períodos de tiempo. Los valores de trabajo a nivel de tarea se muestran en negrita. Los valores de trabajo de asignación sobreasignados se resaltan en rojo.
 

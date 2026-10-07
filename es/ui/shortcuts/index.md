@@ -18,15 +18,15 @@ Acelere su trabajo con atajos de teclado para acciones comunes como editar, nave
 | `Ctrl + P`             | Imprimir el proyecto actual.                                                                                                                        |
 | `Ctrl + Shift + F`     | Alternar la visibilidad del **encabezado/barra de menú**.                                                                                                            |
 | `A`                    | Agregar un nuevo elemento.                                                                                                                                   |
-| `Supr`                  | Eliminar los elementos seleccionados.                                                                                                                            |
+| `Del`                  | Eliminar los elementos seleccionados.                                                                                                                            |
 | `Enter`                | Mostrar el diálogo de **Propiedades** del elemento seleccionado. Si hay múltiples elementos seleccionados, el diálogo se muestra para el primer elemento.                       |
-| `Flecha arriba`             | Seleccionar el elemento anterior.                                                                                                                         |
-| `Flecha abajo`           | Seleccionar el siguiente elemento.                                                                                                                             |
-| `Shift + Flecha arriba/abajo` | Extender la selección hacia arriba o hacia abajo en cualquier vista de lista.                                                                                                |
-| `Ctrl + Flecha arriba`      | Mover las tareas seleccionadas hacia arriba.                                                                                                                           |
-| `Ctrl + Flecha abajo`    | Mover las tareas seleccionadas hacia abajo.                                                                                                                         |
-| `Ctrl + Flecha izquierda`    | Disminuir la sangría de las tareas seleccionadas.                                                                                                                |
-| `Ctrl + Flecha derecha`   | Aumentar la sangría de las tareas seleccionadas.                                                                                                                |
+| `Arrow Up`             | Seleccionar el elemento anterior.                                                                                                                         |
+| `Arrow Down`           | Seleccionar el siguiente elemento.                                                                                                                             |
+| `Shift + Arrow Up/Down` | Extender la selección hacia arriba o hacia abajo en cualquier vista de lista.                                                                                                |
+| `Ctrl + Arrow Up`      | Mover las tareas seleccionadas hacia arriba.                                                                                                                           |
+| `Ctrl + Arrow Down`    | Mover las tareas seleccionadas hacia abajo.                                                                                                                         |
+| `Ctrl + Arrow Left`    | Disminuir la sangría de las tareas seleccionadas.                                                                                                                |
+| `Ctrl + Arrow Right`   | Aumentar la sangría de las tareas seleccionadas.                                                                                                                |
 | `Tab / Shift + Tab`    | Moverse a la siguiente o anterior celda editable. Confirma la edición actual antes de moverse.                                                               |
 | `R`                    | Cambiar a la vista **Recursos**.                                                                                                                     |
 | `C`                    | Cambiar a la vista **Calendarios**.                                                                                                                     |
@@ -36,8 +36,8 @@ Acelere su trabajo con atajos de teclado para acciones comunes como editar, nave
 | `O`                    | Alejar el diagrama de Gantt.                                                                                                                      |
 | `L`                    | Vincular las tareas seleccionadas.                                                                                                                              |
 | `U`                    | Desvincular las tareas seleccionadas (eliminar la dependencia entre ellas).                                                                                       |
-| `Teclado numérico +`             | Acercar el diagrama de Gantt.                                                                                                                       |
-| `Teclado numérico -`             | Alejar el diagrama de Gantt.                                                                                                                      |
+| `Numpad +`             | Acercar el diagrama de Gantt.                                                                                                                       |
+| `Numpad -`             | Alejar el diagrama de Gantt.                                                                                                                      |
 | `Esc`                  | Salir del modo de pantalla completa; cancelar diálogos.                                                                                                            |
 | `Ctrl + Enter`         | Confirmar el diálogo actual.                                                                                                                       |
 | `Ctrl + Alt + Shift + H` | Mostrar el historial de versiones.                                                                                                                           |

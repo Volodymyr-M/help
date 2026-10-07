@@ -10,7 +10,7 @@ Pour affecter une ressource, cochez la case dans la ligne correspondant à la re
 
 Les affectations de ressources de travail ou matérielles possèdent des **Units**, affichées dans la colonne correspondante. Cliquez sur le bouton **Edit** pour modifier la valeur par défaut des **Units** de l'affectation.
 
-Par défaut, les ressources de travail sont affectées avec des unités correspondant aux [Max Units](/fr/building-schedule/resources/index.md#max-units) de la ressource (100 % pour une ressource à temps plein). Cela signifie que la ressource consacrera la totalité de son temps calendaire disponible à la tâche. Vous pouvez modifier cette valeur à votre convenance.
+Par défaut, les ressources de travail sont affectées avec des unités correspondant aux [unités maximales](/fr/building-schedule/resources/index.md#unités-maximales) de la ressource (100 % pour une ressource à temps plein). Cela signifie que la ressource consacrera la totalité de son temps calendaire disponible à la tâche. Vous pouvez modifier cette valeur à votre convenance.
 
 Par défaut, les ressources matérielles sont affectées avec 1 unité. Cela signifie qu'une unité de ce matériau sera utilisée lors de la réalisation de la tâche. L'unité représente ce que vous avez défini pour le matériau (boîte, litre, tonne, etc.). Vous pouvez modifier la valeur par défaut et définir n'importe quel nombre d'unités.
 
@@ -28,8 +28,18 @@ Lorsqu'une ressource de travail est affectée à une tâche, l'effort (travail) 
 | **Late Peak** | Montée progressive vers un pic en fin de tâche |
 | **Bell** | Courbe en cloche — pic au milieu |
 | **Turtle** | Courbe en cloche aplatie — distribution plus lissée |
+| **Contoured** | Votre propre répartition jour par jour. Défini automatiquement lorsque vous modifiez le travail dans une vue d'utilisation ; il ne peut pas être choisi dans la liste déroulante. |
 
 Les profils de charge de travail affectent la répartition du travail sur les différentes périodes et sont préservés lors de l'ouverture et de l'enregistrement des fichiers de projet.
+
+### Le profil Contoured
+
+**Contoured** est le profil personnalisé, et il se comporte différemment des huit autres. Vous ne pouvez pas le choisir dans la liste déroulante pour une affectation qui ne l'a pas déjà — l'option est désactivée. Vous l'obtenez en **modifiant directement le travail dans une cellule de la vue [Resource Usage ou Task Usage](/fr/views/resource-views/index.md)** : dès que vous saisissez une valeur de travail pour un jour, le profil de cette affectation devient *Contoured* et c'est la répartition que vous avez saisie qui est utilisée.
+
+Deux conséquences méritent d'être connues :
+
+- **Quitter le profil Contoured efface la répartition saisie à la main.** Choisissez l'un des huit autres profils et les valeurs journalières que vous aviez saisies sont effacées. Elles ne sont pas conservées ni restaurées si vous revenez à Contoured.
+- **Le travail Contoured survit à un aller-retour avec le format Microsoft Project.** L'import lit le travail chronologique jour par jour dans l'affectation, et l'export le réécrit. Un planning venant de Microsoft Project avec un profil modifié à la main le conserve.
 
 ## Délai d'affectation
 

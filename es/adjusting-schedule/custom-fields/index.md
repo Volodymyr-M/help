@@ -1,6 +1,6 @@
 # Campos personalizados
 
-Agregue sus propias columnas de datos a las tareas — rastree departamento, códigos de prioridad, estado de aprobación o cualquier información específica del proyecto junto con los campos integrados.
+Agregue sus propias columnas de datos a las tareas — registre el departamento, los códigos de prioridad, el estado de aprobación o cualquier información específica del proyecto junto con los campos integrados.
 
 Ingantt admite campos personalizados en tareas, incluyendo tipos de campo Texto, Número, Indicador, Fecha, Inicio, Fin, Duración y Costo.
 
@@ -8,7 +8,7 @@ Para gestionar campos personalizados, abra el elemento **Campos personalizados**
 
 Para editar valores de campos personalizados, use la pestaña **Campos personalizados** del diálogo **Propiedades de la tarea**. Para agregar columnas de campos personalizados a la tabla de tareas, use el diálogo **Opciones**.
 
-Los campos personalizados también admiten fórmulas (evaluadas automáticamente) y acumulación a [tareas de resumen](/es/building-schedule/tasks/index.md#tareas-de-resumen) — Suma, Máximo, Mínimo, Conteo y Promedio.
+Los campos personalizados también admiten fórmulas (evaluadas automáticamente) y acumulación en [tareas de resumen](/es/building-schedule/tasks/index.md#tareas-de-resumen) — Suma, Máximo, Mínimo, Conteo y Promedio.
 
 ## Códigos de esquema
 

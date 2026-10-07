@@ -10,7 +10,7 @@ Per assegnare una risorsa, seleziona la casella di controllo nella riga della ri
 
 Le assegnazioni di risorse di tipo lavoro o materiale hanno delle **Units**, mostrate nella colonna corrispondente. Fai clic sul pulsante **Edit** per modificare il valore predefinito delle **Units** per l'assegnazione.
 
-Per impostazione predefinita, le risorse di tipo lavoro vengono assegnate con unità corrispondenti alle [Max Units](/it/building-schedule/resources/index.md#unità-massime) della risorsa (100% per una risorsa a tempo pieno). Questo significa che la risorsa dedicherà tutto il suo tempo di calendario disponibile all'attività. Puoi modificare il valore con qualsiasi numero.
+Per impostazione predefinita, le risorse di tipo lavoro vengono assegnate con unità corrispondenti alle [unità massime](/it/building-schedule/resources/index.md#unità-massime) della risorsa (100% per una risorsa a tempo pieno). Questo significa che la risorsa dedicherà tutto il suo tempo di calendario disponibile all'attività. Puoi modificare il valore con qualsiasi numero.
 
 Per impostazione predefinita, le risorse di tipo materiale vengono assegnate con 1 unità. Questo significa che 1 unità di quel materiale verrà utilizzata per completare l'attività. L'unità rappresenta qualsiasi cosa tu abbia definito per il materiale (scatola, gallone, tonnellata, ecc.). Puoi modificare il valore predefinito e impostare qualsiasi numero di unità.
 
@@ -28,8 +28,18 @@ Quando una risorsa di tipo lavoro viene assegnata a un'attività, lo sforzo (lav
 | **Late Peak** | Crescita fino a un picco verso la fine |
 | **Bell** | Curva a campana — picco al centro |
 | **Turtle** | Curva a campana più piatta — distribuzione più uniforme |
+| **Contoured** | La tua distribuzione giornaliera personalizzata. Viene impostata automaticamente quando modifichi il lavoro in una vista di utilizzo; non può essere scelta dal menu a discesa. |
 
 I profili di lavoro influenzano il modo in cui il lavoro viene distribuito nei periodi temporali e vengono conservati durante l'apertura e il salvataggio dei file di progetto.
+
+### Il profilo Contoured
+
+**Contoured** è il profilo personalizzato e si comporta diversamente dagli altri otto. Non puoi sceglierlo dal menu a discesa su un'assegnazione che non lo ha già — l'opzione è disattivata. Lo ottieni **modificando direttamente il lavoro in una cella di [Resource Usage o Task Usage](/it/views/resource-views/index.md)**: nel momento in cui digiti un valore di lavoro giornaliero, il profilo di quell'assegnazione diventa *Contoured* e viene usata la distribuzione che hai digitato.
+
+Due conseguenze sono utili da sapere:
+
+- **Passare da Contoured a un altro profilo elimina la distribuzione inserita a mano.** Scegli uno qualsiasi degli altri otto profili e i valori giornalieri che hai digitato vengono cancellati. Non vengono conservati né ripristinati se torni indietro.
+- **Il lavoro Contoured sopravvive al ciclo di andata e ritorno con il formato Microsoft Project.** L'importazione legge il lavoro giornaliero distribuito nel tempo nell'assegnazione e l'esportazione lo riscrive. Un piano che arriva da Microsoft Project con un profilo modificato a mano lo conserva.
 
 ## Ritardo dell'assegnazione
 

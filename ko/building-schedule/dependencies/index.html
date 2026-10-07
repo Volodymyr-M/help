@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/" class="active" aria-current="page">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -226,7 +246,7 @@
 <p>때로는 두 종속 작업 사이에 대기 시간을 설정해야 할 수 있습니다.</p>
 <p>첫 번째 작업이 &quot;벽 페인트칠&quot;이고 두 번째 작업이 &quot;벽에 그림 걸기&quot;라고 가정해 보겠습니다. 이 작업들은 연결되어 있습니다(<strong>Finish to Start</strong> 종속성). 페인트가 마를 때까지 그림을 걸 수 없으므로 기다려야 합니다. 이를 일정에 반영하려면 두 작업 간의 종속성에 <strong>Lag</strong>(예: 2일)를 설정하십시오.</p>
 <p><img src="/images/building-schedule/tasks/lag.png" alt="지연" / data-dark-src="/images/building-schedule/tasks/lag_d.png"></p>
-<p>지연은 반대 시나리오, 즉 종속 작업이 선행 작업이 완료되기 전에 시작해야 하는 경우도 나타낼 수 있습니다. 이를 설정하려면 <strong>Lag</strong>를 음수(예: -1일)로 만드십시오. 이를 _선행 시간_이라고 합니다.</p>
+<p>지연은 반대 시나리오, 즉 종속 작업이 선행 작업이 완료되기 전에 시작해야 하는 경우도 나타낼 수 있습니다. 이를 설정하려면 <strong>Lag</strong>를 음수(예: -1일)로 만드십시오. 이를 <em>선행 시간</em>이라고 합니다.</p>
 <p>지연 또는 선행 시간을 설정하려면 <strong>Task Properties</strong> 대화 상자의 <strong>Predecessors</strong> 탭에서 선행 작업을 선택하고 <strong>Edit</strong> 버튼을 클릭하십시오.</p>
 <blockquote>
 <p>지연은 시간, 일, 주, 월 단위로 설정하거나 선행 작업 기간의 비율(예: 50%)로 설정할 수 있습니다.</p>

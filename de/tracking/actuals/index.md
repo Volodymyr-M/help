@@ -46,7 +46,7 @@ Alle Ist- und Restfelder folgen der Beziehung:
 
 > **Gesamt = Ist + Rest**
 
-Wenn Sie einen Wert ändern, aktualisiert Ingantt die anderen, um sie konsistent zu halten. Der häufigste Arbeitsablauf besteht darin, **% Abgeschlossen** zu aktualisieren, was automatisch auf alle Ist- und Restfelder durchkaskadiert:
+Wenn Sie einen Wert ändern, aktualisiert Ingantt die anderen, um sie konsistent zu halten. Der häufigste Arbeitsablauf besteht darin, **% Abgeschlossen** zu aktualisieren, was sich automatisch auf alle Ist- und Restfelder auswirkt:
 
 1. **Ist-Dauer** und **Verbleibende Dauer** werden aus dem neuen Prozentsatz neu berechnet.
 2. **Ist-Arbeit** und **Verbleibende Arbeit** werden aktualisiert (wenn die Projekteinstellung aktiviert ist).

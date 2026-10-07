@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>バージョン履歴 - ユーザーインターフェース - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Google Driveに保存された計画の全履歴を参照し、過去のバージョンをガントチャートでプレビューし、重要なバージョンを固定し、任意のバージョンを現在の計画として復元します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/ui/version-history/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="バージョン履歴">
+  <meta property="og:description" content="Google Driveに保存された計画の全履歴を参照し、過去のバージョンをガントチャートでプレビューし、重要なバージョンを固定し、任意のバージョンを現在の計画として復元します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/ui/version-history/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="バージョン履歴">
+  <meta name="twitter:description" content="Google Driveに保存された計画の全履歴を参照し、過去のバージョンをガントチャートでプレビューし、重要なバージョンを固定し、任意のバージョンを現在の計画として復元します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/version-history/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/version-history/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/version-history/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/version-history/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/version-history/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/version-history/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/version-history/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/version-history/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/version-history/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/" class="active" aria-current="page">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">サポートに問い合わせ</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="バージョン履歴">バージョン履歴 <a href="#バージョン履歴" class="heading-anchor">#</a></h1>
+<p>Inganttは、Google Driveに保存されたすべての計画の完全な履歴を保持します。履歴を閲覧し、過去の任意のバージョンをガントチャートでプレビューし、重要なものを固定し、いずれかを現在の計画として復元できます。</p>
+<p><strong>プロジェクトはGoogle Driveから開いている必要があります。</strong> バージョン履歴はGoogle Driveの変更履歴であるため、デバイスから開いたプロジェクトや一度も保存されていないプロジェクトでは、2つのバージョン履歴メニュー項目が非表示になります。<a href="/ja/ui/files/">Drive</a>に保存すると表示されます。</p>
+<h2 id="バージョン履歴を開く">バージョン履歴を開く <a href="#バージョン履歴を開く" class="heading-anchor">#</a></h2>
+<p><strong>File → Version history → See version history</strong>を選択するか、<code>Ctrl</code> + <code>Alt</code> + <code>Shift</code> + <code>H</code>を押します。</p>
+<p>パネルがサイドに開き、チャートのスペースを確保するためにInganttが全画面表示に切り替わります。パネルを閉じると、すべて元の状態に戻ります。</p>
+<h2 id="閲覧とプレビュー">閲覧とプレビュー <a href="#閲覧とプレビュー" class="heading-anchor">#</a></h2>
+<p>バージョンは新しい順に一覧表示され、<strong>Today</strong>、<strong>Yesterday</strong>、それ以降は日付で日ごとにグループ化されます。最新のものには<strong>Current version</strong>とラベルが付き、パネルを開くと自動的に選択されます。</p>
+<p>任意のバージョンをクリックすると、Inganttがそれをチャートに読み込んで確認できます。プレビューは閲覧であり、編集ではありません：</p>
+<ul>
+<li>開いている計画は、元に戻す履歴や未保存の変更を含め、手を付けられずに保持されます。</li>
+<li>パネルを閉じると、計画は離れたときとまったく同じ状態で戻ります。</li>
+<li>プレビューによってDriveに書き込まれるものはありません。</li>
+</ul>
+<h2 id="バージョンの固定">バージョンの固定 <a href="#バージョンの固定" class="heading-anchor">#</a></h2>
+<p>Google Driveは、時間の経過とともにファイルの古いバージョンを整理します。バージョンを固定すると<strong>keep forever</strong>のマークが付き、この整理を免れて一覧に残り続けます。</p>
+<p>固定する方法は2つあります：</p>
+<ul>
+<li><strong>File → Version history → Pin current version</strong>は、パネルを開かずに最新バージョンを固定します。再計画の前、フェーズの終わり、計画の承認時など、残しておきたい保存の直後に使用してください。</li>
+<li>パネルで任意のバージョンのメニューを開き、<strong>Pin this version</strong>を選択します。</li>
+</ul>
+<p>固定されたバージョンは一覧に<strong>Pinned</strong>と表示されます。同じメニュー項目をもう一度選択すると固定が解除されます。</p>
+<h2 id="バージョンの復元">バージョンの復元 <a href="#バージョンの復元" class="heading-anchor">#</a></h2>
+<p>目的のバージョンを選択し、<strong>Restore this version</strong>を選択します。Inganttは確認を求めます：</p>
+<blockquote>
+<p>このバージョンを復元しますか？現在のバージョンが先に保存されます。</p>
+</blockquote>
+<p>復元しても現在の計画が破棄されるわけではありません。復元した内容は履歴の上に<strong>新しい</strong>バージョンとして保存されるため、復元前のバージョンも一覧に残り、それ自体を復元することもできます。履歴は増えるだけで、復元によって何かが削除されることはありません。</p>
+<p>確認すると、復元された計画が開いているプロジェクトになり、すぐにDriveに保存されます。</p>
+<h2 id="バージョン履歴はベースラインとは異なります">バージョン履歴はベースラインとは異なります <a href="#バージョン履歴はベースラインとは異なります" class="heading-anchor">#</a></h2>
+<p>この2つは混同されやすいものです：</p>
+<ul>
+<li><strong>バージョン履歴</strong>は、Google Driveが保持する<em>ファイル</em>の経時的な記録です。「先週の火曜日にこの計画はどうなっていたか？」という問いに答えます。</li>
+<li><strong><a href="/ja/tracking/baselines/">ベースライン</a></strong>は、計画の内部に保存された<em>スケジュール</em>のスナップショットで、同じビューで比較できます。ガントチャートのベースラインバー、テーブルのベースライン列と差異列です。「承認された計画からどれだけずれたか？」という問いに答えます。</li>
+</ul>
+<p>過去に戻るにはバージョン履歴を使用します。測定にはベースラインを使用します。</p>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

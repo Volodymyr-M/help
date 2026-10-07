@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>구독 및 결제 - 계정 및 결제 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="월간 및 연간 요금제, 본인 또는 팀을 위한 구독 구매, 좌석 관리 및 취소, 영수증과 환불, 계정 삭제를 안내합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/account/subscription/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="구독 및 결제">
+  <meta property="og:description" content="월간 및 연간 요금제, 본인 또는 팀을 위한 구독 구매, 좌석 관리 및 취소, 영수증과 환불, 계정 삭제를 안내합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/account/subscription/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="구독 및 결제">
+  <meta name="twitter:description" content="월간 및 연간 요금제, 본인 또는 팀을 위한 구독 구매, 좌석 관리 및 취소, 영수증과 환불, 계정 삭제를 안내합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/account/subscription/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/account/subscription/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/account/subscription/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/account/subscription/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/account/subscription/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/account/subscription/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/account/subscription/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/account/subscription/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/" class="active" aria-current="page">구독 및 결제</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">지원 문의</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="구독-및-결제">구독 및 결제 <a href="#구독-및-결제" class="heading-anchor">#</a></h1>
+<p>Ingantt for Web은 사용자당 요금이 청구되는 구독 서비스입니다. 이 문서에서는 요금제, 본인 또는 팀을 위한 구매, 구독을 확인하고 취소하는 위치, 그리고 취소 이후에 일어나는 일을 다룹니다.</p>
+<blockquote>
+<p>App Store, Google Play, Mac App Store 또는 Microsoft Store에서 Ingantt를 설치한 경우, 구매는 해당 스토어에 속하며 여기가 아니라 그곳에서 관리됩니다. 확인하거나 변경하려면 스토어의 구독 또는 구매 화면을 열고, 환불은 스토어의 환불 절차를 이용하십시오. <a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">서비스 약관</a>도 참조하십시오.</p>
+</blockquote>
+<h2 id="요금제">요금제 <a href="#요금제" class="heading-anchor">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>요금제</th>
+<th>가격</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Monthly</strong></td>
+<td>사용자당 월 $7.99</td>
+</tr>
+<tr>
+<td><strong>Yearly</strong></td>
+<td>사용자당 연 $71.88</td>
+</tr>
+</tbody>
+</table>
+<p>두 요금제 모두 모든 기능을 포함합니다. 연간 요금제는 같은 제품을 한 번에 결제하는 것으로, 사용자당 월 $5.99에 해당하기 때문에 이 금액이 &quot;~부터&quot; 가격으로 표시되는 경우가 있습니다.</p>
+<p>구독은 취소할 때까지 각 결제 기간이 끝날 때 자동으로 갱신됩니다.</p>
+<h2 id="구독-구매">구독 구매 <a href="#구독-구매" class="heading-anchor">#</a></h2>
+<p><strong>Account</strong> 대화 상자를 열거나, Ingantt가 체험이 끝났다고 알릴 때 <strong>Subscribe now</strong>를 클릭한 다음 단계를 따르십시오:</p>
+<ol>
+<li><strong>대상 선택</strong> — 본인 또는 다른 사람. 팀을 위해 구매하려면 <em>I want to purchase subscriptions for others</em>를 선택하고 한 줄에 하나씩 이메일 주소를 입력합니다. 각 주소는 해당 사용자가 Google에 로그인할 수 있는 주소여야 합니다.</li>
+<li><strong>요금제 선택</strong> — 월간 또는 연간.</li>
+<li><strong>청구 정보 입력</strong> — 이름, 주소, 도시, 우편번호, 주 또는 지역, 국가, 전화번호.</li>
+<li>구매 항목과 청구 정보를 <strong>검토</strong>합니다.</li>
+<li><strong>Pay in new window</strong> — 결제는 별도의 창에서 결제 대행사가 처리합니다.</li>
+</ol>
+<p>결제가 완료되면 Ingantt가 구독(또는 다른 사람을 위해 구매한 구독 목록)이 활성화되었음을 확인해 줍니다.</p>
+<p>결제 창에 결제가 아직 처리 중이라고 표시되더라도 정상입니다. <em>Notice of successful payment</em> 이메일을 기다린 다음, 대화 상자에서 <strong>Refresh</strong>를 클릭하여 새 상태를 불러오십시오.</p>
+<blockquote>
+<p>구독은 로그인한 Google 계정에 연결됩니다. 어떤 기기에서든 그 계정으로 로그인하면 사용할 수 있습니다. 이미 활성 구독이 있는 주소에는 두 번째 구독을 구매할 수 없습니다.</p>
+</blockquote>
+<h2 id="구독-확인-및-관리">구독 확인 및 관리 <a href="#구독-확인-및-관리" class="heading-anchor">#</a></h2>
+<p><strong>Account</strong> 대화 상자의 <strong>Manage subscriptions</strong>에는 구매한 구독 목록이 표시됩니다. 각 구독의 대상 사용자, 구매 날짜, 구매자를 확인할 수 있습니다. <strong>Refresh</strong>는 서버에서 현재 상태를 다시 읽어옵니다.</p>
+<p>팀 구매도 여기에서 관리합니다. 좌석 비용을 결제한 사람은 모든 좌석을 볼 수 있으며 각각을 개별적으로 취소할 수 있습니다.</p>
+<p>본인의 상태는 탐색 서랍에 <strong>Paid subscriber</strong>, <strong>Subscription inactive</strong> 또는 체험이나 유료 기간의 남은 일수로 표시됩니다.</p>
+<h2 id="취소">취소 <a href="#취소" class="heading-anchor">#</a></h2>
+<ol>
+<li><strong>Account</strong> → <strong>Manage subscriptions</strong>를 엽니다.</li>
+<li>취소할 사용자의 행에서 <strong>Cancel</strong>을 클릭하고 확인합니다.</li>
+</ol>
+<p>취소하면 다음 갱신이 중지됩니다. 접근이 즉시 차단되지는 않습니다. <em>Subscription canceled, but all features available until the paid period ends</em> 메시지는 말 그대로 유료 기간이 끝날 때까지 모든 기능을 사용할 수 있다는 뜻이며, 탐색 서랍에는 <strong>Paid period ends in N days</strong>로 남은 기간이 표시됩니다. 유료 기간이 끝나면 Ingantt는 보기 전용 모드로 전환됩니다.</p>
+<p>취소해도 프로젝트에는 영향이 없습니다. 프로젝트는 Google Drive에 있으며 그대로 남아, Microsoft Project XML로 읽고 다운로드할 수 있습니다.</p>
+<h2 id="결제-영수증-및-환불">결제, 영수증 및 환불 <a href="#결제-영수증-및-환불" class="heading-anchor">#</a></h2>
+<ul>
+<li>Ingantt for Web의 카드 결제는 결제 대행사인 WayForPay가 처리합니다. Ingantt는 카드 정보를 보거나 저장하지 않습니다.</li>
+<li>결제 확인 이메일은 결제 대행사에서 발송됩니다. 구독이 활성화되거나 취소되면 Ingantt가 별도로 이메일을 보냅니다.</li>
+<li>웹 구독 환불: <a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">서비스 약관</a>에 명시된 대로 구매 후 7일 이내에 <a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a>으로 문의하십시오.</li>
+<li>App Store, Google Play 또는 Microsoft Store 구매의 환불은 Apple, Google 또는 Microsoft가 각자의 정책에 따라 처리합니다.</li>
+</ul>
+<p>그 밖의 문의 — 부가세 또는 회사 명의 인보이스, 월간과 연간 요금제 간 변경, 좌석을 다른 사람에게 이전, 이중 청구된 결제 등 — 는 계정 주소와, 있다면 결제 참조 번호를 함께 적어 <a href="mailto:support@ingantt.com">지원팀에 이메일</a>을 보내 주십시오.</p>
+<h2 id="계정과-데이터">계정과 데이터 <a href="#계정과-데이터" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>프로젝트가 저장되는 위치:</strong> Google Drive입니다. Ingantt는 웹 버전을 위해 이메일, 이름, 구독 상태로 이루어진 사용자 기록만 보관하며 프로젝트 데이터는 보관하지 않습니다. <a href="https://www.ingantt.com/privacy_policy.html" target="_blank" rel="noopener noreferrer">개인정보 처리방침</a>을 참조하십시오.</li>
+<li>Ingantt에서 Google <strong>로그아웃</strong>을 해도 구독이 취소되거나 파일에 영향을 주지 않습니다.</li>
+<li><strong>계정 삭제:</strong> <a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a>으로 요청을 보내 주십시오. Ingantt 계정을 삭제해도 Google Drive나 기기에 있는 프로젝트 파일은 삭제되지 않습니다. 파일은 계속 사용자의 것이며 보관하거나 삭제할 수 있습니다.</li>
+</ul>
+<h2 id="관련-문서">관련 문서 <a href="#관련-문서" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/ko/account/trial/">무료 체험</a> — 이 모든 것이 적용되기 전의 7일.</li>
+<li><a href="/ko/getting-started/saving/">프로젝트 저장</a> — 보기 전용 모드가 저장에 미치는 영향.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abbonamenti e pagamento - Account e fatturazione - Guida di Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Piani mensili e annuali, acquisto di abbonamenti per te o per un team, gestione e annullamento delle licenze, ricevute e rimborsi, ed eliminazione dell'account.">
+  <link rel="canonical" href="https://help.ingantt.com/it/account/subscription/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Abbonamenti e pagamento">
+  <meta property="og:description" content="Piani mensili e annuali, acquisto di abbonamenti per te o per un team, gestione e annullamento delle licenze, ricevute e rimborsi, ed eliminazione dell'account.">
+  <meta property="og:url" content="https://help.ingantt.com/it/account/subscription/">
+  <meta property="og:site_name" content="Guida di Ingantt">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Abbonamenti e pagamento">
+  <meta name="twitter:description" content="Piani mensili e annuali, acquisto di abbonamenti per te o per un team, gestione e annullamento delle licenze, ricevute e rimborsi, ed eliminazione dell'account.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/account/subscription/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/account/subscription/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/account/subscription/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/account/subscription/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/account/subscription/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/account/subscription/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/account/subscription/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/account/subscription/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/account/subscription/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Vai al contenuto</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Mostra/nascondi navigazione" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/it/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Guida di Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Cerca..." aria-label="Cerca nella documentazione">
+      <div class="search-results" data-loading="Caricamento…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Cerca">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Cambia tema" title="Passa al tema chiaro/scuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Lingua">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/" selected>Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigazione della documentazione">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Per iniziare
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
+    <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
+    <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
+    <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
+    <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configurazione del progetto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/setting-up-project/project/">Proprietà del progetto</a></li>
+    <li><a href="/it/setting-up-project/calendars/">Calendari</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Costruire un cronogramma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/building-schedule/tasks/">Attività</a></li>
+    <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
+    <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
+    <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
+    <li><a href="/it/building-schedule/resources/">Risorse</a></li>
+    <li><a href="/it/building-schedule/assignments/">Assegnazioni</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analisi e regolazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
+    <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
+    <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Pianificazione dei costi
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/planning-costs/planning-costs/">Comprendere i costi</a></li>
+    <li><a href="/it/planning-costs/setting-up-costs/">Configurazione dei costi</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Monitoraggio dell'avanzamento
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/tracking/baselines/">Baseline</a></li>
+    <li><a href="/it/tracking/progress/">Monitoraggio dell'avanzamento</a></li>
+    <li><a href="/it/tracking/actuals/">Valori effettivi</a></li>
+    <li><a href="/it/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Viste
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/views/gantt/">Diagramma di Gantt</a></li>
+    <li><a href="/it/views/task-views/">Viste attività</a></li>
+    <li><a href="/it/views/resource-views/">Viste risorse</a></li>
+    <li><a href="/it/views/filtering/">Filtraggio delle attività</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaccia utente
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
+    <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
+    <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/" class="active" aria-current="page">Abbonamenti e pagamento</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contatta l'assistenza" title="Contatta l'assistenza">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contatta l'assistenza</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="abbonamenti-e-pagamento">Abbonamenti e pagamento <a href="#abbonamenti-e-pagamento" class="heading-anchor">#</a></h1>
+<p>Ingantt per Web è un abbonamento, fatturato per utente. Questo articolo descrive i piani, l'acquisto per te stesso o per un team, dove vedere e annullare un abbonamento e cosa succede dopo.</p>
+<blockquote>
+<p>Se hai installato Ingantt dall'App Store, da Google Play, dal Mac App Store o dal Microsoft Store, il tuo acquisto appartiene a quello store e viene gestito lì, non qui. Apri la schermata degli abbonamenti o degli acquisti dello store per vederlo o modificarlo, e usa la procedura di rimborso dello store. Vedi anche i <a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">Termini di servizio</a>.</p>
+</blockquote>
+<h2 id="piani">Piani <a href="#piani" class="heading-anchor">#</a></h2>
+<table>
+<thead>
+<tr>
+<th>Piano</th>
+<th>Prezzo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Monthly</strong></td>
+<td>7,99 $ per utente al mese</td>
+</tr>
+<tr>
+<td><strong>Yearly</strong></td>
+<td>71,88 $ per utente all'anno</td>
+</tr>
+</tbody>
+</table>
+<p>Entrambi i piani includono tutte le funzionalità. Il piano annuale è lo stesso prodotto pagato in un'unica soluzione — corrisponde a 5,99 $ per utente al mese, ed è per questo che potresti vedere quella cifra indicata come prezzo &quot;a partire da&quot;.</p>
+<p>Gli abbonamenti si rinnovano automaticamente alla fine di ogni periodo di fatturazione finché non li annulli.</p>
+<h2 id="acquistare-un-abbonamento">Acquistare un abbonamento <a href="#acquistare-un-abbonamento" class="heading-anchor">#</a></h2>
+<p>Apri la finestra <strong>Account</strong>, oppure fai clic su <strong>Subscribe now</strong> quando Ingantt ti avvisa che la prova è terminata, e segui i passaggi:</p>
+<ol>
+<li><strong>Scegli per chi è</strong> — per te o per altre persone. Per acquistare per un team, scegli <em>I want to purchase subscriptions for others</em> e inserisci un indirizzo email per riga. Ogni indirizzo deve essere un indirizzo con cui quella persona può accedere a Google.</li>
+<li><strong>Scegli il piano</strong> — mensile o annuale.</li>
+<li><strong>Inserisci i dati di fatturazione</strong> — nome, indirizzo, città, codice postale, stato o regione, paese e numero di telefono.</li>
+<li><strong>Controlla</strong> gli articoli acquistati e i dati di fatturazione.</li>
+<li><strong>Paga in una nuova finestra</strong> — il pagamento viene gestito dal nostro fornitore di servizi di pagamento in una finestra separata.</li>
+</ol>
+<p>Quando il pagamento va a buon fine, Ingantt conferma che l'abbonamento — o l'elenco degli abbonamenti acquistati per altri — è ora attivo.</p>
+<p>Se la finestra di pagamento indica che il pagamento è ancora in elaborazione, è normale. Attendi l'email <em>Notice of successful payment</em>, poi fai clic su <strong>Refresh</strong> nella finestra per aggiornare lo stato.</p>
+<blockquote>
+<p>Il tuo abbonamento è collegato all'account Google con cui hai effettuato l'accesso. Accedi con quell'account su qualsiasi dispositivo per utilizzarlo. Per un indirizzo che ha già un abbonamento attivo non è possibile acquistarne un secondo.</p>
+</blockquote>
+<h2 id="vedere-e-gestire-gli-abbonamenti">Vedere e gestire gli abbonamenti <a href="#vedere-e-gestire-gli-abbonamenti" class="heading-anchor">#</a></h2>
+<p><strong>Manage subscriptions</strong> nella finestra <strong>Account</strong> elenca gli abbonamenti che hai acquistato — l'utente a cui è destinato ciascuno, la data di acquisto e chi lo ha acquistato. <strong>Refresh</strong> rilegge lo stato corrente dal server.</p>
+<p>È anche qui che vengono amministrati gli acquisti per i team: chi ha pagato le licenze le vede tutte e può annullarle singolarmente.</p>
+<p>Il tuo stato è mostrato nel menu di navigazione come <strong>Paid subscriber</strong>, <strong>Subscription inactive</strong> oppure come i giorni rimanenti della prova o del periodo pagato.</p>
+<h2 id="annullare">Annullare <a href="#annullare" class="heading-anchor">#</a></h2>
+<ol>
+<li>Apri <strong>Account</strong> → <strong>Manage subscriptions</strong>.</li>
+<li>Fai clic su <strong>Cancel</strong> nella riga dell'utente che vuoi annullare e conferma.</li>
+</ol>
+<p>L'annullamento interrompe il rinnovo successivo. Non interrompe immediatamente l'accesso: il messaggio <em>Subscription canceled, but all features available until the paid period ends</em> significa esattamente questo, e il menu di navigazione mostra poi il conto alla rovescia con <strong>Paid period ends in N days</strong>. Quando il periodo pagato termina, Ingantt passa alla modalità di sola visualizzazione.</p>
+<p>I tuoi progetti non sono interessati dall'annullamento. Si trovano nel tuo Google Drive e restano lì, leggibili e scaricabili come XML di Microsoft Project.</p>
+<h2 id="pagamenti-ricevute-e-rimborsi">Pagamenti, ricevute e rimborsi <a href="#pagamenti-ricevute-e-rimborsi" class="heading-anchor">#</a></h2>
+<ul>
+<li>I pagamenti con carta per Ingantt per Web sono elaborati dal nostro fornitore di servizi di pagamento, WayForPay. Ingantt non vede né memorizza i dati della tua carta.</li>
+<li>L'email di conferma del pagamento arriva dal fornitore di servizi di pagamento. Ingantt ti invia un'email separata quando un abbonamento viene attivato o annullato.</li>
+<li>Rimborsi per gli abbonamenti web: contatta <a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a> entro 7 giorni dall'acquisto, come stabilito nei <a href="https://www.ingantt.com/terms_of_service.html" target="_blank" rel="noopener noreferrer">Termini di servizio</a>.</li>
+<li>I rimborsi per gli acquisti effettuati su App Store, Google Play o Microsoft Store sono gestiti da Apple, Google o Microsoft secondo le rispettive politiche.</li>
+</ul>
+<p>Per qualsiasi altra richiesta — una fattura con partita IVA o intestata all'azienda, il passaggio dal piano mensile a quello annuale o viceversa, il trasferimento di una licenza a un'altra persona o un pagamento addebitato due volte — <a href="mailto:support@ingantt.com">scrivi all'assistenza</a> indicando l'indirizzo dell'account e, se lo hai, il riferimento del pagamento.</p>
+<h2 id="il-tuo-account-e-i-tuoi-dati">Il tuo account e i tuoi dati <a href="#il-tuo-account-e-i-tuoi-dati" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>Dove si trovano i tuoi progetti:</strong> nel tuo Google Drive. Ingantt conserva un record utente per la versione web — email, nome e stato dell'abbonamento — ma non i dati dei tuoi progetti. Vedi l'<a href="https://www.ingantt.com/privacy_policy.html" target="_blank" rel="noopener noreferrer">Informativa sulla privacy</a>.</li>
+<li><strong>Uscire</strong> dall'account Google in Ingantt non annulla l'abbonamento e non tocca i tuoi file.</li>
+<li><strong>Eliminare l'account:</strong> invia la richiesta a <a href="mailto:support@ingantt.com"><a href="mailto:support@ingantt.com">support@ingantt.com</a></a>. L'eliminazione del tuo account Ingantt non elimina i file di progetto nel tuo Google Drive o sul tuo dispositivo — restano tuoi, da conservare o rimuovere.</li>
+</ul>
+<h2 id="argomenti-correlati">Argomenti correlati <a href="#argomenti-correlati" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/it/account/trial/">Prova gratuita</a> — i 7 giorni prima che tutto questo si applichi.</li>
+<li><a href="/it/getting-started/saving/">Salvare il progetto</a> — cosa significa la modalità di sola visualizzazione per il salvataggio.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Indice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

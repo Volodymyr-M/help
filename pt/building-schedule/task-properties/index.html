@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Propriedades da Tarefa - Construindo um Cronograma - Ajuda do Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+  <meta name="description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hiperlinks.">
   <link rel="canonical" href="https://help.ingantt.com/pt/building-schedule/task-properties/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Propriedades da Tarefa">
-  <meta property="og:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+  <meta property="og:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hiperlinks.">
   <meta property="og:url" content="https://help.ingantt.com/pt/building-schedule/task-properties/">
   <meta property="og:site_name" content="Ajuda do Ingantt">
   <meta property="og:locale" content="pt_BR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Propriedades da Tarefa">
-  <meta name="twitter:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hyperlinks.">
+  <meta name="twitter:description" content="Configure duração, trabalho, prazos, marcos, tipo de tarefa, agendamento orientado ao esforço, notas e hiperlinks.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/task-properties/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/task-properties/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
     <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
     <li><a href="/pt/building-schedule/task-properties/" class="active" aria-current="page">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
     <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
     <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
     <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
     <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
     <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
     <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
     <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
   </ul>
 </div>
 
@@ -222,7 +242,7 @@
 <p><img src="/images/building-schedule/tasks/milestone.png" alt="Marco" / data-dark-src="/images/building-schedule/tasks/milestone_d.png"></p>
 <p>Se você especificar 0 como a <strong>Duration</strong> de uma tarefa, ela é automaticamente marcada como <strong>Milestone</strong> ao salvar a alteração.</p>
 <h2 id="tipo-e-orientado-ao-esforço">Tipo e Orientado ao Esforço <a href="#tipo-e-orientado-ao-esforço" class="heading-anchor">#</a></h2>
-<p>As atribuições de recursos de trabalho (ou unidades de recursos de trabalho atribuídos), trabalho e duração dependem uns dos outros. Quando você altera um deles, os outros precisam ser recalculados. O <strong>Type</strong> da tarefa (com a ajuda da flag <strong>Effort Driven</strong>) define qual das duas propriedades restantes permanece inalterada, de modo que apenas uma delas é recalculada.</p>
+<p>As atribuições de recursos de trabalho (ou unidades de recursos de trabalho atribuídos), trabalho e duração dependem uns dos outros. Quando você altera um deles, os outros precisam ser recalculados. O <strong>Type</strong> da tarefa (com a ajuda da opção <strong>Effort Driven</strong>) define qual das duas propriedades restantes permanece inalterada, de modo que apenas uma delas é recalculada.</p>
 <p>Por exemplo, você pode definir o <strong>Type</strong> como <strong>Fixed units</strong> (o padrão), nesse caso, quando você altera a Duração, o Trabalho é recalculado automaticamente.</p>
 <table>
 <thead>
@@ -278,15 +298,15 @@
 </tr>
 </tbody>
 </table>
-<p>Em outras palavras, o <strong>Type</strong> permite congelar uma das três propriedades, enquanto a flag <strong>Effort Driven</strong> define se o Trabalho deve permanecer inalterado entre as duas restantes.</p>
+<p>Em outras palavras, o <strong>Type</strong> permite congelar uma das três propriedades, enquanto a opção <strong>Effort Driven</strong> define se o Trabalho deve permanecer inalterado entre as duas restantes.</p>
 <blockquote>
-<p>As configurações <strong>Type</strong> e <strong>Effort Driven</strong> não estão disponíveis para <a href="/pt/building-schedule/tasks/#tarefas-resumo">tarefas resumo</a>, que são sempre do tipo Duração Fixa e não orientadas ao esforço.</p>
+<p>As configurações <strong>Type</strong> e <strong>Effort Driven</strong> não estão disponíveis para <a href="/pt/building-schedule/tasks/#tarefas-resumo">tarefas resumo</a>, que são sempre do tipo Fixed duration e não orientadas ao esforço.</p>
 </blockquote>
 <h2 id="notas">Notas <a href="#notas" class="heading-anchor">#</a></h2>
 <p>Você pode adicionar qualquer texto à sua tarefa preenchendo o campo <strong>Notes</strong> na aba <strong>Notes</strong> da caixa de diálogo <strong>Task Properties</strong>. Use-o para descrições de tarefas, informações de contato, ideias ou quaisquer outros dados textuais.</p>
 <p>Se uma tarefa tem o campo <strong>Notes</strong> preenchido, um ícone especial é exibido na lista de tarefas. No Windows, macOS e Web, passar o mouse sobre o ícone mostra a nota. Em dispositivos móveis, abra a caixa de diálogo <strong>Task Properties</strong> para ver a nota completa.</p>
-<h2 id="hyperlink">Hyperlink <a href="#hyperlink" class="heading-anchor">#</a></h2>
-<p>Você pode anexar uma URL à sua tarefa usando o campo <strong>Hyperlink</strong> na aba <strong>Notes</strong> da caixa de diálogo <strong>Task Properties</strong>. Tarefas com hyperlink exibem um ícone de link na lista de tarefas. Clicar no ícone de link abre a URL no seu navegador.</p>
+<h2 id="hiperlink">Hiperlink <a href="#hiperlink" class="heading-anchor">#</a></h2>
+<p>Você pode anexar uma URL à sua tarefa usando o campo <strong>Hyperlink</strong> na aba <strong>Notes</strong> da caixa de diálogo <strong>Task Properties</strong>. Tarefas com hiperlink exibem um ícone de link na lista de tarefas. Clicar no ícone de link abre a URL no seu navegador.</p>
 <h2 id="ocultar-barra-e-rollup">Ocultar Barra e Rollup <a href="#ocultar-barra-e-rollup" class="heading-anchor">#</a></h2>
 <p>Na aba <strong>Visual</strong> da caixa de diálogo <strong>Task Properties</strong>:</p>
 <ul>

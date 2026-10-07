@@ -27,8 +27,8 @@ O comando **Update Project** fornece operações de acompanhamento de progresso 
 
 Marque tarefas como concluídas até uma data especificada:
 
-- **Proporcional (0%–100%)** — Calcula o percentual concluído com base em quanto da duração útil de cada tarefa cai antes da data de referência.
-- **Tudo ou nada (0% ou 100%)** — Define as tarefas como 0% ou 100% com base em se terminam até a data de referência.
+- **Proportional (0%–100%)** — Calcula o percentual concluído com base em quanto da duração útil de cada tarefa cai antes da data de referência.
+- **All-or-nothing (0% or 100%)** — Define as tarefas como 0% ou 100% com base em se terminam até a data de referência.
 
 ### Reagendar Trabalho Não Concluído
 

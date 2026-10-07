@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travailler hors ligne - Interface utilisateur - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Désactivez l'enregistrement automatique pour que rien ne soit écrit dans Google Drive avant un enregistrement délibéré, les différences du réglage selon la plateforme et les points de vigilance hors ligne.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/ui/offline-mode/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Travailler hors ligne">
+  <meta property="og:description" content="Désactivez l'enregistrement automatique pour que rien ne soit écrit dans Google Drive avant un enregistrement délibéré, les différences du réglage selon la plateforme et les points de vigilance hors ligne.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/ui/offline-mode/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Travailler hors ligne">
+  <meta name="twitter:description" content="Désactivez l'enregistrement automatique pour que rien ne soit écrit dans Google Drive avant un enregistrement délibéré, les différences du réglage selon la plateforme et les points de vigilance hors ligne.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/offline-mode/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/offline-mode/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/offline-mode/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/offline-mode/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/offline-mode/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/offline-mode/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/offline-mode/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/offline-mode/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/offline-mode/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/offline-mode/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/" class="active" aria-current="page">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contacter le support</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="travailler-hors-ligne">Travailler hors ligne <a href="#travailler-hors-ligne" class="heading-anchor">#</a></h1>
+<p>Désactivez l'enregistrement automatique pour que rien ne soit écrit dans Google Drive tant que vous n'enregistrez pas délibérément — utile lorsque vous êtes sur le point de perdre votre connexion.</p>
+<p>Sur la version <strong>Web</strong>, l'entrée de menu est <strong>File → Work offline (no autosave)</strong>. Sur Windows, macOS, Android et iOS, le même interrupteur s'appelle <strong>Enable autosave</strong>.</p>
+<h2 id="ce-que-fait-work-offline">Ce que fait Work offline <a href="#ce-que-fait-work-offline" class="heading-anchor">#</a></h2>
+<p><strong>File → Work offline</strong> désactive l'enregistrement automatique pour l'onglet actuel. C'est tout. Tant qu'il est activé, Ingantt cesse d'écrire votre projet dans Google Drive toutes les 20 secondes, et rien ne quitte votre navigateur tant que vous n'enregistrez pas.</p>
+<p>Son activation affiche un rappel unique :</p>
+<blockquote>
+<p>Offline mode is on. Remember to save your changes manually before closing the tab.</p>
+</blockquote>
+<p>Prenez-le au pied de la lettre. <strong>Ingantt ne met pas vos modifications en file d'attente et ne les envoie pas lorsque vous revenez en ligne.</strong> Il n'y a pas de synchronisation en arrière-plan. Si vous fermez ou rechargez l'onglet sans enregistrer, le travail effectué depuis le dernier enregistrement est perdu.</p>
+<h2 id="enregistrer-pendant-que-vous-êtes-hors-ligne">Enregistrer pendant que vous êtes hors ligne <a href="#enregistrer-pendant-que-vous-êtes-hors-ligne" class="heading-anchor">#</a></h2>
+<p>Vous ne pouvez pas enregistrer dans Google Drive sans connexion, la séquence qui fonctionne est donc la suivante :</p>
+<ol>
+<li>Ouvrez le planning tant que vous avez encore une connexion.</li>
+<li>Activez <strong>File → Work offline</strong>.</li>
+<li>Modifiez normalement. Tout se passe dans le navigateur — le planning se recalcule, annuler et rétablir fonctionnent, rien n'est envoyé nulle part.</li>
+<li>Une fois de retour en ligne, désactivez <strong>Work offline</strong>, puis appuyez sur <strong>Save</strong> (ou <code>Ctrl</code>/<code>Cmd</code> + <code>S</code>). C'est cette étape qui place votre travail dans Drive.</li>
+<li>L'enregistrement automatique reprend à partir de là.</li>
+</ol>
+<p>Si vous préférez ne pas compter sur votre mémoire pour l'étape 4, exportez une copie avant de perdre la connexion : <strong>File → Export → XML</strong> télécharge le planning sur votre appareil, et vous pourrez rouvrir ce fichier plus tard.</p>
+<h2 id="le-bouton-save-vous-indique-où-vous-en-êtes">Le bouton Save vous indique où vous en êtes <a href="#le-bouton-save-vous-indique-où-vous-en-êtes" class="heading-anchor">#</a></h2>
+<p>Le bouton Save de la barre d'outils est l'indicateur à surveiller :</p>
+<table>
+<thead>
+<tr>
+<th>Ce qu'il affiche</th>
+<th>Ce que cela signifie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>File saved to Google Drive</strong></td>
+<td>Tout est dans Drive.</td>
+</tr>
+<tr>
+<td><strong>Autosave pending…</strong></td>
+<td>Il y a des modifications non enregistrées ; l'enregistrement automatique s'en chargera sous peu.</td>
+</tr>
+<tr>
+<td><strong>Saving…</strong></td>
+<td>Un enregistrement est en cours.</td>
+</tr>
+<tr>
+<td><strong>Save file to Google Drive</strong></td>
+<td>Il y a des modifications non enregistrées et l'enregistrement automatique est désactivé — vous devez enregistrer.</td>
+</tr>
+<tr>
+<td><strong>Error saving file to Google Drive</strong></td>
+<td>Un enregistrement a été tenté et a échoué. Vos modifications sont toujours dans l'onglet et toujours non enregistrées.</td>
+</tr>
+</tbody>
+</table>
+<p>L'état d'erreur est ce que vous voyez si l'enregistrement automatique s'exécute alors que la connexion est coupée : l'enregistrement échoue, le bouton devient rouge et le projet reste non enregistré dans l'onglet. Rien n'est perdu à cet instant, mais rien n'est en sécurité non plus — reconnectez-vous et enregistrez.</p>
+<h2 id="différences-entre-plateformes">Différences entre plateformes <a href="#différences-entre-plateformes" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>Le réglage n'est pas conservé sur le Web.</strong> Il est propre à l'onglet et à la session. Ouvrez un nouvel onglet ou rechargez, et l'enregistrement automatique est de nouveau activé. C'est voulu — l'enregistrement automatique activé est le choix par défaut le plus sûr, afin qu'un interrupteur hors ligne oublié ne puisse pas vous suivre. Sur Windows, macOS, Android et iOS, le réglage d'enregistrement automatique <em>est</em> mémorisé.</li>
+<li><strong>Les valeurs par défaut diffèrent.</strong> Sur le Web, l'enregistrement automatique est activé d'emblée. Sur les versions de bureau et mobiles, il est désactivé d'emblée, et la même entrée de menu s'intitule <strong>Enable autosave</strong>.</li>
+<li><strong>Un projet que vous n'avez pas encore enregistré n'est pas enregistré automatiquement du tout</strong>, mode hors ligne ou non. L'enregistrement automatique ne peut mettre à jour qu'un fichier qui existe déjà dans Drive. Enregistrez une fois, et l'enregistrement automatique prend le relais.</li>
+<li><strong>Un fichier ouvert depuis votre appareil sur la version Web n'est jamais enregistré automatiquement.</strong> Ingantt pour Web ne peut pas réécrire dans un fichier sur votre disque. Enregistrez-le dans <a href="/fr/ui/files/">Google Drive</a> pour bénéficier de l'enregistrement automatique.</li>
+</ul>
+<h2 id="travailler-hors-ligne-et-modifier-avec-lia">Travailler hors ligne et Modifier avec l'IA <a href="#travailler-hors-ligne-et-modifier-avec-lia" class="heading-anchor">#</a></h2>
+<p>Si vous utilisez <a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a> alors que l'enregistrement automatique est désactivé, Ingantt vous avertit. Les modifications de l'IA sont appliquées au projet ouvert comme des modifications ordinaires, annulables — elles ne sont pas enregistrées d'elles-mêmes. Fermez l'onglet sans enregistrer et le travail de l'IA disparaît avec lui, exactement comme toute modification manuelle.</p>
+<h2 id="ce-qui-nest-pas-pris-en-charge">Ce qui n'est pas pris en charge <a href="#ce-qui-nest-pas-pris-en-charge" class="heading-anchor">#</a></h2>
+<p>Pour être clair sur ce à quoi vous attendre :</p>
+<ul>
+<li>Ingantt ne détecte pas que vous êtes passé hors ligne ou revenu en ligne.</li>
+<li>Ingantt ne met pas en file d'attente les modifications effectuées hors ligne pour les rejouer à la reconnexion.</li>
+<li>Il n'y a pas de résolution des conflits de synchronisation, car il n'y a pas de synchronisation. Si un collègue et vous modifiez tous deux le même fichier Drive, le dernier enregistrement l'emporte — le fichier entier, pas une fusion tâche par tâche.</li>
+<li>Ouvrir un planning pour la première fois nécessite une connexion. Travailler hors ligne garde modifiable un planning que vous avez déjà ouvert ; cela ne vous permet pas d'en ouvrir un nouveau.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

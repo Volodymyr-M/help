@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vorgangseigenschaften - Terminplan erstellen - Ingantt-Hilfe</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangsart, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
+  <meta name="description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangstyp, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
   <link rel="canonical" href="https://help.ingantt.com/de/building-schedule/task-properties/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Vorgangseigenschaften">
-  <meta property="og:description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangsart, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
+  <meta property="og:description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangstyp, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
   <meta property="og:url" content="https://help.ingantt.com/de/building-schedule/task-properties/">
   <meta property="og:site_name" content="Ingantt-Hilfe">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Vorgangseigenschaften">
-  <meta name="twitter:description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangsart, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
+  <meta name="twitter:description" content="Konfigurieren Sie Vorgangsdauer, Arbeit, Stichtage, Meilensteine, Vorgangstyp, leistungsgesteuerte Planung, Notizen und Hyperlinks.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/task-properties/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/task-properties/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/" class="active" aria-current="page">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -196,22 +216,22 @@
 <p>Bei der Planung Ihres Projekts geben Sie Dauern als Schätzungen ein, d. h. die Dauer ist eine vernünftige Einschätzung, wie viel Zeit ein Vorgang für alle beteiligten Ressourcen in Anspruch nehmen wird.</p>
 <p>Verwechseln Sie <strong>Dauer</strong> nicht mit <strong>Arbeit</strong>. Wenn beispielsweise drei Personen an Ihrem Vorgang arbeiten und ihn in einer Stunde abschließen, setzen Sie die <strong>Dauer</strong> des Vorgangs auf eine Stunde. Wenn diese drei Personen dem Vorgang zugewiesen sind, berechnet Ingantt die Eigenschaft <strong>Arbeit</strong> für Sie als drei Stunden.</p>
 <p>Die Dauer kann über das Feld <strong>Dauer</strong> im Dialog <strong>Vorgangseigenschaften</strong> geändert werden.</p>
-<p>Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog <strong>Vorgangseigenschaften</strong> als <strong>Schätzung</strong> markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („<strong>?</strong>&quot;) angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.</p>
-<p>Wenn mindestens ein Teilvorgang eines Sammelvorgangs <strong>Schätzung</strong> aktiviert hat, wird die Dauer des Sammelvorgangs ebenfalls als <strong>Schätzung</strong> markiert und zeigt somit auch „<strong>?</strong>&quot; an.</p>
-<p>Die Dauer kann in Stunden, Tagen, Wochen oder Monaten angegeben werden. Standardmäßig bedeutet „1 Tag&quot; 8 Stunden, „1 Woche&quot; 5 Tage (40 Stunden) und „1 Monat&quot; 20 Tage. Diese Standardwerte können auf dem Reiter <strong>Dauer</strong> des Dialogs <strong>Projekteigenschaften</strong> geändert werden.</p>
-<p>Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß der <a href="#typ-und-leistungsgesteuert">Vorgangsart</a> neu berechnet.</p>
+<p>Wenn Sie sich bei Ihrer Schätzung der Dauer noch nicht sicher sind, können Sie sie im Dialog <strong>Vorgangseigenschaften</strong> als <strong>Schätzung</strong> markieren. Dadurch wird bei der Dauer immer ein Fragezeichen („<strong>?</strong>“) angezeigt. Das Aktivieren oder Deaktivieren dieser Option hat keinen Einfluss auf die Planung.</p>
+<p>Wenn mindestens ein Teilvorgang eines Sammelvorgangs <strong>Schätzung</strong> aktiviert hat, wird die Dauer des Sammelvorgangs ebenfalls als <strong>Schätzung</strong> markiert und zeigt somit auch „<strong>?</strong>“ an.</p>
+<p>Die Dauer kann in Stunden, Tagen, Wochen oder Monaten angegeben werden. Standardmäßig bedeutet „1 Tag“ 8 Stunden, „1 Woche“ 5 Tage (40 Stunden) und „1 Monat“ 20 Tage. Diese Standardwerte können auf dem Reiter <strong>Dauer</strong> des Dialogs <strong>Projekteigenschaften</strong> geändert werden.</p>
+<p>Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß dem <a href="#typ-und-leistungsgesteuert">Typ</a> des Vorgangs neu berechnet.</p>
 <h2 id="arbeit">Arbeit <a href="#arbeit" class="heading-anchor">#</a></h2>
 <p>Sobald einem Vorgang eine Arbeitsressource zugewiesen ist (z. B. eine Person, die den Vorgang ausführt), wird die Eigenschaft <strong>Arbeit</strong> des Vorgangs größer als 0. Sie zeigt die Zeit an, die alle Ressourcen für die Arbeit am Vorgang aufwenden werden. Wenn beispielsweise ein Vorgang mit einer <strong>Dauer</strong> von 5 Stunden 2 zugewiesene Ressourcen hat, die daran arbeiten, beträgt die <strong>Arbeit</strong> des Vorgangs 10 Stunden.</p>
 <p>Die Arbeit kann über das Feld <strong>Arbeit</strong> im Dialog <strong>Vorgangseigenschaften</strong> geändert werden.</p>
 <p>Genau wie die Dauer kann die Arbeit in Stunden, Tagen, Wochen oder Monaten angegeben werden, wobei die Definitionen auf dem Reiter <strong>Dauer</strong> des Dialogs <strong>Projekteigenschaften</strong> verwendet werden. Das Standard-Anzeigeformat für Arbeit kann auf dem Reiter <strong>Zeit</strong> geändert werden.</p>
-<p>Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß der <a href="#typ-und-leistungsgesteuert">Vorgangsart</a> neu berechnet.</p>
+<p>Wenn Sie Ressourcenzuweisungen, Arbeit oder Dauer ändern, wird eine dieser Größen gemäß dem <a href="#typ-und-leistungsgesteuert">Typ</a> des Vorgangs neu berechnet.</p>
 <h2 id="stichtag">Stichtag <a href="#stichtag" class="heading-anchor">#</a></h2>
 <p>Manchmal müssen Sie sicherstellen, dass ein Vorgang bis zu einem bestimmten Tag abgeschlossen ist, was üblicherweise als Stichtag bezeichnet wird.</p>
 <p>Der Stichtag eines Vorgangs kann über das Feld <strong>Stichtag</strong> im Dialog <strong>Vorgangseigenschaften</strong> festgelegt werden.</p>
 <p>Stichtage dienen nur zu Ihrer Information und beeinflussen die Planung nicht.</p>
 <p>Stichtage werden im Gantt-Diagramm als spezielle Symbole angezeigt.</p>
 <blockquote>
-<p>Wenn Ihr Terminplan zeigt, dass ein Vorgang später als sein festgelegter Stichtag endet, zeigt Ingantt ein Symbol in der Vorgangsliste an und zählt solche Vorgänge im Navigationsmenü.</p>
+<p>Wenn Ihr Terminplan zeigt, dass ein Vorgang später als sein festgelegter Stichtag endet, zeigt Ingantt ein Symbol in der Vorgangsliste an und zählt solche Vorgänge in der Navigationsleiste.</p>
 </blockquote>
 <p><img src="/images/building-schedule/tasks/deadline.png" alt="Stichtag" / data-dark-src="/images/building-schedule/tasks/deadline_d.png"></p>
 <blockquote>
@@ -280,7 +300,7 @@
 </table>
 <p>Mit anderen Worten: Die Eigenschaft <strong>Typ</strong> ermöglicht es Ihnen, eine der drei Größen einzufrieren, während das Flag <strong>Leistungsgesteuert</strong> festlegt, ob die Arbeit unter den verbleibenden zwei unverändert bleiben soll.</p>
 <blockquote>
-<p><strong>Typ</strong> und <strong>Leistungsgesteuert</strong> sind nicht verfügbar für <a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgänge</a>, die immer Feste Dauer und nicht Leistungsgesteuert sind.</p>
+<p><strong>Typ</strong> und <strong>Leistungsgesteuert</strong> sind nicht verfügbar für <a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgänge</a>, die immer vom Typ <strong>Feste Dauer</strong> und nicht leistungsgesteuert sind.</p>
 </blockquote>
 <h2 id="notizen">Notizen <a href="#notizen" class="heading-anchor">#</a></h2>
 <p>Sie können jedem Vorgang beliebigen Text hinzufügen, indem Sie das Feld <strong>Notizen</strong> auf dem Reiter <strong>Notizen</strong> des Dialogs <strong>Vorgangseigenschaften</strong> ausfüllen. Verwenden Sie es für Vorgangsbeschreibungen, Kontaktinformationen, Ideen oder andere Textdaten.</p>

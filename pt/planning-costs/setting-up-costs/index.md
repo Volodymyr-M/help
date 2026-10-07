@@ -52,7 +52,7 @@ A configuração **Cost Accrual** controla quando os custos são reconhecidos co
 
 | Acumulação | Quando os custos são reconhecidos |
 |---------|--------------------------|
-| **Start** | Custo total assim que qualquer progresso é feito (% Concluída > 0%) |
+| **Start** | Custo total assim que qualquer progresso é feito (% Concluído > 0%) |
 | **Prorated** | Proporcional ao percentual concluído (ex.: 50% concluído = 50% do custo) |
 | **End** | Custo total somente quando a tarefa atinge 100% concluída |
 

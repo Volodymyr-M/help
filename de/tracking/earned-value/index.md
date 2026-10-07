@@ -34,7 +34,7 @@ Die folgenden EVM-Spalten können über den Dialog **Optionen** zur Vorgangslist
 | **CV** | Kostenabweichung |
 | **SPI** | Terminleistungsindex |
 | **CPI** | Kostenleistungsindex |
-| **TCPI** | Noch-zu-erreichender Leistungsindex |
+| **TCPI** | Leistungsindex bis zur Fertigstellung (To-Complete Performance Index) |
 | **SV%** | Terminabweichung in Prozent |
 | **CV%** | Kostenabweichung in Prozent |
 
@@ -43,7 +43,7 @@ Die folgenden EVM-Spalten können über den Dialog **Optionen** zur Vorgangslist
 Jeder Vorgang kann eine von zwei Methoden zur Berechnung des BCWP (Earned Value) verwenden:
 
 - **% Abgeschlossen** (Standard) — Verwendet den Fertigstellungsgrad des Vorgangs zur Berechnung des Earned Value.
-- **Physisch % Abgeschlossen** — Verwendet einen separat erfassten physischen Fertigstellungsgrad. Nützlich für lieferungsbasierte Fortschrittsmessung.
+- **Physisch % Abgeschlossen** — Verwendet einen separat erfassten physischen Fertigstellungsgrad. Nützlich für eine ergebnisbasierte (auf Liefergegenständen beruhende) Fortschrittsmessung.
 
 Legen Sie die Methode für einzelne Vorgänge auf dem Reiter **Kosten und EV** des Dialogs **Vorgangseigenschaften** fest. Ändern Sie die Standardmethode für neue Vorgänge im Dialog **Earned-Value-Optionen**.
 

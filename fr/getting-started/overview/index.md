@@ -14,8 +14,8 @@
 
 - **Sommes-nous dans les temps ?** — comparez l'avancement actuel du planning par rapport au plan initial.
 - **Respectons-nous le budget ?** — comparez les coûts réels aux coûts prévus grâce aux indicateurs de valeur acquise.
-- **Où en sommes-nous réellement ?** — pourcentage d'avancement global du projet, pondéré par la durée des tâches, pas par l'intuition.
-- **Qu'a-t-on dépensé et que reste-t-il ?** — coûts réels vs. restants, travail et durée.
+- **Où en sommes-nous réellement ?** — pourcentage d'achèvement global du projet, pondéré par la durée des tâches, pas par l'intuition.
+- **Qu'a-t-on dépensé et que reste-t-il ?** — coût, travail et durée réels vs restants.
 
 Modifiez la durée d'une tâche ou ajoutez une dépendance, et l'ensemble du planning se recalcule instantanément — chaque date, chaque charge de ressource, chaque coût.
 

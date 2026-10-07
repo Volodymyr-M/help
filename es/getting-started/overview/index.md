@@ -13,9 +13,9 @@
 #### Una vez que el trabajo está en marcha
 
 - **¿Vamos según lo previsto?** — compare el progreso actual del cronograma con el plan original.
-- **¿Estamos dentro del presupuesto?** — compare los costos reales con los costos planificados usando métricas de Valor Ganado.
+- **¿Estamos dentro del presupuesto?** — compare los costos reales con los costos planificados usando métricas de valor ganado.
 - **¿Cuánto hemos avanzado realmente?** — porcentaje completado general del proyecto, ponderado por la duración de las tareas, no por intuición.
-- **¿Qué se ha gastado y qué queda?** — costo real vs. restante, trabajo y duración.
+- **¿Qué se ha gastado y qué queda?** — valores reales frente a restantes de costo, trabajo y duración.
 
 Cambie la duración de una tarea o agregue una dependencia, y todo el cronograma se recalcula instantáneamente — cada fecha, cada carga de trabajo de recursos, cada costo.
 

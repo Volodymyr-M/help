@@ -10,13 +10,13 @@ Um eine Ressource zuzuweisen, aktivieren Sie das Kontrollkästchen in der Zeile 
 
 Zuweisungen von Arbeits- oder Materialressourcen haben **Einheiten**, die in der entsprechenden Spalte angezeigt werden. Klicken Sie auf die Schaltfläche **Bearbeiten**, um den Standardwert der **Einheiten** für die Zuweisung zu ändern.
 
-Standardmäßig werden Arbeitsressourcen mit Einheiten zugewiesen, die dem Wert [Max. Einheiten](/de/building-schedule/resources/index.md#max-einheiten) der Ressource entsprechen (100% für eine Vollzeitressource). Das bedeutet, die Ressource wird ihre gesamte verfügbare Kalenderzeit dem Vorgang widmen. Sie können den Wert auf eine beliebige Zahl ändern.
+Standardmäßig werden Arbeitsressourcen mit Einheiten zugewiesen, die dem Wert [Max. Einheiten](/de/building-schedule/resources/index.md#max-einheiten) der Ressource entsprechen (100 % für eine Vollzeitressource). Das bedeutet, die Ressource wird ihre gesamte verfügbare Kalenderzeit dem Vorgang widmen. Sie können den Wert auf eine beliebige Zahl ändern.
 
 Standardmäßig werden Materialressourcen mit 1 Einheit zugewiesen. Das bedeutet, 1 Einheit dieses Materials wird bei der Erledigung des Vorgangs verwendet. Die Einheit stellt das dar, was Sie für das Material definiert haben (Karton, Gallone, Tonne usw.). Sie können den Standardwert ändern und eine beliebige Anzahl von Einheiten festlegen.
 
 ## Arbeitsprofile
 
-Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, wird der Aufwand (die Arbeit) über die Dauer des Vorgangs gemäß einem **Arbeitsprofil** verteilt. Standardmäßig wird die Arbeit gleichmäßig verteilt (**Flach**-Profil), aber Ingantt unterstützt mehrere Profilmuster, die ändern, wie der Aufwand über die Zeit verteilt wird:
+Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, wird der Aufwand (die Arbeit) über die Dauer des Vorgangs gemäß einem **Arbeitsprofil** verteilt. Standardmäßig wird die Arbeit gleichmäßig verteilt (Flach-Profil), aber Ingantt unterstützt mehrere Profilmuster, die ändern, wie der Aufwand über die Zeit verteilt wird:
 
 | Profil | Beschreibung |
 |--------|-------------|
@@ -28,8 +28,18 @@ Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, wird der Aufwand (die 
 | **Späte Spitze** | Steigert sich zu einem Höhepunkt gegen Ende |
 | **Glocke** | Glockenkurve — Höhepunkt in der Mitte |
 | **Schildkröte** | Flachere Glockenkurve — gleichmäßigere Verteilung |
+| **Konturiert** | Ihre eigene Verteilung pro Tag. Wird automatisch gesetzt, wenn Sie Arbeit in einer Verwendungsansicht bearbeiten; kann nicht aus der Auswahlliste gewählt werden. |
 
 Arbeitsprofile beeinflussen, wie Arbeit über Zeiträume verteilt wird, und werden beim Öffnen und Speichern von Projektdateien beibehalten.
+
+### Das Profil „Konturiert“
+
+**Konturiert** ist das benutzerdefinierte Profil und verhält sich anders als die anderen acht. Sie können es bei einer Zuweisung, die es nicht bereits hat, nicht aus der Auswahlliste wählen — die Option ist deaktiviert. Sie erhalten es, indem Sie **Arbeit direkt in einer Zelle der [Ressourcen- oder Vorgangsverwendung](/de/views/resource-views/index.md) bearbeiten**: Sobald Sie einen Tagesarbeitswert eingeben, wird das Profil dieser Zuweisung zu *Konturiert*, und Ihre eingegebene Verteilung ist die, die verwendet wird.
+
+Zwei Konsequenzen sind wissenswert:
+
+- **Ein Wechsel weg von Konturiert verwirft die von Hand eingegebene Verteilung.** Wählen Sie eines der anderen acht Profile, werden die eingegebenen Tageswerte gelöscht. Sie werden nicht aufbewahrt und beim Zurückwechseln nicht wiederhergestellt.
+- **Konturierte Arbeit übersteht den Austausch über das Microsoft-Project-Format in beide Richtungen.** Beim Import werden die zeitphasenbezogenen Tagesarbeitswerte in die Zuweisung gelesen, beim Export werden sie zurückgeschrieben. Ein Plan, der mit einem von Hand bearbeiteten Profil aus Microsoft Project kommt, behält es.
 
 ## Zuweisungsverzögerung
 
@@ -43,6 +53,6 @@ Bei Arbeitsressourcen können Sie einen Teil der Gesamtarbeit einer Zuweisung al
 
 Die Auswirkungen von Überstunden auf die Kosten werden unter [Kosten einrichten](/de/planning-costs/setting-up-costs/index.md#arbeitsressourcenkosten) behandelt.
 
-Bei Vorgängen mit **Feste Einheiten** und **Feste Arbeit** reduziert die Eingabe von Überstundenarbeit die Vorgangsdauer, da die Dauer nur auf der regulären Arbeit basiert.
+Bei Vorgängen vom Typ Feste Einheiten und Feste Arbeit reduziert die Eingabe von Überstundenarbeit die Vorgangsdauer, da die Dauer nur auf der regulären Arbeit basiert.
 
 Legen Sie Überstundenarbeit im Dialog **Ressourcenzuweisung bearbeiten** fest. Drei optionale Spalten stehen in der Vorgangstabelle zur Verfügung: **Überstundenarbeit**, **Überstundenkosten** und **Reguläre Arbeit**.

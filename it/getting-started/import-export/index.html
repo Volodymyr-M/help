@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/" class="active" aria-current="page">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -207,12 +227,15 @@
 <li><strong>Synchro</strong> — SP</li>
 <li><strong>TurboProject</strong> — PEP</li>
 <li><strong>Ingantt YAML</strong> — YAML, YML</li>
-<li>E altri (SDEF e altri formati)</li>
+<li>E altri ancora (SDEF e ulteriori formati)</li>
 </ul>
-<p>Per importare un file, fai clic sul pulsante <strong>+</strong> nella schermata Progetti, oppure usa l'opzione <strong>Import</strong> nel menu <strong>File</strong>. Se apporti modifiche a un file importato, Ingantt le salva in formato XML.</p>
+<p>Per importare un file, fai clic sul pulsante <strong>+</strong> nella schermata dei progetti, oppure usa l'opzione <strong>Import</strong> nel menu <strong>File</strong>. Se apporti modifiche a un file importato, Ingantt le salva in formato XML.</p>
 <blockquote>
 <p>Per aprire file di progetto non XML, Ingantt li invia tramite una connessione sicura al servizio web di Ingantt per la conversione. I tuoi file non vengono archiviati nel servizio. È necessaria una connessione a Internet. I file YAML vengono analizzati localmente.</p>
 </blockquote>
+<h3 id="dimensione-dei-file">Dimensione dei file <a href="#dimensione-dei-file" class="heading-anchor">#</a></h3>
+<p>I file convertiti sul nostro server sono limitati a <strong>30 MB</strong>. Questo riguarda MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP e PEP. I file XML e YAML vengono analizzati all'interno dell'app e non vengono mai caricati, quindi il limite del server non si applica a loro.</p>
+<p><strong>File troppo grande?</strong> In Microsoft Project, usa <strong>File → Save As</strong> e scegli <strong>Project XML (.xml)</strong>. Ingantt analizza l'XML all'interno dell'app, quindi il limite di 30 MB del server non si applica, e l'esportazione conserva la struttura delle attività, le dipendenze e le risorse.</p>
 <h2 id="esportazione-del-progetto">Esportazione del progetto <a href="#esportazione-del-progetto" class="heading-anchor">#</a></h2>
 <p>Ingantt offre diversi formati di esportazione tramite l'opzione <strong>Export</strong> nel menu <strong>File</strong> (oppure <strong>Download</strong> sulla versione web). Quando scegli <strong>Export</strong>, appare una finestra di dialogo che consente di selezionare il formato desiderato:</p>
 <table>
@@ -254,8 +277,8 @@
 <p>Le esportazioni PDF utilizzano sempre i colori del tema chiaro, mentre le esportazioni PNG utilizzano il tema corrente dell'interfaccia (chiaro o scuro). Le esportazioni CSV, YAML e Markdown sono in testo semplice. Quando visibili nell'interfaccia, le attività suddivise, le barre di baseline e le barre fantasma del livellamento vengono tutte renderizzate nelle esportazioni PDF e PNG.</p>
 </blockquote>
 <h2 id="modifica-di-yaml-con-agenti-ia">Modifica di YAML con agenti IA <a href="#modifica-di-yaml-con-agenti-ia" class="heading-anchor">#</a></h2>
-<p>L'esportazione YAML è progettata per essere modificata con un assistente di codifica IA (Claude Code, Codex o qualsiasi strumento in grado di leggere e scrivere file). Esporta il progetto, descrivi le modifiche desiderate in linguaggio naturale — <em>&quot;aggiungi una fase di QA di due settimane dopo lo sviluppo&quot;</em>, <em>&quot;assegna Alex a tutte le attività di design&quot;</em> — e reimporta il risultato.</p>
-<p>Il formato contiene <strong>solo gli input</strong> (durate, dipendenze, vincoli, assegnazioni, calendari, tariffe). I valori derivati — date di inizio/fine delle attività, costo totale, percorso critico, scorrimento, totali di riepilogo — sono volutamente omessi; Ingantt li ricalcola all'importazione. L'agente non deve provare a calcolare le date da solo.</p>
+<p>L'esportazione YAML è progettata per essere modificata con un assistente IA per la programmazione (Claude Code, Codex o qualsiasi strumento in grado di leggere e scrivere file). Esporta il progetto, descrivi le modifiche desiderate in linguaggio naturale — <em>&quot;aggiungi una fase di QA di due settimane dopo lo sviluppo&quot;</em>, <em>&quot;assegna Alex a tutte le attività di design&quot;</em> — e reimporta il risultato.</p>
+<p>Il formato contiene <strong>solo gli input</strong> (durate, dipendenze, vincoli, assegnazioni, calendari, tariffe). I valori derivati — date di inizio/fine delle attività, costo totale, percorso critico, margine, totali di riepilogo — sono volutamente omessi; Ingantt li ricalcola all'importazione. L'agente non deve provare a calcolare le date da solo.</p>
 <p>Indirizza l'agente al <a href="/yaml-reference.md">riferimento del formato YAML</a> affinché conosca lo schema.</p>
 <blockquote>
 <p>Per la modifica in tempo reale senza il ciclo esporta/importa, consulta <a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a> — l'IA legge e scrive lo stesso schema YAML tramite una sessione in tempo reale e tu vedi ogni modifica comparire nel diagramma di Gantt nel momento in cui avviene.</p>

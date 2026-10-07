@@ -32,7 +32,7 @@ Por ejemplo, si se usa combustible en su proyecto, puede agregar un recurso de m
 
 ## Recurso de costo
 
-Un recurso de **costo** es un gasto fijo que podría querer asignar a múltiples tareas. Los recursos de costo admiten valores de costo por asignación — el mismo recurso de costo puede tener montos diferentes en diferentes asignaciones de tareas (por ejemplo, "Viaje" = $800 en la Tarea A y $1.200 en la Tarea B).
+Un recurso de **costo** es un gasto fijo que podría querer asignar a múltiples tareas. Los recursos de costo admiten valores de costo por asignación — el mismo recurso de costo puede tener montos diferentes en diferentes asignaciones de tareas (por ejemplo, "Viaje" = $800 en la Tarea A y $1,200 en la Tarea B).
 
 Use este tipo para gastos fijos que normalmente no se especifican en medidas, como costos de instalación. Si múltiples tareas tienen el mismo costo fijo por la misma razón, cree un recurso de costo y asígnelo a todas esas tareas en lugar de completar el campo **Costo fijo** para cada tarea por separado.
 

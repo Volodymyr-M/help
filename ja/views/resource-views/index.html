@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -196,9 +216,9 @@
 <p><strong>Resource Usage</strong>ビューでは、すべてのリソースの割り当てと、各稼働リソースがタイムライン上の各期間に実施する<a href="/ja/building-schedule/task-properties/#%E4%BD%9C%E6%A5%AD%E9%87%8F">作業量</a>を確認できます。</p>
 <p>ガントチャートと同様に、タイムラインをズームイン・ズームアウトして、より詳細またはより広範なビューを表示できます。</p>
 <p>リソースが指定された期間にカレンダーが許容する以上の作業を行わなければならない場合、対応する<strong>Work</strong>が赤色でハイライト表示されます。</p>
-<p>Resource Usageビューでは、割り当てレベルの作業セルをダブルクリックして作業配分を直接編集できます。作業セルを編集すると、割り当ての作業量配分は自動的に「Contoured」に変更され、カスタムの日ごとの作業データが保存されます。</p>
+<p>Resource Usageビューでは、割り当てレベルの作業セルをダブルクリックして作業量の配分を直接編集できます。作業セルを編集すると、割り当ての作業量配分は自動的に「Contoured」に変更され、カスタムの日ごとの作業量データが保存されます。</p>
 <h2 id="タスク配分">タスク配分 <a href="#タスク配分" class="heading-anchor">#</a></h2>
-<p><strong>Task Usage</strong>ビューはResource Usageの逆で、作業配分のタスク中心のビューを表示します。各タスクがトップレベルの行として表示され、そのリソース割り当てがインデントされてその下に表示されます。</p>
+<p><strong>Task Usage</strong>ビューはResource Usageの逆で、作業量配分のタスク中心のビューを表示します。各タスクがトップレベルの行として表示され、そのリソース割り当てがインデントされてその下に表示されます。</p>
 <p>左パネルにはタスクと割り当ての詳細が、右パネルには期間にわたる作業量の値が表示されます。タスクレベルの作業量の値は太字で表示されます。過負荷の割り当て作業量の値は赤色でハイライト表示されます。</p>
 <h2 id="チームプランナー">チームプランナー <a href="#チームプランナー" class="heading-anchor">#</a></h2>
 <p><strong>Team Planner</strong>ビューは、各行が稼働リソースを表すリソース中心のスケジューリングビューです。タスクバーは共有のタイムスケール上で各リソースの行に配置されます。</p>
@@ -218,7 +238,7 @@
 <thead>
 <tr>
 <th>グラフタイプ</th>
-<th>��明</th>
+<th>説明</th>
 </tr>
 </thead>
 <tbody>

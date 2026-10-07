@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -201,7 +221,7 @@
 <p>Ein Projekt hat einen <strong>Kalender</strong>, der im Dialog <strong>Projekteigenschaften</strong> festgelegt wird. Dieser Kalender definiert, wie Vorgänge geplant werden, die keinen Arbeitsressourcen zugewiesen sind. Arbeitsfreie Tage wie Wochenenden werden ebenfalls basierend auf diesem Kalender im Gantt-Diagramm angezeigt.</p>
 <h2 id="ressourcenkalender">Ressourcenkalender <a href="#ressourcenkalender" class="heading-anchor">#</a></h2>
 <p>Jede <a href="/de/building-schedule/resources/#ressourcentyp">Arbeitsressource</a> hat einen Kalender, der im Feld <strong>Basiskalender</strong> des Dialogs <strong>Ressourceneigenschaften</strong> festgelegt wird. Sobald die Arbeitsressource einem Vorgang <a href="/de/building-schedule/assignments/#ressourcenzuweisungen-und-einheiten">zugewiesen</a> ist, beeinflusst ihr Kalender die Planung des Vorgangs.</p>
-<p>Wenn einem Vorgang mehrere Arbeitsressourcen zugewiesen sind, werden ihre Kalender <strong>geschnitten</strong> — das bedeutet, dass Arbeit nur zu Zeiten geplant wird, zu denen <strong>alle</strong> zugewiesenen Ressourcen verfügbar sind. Wenn zum Beispiel Ressource A Mo-Mi arbeitet und Ressource B Mi-Fr, wird ein beiden zugewiesener Vorgang nur mittwochs geplant.</p>
+<p>Wenn einem Vorgang mehrere Arbeitsressourcen zugewiesen sind, wird die <strong>Schnittmenge</strong> ihrer Kalender gebildet — das bedeutet, dass Arbeit nur zu Zeiten geplant wird, zu denen <strong>alle</strong> zugewiesenen Ressourcen verfügbar sind. Wenn zum Beispiel Ressource A Mo-Mi arbeitet und Ressource B Mi-Fr, wird ein beiden zugewiesener Vorgang nur mittwochs geplant.</p>
 <blockquote>
 <p>Wenn mehrere Ressourcen einen ähnlichen Arbeitsplan haben, erstellen Sie einen einzelnen Kalender und weisen Sie ihn allen zu. Sie können trotzdem Ausnahmen für jede Ressource separat in den <strong>Ressourceneigenschaften</strong> angeben — zum Beispiel Urlaub oder angepasste Arbeitszeiten an bestimmten Tagen.</p>
 </blockquote>
@@ -256,7 +276,7 @@
 </ul>
 <p>Wenn Sie zum Beispiel einen Urlaub für eine Person konfigurieren möchten, fügen Sie ihn als Ausnahme für diese Ressource hinzu. Wenn Sie einen Feiertag für alle konfigurieren möchten, fügen Sie ihn als Ausnahme zu einem Kalender hinzu, den alle verwenden.</p>
 <p>Beim Hinzufügen oder Bearbeiten von Kalenderausnahmen geben Sie Arbeitszeiträume für die Ausnahme an. Wenn Sie keine angeben, hat die Ausnahme keine Arbeitszeit, was bedeutet, dass sie einen arbeitsfreien Tag definiert.</p>
-<p>Jede Ausnahme kann einen beschreibenden <strong>Namen</strong> erhalten (wie „Weihnachtsfeiertag&quot; oder „Büro geschlossen&quot;), der in der Ausnahmeliste angezeigt wird.</p>
+<p>Jede Ausnahme kann einen beschreibenden <strong>Namen</strong> erhalten (wie „Weihnachtsfeiertag“ oder „Büro geschlossen“), der in der Ausnahmeliste angezeigt wird.</p>
 <h3 id="wiederkehrende-ausnahmen">Wiederkehrende Ausnahmen <a href="#wiederkehrende-ausnahmen" class="heading-anchor">#</a></h3>
 <p>Kalenderausnahmen können so eingestellt werden, dass sie einem Muster folgen, anstatt nur ein einzelnes Datum zu betreffen. Verfügbare Wiederholungsmuster umfassen:</p>
 <ul>
@@ -265,7 +285,7 @@
 <li><strong>Monatlich</strong> — Nach Tag des Monats oder nach Position (z. B. zweiter Dienstag)</li>
 <li><strong>Jährlich</strong> — Nach Datum oder nach Position (z. B. letzter Freitag im November)</li>
 </ul>
-<p>Wiederkehrende Ausnahmen haben eine Endbedingung: kein Ende, Ende bis Datum oder Ende nach N Vorkommen.</p>
+<p>Wiederkehrende Ausnahmen haben eine Endbedingung: kein Ende, Ende bis Datum oder Ende nach N Wiederholungen.</p>
 <h2 id="leere-und-unvollständige-kalender">Leere und unvollständige Kalender <a href="#leere-und-unvollständige-kalender" class="heading-anchor">#</a></h2>
 <p>Wenn Sie einem Kalender keine Arbeitszeit hinzufügen, ist er leer und kann nicht für die Planung verwendet werden. Solche Kalender werden mit einem Warnsymbol in der Kalenderliste markiert, und die Anzahl solcher Kalender wird in der Navigationsleiste angezeigt.</p>
 <p>Es gibt jedoch Situationen, in denen Ihr Kalender nicht leer ist, aber dennoch nicht genügend Arbeitszeit hat, um einen bestimmten Vorgang zu planen. Diese Situationen können erst erkannt werden, wenn die Planung durchgeführt wird.</p>

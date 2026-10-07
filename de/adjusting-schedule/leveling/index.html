@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/" class="active" aria-current="page">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="ressourcenabgleich">Ressourcenabgleich <a href="#ressourcenabgleich" class="heading-anchor">#</a></h1>
-<p>Es passiert schnell, dass einer Person mehr Arbeit zugewiesen wird, als sie an einem Tag bewältigen kann. Der Abgleich verschiebt automatisch Vorgänge, damit niemand überlastet wird, obwohl er das Enddatum Ihres Projekts verlängern kann.</p>
+<p>Es passiert schnell, dass einer Person mehr Arbeit zugewiesen wird, als sie an einem Tag bewältigen kann. Der Abgleich verschiebt automatisch Vorgänge, damit niemand überlastet wird — kann dabei aber das Enddatum Ihres Projekts nach hinten verschieben.</p>
 <h2 id="überlastete-ressourcen">Überlastete Ressourcen <a href="#überlastete-ressourcen" class="heading-anchor">#</a></h2>
 <p>Eine Arbeitsressource kann <strong>überlastet</strong> sein, was bedeutet, dass ihr mehr Arbeit zugewiesen ist, als sie basierend auf ihrem Kalender und ihrer Verfügbarkeit erledigen kann. Wenn Ihr Projekt zum Beispiel zwei Vorgänge hat, jeder mit einer Dauer von einem Tag und ohne <a href="/de/building-schedule/dependencies/#vorg%C3%A4nger-und-abh%C3%A4ngigkeiten">Abhängigkeit</a> untereinander, die beide derselben Arbeitsressource zugewiesen sind, ist die Ressource überlastet. Die Ressource muss zwei Tage Arbeit an einem Kalendertag erledigen. Um dies zu lösen, verknüpfen Sie einfach die beiden Vorgänge mit einer Abhängigkeit.</p>
 <p>Wenn ein Vorgang überlastete Ressourcen zugewiesen hat, zeigt Ingantt ein spezielles Symbol in der Vorgangsliste an.</p>
@@ -255,19 +275,19 @@
 <li><strong>Überlastungsgrundlage</strong> — Steuert die Erkennungsgranularität: Minute, Stunde, Tag, Woche oder Monat. Die Einstellungen Minute und Stunde erkennen Konflikte auch dann, wenn die Tagessummen innerhalb der Kapazität liegen, aber Vorgänge sich innerhalb eines Tages überschneiden.</li>
 <li><strong>Einzelne Zuweisungen anpassen</strong> — Wenn aktiviert und ein Vorgang mehrere Ressourcenzuweisungen hat, wird nur die Zuweisung der überlasteten Ressource verzögert, nicht der gesamte Vorgang</li>
 <li><strong>Teilungen in verbleibender Arbeit erstellen</strong> — Wenn aktiviert, kann der Abgleichalgorithmus Arbeit um Konflikte herum teilen, anstatt ganze Vorgänge zu verzögern</li>
-<li><strong>Nur innerhalb verfügbarer Pufferzeit abgleichen</strong> — Beschränkt Abgleichverzögerungen darauf, den Gesamtpuffer eines Vorgangs nicht zu überschreiten, wodurch eine Verlängerung des Projektenddatums verhindert wird</li>
+<li><strong>Nur innerhalb des verfügbaren Puffers abgleichen</strong> — Beschränkt Abgleichverzögerungen darauf, den Gesamtpuffer eines Vorgangs nicht zu überschreiten, wodurch eine Verlängerung des Projektenddatums verhindert wird</li>
 <li><strong>Abgleichbereich</strong> — Beschränkt den Abgleich auf Vorgänge innerhalb eines bestimmten Datumsfensters</li>
 </ul>
 <h3 id="vom-abgleich-ausgenommen">Vom Abgleich ausgenommen <a href="#vom-abgleich-ausgenommen" class="heading-anchor">#</a></h3>
 <p>Die folgenden Vorgänge und Ressourcen werden nie vom automatischen Abgleich beeinflusst:</p>
 <ul>
 <li>Vorgänge mit <a href="#priorit%C3%A4t">Priorität</a> auf <strong>1000</strong> gesetzt</li>
-<li>Vorgänge mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt (auf dem Reiter <strong>Abgleich</strong> des Dialogs <strong>Vorgangseigenschaften</strong>)</li>
+<li>Vorgänge mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt (auf dem Reiter <strong>Abgleich</strong> des Dialogs Vorgangseigenschaften)</li>
 <li>Vorgänge mit einer <strong>Muss anfangen am</strong>- oder <strong>Muss enden am</strong>-<a href="/de/building-schedule/constraints/#einschr%C3%A4nkungen">Einschränkung</a></li>
 <li><a href="/de/building-schedule/tasks/#sammelvorg%C3%A4nge">Sammelvorgänge</a></li>
 <li>Meilensteine mit Dauer null</li>
 <li>Vollständig abgeschlossene Vorgänge (100 %)</li>
-<li>Ressourcen mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt im Dialog <strong>Ressourceneigenschaften</strong></li>
+<li>Ressourcen mit <strong>Abgleich möglich</strong> auf <strong>Nein</strong> gesetzt im Dialog Ressourceneigenschaften</li>
 <li>Ressourcen mit <a href="/de/building-schedule/resources/#buchungsart">Buchungsart</a> <strong>Vorgeschlagen</strong> (sofern nicht die Abgleichoption zum Einbeziehen vorgeschlagener Ressourcen aktiviert ist)</li>
 </ul>
 <h3 id="erneuter-abgleich-und-zurücksetzen">Erneuter Abgleich und Zurücksetzen <a href="#erneuter-abgleich-und-zurücksetzen" class="heading-anchor">#</a></h3>
@@ -283,7 +303,7 @@
 <ul>
 <li><strong>0</strong> — Niedrigste Priorität, wird am ehesten verzögert</li>
 <li><strong>500</strong> — Standardpriorität</li>
-<li><strong>1000</strong> — „Nicht abgleichen&quot; — der Vorgang wird nie durch den automatischen Abgleich verzögert</li>
+<li><strong>1000</strong> — „Nicht abgleichen“ — der Vorgang wird nie durch den automatischen Abgleich verzögert</li>
 </ul>
 <blockquote>
 <p>Setzen Sie die Priorität auf <strong>1000</strong> für Vorgänge, die nie vom automatischen Abgleich verschoben werden dürfen, wie Vorgänge, die an externe Termine oder feste Verpflichtungen gebunden sind.</p>

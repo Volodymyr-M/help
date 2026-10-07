@@ -1,0 +1,69 @@
+# 구독 및 결제
+
+Ingantt for Web은 사용자당 요금이 청구되는 구독 서비스입니다. 이 문서에서는 요금제, 본인 또는 팀을 위한 구매, 구독을 확인하고 취소하는 위치, 그리고 취소 이후에 일어나는 일을 다룹니다.
+
+> App Store, Google Play, Mac App Store 또는 Microsoft Store에서 Ingantt를 설치한 경우, 구매는 해당 스토어에 속하며 여기가 아니라 그곳에서 관리됩니다. 확인하거나 변경하려면 스토어의 구독 또는 구매 화면을 열고, 환불은 스토어의 환불 절차를 이용하십시오. [서비스 약관](https://www.ingantt.com/terms_of_service.html){:target="_blank"}도 참조하십시오.
+
+## 요금제
+
+| 요금제 | 가격 |
+|------|-------|
+| **Monthly** | 사용자당 월 $7.99 |
+| **Yearly** | 사용자당 연 $71.88 |
+
+두 요금제 모두 모든 기능을 포함합니다. 연간 요금제는 같은 제품을 한 번에 결제하는 것으로, 사용자당 월 $5.99에 해당하기 때문에 이 금액이 "~부터" 가격으로 표시되는 경우가 있습니다.
+
+구독은 취소할 때까지 각 결제 기간이 끝날 때 자동으로 갱신됩니다.
+
+## 구독 구매
+
+**Account** 대화 상자를 열거나, Ingantt가 체험이 끝났다고 알릴 때 **Subscribe now**를 클릭한 다음 단계를 따르십시오:
+
+1. **대상 선택** — 본인 또는 다른 사람. 팀을 위해 구매하려면 *I want to purchase subscriptions for others*를 선택하고 한 줄에 하나씩 이메일 주소를 입력합니다. 각 주소는 해당 사용자가 Google에 로그인할 수 있는 주소여야 합니다.
+2. **요금제 선택** — 월간 또는 연간.
+3. **청구 정보 입력** — 이름, 주소, 도시, 우편번호, 주 또는 지역, 국가, 전화번호.
+4. 구매 항목과 청구 정보를 **검토**합니다.
+5. **Pay in new window** — 결제는 별도의 창에서 결제 대행사가 처리합니다.
+
+결제가 완료되면 Ingantt가 구독(또는 다른 사람을 위해 구매한 구독 목록)이 활성화되었음을 확인해 줍니다.
+
+결제 창에 결제가 아직 처리 중이라고 표시되더라도 정상입니다. *Notice of successful payment* 이메일을 기다린 다음, 대화 상자에서 **Refresh**를 클릭하여 새 상태를 불러오십시오.
+
+> 구독은 로그인한 Google 계정에 연결됩니다. 어떤 기기에서든 그 계정으로 로그인하면 사용할 수 있습니다. 이미 활성 구독이 있는 주소에는 두 번째 구독을 구매할 수 없습니다.
+
+## 구독 확인 및 관리
+
+**Account** 대화 상자의 **Manage subscriptions**에는 구매한 구독 목록이 표시됩니다. 각 구독의 대상 사용자, 구매 날짜, 구매자를 확인할 수 있습니다. **Refresh**는 서버에서 현재 상태를 다시 읽어옵니다.
+
+팀 구매도 여기에서 관리합니다. 좌석 비용을 결제한 사람은 모든 좌석을 볼 수 있으며 각각을 개별적으로 취소할 수 있습니다.
+
+본인의 상태는 탐색 서랍에 **Paid subscriber**, **Subscription inactive** 또는 체험이나 유료 기간의 남은 일수로 표시됩니다.
+
+## 취소
+
+1. **Account** → **Manage subscriptions**를 엽니다.
+2. 취소할 사용자의 행에서 **Cancel**을 클릭하고 확인합니다.
+
+취소하면 다음 갱신이 중지됩니다. 접근이 즉시 차단되지는 않습니다. *Subscription canceled, but all features available until the paid period ends* 메시지는 말 그대로 유료 기간이 끝날 때까지 모든 기능을 사용할 수 있다는 뜻이며, 탐색 서랍에는 **Paid period ends in N days**로 남은 기간이 표시됩니다. 유료 기간이 끝나면 Ingantt는 보기 전용 모드로 전환됩니다.
+
+취소해도 프로젝트에는 영향이 없습니다. 프로젝트는 Google Drive에 있으며 그대로 남아, Microsoft Project XML로 읽고 다운로드할 수 있습니다.
+
+## 결제, 영수증 및 환불
+
+- Ingantt for Web의 카드 결제는 결제 대행사인 WayForPay가 처리합니다. Ingantt는 카드 정보를 보거나 저장하지 않습니다.
+- 결제 확인 이메일은 결제 대행사에서 발송됩니다. 구독이 활성화되거나 취소되면 Ingantt가 별도로 이메일을 보냅니다.
+- 웹 구독 환불: [서비스 약관](https://www.ingantt.com/terms_of_service.html){:target="_blank"}에 명시된 대로 구매 후 7일 이내에 [support@ingantt.com](mailto:support@ingantt.com)으로 문의하십시오.
+- App Store, Google Play 또는 Microsoft Store 구매의 환불은 Apple, Google 또는 Microsoft가 각자의 정책에 따라 처리합니다.
+
+그 밖의 문의 — 부가세 또는 회사 명의 인보이스, 월간과 연간 요금제 간 변경, 좌석을 다른 사람에게 이전, 이중 청구된 결제 등 — 는 계정 주소와, 있다면 결제 참조 번호를 함께 적어 [지원팀에 이메일](mailto:support@ingantt.com)을 보내 주십시오.
+
+## 계정과 데이터
+
+- **프로젝트가 저장되는 위치:** Google Drive입니다. Ingantt는 웹 버전을 위해 이메일, 이름, 구독 상태로 이루어진 사용자 기록만 보관하며 프로젝트 데이터는 보관하지 않습니다. [개인정보 처리방침](https://www.ingantt.com/privacy_policy.html){:target="_blank"}을 참조하십시오.
+- Ingantt에서 Google **로그아웃**을 해도 구독이 취소되거나 파일에 영향을 주지 않습니다.
+- **계정 삭제:** [support@ingantt.com](mailto:support@ingantt.com)으로 요청을 보내 주십시오. Ingantt 계정을 삭제해도 Google Drive나 기기에 있는 프로젝트 파일은 삭제되지 않습니다. 파일은 계속 사용자의 것이며 보관하거나 삭제할 수 있습니다.
+
+## 관련 문서
+
+- [무료 체험](/ko/account/trial/index.md) — 이 모든 것이 적용되기 전의 7일.
+- [프로젝트 저장](/ko/getting-started/saving/index.md) — 보기 전용 모드가 저장에 미치는 영향.

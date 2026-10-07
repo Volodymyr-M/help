@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Durées écoulées - Construction d'un planning - Aide Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Utilisez les durées et décalages écoulés pour compter en continu à travers les week-ends et jours fériés, pour la cure du béton, le séchage, les tests d'endurance et les délais d'attente.">
+  <link rel="canonical" href="https://help.ingantt.com/fr/building-schedule/elapsed-durations/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Durées écoulées">
+  <meta property="og:description" content="Utilisez les durées et décalages écoulés pour compter en continu à travers les week-ends et jours fériés, pour la cure du béton, le séchage, les tests d'endurance et les délais d'attente.">
+  <meta property="og:url" content="https://help.ingantt.com/fr/building-schedule/elapsed-durations/">
+  <meta property="og:site_name" content="Aide Ingantt">
+  <meta property="og:locale" content="fr_FR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Durées écoulées">
+  <meta name="twitter:description" content="Utilisez les durées et décalages écoulés pour compter en continu à travers les week-ends et jours fériés, pour la cure du béton, le séchage, les tests d'endurance et les délais d'attente.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/building-schedule/elapsed-durations/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/building-schedule/elapsed-durations/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Aller au contenu</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Basculer la navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/fr/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Aide Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Rechercher..." aria-label="Rechercher dans la documentation">
+      <div class="search-results" data-loading="Chargement…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Rechercher">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Changer de thème" title="Basculer entre thème clair et sombre">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Langue">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/" selected>Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navigation dans la documentation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Premiers pas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
+    <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
+    <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
+    <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
+    <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuration de votre projet
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/setting-up-project/project/">Propriétés du projet</a></li>
+    <li><a href="/fr/setting-up-project/calendars/">Calendriers</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construction d'un planning
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
+    <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/" class="active" aria-current="page">Durées écoulées</a></li>
+    <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
+    <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
+    <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
+    <li><a href="/fr/building-schedule/assignments/">Affectations</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analyse et ajustement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
+    <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
+    <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planification des coûts
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/planning-costs/planning-costs/">Comprendre les coûts</a></li>
+    <li><a href="/fr/planning-costs/setting-up-costs/">Configuration des coûts</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Suivi de l'avancement
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/tracking/baselines/">Références de base</a></li>
+    <li><a href="/fr/tracking/progress/">Suivi de l'avancement</a></li>
+    <li><a href="/fr/tracking/actuals/">Valeurs réelles</a></li>
+    <li><a href="/fr/tracking/earned-value/">Valeur acquise</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vues
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/views/gantt/">Diagramme de Gantt</a></li>
+    <li><a href="/fr/views/task-views/">Vues des tâches</a></li>
+    <li><a href="/fr/views/resource-views/">Vues des ressources</a></li>
+    <li><a href="/fr/views/filtering/">Filtrage des tâches</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interface utilisateur
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
+    <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
+    <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contacter le support" title="Contacter le support">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contacter le support</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="durées-écoulées">Durées écoulées <a href="#durées-écoulées" class="heading-anchor">#</a></h1>
+<p>Une durée ordinaire se mesure en <strong>temps de travail</strong>. Une tâche de trois jours sur un calendrier du lundi au vendredi, à huit heures par jour, représente 24 heures de travail, et si elle commence le jeudi, elle se termine le lundi — le week-end ne compte pas.</p>
+<p>Une durée <strong>écoulée</strong> se mesure en <strong>temps calendaire</strong>. Elle compte en continu, 24 heures sur 24, 7 jours sur 7, à travers les week-ends, les jours fériés et toutes les exceptions chômées du <a href="/fr/setting-up-project/calendars/">calendrier</a>.</p>
+<p>Utilisez-la pour tout ce qui ne dépend pas de la présence de votre équipe au travail : la cure du béton, le séchage de la peinture, un test d'endurance, un délai d'attente réglementaire ou une expédition en transit.</p>
+<h2 id="saisir-une-durée-écoulée">Saisir une durée écoulée <a href="#saisir-une-durée-écoulée" class="heading-anchor">#</a></h2>
+<p>Saisissez la durée avec un <strong><code>e</code></strong> devant l'unité :</p>
+<table>
+<thead>
+<tr>
+<th>Vous saisissez</th>
+<th>Vous obtenez</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>3d</code></td>
+<td>3 jours ouvrés</td>
+</tr>
+<tr>
+<td><code>3ed</code></td>
+<td>3 jours écoulés — 72 heures calendaires</td>
+</tr>
+<tr>
+<td><code>2ew</code></td>
+<td>2 semaines écoulées — 14 jours calendaires</td>
+</tr>
+<tr>
+<td><code>8eh</code></td>
+<td>8 heures écoulées</td>
+</tr>
+</tbody>
+</table>
+<p>Les unités sont <code>min</code>, <code>h</code>, <code>d</code>, <code>w</code> et <code>m</code> — minutes, heures, jours, semaines, mois — et chacune d'elles accepte le <code>e</code>. Les abréviations sont traduites ; dans une interface non anglaise, utilisez donc les lettres d'unité de cette langue ; le marqueur <code>e</code> reste identique.</p>
+<p>Vous pouvez également utiliser la case à cocher <strong>Elapsed</strong> au lieu de la saisie, dans l'éditeur de durée de la boîte de dialogue <a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a>. Son info-bulle en donne la définition :</p>
+<blockquote>
+<p>Elapsed. When checked, duration counts continuously (24/7) instead of only during working hours defined by the calendar.</p>
+</blockquote>
+<p>Cocher ou décocher la case conserve le nombre affiché et change sa signification : <code>3d</code> devient <code>3ed</code>. Elle ne convertit pas silencieusement 3 jours ouvrés en un nombre équivalent de jours écoulés.</p>
+<h2 id="valeur-dune-unité-écoulée">Valeur d'une unité écoulée <a href="#valeur-dune-unité-écoulée" class="heading-anchor">#</a></h2>
+<p>Les unités écoulées ignorent le calendrier de votre projet et utilisent une arithmétique calendaire fixe :</p>
+<table>
+<thead>
+<tr>
+<th>Unité</th>
+<th>Valeur écoulée</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 jour écoulé</td>
+<td>24 heures</td>
+</tr>
+<tr>
+<td>1 semaine écoulée</td>
+<td>7 jours = 168 heures</td>
+</tr>
+<tr>
+<td>1 mois écoulé</td>
+<td>30 jours = 720 heures</td>
+</tr>
+</tbody>
+</table>
+<p>Comparez avec les unités de travail, qui proviennent des <a href="/fr/setting-up-project/project/">Propriétés du projet</a> — par défaut 8 heures par jour, 5 jours par semaine, 20 jours par mois. Ainsi, <code>1w</code> représente 40 heures de travail tandis que <code>1ew</code> représente 168 heures calendaires.</p>
+<h2 id="décalage-écoulé-sur-une-dépendance">Décalage écoulé sur une dépendance <a href="#décalage-écoulé-sur-une-dépendance" class="heading-anchor">#</a></h2>
+<p>Le même principe s'applique au décalage d'une <a href="/fr/building-schedule/dependencies/">dépendance</a>, et c'est là qu'il compte le plus. « Commencer la tâche suivante trois jours après la fin de celle-ci » signifie généralement trois jours <em>calendaires</em>, et non trois jours ouvrés — sinon une fin le vendredi repousse le successeur au mercredi.</p>
+<p>Dans l'onglet <strong>Predecessors</strong> de Task Properties, chaque lien possède sa propre case à cocher <strong>Elapsed</strong> à côté du décalage, avec la même signification :</p>
+<blockquote>
+<p>When checked, lag time counts continuously (24/7) instead of only during working hours defined by the calendar.</p>
+</blockquote>
+<p>Vous pouvez aussi le saisir directement : un décalage de <code>3ed</code> correspond à trois jours calendaires.</p>
+<h2 id="import-et-export">Import et export <a href="#import-et-export" class="heading-anchor">#</a></h2>
+<p>Les durées et décalages écoulés font partie du format Microsoft Project et survivent à un aller-retour dans les deux sens. Une durée <code>3ed</code> importée depuis Microsoft Project reste <code>3ed</code>, et s'exporte à nouveau en tant que durée écoulée.</p>
+
+    </main>
+    <aside class="toc" aria-label="Table des matières"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

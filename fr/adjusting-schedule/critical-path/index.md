@@ -9,9 +9,9 @@ Une fois votre plan mis en œuvre, certaines tâches se terminent plus tôt que 
 D'autres tâches ont une marge nulle — tout retard décale la date de fin du projet. Ce sont les _tâches critiques_. Pour maintenir votre projet dans les délais, accordez-leur une attention particulière lors du suivi de l'avancement.
 
 Une tâche est également critique si :
-- Elle possède une contrainte **Must start on** ou **Must finish on** [constraint](/fr/building-schedule/constraints/index.md#constraints)
-- Elle possède une contrainte **As late as possible** [constraint](/fr/building-schedule/constraints/index.md#constraints) dans un projet planifié à partir de la date de début
-- Sa date de fin est égale ou dépasse son [échéance](/fr/building-schedule/task-properties/index.md#deadline)
+- Elle possède une [contrainte](/fr/building-schedule/constraints/index.md#contraintes) **Must start on** ou **Must finish on**
+- Elle possède une [contrainte](/fr/building-schedule/constraints/index.md#contraintes) **As late as possible** dans un projet planifié à partir de la date de début
+- Sa date de fin atteint ou dépasse son [échéance](/fr/building-schedule/task-properties/index.md#échéance)
 - Elle a une **marge négative** — un conflit de planification où les contraintes forcent la tâche à commencer avant ce que ses dépendances permettent
 
 Les tâches achevées à 100 % ne sont jamais marquées comme critiques, quelles que soient les autres conditions.

@@ -21,7 +21,7 @@ Um Vorgänger zuzuweisen und Abhängigkeiten zu bearbeiten, verwenden Sie den Re
 
 Manchmal müssen Sie eine Wartezeit zwischen zwei abhängigen Vorgängen festlegen.
 
-Nehmen wir an, Ihr erster Vorgang ist „Wand streichen" und Ihr zweiter Vorgang ist „Bilder an die Wand hängen". Diese Vorgänge sind verknüpft (haben eine **Ende-Anfang**-Abhängigkeit). Es ist nicht möglich, Bilder aufzuhängen, bis die Farbe trocken ist, also müssen Sie warten. Um dies in Ihrem Terminplan abzubilden, legen Sie die **Verzögerung** (z. B. 2 Tage) für die Abhängigkeit zwischen den beiden Vorgängen fest.
+Nehmen wir an, Ihr erster Vorgang ist „Wand streichen“ und Ihr zweiter Vorgang ist „Bilder an die Wand hängen“. Diese Vorgänge sind verknüpft (haben eine **Ende-Anfang**-Abhängigkeit). Es ist nicht möglich, Bilder aufzuhängen, bis die Farbe trocken ist, also müssen Sie warten. Um dies in Ihrem Terminplan abzubilden, legen Sie die **Verzögerung** (z. B. 2 Tage) für die Abhängigkeit zwischen den beiden Vorgängen fest.
 
 ![Verzögerung](/images/building-schedule/tasks/lag.png)
 
@@ -29,7 +29,7 @@ Verzögerungen können auch das umgekehrte Szenario darstellen — wenn ein abh�
 
 Um Verzögerung oder Vorlaufzeit festzulegen, wählen Sie den Vorgänger auf dem Reiter **Vorgänger** des Dialogs **Vorgangseigenschaften** aus und klicken Sie auf die Schaltfläche **Bearbeiten**.
 
-> Verzögerungen können in Stunden, Tagen, Wochen, Monaten oder als Bruchteil der Dauer des Vorgängervorgangs angegeben werden (z. B. 50%).
+> Verzögerungen können in Stunden, Tagen, Wochen, Monaten oder als Bruchteil der Dauer des Vorgängervorgangs angegeben werden (z. B. 50 %).
 
 ## Zirkuläre Abhängigkeiten
 

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/" class="active" aria-current="page">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -210,7 +230,7 @@
 <ul>
 <li>Er wird <strong>nicht vom Planungsalgorithmus beeinflusst</strong> — seine Termine werden von Ihnen festgelegt</li>
 <li>Sie können <strong>Anfang</strong>- und <strong>Ende</strong>-Termine über die Datumsfelder oder die Datumsauswahl eingeben</li>
-<li>Sie können <strong>Textwerte</strong> (wie „TBD&quot;, „Anfang März&quot; oder „2–3 Wochen&quot;) anstelle tatsächlicher Termine eingeben, wenn Sie sich über den Zeitpunkt noch nicht sicher sind</li>
+<li>Sie können <strong>Textwerte</strong> (wie „TBD“, „Anfang März“ oder „2–3 Wochen“) anstelle tatsächlicher Termine eingeben, wenn Sie sich über den Zeitpunkt noch nicht sicher sind</li>
 <li>Ein Nadelsymbol wird für manuell geplante Vorgänge in der Vorgangsliste angezeigt</li>
 </ul>
 <blockquote>
@@ -220,11 +240,11 @@
 <p>Wiederkehrende Vorgänge stellen Aktivitäten dar, die sich nach einem regelmäßigen Zeitplan wiederholen, wie tägliche Stand-up-Meetings, wöchentliche Reviews oder monatliche Berichte. Sie können wiederkehrende Vorgänge über das Menü <strong>Einfügen</strong> erstellen, indem Sie <strong>Wiederkehrenden Vorgang hinzufügen</strong> wählen.</p>
 <p>Beim Erstellen eines wiederkehrenden Vorgangs legen Sie Folgendes fest:</p>
 <ul>
-<li><strong>Dauer des Vorkommens</strong> — Die Dauer jedes einzelnen Vorkommens</li>
-<li><strong>Wiederholungsmuster</strong> — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Vorkommnissen)</li>
-<li><strong>Nur Arbeitstage</strong> — Beschränkt Vorkommnisse auf Arbeitstage</li>
+<li><strong>Dauer der Wiederholung</strong> — Die Dauer jeder einzelnen Wiederholung</li>
+<li><strong>Wiederholungsmuster</strong> — Tägliches, wöchentliches, monatliches oder jährliches Muster mit einem Startdatum und einer Endbedingung (kein Ende, Ende bis Datum oder Ende nach N Wiederholungen)</li>
+<li><strong>Nur Arbeitstage</strong> — Beschränkt Wiederholungen auf Arbeitstage</li>
 </ul>
-<p>Wiederkehrende Vorgänge erscheinen als Sammelvorgang, der die einzelnen Vorkommnisse enthält. Jedes Vorkommnis kann unabhängig abgeschlossen werden. Beim Löschen eines wiederkehrenden Vorgangs werden Sie gefragt, ob Sie die gesamte Serie oder nur das ausgewählte Vorkommnis löschen möchten.</p>
+<p>Wiederkehrende Vorgänge erscheinen als Sammelvorgang, der die einzelnen Wiederholungen enthält. Jede Wiederholung kann unabhängig abgeschlossen werden. Beim Löschen eines wiederkehrenden Vorgangs werden Sie gefragt, ob Sie die gesamte Serie oder nur die ausgewählte Wiederholung löschen möchten.</p>
 <h2 id="geteilte-vorgänge">Geteilte Vorgänge <a href="#geteilte-vorgänge" class="heading-anchor">#</a></h2>
 <p>Ein Vorgang kann in nicht zusammenhängende Teile aufgeteilt werden, die Unterbrechungen in der Arbeit darstellen. Um einen Vorgang zu teilen, wählen Sie ihn aus und wählen Sie <strong>Vorgang teilen</strong> aus der Symbolleiste oder dem Rechtsklick-Kontextmenü. Der Dialog <strong>Vorgang teilen</strong> bietet zwei Modi:</p>
 <ul>
@@ -237,14 +257,14 @@
 <p>Inaktive Vorgänge sind:</p>
 <ul>
 <li>Von der Planung ausgeschlossen — sie beeinflussen weder den kritischen Pfad noch andere Vorgänge</li>
-<li>Von den Zusammenfassungen des Sammelvorgangs für Dauer, Arbeit, Kosten und % Complete ausgeschlossen</li>
-<li>Von der Erkennung von Ressourcenüberlastung und der automatischen Kapazitätsabgleichung ausgeschlossen</li>
+<li>Von den Rollups des Sammelvorgangs für Dauer, Arbeit, Kosten und % Abgeschlossen ausgeschlossen</li>
+<li>Von der Erkennung von Ressourcenüberlastung und dem automatischen Abgleich ausgeschlossen</li>
 <li>Von Earned-Value-Berechnungen ausgeschlossen</li>
 </ul>
 <p>Inaktive Vorgänge bleiben in der Vorgangsliste und im Gantt-Diagramm sichtbar, werden jedoch mit reduzierter Deckkraft und durchgestrichenem Text angezeigt. Ihre Termine werden als Referenz beibehalten.</p>
-<p>Das Deaktivieren eines Sammelvorgangs wirkt sich auf alle seine Teilvorgänge aus. Das Reaktivieren eines Teilvorgangs reaktiviert bei Bedarf automatisch seinen übergeordneten Sammelvorgang. Vorgänge mit tatsächlichem Fortschritt (% Complete &gt; 0) können nicht deaktiviert werden.</p>
+<p>Das Deaktivieren eines Sammelvorgangs wirkt sich auf alle seine Teilvorgänge aus. Das Reaktivieren eines Teilvorgangs reaktiviert bei Bedarf automatisch seinen übergeordneten Sammelvorgang. Vorgänge mit tatsächlichem Fortschritt (% Abgeschlossen &gt; 0) können nicht deaktiviert werden.</p>
 <blockquote>
-<p>Verwenden Sie inaktive Vorgänge, um „Was-wäre-wenn&quot;-Szenarien in Ihrem Terminplan zu behalten, ohne den aktiven Plan zu beeinflussen.</p>
+<p>Verwenden Sie inaktive Vorgänge, um „Was-wäre-wenn“-Szenarien in Ihrem Terminplan zu behalten, ohne den aktiven Plan zu beeinflussen.</p>
 </blockquote>
 
     </main>

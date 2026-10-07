@@ -14,9 +14,9 @@ Velocizza il tuo lavoro con le scorciatoie da tastiera per le azioni comuni come
 | `Ctrl + Z`             | Annulla l'ultima azione.                                                                                                                             |
 | `Ctrl + Y`             | Ripeti l'ultima azione annullata.                                                                                                                      |
 | `Ctrl + S`             | Salva le modifiche in un file.                                                                                                                           |
-| `Ctrl + O`             | Apri un file (selezione file nativa su desktop, finestra **Open file** su **Web**).                                                                     |
+| `Ctrl + O`             | Apri un file (selettore di file nativo su desktop, finestra **Open file** su **Web**).                                                                  |
 | `Ctrl + P`             | Stampa il progetto corrente.                                                                                                                        |
-| `Ctrl + Shift + F`     | Mostra/nascondi la visibilità dell'**intestazione/barra dei menu**.                                                                                                            |
+| `Ctrl + Shift + F`     | Mostra/nascondi l'**intestazione/barra dei menu**.                                                                                                            |
 | `A`                    | Aggiungi un nuovo elemento.                                                                                                                                   |
 | `Del`                  | Elimina gli elementi selezionati.                                                                                                                            |
 | `Enter`                | Mostra la finestra **Properties** per l'elemento selezionato. Se sono selezionati più elementi, la finestra viene mostrata per il primo elemento.                       |

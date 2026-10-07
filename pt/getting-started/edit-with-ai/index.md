@@ -7,9 +7,9 @@ Conecte seu projeto a um assistente de codificação com IA como Claude Code, Co
 ## Iniciando uma Sessão de Edição com IA
 
 1. Abra o projeto que deseja editar.
-2. Clique no ícone **Editar com IA** (✨) no canto superior direito, ao lado do botão de histórico de versões.
+2. Clique no ícone **Edit with AI** (✨) no canto superior direito, ao lado do botão de histórico de versões.
 3. A caixa de diálogo mostra um conjunto de instruções que descrevem como sua ferramenta de IA deve ler e escrever o projeto.
-4. Clique em **Copiar instruções**. Isso inicia a sessão de edição e copia as instruções para a área de transferência.
+4. Clique em **Copy instructions**. Isso inicia a sessão de edição e copia as instruções para a área de transferência.
 5. Cole as instruções na sua ferramenta de IA (por exemplo, como a primeira mensagem em uma conversa do Claude Code ou Codex).
 6. Peça à IA para fazer alterações em linguagem natural — por exemplo, _"adicionar uma fase de QA de duas semanas após o desenvolvimento"_ ou _"atribuir Alex a todas as tarefas de design"_.
 
@@ -24,7 +24,7 @@ A IA segue as instruções para obter o YAML atual, editá-lo e enviar o resulta
 
 ## Parando a Sessão
 
-Clique no ícone ✨ enquanto uma sessão estiver ativa e escolha **Parar sessão**. Você também pode simplesmente fechar a aba do navegador — a sessão termina automaticamente após um período de inatividade.
+Clique no ícone ✨ enquanto uma sessão estiver ativa e escolha **Stop session**. Você também pode simplesmente fechar a aba do navegador — a sessão termina automaticamente após um período de inatividade.
 
 ## Ferramentas de IA Suportadas
 

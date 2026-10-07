@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="gantt-diagramm">Gantt-Diagramm <a href="#gantt-diagramm" class="heading-anchor">#</a></h1>
-<p>Das Gantt-Diagramm ist die Zeitachse Ihres Projekts. Sehen Sie Abgleichanpassungen, Fortschrittslinien und wie sich der Terminplan seit der Basislinie verändert hat.</p>
+<p>Das Gantt-Diagramm ist die Zeitachse Ihres Projekts. Sehen Sie Abgleichanpassungen, Fortschrittslinien und wie sich der Terminplan seit dem Festlegen des Basisplans verändert hat.</p>
 <h2 id="verfügbare-ansichten">Verfügbare Ansichten <a href="#verfügbare-ansichten" class="heading-anchor">#</a></h2>
 <p>Ingantt bietet mehrere Ansichten für die Arbeit mit Ihrem Projekt, zugänglich über die Navigationsleiste oder das Menü <strong>Ansicht</strong>. Alle Ansichten sind voll funktionsfähig — führen Sie jede für Vorgänge verfügbare Aktion in jeder Ansicht aus.</p>
 <p><strong>Vorgangsansichten:</strong></p>
@@ -210,11 +230,11 @@
 <li><strong><a href="/de/views/resource-views/#teamplaner">Teamplaner</a></strong></li>
 <li><strong><a href="/de/views/resource-views/#ressourcendiagramm">Ressourcendiagramm</a></strong></li>
 </ul>
-<h2 id="vorgangsansicht">Vorgangsansicht <a href="#vorgangsansicht" class="heading-anchor">#</a></h2>
-<p>Die <strong>Vorgangsansicht</strong> ist die Hauptansicht, die eine Vorgangsliste und das Gantt-Diagramm kombiniert (geteilte Ansicht). Sie können über das Untermenü <strong>Ansicht &gt; Bereiche in Vorgängen</strong> konfigurieren, welche Bereiche angezeigt werden: Vorgangsliste und Gantt-Diagramm können jeweils unabhängig ein- und ausgeblendet werden.</p>
+<h2 id="ansicht-vorgänge">Ansicht „Vorgänge“ <a href="#ansicht-vorgänge" class="heading-anchor">#</a></h2>
+<p>Die Ansicht <strong>Vorgänge</strong> ist die Hauptansicht, die eine Vorgangsliste und das Gantt-Diagramm kombiniert (geteilte Ansicht). Sie können über das Untermenü <strong>Ansicht &gt; Bereiche in Vorgängen</strong> konfigurieren, welche Bereiche angezeigt werden: Vorgangsliste und Gantt-Diagramm können jeweils unabhängig ein- und ausgeblendet werden.</p>
 <h2 id="vorgangsinspektor">Vorgangsinspektor <a href="#vorgangsinspektor" class="heading-anchor">#</a></h2>
 <p>Der <strong>Vorgangsinspektor</strong> ist ein Seitenbereich, der Details des ausgewählten Vorgangs anzeigt, einschließlich Planungsfaktoren (was die Termine des Vorgangs bestimmt), allgemeine Eigenschaften, Ressourcen, Vorgänger, Kosten und mehr. Schalten Sie den Vorgangsinspektor über die Symbolleiste ein oder aus.</p>
-<p>Der Abschnitt <strong>Planungsfaktoren</strong> oben im Inspektor zeigt, was die geplanten Termine des Vorgangs bestimmt: bestimmende Vorgänger (fett mit einem „Bestimmend&quot;-Abzeichen dargestellt), nicht bestimmende Vorgänger (mit ihrem relativen Puffer), Einschränkungen, Abgleichverzögerungen, Kalender und Pufferwerte. Kritische Vorgänge zeigen ein „Kritisch&quot;-Abzeichen an.</p>
+<p>Der Abschnitt <strong>Planungsfaktoren</strong> oben im Inspektor zeigt, was die geplanten Termine des Vorgangs bestimmt: bestimmende Vorgänger (fett mit einem „Bestimmend“-Abzeichen dargestellt), nicht bestimmende Vorgänger (mit ihrem relativen Puffer), Einschränkungen, Abgleichverzögerungen, Kalender und Pufferwerte. Kritische Vorgänge zeigen ein „Kritisch“-Abzeichen an.</p>
 <h2 id="abgleich-gantt">Abgleich-Gantt <a href="#abgleich-gantt" class="heading-anchor">#</a></h2>
 <p>Wenn der <a href="/de/adjusting-schedule/leveling/#automatischer-abgleich">automatische Abgleich</a> auf Ihr Projekt angewendet wurde, erscheint eine <strong>Abgleich-Gantt</strong>-Umschaltfläche im Gantt-Diagramm-Bereich.</p>
 <p>Wenn aktiviert, zeigt das Gantt-Diagramm <strong>grüne Balken</strong> an den Positionen jedes Vorgangs vor dem Abgleich (wo der Vorgang vor dem automatischen Abgleich war). Die Standard-Vorgangsbalken bleiben an ihren aktuellen abgeglichenen Positionen. So können Sie den ursprünglichen Terminplan visuell mit dem abgeglichenen Terminplan vergleichen und sehen, wie stark jeder Vorgang verzögert wurde.</p>

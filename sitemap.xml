@@ -103,6 +103,12 @@
     <loc>https://help.ingantt.com/en/ui/sharing/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/en/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/en/ui/version-history/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/en/ui/languages/</loc>
   </url>
   <url>
@@ -110,12 +116,6 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/en/ui/contact-support/</loc>
-  </url>
-  <url>
-    <loc>https://help.ingantt.com/en/ui/offline-mode/</loc>
-  </url>
-  <url>
-    <loc>https://help.ingantt.com/en/ui/version-history/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/en/account/trial/</loc>
@@ -127,7 +127,16 @@
     <loc>https://help.ingantt.com/de/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/de/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/de/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/de/getting-started/create-with-ai/</loc>
@@ -151,6 +160,9 @@
     <loc>https://help.ingantt.com/de/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/de/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/de/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -170,6 +182,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/de/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/de/planning-costs/planning-costs/</loc>
@@ -208,13 +223,43 @@
     <loc>https://help.ingantt.com/de/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/de/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/de/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/de/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/es/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/es/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/es/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/es/getting-started/create-with-ai/</loc>
@@ -238,6 +283,9 @@
     <loc>https://help.ingantt.com/es/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/es/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/es/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -257,6 +305,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/es/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/es/planning-costs/planning-costs/</loc>
@@ -295,13 +346,43 @@
     <loc>https://help.ingantt.com/es/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/es/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/es/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/es/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/fr/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/fr/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/fr/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/fr/getting-started/create-with-ai/</loc>
@@ -325,6 +406,9 @@
     <loc>https://help.ingantt.com/fr/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/fr/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/fr/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -344,6 +428,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/fr/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/fr/planning-costs/planning-costs/</loc>
@@ -382,13 +469,43 @@
     <loc>https://help.ingantt.com/fr/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/fr/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/fr/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/fr/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/it/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/it/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/it/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/it/getting-started/create-with-ai/</loc>
@@ -412,6 +529,9 @@
     <loc>https://help.ingantt.com/it/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/it/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/it/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -431,6 +551,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/it/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/it/planning-costs/planning-costs/</loc>
@@ -469,13 +592,43 @@
     <loc>https://help.ingantt.com/it/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/it/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/it/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/it/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/pt/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/pt/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/pt/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/pt/getting-started/create-with-ai/</loc>
@@ -499,6 +652,9 @@
     <loc>https://help.ingantt.com/pt/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/pt/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/pt/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -518,6 +674,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/pt/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/pt/planning-costs/planning-costs/</loc>
@@ -556,13 +715,43 @@
     <loc>https://help.ingantt.com/pt/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/pt/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/pt/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/pt/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/uk/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/uk/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/uk/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/uk/getting-started/create-with-ai/</loc>
@@ -586,6 +775,9 @@
     <loc>https://help.ingantt.com/uk/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/uk/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/uk/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -605,6 +797,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/uk/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/uk/planning-costs/planning-costs/</loc>
@@ -643,13 +838,43 @@
     <loc>https://help.ingantt.com/uk/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/uk/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/uk/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/uk/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ja/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ja/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ja/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ja/getting-started/create-with-ai/</loc>
@@ -673,6 +898,9 @@
     <loc>https://help.ingantt.com/ja/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ja/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ja/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -692,6 +920,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/ja/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ja/planning-costs/planning-costs/</loc>
@@ -730,13 +961,43 @@
     <loc>https://help.ingantt.com/ja/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ja/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ja/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ja/account/subscription/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ko/getting-started/overview/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ko/getting-started/install/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ko/getting-started/getting-started/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/getting-started/templates/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/getting-started/saving/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ko/getting-started/create-with-ai/</loc>
@@ -760,6 +1021,9 @@
     <loc>https://help.ingantt.com/ko/building-schedule/task-properties/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ko/building-schedule/elapsed-durations/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ko/building-schedule/dependencies/</loc>
   </url>
   <url>
@@ -779,6 +1043,9 @@
   </url>
   <url>
     <loc>https://help.ingantt.com/ko/adjusting-schedule/custom-fields/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/</loc>
   </url>
   <url>
     <loc>https://help.ingantt.com/ko/planning-costs/planning-costs/</loc>
@@ -817,6 +1084,27 @@
     <loc>https://help.ingantt.com/ko/ui/files/</loc>
   </url>
   <url>
+    <loc>https://help.ingantt.com/ko/ui/sharing/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/ui/offline-mode/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/ui/version-history/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/ui/languages/</loc>
+  </url>
+  <url>
     <loc>https://help.ingantt.com/ko/ui/shortcuts/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/ui/contact-support/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/account/trial/</loc>
+  </url>
+  <url>
+    <loc>https://help.ingantt.com/ko/account/subscription/</loc>
   </url>
 </urlset>

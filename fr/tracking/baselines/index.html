@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -205,10 +225,34 @@
 <ul>
 <li>Afficher toutes les références de base enregistrées</li>
 <li>Supprimer les références dont vous n'avez plus besoin</li>
-<li>Désigner la référence utilisée pour les calculs de <a href="/fr/tracking/earned-value/#earned-value-management">valeur acquise</a></li>
+<li>Désigner la référence utilisée pour les calculs de <a href="/fr/tracking/earned-value/#gestion-de-la-valeur-acquise">valeur acquise</a></li>
 </ul>
 <h2 id="colonnes-de-référence-et-décart">Colonnes de référence et d'écart <a href="#colonnes-de-référence-et-décart" class="heading-anchor">#</a></h2>
-<p>Vous pouvez ajouter des colonnes de référence (<strong>Start</strong>, <strong>Finish</strong>, <strong>Duration</strong>, <strong>Work</strong>, <strong>Cost</strong>) et des colonnes d'écart (<strong>Start Variance</strong>, <strong>Finish Variance</strong>, etc.) à la liste des tâches via la boîte de dialogue <strong>Options</strong>. Les colonnes d'écart affichent la différence entre le planning actuel et la <a href="/fr/tracking/earned-value/#earned-value-baseline">référence de valeur acquise</a>.</p>
+<p>Vous pouvez ajouter des colonnes de référence et d'écart à la liste des tâches via la boîte de dialogue <strong>Options</strong>. Il y a au total <strong>55 colonnes de référence</strong> et <strong>5 colonnes d'écart</strong>.</p>
+<h3 id="les-55-colonnes-de-référence">Les 55 colonnes de référence <a href="#les-55-colonnes-de-référence" class="heading-anchor">#</a></h3>
+<p>Ingantt stocke <strong>11 références de base</strong> : la référence <strong>Baseline</strong> non numérotée, plus <strong>Baseline 1</strong> à <strong>Baseline 10</strong>. Chacune expose les cinq mêmes colonnes de tâche :</p>
+<ul>
+<li>Baseline Start</li>
+<li>Baseline Finish</li>
+<li>Baseline Duration</li>
+<li>Baseline Work</li>
+<li>Baseline Cost</li>
+</ul>
+<p>11 références × 5 champs = <strong>55 colonnes de référence</strong>, toutes disponibles depuis le sélecteur de colonnes du tableau des tâches. Le jeu non numéroté porte un nom simple (<em>Baseline Start</em>) ; les jeux numérotés portent leur numéro (<em>Baseline 3 Start</em>).</p>
+<h3 id="les-5-colonnes-décart">Les 5 colonnes d'écart <a href="#les-5-colonnes-décart" class="heading-anchor">#</a></h3>
+<p>Les colonnes d'écart sont calculées — planning actuel moins référence de base — et il y en a cinq :</p>
+<ul>
+<li>Start Variance</li>
+<li>Finish Variance</li>
+<li>Duration Variance</li>
+<li>Work Variance</li>
+<li>Cost Variance</li>
+</ul>
+<p>Il n'existe qu'un seul jeu de cinq colonnes, et non un jeu par référence de base. Elles comparent le planning actuel à <strong>une seule</strong> référence de base — celle sélectionnée comme <a href="/fr/tracking/earned-value/#r%C3%A9f%C3%A9rence-de-base-pour-la-valeur-acquise">référence de base pour la valeur acquise</a> dans <strong>Project → Earned Value Options</strong>, qui est par défaut la référence Baseline non numérotée. Modifiez ce paramètre et chaque colonne d'écart est recalculée par rapport à la référence choisie. Une tâche dont la référence choisie n'a jamais été définie affiche un écart vide plutôt qu'un zéro.</p>
+<h2 id="où-sont-stockées-les-références-de-base">Où sont stockées les références de base <a href="#où-sont-stockées-les-références-de-base" class="heading-anchor">#</a></h2>
+<p>Les références de base sont stockées <strong>dans le fichier de projet</strong>, et non dans un fichier séparé. Enregistrer le projet enregistre ses références de base.</p>
+<p>Si vous essayez de définir une douzième référence de base, Ingantt vous indique <em>All baseline slots are in use. Clear one in the Baselines dialog first.</em> Ouvrez <strong>Project → Baselines</strong> et effacez-en une.</p>
+<p>Les références de base ne sont pas la même chose que l'<a href="/fr/ui/version-history/">historique des versions</a>, qui enregistre le fichier lui-même au fil du temps. Utilisez l'historique des versions pour revenir à un plan antérieur ; utilisez les références de base pour mesurer à quel point le plan actuel a dérivé.</p>
 <h2 id="plans-intermédiaires">Plans intermédiaires <a href="#plans-intermédiaires" class="heading-anchor">#</a></h2>
 <p>Les plans intermédiaires stockent des instantanés allégés du planning (dates de <strong>Start</strong> et <strong>Finish</strong> uniquement) pour une comparaison rapide sans la lourdeur des références de base complètes. Ingantt prend en charge jusqu'à 10 plans intermédiaires (<code>Interim Plan 1</code> à <code>Interim Plan 10</code>).</p>
 <p>Définissez et effacez les plans intermédiaires depuis l'élément <strong>Interim Plans</strong> dans le menu <strong>Project</strong>. Vous pouvez afficher les dates des plans intermédiaires sous forme de colonnes dans la liste des tâches.</p>

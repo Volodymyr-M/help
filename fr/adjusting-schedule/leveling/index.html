@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/" class="active" aria-current="page">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -193,10 +213,10 @@
       <h1 id="nivellement-des-ressources">Nivellement des ressources <a href="#nivellement-des-ressources" class="heading-anchor">#</a></h1>
 <p>Il est facile d'affecter accidentellement plus de travail qu'une personne ne peut en accomplir en une journée. Le nivellement décale automatiquement les tâches pour éviter toute surcharge, bien qu'il puisse repousser la date de fin de votre projet.</p>
 <h2 id="ressources-surutilisées">Ressources surutilisées <a href="#ressources-surutilisées" class="heading-anchor">#</a></h2>
-<p>Une ressource de travail peut être <strong>surutilisée</strong>, ce qui signifie qu'elle a plus de travail affecté qu'elle ne peut en accomplir selon son calendrier et sa disponibilité. Par exemple, si votre projet comporte deux tâches d'une durée d'un jour chacune, sans <a href="/fr/building-schedule/dependencies/#predecessors-and-dependencies">dépendance</a> entre elles, toutes deux affectées à la même ressource de travail, cette ressource est surutilisée. Elle doit effectuer deux jours de travail en un seul jour calendaire. Pour résoudre ce problème, il suffit de lier les deux tâches par une dépendance.</p>
+<p>Une ressource de travail peut être <strong>surutilisée</strong>, ce qui signifie qu'elle a plus de travail affecté qu'elle ne peut en accomplir selon son calendrier et sa disponibilité. Par exemple, si votre projet comporte deux tâches d'une durée d'un jour chacune, sans <a href="/fr/building-schedule/dependencies/#pr%C3%A9d%C3%A9cesseurs-et-d%C3%A9pendances">dépendance</a> entre elles, toutes deux affectées à la même ressource de travail, cette ressource est surutilisée. Elle doit effectuer deux jours de travail en un seul jour calendaire. Pour résoudre ce problème, il suffit de lier les deux tâches par une dépendance.</p>
 <p>Si une tâche a des ressources surutilisées affectées, Ingantt affiche une icône spéciale dans la liste des tâches.</p>
 <p>Si une ressource est surutilisée, Ingantt affiche une icône spéciale dans la vue <strong>Resources</strong> et la vue <strong>Resource Usage</strong>.</p>
-<p>De plus, Ingantt comptabilise ces tâches et ressources et affiche les totaux dans le panneau de navigation.</p>
+<p>De plus, Ingantt comptabilise ces tâches et ressources et affiche les totaux dans le tiroir de navigation.</p>
 <h2 id="nivellement-automatique">Nivellement automatique <a href="#nivellement-automatique" class="heading-anchor">#</a></h2>
 <p>Les dépendances entre les tâches contrôlent leur position sur la ligne temporelle. Dans les projets de grande envergure, il est facile d'oublier une dépendance — ce qui entraîne l'affectation de plusieurs tâches à la même ressource de travail au même moment. La ressource devient surutilisée, et Ingantt vous en informe par des icônes spéciales dans les listes de tâches et de ressources.</p>
 <p>Vous pouvez résoudre la surutilisation manuellement en définissant des dépendances ou des contraintes pour décaler certaines tâches afin que le travail ne soit pas effectué simultanément.</p>
@@ -261,27 +281,27 @@
 <h3 id="exemptions-du-nivellement">Exemptions du nivellement <a href="#exemptions-du-nivellement" class="heading-anchor">#</a></h3>
 <p>Les tâches et ressources suivantes ne sont jamais affectées par le nivellement automatique :</p>
 <ul>
-<li>Les tâches dont la <a href="#priority">priorité</a> est définie à <strong>1000</strong></li>
+<li>Les tâches dont la <a href="#priorit%C3%A9">priorité</a> est définie à <strong>1000</strong></li>
 <li>Les tâches dont <strong>Can Level</strong> est défini à <strong>false</strong> (dans l'onglet <strong>Leveling</strong> de la boîte de dialogue Task Properties)</li>
-<li>Les tâches avec une contrainte <strong>Must start on</strong> ou <strong>Must finish on</strong> <a href="/fr/building-schedule/constraints/#constraints">constraint</a></li>
-<li>Les <a href="/fr/building-schedule/tasks/#summary-tasks">tâches récapitulatives</a></li>
+<li>Les tâches avec une <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> <strong>Must start on</strong> ou <strong>Must finish on</strong></li>
+<li>Les <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâches récapitulatives</a></li>
 <li>Les jalons de durée nulle</li>
 <li>Les tâches entièrement achevées (100 %)</li>
 <li>Les ressources dont <strong>Can Level</strong> est défini à <strong>false</strong> dans la boîte de dialogue Resource Properties</li>
-<li>Les ressources avec un <a href="/fr/building-schedule/resources/#booking-type">type de réservation</a> <strong>Proposed</strong> (sauf si l'option de nivellement pour inclure les ressources proposées est activée)</li>
+<li>Les ressources avec un <a href="/fr/building-schedule/resources/#type-de-r%C3%A9servation">type de réservation</a> <strong>Proposed</strong> (sauf si l'option de nivellement pour inclure les ressources proposées est activée)</li>
 </ul>
 <h3 id="renivellement-et-suppression">Renivellement et suppression <a href="#renivellement-et-suppression" class="heading-anchor">#</a></h3>
 <p>Chaque fois que vous exécutez <strong>Auto-level resources</strong>, tout nivellement précédent est automatiquement supprimé au préalable. Le nivellement repart toujours d'un planning vierge, non nivelé, pour éviter l'accumulation des retards.</p>
 <p>Si vous modifiez le planning après le nivellement (ajout de tâches, modification de dépendances, etc.), les retards de nivellement existants sont conservés mais peuvent ne plus résoudre toutes les surutilisations. Exécutez à nouveau <strong>Auto-level resources</strong> pour reniveler le planning mis à jour.</p>
-<p>Pour supprimer tous les retards de nivellement et revenir au planning calculé par la méthode du chemin critique, choisissez <strong>Clear leveling</strong> dans le menu <strong>Project</strong>.</p>
+<p>Pour supprimer tous les retards de nivellement et revenir au planning d'origine calculé par la méthode du chemin critique, choisissez <strong>Clear leveling</strong> dans le menu <strong>Project</strong>.</p>
 <h3 id="gantt-de-nivellement">Gantt de nivellement <a href="#gantt-de-nivellement" class="heading-anchor">#</a></h3>
 <p>Après avoir exécuté le nivellement automatique, un bouton bascule <strong>Leveling Gantt</strong> apparaît dans la zone du diagramme de Gantt. Lorsqu'il est activé, il affiche des barres vertes aux positions d'avant nivellement — là où se trouvaient les tâches avant le nivellement — tandis que les barres de tâches standard restent à leurs positions nivelées actuelles. Cela vous permet de comparer le planning initial avec le planning nivelé pour visualiser le décalage de chaque tâche.</p>
 <p>Ce bouton bascule n'est visible que lorsque le projet contient des données de nivellement et il est automatiquement masqué lorsque vous supprimez le nivellement.</p>
 <h2 id="priorité">Priorité <a href="#priorité" class="heading-anchor">#</a></h2>
 <p>Le champ <strong>Priority</strong> est disponible dans l'onglet <strong>Leveling</strong> de la boîte de dialogue <strong>Task Properties</strong>. Il accepte une valeur entière de 0 à 1000, avec une valeur par défaut de 500.</p>
-<p>La priorité est utilisée par l'algorithme de <a href="#auto-leveling">nivellement automatique</a> pour déterminer quelles tâches retarder lors de la résolution des surutilisations de ressources. Les tâches avec une priorité plus élevée sont moins susceptibles d'être retardées :</p>
+<p>La priorité est utilisée par l'algorithme de <a href="#nivellement-automatique">nivellement automatique</a> pour déterminer quelles tâches retarder lors de la résolution des surutilisations de ressources. Les tâches avec une priorité plus élevée sont moins susceptibles d'être retardées :</p>
 <ul>
-<li><strong>0</strong> — Priorité la plus basse, la tâche sera très probablement retardée</li>
+<li><strong>0</strong> — Priorité la plus basse, la plus susceptible d'être retardée</li>
 <li><strong>500</strong> — Priorité par défaut</li>
 <li><strong>1000</strong> — « Ne pas niveler » — la tâche n'est jamais retardée par le nivellement automatique</li>
 </ul>

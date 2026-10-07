@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -197,7 +217,7 @@
 <p>Im Web und unter Windows öffnet ein Klick auf den Projektnamen in der Kopfzeile ebenfalls den Dialog <strong>Projekteigenschaften</strong>.</p>
 <h2 id="startdatum-und-planungsrichtung">Startdatum und Planungsrichtung <a href="#startdatum-und-planungsrichtung" class="heading-anchor">#</a></h2>
 <p>Standardmäßig wird Ihr Projekt vom Startdatum aus geplant, das Sie im Feld <strong>Projektstartdatum</strong> des Dialogs <strong>Projekteigenschaften</strong> festlegen können.</p>
-<p>Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu <strong>Vom Endtermin planen</strong> im Dialog <strong>Projekteigenschaften</strong> und legen Sie den <strong>Projektendtermin</strong> fest.</p>
+<p>Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu <strong>Vom Enddatum planen</strong> im Dialog <strong>Projekteigenschaften</strong> und legen Sie das <strong>Projektenddatum</strong> fest.</p>
 <p>Der Reiter <strong>Allgemein</strong> des Dialogs <strong>Projekteigenschaften</strong> zeigt sowohl das Startdatum als auch das Enddatum an. Bei der Planung vom Startdatum ist das Startdatum bearbeitbar und das Enddatum zeigt den berechneten Wert an. Bei der Planung vom Enddatum ist das Enddatum bearbeitbar und das Startdatum zeigt den berechneten Wert an.</p>
 <p>Beachten Sie:</p>
 <ul>
@@ -235,7 +255,7 @@
 <p>Der Reiter <strong>Planung</strong> des Dialogs <strong>Projekteigenschaften</strong> enthält Optionen, die steuern, wie Vorgänge geplant werden:</p>
 <ul>
 <li><strong>Einschränkungstermine einhalten</strong> — Wenn aktiviert, haben halbflexible Einschränkungen (wie Anfang nicht später als) Vorrang vor Abhängigkeiten, was möglicherweise negativen Puffer erzeugt. Wenn deaktiviert (die Standardeinstellung), haben Abhängigkeiten immer Vorrang.</li>
-<li><strong>Laufende Vorgänge teilen</strong> — Wenn aktiviert (die Standardeinstellung), kann der Planer automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.</li>
+<li><strong>Laufende Vorgänge teilen</strong> — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.</li>
 <li><strong>Abgeschlossene/verbleibende Teile verschieben</strong> — Vier Optionen, die steuern, wie abgeschlossene und verbleibende Arbeitsanteile relativ zum Statusdatum neu positioniert werden. Diese helfen, Ihren Terminplan aktuell zu halten, indem abgeschlossene Arbeit zum Statusdatum zurück oder verbleibende Arbeit nach vorne verschoben wird.</li>
 </ul>
 

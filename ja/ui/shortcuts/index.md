@@ -22,7 +22,7 @@
 | `Enter`                | 選択した項目の**Properties**ダイアログを表示。複数項目が選択されている場合、最上位の項目のダイアログが表示されます。                       |
 | `Arrow Up`             | 前の項目を選択。                                                                                                                         |
 | `Arrow Down`           | 次の項目を選択。                                                                                                                             |
-| `Shift + Arrow Up/Down` | リストビューで選択範囲を上下に拡張。                                                                                                |
+| `Shift + Arrow Up/Down` | 任意のリストビューで選択範囲を上下に拡張。                                                                                            |
 | `Ctrl + Arrow Up`      | 選択したタスクを上に移動。                                                                                                                           |
 | `Ctrl + Arrow Down`    | 選択したタスクを下に移動。                                                                                                                         |
 | `Ctrl + Arrow Left`    | 選択したタスクのインデントを下げる。                                                                                                                |

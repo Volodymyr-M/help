@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/install/">Abrir Ingantt para Web</a></li>
     <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/templates/">Plantillas de proyecto</a></li>
+    <li><a href="/es/getting-started/saving/">Guardar su proyecto</a></li>
     <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
     <li><a href="/es/getting-started/edit-with-ai/">Editar con IA</a></li>
     <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
     <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/elapsed-durations/">Duraciones transcurridas</a></li>
     <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
     <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
     <li><a href="/es/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
     <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
     <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+    <li><a href="/es/adjusting-schedule/wbs-codes/">Códigos EDT</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
     <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/sharing/">Compartir un proyecto</a></li>
+    <li><a href="/es/ui/offline-mode/">Trabajar sin conexión</a></li>
+    <li><a href="/es/ui/version-history/">Historial de versiones</a></li>
+    <li><a href="/es/ui/languages/">Idiomas</a></li>
     <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+    <li><a href="/es/ui/contact-support/">Contactar con soporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Cuenta y facturación
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/account/trial/">Prueba gratuita</a></li>
+    <li><a href="/es/account/subscription/">Suscripciones y pago</a></li>
   </ul>
 </div>
 
@@ -191,16 +211,16 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="valor-ganado">Valor ganado <a href="#valor-ganado" class="heading-anchor">#</a></h1>
-<p>La Gestión de Valor Ganado (GVG) combina mediciones de alcance, cronograma y costo para evaluar si su proyecto va según lo previsto y dentro del presupuesto. Establezca una fecha de estado y una línea base, e Ingantt calcula las métricas estándar de GVG de la industria.</p>
+<p>La Gestión de Valor Ganado (GVG) combina mediciones de alcance, cronograma y costo para evaluar si su proyecto va según lo previsto y dentro del presupuesto. Establezca una fecha de estado y una línea base, e Ingantt calcula las métricas de GVG estándar del sector.</p>
 <h2 id="fecha-de-estado">Fecha de estado <a href="#fecha-de-estado" class="heading-anchor">#</a></h2>
-<p>La <strong>Fecha de estado</strong> define la fecha utilizada para el seguimiento del progreso y los cálculos de Valor Ganado. Cuando se establece, se muestra una línea vertical verde en el diagrama de Gantt en esa fecha.</p>
+<p>La <strong>Fecha de estado</strong> define la fecha utilizada para el seguimiento del progreso y los cálculos de valor ganado. Cuando se establece, se muestra una línea vertical verde en el diagrama de Gantt en esa fecha.</p>
 <p>Cuando la fecha de estado no está establecida, se usa la fecha actual para los cálculos. Puede establecer la fecha de estado en el diálogo <strong>Opciones de Valor Ganado</strong>, accesible desde el menú <strong>Proyecto</strong>.</p>
 <h2 id="gestión-de-valor-ganado">Gestión de Valor Ganado <a href="#gestión-de-valor-ganado" class="heading-anchor">#</a></h2>
 <p>Ingantt admite la Gestión de Valor Ganado — una técnica de gestión de proyectos que integra datos de alcance, cronograma y costo para evaluar el rendimiento del proyecto.</p>
 <h3 id="configuración-del-valor-ganado">Configuración del Valor Ganado <a href="#configuración-del-valor-ganado" class="heading-anchor">#</a></h3>
 <ol>
 <li>Cree una <a href="/es/tracking/baselines/#establecer-una-l%C3%ADnea-base">línea base</a> para capturar el cronograma y los costos planificados.</li>
-<li>Establezca la <strong>Fecha de estado</strong> en el diálogo <strong>Opciones de Valor Ganado</strong> (accesible desde el menú <strong>Proyecto</strong>) o déjela predeterminada a la fecha actual.</li>
+<li>Establezca la <strong>Fecha de estado</strong> en el diálogo <strong>Opciones de Valor Ganado</strong> (accesible desde el menú <strong>Proyecto</strong>) o deje que se use la fecha actual de forma predeterminada.</li>
 <li>Actualice los valores de <a href="/es/tracking/progress/#-completado">% completado</a> de las tareas a medida que avanza el trabajo.</li>
 </ol>
 <h3 id="métricas-de-gvg-disponibles">Métricas de GVG disponibles <a href="#métricas-de-gvg-disponibles" class="heading-anchor">#</a></h3>
@@ -214,19 +234,19 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>CPTP</strong></td>
+<td><strong>BCWS</strong></td>
 <td>Costo Presupuestado del Trabajo Programado (Valor Planificado)</td>
 </tr>
 <tr>
-<td><strong>CPTR</strong></td>
+<td><strong>BCWP</strong></td>
 <td>Costo Presupuestado del Trabajo Realizado (Valor Ganado)</td>
 </tr>
 <tr>
-<td><strong>CRTR</strong></td>
+<td><strong>ACWP</strong></td>
 <td>Costo Real del Trabajo Realizado</td>
 </tr>
 <tr>
-<td><strong>PAC</strong></td>
+<td><strong>BAC</strong></td>
 <td>Presupuesto a la Conclusión</td>
 </tr>
 <tr>
@@ -238,40 +258,40 @@
 <td>Variación a la Conclusión</td>
 </tr>
 <tr>
-<td><strong>VP</strong></td>
-<td>Variación del Programa</td>
+<td><strong>SV</strong></td>
+<td>Variación del Cronograma</td>
 </tr>
 <tr>
-<td><strong>VC</strong></td>
+<td><strong>CV</strong></td>
 <td>Variación del Costo</td>
 </tr>
 <tr>
-<td><strong>IRP</strong></td>
-<td>Índice de Rendimiento del Programa</td>
+<td><strong>SPI</strong></td>
+<td>Índice de Rendimiento del Cronograma</td>
 </tr>
 <tr>
-<td><strong>IRC</strong></td>
+<td><strong>CPI</strong></td>
 <td>Índice de Rendimiento del Costo</td>
 </tr>
 <tr>
-<td><strong>IRPC</strong></td>
+<td><strong>TCPI</strong></td>
 <td>Índice de Rendimiento del Trabajo por Completar</td>
 </tr>
 <tr>
-<td><strong>VP%</strong></td>
-<td>Porcentaje de Variación del Programa</td>
+<td><strong>SV%</strong></td>
+<td>Porcentaje de Variación del Cronograma</td>
 </tr>
 <tr>
-<td><strong>VC%</strong></td>
+<td><strong>CV%</strong></td>
 <td>Porcentaje de Variación del Costo</td>
 </tr>
 </tbody>
 </table>
 <h3 id="método-de-valor-ganado">Método de Valor Ganado <a href="#método-de-valor-ganado" class="heading-anchor">#</a></h3>
-<p>Cada tarea puede usar uno de dos métodos para calcular el CPTR (Valor Ganado):</p>
+<p>Cada tarea puede usar uno de dos métodos para calcular el BCWP (valor ganado):</p>
 <ul>
 <li><strong>% completado</strong> (predeterminado) — Usa el porcentaje completado de la tarea para calcular el valor ganado.</li>
-<li><strong>% completado físico</strong> — Usa un valor de porcentaje completado físico rastreado por separado. Útil para la medición del progreso basada en entregables.</li>
+<li><strong>% completado físico</strong> — Usa un valor de porcentaje completado físico registrado por separado. Útil para la medición del progreso basada en entregables.</li>
 </ul>
 <p>Establezca el método para tareas individuales en la pestaña <strong>Costo y VG</strong> del diálogo <strong>Propiedades de la tarea</strong>. Cambie el método predeterminado para nuevas tareas en el diálogo <strong>Opciones de Valor Ganado</strong>.</p>
 <h3 id="línea-base-de-valor-ganado">Línea base de Valor Ganado <a href="#línea-base-de-valor-ganado" class="heading-anchor">#</a></h3>

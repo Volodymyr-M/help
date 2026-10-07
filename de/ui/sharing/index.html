@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="de" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekt freigeben - Benutzeroberfläche - Ingantt-Hilfe</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Geben Sie einen Plan aus Google Drive für bestimmte Personen, Ihre Organisation oder jeden mit dem Link frei und erfahren Sie, was jede Rolle tun kann.">
+  <link rel="canonical" href="https://help.ingantt.com/de/ui/sharing/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Projekt freigeben">
+  <meta property="og:description" content="Geben Sie einen Plan aus Google Drive für bestimmte Personen, Ihre Organisation oder jeden mit dem Link frei und erfahren Sie, was jede Rolle tun kann.">
+  <meta property="og:url" content="https://help.ingantt.com/de/ui/sharing/">
+  <meta property="og:site_name" content="Ingantt-Hilfe">
+  <meta property="og:locale" content="de_DE">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Projekt freigeben">
+  <meta name="twitter:description" content="Geben Sie einen Plan aus Google Drive für bestimmte Personen, Ihre Organisation oder jeden mit dem Link frei und erfahren Sie, was jede Rolle tun kann.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/sharing/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/sharing/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/sharing/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/sharing/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/sharing/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/sharing/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/sharing/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/sharing/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/sharing/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/sharing/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Zum Inhalt springen</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Navigation umschalten" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/de/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt-Hilfe</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Suchen..." aria-label="Dokumentation durchsuchen">
+      <div class="search-results" data-loading="Wird geladen…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Suche">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Design umschalten" title="Helles/dunkles Design umschalten">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Sprache">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/" selected>Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Dokumentationsnavigation">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Erste Schritte
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
+    <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
+    <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
+    <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
+    <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Projekt einrichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/setting-up-project/project/">Projekteigenschaften</a></li>
+    <li><a href="/de/setting-up-project/calendars/">Kalender</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Terminplan erstellen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
+    <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
+    <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
+    <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
+    <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
+    <li><a href="/de/building-schedule/assignments/">Zuweisungen</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Analysieren &amp; Anpassen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
+    <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
+    <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Kosten planen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/planning-costs/planning-costs/">Kosten verstehen</a></li>
+    <li><a href="/de/planning-costs/setting-up-costs/">Kosten einrichten</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Fortschritt verfolgen
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/tracking/baselines/">Basispläne</a></li>
+    <li><a href="/de/tracking/progress/">Fortschritt verfolgen</a></li>
+    <li><a href="/de/tracking/actuals/">Ist-Werte</a></li>
+    <li><a href="/de/tracking/earned-value/">Earned Value</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Ansichten
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/views/gantt/">Gantt-Diagramm</a></li>
+    <li><a href="/de/views/task-views/">Vorgangsansichten</a></li>
+    <li><a href="/de/views/resource-views/">Ressourcenansichten</a></li>
+    <li><a href="/de/views/filtering/">Vorgänge filtern</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Benutzeroberfläche
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
+    <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/" class="active" aria-current="page">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
+    <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Support kontaktieren" title="Support kontaktieren">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Support kontaktieren</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="projekt-freigeben">Projekt freigeben <a href="#projekt-freigeben" class="heading-anchor">#</a></h1>
+<p>Ein in Google Drive gespeichertes Ingantt-Projekt kann genauso freigegeben werden wie jede andere Drive-Datei — für bestimmte Personen, für Ihre Organisation oder für jeden, der den Link hat. Im Web erledigen Sie all das direkt aus Ingantt heraus.</p>
+<h2 id="bevor-sie-beginnen">Bevor Sie beginnen <a href="#bevor-sie-beginnen" class="heading-anchor">#</a></h2>
+<p>Die Freigabe funktioniert nur bei Google-Drive-Dateien. Sie müssen bei Google angemeldet sein, und das Projekt muss in Drive gespeichert sein; ein Projekt, das in einer lokalen Datei auf Ihrem Gerät liegt, lässt sich nicht freigeben. Siehe <a href="/de/getting-started/saving/">Projekt speichern</a>.</p>
+<blockquote>
+<p>Die Schaltfläche <strong>Freigeben</strong> ist Teil von Ingantt für Web. Unter Android, iOS, Windows und macOS geben Sie die Datei stattdessen über Google Drive frei — öffnen Sie Drive, suchen Sie die Ingantt-Datei und verwenden Sie den Befehl <strong>Freigeben</strong> von Drive. Das Ergebnis ist identisch, denn die Berechtigungen liegen in beiden Fällen auf der Drive-Datei.</p>
+</blockquote>
+<h2 id="für-bestimmte-personen-freigeben">Für bestimmte Personen freigeben <a href="#für-bestimmte-personen-freigeben" class="heading-anchor">#</a></h2>
+<ol>
+<li>Öffnen Sie das Projekt und klicken Sie in der Kopfzeile auf <strong>Freigeben</strong> oder wählen Sie <strong>Freigeben</strong> im Menü <strong>Datei</strong>. Der Dialog <strong>In Google Drive freigeben</strong> öffnet sich.</li>
+<li>Unter <strong>Personen mit Zugriff</strong> sehen Sie alle, die bereits Zugriff haben, Eigentümer zuerst.</li>
+<li>Klicken Sie auf <strong>Hinzufügen</strong>, geben Sie die E-Mail-Adresse der Person ein, wählen Sie die gewünschte Rolle und bestätigen Sie.</li>
+<li>Schließen Sie den Dialog. Ingantt speichert die neuen Berechtigungen in Drive und bestätigt mit <em>Zugriff aktualisiert</em>.</li>
+</ol>
+<p>Die Rollen sind die Rollen von Google Drive:</p>
+<table>
+<thead>
+<tr>
+<th>Rolle</th>
+<th>Was sie tun können</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Betrachter</strong></td>
+<td>Das Projekt öffnen und ansehen. Kann keine Änderungen speichern.</td>
+</tr>
+<tr>
+<td><strong>Kommentator</strong></td>
+<td>Wie Betrachter, zusätzlich Kommentare zur Datei in Google Drive. Kann keine Änderungen speichern.</td>
+</tr>
+<tr>
+<td><strong>Mitbearbeiter</strong></td>
+<td>Das Projekt öffnen und Änderungen darin speichern.</td>
+</tr>
+<tr>
+<td><strong>Eigentümer</strong></td>
+<td>Alles, einschließlich Löschen der Datei und Übertragen der Eigentümerschaft.</td>
+</tr>
+</tbody>
+</table>
+<p>Um die Rolle einer Person zu ändern, wählen Sie neben ihrem Namen eine andere Rolle. Um sie zu entfernen, löschen Sie ihre Zeile.</p>
+<blockquote>
+<p>Geben Sie eine Adresse ein, mit der sich die Person tatsächlich bei Google anmelden kann. Wenn Ingantt nicht bestätigen kann, dass die Adresse zu Gmail oder Google Workspace gehört, warnt es Sie, denn eine Drive-Freigabe an eine Adresse ohne dahinterstehendes Google-Konto erlaubt es dieser Person nicht, das Projekt zu öffnen.</p>
+</blockquote>
+<h2 id="allgemeiner-zugriff-links-und-organisationen">Allgemeiner Zugriff — Links und Organisationen <a href="#allgemeiner-zugriff-links-und-organisationen" class="heading-anchor">#</a></h2>
+<p><strong>Allgemeiner Zugriff</strong> steuert alle, die Sie nicht einzeln benannt haben:</p>
+<ul>
+<li><strong>Eingeschränkt</strong> — nur die unter <strong>Personen mit Zugriff</strong> aufgeführten Personen. Dies ist die Standardeinstellung.</li>
+<li><strong>Jeder mit dem Link</strong> — jeder, der den Link hat, mit der von Ihnen gewählten Rolle (Betrachter, Kommentator oder Mitbearbeiter).</li>
+<li><strong>Domain</strong> — alle in Ihrer Google-Workspace-Organisation, mit der von Ihnen gewählten Rolle. Diese Option erscheint nur, wenn der Eigentümer des Projekts einer Workspace-Domain angehört; für private Gmail-Konten wird sie nicht angeboten.</li>
+</ul>
+<p><strong>Link kopieren</strong> kopiert den Google-Drive-Link zum Projekt. Jeder, dessen Zugriff es erlaubt, kann diesen Link öffnen und den Plan in Ingantt bearbeiten.</p>
+<p>Der Tooltip der Schaltfläche <strong>Freigeben</strong> zeigt Ihnen den aktuellen Zustand auf einen Blick — <em>Privat — nur Sie haben Zugriff</em>, <em>Für bestimmte Personen freigegeben</em>, <em>Jeder mit dem Link kann ansehen/kommentieren/bearbeiten</em> oder das Entsprechende für Ihre Domain.</p>
+<h2 id="wer-den-zugriff-ändern-darf">Wer den Zugriff ändern darf <a href="#wer-den-zugriff-ändern-darf" class="heading-anchor">#</a></h2>
+<p>Nur der <strong>Eigentümer</strong> der Datei kann den Zugriff immer verwalten. Ein <strong>Mitbearbeiter</strong> kann den Zugriff ebenfalls verwalten, es sei denn, der Eigentümer hat dies in Google Drive abgeschaltet.</p>
+<p>Wenn Sie den Dialog bei einem Projekt öffnen, das für Sie als Betrachter oder Kommentator freigegeben wurde, meldet er <strong>Sie sind Betrachter und können den Zugriff nicht verwalten</strong> und zeigt den aktuellen allgemeinen Zugriff an, ohne dass Sie ihn ändern können. Fragen Sie den Eigentümer, wenn Sie mehr benötigen.</p>
+<h2 id="an-einem-freigegebenen-projekt-arbeiten">An einem freigegebenen Projekt arbeiten <a href="#an-einem-freigegebenen-projekt-arbeiten" class="heading-anchor">#</a></h2>
+<ul>
+<li>Alle öffnen dieselbe Drive-Datei, aber Ingantt ist kein Werkzeug für gleichzeitiges Bearbeiten. Jedes Speichern schreibt die gesamte Projektdatei; wenn also zwei Personen den Plan geöffnet haben und beide speichern, gewinnt das letzte Speichern, und die Änderungen der anderen Person werden ersetzt. Vereinbaren Sie, wer bearbeitet, bevor Sie beginnen, und prüfen Sie den Versionsverlauf der Datei in Google Drive, wenn Sie glauben, dass etwas verloren gegangen ist.</li>
+<li>Ein Betrachter oder Kommentator, der zu speichern versucht, sieht <strong>Sie sind Betrachter und können nicht speichern</strong>. Verwenden Sie stattdessen <strong>Datei speichern unter</strong>, um eine persönliche Kopie zu behalten.</li>
+<li>Jeder Mitwirkende benötigt zum Bearbeiten ein eigenes aktives Ingantt-Abonnement oder eine eigene Testphase — die Freigabe eines Plans gibt nicht Ihr Abonnement frei. Siehe <a href="/de/account/subscription/">Abonnements und Zahlung</a>.</li>
+<li>Die Freigabe an die Adresse einer Google-<strong>Gruppe</strong> wird vom Freigabedialog in Ingantt nicht unterstützt. Geben Sie für einzelne Adressen frei oder verwalten Sie eine Gruppenfreigabe über Google Drive.</li>
+</ul>
+<h2 id="verwandte-themen">Verwandte Themen <a href="#verwandte-themen" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/de/ui/files/">Google-Drive-Integration</a> — Anmeldung, Berechtigungen und Öffnen freigegebener Dateien.</li>
+<li><a href="/de/getting-started/saving/">Projekt speichern</a> — wo ein Projekt gespeichert wird und wann es gespeichert wird.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

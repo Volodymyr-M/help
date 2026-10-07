@@ -11,7 +11,15 @@
     "ko"
   ],
   "getting-started/install": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/getting-started": [
     "en",
@@ -25,10 +33,26 @@
     "ko"
   ],
   "getting-started/templates": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/saving": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "getting-started/create-with-ai": [
     "en",
@@ -108,7 +132,15 @@
     "ko"
   ],
   "building-schedule/elapsed-durations": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "building-schedule/dependencies": [
     "en",
@@ -188,7 +220,15 @@
     "ko"
   ],
   "adjusting-schedule/wbs-codes": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "planning-costs/planning-costs": [
     "en",
@@ -323,10 +363,48 @@
     "ko"
   ],
   "ui/sharing": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
+  ],
+  "ui/offline-mode": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
+  ],
+  "ui/version-history": [
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "ui/languages": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "ui/shortcuts": [
     "en",
@@ -340,18 +418,36 @@
     "ko"
   ],
   "ui/contact-support": [
-    "en"
-  ],
-  "ui/offline-mode": [
-    "en"
-  ],
-  "ui/version-history": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "account/trial": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ],
   "account/subscription": [
-    "en"
+    "en",
+    "de",
+    "es",
+    "fr",
+    "it",
+    "pt",
+    "uk",
+    "ja",
+    "ko"
   ]
 }

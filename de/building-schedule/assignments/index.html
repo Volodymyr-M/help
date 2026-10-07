@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -196,10 +216,10 @@
 <p>Ressourcen können einem Vorgang auf dem Reiter <strong>Ressourcen</strong> des Dialogs <strong>Vorgangseigenschaften</strong> zugewiesen werden.</p>
 <p>Um eine Ressource zuzuweisen, aktivieren Sie das Kontrollkästchen in der Zeile mit der Ressource. Um eine Ressource zu entfernen, deaktivieren Sie das Kontrollkästchen.</p>
 <p>Zuweisungen von Arbeits- oder Materialressourcen haben <strong>Einheiten</strong>, die in der entsprechenden Spalte angezeigt werden. Klicken Sie auf die Schaltfläche <strong>Bearbeiten</strong>, um den Standardwert der <strong>Einheiten</strong> für die Zuweisung zu ändern.</p>
-<p>Standardmäßig werden Arbeitsressourcen mit Einheiten zugewiesen, die dem Wert <a href="/de/building-schedule/resources/#max-einheiten">Max. Einheiten</a> der Ressource entsprechen (100% für eine Vollzeitressource). Das bedeutet, die Ressource wird ihre gesamte verfügbare Kalenderzeit dem Vorgang widmen. Sie können den Wert auf eine beliebige Zahl ändern.</p>
+<p>Standardmäßig werden Arbeitsressourcen mit Einheiten zugewiesen, die dem Wert <a href="/de/building-schedule/resources/#max-einheiten">Max. Einheiten</a> der Ressource entsprechen (100 % für eine Vollzeitressource). Das bedeutet, die Ressource wird ihre gesamte verfügbare Kalenderzeit dem Vorgang widmen. Sie können den Wert auf eine beliebige Zahl ändern.</p>
 <p>Standardmäßig werden Materialressourcen mit 1 Einheit zugewiesen. Das bedeutet, 1 Einheit dieses Materials wird bei der Erledigung des Vorgangs verwendet. Die Einheit stellt das dar, was Sie für das Material definiert haben (Karton, Gallone, Tonne usw.). Sie können den Standardwert ändern und eine beliebige Anzahl von Einheiten festlegen.</p>
 <h2 id="arbeitsprofile">Arbeitsprofile <a href="#arbeitsprofile" class="heading-anchor">#</a></h2>
-<p>Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, wird der Aufwand (die Arbeit) über die Dauer des Vorgangs gemäß einem <strong>Arbeitsprofil</strong> verteilt. Standardmäßig wird die Arbeit gleichmäßig verteilt (<strong>Flach</strong>-Profil), aber Ingantt unterstützt mehrere Profilmuster, die ändern, wie der Aufwand über die Zeit verteilt wird:</p>
+<p>Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, wird der Aufwand (die Arbeit) über die Dauer des Vorgangs gemäß einem <strong>Arbeitsprofil</strong> verteilt. Standardmäßig wird die Arbeit gleichmäßig verteilt (Flach-Profil), aber Ingantt unterstützt mehrere Profilmuster, die ändern, wie der Aufwand über die Zeit verteilt wird:</p>
 <table>
 <thead>
 <tr>
@@ -240,16 +260,27 @@
 <td><strong>Schildkröte</strong></td>
 <td>Flachere Glockenkurve — gleichmäßigere Verteilung</td>
 </tr>
+<tr>
+<td><strong>Konturiert</strong></td>
+<td>Ihre eigene Verteilung pro Tag. Wird automatisch gesetzt, wenn Sie Arbeit in einer Verwendungsansicht bearbeiten; kann nicht aus der Auswahlliste gewählt werden.</td>
+</tr>
 </tbody>
 </table>
 <p>Arbeitsprofile beeinflussen, wie Arbeit über Zeiträume verteilt wird, und werden beim Öffnen und Speichern von Projektdateien beibehalten.</p>
+<h3 id="das-profil-konturiert">Das Profil „Konturiert“ <a href="#das-profil-konturiert" class="heading-anchor">#</a></h3>
+<p><strong>Konturiert</strong> ist das benutzerdefinierte Profil und verhält sich anders als die anderen acht. Sie können es bei einer Zuweisung, die es nicht bereits hat, nicht aus der Auswahlliste wählen — die Option ist deaktiviert. Sie erhalten es, indem Sie <strong>Arbeit direkt in einer Zelle der <a href="/de/views/resource-views/">Ressourcen- oder Vorgangsverwendung</a> bearbeiten</strong>: Sobald Sie einen Tagesarbeitswert eingeben, wird das Profil dieser Zuweisung zu <em>Konturiert</em>, und Ihre eingegebene Verteilung ist die, die verwendet wird.</p>
+<p>Zwei Konsequenzen sind wissenswert:</p>
+<ul>
+<li><strong>Ein Wechsel weg von Konturiert verwirft die von Hand eingegebene Verteilung.</strong> Wählen Sie eines der anderen acht Profile, werden die eingegebenen Tageswerte gelöscht. Sie werden nicht aufbewahrt und beim Zurückwechseln nicht wiederhergestellt.</li>
+<li><strong>Konturierte Arbeit übersteht den Austausch über das Microsoft-Project-Format in beide Richtungen.</strong> Beim Import werden die zeitphasenbezogenen Tagesarbeitswerte in die Zuweisung gelesen, beim Export werden sie zurückgeschrieben. Ein Plan, der mit einem von Hand bearbeiteten Profil aus Microsoft Project kommt, behält es.</li>
+</ul>
 <h2 id="zuweisungsverzögerung">Zuweisungsverzögerung <a href="#zuweisungsverzögerung" class="heading-anchor">#</a></h2>
 <p>Jede Ressourcenzuweisung zu einem Vorgang hat eine Eigenschaft <strong>Verzögerung</strong>, die den Zeitpunkt verschiebt, an dem die Ressource relativ zum Startdatum des Vorgangs mit der Arbeit beginnt. Wenn ein Vorgang beispielsweise am Montag beginnt und eine Ressource eine Verzögerung von 2 Tagen hat, beginnt diese Ressource am Mittwoch mit der Arbeit.</p>
 <p>Die Verzögerung wird im Dialog <strong>Ressourcenzuweisung bearbeiten</strong> festgelegt und gilt nur für Arbeitsressourcenzuweisungen. Sie kann verwendet werden, um die Startzeiten von Ressourcen bei einem Vorgang zeitlich zu staffeln.</p>
 <h2 id="überstundenarbeit">Überstundenarbeit <a href="#überstundenarbeit" class="heading-anchor">#</a></h2>
 <p>Bei Arbeitsressourcen können Sie einen Teil der Gesamtarbeit einer Zuweisung als Überstunden festlegen. Überstundenarbeit ist eine Teilmenge der Gesamtarbeit, keine Addition: <strong>Arbeit = Reguläre Arbeit + Überstundenarbeit</strong>.</p>
 <p>Die Auswirkungen von Überstunden auf die Kosten werden unter <a href="/de/planning-costs/setting-up-costs/#arbeitsressourcenkosten">Kosten einrichten</a> behandelt.</p>
-<p>Bei Vorgängen mit <strong>Feste Einheiten</strong> und <strong>Feste Arbeit</strong> reduziert die Eingabe von Überstundenarbeit die Vorgangsdauer, da die Dauer nur auf der regulären Arbeit basiert.</p>
+<p>Bei Vorgängen vom Typ Feste Einheiten und Feste Arbeit reduziert die Eingabe von Überstundenarbeit die Vorgangsdauer, da die Dauer nur auf der regulären Arbeit basiert.</p>
 <p>Legen Sie Überstundenarbeit im Dialog <strong>Ressourcenzuweisung bearbeiten</strong> fest. Drei optionale Spalten stehen in der Vorgangstabelle zur Verfügung: <strong>Überstundenarbeit</strong>, <strong>Überstundenkosten</strong> und <strong>Reguläre Arbeit</strong>.</p>
 
     </main>

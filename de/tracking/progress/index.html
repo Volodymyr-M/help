@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fortschritt verfolgen - Fortschritt verfolgen - Ingantt-Hilfe</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren&quot;.">
+  <meta name="description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren“.">
   <link rel="canonical" href="https://help.ingantt.com/de/tracking/progress/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Fortschritt verfolgen">
-  <meta property="og:description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren&quot;.">
+  <meta property="og:description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren“.">
   <meta property="og:url" content="https://help.ingantt.com/de/tracking/progress/">
   <meta property="og:site_name" content="Ingantt-Hilfe">
   <meta property="og:locale" content="de_DE">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Fortschritt verfolgen">
-  <meta name="twitter:description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren&quot;.">
+  <meta name="twitter:description" content="Verfolgen Sie den Vorgangsfortschritt mit Prozent abgeschlossen, Ist-Terminen, Restdauer und dem Befehl „Projekt aktualisieren“.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/tracking/progress/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/tracking/progress/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -193,7 +213,7 @@
       <h1 id="fortschritt-verfolgen">Fortschritt verfolgen <a href="#fortschritt-verfolgen" class="heading-anchor">#</a></h1>
 <p>Sobald die Arbeit beginnt, aktualisieren Sie <strong>% Abgeschlossen</strong> für jeden Vorgang, um zu verfolgen, wie der tatsächliche Fortschritt im Vergleich zum Plan steht. Verwenden Sie <strong>Projekt aktualisieren</strong>, um den Fortschritt für mehrere Vorgänge gleichzeitig festzulegen. Während der Fortschritt erfasst wird, berechnet Ingantt automatisch <a href="/de/tracking/actuals/">Ist-Werte</a> — tatsächliche und verbleibende Werte für Dauer, Arbeit, Kosten und Termine.</p>
 <h2 id="-abgeschlossen">% Abgeschlossen <a href="#-abgeschlossen" class="heading-anchor">#</a></h2>
-<p>Sobald Ihr Projekt läuft, müssen Sie seinen Fortschritt verfolgen. Wenn Sie <strong>% Abgeschlossen</strong> für jeden Vorgang aktuell halten, können Sie den gesamten <strong>% Abgeschlossen</strong> des Projekts in seinem Projektsammelvorgang sehen.</p>
+<p>Sobald Ihr Projekt läuft, müssen Sie seinen Fortschritt verfolgen. Wenn Sie <strong>% Abgeschlossen</strong> für jeden Vorgang aktuell halten, können Sie den Gesamtwert <strong>% Abgeschlossen</strong> des Projekts in seinem Projektsammelvorgang sehen.</p>
 <p>Verwenden Sie das Feld <strong>% Abgeschlossen</strong> im Dialog <strong>Vorgangseigenschaften</strong>, um den Fertigstellungsgrad eines bestimmten Vorgangs festzulegen. Vorgänge, die zu 100 % abgeschlossen sind, zeigen ein grünes Häkchen in der Vorgangsliste an.</p>
 <p>Wenn Sie % Abgeschlossen aktualisieren:</p>
 <ul>
@@ -204,15 +224,15 @@
 </ul>
 <p>Der <strong>% Abgeschlossen</strong> eines Sammelvorgangs wird als dauergewichteter Durchschnitt aller seiner untergeordneten Nicht-Sammelvorgänge berechnet.</p>
 <blockquote>
-<p>Sie können den Fortschritt auch mit dem Befehl <a href="#projekt-aktualisieren">Projekt aktualisieren</a> verfolgen, um % Abgeschlossen für mehrere Vorgänge gleichzeitig basierend auf einem Stichtag festzulegen.</p>
+<p>Sie können den Fortschritt auch mit dem Befehl <a href="#projekt-aktualisieren">Projekt aktualisieren</a> verfolgen, um % Abgeschlossen für mehrere Vorgänge gleichzeitig bis zu einem angegebenen Datum festzulegen.</p>
 </blockquote>
 <h2 id="projekt-aktualisieren">Projekt aktualisieren <a href="#projekt-aktualisieren" class="heading-anchor">#</a></h2>
 <p>Der Befehl <strong>Projekt aktualisieren</strong> bietet Massenoperationen zur Fortschrittsverfolgung, zugänglich über das Menü <strong>Projekt</strong>.</p>
 <h3 id="arbeit-als-abgeschlossen-aktualisieren">Arbeit als abgeschlossen aktualisieren <a href="#arbeit-als-abgeschlossen-aktualisieren" class="heading-anchor">#</a></h3>
 <p>Markieren Sie Vorgänge als abgeschlossen bis zu einem bestimmten Datum:</p>
 <ul>
-<li><strong>Proportional (0 %–100 %)</strong> — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem Stichtag liegt.</li>
-<li><strong>Alles oder nichts (0 % oder 100 %)</strong> — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum Stichtag abgeschlossen sind.</li>
+<li><strong>Proportional (0 %–100 %)</strong> — Berechnet den Fertigstellungsgrad basierend darauf, wie viel der Arbeitsdauer jedes Vorgangs vor dem angegebenen Datum liegt.</li>
+<li><strong>Alles oder nichts (0 % oder 100 %)</strong> — Setzt Vorgänge auf 0 % oder 100 %, je nachdem, ob sie bis zum angegebenen Datum abgeschlossen sind.</li>
 </ul>
 <h3 id="nicht-abgeschlossene-arbeit-umplanen">Nicht abgeschlossene Arbeit umplanen <a href="#nicht-abgeschlossene-arbeit-umplanen" class="heading-anchor">#</a></h3>
 <p>Verschiebt nicht abgeschlossene Arbeit, damit sie nach einem bestimmten Datum beginnt:</p>

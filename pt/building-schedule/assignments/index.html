@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
     <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
     <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
     <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
     <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
     <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
     <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
     <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
     <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
     <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
   </ul>
 </div>
 
@@ -196,7 +216,7 @@
 <p>Os recursos podem ser atribuídos a uma tarefa na aba <strong>Resources</strong> da caixa de diálogo <strong>Task Properties</strong>.</p>
 <p>Para atribuir um recurso, marque a caixa de seleção na linha do recurso. Para desatribuir um recurso, desmarque a caixa de seleção.</p>
 <p>As atribuições de recursos de trabalho ou material possuem <strong>Units</strong>, mostradas na coluna correspondente. Clique no botão <strong>Edit</strong> para alterar o valor padrão de <strong>Units</strong> da atribuição.</p>
-<p>Por padrão, os recursos de trabalho são atribuídos com unidades correspondentes às <a href="/pt/building-schedule/resources/#unidades-m%C3%A1ximas">Max Units</a> do recurso (100% para um recurso em tempo integral). Isso significa que o recurso dedicará todo o seu tempo disponível no calendário à tarefa. Você pode alterar o valor para qualquer número.</p>
+<p>Por padrão, os recursos de trabalho são atribuídos com unidades correspondentes às <a href="/pt/building-schedule/resources/#unidades-m%C3%A1ximas">Unidades Máximas</a> do recurso (100% para um recurso em tempo integral). Isso significa que o recurso dedicará todo o seu tempo disponível no calendário à tarefa. Você pode alterar o valor para qualquer número.</p>
 <p>Por padrão, os recursos de material são atribuídos com 1 unidade. Isso significa que 1 unidade desse material será utilizada ao completar a tarefa. A unidade representa o que você definiu para o material (caixa, galão, tonelada, etc.). Você pode alterar o valor padrão e definir qualquer número de unidades.</p>
 <h2 id="contornos-de-trabalho">Contornos de Trabalho <a href="#contornos-de-trabalho" class="heading-anchor">#</a></h2>
 <p>Quando um recurso de trabalho é atribuído a uma tarefa, o esforço (trabalho) é distribuído ao longo da duração da tarefa de acordo com um <strong>contorno de trabalho</strong>. Por padrão, o trabalho é distribuído uniformemente (contorno Flat), mas o Ingantt suporta vários padrões de contorno que alteram como o esforço é distribuído ao longo do tempo:</p>
@@ -240,9 +260,20 @@
 <td><strong>Turtle</strong></td>
 <td>Curva em sino mais achatada — distribuição mais suave</td>
 </tr>
+<tr>
+<td><strong>Contoured</strong></td>
+<td>Sua própria distribuição por dia. Definido automaticamente quando você edita o trabalho em uma visualização de uso; não pode ser escolhido na lista suspensa.</td>
+</tr>
 </tbody>
 </table>
 <p>Os contornos de trabalho afetam como o trabalho é distribuído entre os períodos de tempo e são preservados ao abrir e salvar arquivos de projeto.</p>
+<h3 id="o-contorno-contoured">O Contorno Contoured <a href="#o-contorno-contoured" class="heading-anchor">#</a></h3>
+<p><strong>Contoured</strong> é o contorno personalizado e se comporta de forma diferente dos outros oito. Você não pode selecioná-lo na lista suspensa em uma atribuição que ainda não o tenha — a opção fica desativada. Você o obtém <strong>editando o trabalho diretamente em uma célula de <a href="/pt/views/resource-views/">Uso de Recursos ou Uso de Tarefas</a></strong>: no momento em que você digita um valor de trabalho por dia, o contorno dessa atribuição passa a ser <em>Contoured</em> e a distribuição que você digitou é a que ela usa.</p>
+<p>Vale conhecer duas consequências:</p>
+<ul>
+<li><strong>Trocar o Contoured por outro contorno descarta a distribuição inserida manualmente.</strong> Escolha qualquer um dos outros oito contornos e os valores por dia que você digitou são apagados. Eles não são guardados nem restaurados se você voltar.</li>
+<li><strong>O trabalho Contoured faz o percurso de ida e volta pelo formato do Microsoft Project.</strong> A importação lê o trabalho distribuído no tempo por dia para a atribuição, e a exportação o grava de volta. Um plano que chega do Microsoft Project com um contorno editado manualmente o mantém.</li>
+</ul>
 <h2 id="atraso-de-atribuição">Atraso de Atribuição <a href="#atraso-de-atribuição" class="heading-anchor">#</a></h2>
 <p>Cada atribuição de recurso em uma tarefa tem uma propriedade <strong>Delay</strong> que define um deslocamento de quando o recurso começa a trabalhar em relação à data de início da tarefa. Por exemplo, se uma tarefa começa na segunda-feira e um recurso tem um atraso de 2 dias, esse recurso começa a trabalhar na quarta-feira.</p>
 <p>O atraso é definido na caixa de diálogo <strong>Edit Resource Assignment</strong> e se aplica apenas a atribuições de recursos de trabalho. Pode ser usado para escalonar os horários de início dos recursos em uma tarefa.</p>

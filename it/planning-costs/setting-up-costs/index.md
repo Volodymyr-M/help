@@ -10,13 +10,13 @@ Puoi impostare un costo per l'attività indipendentemente dalle sue risorse comp
 
 ## Costo della risorsa di tipo lavoro
 
-Le risorse di tipo **Work** sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi [Ore per giorno, giorni per settimana, giorni per mese](/it/setting-up-project/project/index.md#ore-per-giorno-giorni-per-settimana-giorni-per-mese)).
+Le risorse di tipo **lavoro** sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi [Ore per giorno, giorni per settimana, giorni per mese](/it/setting-up-project/project/index.md#ore-per-giorno-giorni-per-settimana-giorni-per-mese)).
 
 Ad esempio, quando assegni una risorsa di tipo lavoro con una **Standard Rate** di 100 $/ora a un'attività con una **Duration** di 5 ore, 500 $ vengono aggiunti al **Cost** dell'attività.
 
 Le risorse di tipo lavoro supportano anche una **Overtime Rate** per il lavoro oltre l'orario di calendario regolare. Il costo totale viene calcolato come:
 
-> **Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use**
+> **Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use**
 
 Quando una risorsa di tipo lavoro viene assegnata a un'attività, puoi specificare il valore delle **Units** come un numero diverso da quello predefinito. Questo influisce sui calcoli dei costi. Ad esempio, se le **Units** sono al 50%, il costo calcolato per la risorsa nell'attività è la metà di quello che sarebbe con le Units al 100%.
 
@@ -28,7 +28,7 @@ Le risorse di tipo materiale supportano due modalità di consumo:
 - **Fixed** (predefinita) — Una quantità totale indipendente dalla durata dell'attività (ad es., 5 tonnellate di cemento)
 - **Variable** — Una tariffa per unità di tempo che scala con la durata dell'attività (ad es., 10 litri al giorno di carburante)
 
-Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa materiale "carburante" e specificare il costo per litro nella finestra **Resource Properties**. Poi, quando assegni la risorsa a un'attività, specifichi il numero di litri come **Units**, e Ingantt aggiunge il costo calcolato del carburante al **Cost** dell'attività.
+Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa di tipo materiale "carburante" e specificare il costo per gallone nella finestra **Resource Properties**. Poi, quando assegni la risorsa a un'attività, specifichi il numero di galloni come **Units**, e Ingantt aggiunge il costo calcolato del carburante al **Cost** dell'attività.
 
 ## Risorsa di tipo costo
 

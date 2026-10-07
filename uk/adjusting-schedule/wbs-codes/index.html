@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WBS-коди - Аналіз та коригування - Довідка Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Замініть стандартну нумерацію структури на власну маску WBS-коду — префікс коду проекту, послідовність, довжина та роздільники для кожного рівня.">
+  <link rel="canonical" href="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="WBS-коди">
+  <meta property="og:description" content="Замініть стандартну нумерацію структури на власну маску WBS-коду — префікс коду проекту, послідовність, довжина та роздільники для кожного рівня.">
+  <meta property="og:url" content="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <meta property="og:site_name" content="Довідка Ingantt">
+  <meta property="og:locale" content="uk_UA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="WBS-коди">
+  <meta name="twitter:description" content="Замініть стандартну нумерацію структури на власну маску WBS-коду — префікс коду проекту, послідовність, довжина та роздільники для кожного рівня.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/adjusting-schedule/wbs-codes/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/adjusting-schedule/wbs-codes/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до вмісту</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Перемкнути навігацію" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/uk/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Довідка Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Шукати..." aria-label="Пошук документації">
+      <div class="search-results" data-loading="Завантаження…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Пошук">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Перемкнути тему" title="Перемкнути світлу/темну тему">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Мова">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/" selected>Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Навігація документацією">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Початок роботи
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
+    <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
+    <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
+    <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Налаштування проекту
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/setting-up-project/project/">Властивості проекту</a></li>
+    <li><a href="/uk/setting-up-project/calendars/">Календарі</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Побудова розкладу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
+    <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
+    <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
+    <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
+    <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
+    <li><a href="/uk/building-schedule/assignments/">Призначення</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Аналіз та коригування
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
+    <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
+    <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/" class="active" aria-current="page">WBS-коди</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Планування витрат
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/planning-costs/planning-costs/">Розуміння витрат</a></li>
+    <li><a href="/uk/planning-costs/setting-up-costs/">Налаштування витрат</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Відстеження прогресу
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/tracking/baselines/">Базові плани</a></li>
+    <li><a href="/uk/tracking/progress/">Відстеження прогресу</a></li>
+    <li><a href="/uk/tracking/actuals/">Фактичні дані</a></li>
+    <li><a href="/uk/tracking/earned-value/">Освоєний обсяг</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Подання
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/views/gantt/">Діаграма Ганта</a></li>
+    <li><a href="/uk/views/task-views/">Подання завдань</a></li>
+    <li><a href="/uk/views/resource-views/">Подання ресурсів</a></li>
+    <li><a href="/uk/views/filtering/">Фільтрація завдань</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Інтерфейс користувача
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
+    <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
+    <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Зв'язатися з підтримкою" title="Зв'язатися з підтримкою">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Зв'язатися з підтримкою</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="wbs-коди">WBS-коди <a href="#wbs-коди" class="heading-anchor">#</a></h1>
+<p>Кожне завдання має <strong>WBS</strong>-код — його адресу в структурі. За замовчуванням це звичайний номер у структурі: <code>1</code>, <code>1.1</code>, <code>1.2</code>, <code>1.2.1</code>. Щоб побачити його, увімкніть стовпець <strong>WBS</strong> у таблиці завдань.</p>
+<p><strong>Маска WBS-коду</strong> замінює ці номери структури на структурований код вашого власного формату, тож завдання отримують коди на кшталт <code>PROJ-A-01</code> або <code>1.A.001</code> замість <code>1.1.1</code>. Організації зі стандартом нумерації — контрактом, схемою кодів витрат, форматом звітності клієнта — використовують її, щоб коди Ingantt відповідали цьому стандарту.</p>
+<p>Щоб налаштувати маску, відкрийте <strong>Проект → Визначення WBS-коду</strong>.</p>
+<h2 id="wbs-коди-та-коди-структури-це-різні-речі">WBS-коди та коди структури — це різні речі <a href="#wbs-коди-та-коди-структури-це-різні-речі" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>WBS-код</strong> є структурним. У кожного завдання він рівно один і визначається тим, де завдання розташоване в структурі. Він перенумеровується сам, коли ви переміщуєте завдання.</li>
+<li><strong><a href="/uk/adjusting-schedule/custom-fields/">Код структури</a></strong> — це мітка. Ви визначаєте таблицю підстановки — відділ, фаза, центр витрат — і призначаєте значення завданням незалежно від ієрархії. Завдання може мати кілька таких значень із кількох кодів структури.</li>
+</ul>
+<h2 id="визначення-маски">Визначення маски <a href="#визначення-маски" class="heading-anchor">#</a></h2>
+<p>Діалог складається з трьох частин.</p>
+<h3 id="префікс-коду-проекту">Префікс коду проекту <a href="#префікс-коду-проекту" class="heading-anchor">#</a></h3>
+<p>Фіксований текст, що додається на початку кожного коду в проекті. З префіксом <code>PROJ</code> коди мають вигляд <code>PROJ.1.1</code> або <code>PROJ-A-01</code> залежно від ваших роздільників. Залиште поле порожнім, щоб не використовувати префікс.</p>
+<h3 id="маска-коду">Маска коду <a href="#маска-коду" class="heading-anchor">#</a></h3>
+<p>Один рядок на кожен рівень структури; рядки додаються кнопкою <strong>Додати рівень</strong>. Кожен рядок задає:</p>
+<table>
+<thead>
+<tr>
+<th>Поле</th>
+<th>Що воно робить</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Рівень</strong></td>
+<td>Глибина структури, до якої застосовується цей рядок. Рівень 1 — завдання верхнього рівня, рівень 2 — їхні дочірні завдання тощо.</td>
+</tr>
+<tr>
+<td><strong>Послідовність</strong></td>
+<td>Символи, що використовуються на цьому рівні: <strong>Числа</strong> (1, 2, 3), <strong>Великі літери</strong> (A, B, C … Z, AA), <strong>Малі літери</strong> (a, b, c … z, aa) або <strong>Символи</strong>.</td>
+</tr>
+<tr>
+<td><strong>Довжина</strong></td>
+<td>Максимальна кількість символів на цьому рівні. Залиште поле порожнім — воно показуватиме <em>Будь-яка</em> — щоб не обмежувати.</td>
+</tr>
+<tr>
+<td><strong>Роздільник</strong></td>
+<td>Символ між цим рівнем і наступним, наприклад <code>.</code> або <code>-</code>.</td>
+</tr>
+</tbody>
+</table>
+<p>Варто знати дві речі про поведінку цих полів:</p>
+<ul>
+<li><strong>Довжина доповнює числа нулями на початку.</strong> Довжина <code>3</code> на рівні з числами перетворює дев'яте завдання на <code>009</code>. Рівні з літерами не доповнюються.</li>
+<li><strong>Символи</strong> поводяться так само, як числа, для кодів, які створює Ingantt. Цей варіант існує для сумісності з Microsoft Project, де він означає рівень, який ви вводите самостійно.</li>
+</ul>
+<p>Вам не обов'язково визначати кожен рівень. <strong>Рівні, глибші за останній рядок маски, повертаються до числа з роздільником <code>.</code></strong>, тож маска з трьох рядків на плані з п'ятьма рівнями все одно створює повний код.</p>
+<h3 id="параметри">Параметри <a href="#параметри" class="heading-anchor">#</a></h3>
+<p><strong>Створювати WBS-код для нового завдання</strong> та <strong>Перевіряти унікальність нових WBS-кодів</strong> зберігаються разом із проектом і не втрачаються при обміні з Microsoft Project. В Ingantt маска принаймні з одним рівнем застосовується до кожного завдання автоматично, а коди унікальні за побудовою, оскільки вони відповідають структурі.</p>
+<h2 id="що-відбувається-після-збереження-маски">Що відбувається після збереження маски <a href="#що-відбувається-після-збереження-маски" class="heading-anchor">#</a></h2>
+<p>Ingantt негайно перенумеровує весь проект. Коди перебудовуються зі структури щоразу, коли структура змінюється — коли ви додаєте, видаляєте, збільшуєте чи зменшуєте відступ або переміщуєте завдання, — тож вони завжди описують, де завдання розташоване зараз.</p>
+<p>Це варто сказати прямо: <strong>WBS-код не є постійним ідентифікатором завдання.</strong> Перемістіть завдання — і його код зміниться. Якщо вам потрібна мітка, яка залишається із завданням, скористайтеся кодом структури або <a href="/uk/adjusting-schedule/custom-fields/">настроюваним текстовим полем</a>.</p>
+<h2 id="імпорт-та-експорт">Імпорт та експорт <a href="#імпорт-та-експорт" class="heading-anchor">#</a></h2>
+<p>Маска є частиною формату Microsoft Project і зберігається при обміні в обидва боки. Проект, імпортований із маскою, зберігає її, експортується з нею, а коди його завдань збігаються з тими, що створив Microsoft Project.</p>
+
+    </main>
+    <aside class="toc" aria-label="Зміст"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

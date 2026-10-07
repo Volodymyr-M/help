@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -208,9 +228,33 @@
 <li>Визначити, який базовий план використовується для розрахунків <a href="/uk/tracking/earned-value/#%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D1%96%D0%BD%D0%BD%D1%8F-%D0%BE%D1%81%D0%B2%D0%BE%D1%94%D0%BD%D0%B8%D0%BC-%D0%BE%D0%B1%D1%81%D1%8F%D0%B3%D0%BE%D0%BC">освоєного обсягу</a></li>
 </ul>
 <h2 id="стовпці-базових-планів-та-відхилень">Стовпці базових планів та відхилень <a href="#стовпці-базових-планів-та-відхилень" class="heading-anchor">#</a></h2>
-<p>Ви можете додати стовпці базових планів (<strong>Початок</strong>, <strong>Завершення</strong>, <strong>Тривалість</strong>, <strong>Трудовитрати</strong>, <strong>Вартість</strong>) та стовпці відхилень (<strong>Відхилення початку</strong>, <strong>Відхилення завершення</strong> тощо) до списку завдань через діалог <strong>Параметри</strong>. Стовпці відхилень показують різницю між поточним розкладом та <a href="/uk/tracking/earned-value/#%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D0%B9-%D0%BF%D0%BB%D0%B0%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%BE%D1%81%D0%B2%D0%BE%D1%94%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%81%D1%8F%D0%B3%D1%83">базовим планом для освоєного обсягу</a>.</p>
+<p>Ви можете додати стовпці базових планів та відхилень до списку завдань через діалог <strong>Параметри</strong>. Загалом є <strong>55 стовпців базових планів</strong> та <strong>5 стовпців відхилень</strong>.</p>
+<h3 id="55-стовпців-базових-планів">55 стовпців базових планів <a href="#55-стовпців-базових-планів" class="heading-anchor">#</a></h3>
+<p>Ingantt зберігає <strong>11 базових планів</strong>: ненумерований <strong>Базовий план</strong>, а також <strong>Базовий план 1</strong> — <strong>Базовий план 10</strong>. Кожен із них має однакові п'ять стовпців завдання:</p>
+<ul>
+<li>Початок за базовим планом</li>
+<li>Завершення за базовим планом</li>
+<li>Тривалість за базовим планом</li>
+<li>Трудовитрати за базовим планом</li>
+<li>Вартість за базовим планом</li>
+</ul>
+<p>11 базових планів × 5 полів = <strong>55 стовпців базових планів</strong>, усі доступні у виборі стовпців таблиці завдань. Ненумерований набір називається просто (<em>Початок за базовим планом</em>); нумеровані містять свій номер (<em>Початок за базовим планом 3</em>).</p>
+<h3 id="5-стовпців-відхилень">5 стовпців відхилень <a href="#5-стовпців-відхилень" class="heading-anchor">#</a></h3>
+<p>Стовпці відхилень обчислюються — поточний розклад мінус базовий план — і їх п'ять:</p>
+<ul>
+<li>Відхилення початку</li>
+<li>Відхилення завершення</li>
+<li>Відхилення тривалості</li>
+<li>Відхилення трудовитрат</li>
+<li>Відхилення вартості</li>
+</ul>
+<p>Це один набір із п'яти стовпців, а не набір для кожного базового плану. Вони порівнюють поточний розклад з <strong>одним</strong> базовим планом — тим, який вибрано як <a href="/uk/tracking/earned-value/#%D0%B1%D0%B0%D0%B7%D0%BE%D0%B2%D0%B8%D0%B9-%D0%BF%D0%BB%D0%B0%D0%BD-%D0%B4%D0%BB%D1%8F-%D0%BE%D1%81%D0%B2%D0%BE%D1%94%D0%BD%D0%BE%D0%B3%D0%BE-%D0%BE%D0%B1%D1%81%D1%8F%D0%B3%D1%83">базовий план для освоєного обсягу</a> у <strong>Проект → Параметри освоєного обсягу</strong>; за замовчуванням це ненумерований Базовий план. Змініть цей параметр — і всі стовпці відхилень буде перераховано відносно вибраного базового плану. Для завдання, у якого вибраний базовий план ніколи не зберігався, відхилення порожнє, а не нульове.</p>
+<h2 id="де-зберігаються-базові-плани">Де зберігаються базові плани <a href="#де-зберігаються-базові-плани" class="heading-anchor">#</a></h2>
+<p>Базові плани зберігаються <strong>всередині файлу проекту</strong>, а не в окремому файлі. Збереження проекту зберігає і його базові плани.</p>
+<p>Якщо ви спробуєте зберегти дванадцятий базовий план, Ingantt повідомить: <em>Усі слоти базових планів зайняті. Спочатку очистьте один у діалозі «Базові плани».</em> Відкрийте <strong>Проект → Базові плани</strong> та очистьте один.</p>
+<p>Базові плани — це не те саме, що <a href="/uk/ui/version-history/">історія версій</a>, яка фіксує сам файл у часі. Використовуйте історію версій, щоб повернутися до попереднього плану; використовуйте базові плани, щоб виміряти, наскільки поточний план відхилився.</p>
 <h2 id="проміжні-плани">Проміжні плани <a href="#проміжні-плани" class="heading-anchor">#</a></h2>
-<p>Проміжні плани зберігають полегшені знімки розкладу (лише дати <strong>Початку</strong> та <strong>Завершення</strong>) для швидкого порівняння без обсягу повних базових планів. Ingantt підтримує до 10 проміжних планів (від <code>Проміжний план 1</code> до <code>Проміжний план 10</code>).</p>
+<p>Проміжні плани зберігають полегшені знімки розкладу (лише дати <strong>Початку</strong> та <strong>Завершення</strong>) для швидкого порівняння без накладних витрат повних базових планів. Ingantt підтримує до 10 проміжних планів (від <code>Проміжний план 1</code> до <code>Проміжний план 10</code>).</p>
 <p>Зберігайте та очищуйте проміжні плани з пункту <strong>Проміжні плани</strong> у меню <strong>Проект</strong>. Ви можете відображати дати проміжних планів як стовпці у списку завдань.</p>
 
     </main>

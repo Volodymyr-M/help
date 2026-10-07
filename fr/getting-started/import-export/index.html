@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/" class="active" aria-current="page">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -213,6 +233,9 @@
 <blockquote>
 <p>Pour ouvrir des fichiers de projet non-XML, Ingantt les envoie via une connexion sécurisée au service web Ingantt pour conversion. Vos fichiers ne sont pas stockés sur le service. Une connexion internet est requise. Les fichiers YAML sont analysés localement.</p>
 </blockquote>
+<h3 id="taille-des-fichiers">Taille des fichiers <a href="#taille-des-fichiers" class="heading-anchor">#</a></h3>
+<p>Les fichiers que nous convertissons sur notre serveur sont limités à <strong>30 Mo</strong>. Cela concerne les formats MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP et PEP. Les fichiers XML et YAML sont analysés dans l'application et ne sont jamais envoyés, la limite du serveur ne s'applique donc pas à eux.</p>
+<p><strong>Fichier trop volumineux ?</strong> Dans Microsoft Project, utilisez <strong>File → Save As</strong> et choisissez <strong>Project XML (.xml)</strong>. Ingantt analyse le XML dans l'application, la limite de 30 Mo du serveur ne s'applique donc pas, et l'export conserve votre structure de tâches, vos dépendances et vos ressources.</p>
 <h2 id="exporter-votre-projet">Exporter votre projet <a href="#exporter-votre-projet" class="heading-anchor">#</a></h2>
 <p>Ingantt propose plusieurs formats d'export via l'option <strong>Export</strong> dans le menu <strong>File</strong> (ou <strong>Download</strong> sur le web). Lorsque vous choisissez <strong>Export</strong>, une boîte de dialogue apparaît vous permettant de sélectionner le format souhaité :</p>
 <table>
@@ -251,7 +274,7 @@
 </table>
 <p>Le fichier exporté reflète les paramètres actuels de votre diagramme de Gantt. Par exemple, si les noms des tâches sont masqués dans la boîte de dialogue <strong>Options</strong>, ils n'apparaîtront pas non plus dans l'export. Le niveau de zoom est également conservé.</p>
 <blockquote>
-<p>Les exports PDF utilisent toujours les couleurs du thème clair, tandis que les exports PNG utilisent le thème actuel de l'interface (clair ou sombre). Les exports CSV, YAML et Markdown sont en texte brut. Lorsqu'ils sont visibles dans l'interface, les tâches fractionnées, les barres de référence et les barres fantômes de nivellement sont tous rendus dans les exports PDF et PNG.</p>
+<p>Les exports PDF utilisent toujours les couleurs du thème clair, tandis que les exports PNG utilisent le thème actuel de l'interface (clair ou sombre). Les exports CSV, YAML et Markdown sont en texte brut. Lorsqu'elles sont visibles dans l'interface, les tâches fractionnées, les barres de référence de base et les barres fantômes de nivellement sont toutes rendues dans les exports PDF et PNG.</p>
 </blockquote>
 <h2 id="modifier-le-yaml-avec-des-agents-ia">Modifier le YAML avec des agents IA <a href="#modifier-le-yaml-avec-des-agents-ia" class="heading-anchor">#</a></h2>
 <p>L'export YAML est conçu pour être modifié avec un assistant de codage IA (Claude Code, Codex ou tout outil capable de lire et d'écrire des fichiers). Exportez le projet, décrivez les modifications souhaitées en langage naturel — <em>« ajouter une phase de QA de deux semaines après le développement »</em>, <em>« affecter Alex à toutes les tâches de conception »</em> — puis réimportez le résultat.</p>

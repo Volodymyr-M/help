@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>비용 설정 - 비용 계획 - Ingantt 도움말</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용 당 비용, 비용 발생 방식을 설정합니다.">
+  <meta name="description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용당 비용, 비용 발생 방식을 설정합니다.">
   <link rel="canonical" href="https://help.ingantt.com/ko/planning-costs/setting-up-costs/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="비용 설정">
-  <meta property="og:description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용 당 비용, 비용 발생 방식을 설정합니다.">
+  <meta property="og:description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용당 비용, 비용 발생 방식을 설정합니다.">
   <meta property="og:url" content="https://help.ingantt.com/ko/planning-costs/setting-up-costs/">
   <meta property="og:site_name" content="Ingantt 도움말">
   <meta property="og:locale" content="ko_KR">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="비용 설정">
-  <meta name="twitter:description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용 당 비용, 비용 발생 방식을 설정합니다.">
+  <meta name="twitter:description" content="고정 비용, 작업 및 자재 자원 단가, 단가 테이블, 사용당 비용, 비용 발생 방식을 설정합니다.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/planning-costs/setting-up-costs/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/planning-costs/setting-up-costs/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
     <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/">프로젝트 저장</a></li>
     <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
     <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
     <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ko/building-schedule/tasks/">작업</a></li>
     <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
     <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
     <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
     <li><a href="/ko/building-schedule/resources/">자원</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
     <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
     <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
     <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
     <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
   </ul>
 </div>
 
@@ -202,7 +222,7 @@
 <p>예를 들어, <strong>Standard Rate</strong>가 시간당 $100인 작업 자원을 <strong>Duration</strong>이 5시간인 작업에 배정하면 작업의 <strong>Cost</strong>에 $500이 추가됩니다.</p>
 <p>작업 자원은 정규 달력 시간 이외의 작업에 대한 <strong>Overtime Rate</strong>도 지원합니다. 총 비용은 다음과 같이 계산됩니다:</p>
 <blockquote>
-<p><strong>Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use</strong></p>
+<p><strong>Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use</strong></p>
 </blockquote>
 <p>작업 자원이 작업에 배정될 때 <strong>Units</strong> 값을 기본값과 다른 숫자로 지정할 수 있습니다. 이는 비용 계산에 영향을 미칩니다. 예를 들어, <strong>Units</strong>가 50%이면 작업에서 해당 자원의 계산된 비용은 100% Units일 때의 절반입니다.</p>
 <h2 id="자재-자원-비용">자재 자원 비용 <a href="#자재-자원-비용" class="heading-anchor">#</a></h2>
@@ -219,8 +239,8 @@
 <h2 id="단가-테이블">단가 테이블 <a href="#단가-테이블" class="heading-anchor">#</a></h2>
 <p>각 작업 및 자재 자원은 최대 5개의 비용 단가 테이블(A~E)을 지원하며, 각 테이블에는 다른 날짜에 적용되는 여러 행이 있습니다. 이를 통해 시간에 따른 단가 변경을 모델링하거나 다른 유형의 작업에 대해 다른 단가 세트를 유지할 수 있습니다.</p>
 <p>단가 테이블은 <strong>Resource Properties</strong> 대화 상자의 <strong>Costs</strong> 탭에서 구성됩니다. 자원을 작업에 배정할 때 <strong>Edit Resource Assignment</strong> 대화 상자에서 사용할 단가 테이블을 선택할 수 있습니다.</p>
-<h2 id="사용-당-비용">사용 당 비용 <a href="#사용-당-비용" class="heading-anchor">#</a></h2>
-<p>자원은 <strong>Cost Per Use</strong> 필드를 지원합니다 — 수행된 작업량에 관계없이 자원이 작업에 배정될 때마다 부과되는 정액 요금입니다. 작업 자원의 경우 <strong>Cost Per Use</strong>는 배정 단위에 곱해집니다(예: 200% 단위는 사용 당 비용이 두 번 부과됨을 의미). <strong>Cost Per Use</strong>는 항상 작업 시작 시 발생합니다.</p>
+<h2 id="사용당-비용">사용당 비용 <a href="#사용당-비용" class="heading-anchor">#</a></h2>
+<p>자원은 <strong>Cost Per Use</strong> 필드를 지원합니다 — 수행된 작업량에 관계없이 자원이 작업에 배정될 때마다 부과되는 정액 요금입니다. 작업 자원의 경우 <strong>Cost Per Use</strong>는 배정 단위에 곱해집니다(예: 200% 단위는 사용당 비용이 두 번 부과됨을 의미). <strong>Cost Per Use</strong>는 항상 작업 시작 시 발생합니다.</p>
 <h2 id="비용-발생">비용 발생 <a href="#비용-발생" class="heading-anchor">#</a></h2>
 <p><strong>Cost Accrual</strong> 설정은 작업이 진행됨에 따라 비용이 실제 비용으로 인식되는 시점을 제어합니다:</p>
 <table>

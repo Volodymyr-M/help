@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -193,7 +213,7 @@
       <h1 id="propriétés-du-projet">Propriétés du projet <a href="#propriétés-du-projet" class="heading-anchor">#</a></h1>
 <p>Configurez la date de début de votre projet, les horaires de travail et les règles de planification. Ces paramètres déterminent la manière dont chaque tâche de votre projet est calculée et affichée.</p>
 <h2 id="nom-du-projet">Nom du projet <a href="#nom-du-projet" class="heading-anchor">#</a></h2>
-<p>Définissez le nom de votre projet dans le champ <strong>Name</strong> de l'onglet <strong>General</strong> de la boîte de dialogue <strong>Project Properties</strong>. Ce nom est également utilisé par la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a> de votre projet.</p>
+<p>Définissez le nom de votre projet dans le champ <strong>Name</strong> de l'onglet <strong>General</strong> de la boîte de dialogue <strong>Project Properties</strong>. Ce nom est également utilisé par la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a> de votre projet.</p>
 <p>Sur le web et Windows, cliquer sur le nom du projet dans l'en-tête ouvre également la boîte de dialogue <strong>Project Properties</strong>.</p>
 <h2 id="date-de-début-et-sens-de-planification">Date de début et sens de planification <a href="#date-de-début-et-sens-de-planification" class="heading-anchor">#</a></h2>
 <p>Par défaut, votre projet est planifié à partir de la date de début, que vous pouvez définir dans le champ <strong>Project Start Date</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
@@ -201,10 +221,10 @@
 <p>L'onglet <strong>General</strong> de la boîte de dialogue <strong>Project Properties</strong> affiche à la fois la date de début et la date de fin. Lors de la planification depuis le début, la date de début est modifiable et la date de fin affiche la valeur calculée. Lors de la planification depuis la fin, la date de fin est modifiable et la date de début affiche la valeur calculée.</p>
 <p>Points importants :</p>
 <ul>
-<li>Pour les projets planifiés depuis la date de début, la <a href="/fr/building-schedule/constraints/#constraints">contrainte</a> par défaut des tâches nouvellement créées est <strong>As soon as possible</strong>.</li>
+<li>Pour les projets planifiés depuis la date de début, la <a href="/fr/building-schedule/constraints/#contraintes">contrainte</a> par défaut des tâches nouvellement créées est <strong>As soon as possible</strong>.</li>
 <li>Pour les projets planifiés depuis la date de fin, la contrainte par défaut des tâches nouvellement créées est <strong>As late as possible</strong>.</li>
 </ul>
-<p>Lors du basculement entre la planification depuis le début et depuis la fin, les contraintes des tâches existantes ne sont pas modifiées, à l'exception des <a href="/fr/building-schedule/tasks/#summary-tasks">tâches récapitulatives</a>, y compris la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a>.</p>
+<p>Lors du basculement entre la planification depuis le début et depuis la fin, les contraintes des tâches existantes ne sont pas modifiées, à l'exception des <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâches récapitulatives</a>, y compris la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a>.</p>
 <p>Pour les tâches récapitulatives :</p>
 <ul>
 <li>La contrainte <strong>As soon as possible</strong> est remplacée par <strong>As late as possible</strong> lors du passage de la planification depuis le début à la planification depuis la fin.</li>
@@ -214,7 +234,7 @@
 <p>Selon votre pays, la semaine peut commencer le dimanche ou le lundi. Vous pouvez modifier le champ <strong>First Day of Week</strong> dans l'onglet <strong>Regional</strong> de la boîte de dialogue <strong>Project Properties</strong> pour changer le paramètre par défaut de votre projet.</p>
 <p>La modification de cette propriété met à jour l'interface utilisateur, y compris le diagramme de Gantt à certains niveaux de zoom, mais n'affecte pas la planification. Pour ajuster le planning en conséquence, mettez à jour vos <a href="/fr/setting-up-project/calendars/">calendriers</a>.</p>
 <h2 id="heures-par-jour-jours-par-semaine-jours-par-mois">Heures par jour, jours par semaine, jours par mois <a href="#heures-par-jour-jours-par-semaine-jours-par-mois" class="heading-anchor">#</a></h2>
-<p>Dans Ingantt, vous pouvez spécifier la <a href="/fr/building-schedule/task-properties/#duration">durée</a>, le <a href="/fr/building-schedule/task-properties/#work">travail</a> ou le <a href="/fr/building-schedule/dependencies/#lag-and-lead-time">décalage</a> en heures, jours, semaines et mois.</p>
+<p>Dans Ingantt, vous pouvez spécifier la <a href="/fr/building-schedule/task-properties/#dur%C3%A9e">durée</a>, le <a href="/fr/building-schedule/task-properties/#travail">travail</a> ou le <a href="/fr/building-schedule/dependencies/#d%C3%A9calage-positif-et-n%C3%A9gatif">décalage</a> en heures, jours, semaines et mois.</p>
 <p>Par exemple, définir la durée d'une tâche à 2 jours signifie 16 heures avec les paramètres par défaut.</p>
 <p>Par défaut :</p>
 <ul>

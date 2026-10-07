@@ -24,6 +24,12 @@ Para importar un archivo, haga clic en el botón **+** en la pantalla de Proyect
 
 > Para abrir archivos de proyecto que no sean XML, Ingantt los envía a través de una conexión segura al servicio web de Ingantt para su conversión. Sus archivos no se almacenan en el servicio. Se requiere conexión a internet. Los archivos YAML se procesan localmente.
 
+### Tamaño de archivo
+
+Los archivos que convertimos en nuestro servidor están limitados a **30 MB**. Esto incluye MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP y PEP. Los archivos XML y YAML se procesan dentro de la aplicación y nunca se suben, por lo que el límite del servidor no se aplica a ellos.
+
+**¿El archivo es demasiado grande?** En Microsoft Project, use **Archivo → Guardar como** y elija **XML de Project (.xml)**. Ingantt procesa el XML dentro de la aplicación, por lo que el límite de 30 MB del servidor no se aplica, y la exportación conserva su estructura de tareas, dependencias y recursos.
+
 ## Exportación de su proyecto
 
 Ingantt proporciona múltiples formatos de exportación a través de la opción **Exportar** en el menú **Archivo** (o **Descargar** en web). Cuando elige **Exportar**, aparece un diálogo que le permite seleccionar el formato deseado:
@@ -43,9 +49,9 @@ El archivo exportado refleja la configuración actual de su diagrama de Gantt. P
 
 ## Edición de YAML con agentes de IA
 
-La exportación YAML está diseñada para ser editada con un asistente de codificación con IA (Claude Code, Codex o cualquier herramienta que pueda leer y escribir archivos). Exporte el proyecto, describa los cambios que desea en lenguaje natural — _"añadir una fase de QA de dos semanas después del desarrollo"_, _"asignar a Alex a todas las tareas de diseño"_ — e importe el resultado de nuevo.
+La exportación YAML está diseñada para ser editada con un asistente de codificación con IA (Claude Code, Codex o cualquier herramienta que pueda leer y escribir archivos). Exporte el proyecto, describa los cambios que desea en lenguaje natural — _"agregar una fase de QA de dos semanas después del desarrollo"_, _"asignar a Alex a todas las tareas de diseño"_ — e importe el resultado de nuevo.
 
-El formato contiene **solo entradas** (duraciones, dependencias, restricciones, asignaciones, calendarios, tarifas). Los valores derivados —fechas de inicio/fin de tareas, costo total, ruta crítica, holgura, totales de resumen— se omiten a propósito; Ingantt los recalcula al importar. El agente no debería intentar calcular las fechas por sí mismo.
+El formato contiene **solo entradas** (duraciones, dependencias, restricciones, asignaciones, calendarios, tasas). Los valores derivados — fechas de inicio/fin de tareas, costo total, ruta crítica, holgura, totales de resumen — se omiten a propósito; Ingantt los recalcula al importar. El agente no debería intentar calcular las fechas por sí mismo.
 
 Dirija al agente a la [referencia del formato YAML](/yaml-reference.md) para que conozca el esquema.
 

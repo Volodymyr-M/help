@@ -18,7 +18,7 @@ Todos los tipos de recursos afectan los cálculos de costos si el campo **Costo*
 
 ## Unidades máximas
 
-Los recursos de trabajo tienen una propiedad **Unidades máximas** (100% por defecto) que representa la capacidad disponible del recurso. Por ejemplo:
+Los recursos de trabajo tienen una propiedad **Unidades máximas** (100% de forma predeterminada) que representa la capacidad disponible del recurso. Por ejemplo:
 
 - **100%** — Un recurso a tiempo completo
 - **50%** — Un recurso a tiempo parcial (disponible la mitad del tiempo)

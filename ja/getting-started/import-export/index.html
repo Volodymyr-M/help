@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/" class="active" aria-current="page">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -209,10 +229,13 @@
 <li><strong>Ingantt YAML</strong> — YAML、YML</li>
 <li>その他（SDEFなどの形式）</li>
 </ul>
-<p>ファイルをインポートするには、プロジェクト画面で**+<strong>ボタンをクリックするか、<strong>File</strong>メニューの</strong>Import**オプションを使用します。インポートしたファイルを変更すると、InganttはXML形式で保存します。</p>
+<p>ファイルをインポートするには、プロジェクト画面で<strong>+</strong>ボタンをクリックするか、<strong>File</strong>メニューの<strong>Import</strong>オプションを使用します。インポートしたファイルを変更すると、InganttはXML形式で保存します。</p>
 <blockquote>
 <p>XML以外のプロジェクトファイルを開く場合、Inganttはセキュアな接続を通じてIngantt Webサービスにファイルを送信し、変換を行います。ファイルはサービス上に保存されません。インターネット接続が必要です。YAMLファイルはローカルで解析されます。</p>
 </blockquote>
+<h3 id="ファイルサイズ">ファイルサイズ <a href="#ファイルサイズ" class="heading-anchor">#</a></h3>
+<p>サーバーで変換するファイルは<strong>30 MB</strong>までに制限されています。対象はMPP、MPT、MPX、XER、PMXML、GAN、PP、CDPX、FTS、POD、Planner、PPX、SDEF、SP、PEPです。XMLとYAMLのファイルはアプリ内で解析されアップロードされないため、このサーバー側の制限は適用されません。</p>
+<p><strong>ファイルが大きすぎる場合は？</strong> Microsoft Projectで<strong>File → Save As</strong>を選び、<strong>Project XML (.xml)</strong>を選択してください。InganttはXMLをアプリ内で解析するため30 MBのサーバー制限は適用されず、エクスポートにはタスク構造、依存関係、リソースが保持されます。</p>
 <h2 id="プロジェクトのエクスポート">プロジェクトのエクスポート <a href="#プロジェクトのエクスポート" class="heading-anchor">#</a></h2>
 <p>Inganttは、<strong>File</strong>メニューの<strong>Export</strong>オプション（Webでは<strong>Download</strong>）を通じて、複数のエクスポート形式を提供します。<strong>Export</strong>を選択すると、目的の形式を選択できるダイアログが表示されます：</p>
 <table>
@@ -255,7 +278,7 @@
 </blockquote>
 <h2 id="aiエージェントによるyamlの編集">AIエージェントによるYAMLの編集 <a href="#aiエージェントによるyamlの編集" class="heading-anchor">#</a></h2>
 <p>YAMLエクスポートは、AIコーディングアシスタント（Claude Code、Codex、またはファイルの読み書きができる任意のツール）で編集するように設計されています。プロジェクトをエクスポートし、自然言語で変更したい内容を記述します — <em>「開発の後に2週間のQAフェーズを追加する」</em>、<em>「すべてのデザインタスクにAlexを割り当てる」</em> — そして結果を再インポートします。</p>
-<p>この形式は<strong>入力のみ</strong>（期間、依存関係、制約、割り当て、カレンダー、レート）を保持します。導出される値 — タスクの開始/終了日、総コスト、クリティカルパス、スラック、サマリーの集計 — は意図的に省略されています。Inganttはインポート時にこれらを再計算します。エージェントは自分で日付を計算しようとすべきではありません。</p>
+<p>この形式は<strong>入力のみ</strong>（期間、依存関係、制約、割り当て、カレンダー、単価）を保持します。導出される値 — タスクの開始/終了日、総コスト、クリティカルパス、余裕、サマリーの集計 — は意図的に省略されています。Inganttはインポート時にこれらを再計算します。エージェントは自分で日付を計算しようとすべきではありません。</p>
 <p>エージェントに<a href="/yaml-reference.md">YAML形式リファレンス</a>を示して、スキーマを把握できるようにしてください。</p>
 <blockquote>
 <p>エクスポート/インポートを往復せずにリアルタイムで編集する場合は、<a href="/ja/getting-started/edit-with-ai/">AIで編集</a>を参照してください。AIはライブセッション上で同じYAMLスキーマを読み書きし、各変更が発生するとすぐにガントチャートに反映されるのを見ることができます。</p>

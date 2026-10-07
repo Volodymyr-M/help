@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プロジェクトの保存 - はじめに - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="プロジェクトをローカルファイルまたはGoogle Driveに保存する方法、各プラットフォームでの自動保存の仕組み、Web版がローカルファイルを自動保存できない理由、オフラインでの作業について説明します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/getting-started/saving/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="プロジェクトの保存">
+  <meta property="og:description" content="プロジェクトをローカルファイルまたはGoogle Driveに保存する方法、各プラットフォームでの自動保存の仕組み、Web版がローカルファイルを自動保存できない理由、オフラインでの作業について説明します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/getting-started/saving/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="プロジェクトの保存">
+  <meta name="twitter:description" content="プロジェクトをローカルファイルまたはGoogle Driveに保存する方法、各プラットフォームでの自動保存の仕組み、Web版がローカルファイルを自動保存できない理由、オフラインでの作業について説明します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/saving/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/saving/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/saving/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/saving/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/saving/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/saving/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/saving/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/saving/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/" class="active" aria-current="page">プロジェクトの保存</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">サポートに問い合わせ</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="プロジェクトの保存">プロジェクトの保存 <a href="#プロジェクトの保存" class="heading-anchor">#</a></h1>
+<p>Inganttは、プロジェクトをデバイス上のファイルまたはGoogle Drive上のファイルとして保存します。その後は、自動保存が作業中にそのファイルを最新の状態に保ちます。この記事では、どの保存先になるか、自動保存がいつ適用されるか、そして自動保存が機能しない唯一のケースについて説明します。</p>
+<h2 id="初めて保存する">初めて保存する <a href="#初めて保存する" class="heading-anchor">#</a></h2>
+<p>ツールバーの<strong>Save</strong>ボタンをクリックするか、<strong>File</strong>メニューの<strong>Save file</strong>を使用します。</p>
+<p>プロジェクトが一度も保存されていない場合、Inganttは保存先を尋ねます。<strong>Save project as</strong>では2つの保存先を選べます：</p>
+<ul>
+<li><strong>Save to new local file</strong> — デバイス上のファイル。</li>
+<li><strong>Save to new Google Drive file</strong> — Google Drive上のファイル。Googleでのサインインが必要です。</li>
+</ul>
+<p>保存先は後から<strong>File</strong>メニューの<strong>Save file as</strong>で変更できます。これは常に新しいファイルを作成し、以降はそのファイルで作業を続けます。</p>
+<p>プロジェクトはMicrosoft Projectと完全に互換性のあるXML形式で保存されます。計画のどの部分もInganttに縛られることはありません。</p>
+<blockquote>
+<p>Webでは、プロジェクト作成時にすでにGoogleにサインインしていれば、InganttがGoogle Driveを自動的に選択し、プロジェクト名にちなんだファイル名を付けます。自動保存が機能し始める前に一度保存する必要はなく、プロジェクト名を変更するとDriveのファイル名も変更されます。</p>
+</blockquote>
+<h2 id="自動保存">自動保存 <a href="#自動保存" class="heading-anchor">#</a></h2>
+<p>自動保存がオンの場合、Inganttは未保存の変更があるときにのみ、約20秒ごとにすべての変更をプロジェクトの既存ファイルにバックグラウンドで書き込みます。書き込み先は常にプロジェクトがすでに持っている保存先で、新しい保存先を選ぶことはありません。</p>
+<p>デフォルトでオンかどうかはプラットフォームによって異なります：</p>
+<table>
+<thead>
+<tr>
+<th>プラットフォーム</th>
+<th>デフォルトの自動保存</th>
+<th>変更する場所</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>オン</td>
+<td><strong>File</strong>メニュー → <strong>Work offline (no autosave)</strong></td>
+</tr>
+<tr>
+<td><strong>Android、iOS、Windows、macOS</strong></td>
+<td>オフ</td>
+<td><strong>Options</strong>ダイアログまたは<strong>File</strong>メニューの<strong>Enable autosave</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Save</strong>ボタンは自動保存のインジケーターも兼ねています。<em>Saving…</em>、<em>File saved</em>、<em>File saved to Google Drive</em>、<em>Autosave pending…</em>、または保存が完了しなかった場合のエラーが表示されます。</p>
+<p>自動保存が役に立たない状況が2つあります：</p>
+<ul>
+<li><strong>プロジェクトが一度も保存されていない。</strong> 更新すべきファイルがまだ存在しないため、一度自分で保存してください。</li>
+<li><strong>ブラウザでInganttを使用中に、ローカルファイルからプロジェクトを開いた。</strong> 以下をご覧ください。</li>
+</ul>
+<h2 id="webでの自動保存とローカルファイル">Webでの自動保存とローカルファイル <a href="#webでの自動保存とローカルファイル" class="heading-anchor">#</a></h2>
+<p>ブラウザは、ディスクから選択したファイルに書き戻すことができません。Ingantt for Webが「ローカルファイル」に保存する場合、代わりにファイルの新しいコピーをダウンロードします。これは明示的な<strong>Save</strong>に対しては正しい動作ですが、20秒ごとに起きてほしいものではありません。</p>
+<p>つまり、<strong>Ingantt for Webはローカルファイルには自動保存しません。</strong> ブラウザでローカルのプロジェクトファイルを開き、変更を自動的に保存したい場合は、一度<strong>Save file as</strong> → <strong>Save to new Google Drive file</strong>を使用してください。それ以降は、自動保存がDriveのファイルを最新の状態に保ちます。</p>
+<p>これは<a href="/ja/getting-started/edit-with-ai/">AIで編集</a>にも同様に影響します。自動保存がない場合、AIが変更した内容はあなた自身が保存するまで未保存のままとなり、Inganttはセッション開始前にそのことを警告します。</p>
+<h2 id="webでのオフライン作業">Webでのオフライン作業 <a href="#webでのオフライン作業" class="heading-anchor">#</a></h2>
+<p><strong>File</strong>メニューの<strong>Work offline (no autosave)</strong>は、現在のブラウザタブの自動保存をオフにします。すべての変更がGoogle Driveに送られることなく編集を続けたい場合に使用します。</p>
+<p>知っておくべき点が2つあります：</p>
+<ul>
+<li>オンの間は何も保存されないため、タブを閉じる前に手動で保存してください。オンにするとInganttがその旨を通知します。</li>
+<li>この設定はセッションごとです。ページを再読み込みしたり新しいタブを開いたりすると、再び自動保存がオンの状態で始まります。Android、iOS、Windows、macOSでは、代わりに<strong>Enable autosave</strong>の設定が記憶されます。</li>
+</ul>
+<h2 id="コピーのダウンロード">コピーのダウンロード <a href="#コピーのダウンロード" class="heading-anchor">#</a></h2>
+<p>Webでは、<strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong>で、プロジェクト自体の保存場所を変えることなく、プロジェクトのコピーをコンピューターに保存できます。バックアップや、Microsoft Projectを使用している相手にファイルを渡す際に使用します。</p>
+<p>その他の形式（PDF、PNG、CSV、XML、YAML、Markdown）については、<a href="/ja/getting-started/import-export/">インポートとエクスポート</a>で説明しています。</p>
+<h2 id="未保存の変更がある状態で閉じる">未保存の変更がある状態で閉じる <a href="#未保存の変更がある状態で閉じる" class="heading-anchor">#</a></h2>
+<p>未保存の変更があるプロジェクトを閉じると、Inganttは<strong>Save changes to</strong>ダイアログでプロジェクトへの変更を保存するかどうかを尋ね、未保存の変更が失われることを警告します。プロジェクトをゴミ箱に移動する前にも同じ確認が表示されます。</p>
+<h2 id="inganttで保存できない場合">Inganttで保存できない場合 <a href="#inganttで保存できない場合" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>「View only mode as trial ended」</strong>または<strong>「Subscription inactive」</strong> — プロジェクトはそのまま残っており閲覧できますが、サブスクリプションが有効になるまで保存はオフになります。<a href="/ja/account/trial/">無料トライアル</a>と<a href="/ja/account/subscription/">サブスクリプションと支払い</a>をご覧ください。</li>
+<li><strong>「You are a viewer and cannot save」</strong> — Google Driveのファイルが閲覧者またはコメント投稿者としてあなたに共有されています。オーナーに編集権限を依頼するか、<strong>Save file as</strong>を使用して自分のコピーを保存してください。<a href="/ja/ui/sharing/">プロジェクトの共有</a>をご覧ください。</li>
+<li><strong>「Error saving file to Google Drive」</strong> — 通常は接続の問題か、Googleのサインインの期限切れです。接続を確認して再度サインインしてください。<a href="/ja/ui/files/">Google Driveとの連携</a>をご覧ください。</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

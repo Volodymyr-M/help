@@ -14,7 +14,7 @@ Ingantt prend en charge la gestion de la valeur acquise (Earned Value Management
 
 ### Configurer la valeur acquise
 
-1. Créez une [référence de base](/fr/tracking/baselines/index.md#setting-a-baseline) pour capturer le planning et les coûts prévus.
+1. Créez une [référence de base](/fr/tracking/baselines/index.md#définir-une-référence-de-base) pour capturer le planning et les coûts prévus.
 2. Définissez la **Status Date** dans la boîte de dialogue **Earned Value Options** (accessible depuis le menu **Project**) ou laissez-la à la date du jour par défaut.
 3. Mettez à jour les valeurs de [% Complete](/fr/tracking/progress/index.md#-complete) des tâches au fur et à mesure de l'avancement des travaux.
 

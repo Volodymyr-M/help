@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/de/getting-started/overview/">Überblick</a></li>
+    <li><a href="/de/getting-started/install/">Ingantt für Web öffnen</a></li>
     <li><a href="/de/getting-started/getting-started/">Erste Schritte</a></li>
+    <li><a href="/de/getting-started/templates/">Projektvorlagen</a></li>
+    <li><a href="/de/getting-started/saving/">Projekt speichern</a></li>
     <li><a href="/de/getting-started/create-with-ai/">Mit KI erstellen</a></li>
     <li><a href="/de/getting-started/edit-with-ai/">Mit KI bearbeiten</a></li>
     <li><a href="/de/getting-started/import-export/">Import &amp; Export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/de/building-schedule/tasks/">Vorgänge</a></li>
     <li><a href="/de/building-schedule/task-properties/">Vorgangseigenschaften</a></li>
+    <li><a href="/de/building-schedule/elapsed-durations/">Fortlaufende Dauern</a></li>
     <li><a href="/de/building-schedule/dependencies/">Abhängigkeiten</a></li>
     <li><a href="/de/building-schedule/constraints/">Einschränkungen</a></li>
     <li><a href="/de/building-schedule/resources/" class="active" aria-current="page">Ressourcen</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/de/adjusting-schedule/critical-path/">Kritischer Pfad</a></li>
     <li><a href="/de/adjusting-schedule/leveling/">Ressourcenabgleich</a></li>
     <li><a href="/de/adjusting-schedule/custom-fields/">Benutzerdefinierte Felder</a></li>
+    <li><a href="/de/adjusting-schedule/wbs-codes/">PSP-Codes</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/de/ui/ui/">Hinzufügen und Auswählen</a></li>
     <li><a href="/de/ui/files/">Google-Drive-Integration</a></li>
+    <li><a href="/de/ui/sharing/">Projekt freigeben</a></li>
+    <li><a href="/de/ui/offline-mode/">Offline arbeiten</a></li>
+    <li><a href="/de/ui/version-history/">Versionsverlauf</a></li>
+    <li><a href="/de/ui/languages/">Sprachen</a></li>
     <li><a href="/de/ui/shortcuts/">Tastaturkürzel</a></li>
+    <li><a href="/de/ui/contact-support/">Support kontaktieren</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Konto &amp; Abrechnung
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/de/account/trial/">Kostenlose Testphase</a></li>
+    <li><a href="/de/account/subscription/">Abonnements und Zahlung</a></li>
   </ul>
 </div>
 
@@ -219,18 +239,18 @@
 <p>Nur Arbeitsressourcen beeinflussen die Planung, wenn sie Vorgängen zugewiesen werden.</p>
 <p>Alle Ressourcentypen wirken sich auf Kostenberechnungen aus, wenn das Feld <strong>Kosten</strong> der Ressource ausgefüllt ist.</p>
 <h2 id="max-einheiten">Max. Einheiten <a href="#max-einheiten" class="heading-anchor">#</a></h2>
-<p>Arbeitsressourcen haben eine Eigenschaft <strong>Max. Einheiten</strong> (Standard 100%), die die verfügbare Kapazität der Ressource darstellt. Beispiele:</p>
+<p>Arbeitsressourcen haben eine Eigenschaft <strong>Max. Einheiten</strong> (Standard 100 %), die die verfügbare Kapazität der Ressource darstellt. Beispiele:</p>
 <ul>
-<li><strong>100%</strong> — Eine Vollzeitressource</li>
-<li><strong>50%</strong> — Eine Teilzeitressource (zur Hälfte der Zeit verfügbar)</li>
-<li><strong>300%</strong> — Ein Team aus 3 Vollzeitmitgliedern, dargestellt als einzelne Ressource</li>
+<li><strong>100 %</strong> — Eine Vollzeitressource</li>
+<li><strong>50 %</strong> — Eine Teilzeitressource (zur Hälfte der Zeit verfügbar)</li>
+<li><strong>300 %</strong> — Ein Team aus 3 Vollzeitmitgliedern, dargestellt als einzelne Ressource</li>
 </ul>
-<p><strong>Max. Einheiten</strong> wird von der <a href="/de/adjusting-schedule/leveling/#overallocated-resources">Überlastungserkennung</a> und dem <a href="/de/adjusting-schedule/leveling/#auto-leveling">automatischen Kapazitätsabgleich</a> verwendet, um festzustellen, ob eine Ressource mehr Arbeit hat, als sie bewältigen kann. Beim Zuweisen einer Arbeitsressource zu einem Vorgang entsprechen die Standard-Zuweisungseinheiten dem Wert von <strong>Max. Einheiten</strong> der Ressource.</p>
+<p>Max. Einheiten wird von der <a href="/de/adjusting-schedule/leveling/#%C3%BCberlastete-ressourcen">Überlastungserkennung</a> und dem <a href="/de/adjusting-schedule/leveling/#automatischer-abgleich">automatischen Abgleich</a> verwendet, um festzustellen, ob eine Ressource mehr Arbeit hat, als sie bewältigen kann. Beim Zuweisen einer Arbeitsressource zu einem Vorgang entsprechen die Standard-Zuweisungseinheiten dem Wert von Max. Einheiten der Ressource.</p>
 <h2 id="verfügbarkeitszeiträume">Verfügbarkeitszeiträume <a href="#verfügbarkeitszeiträume" class="heading-anchor">#</a></h2>
 <p>Die Verfügbarkeit einer Arbeitsressource kann sich im Laufe der Zeit ändern. Beispielsweise könnte ein Teammitglied in den ersten drei Monaten in Vollzeit arbeiten und dann auf Teilzeit wechseln.</p>
-<p>Auf dem Reiter <strong>Verfügbarkeit</strong> des Dialogs <strong>Ressourceneigenschaften</strong> können Sie mehrere Verfügbarkeitszeiträume definieren, jeweils mit einem Datumsbereich und einem Verfügbarkeitsprozentsatz. Für Termine, die in einen definierten Zeitraum fallen, überschreiben die Einheiten des Zeitraums den Basiswert <strong>Max. Einheiten</strong> der Ressource für Kapazitätsberechnungen.</p>
+<p>Auf dem Reiter <strong>Verfügbarkeit</strong> des Dialogs <strong>Ressourceneigenschaften</strong> können Sie mehrere Verfügbarkeitszeiträume definieren, jeweils mit einem Datumsbereich und einem Verfügbarkeitsprozentsatz. Für Termine, die in einen definierten Zeitraum fallen, überschreiben die Einheiten des Zeitraums den Basiswert Max. Einheiten der Ressource für Kapazitätsberechnungen.</p>
 <h2 id="generische-ressourcen">Generische Ressourcen <a href="#generische-ressourcen" class="heading-anchor">#</a></h2>
-<p>Eine Ressource kann über das Kontrollkästchen im Dialog <strong>Ressourceneigenschaften</strong> als <strong>Generisch</strong> markiert werden. Generische Ressourcen sind Platzhalter, die eine Rolle darstellen (z. B. „Entwickler&quot;, „Designer&quot;) und keine bestimmte Person. Sie sind in der frühen Planungsphase nützlich, wenn konkrete Teammitglieder noch nicht feststehen.</p>
+<p>Eine Ressource kann über das Kontrollkästchen im Dialog <strong>Ressourceneigenschaften</strong> als <strong>Generisch</strong> markiert werden. Generische Ressourcen sind Platzhalter, die eine Rolle darstellen (z. B. „Entwickler“, „Designer“) und keine bestimmte Person. Sie sind in der frühen Planungsphase nützlich, wenn konkrete Teammitglieder noch nicht feststehen.</p>
 <p>Generische Ressourcen werden in der Ressourcenliste durch ein Abzeichen-Symbol gekennzeichnet. Die generische Kennzeichnung ist rein informativ — sie hat keinen Einfluss auf Planung oder Kostenberechnungen.</p>
 <h2 id="buchungsart">Buchungsart <a href="#buchungsart" class="heading-anchor">#</a></h2>
 <p>Jede Ressource hat eine <strong>Buchungsart</strong>, die im Dialog <strong>Ressourceneigenschaften</strong> auf <strong>Zugesichert</strong> (Standard) oder <strong>Vorgeschlagen</strong> gesetzt werden kann.</p>
@@ -238,7 +258,7 @@
 <li><strong>Zugesichert</strong> — Die Ressource ist fest für das Projekt gebucht.</li>
 <li><strong>Vorgeschlagen</strong> — Die Ressource ist vorläufig zu Planungszwecken zugewiesen.</li>
 </ul>
-<p>Standardmäßig schließt der automatische Kapazitätsabgleich vorgeschlagene Ressourcen aus. Sie können sie einbeziehen, indem Sie „Level resources with the proposed booking type&quot; in den <a href="/de/adjusting-schedule/leveling/#leveling-options">Kapazitätsabgleich-Optionen</a> aktivieren.</p>
+<p>Standardmäßig schließt der automatische Abgleich vorgeschlagene Ressourcen aus. Sie können sie einbeziehen, indem Sie „Ressourcen mit Buchungsart ‚Vorgeschlagen‘ abgleichen“ im Dialog <a href="/de/adjusting-schedule/leveling/#abgleichoptionen">Abgleichoptionen</a> aktivieren.</p>
 
     </main>
     <aside class="toc" aria-label="Inhaltsverzeichnis"></aside>

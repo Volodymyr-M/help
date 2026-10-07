@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -199,17 +219,17 @@
 <p>Si vous ne voyez pas la colonne <strong>Cost</strong> dans la liste des tâches, vérifiez que l'option <strong>Cost Column</strong> est cochée dans l'onglet <strong>Task Columns</strong> de la boîte de dialogue <strong>Options</strong>.</p>
 </blockquote>
 <h2 id="coûts-des-tâches-récapitulatives">Coûts des tâches récapitulatives <a href="#coûts-des-tâches-récapitulatives" class="heading-anchor">#</a></h2>
-<p>Dans son champ <strong>Cost</strong>, chaque <a href="/fr/building-schedule/tasks/#summary-tasks">tâche récapitulative</a> affiche le coût total de toutes ses sous-tâches.</p>
-<p>Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des <a href="/fr/building-schedule/assignments/#resource-assignments-and-units">ressources affectées</a> et un <strong>Fixed Cost</strong>. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le <strong>Cost</strong> de la tâche récapitulative.</p>
+<p>Dans son champ <strong>Cost</strong>, chaque <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâche récapitulative</a> affiche le coût total de toutes ses sous-tâches.</p>
+<p>Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">ressources affectées</a> et un <strong>Fixed Cost</strong>. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le <strong>Cost</strong> de la tâche récapitulative.</p>
 <p><em>Tâche récapitulative <strong>Cost</strong> = coût total de toutes les sous-tâches + <strong>Fixed Cost</strong> de la tâche récapitulative + coûts des ressources affectées à la tâche récapitulative</em></p>
-<p>Utilisez la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a> pour visualiser et gérer le coût total de l'ensemble de votre projet.</p>
+<p>Utilisez la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a> pour visualiser et gérer le coût total de l'ensemble de votre projet.</p>
 <h2 id="ressources-budgétaires">Ressources budgétaires <a href="#ressources-budgétaires" class="heading-anchor">#</a></h2>
-<p>Une ressource peut être marquée comme ressource <strong>Budget</strong> dans la boîte de dialogue <strong>Resource Properties</strong>. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la <a href="/fr/building-schedule/tasks/#root-summary-task">tâche récapitulative racine</a>.</p>
+<p>Une ressource peut être marquée comme ressource <strong>Budget</strong> dans la boîte de dialogue <strong>Resource Properties</strong>. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la <a href="/fr/building-schedule/tasks/#t%C3%A2che-r%C3%A9capitulative-racine">tâche récapitulative racine</a>.</p>
 <p>Les ressources budgétaires sont exclues :</p>
 <ul>
 <li>De la planification</li>
 <li>Des totaux de coûts</li>
-<li>De la détection de surallocation</li>
+<li>De la détection de surutilisation</li>
 <li>Du nivellement des ressources</li>
 </ul>
 <p>Elles permettent un suivi budgétaire descendant, distinct des calculs de coûts ascendants.</p>

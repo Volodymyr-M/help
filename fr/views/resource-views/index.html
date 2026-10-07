@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -195,8 +215,8 @@
 <h2 id="resource-usage">Resource Usage <a href="#resource-usage" class="heading-anchor">#</a></h2>
 <p>La vue <strong>Resource Usage</strong> vous permet de visualiser toutes les affectations de ressources et la quantité de <a href="/fr/building-schedule/task-properties/#travail">travail</a> que chaque ressource de travail effectue pendant chaque période sur la ligne temporelle.</p>
 <p>Comme pour le diagramme de Gantt, vous pouvez zoomer en avant ou en arrière sur la ligne temporelle pour obtenir une vue plus ou moins détaillée.</p>
-<p>Si une ressource doit effectuer plus de travail que ce que les calendriers autorisent pour une période donnée, le <strong>travail</strong> correspondant est mis en évidence en rouge.</p>
-<p>Dans la vue Resource Usage, vous pouvez double-cliquer sur les cellules de travail au niveau des affectations pour modifier directement la répartition du travail. Lorsque vous modifiez une cellule de travail, le profil de charge de l'affectation passe automatiquement à « Contoured » et les données de travail personnalisées par jour sont enregistrées.</p>
+<p>Si une ressource doit effectuer plus de travail que ce que les calendriers autorisent pour une période donnée, la valeur <strong>Work</strong> correspondante est mise en évidence en rouge.</p>
+<p>Dans la vue Resource Usage, vous pouvez double-cliquer sur les cellules de travail au niveau des affectations pour modifier directement la répartition du travail. Lorsque vous modifiez une cellule de travail, le profil de charge de travail de l'affectation passe automatiquement à « Contoured » et les données de travail personnalisées par jour sont enregistrées.</p>
 <h2 id="task-usage">Task Usage <a href="#task-usage" class="heading-anchor">#</a></h2>
 <p>La vue <strong>Task Usage</strong> est l'inverse de Resource Usage — elle offre une vue centrée sur les tâches de la répartition du travail. Chaque tâche apparaît en tant que ligne de niveau supérieur avec ses affectations de ressources indentées en dessous.</p>
 <p>Le panneau de gauche affiche les détails des tâches et des affectations, tandis que le panneau de droite affiche les valeurs de travail réparties sur les périodes. Les valeurs de travail au niveau des tâches sont affichées en gras. Les valeurs de travail des affectations surutilisées sont mises en évidence en rouge.</p>
@@ -204,7 +224,7 @@
 <p>La vue <strong>Team Planner</strong> est une vue de planification centrée sur les ressources où chaque ligne représente une ressource de travail. Les barres de tâches sont positionnées sur la ligne de chaque ressource le long d'une échelle de temps partagée.</p>
 <p>Fonctionnalités principales :</p>
 <ul>
-<li><strong>Glissez horizontalement</strong> pour replanifier une tâche — la tâche reçoit une contrainte Début au plus tôt le à la nouvelle position</li>
+<li><strong>Glissez horizontalement</strong> pour replanifier une tâche — la tâche reçoit une contrainte Start No Earlier Than à la nouvelle position</li>
 <li><strong>Glissez verticalement</strong> pour réaffecter une tâche à une autre ressource</li>
 <li><strong>Glissez en diagonale</strong> pour replanifier et réaffecter en une seule opération</li>
 <li>Glissez vers ou depuis la section <strong>Unassigned Tasks</strong> pour ajouter ou supprimer des affectations de ressources</li>

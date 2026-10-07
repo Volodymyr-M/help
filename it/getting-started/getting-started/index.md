@@ -61,7 +61,7 @@ Ripeti gli stessi passaggi per la seconda attività e la seconda risorsa.
 
 ## Impostare le ferie
 
-Le persone possono avere impegni diversi durante il corso del progetto che ne influenzano la tempistica.
+Le persone possono avere impegni diversi durante il corso del progetto che ne influenzano la linea temporale.
 
 Supponiamo che la risorsa che svolge la prima attività del progetto abbia bisogno di un giorno libero durante quella attività.
 

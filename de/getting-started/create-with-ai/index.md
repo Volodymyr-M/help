@@ -13,13 +13,13 @@ Um einen Projektterminplan mit KI zu erstellen:
 
 ![Neu erstellen mit KI](/images/getting-started/create_with_ai.png)
 
-## Eine gute Eingabeaufforderung formulieren
+## Einen guten Prompt formulieren
 
-Ihre Beschreibung kann so allgemein sein wie _„Entwicklung einer iOS-App für Essenslieferung"_ oder so detailliert wie gewünscht.
+Ihre Beschreibung kann so allgemein sein wie _„Entwicklung einer iOS-App für Essenslieferung“_ oder so detailliert wie gewünscht.
 
-Zum Beispiel erzeugt das Renovierungsprojekt, das unter [Erste Schritte](/de/getting-started/getting-started/index.md) Schritt für Schritt durchgegangen wird, denselben Terminplan aus einer Eingabeaufforderung wie:
+Zum Beispiel erzeugt das Renovierungsprojekt, das unter [Erste Schritte](/de/getting-started/getting-started/index.md) Schritt für Schritt durchgegangen wird, denselben Terminplan aus einem Prompt wie:
 
-> _„Mein Renovierungsprojekt" beginnt am 1. Januar 2027. Der Maler streicht die Wände für 2 Tage, anschließend baut der Schreiner die Küchenschränke für 2 Tage ein. Der Maler hat am 4. Januar 2027 einen Urlaubstag. Behandeln Sie den 6. Januar 2027 als Feiertag für alle._
+> _„Mein Renovierungsprojekt“ beginnt am 1. Januar 2027. Der Maler streicht die Wände für 2 Tage, anschließend baut der Schreiner die Küchenschränke für 2 Tage ein. Der Maler hat am 4. Januar 2027 einen Urlaubstag. Behandeln Sie den 6. Januar 2027 als Feiertag für alle._
 
 Wenn Ihr Projekt groß ist, versuchen Sie es in Teilprojekte aufzuteilen und für jedes einen separaten Projektplan zu generieren.
 

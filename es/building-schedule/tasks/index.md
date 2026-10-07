@@ -41,13 +41,13 @@ Puede cambiar una tarea al modo **Programada manualmente** usando la casilla de 
 
 ## Tareas recurrentes
 
-Las tareas recurrentes representan actividades que se repiten en un horario regular, como reuniones diarias, revisiones semanales o informes mensuales. Puede crear tareas recurrentes a través del menú **Insertar** eligiendo **Agregar tarea recurrente**.
+Las tareas recurrentes representan actividades que se repiten con una periodicidad regular, como reuniones diarias, revisiones semanales o informes mensuales. Puede crear tareas recurrentes a través del menú **Insertar** eligiendo **Agregar tarea recurrente**.
 
 Al crear una tarea recurrente, usted especifica:
 
 - **Duración de la ocurrencia** — La duración de cada ocurrencia individual
 - **Patrón de recurrencia** — Patrón diario, semanal, mensual o anual con una fecha de inicio y condición de fin (sin fin, finalizar en fecha, o finalizar después de N ocurrencias)
-- **Solo días laborales** — Limita las ocurrencias a días laborales
+- **Solo días laborables** — Limita las ocurrencias a los días laborables
 
 Las tareas recurrentes aparecen como una tarea de resumen que contiene las ocurrencias individuales. Cada ocurrencia puede completarse de forma independiente. Al eliminar una tarea recurrente, se le solicita elegir si desea eliminar toda la serie o solo la ocurrencia seleccionada.
 
@@ -69,7 +69,7 @@ Las tareas inactivas:
 - Se excluyen de la programación — no afectan la ruta crítica ni otras tareas
 - Se excluyen de los acumulados de tareas de resumen para duración, trabajo, costo y % completado
 - Se excluyen de la detección de sobreasignación de recursos y la nivelación automática
-- Se excluyen de los cálculos de Valor Ganado
+- Se excluyen de los cálculos de valor ganado
 
 Las tareas inactivas permanecen visibles en la lista de tareas y el diagrama de Gantt pero aparecen con opacidad reducida y texto tachado. Sus fechas se conservan como referencia.
 

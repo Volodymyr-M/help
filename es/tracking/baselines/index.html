@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/install/">Abrir Ingantt para Web</a></li>
     <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/templates/">Plantillas de proyecto</a></li>
+    <li><a href="/es/getting-started/saving/">Guardar su proyecto</a></li>
     <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
     <li><a href="/es/getting-started/edit-with-ai/">Editar con IA</a></li>
     <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
     <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/elapsed-durations/">Duraciones transcurridas</a></li>
     <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
     <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
     <li><a href="/es/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
     <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
     <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+    <li><a href="/es/adjusting-schedule/wbs-codes/">Códigos EDT</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
     <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/sharing/">Compartir un proyecto</a></li>
+    <li><a href="/es/ui/offline-mode/">Trabajar sin conexión</a></li>
+    <li><a href="/es/ui/version-history/">Historial de versiones</a></li>
+    <li><a href="/es/ui/languages/">Idiomas</a></li>
     <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+    <li><a href="/es/ui/contact-support/">Contactar con soporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Cuenta y facturación
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/account/trial/">Prueba gratuita</a></li>
+    <li><a href="/es/account/subscription/">Suscripciones y pago</a></li>
   </ul>
 </div>
 
@@ -205,10 +225,34 @@
 <ul>
 <li>Ver todas las líneas base guardadas</li>
 <li>Eliminar líneas base que ya no necesita</li>
-<li>Designar qué línea base se usa para los cálculos de <a href="/es/tracking/earned-value/#gesti%C3%B3n-de-valor-ganado">Valor Ganado</a></li>
+<li>Designar qué línea base se usa para los cálculos de <a href="/es/tracking/earned-value/#gesti%C3%B3n-de-valor-ganado">valor ganado</a></li>
 </ul>
 <h2 id="columnas-de-línea-base-y-variación">Columnas de línea base y variación <a href="#columnas-de-línea-base-y-variación" class="heading-anchor">#</a></h2>
-<p>Puede agregar columnas de línea base (<strong>Inicio</strong>, <strong>Fin</strong>, <strong>Duración</strong>, <strong>Trabajo</strong>, <strong>Costo</strong>) y columnas de variación (<strong>Variación de inicio</strong>, <strong>Variación de fin</strong>, etc.) a la lista de tareas a través del diálogo <strong>Opciones</strong>. Las columnas de variación muestran la diferencia entre el cronograma actual y la <a href="/es/tracking/earned-value/#l%C3%ADnea-base-de-valor-ganado">línea base de Valor Ganado</a>.</p>
+<p>Puede agregar columnas de línea base y de variación a la lista de tareas a través del diálogo <strong>Opciones</strong>. Hay <strong>55 columnas de línea base</strong> y <strong>5 columnas de variación</strong> en total.</p>
+<h3 id="las-55-columnas-de-línea-base">Las 55 columnas de línea base <a href="#las-55-columnas-de-línea-base" class="heading-anchor">#</a></h3>
+<p>Ingantt almacena <strong>11 líneas base</strong>: la <strong>Línea base</strong> sin número, más <strong>Línea base 1</strong> a <strong>Línea base 10</strong>. Cada una expone las mismas cinco columnas de tarea:</p>
+<ul>
+<li>Inicio de línea base</li>
+<li>Fin de línea base</li>
+<li>Duración de línea base</li>
+<li>Trabajo de línea base</li>
+<li>Costo de línea base</li>
+</ul>
+<p>11 líneas base × 5 campos = <strong>55 columnas de línea base</strong>, todas disponibles desde el selector de columnas de la tabla de tareas. El conjunto sin número se nombra simplemente (<em>Inicio de línea base</em>); los numerados llevan su número (<em>Inicio de línea base 3</em>).</p>
+<h3 id="las-5-columnas-de-variación">Las 5 columnas de variación <a href="#las-5-columnas-de-variación" class="heading-anchor">#</a></h3>
+<p>Las columnas de variación se calculan — cronograma actual menos línea base — y son cinco:</p>
+<ul>
+<li>Variación de inicio</li>
+<li>Variación de fin</li>
+<li>Variación de duración</li>
+<li>Variación de trabajo</li>
+<li>Variación de costo</li>
+</ul>
+<p>Hay un solo conjunto de cinco, no un conjunto por línea base. Comparan el cronograma actual con <strong>una</strong> línea base — la que esté seleccionada como <a href="/es/tracking/earned-value/#l%C3%ADnea-base-de-valor-ganado">línea base de valor ganado</a> en <strong>Proyecto → Opciones de Valor Ganado</strong>, que de forma predeterminada es la Línea base sin número. Cambie esa configuración y todas las columnas de variación se recalculan respecto a la línea base que eligió. Una tarea cuya línea base elegida nunca se estableció muestra una variación vacía en lugar de un cero.</p>
+<h2 id="dónde-se-almacenan-las-líneas-base">Dónde se almacenan las líneas base <a href="#dónde-se-almacenan-las-líneas-base" class="heading-anchor">#</a></h2>
+<p>Las líneas base se almacenan <strong>dentro del archivo de proyecto</strong>, no en un archivo aparte. Al guardar el proyecto se guardan sus líneas base.</p>
+<p>Si intenta establecer una duodécima línea base, Ingantt le indica <em>Todas las ranuras de línea base están en uso. Borre una primero en el diálogo Líneas base.</em> Abra <strong>Proyecto → Líneas base</strong> y borre una.</p>
+<p>Las líneas base no son lo mismo que el <a href="/es/ui/version-history/">historial de versiones</a>, que registra el archivo en sí a lo largo del tiempo. Use el historial de versiones para volver a un plan anterior; use las líneas base para medir cuánto se ha desviado el plan actual.</p>
 <h2 id="planes-provisionales">Planes provisionales <a href="#planes-provisionales" class="heading-anchor">#</a></h2>
 <p>Los planes provisionales almacenan instantáneas ligeras del cronograma (solo fechas de <strong>Inicio</strong> y <strong>Fin</strong>) para una comparación rápida sin la carga de las líneas base completas. Ingantt admite hasta 10 planes provisionales (<code>Plan provisional 1</code> a <code>Plan provisional 10</code>).</p>
 <p>Establezca y borre planes provisionales desde el elemento <strong>Planes provisionales</strong> en el menú <strong>Proyecto</strong>. Puede mostrar las fechas de los planes provisionales como columnas en la lista de tareas.</p>

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
     <li><a href="/pt/getting-started/edit-with-ai/" class="active" aria-current="page">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
     <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
     <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
     <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
     <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
     <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
     <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
     <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
     <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
   </ul>
 </div>
 
@@ -198,9 +218,9 @@
 <h2 id="iniciando-uma-sessão-de-edição-com-ia">Iniciando uma Sessão de Edição com IA <a href="#iniciando-uma-sessão-de-edição-com-ia" class="heading-anchor">#</a></h2>
 <ol>
 <li>Abra o projeto que deseja editar.</li>
-<li>Clique no ícone <strong>Editar com IA</strong> (✨) no canto superior direito, ao lado do botão de histórico de versões.</li>
+<li>Clique no ícone <strong>Edit with AI</strong> (✨) no canto superior direito, ao lado do botão de histórico de versões.</li>
 <li>A caixa de diálogo mostra um conjunto de instruções que descrevem como sua ferramenta de IA deve ler e escrever o projeto.</li>
-<li>Clique em <strong>Copiar instruções</strong>. Isso inicia a sessão de edição e copia as instruções para a área de transferência.</li>
+<li>Clique em <strong>Copy instructions</strong>. Isso inicia a sessão de edição e copia as instruções para a área de transferência.</li>
 <li>Cole as instruções na sua ferramenta de IA (por exemplo, como a primeira mensagem em uma conversa do Claude Code ou Codex).</li>
 <li>Peça à IA para fazer alterações em linguagem natural — por exemplo, <em>&quot;adicionar uma fase de QA de duas semanas após o desenvolvimento&quot;</em> ou <em>&quot;atribuir Alex a todas as tarefas de design&quot;</em>.</li>
 </ol>
@@ -213,7 +233,7 @@
 <li><strong>O agendador mantém a autoridade.</strong> Quando a IA define datas ou durações, o Ingantt executa novamente o Método do Caminho Crítico para calcular o cronograma final, o que pode mover outras tarefas.</li>
 </ul>
 <h2 id="parando-a-sessão">Parando a Sessão <a href="#parando-a-sessão" class="heading-anchor">#</a></h2>
-<p>Clique no ícone ✨ enquanto uma sessão estiver ativa e escolha <strong>Parar sessão</strong>. Você também pode simplesmente fechar a aba do navegador — a sessão termina automaticamente após um período de inatividade.</p>
+<p>Clique no ícone ✨ enquanto uma sessão estiver ativa e escolha <strong>Stop session</strong>. Você também pode simplesmente fechar a aba do navegador — a sessão termina automaticamente após um período de inatividade.</p>
 <h2 id="ferramentas-de-ia-suportadas">Ferramentas de IA Suportadas <a href="#ferramentas-de-ia-suportadas" class="heading-anchor">#</a></h2>
 <p>Qualquer ferramenta de IA capaz de fazer solicitações HTTP funciona com Editar com IA. Opções comuns incluem:</p>
 <ul>

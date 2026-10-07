@@ -24,6 +24,12 @@ Pour importer un fichier, cliquez sur le bouton **+** sur l'écran des projets, 
 
 > Pour ouvrir des fichiers de projet non-XML, Ingantt les envoie via une connexion sécurisée au service web Ingantt pour conversion. Vos fichiers ne sont pas stockés sur le service. Une connexion internet est requise. Les fichiers YAML sont analysés localement.
 
+### Taille des fichiers
+
+Les fichiers que nous convertissons sur notre serveur sont limités à **30 Mo**. Cela concerne les formats MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP et PEP. Les fichiers XML et YAML sont analysés dans l'application et ne sont jamais envoyés, la limite du serveur ne s'applique donc pas à eux.
+
+**Fichier trop volumineux ?** Dans Microsoft Project, utilisez **File → Save As** et choisissez **Project XML (.xml)**. Ingantt analyse le XML dans l'application, la limite de 30 Mo du serveur ne s'applique donc pas, et l'export conserve votre structure de tâches, vos dépendances et vos ressources.
+
 ## Exporter votre projet
 
 Ingantt propose plusieurs formats d'export via l'option **Export** dans le menu **File** (ou **Download** sur le web). Lorsque vous choisissez **Export**, une boîte de dialogue apparaît vous permettant de sélectionner le format souhaité :
@@ -39,7 +45,7 @@ Ingantt propose plusieurs formats d'export via l'option **Export** dans le menu 
 
 Le fichier exporté reflète les paramètres actuels de votre diagramme de Gantt. Par exemple, si les noms des tâches sont masqués dans la boîte de dialogue **Options**, ils n'apparaîtront pas non plus dans l'export. Le niveau de zoom est également conservé.
 
-> Les exports PDF utilisent toujours les couleurs du thème clair, tandis que les exports PNG utilisent le thème actuel de l'interface (clair ou sombre). Les exports CSV, YAML et Markdown sont en texte brut. Lorsqu'ils sont visibles dans l'interface, les tâches fractionnées, les barres de référence et les barres fantômes de nivellement sont tous rendus dans les exports PDF et PNG.
+> Les exports PDF utilisent toujours les couleurs du thème clair, tandis que les exports PNG utilisent le thème actuel de l'interface (clair ou sombre). Les exports CSV, YAML et Markdown sont en texte brut. Lorsqu'elles sont visibles dans l'interface, les tâches fractionnées, les barres de référence de base et les barres fantômes de nivellement sont toutes rendues dans les exports PDF et PNG.
 
 ## Modifier le YAML avec des agents IA
 

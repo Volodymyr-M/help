@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Integrazione con Google Drive - Interfaccia utente - Guida di Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web.">
+  <meta name="description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web, inclusa la risoluzione dei problemi di accesso a Google.">
   <link rel="canonical" href="https://help.ingantt.com/it/ui/files/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Integrazione con Google Drive">
-  <meta property="og:description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web.">
+  <meta property="og:description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web, inclusa la risoluzione dei problemi di accesso a Google.">
   <meta property="og:url" content="https://help.ingantt.com/it/ui/files/">
   <meta property="og:site_name" content="Guida di Ingantt">
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Integrazione con Google Drive">
-  <meta name="twitter:description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web.">
+  <meta name="twitter:description" content="Accedi a Google Drive per creare, aprire e salvare file di progetto Ingantt direttamente dalla versione web, inclusa la risoluzione dei problemi di accesso a Google.">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/files/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/files/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/" class="active" aria-current="page">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -191,16 +211,54 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="integrazione-con-google-drive">Integrazione con Google Drive <a href="#integrazione-con-google-drive" class="heading-anchor">#</a></h1>
-<p>Ingantt archivia i file di progetto in Google Drive così puoi accedervi da qualsiasi dispositivo.</p>
+<p>Ingantt archivia i file di progetto in Google Drive così puoi accedervi da qualsiasi dispositivo. Questo articolo spiega come accedere, quali autorizzazioni richiede Ingantt, come Drive e Ingantt lavorano insieme e cosa fare quando l'accesso a Google non funziona come previsto.</p>
+<h2 id="lavorare-senza-accedere">Lavorare senza accedere <a href="#lavorare-senza-accedere" class="heading-anchor">#</a></h2>
+<p>Non sei obbligato ad accedere. Senza un account Google puoi aprire e modificare i file di progetto archiviati sul tuo dispositivo e salvarli di nuovo (sul web, salvare un file locale scarica una nuova copia — vedi <a href="/it/getting-started/saving/">Salvare il progetto</a>).</p>
+<p>Accedi con Google quando vuoi che i tuoi progetti siano conservati nel cloud, salvati automaticamente mentre lavori, disponibili sugli altri tuoi dispositivi e condivisibili con altre persone.</p>
 <h2 id="accesso-a-google">Accesso a Google <a href="#accesso-a-google" class="heading-anchor">#</a></h2>
-<p>Quando usi Ingantt per la prima volta, ti viene chiesto di accedere con il tuo account Google. Ingantt richiede le seguenti autorizzazioni:</p>
+<p>Nella schermata dei progetti, fai clic su <strong>Sign in with Google</strong>. Si apre una finestra standard di Google che richiede le autorizzazioni elencate di seguito. Puoi uscire in qualsiasi momento con <strong>Sign out of Google</strong>.</p>
+<p>Ingantt richiede le seguenti autorizzazioni:</p>
 <ul>
 <li><strong>Visualizzare le informazioni del profilo</strong> — Utilizzato per identificare il tuo account.</li>
 <li><strong>Collegarsi al tuo Google Drive</strong> — Solo versione <strong>Web</strong>. Consente di creare o aprire file Ingantt dall'interfaccia web di Google Drive (pulsante <strong>Nuovo</strong> o menu <strong>Apri con</strong>).</li>
 <li><strong>Visualizzare, modificare, creare ed eliminare solo i file specifici di Google Drive che utilizzi con questa app</strong> — Consente a Ingantt di creare e modificare i propri file nel tuo Google Drive. Ingantt non può accedere agli altri tuoi file.</li>
 </ul>
-<h2 id="usare-ingantt-per-web-con-google-drive">Usare Ingantt per Web con Google Drive <a href="#usare-ingantt-per-web-con-google-drive" class="heading-anchor">#</a></h2>
+<blockquote>
+<p>La terza autorizzazione è l'ambito ristretto di Google Drive: Ingantt vede soltanto i file che hai creato in Ingantt o aperto con esso. Il resto del tuo Drive resta invisibile a Ingantt, ed è anche per questo che Ingantt non può sfogliare le cartelle del tuo Drive per te.</p>
+</blockquote>
+<h2 id="creare-e-aprire-progetti-in-google-drive">Creare e aprire progetti in Google Drive <a href="#creare-e-aprire-progetti-in-google-drive" class="heading-anchor">#</a></h2>
+<p>Una volta effettuato l'accesso, la schermata dei progetti è il tuo Drive:</p>
+<ul>
+<li><strong>Recent Projects</strong> — i progetti che hai aperto più di recente, raggruppati per data.</li>
+<li><strong>Shared with me</strong> — i file Ingantt che altre persone hanno condiviso con te.</li>
+<li><strong>Starred</strong> — i progetti che hai contrassegnato con <strong>Add to Starred</strong>.</li>
+<li><strong>Trash</strong> — i progetti che hai spostato nel Cestino. Usa <strong>Restore</strong> per recuperarne uno.</li>
+</ul>
+<p>Usa <strong>Open</strong> → <strong>Open from Google Drive</strong> per scegliere un file esistente, oppure la scheda <strong>Upload</strong> della stessa finestra per cercare un file sul tuo dispositivo o trascinarlo al suo interno. Microsoft Project, Primavera e gli altri formati supportati possono essere aperti in questo modo — vedi <a href="/it/getting-started/import-export/">Importazione ed esportazione</a>.</p>
+<p>I nuovi progetti si creano da <strong>New</strong> nella schermata dei progetti: <strong>New project</strong>, <strong>New with AI</strong> oppure <strong>New from template</strong>. Quando hai effettuato l'accesso sul web, un nuovo progetto viene destinato subito a Google Drive e da quel momento salvato automaticamente.</p>
+<blockquote>
+<p><strong>Manca un file in &quot;Shared with me&quot;?</strong> Google richiede che un file condiviso venga aperto prima da Google Drive. Fai clic destro sul file in Drive e scegli <strong>Apri con</strong> → <strong>Ingantt</strong>. A quel punto compare nell'elenco.</p>
+</blockquote>
+<h2 id="usare-ingantt-dallinterfaccia-di-google-drive-web">Usare Ingantt dall'interfaccia di Google Drive (web) <a href="#usare-ingantt-dallinterfaccia-di-google-drive-web" class="heading-anchor">#</a></h2>
+<p>Sul web, Ingantt può essere avviato da Drive anziché il contrario. È a questo che serve l'autorizzazione <strong>Collegarsi al tuo Google Drive</strong>, e funziona solo dopo che Ingantt è stato aggiunto al tuo Drive dal <a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>.</p>
+<ul>
+<li><strong>Nuovo</strong> → <strong>Altro</strong> → <strong>Ingantt</strong> crea un nuovo progetto Ingantt nella cartella di Drive in cui ti trovi.</li>
+<li>Fai clic destro su un file Ingantt → <strong>Apri con</strong> → <strong>Ingantt</strong> per aprirlo in Ingantt per Web.</li>
+</ul>
+<p>In entrambi i casi Drive apre <code>web.ingantt.com</code> e gli passa la cartella o il file da usare, così arrivi direttamente nel progetto giusto.</p>
+<h2 id="risoluzione-dei-problemi-di-accesso-a-google-web">Risoluzione dei problemi di accesso a Google (Web) <a href="#risoluzione-dei-problemi-di-accesso-a-google-web" class="heading-anchor">#</a></h2>
+<p><strong>Google Drive non offre Ingantt nei menu Nuovo o Apri con.</strong> Esci da Google in Ingantt, accedi di nuovo e assicurati di concedere l'autorizzazione <strong>Collegarsi al tuo Google Drive</strong>. Google aggiunge le voci ai menu di Drive solo dopo che quell'autorizzazione è stata concessa, ed è facile saltarla nella schermata di consenso. Se le voci mancano ancora, verifica che Ingantt sia stato aggiunto al tuo account dal Google Workspace Marketplace.</p>
+<p><strong>Un file che qualcuno ha condiviso con te non è in &quot;Shared with me&quot;.</strong> Aprilo una volta da Google Drive con <strong>Apri con</strong> → <strong>Ingantt</strong>. Poiché Ingantt ha accesso solo ai file che usi con Ingantt, un file condiviso gli resta invisibile finché non lo hai aperto in quel modo almeno una volta.</p>
+<p><strong>&quot;Error saving file to Google Drive&quot;.</strong> Controlla prima la connessione. Se il problema persiste, esci da Google e accedi di nuovo — l'accesso potrebbe essere scaduto o aver perso un'autorizzazione.</p>
+<p><strong>&quot;Could not sign in to Google.&quot;</strong> Se usi più di un account Google, assicurati che la finestra popup stia accedendo con l'account che possiede i tuoi progetti. Anche le estensioni del browser che bloccano i cookie di terze parti o i popup possono impedire alla finestra di Google di completare l'accesso.</p>
+<p>Ancora bloccato? <a href="mailto:support@ingantt.com">Contatta l'assistenza</a> e indicaci la tua piattaforma, il tuo browser e il messaggio esatto che vedi.</p>
+<h2 id="video-dimostrativo">Video dimostrativo <a href="#video-dimostrativo" class="heading-anchor">#</a></h2>
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/sFg1a4tl4G4" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h2 id="argomenti-correlati">Argomenti correlati <a href="#argomenti-correlati" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/it/getting-started/saving/">Salvare il progetto</a> — destinazioni, salvataggio automatico e lavoro offline.</li>
+<li><a href="/it/ui/sharing/">Condividere un progetto</a> — dare ad altre persone l'accesso a un piano.</li>
+</ul>
 
     </main>
     <aside class="toc" aria-label="Indice"></aside>

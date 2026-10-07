@@ -4,13 +4,13 @@ Queste sono le attività che non puoi permetterti di ritardare — qualsiasi sli
 
 ## Attività critiche
 
-Una volta messo in pratica il piano, alcune attività terminano prima del previsto — e altre no. Alcune attività possono impiegare più tempo senza allungare la durata del progetto. Queste attività hanno un margine di tempo disponibile, noto come _margine_.
+Una volta messo in pratica il piano, alcune attività terminano prima del previsto — e altre no. Alcune attività possono impiegare più tempo senza allungare la durata del progetto. Queste attività hanno del tempo di riserva, noto come _margine_.
 
 Altre attività hanno margine zero — qualsiasi ritardo sposta la data di fine del progetto. Queste sono chiamate _attività critiche_. Per mantenere il progetto nei tempi previsti, presta particolare attenzione a queste attività durante il monitoraggio dell'avanzamento.
 
 Un'attività è anche critica se:
-- Ha un vincolo **Must start on** o **Must finish on** come [vincolo](/it/building-schedule/constraints/index.md#come-funzionano-i-vincoli)
-- Ha un vincolo **As late as possible** come [vincolo](/it/building-schedule/constraints/index.md#come-funzionano-i-vincoli) in un progetto pianificato dalla data di inizio
+- Ha un [vincolo](/it/building-schedule/constraints/index.md#come-funzionano-i-vincoli) **Must start on** o **Must finish on**
+- Ha un [vincolo](/it/building-schedule/constraints/index.md#come-funzionano-i-vincoli) **As late as possible** in un progetto pianificato dalla data di inizio
 - La sua data di fine è uguale o supera la sua [scadenza](/it/building-schedule/task-properties/index.md#scadenza)
 - Ha **margine negativo** — un conflitto di pianificazione in cui i vincoli forzano l'attività prima di quanto le dipendenze consentano
 

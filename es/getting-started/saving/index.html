@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Guardar su proyecto - Primeros pasos - Ayuda de Ingantt</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Guarde su proyecto en un archivo local o en Google Drive, cómo funciona el guardado automático en cada plataforma, por qué la versión web no puede guardar automáticamente archivos locales y cómo trabajar sin conexión.">
+  <link rel="canonical" href="https://help.ingantt.com/es/getting-started/saving/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Guardar su proyecto">
+  <meta property="og:description" content="Guarde su proyecto en un archivo local o en Google Drive, cómo funciona el guardado automático en cada plataforma, por qué la versión web no puede guardar automáticamente archivos locales y cómo trabajar sin conexión.">
+  <meta property="og:url" content="https://help.ingantt.com/es/getting-started/saving/">
+  <meta property="og:site_name" content="Ayuda de Ingantt">
+  <meta property="og:locale" content="es_ES">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Guardar su proyecto">
+  <meta name="twitter:description" content="Guarde su proyecto en un archivo local o en Google Drive, cómo funciona el guardado automático en cada plataforma, por qué la versión web no puede guardar automáticamente archivos locales y cómo trabajar sin conexión.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/saving/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/saving/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/saving/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/saving/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/saving/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/saving/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/saving/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/saving/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Ir al contenido</a>
+  <header class="header">
+    <button class="hamburger" aria-label="Alternar navegación" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/es/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ayuda de Ingantt</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="Buscar..." aria-label="Buscar documentación">
+      <div class="search-results" data-loading="Cargando…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="Buscar">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="Cambiar tema" title="Alternar tema claro/oscuro">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="Idioma">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/" selected>Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="Navegación de la documentación">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Primeros pasos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/getting-started/overview/">Descripción general</a></li>
+    <li><a href="/es/getting-started/install/">Abrir Ingantt para Web</a></li>
+    <li><a href="/es/getting-started/getting-started/">Primeros pasos</a></li>
+    <li><a href="/es/getting-started/templates/">Plantillas de proyecto</a></li>
+    <li><a href="/es/getting-started/saving/" class="active" aria-current="page">Guardar su proyecto</a></li>
+    <li><a href="/es/getting-started/create-with-ai/">Crear con IA</a></li>
+    <li><a href="/es/getting-started/edit-with-ai/">Editar con IA</a></li>
+    <li><a href="/es/getting-started/import-export/">Importar y exportar</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Configuración del proyecto
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/setting-up-project/project/">Propiedades del proyecto</a></li>
+    <li><a href="/es/setting-up-project/calendars/">Calendarios</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Construcción de un cronograma
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/building-schedule/tasks/">Tareas</a></li>
+    <li><a href="/es/building-schedule/task-properties/">Propiedades de la tarea</a></li>
+    <li><a href="/es/building-schedule/elapsed-durations/">Duraciones transcurridas</a></li>
+    <li><a href="/es/building-schedule/dependencies/">Dependencias</a></li>
+    <li><a href="/es/building-schedule/constraints/">Restricciones</a></li>
+    <li><a href="/es/building-schedule/resources/">Recursos</a></li>
+    <li><a href="/es/building-schedule/assignments/">Asignaciones</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Análisis y ajustes
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/adjusting-schedule/critical-path/">Ruta crítica</a></li>
+    <li><a href="/es/adjusting-schedule/leveling/">Nivelación de recursos</a></li>
+    <li><a href="/es/adjusting-schedule/custom-fields/">Campos personalizados</a></li>
+    <li><a href="/es/adjusting-schedule/wbs-codes/">Códigos EDT</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Planificación de costos
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/planning-costs/planning-costs/">Comprensión de los costos</a></li>
+    <li><a href="/es/planning-costs/setting-up-costs/">Configuración de costos</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Seguimiento del progreso
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/tracking/baselines/">Líneas base</a></li>
+    <li><a href="/es/tracking/progress/">Seguimiento del progreso</a></li>
+    <li><a href="/es/tracking/actuals/">Valores reales</a></li>
+    <li><a href="/es/tracking/earned-value/">Valor ganado</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Vistas
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/views/gantt/">Diagrama de Gantt</a></li>
+    <li><a href="/es/views/task-views/">Vistas de tareas</a></li>
+    <li><a href="/es/views/resource-views/">Vistas de recursos</a></li>
+    <li><a href="/es/views/filtering/">Filtrado de tareas</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Interfaz de usuario
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/ui/ui/">Agregar y seleccionar</a></li>
+    <li><a href="/es/ui/files/">Integración con Google Drive</a></li>
+    <li><a href="/es/ui/sharing/">Compartir un proyecto</a></li>
+    <li><a href="/es/ui/offline-mode/">Trabajar sin conexión</a></li>
+    <li><a href="/es/ui/version-history/">Historial de versiones</a></li>
+    <li><a href="/es/ui/languages/">Idiomas</a></li>
+    <li><a href="/es/ui/shortcuts/">Atajos de teclado</a></li>
+    <li><a href="/es/ui/contact-support/">Contactar con soporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Cuenta y facturación
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/es/account/trial/">Prueba gratuita</a></li>
+    <li><a href="/es/account/subscription/">Suscripciones y pago</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="Contactar con soporte" title="Contactar con soporte">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">Contactar con soporte</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="guardar-su-proyecto">Guardar su proyecto <a href="#guardar-su-proyecto" class="heading-anchor">#</a></h1>
+<p>Ingantt guarda su proyecto como un archivo en su dispositivo o como un archivo en su Google Drive. El guardado automático mantiene luego ese archivo actualizado mientras trabaja. Este artículo explica qué destino obtiene, cuándo se aplica el guardado automático y el único caso en el que no puede hacerlo.</p>
+<h2 id="guardar-por-primera-vez">Guardar por primera vez <a href="#guardar-por-primera-vez" class="heading-anchor">#</a></h2>
+<p>Haga clic en el botón <strong>Guardar</strong> de la barra de herramientas o use <strong>Guardar archivo</strong> en el menú <strong>Archivo</strong>.</p>
+<p>Si el proyecto nunca se ha guardado, Ingantt le pregunta dónde debe ir. <strong>Guardar proyecto como</strong> ofrece dos destinos:</p>
+<ul>
+<li><strong>Guardar en un nuevo archivo local</strong> — un archivo en su dispositivo.</li>
+<li><strong>Guardar en un nuevo archivo de Google Drive</strong> — un archivo en su Google Drive. Requiere iniciar sesión con Google.</li>
+</ul>
+<p>Puede cambiar el destino más adelante con <strong>Guardar archivo como</strong> en el menú <strong>Archivo</strong>, que siempre crea un archivo nuevo y continúa trabajando en él.</p>
+<p>Su proyecto se guarda en un formato XML totalmente compatible con Microsoft Project. Nada de su plan queda atado a Ingantt.</p>
+<blockquote>
+<p>En la web, si ya ha iniciado sesión en Google cuando crea un proyecto, Ingantt elige Google Drive por usted y nombra el archivo con el nombre del proyecto. No tiene que guardar una vez antes de que el guardado automático empiece a funcionar, y cambiar el nombre del proyecto cambia el nombre del archivo en Drive.</p>
+</blockquote>
+<h2 id="guardado-automático">Guardado automático <a href="#guardado-automático" class="heading-anchor">#</a></h2>
+<p>Cuando el guardado automático está activado, Ingantt escribe cada cambio en el archivo existente del proyecto en segundo plano, aproximadamente cada 20 segundos y solo cuando hay algo sin guardar. Siempre escribe en el destino que el proyecto ya tiene — nunca elige uno nuevo.</p>
+<p>Que esté activado de forma predeterminada depende de la plataforma:</p>
+<table>
+<thead>
+<tr>
+<th>Plataforma</th>
+<th>Guardado automático predeterminado</th>
+<th>Dónde cambiarlo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>Activado</td>
+<td>Menú <strong>Archivo</strong> → <strong>Trabajar sin conexión (sin guardado automático)</strong></td>
+</tr>
+<tr>
+<td><strong>Android, iOS, Windows, macOS</strong></td>
+<td>Desactivado</td>
+<td><strong>Habilitar guardado automático</strong> en el diálogo <strong>Opciones</strong> o en el menú <strong>Archivo</strong></td>
+</tr>
+</tbody>
+</table>
+<p>El botón <strong>Guardar</strong> funciona también como indicador del guardado automático. Muestra <em>Guardando…</em>, <em>Archivo guardado</em>, <em>Archivo guardado en Google Drive</em>, <em>Guardado automático pendiente…</em> o un error si un guardado no se completó.</p>
+<p>El guardado automático no puede ayudar en dos situaciones:</p>
+<ul>
+<li><strong>El proyecto nunca se ha guardado.</strong> Todavía no hay ningún archivo que actualizar, así que guárdelo una vez usted mismo.</li>
+<li><strong>El proyecto se abrió desde un archivo local mientras usa Ingantt en un navegador.</strong> Vea a continuación.</li>
+</ul>
+<h2 id="guardado-automático-y-archivos-locales-en-la-web">Guardado automático y archivos locales en la web <a href="#guardado-automático-y-archivos-locales-en-la-web" class="heading-anchor">#</a></h2>
+<p>Un navegador no puede escribir de vuelta en un archivo que usted eligió de su disco. Cuando Ingantt para Web guarda en &quot;un archivo local&quot;, en realidad descarga una nueva copia del archivo — que es el comportamiento correcto para un <strong>Guardar</strong> explícito, pero no algo que quiera que ocurra cada 20 segundos.</p>
+<p>Por lo tanto: <strong>Ingantt para Web no guarda automáticamente en archivos locales.</strong> Si abrió un archivo de proyecto local en el navegador y quiere que sus cambios se conserven automáticamente, use <strong>Guardar archivo como</strong> → <strong>Guardar en un nuevo archivo de Google Drive</strong> una vez. A partir de entonces, el guardado automático mantiene el archivo de Drive al día.</p>
+<p>Esto afecta a <a href="/es/getting-started/edit-with-ai/">Editar con IA</a> de la misma manera: sin guardado automático, todo lo que la IA cambie permanece sin guardar hasta que usted lo guarde, e Ingantt se lo advierte antes de que comience la sesión.</p>
+<h2 id="trabajar-sin-conexión-en-la-web">Trabajar sin conexión en la web <a href="#trabajar-sin-conexión-en-la-web" class="heading-anchor">#</a></h2>
+<p><strong>Trabajar sin conexión (sin guardado automático)</strong> en el menú <strong>Archivo</strong> desactiva el guardado automático para la pestaña actual del navegador. Úselo cuando quiera seguir editando sin que cada cambio vaya a Google Drive.</p>
+<p>Dos cosas que debe saber al respecto:</p>
+<ul>
+<li>No se guarda nada mientras está activado, así que guarde manualmente antes de cerrar la pestaña. Ingantt se lo recuerda cuando lo activa.</li>
+<li>La configuración es por sesión. Recargar la página o abrir una nueva pestaña comienza de nuevo con el guardado automático activado. En Android, iOS, Windows y macOS, en cambio, la configuración <strong>Habilitar guardado automático</strong> sí se recuerda.</li>
+</ul>
+<h2 id="descargar-una-copia">Descargar una copia <a href="#descargar-una-copia" class="heading-anchor">#</a></h2>
+<p>En la web, <strong>Archivo</strong> → <strong>Descargar</strong> → <strong>Descargar XML</strong> guarda una copia del proyecto en su computadora sin cambiar dónde está guardado el proyecto en sí. Úselo como copia de seguridad o para entregar el archivo a alguien que use Microsoft Project.</p>
+<p>Los demás formatos — PDF, PNG, CSV, XML, YAML y Markdown — se tratan en <a href="/es/getting-started/import-export/">Importar y exportar</a>.</p>
+<h2 id="cerrar-con-cambios-sin-guardar">Cerrar con cambios sin guardar <a href="#cerrar-con-cambios-sin-guardar" class="heading-anchor">#</a></h2>
+<p>Si cierra un proyecto que tiene cambios sin guardar, Ingantt pregunta <strong>Guardar cambios en</strong> su proyecto y advierte que los cambios sin guardar se perderán. El mismo aviso aparece antes de mover un proyecto a la Papelera.</p>
+<h2 id="si-ingantt-no-le-permite-guardar">Si Ingantt no le permite guardar <a href="#si-ingantt-no-le-permite-guardar" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>&quot;Modo de solo lectura porque la prueba ha finalizado&quot;</strong> o <strong>&quot;Suscripción inactiva&quot;</strong> — sus proyectos siguen ahí y siguen siendo legibles, pero el guardado está desactivado hasta que su suscripción esté activa. Consulte <a href="/es/account/trial/">Prueba gratuita</a> y <a href="/es/account/subscription/">Suscripciones y pago</a>.</li>
+<li><strong>&quot;Usted es un lector y no puede guardar&quot;</strong> — el archivo de Google Drive se compartió con usted como lector o comentador. Pida al propietario acceso de edición o use <strong>Guardar archivo como</strong> para conservar su propia copia. Consulte <a href="/es/ui/sharing/">Compartir un proyecto</a>.</li>
+<li><strong>&quot;Error al guardar el archivo en Google Drive&quot;</strong> — normalmente un problema de conexión o una sesión de Google caducada. Compruebe su conexión y vuelva a iniciar sesión; consulte <a href="/es/ui/files/">Integración con Google Drive</a>.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="Índice"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

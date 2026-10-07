@@ -26,5 +26,5 @@ Tarefas com folga negativa também exibem um ícone de aviso na lista de tarefas
 
 Na aba **Other** da caixa de diálogo **Project Properties**, você pode configurar como o caminho crítico é calculado:
 
-- **Calculate multiple critical paths** — Quando ativada, cada grupo desconectado de tarefas vinculadas recebe seu próprio caminho crítico. Quando desativada (o padrão), tarefas sem sucessoras derivam sua data de término mais tarde a partir da data de término do projeto.
+- **Calculate multiple critical paths** — Quando ativada, cada grupo desconectado de tarefas vinculadas recebe seu próprio caminho crítico. Quando desativada (o padrão), tarefas sem sucessoras derivam seu término tardio a partir da data de término do projeto.
 - **Critical slack limit** — Por padrão, tarefas com folga zero ou negativa são críticas. Você pode aumentar esse limite para que tarefas com folga de até o número especificado de dias também sejam consideradas críticas.

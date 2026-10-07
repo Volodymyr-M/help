@@ -1,6 +1,6 @@
 # Gantt-Diagramm
 
-Das Gantt-Diagramm ist die Zeitachse Ihres Projekts. Sehen Sie Abgleichanpassungen, Fortschrittslinien und wie sich der Terminplan seit der Basislinie verändert hat.
+Das Gantt-Diagramm ist die Zeitachse Ihres Projekts. Sehen Sie Abgleichanpassungen, Fortschrittslinien und wie sich der Terminplan seit dem Festlegen des Basisplans verändert hat.
 
 ## Verfügbare Ansichten
 
@@ -22,15 +22,15 @@ Ingantt bietet mehrere Ansichten für die Arbeit mit Ihrem Projekt, zugänglich 
 - **[Teamplaner](/de/views/resource-views/index.md#teamplaner)**
 - **[Ressourcendiagramm](/de/views/resource-views/index.md#ressourcendiagramm)**
 
-## Vorgangsansicht
+## Ansicht „Vorgänge“
 
-Die **Vorgangsansicht** ist die Hauptansicht, die eine Vorgangsliste und das Gantt-Diagramm kombiniert (geteilte Ansicht). Sie können über das Untermenü **Ansicht > Bereiche in Vorgängen** konfigurieren, welche Bereiche angezeigt werden: Vorgangsliste und Gantt-Diagramm können jeweils unabhängig ein- und ausgeblendet werden.
+Die Ansicht **Vorgänge** ist die Hauptansicht, die eine Vorgangsliste und das Gantt-Diagramm kombiniert (geteilte Ansicht). Sie können über das Untermenü **Ansicht > Bereiche in Vorgängen** konfigurieren, welche Bereiche angezeigt werden: Vorgangsliste und Gantt-Diagramm können jeweils unabhängig ein- und ausgeblendet werden.
 
 ## Vorgangsinspektor
 
 Der **Vorgangsinspektor** ist ein Seitenbereich, der Details des ausgewählten Vorgangs anzeigt, einschließlich Planungsfaktoren (was die Termine des Vorgangs bestimmt), allgemeine Eigenschaften, Ressourcen, Vorgänger, Kosten und mehr. Schalten Sie den Vorgangsinspektor über die Symbolleiste ein oder aus.
 
-Der Abschnitt **Planungsfaktoren** oben im Inspektor zeigt, was die geplanten Termine des Vorgangs bestimmt: bestimmende Vorgänger (fett mit einem „Bestimmend"-Abzeichen dargestellt), nicht bestimmende Vorgänger (mit ihrem relativen Puffer), Einschränkungen, Abgleichverzögerungen, Kalender und Pufferwerte. Kritische Vorgänge zeigen ein „Kritisch"-Abzeichen an.
+Der Abschnitt **Planungsfaktoren** oben im Inspektor zeigt, was die geplanten Termine des Vorgangs bestimmt: bestimmende Vorgänger (fett mit einem „Bestimmend“-Abzeichen dargestellt), nicht bestimmende Vorgänger (mit ihrem relativen Puffer), Einschränkungen, Abgleichverzögerungen, Kalender und Pufferwerte. Kritische Vorgänge zeigen ein „Kritisch“-Abzeichen an.
 
 ## Abgleich-Gantt
 

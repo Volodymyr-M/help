@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -196,7 +216,7 @@
 <p><strong>Task Board</strong>ビューは、ワークフローステージを表す列に整理されたカード形式でタスクを表示します（カンバンスタイル）。</p>
 <p>新しいプロジェクトには3つのデフォルト列があります：「Not Started」（0%）、「In Progress」（50%）、「Complete」（100%）。各列には% Completeのマッピングがあり、カードを列にドラッグすると、タスクの達成率が自動的に更新されます。</p>
 <p>列の追加、編集、名前変更、並べ替え、削除が可能です。各列の下部には<strong>Add Task</strong>ボタンがあり、そのステージで直接タスクを作成できます。</p>
-<p>ボードには、サマリーではなく、アクティブで「Show on board」が有効な非サマリータスクのみが表示されます。「Show on board」設定は<strong>Task Properties</strong>ダイアログの<strong>Visual</strong>タブにあります。</p>
+<p>ボードには、「Show on board」が有効なアクティブな非サマリータスクのみが表示されます。「Show on board」設定は<strong>Task Properties</strong>ダイアログの<strong>Visual</strong>タブにあります。</p>
 <blockquote>
 <p>列間でタスクカードをドラッグしてステータスを変更できます。タスクの% Completeが他の場所（ダイアログ、インライン編集、Update Project）で変更された場合、カードは自動的に一致する列に移動します。</p>
 </blockquote>
@@ -224,7 +244,7 @@
 <h2 id="タイムライン">タイムライン <a href="#タイムライン" class="heading-anchor">#</a></h2>
 <p><strong>Timeline</strong>は、ガントチャートの上に表示される折りたたみ可能なペインで、ユーザーが選択したタスクを水平な時間軸上に簡略化して表示します。</p>
 <p>タスクをタイムラインに追加するには、タスクを右クリックして<strong>Display on Timeline</strong>を選択するか、Task Propertiesダイアログの<strong>Visual</strong>タブでオプションにチェックを入れます。</p>
-<p>タイムラインのタスクはバーまたはコールアウト（垂直コネクタ線付きのテキストラベル）として表示できます。タイムラインペインの水平区切り線の上下にタスクバーをドラッグして、モードを切り替えることができます。タイムラインには今日のマーカーと、ドラッグしてガントチャートをスクロールできるビューポートオーバーレイも表示されます。</p>
+<p>タイムラインのタスクはバーまたはコールアウト（垂直コネクター線付きのテキストラベル）として表示できます。タイムラインペインの水平区切り線の上下にタスクバーをドラッグして、モードを切り替えることができます。タイムラインには今日のマーカーと、ドラッグしてガントチャートをスクロールできるビューポートオーバーレイも表示されます。</p>
 <p>タイムラインは<strong>View</strong>メニューから切り替えます。</p>
 <h2 id="トラッキングガント">トラッキングガント <a href="#トラッキングガント" class="heading-anchor">#</a></h2>
 <p><strong>Tracking Gantt</strong>ビューは標準のTasksビューに似ていますが、クリティカルパスのハイライトが常に有効で、Baseline 0が保存されている場合はそれが表示されます。トラッキングガントから移動すると、クリティカルパスとベースラインの表示設定は以前の状態に復元されます。</p>

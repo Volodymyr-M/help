@@ -14,7 +14,7 @@ Nella vista Resource Usage, puoi fare doppio clic sulle celle di lavoro a livell
 
 ## Task Usage
 
-La vista **Task Usage** è l'inverso della Resource Usage — mostra una vista del lavoro incentrata sulle attività. Ogni attività appare come una riga di primo livello con le assegnazioni delle risorse rientrate sotto di essa.
+La vista **Task Usage** è l'inverso della Resource Usage — mostra una vista della distribuzione del lavoro incentrata sulle attività. Ogni attività appare come una riga di primo livello con le assegnazioni delle risorse rientrate sotto di essa.
 
 Il pannello sinistro mostra i dettagli dell'attività e dell'assegnazione, mentre il pannello destro mostra i valori di lavoro distribuiti nei periodi temporali. I valori di lavoro a livello di attività sono mostrati in grassetto. I valori di lavoro delle assegnazioni sovrallocate sono evidenziati in rosso.
 

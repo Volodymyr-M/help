@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/" class="active" aria-current="page">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -196,7 +216,7 @@
 <p>Lors de la planification de votre projet, vous saisissez les durées sous forme d'estimations, c'est-à-dire une approximation raisonnable du temps nécessaire pour qu'une tâche soit réalisée par l'ensemble des ressources impliquées.</p>
 <p>Ne confondez pas <strong>Duration</strong> et <strong>Work</strong>. Par exemple, si trois personnes travaillent sur votre tâche mais la terminent en une heure, vous définissez la <strong>Duration</strong> de la tâche à une heure. Si ces trois personnes sont affectées à la tâche, Ingantt calcule automatiquement la propriété <strong>Work</strong> à trois heures.</p>
 <p>La durée peut être modifiée à l'aide du champ <strong>Duration</strong> dans la boîte de dialogue <strong>Task Properties</strong>.</p>
-<p>Lorsque vous n'êtes pas encore confiant dans votre estimation de la durée, vous pouvez la marquer comme <strong>Estimate</strong> dans la boîte de dialogue <strong>Task Properties</strong>. Cela provoque l'affichage permanent d'un point d'interrogation (« <strong>?</strong> ») à côté de la durée. Cocher ou décocher cette option n'affecte pas la planification.</p>
+<p>Lorsque vous n'êtes pas encore confiant dans votre estimation de la durée, vous pouvez la marquer comme <strong>Estimate</strong> dans la boîte de dialogue <strong>Task Properties</strong>. La durée affiche alors toujours un point d'interrogation (« <strong>?</strong> »). Cocher ou décocher cette option n'affecte pas la planification.</p>
 <p>Si au moins une sous-tâche d'une tâche récapitulative a l'option <strong>Estimate</strong> cochée, la durée de la tâche récapitulative est également marquée comme <strong>Estimate</strong> et affiche donc aussi « <strong>?</strong> ».</p>
 <p>La durée peut être définie en heures, jours, semaines ou mois. Par défaut, « 1 jour » correspond à 8 heures, « 1 semaine » correspond à 5 jours (40 heures) et « 1 mois » correspond à 20 jours. Ces valeurs par défaut peuvent être modifiées dans l'onglet <strong>Duration</strong> de la boîte de dialogue <strong>Project Properties</strong>.</p>
 <p>Lorsque vous modifiez les affectations de ressources, le travail ou la durée, l'une de ces valeurs est recalculée en fonction du <a href="#type-et-pilotage-par-leffort">type</a> de la tâche.</p>
@@ -280,7 +300,7 @@
 </table>
 <p>En d'autres termes, le <strong>Type</strong> vous permet de figer l'une des trois propriétés, tandis que l'indicateur <strong>Effort Driven</strong> définit si le travail doit rester inchangé parmi les deux propriétés restantes.</p>
 <blockquote>
-<p>Les paramètres <strong>Type</strong> et <strong>Effort Driven</strong> ne sont pas disponibles pour les <a href="/fr/building-schedule/tasks/#summary-tasks">tâches récapitulatives</a>, qui sont toujours de type Fixed duration et non pilotées par l'effort.</p>
+<p>Les paramètres <strong>Type</strong> et <strong>Effort Driven</strong> ne sont pas disponibles pour les <a href="/fr/building-schedule/tasks/#t%C3%A2ches-r%C3%A9capitulatives">tâches récapitulatives</a>, qui sont toujours de type Fixed duration et non pilotées par l'effort.</p>
 </blockquote>
 <h2 id="notes">Notes <a href="#notes" class="heading-anchor">#</a></h2>
 <p>Vous pouvez ajouter du texte à votre tâche en remplissant le champ <strong>Notes</strong> dans l'onglet <strong>Notes</strong> de la boîte de dialogue <strong>Task Properties</strong>. Utilisez-le pour des descriptions de tâches, des informations de contact, des idées ou toute autre donnée textuelle.</p>

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>프로젝트 저장 - 시작하기 - Ingantt 도움말</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="프로젝트를 로컬 파일 또는 Google Drive에 저장하는 방법, 플랫폼별 자동 저장 동작, 웹 버전이 로컬 파일을 자동 저장할 수 없는 이유, 오프라인 작업을 안내합니다.">
+  <link rel="canonical" href="https://help.ingantt.com/ko/getting-started/saving/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="프로젝트 저장">
+  <meta property="og:description" content="프로젝트를 로컬 파일 또는 Google Drive에 저장하는 방법, 플랫폼별 자동 저장 동작, 웹 버전이 로컬 파일을 자동 저장할 수 없는 이유, 오프라인 작업을 안내합니다.">
+  <meta property="og:url" content="https://help.ingantt.com/ko/getting-started/saving/">
+  <meta property="og:site_name" content="Ingantt 도움말">
+  <meta property="og:locale" content="ko_KR">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="프로젝트 저장">
+  <meta name="twitter:description" content="프로젝트를 로컬 파일 또는 Google Drive에 저장하는 방법, 플랫폼별 자동 저장 동작, 웹 버전이 로컬 파일을 자동 저장할 수 없는 이유, 오프라인 작업을 안내합니다.">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/getting-started/saving/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/getting-started/saving/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/getting-started/saving/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/getting-started/saving/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/getting-started/saving/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/getting-started/saving/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/getting-started/saving/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/getting-started/saving/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/getting-started/saving/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">본문으로 건너뛰기</a>
+  <header class="header">
+    <button class="hamburger" aria-label="탐색 메뉴 전환" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ko/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt 도움말</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="검색..." aria-label="문서 검색">
+      <div class="search-results" data-loading="로딩 중…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="검색">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="테마 전환" title="라이트/다크 테마 전환">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="언어">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/">日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/" selected>한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="문서 탐색">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    시작하기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/getting-started/overview/">개요</a></li>
+    <li><a href="/ko/getting-started/install/">Ingantt for Web 열기</a></li>
+    <li><a href="/ko/getting-started/getting-started/">시작하기</a></li>
+    <li><a href="/ko/getting-started/templates/">프로젝트 템플릿</a></li>
+    <li><a href="/ko/getting-started/saving/" class="active" aria-current="page">프로젝트 저장</a></li>
+    <li><a href="/ko/getting-started/create-with-ai/">AI로 생성하기</a></li>
+    <li><a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a></li>
+    <li><a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    프로젝트 설정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/setting-up-project/project/">프로젝트 속성</a></li>
+    <li><a href="/ko/setting-up-project/calendars/">달력</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    일정 작성
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/building-schedule/tasks/">작업</a></li>
+    <li><a href="/ko/building-schedule/task-properties/">작업 속성</a></li>
+    <li><a href="/ko/building-schedule/elapsed-durations/">경과 기간</a></li>
+    <li><a href="/ko/building-schedule/dependencies/">종속성</a></li>
+    <li><a href="/ko/building-schedule/constraints/">제약 조건</a></li>
+    <li><a href="/ko/building-schedule/resources/">자원</a></li>
+    <li><a href="/ko/building-schedule/assignments/">배정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    분석 및 조정
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/adjusting-schedule/critical-path/">주공정경로</a></li>
+    <li><a href="/ko/adjusting-schedule/leveling/">자원 평준화</a></li>
+    <li><a href="/ko/adjusting-schedule/custom-fields/">사용자 정의 필드</a></li>
+    <li><a href="/ko/adjusting-schedule/wbs-codes/">WBS 코드</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    비용 계획
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/planning-costs/planning-costs/">비용 이해하기</a></li>
+    <li><a href="/ko/planning-costs/setting-up-costs/">비용 설정</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    진행 추적
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/tracking/baselines/">기준선</a></li>
+    <li><a href="/ko/tracking/progress/">진행 추적</a></li>
+    <li><a href="/ko/tracking/actuals/">실적</a></li>
+    <li><a href="/ko/tracking/earned-value/">획득가치</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    보기
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/views/gantt/">Gantt 차트</a></li>
+    <li><a href="/ko/views/task-views/">작업 보기</a></li>
+    <li><a href="/ko/views/resource-views/">자원 보기</a></li>
+    <li><a href="/ko/views/filtering/">작업 필터링</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    사용자 인터페이스
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/ui/ui/">추가 및 선택</a></li>
+    <li><a href="/ko/ui/files/">Google Drive 연동</a></li>
+    <li><a href="/ko/ui/sharing/">프로젝트 공유</a></li>
+    <li><a href="/ko/ui/offline-mode/">오프라인으로 작업하기</a></li>
+    <li><a href="/ko/ui/version-history/">버전 기록</a></li>
+    <li><a href="/ko/ui/languages/">언어</a></li>
+    <li><a href="/ko/ui/shortcuts/">키보드 단축키</a></li>
+    <li><a href="/ko/ui/contact-support/">지원 문의</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    계정 및 결제
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ko/account/trial/">무료 체험</a></li>
+    <li><a href="/ko/account/subscription/">구독 및 결제</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="지원 문의" title="지원 문의">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">지원 문의</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="프로젝트-저장">프로젝트 저장 <a href="#프로젝트-저장" class="heading-anchor">#</a></h1>
+<p>Ingantt는 프로젝트를 기기의 파일 또는 Google Drive의 파일로 저장합니다. 그 후에는 작업하는 동안 자동 저장이 해당 파일을 최신 상태로 유지합니다. 이 문서에서는 어떤 저장 위치가 선택되는지, 자동 저장이 언제 적용되는지, 그리고 적용될 수 없는 한 가지 경우를 설명합니다.</p>
+<h2 id="처음-저장하기">처음 저장하기 <a href="#처음-저장하기" class="heading-anchor">#</a></h2>
+<p>도구 모음의 <strong>Save</strong> 버튼을 클릭하거나 <strong>File</strong> 메뉴의 <strong>Save file</strong>을 사용하십시오.</p>
+<p>프로젝트를 한 번도 저장한 적이 없으면 Ingantt가 저장 위치를 묻습니다. <strong>Save project as</strong>에서는 두 가지 위치를 선택할 수 있습니다:</p>
+<ul>
+<li><strong>Save to new local file</strong> — 기기의 파일.</li>
+<li><strong>Save to new Google Drive file</strong> — Google Drive의 파일. Google 로그인이 필요합니다.</li>
+</ul>
+<p>저장 위치는 나중에 <strong>File</strong> 메뉴의 <strong>Save file as</strong>로 변경할 수 있습니다. 이 명령은 항상 새 파일을 만들고 그 파일에서 작업을 계속합니다.</p>
+<p>프로젝트는 Microsoft Project와 완전히 호환되는 XML 형식으로 저장됩니다. 계획의 어떤 부분도 Ingantt에 종속되지 않습니다.</p>
+<blockquote>
+<p>웹에서는 프로젝트를 만들 때 이미 Google에 로그인되어 있으면 Ingantt가 Google Drive를 자동으로 선택하고 프로젝트 이름으로 파일 이름을 지정합니다. 자동 저장이 시작되기 전에 한 번 저장할 필요가 없으며, 프로젝트 이름을 바꾸면 Drive 파일 이름도 바뀝니다.</p>
+</blockquote>
+<h2 id="자동-저장">자동 저장 <a href="#자동-저장" class="heading-anchor">#</a></h2>
+<p>자동 저장이 켜져 있으면 Ingantt는 저장되지 않은 변경 사항이 있을 때만 약 20초마다 백그라운드에서 프로젝트의 기존 파일에 모든 변경 사항을 기록합니다. 항상 프로젝트가 이미 가진 저장 위치에 기록하며, 새 위치를 선택하지는 않습니다.</p>
+<p>기본적으로 켜져 있는지 여부는 플랫폼에 따라 다릅니다:</p>
+<table>
+<thead>
+<tr>
+<th>플랫폼</th>
+<th>기본 자동 저장</th>
+<th>변경 위치</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Web</strong></td>
+<td>켜짐</td>
+<td><strong>File</strong> 메뉴 → <strong>Work offline (no autosave)</strong></td>
+</tr>
+<tr>
+<td><strong>Android, iOS, Windows, macOS</strong></td>
+<td>꺼짐</td>
+<td><strong>Options</strong> 대화 상자 또는 <strong>File</strong> 메뉴의 <strong>Enable autosave</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Save</strong> 버튼은 자동 저장 표시기 역할도 합니다. <em>Saving…</em>, <em>File saved</em>, <em>File saved to Google Drive</em>, <em>Autosave pending…</em> 또는 저장이 실패한 경우 오류를 표시합니다.</p>
+<p>자동 저장이 도움이 되지 않는 두 가지 상황이 있습니다:</p>
+<ul>
+<li><strong>프로젝트를 한 번도 저장하지 않은 경우.</strong> 아직 업데이트할 파일이 없으므로 직접 한 번 저장하십시오.</li>
+<li><strong>브라우저에서 Ingantt를 사용하면서 로컬 파일에서 프로젝트를 연 경우.</strong> 아래를 참조하십시오.</li>
+</ul>
+<h2 id="웹에서의-자동-저장과-로컬-파일">웹에서의 자동 저장과 로컬 파일 <a href="#웹에서의-자동-저장과-로컬-파일" class="heading-anchor">#</a></h2>
+<p>브라우저는 디스크에서 선택한 파일에 다시 쓸 수 없습니다. Ingantt for Web이 &quot;로컬 파일&quot;에 저장할 때는 대신 파일의 새 복사본을 다운로드합니다. 이는 명시적인 <strong>Save</strong>에는 적절한 동작이지만 20초마다 일어나기를 바라는 동작은 아닙니다.</p>
+<p>따라서 <strong>Ingantt for Web은 로컬 파일에 자동 저장하지 않습니다.</strong> 브라우저에서 로컬 프로젝트 파일을 열었고 변경 사항이 자동으로 보관되기를 원한다면 <strong>Save file as</strong> → <strong>Save to new Google Drive file</strong>을 한 번 사용하십시오. 그 이후로는 자동 저장이 Drive 파일을 최신 상태로 유지합니다.</p>
+<p>이는 <a href="/ko/getting-started/edit-with-ai/">AI로 편집하기</a>에도 같은 방식으로 영향을 미칩니다. 자동 저장이 없으면 AI가 변경한 내용은 직접 저장하기 전까지 저장되지 않은 상태로 남으며, Ingantt는 세션이 시작되기 전에 이를 경고합니다.</p>
+<h2 id="웹에서-오프라인으로-작업하기">웹에서 오프라인으로 작업하기 <a href="#웹에서-오프라인으로-작업하기" class="heading-anchor">#</a></h2>
+<p><strong>File</strong> 메뉴의 <strong>Work offline (no autosave)</strong>는 현재 브라우저 탭의 자동 저장을 끕니다. 모든 변경 사항이 Google Drive로 전송되지 않게 하면서 편집을 계속하고 싶을 때 사용하십시오.</p>
+<p>알아 둘 두 가지:</p>
+<ul>
+<li>켜져 있는 동안에는 아무것도 저장되지 않으므로 탭을 닫기 전에 직접 저장하십시오. 켤 때 Ingantt가 이를 알려 줍니다.</li>
+<li>이 설정은 세션별로 적용됩니다. 페이지를 새로 고치거나 새 탭을 열면 자동 저장이 다시 켜진 상태로 시작됩니다. Android, iOS, Windows, macOS에서는 대신 <strong>Enable autosave</strong> 설정이 기억됩니다.</li>
+</ul>
+<h2 id="복사본-다운로드">복사본 다운로드 <a href="#복사본-다운로드" class="heading-anchor">#</a></h2>
+<p>웹에서 <strong>File</strong> → <strong>Download</strong> → <strong>Download XML</strong>은 프로젝트의 저장 위치를 바꾸지 않고 프로젝트 복사본을 컴퓨터에 저장합니다. 백업용으로, 또는 Microsoft Project 사용자에게 파일을 전달할 때 사용하십시오.</p>
+<p>PDF, PNG, CSV, XML, YAML, Markdown 등 다른 형식은 <a href="/ko/getting-started/import-export/">가져오기 및 내보내기</a>에서 다룹니다.</p>
+<h2 id="저장하지-않은-변경-사항이-있는-상태로-닫기">저장하지 않은 변경 사항이 있는 상태로 닫기 <a href="#저장하지-않은-변경-사항이-있는-상태로-닫기" class="heading-anchor">#</a></h2>
+<p>저장하지 않은 변경 사항이 있는 프로젝트를 닫으면 Ingantt가 <strong>Save changes to</strong> 메시지로 프로젝트의 변경 사항을 저장할지 묻고, 저장하지 않은 변경 사항은 사라진다고 경고합니다. 프로젝트를 휴지통으로 이동하기 전에도 같은 메시지가 표시됩니다.</p>
+<h2 id="ingantt에서-저장이-되지-않는-경우">Ingantt에서 저장이 되지 않는 경우 <a href="#ingantt에서-저장이-되지-않는-경우" class="heading-anchor">#</a></h2>
+<ul>
+<li><strong>&quot;View only mode as trial ended&quot;</strong> 또는 <strong>&quot;Subscription inactive&quot;</strong> — 프로젝트는 여전히 남아 있고 읽을 수 있지만, 구독이 활성화될 때까지 저장이 꺼져 있습니다. <a href="/ko/account/trial/">무료 체험</a> 및 <a href="/ko/account/subscription/">구독 및 결제</a>를 참조하십시오.</li>
+<li><strong>&quot;You are a viewer and cannot save&quot;</strong> — Google Drive 파일이 뷰어 또는 댓글 작성자 권한으로 공유되었습니다. 소유자에게 편집 권한을 요청하거나 <strong>Save file as</strong>로 자신의 복사본을 보관하십시오. <a href="/ko/ui/sharing/">프로젝트 공유</a>를 참조하십시오.</li>
+<li><strong>&quot;Error saving file to Google Drive&quot;</strong> — 대개 연결 문제이거나 Google 로그인이 만료된 경우입니다. 연결을 확인하고 다시 로그인하십시오. <a href="/ko/ui/files/">Google Drive 연동</a>을 참조하십시오.</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="목차"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

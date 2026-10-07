@@ -12,23 +12,23 @@ Le coût de chaque tâche est une combinaison de son propre coût fixe et des co
 
 ## Coûts des tâches récapitulatives
 
-Dans son champ **Cost**, chaque [tâche récapitulative](/fr/building-schedule/tasks/index.md#summary-tasks) affiche le coût total de toutes ses sous-tâches.
+Dans son champ **Cost**, chaque [tâche récapitulative](/fr/building-schedule/tasks/index.md#tâches-récapitulatives) affiche le coût total de toutes ses sous-tâches.
 
-Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des [ressources affectées](/fr/building-schedule/assignments/index.md#resource-assignments-and-units) et un **Fixed Cost**. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le **Cost** de la tâche récapitulative.
+Cependant, tout comme une tâche ordinaire, une tâche récapitulative peut avoir des [ressources affectées](/fr/building-schedule/assignments/index.md#affectations-de-ressources-et-unités) et un **Fixed Cost**. Ceux-ci s'ajoutent au coût total des sous-tâches, augmentant ainsi le **Cost** de la tâche récapitulative.
 
 *Tâche récapitulative **Cost** = coût total de toutes les sous-tâches + **Fixed Cost** de la tâche récapitulative + coûts des ressources affectées à la tâche récapitulative*
 
-Utilisez la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#root-summary-task) pour visualiser et gérer le coût total de l'ensemble de votre projet.
+Utilisez la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#tâche-récapitulative-racine) pour visualiser et gérer le coût total de l'ensemble de votre projet.
 
 ## Ressources budgétaires
 
-Une ressource peut être marquée comme ressource **Budget** dans la boîte de dialogue **Resource Properties**. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#root-summary-task).
+Une ressource peut être marquée comme ressource **Budget** dans la boîte de dialogue **Resource Properties**. Les ressources budgétaires représentent les montants budgétaires globaux alloués au niveau du projet et ne peuvent être affectées qu'à la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#tâche-récapitulative-racine).
 
 Les ressources budgétaires sont exclues :
 
 - De la planification
 - Des totaux de coûts
-- De la détection de surallocation
+- De la détection de surutilisation
 - Du nivellement des ressources
 
 Elles permettent un suivi budgétaire descendant, distinct des calculs de coûts ascendants.

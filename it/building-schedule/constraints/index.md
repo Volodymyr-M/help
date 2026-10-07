@@ -4,7 +4,7 @@ Alcune attività devono iniziare o finire in date specifiche — una consegna ar
 
 ## Come funzionano i vincoli
 
-Insieme alle dipendenze tra attività (collegamenti tra predecessori), il vincolo di un'attività definisce come l'attività viene pianificata.
+Insieme alle dipendenze tra attività (collegamenti ai predecessori), il vincolo di un'attività definisce come l'attività viene pianificata.
 
 I vincoli vengono impostati nella scheda **Advanced** della finestra **Task Properties**. Il vincolo predefinito è **As soon as possible**. Questo significa che l'attività viene posizionata il più vicino possibile alla data di inizio del progetto, nel rispetto delle dipendenze con le altre attività. Nei progetti pianificati dalla data di fine, il vincolo predefinito è invece **As late as possible**.
 
@@ -15,7 +15,7 @@ Gli altri vincoli (**Start no earlier than**, **Start no later than**, **Finish 
 | Vincolo                    | Descrizione                                                                                                                                   |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | **As soon as possible**    | L'attività viene pianificata non appena i predecessori lo consentono. Se non ci sono predecessori collegati, l'attività inizia all'inizio dell'attività di riepilogo genitore. |
-| **As late as possible**    | L'attività viene pianificata il più tardi possibile rispetto ai predecessori. Se non ci sono predecessori collegati, l'attività termina alla fine dell'attività di riepilogo genitore.    |
+| **As late as possible**    | L'attività viene pianificata il più tardi possibile consentito dai predecessori. Se non ci sono predecessori collegati, l'attività termina alla fine dell'attività di riepilogo genitore. |
 | **Start no earlier than**  | Se l'attività inizia dopo la data specificata a causa dei predecessori, non cambia nulla. Altrimenti, l'attività viene pianificata per iniziare alla data specificata. |
 | **Start no later than**    | Se i predecessori spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità. Altrimenti, l'attività viene pianificata per iniziare entro la data specificata. |
 | **Finish no earlier than** | Se l'attività termina dopo la data specificata a causa dei predecessori, non cambia nulla. Altrimenti, l'attività viene pianificata per terminare alla data specificata.|

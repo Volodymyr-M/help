@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -208,9 +228,33 @@
 <li><a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%9E%E3%83%8D%E3%82%B8%E3%83%A1%E3%83%B3%E3%83%88">アーンドバリュー</a>計算に使用するベースラインの指定</li>
 </ul>
 <h2 id="ベースラインと差異の列">ベースラインと差異の列 <a href="#ベースラインと差異の列" class="heading-anchor">#</a></h2>
-<p><strong>Options</strong>ダイアログを通じて、ベースライン列（<strong>Start</strong>、<strong>Finish</strong>、<strong>Duration</strong>、<strong>Work</strong>、<strong>Cost</strong>）および差異列（<strong>Start Variance</strong>、<strong>Finish Variance</strong>など）をタスクリストに追加できます。差異列は、現在のスケジュールと<a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3">アーンドバリューベースライン</a>との差を表示します。</p>
+<p><strong>Options</strong>ダイアログを通じて、ベースライン列と差異列をタスクリストに追加できます。合計で<strong>55のベースライン列</strong>と<strong>5つの差異列</strong>があります。</p>
+<h3 id="55のベースライン列">55のベースライン列 <a href="#55のベースライン列" class="heading-anchor">#</a></h3>
+<p>Inganttは<strong>11のベースライン</strong>を保存します：番号なしの<strong>Baseline</strong>と、<strong>Baseline 1</strong>から<strong>Baseline 10</strong>までです。それぞれに同じ5つのタスク列があります：</p>
+<ul>
+<li>Baseline Start</li>
+<li>Baseline Finish</li>
+<li>Baseline Duration</li>
+<li>Baseline Work</li>
+<li>Baseline Cost</li>
+</ul>
+<p>11ベースライン × 5フィールド = <strong>55のベースライン列</strong>で、すべてタスクテーブルの列選択から利用できます。番号なしのセットは単純な名前（<em>Baseline Start</em>）で、番号付きのセットには番号が付きます（<em>Baseline 3 Start</em>）。</p>
+<h3 id="5つの差異列">5つの差異列 <a href="#5つの差異列" class="heading-anchor">#</a></h3>
+<p>差異列は計算値（現在のスケジュール − ベースライン）で、次の5つがあります：</p>
+<ul>
+<li>Start Variance</li>
+<li>Finish Variance</li>
+<li>Duration Variance</li>
+<li>Work Variance</li>
+<li>Cost Variance</li>
+</ul>
+<p>5つの列は1セットのみで、ベースラインごとにセットがあるわけではありません。差異列は、現在のスケジュールを<strong>1つ</strong>のベースライン、つまり<strong>Project → Earned Value Options</strong>で<a href="/ja/tracking/earned-value/#%E3%82%A2%E3%83%BC%E3%83%B3%E3%83%89%E3%83%90%E3%83%AA%E3%83%A5%E3%83%BC%E3%83%99%E3%83%BC%E3%82%B9%E3%83%A9%E3%82%A4%E3%83%B3">アーンドバリューベースライン</a>として選択されているベースライン（デフォルトは番号なしのBaseline）と比較します。この設定を変更すると、すべての差異列が選択したベースラインに対して再計算されます。選択したベースラインが設定されていないタスクでは、差異はゼロではなく空欄になります。</p>
+<h2 id="ベースラインの保存場所">ベースラインの保存場所 <a href="#ベースラインの保存場所" class="heading-anchor">#</a></h2>
+<p>ベースラインは別のファイルではなく、<strong>プロジェクトファイルの内部</strong>に保存されます。プロジェクトを保存すると、そのベースラインも保存されます。</p>
+<p>12個目のベースラインを設定しようとすると、Inganttは<em>All baseline slots are in use. Clear one in the Baselines dialog first.</em>と表示します。<strong>Project → Baselines</strong>を開いて、いずれかをクリアしてください。</p>
+<p>ベースラインは、ファイル自体の経時的な記録である<a href="/ja/ui/version-history/">バージョン履歴</a>とは異なります。以前の計画に戻すにはバージョン履歴を、現在の計画がどれだけずれたかを測定するにはベースラインを使用してください。</p>
 <h2 id="中間計画">中間計画 <a href="#中間計画" class="heading-anchor">#</a></h2>
-<p>中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（<strong>Start</strong>と<strong>Finish</strong>の日付のみ）を保存します。Inganttは最大10の中間計画（<code>Interim Plan 1</code>から<code>Interim Plan 10</code>）を��ポートしています。</p>
+<p>中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（<strong>Start</strong>と<strong>Finish</strong>の日付のみ）を保存します。Inganttは最大10の中間計画（<code>Interim Plan 1</code>から<code>Interim Plan 10</code>）をサポートしています。</p>
 <p>中間計画の設定とクリアは、<strong>Project</strong>メニューの<strong>Interim Plans</strong>項目から行います。タスクリストに中間計画の日付を列として表示できます。</p>
 
     </main>

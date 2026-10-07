@@ -6,13 +6,13 @@
 
 Die **Vorgangstafel**-Ansicht zeigt Vorgänge als Karten, die in Spalten organisiert sind, die Arbeitsablaufphasen darstellen (Kanban-Stil).
 
-Neue Projekte starten mit drei Standardspalten: „Nicht begonnen" (0 %), „In Bearbeitung" (50 %) und „Abgeschlossen" (100 %). Jede Spalte hat eine Zuordnung zu % abgeschlossen — wenn Sie eine Karte in eine Spalte ziehen, wird der Fertigstellungsgrad des Vorgangs automatisch aktualisiert.
+Neue Projekte starten mit drei Standardspalten: „Nicht begonnen“ (0 %), „In Bearbeitung“ (50 %) und „Abgeschlossen“ (100 %). Jede Spalte hat eine Zuordnung zu % Abgeschlossen — wenn Sie eine Karte in eine Spalte ziehen, wird der Fertigstellungsgrad des Vorgangs automatisch aktualisiert.
 
 Sie können Spalten hinzufügen, bearbeiten, umbenennen, neu anordnen und löschen. Jede Spalte hat eine Schaltfläche **Vorgang hinzufügen** am unteren Rand zum direkten Erstellen von Vorgängen in dieser Phase.
 
-Nur nicht-Sammelvorgänge, aktive Vorgänge mit aktiviertem „Auf Tafel anzeigen" erscheinen auf der Tafel. Die Einstellung „Auf Tafel anzeigen" ist auf dem Reiter **Visuell** des Dialogs **Vorgangseigenschaften** verfügbar.
+Auf der Tafel erscheinen nur aktive Vorgänge, die keine Sammelvorgänge sind und bei denen „Auf Tafel anzeigen“ aktiviert ist. Die Einstellung „Auf Tafel anzeigen“ ist auf dem Reiter **Visuell** des Dialogs **Vorgangseigenschaften** verfügbar.
 
-> Ziehen Sie Vorgangskarten zwischen Spalten, um ihren Status zu ändern. Wenn sich der % abgeschlossen eines Vorgangs anderweitig ändert (über Dialog, Inline-Bearbeitung oder Projekt aktualisieren), verschiebt sich die Karte automatisch in die passende Spalte.
+> Ziehen Sie Vorgangskarten zwischen Spalten, um ihren Status zu ändern. Wenn sich der % Abgeschlossen-Wert eines Vorgangs anderweitig ändert (über Dialog, Inline-Bearbeitung oder Projekt aktualisieren), verschiebt sich die Karte automatisch in die passende Spalte.
 
 ## Netzplandiagramm
 
@@ -21,7 +21,7 @@ Die **Netzplandiagramm**-Ansicht zeigt Vorgänge als rechteckige Knoten, die in 
 - Normale Vorgänge zeigen Nr., Dauer, Start-/Endtermine und Ressourcen
 - Sammelvorgänge zeigen Nr., Dauer, Start-/Endtermine und Fertigstellungsgrad
 - Meilensteine zeigen Nr. und Startdatum
-- Kritische Pfad-Vorgänge haben rote Überschriften und Rahmen
+- Vorgänge auf dem kritischen Pfad haben rote Überschriften und Rahmen
 - Der Fortschritt wird durch diagonale Linienüberlagerungen angezeigt: eine Linie für laufende Vorgänge, gekreuzte Linien für abgeschlossene Vorgänge
 
 Sie können Sammelvorgänge auf- und zuklappen, zum Auswählen klicken, zum Bearbeiten doppelklicken und per Rechtsklick das Kontextmenü aufrufen. Abhängigkeitspfeile werden zwischen den Knoten für alle vier Verknüpfungstypen gezeichnet.
@@ -51,6 +51,6 @@ Schalten Sie die Zeitachse über das Menü **Ansicht** ein oder aus.
 
 ## Überwachungs-Gantt
 
-Die **Überwachungs-Gantt**-Ansicht ähnelt der Standard-Vorgangsansicht, jedoch mit immer aktivierter Hervorhebung des kritischen Pfads und angezeigtem Basisplan 0, wenn dieser gespeichert wurde. Wenn Sie die Überwachungs-Gantt-Ansicht verlassen, werden die Einstellungen für die Sichtbarkeit des kritischen Pfads und des Basisplans auf ihren vorherigen Zustand zurückgesetzt.
+Die **Überwachungs-Gantt**-Ansicht ähnelt der Standardansicht Vorgänge, jedoch mit immer aktivierter Hervorhebung des kritischen Pfads und angezeigtem Basisplan 0, wenn dieser gespeichert wurde. Wenn Sie die Überwachungs-Gantt-Ansicht verlassen, werden die Einstellungen für die Sichtbarkeit des kritischen Pfads und des Basisplans auf ihren vorherigen Zustand zurückgesetzt.
 
 Verwenden Sie den Überwachungs-Gantt zur Überwachung des Projektfortschritts im Vergleich zum Basisplan.

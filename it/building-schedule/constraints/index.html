@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Vincoli - Costruire un cronogramma - Guida di Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (Il più presto possibile) agli inflessibili (Deve iniziare il, Deve finire il).">
+  <meta name="description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (As soon as possible) agli inflessibili (Must start on, Must finish on).">
   <link rel="canonical" href="https://help.ingantt.com/it/building-schedule/constraints/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Vincoli">
-  <meta property="og:description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (Il più presto possibile) agli inflessibili (Deve iniziare il, Deve finire il).">
+  <meta property="og:description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (As soon as possible) agli inflessibili (Must start on, Must finish on).">
   <meta property="og:url" content="https://help.ingantt.com/it/building-schedule/constraints/">
   <meta property="og:site_name" content="Guida di Ingantt">
   <meta property="og:locale" content="it_IT">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Vincoli">
-  <meta name="twitter:description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (Il più presto possibile) agli inflessibili (Deve iniziare il, Deve finire il).">
+  <meta name="twitter:description" content="Controlla la pianificazione delle attività con otto tipi di vincolo, dai flessibili (As soon as possible) agli inflessibili (Must start on, Must finish on).">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/building-schedule/constraints/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/building-schedule/constraints/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/" class="active" aria-current="page">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -193,7 +213,7 @@
       <h1 id="vincoli">Vincoli <a href="#vincoli" class="heading-anchor">#</a></h1>
 <p>Alcune attività devono iniziare o finire in date specifiche — una consegna arriva martedì, un permesso scade venerdì. I vincoli ti permettono di bloccare le date dove necessario mantenendo il resto del cronogramma flessibile.</p>
 <h2 id="come-funzionano-i-vincoli">Come funzionano i vincoli <a href="#come-funzionano-i-vincoli" class="heading-anchor">#</a></h2>
-<p>Insieme alle dipendenze tra attività (collegamenti tra predecessori), il vincolo di un'attività definisce come l'attività viene pianificata.</p>
+<p>Insieme alle dipendenze tra attività (collegamenti ai predecessori), il vincolo di un'attività definisce come l'attività viene pianificata.</p>
 <p>I vincoli vengono impostati nella scheda <strong>Advanced</strong> della finestra <strong>Task Properties</strong>. Il vincolo predefinito è <strong>As soon as possible</strong>. Questo significa che l'attività viene posizionata il più vicino possibile alla data di inizio del progetto, nel rispetto delle dipendenze con le altre attività. Nei progetti pianificati dalla data di fine, il vincolo predefinito è invece <strong>As late as possible</strong>.</p>
 <p>Esistono due vincoli che forzano l'attività a iniziare o finire alla data specificata indipendentemente dalle dipendenze. Questi vincoli sono chiamati <em>vincoli inflessibili</em> e sono <strong>Must start on</strong> e <strong>Must finish on</strong>. Usa questi vincoli solo se sei certo che siano necessari.</p>
 <p>Gli altri vincoli (<strong>Start no earlier than</strong>, <strong>Start no later than</strong>, <strong>Finish no earlier than</strong> e <strong>Finish no later than</strong>) sono chiamati <em>flessibili</em>, poiché rispettano le dipendenze tra attività. Se le dipendenze spingono l'attività oltre la data del vincolo, la data determinata dalla dipendenza ha la priorità.</p>
@@ -211,7 +231,7 @@
 </tr>
 <tr>
 <td><strong>As late as possible</strong></td>
-<td>L'attività viene pianificata il più tardi possibile rispetto ai predecessori. Se non ci sono predecessori collegati, l'attività termina alla fine dell'attività di riepilogo genitore.</td>
+<td>L'attività viene pianificata il più tardi possibile consentito dai predecessori. Se non ci sono predecessori collegati, l'attività termina alla fine dell'attività di riepilogo genitore.</td>
 </tr>
 <tr>
 <td><strong>Start no earlier than</strong></td>

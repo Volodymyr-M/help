@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -240,9 +260,20 @@
 <td><strong>Черепаха</strong></td>
 <td>Згладжена крива дзвону — рівномірніший розподіл</td>
 </tr>
+<tr>
+<td><strong>Контурний</strong></td>
+<td>Ваш власний поденний розподіл. Встановлюється автоматично, коли ви редагуєте трудовитрати в поданні використання; його не можна вибрати зі списку.</td>
+</tr>
 </tbody>
 </table>
 <p>Контури трудовитрат впливають на розподіл роботи протягом часових періодів та зберігаються при відкритті та збереженні файлів проектів.</p>
+<h3 id="контур-контурний">Контур «Контурний» <a href="#контур-контурний" class="heading-anchor">#</a></h3>
+<p><strong>Контурний</strong> — це власний контур, і він поводиться інакше, ніж решта вісім. Його не можна вибрати зі списку для призначення, яке його ще не має — цей варіант вимкнено. Він з'являється, коли ви <strong>редагуєте трудовитрати безпосередньо в комірці подання <a href="/uk/views/resource-views/">Використання ресурсів або Використання завдань</a></strong>: щойно ви вводите поденне значення трудовитрат, контур цього призначення стає <em>Контурним</em> і використовує введений вами розподіл.</p>
+<p>Варто знати два наслідки:</p>
+<ul>
+<li><strong>Перемикання з «Контурного» на інший контур відкидає введений вручну розподіл.</strong> Виберіть будь-який з інших восьми контурів — і введені поденні значення буде очищено. Вони не зберігаються й не відновлюються, якщо ви перемкнетеся назад.</li>
+<li><strong>Контурні трудовитрати зберігаються при обміні через формат Microsoft Project.</strong> Імпорт зчитує поденний розподіл трудовитрат у призначення, а експорт записує його назад. План, що надійшов із Microsoft Project із відредагованим вручну контуром, зберігає його.</li>
+</ul>
 <h2 id="затримка-призначення">Затримка призначення <a href="#затримка-призначення" class="heading-anchor">#</a></h2>
 <p>Кожне призначення ресурсу на завдання має властивість <strong>Затримка</strong>, що зсуває початок роботи ресурсу відносно дати початку завдання. Наприклад, якщо завдання починається в понеділок, а ресурс має затримку 2 дні, цей ресурс починає працювати в середу.</p>
 <p>Затримка встановлюється в діалозі <strong>Редагування призначення ресурсу</strong> і застосовується лише до призначень робочих ресурсів. Її можна використовувати для рознесення початку роботи ресурсів на завданні.</p>

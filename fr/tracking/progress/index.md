@@ -17,7 +17,7 @@ Lorsque vous mettez à jour le % Complete :
 
 Le **% Complete** d'une tâche récapitulative est calculé comme une moyenne pondérée par la durée de toutes ses sous-tâches non récapitulatives descendantes.
 
-> Vous pouvez également suivre l'avancement à l'aide de la commande [Update Project](#update-project) pour définir le % Complete de plusieurs tâches à la fois en fonction d'une date de référence.
+> Vous pouvez également suivre l'avancement à l'aide de la commande [Update Project](#update-project) pour définir le % Complete de plusieurs tâches à la fois jusqu'à une date limite indiquée.
 
 ## Update Project
 
@@ -27,8 +27,8 @@ La commande **Update Project** permet des opérations de suivi de l'avancement e
 
 Marquez les tâches comme achevées jusqu'à une date spécifiée :
 
-- **Proportionnel (0 %–100 %)** — Calcule le pourcentage d'achèvement en fonction de la part de la durée ouvrée de chaque tâche antérieure à la date de référence.
-- **Tout ou rien (0 % ou 100 %)** — Définit les tâches à 0 % ou 100 % selon qu'elles se terminent ou non avant la date de référence.
+- **Proportional (0%–100%)** — Calcule le pourcentage d'achèvement en fonction de la part de la durée ouvrée de chaque tâche antérieure à la date limite indiquée.
+- **All-or-nothing (0% or 100%)** — Définit les tâches à 0 % ou 100 % selon qu'elles se terminent ou non avant la date limite indiquée.
 
 ### Replanifier le travail non achevé
 

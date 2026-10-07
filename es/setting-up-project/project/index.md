@@ -10,16 +10,16 @@ En web y Windows, al hacer clic en el nombre del proyecto en el encabezado tambi
 
 ## Fecha de inicio y dirección de planificación
 
-De forma predeterminada, su proyecto se planifica desde la Fecha de inicio, que puede establecer en el campo **Fecha de inicio del proyecto** del diálogo **Propiedades del proyecto**.
+De forma predeterminada, su proyecto se planifica desde la fecha de inicio, que puede establecer en el campo **Fecha de inicio del proyecto** del diálogo **Propiedades del proyecto**.
 
-Para planificar su proyecto desde la Fecha de fin, cambie a **Planificar desde la fecha de fin** en el diálogo **Propiedades del proyecto** y establezca la **Fecha de fin del proyecto**.
+Para planificar su proyecto desde la Fecha de finalización, cambie a **Planificar desde la fecha de finalización** en el diálogo **Propiedades del proyecto** y establezca la **Fecha de finalización del proyecto**.
 
-La pestaña **General** del diálogo **Propiedades del proyecto** muestra tanto la Fecha de inicio como la Fecha de fin. Cuando se programa desde el inicio, la Fecha de inicio es editable y la Fecha de fin muestra el valor calculado. Cuando se programa desde el fin, la Fecha de fin es editable y la Fecha de inicio muestra el valor calculado.
+La pestaña **General** del diálogo **Propiedades del proyecto** muestra tanto la Fecha de inicio como la Fecha de finalización. Cuando se programa desde el inicio, la Fecha de inicio es editable y la Fecha de finalización muestra el valor calculado. Cuando se programa desde el fin, la Fecha de finalización es editable y la Fecha de inicio muestra el valor calculado.
 
 Tenga en cuenta:
 
 - Para proyectos planificados desde la Fecha de inicio, la [restricción](/es/building-schedule/constraints/index.md#restricciones) predeterminada para las tareas recién creadas es **Lo antes posible**.
-- Para proyectos planificados desde la Fecha de fin, la restricción predeterminada para las tareas recién creadas es **Lo más tarde posible**.
+- Para proyectos planificados desde la Fecha de finalización, la restricción predeterminada para las tareas recién creadas es **Lo más tarde posible**.
 
 Al cambiar entre planificación desde el Inicio y el Fin, las restricciones de las tareas existentes no se cambian excepto para las [tareas de resumen](/es/building-schedule/tasks/index.md#tareas-de-resumen), incluyendo la [tarea de resumen raíz](/es/building-schedule/tasks/index.md#tarea-de-resumen-raíz).
 

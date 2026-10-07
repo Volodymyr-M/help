@@ -4,7 +4,7 @@ Configurez la date de début de votre projet, les horaires de travail et les rè
 
 ## Nom du projet
 
-Définissez le nom de votre projet dans le champ **Name** de l'onglet **General** de la boîte de dialogue **Project Properties**. Ce nom est également utilisé par la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#root-summary-task) de votre projet.
+Définissez le nom de votre projet dans le champ **Name** de l'onglet **General** de la boîte de dialogue **Project Properties**. Ce nom est également utilisé par la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#tâche-récapitulative-racine) de votre projet.
 
 Sur le web et Windows, cliquer sur le nom du projet dans l'en-tête ouvre également la boîte de dialogue **Project Properties**.
 
@@ -18,10 +18,10 @@ L'onglet **General** de la boîte de dialogue **Project Properties** affiche à 
 
 Points importants :
 
-- Pour les projets planifiés depuis la date de début, la [contrainte](/fr/building-schedule/constraints/index.md#constraints) par défaut des tâches nouvellement créées est **As soon as possible**.
+- Pour les projets planifiés depuis la date de début, la [contrainte](/fr/building-schedule/constraints/index.md#contraintes) par défaut des tâches nouvellement créées est **As soon as possible**.
 - Pour les projets planifiés depuis la date de fin, la contrainte par défaut des tâches nouvellement créées est **As late as possible**.
 
-Lors du basculement entre la planification depuis le début et depuis la fin, les contraintes des tâches existantes ne sont pas modifiées, à l'exception des [tâches récapitulatives](/fr/building-schedule/tasks/index.md#summary-tasks), y compris la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#root-summary-task).
+Lors du basculement entre la planification depuis le début et depuis la fin, les contraintes des tâches existantes ne sont pas modifiées, à l'exception des [tâches récapitulatives](/fr/building-schedule/tasks/index.md#tâches-récapitulatives), y compris la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#tâche-récapitulative-racine).
 
 Pour les tâches récapitulatives :
 
@@ -36,7 +36,7 @@ La modification de cette propriété met à jour l'interface utilisateur, y comp
 
 ## Heures par jour, jours par semaine, jours par mois
 
-Dans Ingantt, vous pouvez spécifier la [durée](/fr/building-schedule/task-properties/index.md#duration), le [travail](/fr/building-schedule/task-properties/index.md#work) ou le [décalage](/fr/building-schedule/dependencies/index.md#lag-and-lead-time) en heures, jours, semaines et mois.
+Dans Ingantt, vous pouvez spécifier la [durée](/fr/building-schedule/task-properties/index.md#durée), le [travail](/fr/building-schedule/task-properties/index.md#travail) ou le [décalage](/fr/building-schedule/dependencies/index.md#décalage-positif-et-négatif) en heures, jours, semaines et mois.
 
 Par exemple, définir la durée d'une tâche à 2 jours signifie 16 heures avec les paramètres par défaut.
 

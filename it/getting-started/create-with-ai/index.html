@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/" class="active" aria-current="page">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -195,7 +215,7 @@
 <h2 id="creare-un-progetto">Creare un progetto <a href="#creare-un-progetto" class="heading-anchor">#</a></h2>
 <p>Per creare un cronogramma di progetto con l'IA:</p>
 <ol>
-<li>Fai clic sul pulsante <strong>+</strong> nella schermata Progetti. Se stai già modificando un progetto, apri invece il menu <strong>File</strong>.</li>
+<li>Fai clic sul pulsante <strong>+</strong> nella schermata dei progetti. Se stai già modificando un progetto, apri invece il menu <strong>File</strong>.</li>
 <li>Scegli <strong>Create new with AI</strong>.</li>
 <li>Inserisci una descrizione del tuo progetto nella finestra di dialogo.</li>
 <li>Fai clic su <strong>CREATE</strong>.</li>
@@ -205,7 +225,7 @@
 <p>La descrizione può essere generica come <em>&quot;Sviluppo di un'app iOS per la consegna di cibo&quot;</em> o dettagliata quanto vuoi.</p>
 <p>Ad esempio, il progetto di ristrutturazione che <a href="/it/getting-started/getting-started/">Per iniziare</a> illustra passo dopo passo produce lo stesso cronogramma a partire da un prompt come:</p>
 <blockquote>
-<p><em>&quot;Il mio progetto di ristrutturazione&quot; inizia il 1 gennaio 2027. L'Imbianchino dipinge le pareti per 2 giorni, poi il Falegname installa i mobili della cucina per 2 giorni dopo. L'Imbianchino ha un giorno di ferie il 4 gennaio 2027. Considera il 6 gennaio 2027 come festività per tutti.</em></p>
+<p><em>&quot;Il mio progetto di ristrutturazione&quot; inizia il 1° gennaio 2027. L'Imbianchino dipinge le pareti per 2 giorni, poi, subito dopo, il Falegname installa i mobili della cucina per 2 giorni. L'Imbianchino ha un giorno di ferie il 4 gennaio 2027. Considera il 6 gennaio 2027 come festività per tutti.</em></p>
 </blockquote>
 <p>Se il tuo progetto è grande, prova a suddividerlo in sotto-progetti e a generare piani di progetto separati per ciascuno.</p>
 <p>I risultati possono variare tra un'esecuzione e l'altra, quindi se non sei soddisfatto del risultato, riprova.</p>

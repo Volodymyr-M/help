@@ -12,7 +12,7 @@ Im Web und unter Windows öffnet ein Klick auf den Projektnamen in der Kopfzeile
 
 Standardmäßig wird Ihr Projekt vom Startdatum aus geplant, das Sie im Feld **Projektstartdatum** des Dialogs **Projekteigenschaften** festlegen können.
 
-Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu **Vom Endtermin planen** im Dialog **Projekteigenschaften** und legen Sie den **Projektendtermin** fest.
+Um Ihr Projekt stattdessen vom Enddatum aus zu planen, wechseln Sie zu **Vom Enddatum planen** im Dialog **Projekteigenschaften** und legen Sie das **Projektenddatum** fest.
 
 Der Reiter **Allgemein** des Dialogs **Projekteigenschaften** zeigt sowohl das Startdatum als auch das Enddatum an. Bei der Planung vom Startdatum ist das Startdatum bearbeitbar und das Enddatum zeigt den berechneten Wert an. Bei der Planung vom Enddatum ist das Enddatum bearbeitbar und das Startdatum zeigt den berechneten Wert an.
 
@@ -65,5 +65,5 @@ Die Standard-Startzeit (8:00 Uhr) und Endzeit (17:00 Uhr) steuern, wann die Arbe
 Der Reiter **Planung** des Dialogs **Projekteigenschaften** enthält Optionen, die steuern, wie Vorgänge geplant werden:
 
 - **Einschränkungstermine einhalten** — Wenn aktiviert, haben halbflexible Einschränkungen (wie Anfang nicht später als) Vorrang vor Abhängigkeiten, was möglicherweise negativen Puffer erzeugt. Wenn deaktiviert (die Standardeinstellung), haben Abhängigkeiten immer Vorrang.
-- **Laufende Vorgänge teilen** — Wenn aktiviert (die Standardeinstellung), kann der Planer automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.
+- **Laufende Vorgänge teilen** — Wenn aktiviert (die Standardeinstellung), kann der Planungsalgorithmus automatisch Vorgänge teilen, die Fortschritt außerhalb der Reihenfolge haben.
 - **Abgeschlossene/verbleibende Teile verschieben** — Vier Optionen, die steuern, wie abgeschlossene und verbleibende Arbeitsanteile relativ zum Statusdatum neu positioniert werden. Diese helfen, Ihren Terminplan aktuell zu halten, indem abgeschlossene Arbeit zum Statusdatum zurück oder verbleibende Arbeit nach vorne verschoben wird.

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>プロジェクトの共有 - ユーザーインターフェース - Ingantt ヘルプ</title>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <meta name="description" content="Google Driveの計画を特定の人、組織、またはリンクを知っている全員と共有する方法と、各役割でできることを説明します。">
+  <link rel="canonical" href="https://help.ingantt.com/ja/ui/sharing/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="プロジェクトの共有">
+  <meta property="og:description" content="Google Driveの計画を特定の人、組織、またはリンクを知っている全員と共有する方法と、各役割でできることを説明します。">
+  <meta property="og:url" content="https://help.ingantt.com/ja/ui/sharing/">
+  <meta property="og:site_name" content="Ingantt ヘルプ">
+  <meta property="og:locale" content="ja_JP">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="プロジェクトの共有">
+  <meta name="twitter:description" content="Google Driveの計画を特定の人、組織、またはリンクを知っている全員と共有する方法と、各役割でできることを説明します。">
+
+  <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/sharing/">
+  <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/sharing/">
+  <link rel="alternate" hreflang="es" href="https://help.ingantt.com/es/ui/sharing/">
+  <link rel="alternate" hreflang="fr" href="https://help.ingantt.com/fr/ui/sharing/">
+  <link rel="alternate" hreflang="it" href="https://help.ingantt.com/it/ui/sharing/">
+  <link rel="alternate" hreflang="pt" href="https://help.ingantt.com/pt/ui/sharing/">
+  <link rel="alternate" hreflang="uk" href="https://help.ingantt.com/uk/ui/sharing/">
+  <link rel="alternate" hreflang="ja" href="https://help.ingantt.com/ja/ui/sharing/">
+  <link rel="alternate" hreflang="ko" href="https://help.ingantt.com/ko/ui/sharing/">
+  <link rel="alternate" hreflang="x-default" href="https://help.ingantt.com/en/ui/sharing/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/hljs-light.css" id="hljs-light">
+  <link rel="stylesheet" href="/assets/css/hljs-dark.css" id="hljs-dark" disabled>
+  <script>
+    (function() {
+      var theme = localStorage.getItem('theme');
+      if (!theme) {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+      if (theme === 'dark') {
+        document.getElementById('hljs-light').disabled = true;
+        document.getElementById('hljs-dark').disabled = false;
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">コンテンツへスキップ</a>
+  <header class="header">
+    <button class="hamburger" aria-label="ナビゲーションの切り替え" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="/ja/" class="logo-link">
+      <img src="/assets/img/logo.png" alt="" class="logo-icon" width="28" height="28">
+      <span class="site-title">Ingantt ヘルプ</span>
+    </a>
+    <div class="search-wrapper" role="search">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
+      <div class="search-results" data-loading="読み込み中…" hidden></div>
+    </div>
+    <div class="header-controls">
+      <button class="search-toggle" aria-label="検索">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/><path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <button class="theme-toggle" aria-label="テーマの切り替え" title="ライト/ダークテーマの切り替え">
+  <svg class="icon-sun" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+  <svg class="icon-moon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<select class="lang-select" aria-label="言語">
+  <option value="en" data-first-page="/en/getting-started/overview/">English</option>
+  <option value="de" data-first-page="/de/getting-started/overview/">Deutsch</option>
+  <option value="es" data-first-page="/es/getting-started/overview/">Español</option>
+  <option value="fr" data-first-page="/fr/getting-started/overview/">Français</option>
+  <option value="it" data-first-page="/it/getting-started/overview/">Italiano</option>
+  <option value="pt" data-first-page="/pt/getting-started/overview/">Português</option>
+  <option value="uk" data-first-page="/uk/getting-started/overview/">Українська</option>
+  <option value="ja" data-first-page="/ja/getting-started/overview/" selected>日本語</option>
+  <option value="ko" data-first-page="/ko/getting-started/overview/">한국어</option>
+</select>
+
+    </div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar" aria-label="ドキュメントナビゲーション">
+      <div class="sidebar-nav">
+        <div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    はじめに
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
+    <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
+    <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
+    <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
+    <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    プロジェクトのセットアップ
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/setting-up-project/project/">プロジェクトのプロパティ</a></li>
+    <li><a href="/ja/setting-up-project/calendars/">カレンダー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    スケジュールの構築
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
+    <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
+    <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
+    <li><a href="/ja/building-schedule/constraints/">制約</a></li>
+    <li><a href="/ja/building-schedule/resources/">リソース</a></li>
+    <li><a href="/ja/building-schedule/assignments/">割り当て</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    分析と調整
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
+    <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
+    <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    コスト計画
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/planning-costs/planning-costs/">コストの理解</a></li>
+    <li><a href="/ja/planning-costs/setting-up-costs/">コストの設定</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    進捗管理
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/tracking/baselines/">ベースライン</a></li>
+    <li><a href="/ja/tracking/progress/">進捗の追跡</a></li>
+    <li><a href="/ja/tracking/actuals/">実績値</a></li>
+    <li><a href="/ja/tracking/earned-value/">アーンドバリュー</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ビュー
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/views/gantt/">ガントチャート</a></li>
+    <li><a href="/ja/views/task-views/">タスクビュー</a></li>
+    <li><a href="/ja/views/resource-views/">リソースビュー</a></li>
+    <li><a href="/ja/views/filtering/">タスクのフィルタリング</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="true">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    ユーザーインターフェース
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/ui/ui/">追加と選択</a></li>
+    <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/" class="active" aria-current="page">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
+    <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
+  </ul>
+</div>
+
+      </div>
+      <div class="sidebar-controls">
+        <a href="mailto:support@ingantt.com" class="email-link" aria-label="サポートに問い合わせ" title="サポートに問い合わせ">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M2 7l10 7 10-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <span class="email-link-text">サポートに問い合わせ</span>
+</a>
+
+      </div>
+    </nav>
+    <main id="main-content" class="content">
+      <h1 id="プロジェクトの共有">プロジェクトの共有 <a href="#プロジェクトの共有" class="heading-anchor">#</a></h1>
+<p>Google Driveに保存されたInganttプロジェクトは、他のDriveファイルと同じ方法で共有できます。指定した人、組織、またはリンクを知っている全員と共有できます。Webでは、これらすべてをIngantt内から行えます。</p>
+<h2 id="はじめる前に">はじめる前に <a href="#はじめる前に" class="heading-anchor">#</a></h2>
+<p>共有はGoogle Driveのファイルでのみ機能します。Googleにサインインし、プロジェクトをDriveに保存している必要があります。デバイス上のローカルファイルにあるプロジェクトには共有するものがありません。<a href="/ja/getting-started/saving/">プロジェクトの保存</a>をご覧ください。</p>
+<blockquote>
+<p><strong>Share</strong>ボタンはIngantt for Webの機能です。Android、iOS、Windows、macOSでは、代わりにGoogle Driveからファイルを共有してください。Driveを開き、Inganttファイルを見つけて、Drive自体の<strong>Share</strong>コマンドを使用します。権限はいずれの場合もDriveファイル上に存在するため、結果は同じです。</p>
+</blockquote>
+<h2 id="特定の人との共有">特定の人との共有 <a href="#特定の人との共有" class="heading-anchor">#</a></h2>
+<ol>
+<li>プロジェクトを開き、ヘッダーの<strong>Share</strong>をクリックするか、<strong>File</strong>メニューの<strong>Share</strong>を選択します。<strong>Share on Google Drive</strong>ダイアログが開きます。</li>
+<li><strong>People with access</strong>の下に、すでにアクセス権を持つ全員が、オーナーを先頭に表示されます。</li>
+<li><strong>Add</strong>をクリックし、相手のメールアドレスを入力し、付与する役割を選択して確定します。</li>
+<li>ダイアログを閉じます。Inganttは新しい権限をDriveに保存し、<em>Access updated</em>と確認表示します。</li>
+</ol>
+<p>役割はGoogle Driveの役割です：</p>
+<table>
+<thead>
+<tr>
+<th>役割</th>
+<th>できること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Viewer</strong></td>
+<td>プロジェクトを開いて閲覧できます。変更の保存はできません。</td>
+</tr>
+<tr>
+<td><strong>Commenter</strong></td>
+<td>Viewerと同じに加え、Google Driveでファイルにコメントできます。変更の保存はできません。</td>
+</tr>
+<tr>
+<td><strong>Editor</strong></td>
+<td>プロジェクトを開き、変更を保存できます。</td>
+</tr>
+<tr>
+<td><strong>Owner</strong></td>
+<td>ファイルの削除とオーナー権限の移行を含む、すべての操作。</td>
+</tr>
+</tbody>
+</table>
+<p>役割を変更するには、相手の名前の隣で別の役割を選択します。削除するには、その行を削除します。</p>
+<blockquote>
+<p>相手が実際にGoogleにサインインできるアドレスを入力してください。アドレスがGmailまたはGoogle Workspaceのものであることを確認できない場合、Inganttは警告します。Googleアカウントのないアドレスに対するDrive共有では、相手はプロジェクトを開けないためです。</p>
+</blockquote>
+<h2 id="一般的なアクセス-リンクと組織">一般的なアクセス — リンクと組織 <a href="#一般的なアクセス-リンクと組織" class="heading-anchor">#</a></h2>
+<p><strong>General access</strong>は、個別に指定していない全員を制御します：</p>
+<ul>
+<li><strong>Restricted</strong> — <strong>People with access</strong>に一覧表示されている人のみ。これがデフォルトです。</li>
+<li><strong>Anyone with the link</strong> — リンクを知っている人なら誰でも。役割（Viewer、Commenter、またはEditor）を選択します。</li>
+<li><strong>Domain</strong> — Google Workspace組織の全員。役割を選択します。このオプションは、プロジェクトのオーナーがWorkspaceドメインに属している場合にのみ表示され、個人のGmailアカウントでは提供されません。</li>
+</ul>
+<p><strong>Copy link</strong>は、プロジェクトへのGoogle Driveリンクをコピーします。アクセス権が許す人なら誰でも、そのリンクを開いてInganttで計画を編集できます。</p>
+<p><strong>Share</strong>ボタンのツールチップで現在の状態が一目でわかります。<em>Private — only you can access</em>、<em>Shared with specific people</em>、<em>Anyone with the link can view/comment/edit</em>、またはドメインに対する同等の表示です。</p>
+<h2 id="アクセス権を変更できる人">アクセス権を変更できる人 <a href="#アクセス権を変更できる人" class="heading-anchor">#</a></h2>
+<p>ファイルの<strong>オーナー</strong>だけが、常にアクセス権を管理できます。<strong>編集者</strong>もアクセス権を管理できますが、オーナーがGoogle Driveでそれをオフにしている場合は除きます。</p>
+<p>閲覧者またはコメント投稿者として共有されたプロジェクトでダイアログを開くと、<strong>You are a viewer and cannot manage access</strong>と表示され、現在の一般的なアクセスは表示されますが変更はできません。さらに権限が必要な場合はオーナーに依頼してください。</p>
+<h2 id="共有プロジェクトでの作業">共有プロジェクトでの作業 <a href="#共有プロジェクトでの作業" class="heading-anchor">#</a></h2>
+<ul>
+<li>全員が同じDriveファイルを開きますが、Inganttはリアルタイム共同編集ツールではありません。保存のたびにプロジェクトファイル全体が書き込まれるため、2人が計画を開いて両方が保存すると、最後の保存が優先され、もう一方の変更は置き換えられます。開始前に誰が編集するかを決め、何かが失われたと思われる場合はGoogle Driveでファイルのバージョン履歴を確認してください。</li>
+<li>閲覧者またはコメント投稿者が保存しようとすると、<strong>You are a viewer and cannot save</strong>と表示されます。代わりに<strong>Save file as</strong>を使用して個人用のコピーを保存してください。</li>
+<li>編集するには、各共同作業者に有効なInganttのサブスクリプションまたはトライアルが必要です。計画を共有してもサブスクリプションは共有されません。<a href="/ja/account/subscription/">サブスクリプションと支払い</a>をご覧ください。</li>
+<li>Google<strong>グループ</strong>のアドレスへの共有は、InganttのShareダイアログではサポートされていません。個別のアドレスと共有するか、Google Driveからグループ共有を管理してください。</li>
+</ul>
+<h2 id="関連項目">関連項目 <a href="#関連項目" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/ja/ui/files/">Google Driveとの連携</a> — サインイン、権限、共有ファイルを開く方法。</li>
+<li><a href="/ja/getting-started/saving/">プロジェクトの保存</a> — プロジェクトの保存場所と保存のタイミング。</li>
+</ul>
+
+    </main>
+    <aside class="toc" aria-label="目次"></aside>
+  </div>
+  <div class="sidebar-backdrop" hidden></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/search.js"></script>
+</body>
+</html>

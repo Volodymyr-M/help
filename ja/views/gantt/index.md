@@ -10,17 +10,17 @@ Inganttは、ナビゲーションドロワーまたは**View**メニューか�
 
 - **Tasks** — タスクリストとガントチャート
 - **Tracking Gantt**
-- **[Task Board](/ja/views/task-views/index.md#タスクボード)**
-- **[Network Diagram](/ja/views/task-views/index.md#ネットワーク図)**
-- **[Calendar View](/ja/views/task-views/index.md#カレンダービュー)**
-- **[Timeline](/ja/views/task-views/index.md#タイムライン)**
+- **[タスクボード（Task Board）](/ja/views/task-views/index.md#タスクボード)**
+- **[ネットワーク図（Network Diagram）](/ja/views/task-views/index.md#ネットワーク図)**
+- **[カレンダービュー（Calendar View）](/ja/views/task-views/index.md#カレンダービュー)**
+- **[タイムライン（Timeline）](/ja/views/task-views/index.md#タイムライン)**
 
 **リソースビュー：**
 
-- **[Resource Usage](/ja/views/resource-views/index.md#リソース配分)**
-- **[Task Usage](/ja/views/resource-views/index.md#タスク配分)**
-- **[Team Planner](/ja/views/resource-views/index.md#チームプランナー)**
-- **[Resource Graph](/ja/views/resource-views/index.md#リソースグラフ)**
+- **[リソース配分（Resource Usage）](/ja/views/resource-views/index.md#リソース配分)**
+- **[タスク配分（Task Usage）](/ja/views/resource-views/index.md#タスク配分)**
+- **[チームプランナー（Team Planner）](/ja/views/resource-views/index.md#チームプランナー)**
+- **[リソースグラフ（Resource Graph）](/ja/views/resource-views/index.md#リソースグラフ)**
 
 ## Tasksビュー
 
@@ -30,7 +30,7 @@ Inganttは、ナビゲーションドロワーまたは**View**メニューか�
 
 **Task Inspector**は、選択したタスクの詳細を表示するサイドパネルです。スケジューリング要因（タスクの日付を決定する要素）、一般プロパティ、リソース、先行タスク、コストなどが含まれます。タスクインスペクターはツールバーから切り替えます。
 
-インスペクター上部の**Scheduling Factors**セクションには、タスクのスケジュール日付を決定する要素が表示されます：ドライビング先行タスク（太字で「Driving」バッジ付き）、非ドライビング先行タスク（相対的なフロート付き）、制約、平準化遅延、カレンダー、余裕の値。クリティカルタスクには「Critical」バッジが表示されます。
+インスペクター上部の**Scheduling Factors**セクションには、タスクのスケジュール日付を決定する要素が表示されます：ドライビング先行タスク（太字で「Driving」バッジ付き）、非ドライビング先行タスク（相対的な余裕付き）、制約、平準化遅延、カレンダー、余裕の値。クリティカルタスクには「Critical」バッジが表示されます。
 
 ## 平準化ガント
 

@@ -2,7 +2,7 @@
 
 Au fur et à mesure de l'avancement des travaux et de la mise à jour du [% Complete](/fr/tracking/progress/index.md#-complete), Ingantt calcule automatiquement les valeurs réelles et restantes pour la durée, le travail, le coût et les dates. Ces champs vous permettent de voir précisément ce qui a été dépensé, ce qui reste et comment le projet se situe par rapport au plan.
 
-Les colonnes réelles et restantes les plus courantes sont **Actual Cost** / **Remaining Cost**, **Actual Work** / **Remaining Work**, et **Actual Duration** / **Remaining Duration**. En consultant ces valeurs sur la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#root-summary-task), vous pouvez visualiser d'un coup d'œil les totaux de l'ensemble du projet — combien a été dépensé, quel effort a été fourni et combien il reste à faire. Assurez-vous que la tâche récapitulative racine est visible : cochez **Show root summary task** dans le menu **View** ou dans la boîte de dialogue **Options**.
+Les colonnes réelles et restantes les plus courantes sont **Actual Cost** / **Remaining Cost**, **Actual Work** / **Remaining Work**, et **Actual Duration** / **Remaining Duration**. En consultant ces valeurs sur la [tâche récapitulative racine](/fr/building-schedule/tasks/index.md#tâche-récapitulative-racine), vous pouvez visualiser d'un coup d'œil les totaux de l'ensemble du projet — combien a été dépensé, quel effort a été fourni et combien il reste à faire. Assurez-vous que la tâche récapitulative racine est visible : cochez **Show root summary task** dans le menu **View** ou dans la boîte de dialogue **Options**.
 
 ## Afficher les colonnes réelles et restantes
 
@@ -11,7 +11,7 @@ Les colonnes réelles et restantes ne sont pas visibles par défaut. Pour les aj
 ### Durée
 
 - **Actual Duration** — Le temps de travail consacré à une tâche jusqu'à présent. Calculé comme la durée de la tâche multipliée par son % Complete.
-- **Remaining Duration** — Le temps de travail encore nécessaire pour terminer la tâche : Durée − Actual Duration.
+- **Remaining Duration** — Le temps de travail encore nécessaire pour terminer la tâche : Duration − Actual Duration.
 
 Par exemple, une tâche de 10 jours achevée à 40 % a une Actual Duration de 4 jours et une Remaining Duration de 6 jours.
 

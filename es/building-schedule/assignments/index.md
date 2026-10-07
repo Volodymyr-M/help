@@ -28,8 +28,18 @@ Cuando un recurso de trabajo se asigna a una tarea, el esfuerzo (trabajo) se dis
 | **Pico tardío** | Aumenta hasta un pico cerca del final |
 | **Campana** | Curva de campana — alcanza el pico en el medio |
 | **Tortuga** | Curva de campana más plana — distribución más suave |
+| **Con perfil** | Su propia distribución por día. Se establece automáticamente al editar el trabajo en una vista de uso; no se puede elegir en la lista desplegable. |
 
 Los perfiles de trabajo afectan cómo se distribuye el trabajo a lo largo de los períodos de tiempo y se preservan al abrir y guardar archivos de proyecto.
+
+### El perfil Con perfil
+
+**Con perfil** es el perfil personalizado y se comporta de manera diferente a los otros ocho. No puede elegirlo en la lista desplegable de una asignación que aún no lo tenga — la opción está deshabilitada. Se obtiene **editando el trabajo directamente en una celda de [Uso de recursos o Uso de tareas](/es/views/resource-views/index.md)**: en el momento en que escribe un valor de trabajo por día, el perfil de esa asignación pasa a ser *Con perfil* y la distribución que escribió es la que se usa.
+
+Vale la pena conocer dos consecuencias:
+
+- **Cambiar de Con perfil a otro perfil descarta la distribución ingresada a mano.** Elija cualquiera de los otros ocho perfiles y los valores por día que escribió se borran. No se conservan ni se restauran si vuelve a cambiar.
+- **El trabajo Con perfil sobrevive al ciclo de ida y vuelta por el formato de Microsoft Project.** La importación lee en la asignación el trabajo por día distribuido en el tiempo, y la exportación lo vuelve a escribir. Un plan que llega de Microsoft Project con un perfil editado a mano lo conserva.
 
 ## Retraso de asignación
 

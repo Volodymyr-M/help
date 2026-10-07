@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -191,10 +211,10 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="進捗の追跡">進捗の追跡 <a href="#進捗の追跡" class="heading-anchor">#</a></h1>
-<p>作業が開始されたら、各タスクの**% Complete**を更新して、実際の進捗が計画とどのように比較されるかを追跡します。<strong>Update Project</strong>を使用して、一括で進捗を設定できます。進捗が記録されると、Inganttは自動的に<a href="/ja/tracking/actuals/">実績値</a>を計算します — 期間、作業量、コスト、日付の実績値と残りの値です。</p>
-<h2 id="-complete">% Complete <a href="#-complete" class="heading-anchor">#</a></h2>
-<p>プロジェクトが進行中の場合、進捗を追跡する必要があります。各タスクの**% Complete<strong>を最新の状態に保てば、ルートサマリータスクでプロジェクト全体の</strong>% Complete**を確認できます。</p>
-<p>特定のタスクの達成率を設定するには、<strong>Task Properties</strong>ダイアログの**% Complete**フィールドを使用します。100%完了したタスクは、タスクリストに緑色のチェックマークアイコンが表示されます。</p>
+<p>作業が開始されたら、各タスクの<strong>% Complete</strong>を更新して、実際の進捗が計画とどのように比較されるかを追跡します。<strong>Update Project</strong>を使用して、一括で進捗を設定できます。進捗が記録されると、Inganttは自動的に<a href="/ja/tracking/actuals/">実績値</a>を計算します — 期間、作業量、コスト、日付の実績値と残りの値です。</p>
+<h2 id="達成率-complete">達成率（% Complete） <a href="#達成率-complete" class="heading-anchor">#</a></h2>
+<p>プロジェクトが進行中の場合、進捗を追跡する必要があります。各タスクの<strong>% Complete</strong>を最新の状態に保てば、ルートサマリータスクでプロジェクト全体の<strong>% Complete</strong>を確認できます。</p>
+<p>特定のタスクの達成率を設定するには、<strong>Task Properties</strong>ダイアログの<strong>% Complete</strong>フィールドを使用します。100%完了したタスクは、タスクリストに緑色のチェックマークアイコンが表示されます。</p>
 <p>% Completeを更新すると：</p>
 <ul>
 <li>0%より上に設定すると、タスクの<strong>Actual Start</strong>がタスクのスケジュール上の開始日に設定されます。</li>
@@ -202,17 +222,17 @@
 <li><strong>Actual Duration</strong>と<strong>Remaining Duration</strong>は達成率に基づいて自動的に計算されます。</li>
 <li>プロジェクト設定で<strong>Updating task status updates resource status</strong>が有効になっている場合（デフォルト）、<strong>Actual Work</strong>と<strong>Remaining Work</strong>も比例して更新されます。</li>
 </ul>
-<p>サマリータスクの**% Complete**は、すべての子孫の非サマリータスクの期間加重平均として計算されます。</p>
+<p>サマリータスクの<strong>% Complete</strong>は、すべての子孫の非サマリータスクの期間加重平均として計算されます。</p>
 <blockquote>
-<p><a href="#update-project">Update Project</a>コマンドを使用して、基準日に基づいて複数のタスクの% Completeを一括で設定することもできます。</p>
+<p><a href="#update-project%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89">Update Project</a>コマンドを使用して、基準日に基づいて複数のタスクの% Completeを一括で設定することもできます。</p>
 </blockquote>
-<h2 id="update-project">Update Project <a href="#update-project" class="heading-anchor">#</a></h2>
-<p><strong>Update Project</strong>コマンドは、<strong>Project</strong>メニューからアクセスできる一括進捗追跡操作を提供します。</p>
+<h2 id="update-projectコマンド">Update Projectコマンド <a href="#update-projectコマンド" class="heading-anchor">#</a></h2>
+<p><strong>Update Project</strong>コマンドは、<strong>Project</strong>メニューからアクセスできる、進捗の追跡を一括で行う操作を提供します。</p>
 <h3 id="作業完了の更新">作業完了の更新 <a href="#作業完了の更新" class="heading-anchor">#</a></h3>
 <p>指定した日付までのタスクを完了としてマークします：</p>
 <ul>
-<li><strong>按分（0%〜100%）</strong> — 各タスクの稼働期間のうち基準日までにどれだけ経過したかに基づいて、達成率を計算します。</li>
-<li><strong>全か無か（0%または100%）</strong> — 基準日までに終了するかどうかに基づいて、タスクを0%または100%に設定します。</li>
+<li><strong>Proportional (0%–100%)</strong> — 各タスクの稼働期間のうち基準日までにどれだけ経過したかに基づいて、達成率を計算します。</li>
+<li><strong>All-or-nothing (0% or 100%)</strong> — 基準日までに終了するかどうかに基づいて、タスクを0%または100%に設定します。</li>
 </ul>
 <h3 id="未完了作業の再スケジュール">未完了作業の再スケジュール <a href="#未完了作業の再スケジュール" class="heading-anchor">#</a></h3>
 <p>未完了の作業を指定した日付以降に開始されるようにします：</p>

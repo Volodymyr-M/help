@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Percorso critico - Analisi e ottimizzazione - Guida di Ingantt</title>
+  <title>Percorso critico - Analisi e regolazione - Guida di Ingantt</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
   <meta name="description" content="Identifica le attività critiche e il margine nel cronogramma, configura i limiti di margine critico e comprendi come viene calcolato il percorso critico.">
   <link rel="canonical" href="https://help.ingantt.com/it/adjusting-schedule/critical-path/">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="true">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/" class="active" aria-current="page">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -193,12 +213,12 @@
       <h1 id="percorso-critico">Percorso critico <a href="#percorso-critico" class="heading-anchor">#</a></h1>
 <p>Queste sono le attività che non puoi permetterti di ritardare — qualsiasi slittamento posticipa l'intero progetto. Identificale in anticipo, monitorale attentamente e saprai esattamente dove concentrarti per rispettare la scadenza.</p>
 <h2 id="attività-critiche">Attività critiche <a href="#attività-critiche" class="heading-anchor">#</a></h2>
-<p>Una volta messo in pratica il piano, alcune attività terminano prima del previsto — e altre no. Alcune attività possono impiegare più tempo senza allungare la durata del progetto. Queste attività hanno un margine di tempo disponibile, noto come <em>margine</em>.</p>
+<p>Una volta messo in pratica il piano, alcune attività terminano prima del previsto — e altre no. Alcune attività possono impiegare più tempo senza allungare la durata del progetto. Queste attività hanno del tempo di riserva, noto come <em>margine</em>.</p>
 <p>Altre attività hanno margine zero — qualsiasi ritardo sposta la data di fine del progetto. Queste sono chiamate <em>attività critiche</em>. Per mantenere il progetto nei tempi previsti, presta particolare attenzione a queste attività durante il monitoraggio dell'avanzamento.</p>
 <p>Un'attività è anche critica se:</p>
 <ul>
-<li>Ha un vincolo <strong>Must start on</strong> o <strong>Must finish on</strong> come <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a></li>
-<li>Ha un vincolo <strong>As late as possible</strong> come <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> in un progetto pianificato dalla data di inizio</li>
+<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>Must start on</strong> o <strong>Must finish on</strong></li>
+<li>Ha un <a href="/it/building-schedule/constraints/#come-funzionano-i-vincoli">vincolo</a> <strong>As late as possible</strong> in un progetto pianificato dalla data di inizio</li>
 <li>La sua data di fine è uguale o supera la sua <a href="/it/building-schedule/task-properties/#scadenza">scadenza</a></li>
 <li>Ha <strong>margine negativo</strong> — un conflitto di pianificazione in cui i vincoli forzano l'attività prima di quanto le dipendenze consentano</li>
 </ul>

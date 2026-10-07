@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/" class="active" aria-current="page">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -211,7 +231,7 @@
 <li>スケジューリングアルゴリズムの<strong>影響を受けません</strong> — 日付はユーザーが設定します</li>
 <li>日付フィールドまたは日付ピッカーを使用して<strong>Start</strong>と<strong>Finish</strong>の日付を入力できます</li>
 <li>タイミングがまだ確定していない場合は、実際の日付の代わりに<strong>テキスト値</strong>（「未定」「3月初旬」「2〜3週間」など）を入力できます</li>
-<li>タスクリストに手動スケジュールタスクはピンアイコンで表示されます</li>
+<li>タスクリストでは、手動スケジュールタスクにピンアイコンが表示されます</li>
 </ul>
 <blockquote>
 <p>正確なタイミングが不明な場合や、外部要因により日付が固定されている場合に、手動スケジュールタスクをプレースホルダーとして使用してください。</p>
@@ -220,16 +240,16 @@
 <p>繰り返しタスクは、毎日のスタンドアップミーティング、週次レビュー、月次レポートなど、定期的に繰り返されるアクティビティを表します。<strong>Insert</strong>メニューから<strong>Add recurring task</strong>を選択して、繰り返しタスクを作成できます。</p>
 <p>繰り返しタスクを作成する際に指定する項目：</p>
 <ul>
-<li><strong>発生期間</strong> — 各回の期間</li>
-<li><strong>繰り返しパターン</strong> — 日次、週次、月次、年次のパターンと開始日、終了条件（終了なし、指定日で終了、N回発生後に終了）</li>
-<li><strong>稼働日のみ</strong> — 発生を稼働日に限定</li>
+<li><strong>Occurrence duration</strong> — 各回の期間</li>
+<li><strong>Recurrence pattern</strong> — 日次、週次、月次、年次のパターンと開始日、終了条件（終了なし、指定日で終了、N回発生後に終了）</li>
+<li><strong>Working days only</strong> — 発生を稼働日に限定</li>
 </ul>
 <p>繰り返しタスクは、個別の発生を含むサマリータスクとして表示されます。各発生は独立して完了できます。繰り返しタスクを削除する際は、シリーズ全体を削除するか、選択した回のみを削除するかを選択するプロンプトが表示されます。</p>
 <h2 id="分割タスク">分割タスク <a href="#分割タスク" class="heading-anchor">#</a></h2>
 <p>タスクは非連続の部分に分割でき、作業の中断を表します。タスクを分割するには、タスクを選択してツールバーまたは右クリックコンテキストメニューから<strong>Split task</strong>を選択します。<strong>Split Task</strong>ダイアログには2つのモードがあります：</p>
 <ul>
-<li><strong>期間指定</strong> — タスク開始からのギャップオフセットと分割期間を指定</li>
-<li><strong>日付指定</strong> — 中断日と再開日を指定</li>
+<li><strong>By duration</strong> — タスク開始からのギャップオフセットと分割期間を指定</li>
+<li><strong>By dates</strong> — 中断日と再開日を指定</li>
 </ul>
 <p>分割タスクは、ガントチャートで点線のコネクターで接続された別々のバーとして表示されます。各分割部分には独自のリサイズハンドルがあり、隣接する部分にドラッグすると2つが結合されます。分割を解除するには、タスクを選択してツールバーから<strong>Remove split</strong>を選択します。</p>
 <h2 id="非アクティブタスク">非アクティブタスク <a href="#非アクティブタスク" class="heading-anchor">#</a></h2>

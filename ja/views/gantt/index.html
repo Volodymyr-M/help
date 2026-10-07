@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -198,23 +218,23 @@
 <ul>
 <li><strong>Tasks</strong> — タスクリストとガントチャート</li>
 <li><strong>Tracking Gantt</strong></li>
-<li><strong><a href="/ja/views/task-views/#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%89">Task Board</a></strong></li>
-<li><strong><a href="/ja/views/task-views/#%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%9B%B3">Network Diagram</a></strong></li>
-<li><strong><a href="/ja/views/task-views/#%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC%E3%83%93%E3%83%A5%E3%83%BC">Calendar View</a></strong></li>
-<li><strong><a href="/ja/views/task-views/#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3">Timeline</a></strong></li>
+<li><strong><a href="/ja/views/task-views/#%E3%82%BF%E3%82%B9%E3%82%AF%E3%83%9C%E3%83%BC%E3%83%89">タスクボード（Task Board）</a></strong></li>
+<li><strong><a href="/ja/views/task-views/#%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%9B%B3">ネットワーク図（Network Diagram）</a></strong></li>
+<li><strong><a href="/ja/views/task-views/#%E3%82%AB%E3%83%AC%E3%83%B3%E3%83%80%E3%83%BC%E3%83%93%E3%83%A5%E3%83%BC">カレンダービュー（Calendar View）</a></strong></li>
+<li><strong><a href="/ja/views/task-views/#%E3%82%BF%E3%82%A4%E3%83%A0%E3%83%A9%E3%82%A4%E3%83%B3">タイムライン（Timeline）</a></strong></li>
 </ul>
 <p><strong>リソースビュー：</strong></p>
 <ul>
-<li><strong><a href="/ja/views/resource-views/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E9%85%8D%E5%88%86">Resource Usage</a></strong></li>
-<li><strong><a href="/ja/views/resource-views/#%E3%82%BF%E3%82%B9%E3%82%AF%E9%85%8D%E5%88%86">Task Usage</a></strong></li>
-<li><strong><a href="/ja/views/resource-views/#%E3%83%81%E3%83%BC%E3%83%A0%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8A%E3%83%BC">Team Planner</a></strong></li>
-<li><strong><a href="/ja/views/resource-views/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B0%E3%83%A9%E3%83%95">Resource Graph</a></strong></li>
+<li><strong><a href="/ja/views/resource-views/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E9%85%8D%E5%88%86">リソース配分（Resource Usage）</a></strong></li>
+<li><strong><a href="/ja/views/resource-views/#%E3%82%BF%E3%82%B9%E3%82%AF%E9%85%8D%E5%88%86">タスク配分（Task Usage）</a></strong></li>
+<li><strong><a href="/ja/views/resource-views/#%E3%83%81%E3%83%BC%E3%83%A0%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8A%E3%83%BC">チームプランナー（Team Planner）</a></strong></li>
+<li><strong><a href="/ja/views/resource-views/#%E3%83%AA%E3%82%BD%E3%83%BC%E3%82%B9%E3%82%B0%E3%83%A9%E3%83%95">リソースグラフ（Resource Graph）</a></strong></li>
 </ul>
 <h2 id="tasksビュー">Tasksビュー <a href="#tasksビュー" class="heading-anchor">#</a></h2>
 <p><strong>Tasks</strong>ビューは、タスクリストとガントチャート（分割ビュー）を組み合わせたメインビューです。<strong>View &gt; Panels in Tasks</strong>サブメニューで、表示するパネルを設定できます。タスクリストとガントチャートはそれぞれ独立して切り替え可能です。</p>
 <h2 id="タスクインスペクター">タスクインスペクター <a href="#タスクインスペクター" class="heading-anchor">#</a></h2>
 <p><strong>Task Inspector</strong>は、選択したタスクの詳細を表示するサイドパネルです。スケジューリング要因（タスクの日付を決定する要素）、一般プロパティ、リソース、先行タスク、コストなどが含まれます。タスクインスペクターはツールバーから切り替えます。</p>
-<p>インスペクター上部の<strong>Scheduling Factors</strong>セクションには、タスクのスケジュール日付を決定する要素が表示されます：ドライビング先行タスク（太字で「Driving」バッジ付き）、非ドライビング先行タスク（相対的なフロート付き）、制約、平準化遅延、カレンダー、余裕の値。クリティカルタスクには「Critical」バッジが表示されます。</p>
+<p>インスペクター上部の<strong>Scheduling Factors</strong>セクションには、タスクのスケジュール日付を決定する要素が表示されます：ドライビング先行タスク（太字で「Driving」バッジ付き）、非ドライビング先行タスク（相対的な余裕付き）、制約、平準化遅延、カレンダー、余裕の値。クリティカルタスクには「Critical」バッジが表示されます。</p>
 <h2 id="平準化ガント">平準化ガント <a href="#平準化ガント" class="heading-anchor">#</a></h2>
 <p>プロジェクトに<a href="/ja/adjusting-schedule/leveling/#%E8%87%AA%E5%8B%95%E5%B9%B3%E6%BA%96%E5%8C%96">自動平準化</a>が適用されると、ガントチャート領域に<strong>Leveling Gantt</strong>トグルボタンが表示されます。</p>
 <p>有効にすると、ガントチャートに各タスクの平準化前の位置（自動平準化前のタスクの位置）に<strong>緑色のバー</strong>が表示されます。標準のタスクバーは現在の平準化後の位置に残ります。これにより、元のスケジュールと平準化後のスケジュールを視覚的に比較し、各タスクがどれだけ遅延されたかを確認できます。</p>

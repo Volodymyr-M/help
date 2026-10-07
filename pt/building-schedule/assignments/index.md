@@ -10,7 +10,7 @@ Para atribuir um recurso, marque a caixa de seleção na linha do recurso. Para 
 
 As atribuições de recursos de trabalho ou material possuem **Units**, mostradas na coluna correspondente. Clique no botão **Edit** para alterar o valor padrão de **Units** da atribuição.
 
-Por padrão, os recursos de trabalho são atribuídos com unidades correspondentes às [Max Units](/pt/building-schedule/resources/index.md#unidades-máximas) do recurso (100% para um recurso em tempo integral). Isso significa que o recurso dedicará todo o seu tempo disponível no calendário à tarefa. Você pode alterar o valor para qualquer número.
+Por padrão, os recursos de trabalho são atribuídos com unidades correspondentes às [Unidades Máximas](/pt/building-schedule/resources/index.md#unidades-máximas) do recurso (100% para um recurso em tempo integral). Isso significa que o recurso dedicará todo o seu tempo disponível no calendário à tarefa. Você pode alterar o valor para qualquer número.
 
 Por padrão, os recursos de material são atribuídos com 1 unidade. Isso significa que 1 unidade desse material será utilizada ao completar a tarefa. A unidade representa o que você definiu para o material (caixa, galão, tonelada, etc.). Você pode alterar o valor padrão e definir qualquer número de unidades.
 
@@ -28,8 +28,18 @@ Quando um recurso de trabalho é atribuído a uma tarefa, o esforço (trabalho) 
 | **Late Peak** | Aumenta até um pico próximo ao final |
 | **Bell** | Curva em sino — pico no meio |
 | **Turtle** | Curva em sino mais achatada — distribuição mais suave |
+| **Contoured** | Sua própria distribuição por dia. Definido automaticamente quando você edita o trabalho em uma visualização de uso; não pode ser escolhido na lista suspensa. |
 
 Os contornos de trabalho afetam como o trabalho é distribuído entre os períodos de tempo e são preservados ao abrir e salvar arquivos de projeto.
+
+### O Contorno Contoured
+
+**Contoured** é o contorno personalizado e se comporta de forma diferente dos outros oito. Você não pode selecioná-lo na lista suspensa em uma atribuição que ainda não o tenha — a opção fica desativada. Você o obtém **editando o trabalho diretamente em uma célula de [Uso de Recursos ou Uso de Tarefas](/pt/views/resource-views/index.md)**: no momento em que você digita um valor de trabalho por dia, o contorno dessa atribuição passa a ser *Contoured* e a distribuição que você digitou é a que ela usa.
+
+Vale conhecer duas consequências:
+
+- **Trocar o Contoured por outro contorno descarta a distribuição inserida manualmente.** Escolha qualquer um dos outros oito contornos e os valores por dia que você digitou são apagados. Eles não são guardados nem restaurados se você voltar.
+- **O trabalho Contoured faz o percurso de ida e volta pelo formato do Microsoft Project.** A importação lê o trabalho distribuído no tempo por dia para a atribuição, e a exportação o grava de volta. Um plano que chega do Microsoft Project com um contorno editado manualmente o mantém.
 
 ## Atraso de Atribuição
 

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="calendriers">Calendriers <a href="#calendriers" class="heading-anchor">#</a></h1>
-<p>Jours fériés, vacances, demi-journées, équipes de nuit — votre planning doit refléter les périodes où le travail est réellement effectué. Configurez les calendriers pour qu'Ingantt ignore les périodes non ouvrées et vous fournisse des dates réalistes.</p>
+<p>Jours fériés, congés, demi-journées, équipes de nuit — votre planning doit refléter les périodes où le travail est réellement effectué. Configurez les calendriers pour qu'Ingantt ignore les périodes non ouvrées et vous fournisse des dates réalistes.</p>
 <p>Les calendriers définissent les jours et les horaires pendant lesquels le travail peut être effectué. Les calendriers utilisent deux types de données :</p>
 <ul>
 <li><strong>Jours de la semaine</strong> : horaires de travail définis pour chaque jour de la semaine, représentant le planning habituel et récurrent.</li>
@@ -200,10 +220,10 @@
 <h2 id="calendrier-du-projet">Calendrier du projet <a href="#calendrier-du-projet" class="heading-anchor">#</a></h2>
 <p>Un projet possède un <strong>Calendar</strong> qui lui est associé, tel que spécifié dans la boîte de dialogue <strong>Project Properties</strong>. Ce calendrier détermine comment les tâches non affectées à des ressources de travail sont planifiées. Les jours chômés tels que les week-ends sont également affichés dans le diagramme de Gantt en fonction de ce calendrier.</p>
 <h2 id="calendrier-des-ressources">Calendrier des ressources <a href="#calendrier-des-ressources" class="heading-anchor">#</a></h2>
-<p>Chaque <a href="/fr/building-schedule/resources/#resource-type">ressource de travail</a> possède un calendrier qui lui est associé, tel que spécifié dans le champ <strong>Base Calendar</strong> de la boîte de dialogue <strong>Resource Properties</strong>. Une fois la ressource de travail <a href="/fr/building-schedule/assignments/#resource-assignments-and-units">affectée</a> à une tâche, son calendrier influence la planification de la tâche.</p>
+<p>Chaque <a href="/fr/building-schedule/resources/#type-de-ressource">ressource de travail</a> possède un calendrier qui lui est associé, tel que spécifié dans le champ <strong>Base Calendar</strong> de la boîte de dialogue <strong>Resource Properties</strong>. Une fois la ressource de travail <a href="/fr/building-schedule/assignments/#affectations-de-ressources-et-unit%C3%A9s">affectée</a> à une tâche, son calendrier influence la planification de la tâche.</p>
 <p>Lorsque plusieurs ressources de travail sont affectées à une tâche, leurs calendriers sont <strong>croisés</strong> — ce qui signifie que le travail n'est planifié que pendant les périodes où <strong>toutes</strong> les ressources affectées sont disponibles. Par exemple, si la ressource A travaille du lundi au mercredi et la ressource B du mercredi au vendredi, une tâche affectée aux deux ne sera planifiée que le mercredi.</p>
 <blockquote>
-<p>Si plusieurs ressources partagent un planning de travail similaire, créez un seul calendrier et attribuez-le à toutes. Vous pouvez néanmoins spécifier des exceptions pour chaque ressource individuellement dans <strong>Resource Properties</strong> — par exemple, des vacances ou des périodes de travail ajustées à des dates spécifiques.</p>
+<p>Si plusieurs ressources partagent un planning de travail similaire, créez un seul calendrier et attribuez-le à toutes. Vous pouvez néanmoins spécifier des exceptions pour chaque ressource individuellement dans <strong>Resource Properties</strong> — par exemple, des congés ou des périodes de travail ajustées à des dates spécifiques.</p>
 </blockquote>
 <h2 id="calendrier-des-tâches">Calendrier des tâches <a href="#calendrier-des-tâches" class="heading-anchor">#</a></h2>
 <p>Chaque tâche possède une propriété <strong>Calendar</strong> dans la boîte de dialogue <strong>Task Properties</strong>, définie sur <strong>NONE</strong> par défaut. Lorsqu'elle est définie sur <strong>NONE</strong> :</p>
@@ -254,13 +274,13 @@
 <li>Dans la boîte de dialogue <strong>Resource Properties</strong> pour une ressource particulière.</li>
 <li>Dans la boîte de dialogue <strong>Calendar Properties</strong> pour un calendrier particulier, afin que les projets, ressources ou tâches utilisant ce calendrier bénéficient de cette exception.</li>
 </ul>
-<p>Par exemple, si vous souhaitez configurer des vacances pour une personne, ajoutez-les comme exception pour cette ressource. Si vous souhaitez configurer un jour férié pour tout le monde, ajoutez-le comme exception au calendrier utilisé par tous.</p>
+<p>Par exemple, si vous souhaitez configurer des congés pour une personne, ajoutez-les comme exception pour cette ressource. Si vous souhaitez configurer un jour férié pour tout le monde, ajoutez-le comme exception au calendrier utilisé par tous.</p>
 <p>Lors de l'ajout ou de la modification d'exceptions de calendrier, vous spécifiez les périodes de travail pour l'exception. Si vous n'en spécifiez aucune, l'exception ne comporte pas de temps de travail, ce qui signifie qu'elle définit un jour chômé.</p>
 <p>Chaque exception peut recevoir un <strong>Name</strong> descriptif (comme « Vacances de Noël » ou « Bureau fermé ») qui s'affiche dans la liste des exceptions.</p>
 <h3 id="exceptions-récurrentes">Exceptions récurrentes <a href="#exceptions-récurrentes" class="heading-anchor">#</a></h3>
 <p>Les exceptions de calendrier peuvent être configurées pour se répéter selon un schéma plutôt que sur une seule date. Les schémas de récurrence disponibles sont :</p>
 <ul>
-<li><strong>Daily</strong> — Tous les N jours ou tous les N jours ouvrables</li>
+<li><strong>Daily</strong> — Tous les N jours ou tous les N jours ouvrés</li>
 <li><strong>Weekly</strong> — Toutes les N semaines les jours spécifiés</li>
 <li><strong>Monthly</strong> — Par jour du mois ou par position (par ex., le deuxième mardi)</li>
 <li><strong>Yearly</strong> — Par date ou par position (par ex., le dernier vendredi de novembre)</li>

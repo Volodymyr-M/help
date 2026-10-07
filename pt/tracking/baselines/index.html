@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/pt/getting-started/overview/">Visão Geral</a></li>
+    <li><a href="/pt/getting-started/install/">Abrir o Ingantt para Web</a></li>
     <li><a href="/pt/getting-started/getting-started/">Primeiros Passos</a></li>
+    <li><a href="/pt/getting-started/templates/">Modelos de Projeto</a></li>
+    <li><a href="/pt/getting-started/saving/">Salvando Seu Projeto</a></li>
     <li><a href="/pt/getting-started/create-with-ai/">Criar com IA</a></li>
     <li><a href="/pt/getting-started/edit-with-ai/">Editar com IA</a></li>
     <li><a href="/pt/getting-started/import-export/">Importar e Exportar</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/pt/building-schedule/tasks/">Tarefas</a></li>
     <li><a href="/pt/building-schedule/task-properties/">Propriedades da Tarefa</a></li>
+    <li><a href="/pt/building-schedule/elapsed-durations/">Durações Decorridas</a></li>
     <li><a href="/pt/building-schedule/dependencies/">Dependências</a></li>
     <li><a href="/pt/building-schedule/constraints/">Restrições</a></li>
     <li><a href="/pt/building-schedule/resources/">Recursos</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/pt/adjusting-schedule/critical-path/">Caminho Crítico</a></li>
     <li><a href="/pt/adjusting-schedule/leveling/">Nivelamento de Recursos</a></li>
     <li><a href="/pt/adjusting-schedule/custom-fields/">Campos Personalizados</a></li>
+    <li><a href="/pt/adjusting-schedule/wbs-codes/">Códigos WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/pt/ui/ui/">Adicionando e Selecionando</a></li>
     <li><a href="/pt/ui/files/">Integração com Google Drive</a></li>
+    <li><a href="/pt/ui/sharing/">Compartilhando um Projeto</a></li>
+    <li><a href="/pt/ui/offline-mode/">Trabalhando Offline</a></li>
+    <li><a href="/pt/ui/version-history/">Histórico de Versões</a></li>
+    <li><a href="/pt/ui/languages/">Idiomas</a></li>
     <li><a href="/pt/ui/shortcuts/">Atalhos de Teclado</a></li>
+    <li><a href="/pt/ui/contact-support/">Contatando o Suporte</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Conta e Cobrança
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/pt/account/trial/">Avaliação Gratuita</a></li>
+    <li><a href="/pt/account/subscription/">Assinaturas e Pagamento</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="linhas-de-base">Linhas de Base <a href="#linhas-de-base" class="heading-anchor">#</a></h1>
-<p>Salve uma fotografia do seu cronograma antes de o trabalho começar e depois compare-a com o estado atual para ver onde o projeto desviou.</p>
+<p>Salve um instantâneo do seu cronograma antes de o trabalho começar e depois compare-o com o estado atual para ver onde o projeto desviou.</p>
 <p>Uma linha de base captura a data de início, data de término, duração, trabalho e custo de cada tarefa em um determinado momento.</p>
 <h2 id="definindo-uma-linha-de-base">Definindo uma Linha de Base <a href="#definindo-uma-linha-de-base" class="heading-anchor">#</a></h2>
 <p>Defina uma linha de base a partir do menu <strong>Project</strong> usando o submenu <strong>Set baseline</strong>:</p>
@@ -208,9 +228,33 @@
 <li>Designar qual linha de base é usada para os cálculos de <a href="/pt/tracking/earned-value/#gerenciamento-de-valor-agregado">Valor Agregado</a></li>
 </ul>
 <h2 id="colunas-de-linha-de-base-e-variação">Colunas de Linha de Base e Variação <a href="#colunas-de-linha-de-base-e-variação" class="heading-anchor">#</a></h2>
-<p>Você pode adicionar colunas de linha de base (<strong>Start</strong>, <strong>Finish</strong>, <strong>Duration</strong>, <strong>Work</strong>, <strong>Cost</strong>) e colunas de variação (<strong>Start Variance</strong>, <strong>Finish Variance</strong>, etc.) à lista de tarefas pela caixa de diálogo <strong>Options</strong>. As colunas de variação mostram a diferença entre o cronograma atual e a <a href="/pt/tracking/earned-value/#linha-de-base-de-valor-agregado">linha de base de Valor Agregado</a>.</p>
+<p>Você pode adicionar colunas de linha de base e de variação à lista de tarefas pela caixa de diálogo <strong>Options</strong>. Há <strong>55 colunas de linha de base</strong> e <strong>5 colunas de variação</strong> no total.</p>
+<h3 id="as-55-colunas-de-linha-de-base">As 55 Colunas de Linha de Base <a href="#as-55-colunas-de-linha-de-base" class="heading-anchor">#</a></h3>
+<p>O Ingantt armazena <strong>11 linhas de base</strong>: a <strong>Baseline</strong> sem número, mais <strong>Baseline 1</strong> a <strong>Baseline 10</strong>. Cada uma expõe as mesmas cinco colunas de tarefa:</p>
+<ul>
+<li>Baseline Start</li>
+<li>Baseline Finish</li>
+<li>Baseline Duration</li>
+<li>Baseline Work</li>
+<li>Baseline Cost</li>
+</ul>
+<p>11 linhas de base × 5 campos = <strong>55 colunas de linha de base</strong>, todas disponíveis no seletor de colunas da tabela de tarefas. O conjunto sem número tem nomes simples (<em>Baseline Start</em>); os numerados carregam seu número (<em>Baseline 3 Start</em>).</p>
+<h3 id="as-5-colunas-de-variação">As 5 Colunas de Variação <a href="#as-5-colunas-de-variação" class="heading-anchor">#</a></h3>
+<p>As colunas de variação são calculadas — cronograma atual menos linha de base — e são cinco:</p>
+<ul>
+<li>Start Variance</li>
+<li>Finish Variance</li>
+<li>Duration Variance</li>
+<li>Work Variance</li>
+<li>Cost Variance</li>
+</ul>
+<p>Há um único conjunto de cinco, não um conjunto por linha de base. Elas comparam o cronograma atual com <strong>uma</strong> linha de base — aquela selecionada como <a href="/pt/tracking/earned-value/#linha-de-base-de-valor-agregado">linha de base de Valor Agregado</a> em <strong>Project → Earned Value Options</strong>, que por padrão é a Baseline sem número. Altere essa configuração e todas as colunas de variação são recalculadas em relação à linha de base escolhida. Uma tarefa cuja linha de base escolhida nunca foi definida mostra uma variação vazia, e não zero.</p>
+<h2 id="onde-as-linhas-de-base-são-armazenadas">Onde as Linhas de Base São Armazenadas <a href="#onde-as-linhas-de-base-são-armazenadas" class="heading-anchor">#</a></h2>
+<p>As linhas de base são armazenadas <strong>dentro do arquivo do projeto</strong>, não em um arquivo separado. Salvar o projeto salva suas linhas de base.</p>
+<p>Se você tentar definir uma décima segunda linha de base, o Ingantt informa <em>All baseline slots are in use. Clear one in the Baselines dialog first.</em> Abra <strong>Project → Baselines</strong> e limpe uma.</p>
+<p>Linhas de base não são a mesma coisa que o <a href="/pt/ui/version-history/">histórico de versões</a>, que registra o próprio arquivo ao longo do tempo. Use o histórico de versões para voltar a um plano anterior; use linhas de base para medir quanto o plano atual desviou.</p>
 <h2 id="planos-provisórios">Planos Provisórios <a href="#planos-provisórios" class="heading-anchor">#</a></h2>
-<p>Os planos provisórios armazenam fotografias leves do cronograma (apenas datas de <strong>Start</strong> e <strong>Finish</strong>) para comparação rápida sem a sobrecarga de linhas de base completas. O Ingantt suporta até 10 planos provisórios (<code>Interim Plan 1</code> a <code>Interim Plan 10</code>).</p>
+<p>Os planos provisórios armazenam instantâneos leves do cronograma (apenas datas de <strong>Start</strong> e <strong>Finish</strong>) para comparação rápida sem a sobrecarga de linhas de base completas. O Ingantt suporta até 10 planos provisórios (<code>Interim Plan 1</code> a <code>Interim Plan 10</code>).</p>
 <p>Defina e limpe planos provisórios a partir do item <strong>Interim Plans</strong> no menu <strong>Project</strong>. Você pode exibir as datas dos planos provisórios como colunas na lista de tarefas.</p>
 
     </main>

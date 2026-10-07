@@ -10,7 +10,7 @@ Otras tareas tienen holgura cero — cualquier retraso desplaza la fecha de fina
 
 Una tarea también es crítica si:
 - Tiene una [restricción](/es/building-schedule/constraints/index.md#restricciones) **Debe comenzar el** o **Debe finalizar el**
-- Tiene una [restricción](/es/building-schedule/constraints/index.md#restricciones) **Lo más tarde posible** en un proyecto planificado desde la fecha de Inicio
+- Tiene una [restricción](/es/building-schedule/constraints/index.md#restricciones) **Lo más tarde posible** en un proyecto planificado desde la fecha de inicio
 - Su fecha de finalización iguala o excede su [plazo](/es/building-schedule/task-properties/index.md#plazo)
 - Tiene **holgura negativa** — un conflicto de programación donde las restricciones fuerzan la tarea antes de lo que sus dependencias permiten
 

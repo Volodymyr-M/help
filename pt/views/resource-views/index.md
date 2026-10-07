@@ -1,6 +1,6 @@
 # Visualizações de Recursos
 
-Veja a distribuição da carga de trabalho em toda a sua equipe. As visualizações de uso mostram quem está fazendo o quê e quando, o Planejador de Equipe permite arrastar para reatribuir, e o Gráfico de Recursos revela a capacidade de relance.
+Veja a distribuição da carga de trabalho em toda a sua equipe. As visualizações de uso mostram quem está fazendo o quê e quando, o Team Planner permite arrastar para reatribuir, e o Resource Graph revela a capacidade de relance.
 
 ## Uso de Recursos
 

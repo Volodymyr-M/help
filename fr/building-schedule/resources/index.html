@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/fr/getting-started/overview/">Vue d'ensemble</a></li>
+    <li><a href="/fr/getting-started/install/">Ouvrir Ingantt pour Web</a></li>
     <li><a href="/fr/getting-started/getting-started/">Premiers pas</a></li>
+    <li><a href="/fr/getting-started/templates/">Modèles de projet</a></li>
+    <li><a href="/fr/getting-started/saving/">Enregistrer votre projet</a></li>
     <li><a href="/fr/getting-started/create-with-ai/">Créer avec l'IA</a></li>
     <li><a href="/fr/getting-started/edit-with-ai/">Modifier avec l'IA</a></li>
     <li><a href="/fr/getting-started/import-export/">Import et export</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/fr/building-schedule/tasks/">Tâches</a></li>
     <li><a href="/fr/building-schedule/task-properties/">Propriétés des tâches</a></li>
+    <li><a href="/fr/building-schedule/elapsed-durations/">Durées écoulées</a></li>
     <li><a href="/fr/building-schedule/dependencies/">Dépendances</a></li>
     <li><a href="/fr/building-schedule/constraints/">Contraintes</a></li>
     <li><a href="/fr/building-schedule/resources/" class="active" aria-current="page">Ressources</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/fr/adjusting-schedule/critical-path/">Chemin critique</a></li>
     <li><a href="/fr/adjusting-schedule/leveling/">Nivellement des ressources</a></li>
     <li><a href="/fr/adjusting-schedule/custom-fields/">Champs personnalisés</a></li>
+    <li><a href="/fr/adjusting-schedule/wbs-codes/">Codes WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/fr/ui/ui/">Ajout et sélection</a></li>
     <li><a href="/fr/ui/files/">Intégration Google Drive</a></li>
+    <li><a href="/fr/ui/sharing/">Partager un projet</a></li>
+    <li><a href="/fr/ui/offline-mode/">Travailler hors ligne</a></li>
+    <li><a href="/fr/ui/version-history/">Historique des versions</a></li>
+    <li><a href="/fr/ui/languages/">Langues</a></li>
     <li><a href="/fr/ui/shortcuts/">Raccourcis clavier</a></li>
+    <li><a href="/fr/ui/contact-support/">Contacter le support</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Compte et facturation
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/fr/account/trial/">Essai gratuit</a></li>
+    <li><a href="/fr/account/subscription/">Abonnements et paiement</a></li>
   </ul>
 </div>
 
@@ -191,7 +211,7 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="ressources">Ressources <a href="#ressources" class="heading-anchor">#</a></h1>
-<p>Ajoutez les personnes, les équipements et les matériaux qui effectueront le travail. Une fois les ressources affectées aux tâches, Ingantt peut calculer la charge de travail, détecter les suraffectations et prendre en compte la disponibilité de chaque personne.</p>
+<p>Ajoutez les personnes, les équipements et les matériaux qui effectueront le travail. Une fois les ressources affectées aux tâches, Ingantt peut calculer la charge de travail, détecter les surutilisations et prendre en compte la disponibilité de chaque personne.</p>
 <h2 id="type-de-ressource">Type de ressource <a href="#type-de-ressource" class="heading-anchor">#</a></h2>
 <p>Ingantt prend en charge trois types de ressources :</p>
 <table>
@@ -225,7 +245,7 @@
 <li><strong>50 %</strong> — Une ressource à temps partiel (disponible la moitié du temps)</li>
 <li><strong>300 %</strong> — Une équipe de 3 membres à temps plein représentée comme une seule ressource</li>
 </ul>
-<p>Les unités maximales sont utilisées par la <a href="/fr/adjusting-schedule/leveling/#overallocated-resources">détection de surallocation</a> et le <a href="/fr/adjusting-schedule/leveling/#auto-leveling">nivellement automatique</a> pour déterminer si une ressource a plus de travail qu'elle ne peut en gérer. Lors de l'affectation d'une ressource de travail à une tâche, les unités d'affectation par défaut correspondent aux unités maximales de la ressource.</p>
+<p>Les unités maximales sont utilisées par la <a href="/fr/adjusting-schedule/leveling/#ressources-surutilis%C3%A9es">détection de surutilisation</a> et le <a href="/fr/adjusting-schedule/leveling/#nivellement-automatique">nivellement automatique</a> pour déterminer si une ressource a plus de travail qu'elle ne peut en gérer. Lors de l'affectation d'une ressource de travail à une tâche, les unités d'affectation par défaut correspondent aux unités maximales de la ressource.</p>
 <h2 id="périodes-de-disponibilité-des-ressources">Périodes de disponibilité des ressources <a href="#périodes-de-disponibilité-des-ressources" class="heading-anchor">#</a></h2>
 <p>La disponibilité d'une ressource de travail peut évoluer dans le temps. Par exemple, un membre de l'équipe peut être à temps plein pendant les trois premiers mois, puis passer à temps partiel.</p>
 <p>Dans l'onglet <strong>Availability</strong> de la boîte de dialogue <strong>Resource Properties</strong>, vous pouvez définir plusieurs périodes de disponibilité, chacune avec une plage de dates et un pourcentage de disponibilité. Pour les dates comprises dans une période définie, les unités de la période remplacent les unités maximales de base de la ressource pour les calculs de capacité.</p>
@@ -238,7 +258,7 @@
 <li><strong>Committed</strong> — La ressource est fermement réservée pour le projet.</li>
 <li><strong>Proposed</strong> — La ressource est affectée à titre provisoire à des fins de planification.</li>
 </ul>
-<p>Par défaut, le nivellement automatique exclut les ressources proposées. Vous pouvez les inclure en activant l'option « Level resources with the proposed booking type » dans la boîte de dialogue <a href="/fr/adjusting-schedule/leveling/#leveling-options">Leveling Options</a>.</p>
+<p>Par défaut, le nivellement automatique exclut les ressources proposées. Vous pouvez les inclure en activant l'option « Level resources with the proposed booking type » dans la boîte de dialogue <a href="/fr/adjusting-schedule/leveling/#options-de-nivellement">Options de nivellement</a>.</p>
 
     </main>
     <aside class="toc" aria-label="Table des matières"></aside>

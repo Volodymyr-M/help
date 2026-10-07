@@ -22,7 +22,13 @@ Ingantt kann Projektdateien aus vielen Planungsanwendungen öffnen, nicht nur au
 
 Um eine Datei zu importieren, klicken Sie auf die **+**-Schaltfläche auf dem Projekte-Bildschirm oder verwenden Sie die Option **Importieren** im Menü **Datei**. Wenn Sie Änderungen an einer importierten Datei vornehmen, speichert Ingantt diese im XML-Format.
 
-> Um Projektdateien außer XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich. YAML-Dateien werden lokal verarbeitet.
+> Um andere Projektdateien als XML zu öffnen, sendet Ingantt diese über eine sichere Verbindung an den Ingantt-Webdienst zur Konvertierung. Ihre Dateien werden nicht auf dem Dienst gespeichert. Eine Internetverbindung ist erforderlich. YAML-Dateien werden lokal verarbeitet.
+
+### Dateigröße
+
+Dateien, die wir auf unserem Server konvertieren, sind auf **30 MB** begrenzt. Das betrifft MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP und PEP. XML- und YAML-Dateien werden in der App verarbeitet und nie hochgeladen, daher gilt die Servergrenze für sie nicht.
+
+**Datei zu groß?** Verwenden Sie in Microsoft Project **Datei → Speichern unter** und wählen Sie **Projekt-XML (.xml)**. Ingantt verarbeitet XML in der App, sodass die 30-MB-Servergrenze nicht gilt, und der Export behält Ihre Vorgangsstruktur, Abhängigkeiten und Ressourcen.
 
 ## Ihr Projekt exportieren
 
@@ -43,9 +49,9 @@ Die exportierte Datei spiegelt Ihre aktuellen Gantt-Diagramm-Einstellungen wider
 
 ## YAML mit KI-Agenten bearbeiten
 
-Der YAML-Export ist für die Bearbeitung mit einem KI-Coding-Assistenten (Claude Code, Codex oder jedem Tool, das Dateien lesen und schreiben kann) konzipiert. Exportieren Sie das Projekt, beschreiben Sie die gewünschten Änderungen in natürlicher Sprache — _„eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen"_, _„Alex allen Design-Vorgängen zuweisen"_ — und importieren Sie das Ergebnis zurück.
+Der YAML-Export ist für die Bearbeitung mit einem KI-Coding-Assistenten (Claude Code, Codex oder jedem Tool, das Dateien lesen und schreiben kann) konzipiert. Exportieren Sie das Projekt, beschreiben Sie die gewünschten Änderungen in natürlicher Sprache — _„eine zweiwöchige QA-Phase nach der Entwicklung hinzufügen“_, _„Alex allen Design-Vorgängen zuweisen“_ — und importieren Sie das Ergebnis zurück.
 
-Das Format enthält **nur Eingaben** (Dauern, Abhängigkeiten, Einschränkungen, Zuweisungen, Kalender, Raten). Abgeleitete Werte — Start-/Endtermine von Vorgängen, Gesamtkosten, kritischer Pfad, Pufferzeit, Sammelvorgangsaggregationen — werden bewusst weggelassen; Ingantt berechnet sie beim Import neu. Der Agent sollte nicht versuchen, Termine selbst zu ermitteln.
+Das Format enthält **nur Eingaben** (Dauern, Abhängigkeiten, Einschränkungen, Zuweisungen, Kalender, Kostensätze). Abgeleitete Werte — Start-/Endtermine von Vorgängen, Gesamtkosten, kritischer Pfad, Puffer, Sammelvorgangsaggregationen — werden bewusst weggelassen; Ingantt berechnet sie beim Import neu. Der Agent sollte nicht versuchen, Termine selbst zu ermitteln.
 
 Verweisen Sie den Agenten auf die [YAML-Formatreferenz](/yaml-reference.md), damit er das Schema kennt.
 

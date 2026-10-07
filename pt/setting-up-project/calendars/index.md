@@ -45,7 +45,7 @@ Você pode editar qualquer um dos calendários predefinidos usando a caixa de di
 
 ## Semanas de Trabalho
 
-As semanas de trabalho permitem definir alterações na programação semanal para períodos específicos. Por exemplo, você pode ter um período em que todos trabalham meio-expediente em vez das 8 horas padrão, ou um período em que o sábado se torna dia útil.
+As semanas de trabalho permitem definir alterações na programação semanal para períodos específicos. Por exemplo, você pode ter um período em que todos trabalham 4 horas por dia em vez das 8 padrão, ou um período em que o sábado se torna dia útil.
 
 As semanas de trabalho são configuradas na aba **Work Weeks** da caixa de diálogo **Calendar Properties**. Cada semana de trabalho tem um nome, uma data de início e término, e definições de horário de trabalho por dia da semana.
 

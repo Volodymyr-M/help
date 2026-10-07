@@ -41,7 +41,7 @@ Puoi passare un'attività alla modalità **Manually scheduled** utilizzando la c
 
 ## Attività ricorrenti
 
-Le attività ricorrenti rappresentano attività che si ripetono con cadenza regolare, come riunioni giornaliere, revisioni settimanali o report mensili. Puoi creare attività ricorrenti tramite il menu **Insert** scegliendo **Add recurring task**.
+Le attività ricorrenti rappresentano operazioni che si ripetono con cadenza regolare, come riunioni giornaliere, revisioni settimanali o report mensili. Puoi creare attività ricorrenti tramite il menu **Insert** scegliendo **Add recurring task**.
 
 Quando crei un'attività ricorrente, specifichi:
 
@@ -67,7 +67,7 @@ Un'attività può essere contrassegnata come **inattiva** deselezionando la case
 Le attività inattive sono:
 
 - Escluse dalla pianificazione — non influenzano il percorso critico né le altre attività
-- Escluse dai riepiloghi delle attività di riepilogo per durata, lavoro, costo e % di completamento
+- Escluse dai rollup delle attività di riepilogo per durata, lavoro, costo e % di completamento
 - Escluse dal rilevamento della sovrallocazione delle risorse e dal livellamento automatico
 - Escluse dai calcoli Earned Value
 

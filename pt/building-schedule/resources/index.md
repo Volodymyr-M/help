@@ -36,7 +36,7 @@ Na aba **Availability** da caixa de diálogo **Resource Properties**, você pode
 
 Um recurso pode ser marcado como **Generic** usando a caixa de seleção na caixa de diálogo **Resource Properties**. Recursos genéricos são marcadores de posição que representam uma função (ex.: "Desenvolvedor", "Designer") em vez de uma pessoa específica. São úteis durante o planejamento inicial, quando os membros específicos da equipe ainda não foram identificados.
 
-Os recursos genéricos são indicados por um ícone de crachá na lista de recursos. A flag de genérico é puramente informativa — não afeta o agendamento ou os cálculos de custo.
+Os recursos genéricos são indicados por um ícone de crachá na lista de recursos. A marcação de genérico é puramente informativa — não afeta o agendamento ou os cálculos de custo.
 
 ## Tipo de Reserva
 
@@ -45,4 +45,4 @@ Cada recurso tem um **Booking Type** que pode ser definido como **Committed** (p
 - **Committed** — O recurso está firmemente reservado para o projeto.
 - **Proposed** — O recurso está provisoriamente atribuído para fins de planejamento.
 
-Por padrão, o nivelamento automático exclui recursos propostos. Você pode incluí-los ativando "Level resources with the proposed booking type" na caixa de diálogo [Leveling Options](/pt/adjusting-schedule/leveling/index.md#opções-de-nivelamento).
+Por padrão, o nivelamento automático exclui recursos propostos. Você pode incluí-los ativando "Level resources with the proposed booking type" na caixa de diálogo [Opções de Nivelamento](/pt/adjusting-schedule/leveling/index.md#opções-de-nivelamento).

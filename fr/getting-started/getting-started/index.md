@@ -61,7 +61,7 @@ Répétez les mêmes étapes pour votre seconde tâche et la seconde ressource.
 
 ## Configurer les congés
 
-Les personnes peuvent avoir différents événements au cours de votre projet qui affectent son calendrier.
+Les personnes peuvent avoir différents événements au cours de votre projet qui affectent son déroulement.
 
 Supposons que la ressource effectuant la première tâche de votre projet ait besoin d'un jour de repos pendant cette tâche.
 

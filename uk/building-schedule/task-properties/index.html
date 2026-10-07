@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/" class="active" aria-current="page">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -222,7 +242,7 @@
 <p><img src="/images/building-schedule/tasks/milestone.png" alt="Віха" / data-dark-src="/images/building-schedule/tasks/milestone_d.png"></p>
 <p>Якщо ви вкажете 0 як <strong>Тривалість</strong> завдання, воно автоматично позначається як <strong>Віха</strong> після збереження зміни.</p>
 <h2 id="тип-та-планування-з-урахуванням-зусиль">Тип та планування з урахуванням зусиль <a href="#тип-та-планування-з-урахуванням-зусиль" class="heading-anchor">#</a></h2>
-<p>Призначення робочих ресурсів (або одиниці призначених робочих ресурсів), трудовитрати та тривалість залежать одне від одного. Коли ви змінюєте одне з них, інші мають бути перераховані відповідно. <strong>Тип</strong> завдання (за допомогою прапорця <strong>Планування з урахуванням зусиль</strong>) визначає, яка з двох залишкових властивостей залишається незмінною, щоб перерахувалась лише одна з них.</p>
+<p>Призначення робочих ресурсів (або одиниці призначених робочих ресурсів), трудовитрати та тривалість залежать одне від одного. Коли ви змінюєте одне з них, інші мають бути перераховані відповідно. <strong>Тип</strong> завдання (за допомогою прапорця <strong>Планування з урахуванням зусиль</strong>) визначає, яка з решти двох властивостей залишається незмінною, щоб перерахувалась лише одна з них.</p>
 <p>Наприклад, ви можете встановити <strong>Тип</strong> на <strong>Фіксовані одиниці</strong> (за замовчуванням), і тоді при зміні тривалості трудовитрати автоматично перераховуються.</p>
 <table>
 <thead>
@@ -278,7 +298,7 @@
 </tr>
 </tbody>
 </table>
-<p>Іншими словами, <strong>Тип</strong> дозволяє зафіксувати одну з трьох властивостей, тоді як прапорець <strong>Планування з урахуванням зусиль</strong> визначає, чи повинні трудовитрати залишатися незмінними з двох залишкових.</p>
+<p>Іншими словами, <strong>Тип</strong> дозволяє зафіксувати одну з трьох властивостей, тоді як прапорець <strong>Планування з урахуванням зусиль</strong> визначає, чи повинні трудовитрати залишатися незмінними з решти двох.</p>
 <blockquote>
 <p><strong>Тип</strong> та <strong>Планування з урахуванням зусиль</strong> недоступні для <a href="/uk/building-schedule/tasks/#%D1%81%D1%83%D0%BC%D0%B0%D1%80%D0%BD%D1%96-%D0%B7%D0%B0%D0%B2%D0%B4%D0%B0%D0%BD%D0%BD%D1%8F">сумарних завдань</a>, які завжди мають фіксовану тривалість і не є завданнями з урахуванням зусиль.</p>
 </blockquote>
@@ -293,7 +313,7 @@
 <li><strong>Приховати смугу</strong> — Приховує смугу завдання на діаграмі Ганта, залишаючи рядок видимим у списку завдань. Невидима область смуги все ще реагує на натискання та контекстне меню.</li>
 <li><strong>Підсумкове відображення</strong> — Відображає смугу підзавдання на рядку батьківського сумарного завдання на діаграмі Ганта. Це забезпечує компактний вигляд, коли сумарні завдання згорнуті.</li>
 </ul>
-<p>Це також можна перемикати з підменю <strong>Редагування &gt; Відображення</strong> або контекстного меню (правий клік).</p>
+<p>Це також можна перемикати з підменю <strong>Редагування &gt; Відображення</strong> або контекстного меню (клацання правою кнопкою миші).</p>
 
     </main>
     <aside class="toc" aria-label="Зміст"></aside>

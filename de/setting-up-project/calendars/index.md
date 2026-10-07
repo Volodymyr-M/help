@@ -15,7 +15,7 @@ Ein Projekt hat einen **Kalender**, der im Dialog **Projekteigenschaften** festg
 
 Jede [Arbeitsressource](/de/building-schedule/resources/index.md#ressourcentyp) hat einen Kalender, der im Feld **Basiskalender** des Dialogs **Ressourceneigenschaften** festgelegt wird. Sobald die Arbeitsressource einem Vorgang [zugewiesen](/de/building-schedule/assignments/index.md#ressourcenzuweisungen-und-einheiten) ist, beeinflusst ihr Kalender die Planung des Vorgangs.
 
-Wenn einem Vorgang mehrere Arbeitsressourcen zugewiesen sind, werden ihre Kalender **geschnitten** — das bedeutet, dass Arbeit nur zu Zeiten geplant wird, zu denen **alle** zugewiesenen Ressourcen verfügbar sind. Wenn zum Beispiel Ressource A Mo-Mi arbeitet und Ressource B Mi-Fr, wird ein beiden zugewiesener Vorgang nur mittwochs geplant.
+Wenn einem Vorgang mehrere Arbeitsressourcen zugewiesen sind, wird die **Schnittmenge** ihrer Kalender gebildet — das bedeutet, dass Arbeit nur zu Zeiten geplant wird, zu denen **alle** zugewiesenen Ressourcen verfügbar sind. Wenn zum Beispiel Ressource A Mo-Mi arbeitet und Ressource B Mi-Fr, wird ein beiden zugewiesener Vorgang nur mittwochs geplant.
 
 > Wenn mehrere Ressourcen einen ähnlichen Arbeitsplan haben, erstellen Sie einen einzelnen Kalender und weisen Sie ihn allen zu. Sie können trotzdem Ausnahmen für jede Ressource separat in den **Ressourceneigenschaften** angeben — zum Beispiel Urlaub oder angepasste Arbeitszeiten an bestimmten Tagen.
 
@@ -64,7 +64,7 @@ Wenn Sie zum Beispiel einen Urlaub für eine Person konfigurieren möchten, füg
 
 Beim Hinzufügen oder Bearbeiten von Kalenderausnahmen geben Sie Arbeitszeiträume für die Ausnahme an. Wenn Sie keine angeben, hat die Ausnahme keine Arbeitszeit, was bedeutet, dass sie einen arbeitsfreien Tag definiert.
 
-Jede Ausnahme kann einen beschreibenden **Namen** erhalten (wie „Weihnachtsfeiertag" oder „Büro geschlossen"), der in der Ausnahmeliste angezeigt wird.
+Jede Ausnahme kann einen beschreibenden **Namen** erhalten (wie „Weihnachtsfeiertag“ oder „Büro geschlossen“), der in der Ausnahmeliste angezeigt wird.
 
 ### Wiederkehrende Ausnahmen
 
@@ -75,7 +75,7 @@ Kalenderausnahmen können so eingestellt werden, dass sie einem Muster folgen, a
 - **Monatlich** — Nach Tag des Monats oder nach Position (z. B. zweiter Dienstag)
 - **Jährlich** — Nach Datum oder nach Position (z. B. letzter Freitag im November)
 
-Wiederkehrende Ausnahmen haben eine Endbedingung: kein Ende, Ende bis Datum oder Ende nach N Vorkommen.
+Wiederkehrende Ausnahmen haben eine Endbedingung: kein Ende, Ende bis Datum oder Ende nach N Wiederholungen.
 
 ## Leere und unvollständige Kalender
 

@@ -4,7 +4,7 @@ Festività, ferie, mezze giornate, turni notturni — il tuo cronogramma deve ri
 
 I calendari definiscono i giorni e gli orari in cui è possibile lavorare. I calendari utilizzano due tipi di dati:
 
-- **Giorni della settimana**: Orario lavorativo impostato per ogni giorno della settimana — definisce il programma tipico e regolare.
+- **Giorni della settimana**: Orario di lavoro impostato per ogni giorno della settimana — definisce il programma tipico e regolare.
 - **Eccezioni**: Date in cui non si lavora o si lavora in orari diversi rispetto a quelli definiti nel programma settimanale.
 
 ## Calendario del progetto
@@ -62,7 +62,7 @@ Le eccezioni del calendario possono essere specificate:
 
 Ad esempio, se vuoi configurare le ferie per una persona, aggiungile come eccezione per questa risorsa. Se vuoi configurare una festività per tutti, aggiungila come eccezione a un calendario utilizzato da tutti.
 
-Quando aggiungi o modifichi le eccezioni del calendario, specifichi i periodi di orario lavorativo per l'eccezione. Se non ne specifichi nessuno, l'eccezione non ha orario lavorativo, il che significa che definisce un giorno non lavorativo.
+Quando aggiungi o modifichi le eccezioni del calendario, specifichi i periodi di orario di lavoro per l'eccezione. Se non ne specifichi nessuno, l'eccezione non ha orario di lavoro, il che significa che definisce un giorno non lavorativo.
 
 A ogni eccezione può essere assegnato un **Name** descrittivo (come "Festività di Natale" o "Ufficio chiuso") che viene mostrato nell'elenco delle eccezioni.
 
@@ -70,17 +70,17 @@ A ogni eccezione può essere assegnato un **Name** descrittivo (come "Festività
 
 Le eccezioni del calendario possono essere impostate per ricorrere secondo uno schema anziché su una singola data. Gli schemi di ricorrenza disponibili includono:
 
-- **Giornaliera** — Ogni N giorni o ogni N giorni lavorativi
-- **Settimanale** — Ogni N settimane nei giorni specificati
-- **Mensile** — Per giorno del mese o per posizione (ad es., secondo martedì)
-- **Annuale** — Per data o per posizione (ad es., ultimo venerdì di novembre)
+- **Daily** — Ogni N giorni o ogni N giorni lavorativi
+- **Weekly** — Ogni N settimane nei giorni specificati
+- **Monthly** — Per giorno del mese o per posizione (ad es., secondo martedì)
+- **Yearly** — Per data o per posizione (ad es., ultimo venerdì di novembre)
 
 Le eccezioni ricorrenti hanno una condizione di fine: nessuna fine, fine per data o fine dopo N occorrenze.
 
 ## Calendari vuoti e parziali
 
-Se non aggiungi alcun orario lavorativo a un calendario, questo è vuoto e non può essere utilizzato per la pianificazione. Tali calendari sono contrassegnati con un'icona di avviso nell'elenco dei calendari e il numero di tali calendari viene mostrato nel menu di navigazione.
+Se non aggiungi alcun orario di lavoro a un calendario, questo è vuoto e non può essere utilizzato per la pianificazione. Tali calendari sono contrassegnati con un'icona di avviso nell'elenco dei calendari e il numero di tali calendari viene mostrato nel menu di navigazione.
 
-Tuttavia, ci sono situazioni in cui il calendario non è vuoto ma non ha comunque abbastanza orario lavorativo per pianificare una particolare attività. Queste situazioni possono essere rilevate solo durante la pianificazione.
+Tuttavia, ci sono situazioni in cui il calendario non è vuoto ma non ha comunque abbastanza orario di lavoro per pianificare una particolare attività. Queste situazioni possono essere rilevate solo durante la pianificazione.
 
-Se assegni un calendario vuoto — o uno senza abbastanza orario lavorativo — a un progetto, risorsa o attività e la pianificazione non può procedere, viene mostrato un errore e l'ultima azione viene annullata.
+Se assegni un calendario vuoto — o uno senza abbastanza orario di lavoro — a un progetto, risorsa o attività e la pianificazione non può procedere, viene mostrato un errore e l'ultima azione viene annullata.

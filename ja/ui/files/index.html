@@ -5,17 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Google Driveとの連携 - ユーザーインターフェース - Ingantt ヘルプ</title>
   <link rel="icon" href="/favicon.ico" sizes="any">
-  <meta name="description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行います。">
+  <meta name="description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行う方法と、Googleサインインのトラブルシューティングを説明します。">
   <link rel="canonical" href="https://help.ingantt.com/ja/ui/files/">
   <meta property="og:type" content="article">
   <meta property="og:title" content="Google Driveとの連携">
-  <meta property="og:description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行います。">
+  <meta property="og:description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行う方法と、Googleサインインのトラブルシューティングを説明します。">
   <meta property="og:url" content="https://help.ingantt.com/ja/ui/files/">
   <meta property="og:site_name" content="Ingantt ヘルプ">
   <meta property="og:locale" content="ja_JP">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Google Driveとの連携">
-  <meta name="twitter:description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行います。">
+  <meta name="twitter:description" content="Google Driveにサインインして、Web版から直接Inganttプロジェクトファイルの作成、オープン、保存を行う方法と、Googleサインインのトラブルシューティングを説明します。">
 
   <link rel="alternate" hreflang="en" href="https://help.ingantt.com/en/ui/files/">
   <link rel="alternate" hreflang="de" href="https://help.ingantt.com/de/ui/files/">
@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/" class="active" aria-current="page">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -191,16 +211,54 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="google-driveとの連携">Google Driveとの連携 <a href="#google-driveとの連携" class="heading-anchor">#</a></h1>
-<p>InganttはプロジェクトファイルをGoogle Driveに保存するため、どのデバイスからでもアクセスできます。</p>
+<p>InganttはプロジェクトファイルをGoogle Driveに保存するため、どのデバイスからでもアクセスできます。この記事では、サインインの方法、Inganttがリクエストする権限、DriveとInganttがどのように連携するか、そしてGoogleサインインが正常に動作しない場合の対処法を説明します。</p>
+<h2 id="サインインせずに使う">サインインせずに使う <a href="#サインインせずに使う" class="heading-anchor">#</a></h2>
+<p>サインインは必須ではありません。Googleアカウントがなくても、デバイスに保存されたプロジェクトファイルを開いて編集し、保存し直すことができます（Webでは、ローカルファイルの保存は新しいコピーのダウンロードになります。<a href="/ja/getting-started/saving/">プロジェクトの保存</a>をご覧ください）。</p>
+<p>プロジェクトをクラウドに保管し、作業中に自動保存し、他のデバイスからも利用し、他の人と共有したい場合は、Googleでサインインしてください。</p>
 <h2 id="googleへのサインイン">Googleへのサインイン <a href="#googleへのサインイン" class="heading-anchor">#</a></h2>
-<p>Inganttを初めて使用する際に、Googleアカウントでのサインインを求められます。Inganttは以下の権限をリクエストします：</p>
+<p>プロジェクト画面で<strong>Sign in with Google</strong>をクリックします。標準のGoogleダイアログが開き、以下の権限を求められます。<strong>Sign out of Google</strong>でいつでもサインアウトできます。</p>
+<p>Inganttは以下の権限をリクエストします：</p>
 <ul>
-<li><strong>プロフィール情報の参照</strong> — アカウントの識別に使用されます。</li>
-<li><strong>Google Driveへの接続</strong> — <strong>Web</strong>版のみ。Google DriveのWebインターフェースからInganttファイルを作成または開くことができます（<strong>New</strong>ボタンまたは<strong>Open with</strong>メニュー）。</li>
-<li><strong>このアプリで使用する特定のGoogle Driveファイルの参照、編集、作成、削除</strong> — InganttがGoogle Driveに独自のファイルを作成・編集できるようにします。Inganttはお客様の他のファイルにはアクセスできません。</li>
+<li><strong>See your profile info</strong> — アカウントの識別に使用されます。</li>
+<li><strong>Connect itself to your Google Drive</strong> — <strong>Web</strong>版のみ。Google DriveのWebインターフェースからInganttファイルを作成または開くことができます（<strong>New</strong>ボタンまたは<strong>Open with</strong>メニュー）。</li>
+<li><strong>See, edit, create, and delete only the specific Google Drive files you use with this app</strong> — InganttがGoogle Driveに独自のファイルを作成・編集できるようにします。Inganttはお客様の他のファイルにはアクセスできません。</li>
 </ul>
-<h2 id="ingantt-for-webをgoogle-driveで使う">Ingantt for WebをGoogle Driveで使う <a href="#ingantt-for-webをgoogle-driveで使う" class="heading-anchor">#</a></h2>
+<blockquote>
+<p>3つ目の権限は、Google Driveの限定的なスコープです。Inganttが参照できるのは、Inganttで作成したファイルまたはInganttで開いたファイルだけです。Driveのそれ以外の部分はInganttからは見えません。そのため、InganttがDriveのフォルダーを代わりに閲覧することもできません。</p>
+</blockquote>
+<h2 id="google-driveでのプロジェクトの作成と開き方">Google Driveでのプロジェクトの作成と開き方 <a href="#google-driveでのプロジェクトの作成と開き方" class="heading-anchor">#</a></h2>
+<p>サインインすると、プロジェクト画面があなたのDriveになります：</p>
+<ul>
+<li><strong>Recent Projects</strong> — 最近開いたプロジェクトを日付ごとにまとめて表示します。</li>
+<li><strong>Shared with me</strong> — 他の人があなたと共有したInganttファイルです。</li>
+<li><strong>Starred</strong> — <strong>Add to Starred</strong>でマークしたプロジェクトです。</li>
+<li><strong>Trash</strong> — ゴミ箱に移動したプロジェクトです。<strong>Restore</strong>で元に戻せます。</li>
+</ul>
+<p>既存のファイルを選ぶには<strong>Open</strong> → <strong>Open from Google Drive</strong>を使用し、デバイス上のファイルを参照またはドラッグして取り込むには同じダイアログの<strong>Upload</strong>タブを使用します。Microsoft Project、Primavera、その他の対応形式もこの方法で開けます。<a href="/ja/getting-started/import-export/">インポートとエクスポート</a>をご覧ください。</p>
+<p>新しいプロジェクトは、プロジェクト画面の<strong>New</strong>から作成します：<strong>New project</strong>、<strong>New with AI</strong>、または<strong>New from template</strong>です。Webでサインインしている場合、新しいプロジェクトは最初からGoogle Driveを保存先とし、以降は自動保存されます。</p>
+<blockquote>
+<p><strong>「Shared with me」にファイルが見つからない場合は？</strong> Googleの仕様により、共有されたファイルは最初にGoogle Driveから開く必要があります。Driveでそのファイルを右クリックし、<strong>Open with</strong> → <strong>Ingantt</strong>を選択してください。その後、一覧に表示されます。</p>
+</blockquote>
+<h2 id="google-drive自体のインターフェースからinganttを使うweb">Google Drive自体のインターフェースからInganttを使う（Web） <a href="#google-drive自体のインターフェースからinganttを使うweb" class="heading-anchor">#</a></h2>
+<p>Webでは、逆にDriveからInganttを起動することもできます。これが<strong>Connect itself to your Google Drive</strong>権限の目的で、<a href="https://workspace.google.com/marketplace/app/gantt_chart_ai_project_planning_ingantt/286119906331" target="_blank" rel="noopener noreferrer">Google Workspace Marketplace</a>からInganttをDriveに追加した後にのみ機能します。</p>
+<ul>
+<li><strong>New</strong> → <strong>More</strong> → <strong>Ingantt</strong>で、現在開いているDriveフォルダーに新しいInganttプロジェクトを作成します。</li>
+<li>Inganttファイルを右クリック → <strong>Open with</strong> → <strong>Ingantt</strong>で、Ingantt for Webでそのファイルを開きます。</li>
+</ul>
+<p>どちらの場合も、Driveは<code>web.ingantt.com</code>を開いて使用するフォルダーまたはファイルを渡すため、目的のプロジェクトに直接移動できます。</p>
+<h2 id="googleへのサインインのトラブルシューティングweb">Googleへのサインインのトラブルシューティング（Web） <a href="#googleへのサインインのトラブルシューティングweb" class="heading-anchor">#</a></h2>
+<p><strong>Google Driveの「New」や「Open with」メニューにInganttが表示されない。</strong> InganttでGoogleからサインアウトし、再度サインインして、<strong>Connect itself to your Google Drive</strong>権限を必ず許可してください。GoogleがDriveのメニュー項目を追加するのはこの権限が許可された後だけで、同意画面では見落としやすい項目です。それでも表示されない場合は、Google Workspace MarketplaceからInganttがアカウントに追加されているか確認してください。</p>
+<p><strong>共有されたファイルが「Shared with me」にない。</strong> Google Driveから<strong>Open with</strong> → <strong>Ingantt</strong>で一度開いてください。InganttはInganttで使用したファイルにしかアクセスできないため、共有ファイルはこの方法で少なくとも一度開くまでInganttからは見えません。</p>
+<p><strong>「Error saving file to Google Drive」と表示される。</strong> まず接続を確認してください。それでも続く場合は、Googleからサインアウトして再度サインインしてください。サインインの有効期限が切れたか、権限が失われた可能性があります。</p>
+<p><strong>「Could not sign in to Google.」と表示される。</strong> 複数のGoogleアカウントを使用している場合は、ポップアップがプロジェクトを所有するアカウントでサインインしていることを確認してください。サードパーティCookieやポップアップをブロックするブラウザ拡張機能も、Googleダイアログの完了を妨げることがあります。</p>
+<p>それでも解決しない場合は、<a href="mailto:support@ingantt.com">サポートにお問い合わせ</a>いただき、プラットフォーム、ブラウザ、表示された正確なメッセージをお知らせください。</p>
+<h2 id="動画による解説">動画による解説 <a href="#動画による解説" class="heading-anchor">#</a></h2>
 <div class="video-embed"><iframe src="https://www.youtube.com/embed/sFg1a4tl4G4" width="800" height="450" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h2 id="関連項目">関連項目 <a href="#関連項目" class="heading-anchor">#</a></h2>
+<ul>
+<li><a href="/ja/getting-started/saving/">プロジェクトの保存</a> — 保存先、自動保存、オフラインでの作業。</li>
+<li><a href="/ja/ui/sharing/">プロジェクトの共有</a> — 他の人に計画へのアクセス権を与える。</li>
+</ul>
 
     </main>
     <aside class="toc" aria-label="目次"></aside>

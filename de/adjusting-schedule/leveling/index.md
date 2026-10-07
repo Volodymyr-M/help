@@ -1,6 +1,6 @@
 # Ressourcenabgleich
 
-Es passiert schnell, dass einer Person mehr Arbeit zugewiesen wird, als sie an einem Tag bewältigen kann. Der Abgleich verschiebt automatisch Vorgänge, damit niemand überlastet wird, obwohl er das Enddatum Ihres Projekts verlängern kann.
+Es passiert schnell, dass einer Person mehr Arbeit zugewiesen wird, als sie an einem Tag bewältigen kann. Der Abgleich verschiebt automatisch Vorgänge, damit niemand überlastet wird — kann dabei aber das Enddatum Ihres Projekts nach hinten verschieben.
 
 ## Überlastete Ressourcen
 
@@ -53,7 +53,7 @@ Konfigurieren Sie das Abgleichverhalten im Dialog **Abgleichoptionen**, zugängl
 - **Überlastungsgrundlage** — Steuert die Erkennungsgranularität: Minute, Stunde, Tag, Woche oder Monat. Die Einstellungen Minute und Stunde erkennen Konflikte auch dann, wenn die Tagessummen innerhalb der Kapazität liegen, aber Vorgänge sich innerhalb eines Tages überschneiden.
 - **Einzelne Zuweisungen anpassen** — Wenn aktiviert und ein Vorgang mehrere Ressourcenzuweisungen hat, wird nur die Zuweisung der überlasteten Ressource verzögert, nicht der gesamte Vorgang
 - **Teilungen in verbleibender Arbeit erstellen** — Wenn aktiviert, kann der Abgleichalgorithmus Arbeit um Konflikte herum teilen, anstatt ganze Vorgänge zu verzögern
-- **Nur innerhalb verfügbarer Pufferzeit abgleichen** — Beschränkt Abgleichverzögerungen darauf, den Gesamtpuffer eines Vorgangs nicht zu überschreiten, wodurch eine Verlängerung des Projektenddatums verhindert wird
+- **Nur innerhalb des verfügbaren Puffers abgleichen** — Beschränkt Abgleichverzögerungen darauf, den Gesamtpuffer eines Vorgangs nicht zu überschreiten, wodurch eine Verlängerung des Projektenddatums verhindert wird
 - **Abgleichbereich** — Beschränkt den Abgleich auf Vorgänge innerhalb eines bestimmten Datumsfensters
 
 ### Vom Abgleich ausgenommen
@@ -61,12 +61,12 @@ Konfigurieren Sie das Abgleichverhalten im Dialog **Abgleichoptionen**, zugängl
 Die folgenden Vorgänge und Ressourcen werden nie vom automatischen Abgleich beeinflusst:
 
 - Vorgänge mit [Priorität](#priorität) auf **1000** gesetzt
-- Vorgänge mit **Abgleich möglich** auf **Nein** gesetzt (auf dem Reiter **Abgleich** des Dialogs **Vorgangseigenschaften**)
+- Vorgänge mit **Abgleich möglich** auf **Nein** gesetzt (auf dem Reiter **Abgleich** des Dialogs Vorgangseigenschaften)
 - Vorgänge mit einer **Muss anfangen am**- oder **Muss enden am**-[Einschränkung](/de/building-schedule/constraints/index.md#einschränkungen)
 - [Sammelvorgänge](/de/building-schedule/tasks/index.md#sammelvorgänge)
 - Meilensteine mit Dauer null
 - Vollständig abgeschlossene Vorgänge (100 %)
-- Ressourcen mit **Abgleich möglich** auf **Nein** gesetzt im Dialog **Ressourceneigenschaften**
+- Ressourcen mit **Abgleich möglich** auf **Nein** gesetzt im Dialog Ressourceneigenschaften
 - Ressourcen mit [Buchungsart](/de/building-schedule/resources/index.md#buchungsart) **Vorgeschlagen** (sofern nicht die Abgleichoption zum Einbeziehen vorgeschlagener Ressourcen aktiviert ist)
 
 ### Erneuter Abgleich und Zurücksetzen
@@ -91,6 +91,6 @@ Die Priorität wird vom [automatischen Abgleich](#automatischer-abgleich)-Algori
 
 - **0** — Niedrigste Priorität, wird am ehesten verzögert
 - **500** — Standardpriorität
-- **1000** — „Nicht abgleichen" — der Vorgang wird nie durch den automatischen Abgleich verzögert
+- **1000** — „Nicht abgleichen“ — der Vorgang wird nie durch den automatischen Abgleich verzögert
 
 > Setzen Sie die Priorität auf **1000** für Vorgänge, die nie vom automatischen Abgleich verschoben werden dürfen, wie Vorgänge, die an externe Termine oder feste Verpflichtungen gebunden sind.

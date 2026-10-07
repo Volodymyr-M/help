@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -208,9 +228,33 @@
 <li>Designare quale baseline viene utilizzata per i calcoli <a href="/it/tracking/earned-value/#earned-value-management">Earned Value</a></li>
 </ul>
 <h2 id="colonne-di-baseline-e-scostamento">Colonne di baseline e scostamento <a href="#colonne-di-baseline-e-scostamento" class="heading-anchor">#</a></h2>
-<p>Puoi aggiungere colonne di baseline (<strong>Start</strong>, <strong>Finish</strong>, <strong>Duration</strong>, <strong>Work</strong>, <strong>Cost</strong>) e colonne di scostamento (<strong>Start Variance</strong>, <strong>Finish Variance</strong>, ecc.) all'elenco delle attività tramite la finestra <strong>Options</strong>. Le colonne di scostamento mostrano la differenza tra il cronogramma attuale e la <a href="/it/tracking/earned-value/#baseline-earned-value">baseline Earned Value</a>.</p>
+<p>Puoi aggiungere colonne di baseline e di scostamento all'elenco delle attività tramite la finestra <strong>Options</strong>. In totale ci sono <strong>55 colonne di baseline</strong> e <strong>5 colonne di scostamento</strong>.</p>
+<h3 id="le-55-colonne-di-baseline">Le 55 colonne di baseline <a href="#le-55-colonne-di-baseline" class="heading-anchor">#</a></h3>
+<p>Ingantt memorizza <strong>11 baseline</strong>: la <strong>Baseline</strong> senza numero, più da <strong>Baseline 1</strong> a <strong>Baseline 10</strong>. Ognuna espone le stesse cinque colonne di attività:</p>
+<ul>
+<li>Baseline Start</li>
+<li>Baseline Finish</li>
+<li>Baseline Duration</li>
+<li>Baseline Work</li>
+<li>Baseline Cost</li>
+</ul>
+<p>11 baseline × 5 campi = <strong>55 colonne di baseline</strong>, tutte disponibili dal selettore delle colonne nella tabella delle attività. Il set senza numero ha il nome semplice (<em>Baseline Start</em>); quelli numerati portano il proprio numero (<em>Baseline 3 Start</em>).</p>
+<h3 id="le-5-colonne-di-scostamento">Le 5 colonne di scostamento <a href="#le-5-colonne-di-scostamento" class="heading-anchor">#</a></h3>
+<p>Le colonne di scostamento sono calcolate — cronogramma attuale meno baseline — e sono cinque:</p>
+<ul>
+<li>Start Variance</li>
+<li>Finish Variance</li>
+<li>Duration Variance</li>
+<li>Work Variance</li>
+<li>Cost Variance</li>
+</ul>
+<p>Esiste un solo set di cinque, non un set per ogni baseline. Confrontano il cronogramma attuale con <strong>una</strong> baseline — quella selezionata come <a href="/it/tracking/earned-value/#baseline-earned-value">baseline Earned Value</a> in <strong>Project → Earned Value Options</strong>, che per impostazione predefinita è la Baseline senza numero. Cambia quell'impostazione e ogni colonna di scostamento viene ricalcolata rispetto alla baseline scelta. Un'attività la cui baseline scelta non è mai stata impostata mostra uno scostamento vuoto anziché zero.</p>
+<h2 id="dove-vengono-memorizzate-le-baseline">Dove vengono memorizzate le baseline <a href="#dove-vengono-memorizzate-le-baseline" class="heading-anchor">#</a></h2>
+<p>Le baseline sono memorizzate <strong>all'interno del file di progetto</strong>, non in un file separato. Salvando il progetto si salvano anche le sue baseline.</p>
+<p>Se provi a impostare una dodicesima baseline, Ingantt ti avvisa: <em>All baseline slots are in use. Clear one in the Baselines dialog first.</em> Apri <strong>Project → Baselines</strong> e liberane uno.</p>
+<p>Le baseline non sono la stessa cosa della <a href="/it/ui/version-history/">cronologia delle versioni</a>, che registra il file stesso nel tempo. Usa la cronologia delle versioni per tornare a un piano precedente; usa le baseline per misurare di quanto il piano attuale si è discostato.</p>
 <h2 id="piani-intermedi">Piani intermedi <a href="#piani-intermedi" class="heading-anchor">#</a></h2>
-<p>I piani intermedi memorizzano istantanee leggere del cronogramma (solo le date di <strong>Start</strong> e <strong>Finish</strong>) per un confronto rapido senza il sovraccarico delle baseline complete. Ingantt supporta fino a 10 piani intermedi (<code>Interim Plan 1</code> fino a <code>Interim Plan 10</code>).</p>
+<p>I piani intermedi memorizzano istantanee leggere del cronogramma (solo le date di <strong>Start</strong> e <strong>Finish</strong>) per un confronto rapido senza il sovraccarico delle baseline complete. Ingantt supporta fino a 10 piani intermedi (da <code>Interim Plan 1</code> a <code>Interim Plan 10</code>).</p>
 <p>Imposta e cancella i piani intermedi dalla voce <strong>Interim Plans</strong> nel menu <strong>Project</strong>. Puoi visualizzare le date dei piani intermedi come colonne nell'elenco delle attività.</p>
 
     </main>

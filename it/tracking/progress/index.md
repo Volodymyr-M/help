@@ -23,14 +23,14 @@ La **% Complete** di un'attività di riepilogo viene calcolata come media ponder
 
 Il comando **Update Project** fornisce operazioni di monitoraggio dell'avanzamento in blocco, accessibili dal menu **Project**.
 
-### Aggiorna lavoro come completato
+### Update Work as Complete
 
 Contrassegna le attività come completate fino a una data specificata:
 
-- **Proporzionale (0%–100%)** — Calcola la percentuale di completamento in base a quanto della durata lavorativa di ogni attività ricade prima della data di riferimento.
-- **Tutto o niente (0% o 100%)** — Imposta le attività allo 0% o al 100% in base al fatto che terminino entro la data di riferimento.
+- **Proportional (0%–100%)** — Calcola la percentuale di completamento in base a quanto della durata lavorativa di ogni attività ricade prima della data di riferimento.
+- **All-or-nothing (0% or 100%)** — Imposta le attività allo 0% o al 100% in base al fatto che terminino entro la data di riferimento.
 
-### Ripianifica lavoro non completato
+### Reschedule Uncompleted Work
 
 Sposta il lavoro non completato per iniziare dopo una data specificata:
 

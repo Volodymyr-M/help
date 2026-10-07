@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/uk/getting-started/overview/">Огляд</a></li>
+    <li><a href="/uk/getting-started/install/">Відкрити Ingantt для Web</a></li>
     <li><a href="/uk/getting-started/getting-started/">Початок роботи</a></li>
+    <li><a href="/uk/getting-started/templates/">Шаблони проектів</a></li>
+    <li><a href="/uk/getting-started/saving/">Збереження проекту</a></li>
     <li><a href="/uk/getting-started/create-with-ai/">Створення за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/edit-with-ai/">Редагування за допомогою ШІ</a></li>
     <li><a href="/uk/getting-started/import-export/">Імпорт та експорт</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/uk/building-schedule/tasks/">Завдання</a></li>
     <li><a href="/uk/building-schedule/task-properties/">Властивості завдання</a></li>
+    <li><a href="/uk/building-schedule/elapsed-durations/">Астрономічна тривалість</a></li>
     <li><a href="/uk/building-schedule/dependencies/">Залежності</a></li>
     <li><a href="/uk/building-schedule/constraints/">Обмеження</a></li>
     <li><a href="/uk/building-schedule/resources/">Ресурси</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/uk/adjusting-schedule/critical-path/">Критичний шлях</a></li>
     <li><a href="/uk/adjusting-schedule/leveling/">Вирівнювання ресурсів</a></li>
     <li><a href="/uk/adjusting-schedule/custom-fields/">Настроювані поля</a></li>
+    <li><a href="/uk/adjusting-schedule/wbs-codes/">WBS-коди</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/uk/ui/ui/">Додавання та вибір</a></li>
     <li><a href="/uk/ui/files/">Інтеграція з Google Drive</a></li>
+    <li><a href="/uk/ui/sharing/">Спільний доступ до проекту</a></li>
+    <li><a href="/uk/ui/offline-mode/">Робота офлайн</a></li>
+    <li><a href="/uk/ui/version-history/">Історія версій</a></li>
+    <li><a href="/uk/ui/languages/">Мови</a></li>
     <li><a href="/uk/ui/shortcuts/">Клавіатурні скорочення</a></li>
+    <li><a href="/uk/ui/contact-support/">Звернення до підтримки</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Обліковий запис і оплата
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/uk/account/trial/">Безкоштовний пробний період</a></li>
+    <li><a href="/uk/account/subscription/">Підписки та оплата</a></li>
   </ul>
 </div>
 
@@ -214,7 +234,7 @@
 <p>Подання <strong>Завдання</strong> — це основне подання, що поєднує список завдань та діаграму Ганта (розділений вигляд). Ви можете налаштувати, які панелі відображаються, через підменю <strong>Подання &gt; Панелі в поданні завдань</strong>: Список завдань та Діаграму Ганта можна перемикати незалежно.</p>
 <h2 id="інспектор-завдань">Інспектор завдань <a href="#інспектор-завдань" class="heading-anchor">#</a></h2>
 <p><strong>Інспектор завдань</strong> — це бічна панель, що показує деталі вибраного завдання, включаючи фактори планування (що визначає дати завдання), загальні властивості, ресурси, попередників, вартість та інше. Перемикайте Інспектор завдань з панелі інструментів.</p>
-<p>Розділ <strong>Фактори планування</strong> у верхній частині Інспектора показує, що визначає заплановані дати завдання: ведучі попередники (виділені жирним шрифтом з позначкою «Ведучий»), неведучі попередники (з їхнім відносним запасом), обмеження, затримки вирівнювання, календарі та значення резерву. Критичні завдання відображають позначку «Критичне».</p>
+<p>Розділ <strong>Фактори планування</strong> у верхній частині Інспектора показує, що визначає заплановані дати завдання: ведучі попередники (виділені жирним шрифтом з позначкою «Ведучий»), неведучі попередники (з їхнім відносним резервом), обмеження, затримки вирівнювання, календарі та значення резерву. Критичні завдання відображають позначку «Критичне».</p>
 <h2 id="діаграма-ганта-з-вирівнюванням">Діаграма Ганта з вирівнюванням <a href="#діаграма-ганта-з-вирівнюванням" class="heading-anchor">#</a></h2>
 <p>Коли до вашого проекту застосовано <a href="/uk/adjusting-schedule/leveling/#%D0%B0%D0%B2%D1%82%D0%BE%D0%B2%D0%B8%D1%80%D1%96%D0%B2%D0%BD%D1%8E%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F">автовирівнювання</a>, у зоні діаграми Ганта з'являється перемикач <strong>Діаграма Ганта з вирівнюванням</strong>.</p>
 <p>Коли ввімкнено, діаграма Ганта показує <strong>зелені смуги</strong> на позиціях кожного завдання до вирівнювання (де завдання було до автовирівнювання). Стандартні смуги завдань залишаються на поточних вирівняних позиціях. Це дозволяє візуально порівняти початковий розклад з вирівняним та побачити, наскільки кожне завдання було затримане.</p>

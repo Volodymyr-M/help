@@ -35,7 +35,7 @@ Forniscono un monitoraggio del budget dall'alto verso il basso, separato dai cal
 
 ## Valuta
 
-Se il tuo progetto utilizza una valuta diversa da quella predefinita di Ingantt, puoi cambiarla nella scheda **Regional** della finestra **Project Properties**. Specifica la valuta come simbolo (ad es., EUR), abbreviazione (EUR) o nome completo (euro).
+Se il tuo progetto utilizza una valuta diversa da quella predefinita di Ingantt, puoi cambiarla nella scheda **Regional** della finestra **Project Properties**. Specifica la valuta come simbolo (ad es., €), abbreviazione (EUR) o nome completo (euro).
 
 Nella stessa scheda, puoi anche specificare la **Currency Position** — prima o dopo il valore, con o senza spazio.
 

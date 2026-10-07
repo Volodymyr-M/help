@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -240,9 +260,20 @@
 <td><strong>Turtle</strong></td>
 <td>より平坦なベルカーブ — なだらかな配分</td>
 </tr>
+<tr>
+<td><strong>Contoured</strong></td>
+<td>独自の日ごとの配分。配分ビューで作業量を編集すると自動的に設定され、ドロップダウンから選択することはできません。</td>
+</tr>
 </tbody>
 </table>
 <p>作業量配分は時間期間にわたる作業量の配分方法に影響し、プロジェクトファイルの開閉時に保持されます。</p>
+<h3 id="contoured配分">Contoured配分 <a href="#contoured配分" class="heading-anchor">#</a></h3>
+<p><strong>Contoured</strong>はカスタムの配分で、他の8つとは動作が異なります。まだこの配分になっていない割り当てでは、ドロップダウンから選択することはできません（オプションは無効になっています）。この配分は、<strong><a href="/ja/views/resource-views/">リソース配分またはタスク配分</a>のセルで作業量を直接編集する</strong>ことで設定されます。日ごとの作業量の値を入力した瞬間に、その割り当ての配分は<em>Contoured</em>になり、入力した配分がそのまま使用されます。</p>
+<p>知っておくべき影響が2つあります：</p>
+<ul>
+<li><strong>Contouredから他の配分に切り替えると、手入力した配分は破棄されます。</strong> 他の8つの配分のいずれかを選ぶと、入力した日ごとの値はクリアされます。Contouredに戻しても、保持・復元されることはありません。</li>
+<li><strong>Contouredの作業量はMicrosoft Project形式と相互に変換されます。</strong> インポートでは日ごとの時間配分作業量が割り当てに読み込まれ、エクスポートではそれが書き出されます。手編集した配分を持つ計画をMicrosoft Projectから取り込んでも、その配分は維持されます。</li>
+</ul>
 <h2 id="割り当て遅延">割り当て遅延 <a href="#割り当て遅延" class="heading-anchor">#</a></h2>
 <p>タスクの各リソース割り当てには<strong>Delay</strong>プロパティがあり、タスクの開始日に対してリソースが作業を開始するタイミングをオフセットします。たとえば、タスクが月曜日に開始し、リソースに2日の遅延がある場合、そのリソースは水曜日から作業を開始します。</p>
 <p>遅延は<strong>Edit Resource Assignment</strong>ダイアログで設定し、稼働リソースの割り当てにのみ適用されます。タスク内でリソースの開始時期をずらすために使用できます。</p>

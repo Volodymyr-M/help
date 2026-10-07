@@ -67,12 +67,12 @@ Uma tarefa pode ser marcada como **inativa** desmarcando a caixa de seleção **
 As tarefas inativas são:
 
 - Excluídas do agendamento — não afetam o caminho crítico ou outras tarefas
-- Excluídas dos totais de tarefas resumo para duração, trabalho, custo e % Concluída
+- Excluídas dos totais de tarefas resumo para duração, trabalho, custo e % Concluído
 - Excluídas da detecção de superalocação de recursos e do nivelamento automático
 - Excluídas dos cálculos de Valor Agregado
 
 As tarefas inativas permanecem visíveis na lista de tarefas e no gráfico de Gantt, mas aparecem com opacidade reduzida e texto tachado. Suas datas são preservadas para referência.
 
-Inativar uma tarefa resumo propaga para todas as suas subtarefas. Reativar uma subtarefa reativa automaticamente a tarefa resumo pai, se necessário. Tarefas com progresso real (% Concluída > 0) não podem ser inativadas.
+Inativar uma tarefa resumo propaga para todas as suas subtarefas. Reativar uma subtarefa reativa automaticamente a tarefa resumo pai, se necessário. Tarefas com progresso real (% Concluído > 0) não podem ser inativadas.
 
 > Use tarefas inativas para manter cenários hipotéticos no seu cronograma sem afetar o plano ativo.

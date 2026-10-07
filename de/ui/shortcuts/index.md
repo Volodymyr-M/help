@@ -6,7 +6,7 @@ Beschleunigen Sie Ihre Arbeit mit Tastaturkürzeln für häufige Aktionen wie Be
 >
 > Auf **macOS** verwenden Sie `Cmd` anstelle von `Strg`.
 
-| Tastenkürzel               | Beschreibung                                                                                                                                       |
+| Tastaturkürzel             | Beschreibung                                                                                                                                       |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | `Strg + X`             | Ausgewählte Elemente in die Zwischenablage ausschneiden.                                                                                                              |
 | `Strg + C`             | Ausgewählte Elemente in die Zwischenablage kopieren.                                                                                                             |
@@ -22,7 +22,7 @@ Beschleunigen Sie Ihre Arbeit mit Tastaturkürzeln für häufige Aktionen wie Be
 | `Eingabe`                | Dialog **Eigenschaften** für das ausgewählte Element anzeigen. Bei Mehrfachauswahl wird der Dialog für das oberste Element angezeigt.                       |
 | `Pfeil hoch`             | Vorheriges Element auswählen.                                                                                                                         |
 | `Pfeil runter`           | Nächstes Element auswählen.                                                                                                                             |
-| `Umschalt + Pfeil hoch/runter` | Auswahl in einer Listenansicht nach oben oder unten erweitern.                                                                                                |
+| `Umschalt + Pfeil hoch/runter` | Auswahl in jeder Listenansicht nach oben oder unten erweitern.                                                                                                |
 | `Strg + Pfeil hoch`      | Ausgewählte Vorgänge nach oben verschieben.                                                                                                                           |
 | `Strg + Pfeil runter`    | Ausgewählte Vorgänge nach unten verschieben.                                                                                                                         |
 | `Strg + Pfeil links`    | Einzug der ausgewählten Vorgänge verkleinern.                                                                                                                |
@@ -40,4 +40,4 @@ Beschleunigen Sie Ihre Arbeit mit Tastaturkürzeln für häufige Aktionen wie Be
 | `Ziffernblock -`             | Gantt-Diagramm verkleinern.                                                                                                                      |
 | `Esc`                  | Vollbildmodus beenden; Dialoge abbrechen.                                                                                                            |
 | `Strg + Eingabe`         | Aktuellen Dialog bestätigen.                                                                                                                       |
-| `Strg + Alt + Umschalt + H` | Versionshistorie anzeigen.                                                                                                                           |
+| `Strg + Alt + Umschalt + H` | Versionsverlauf anzeigen.                                                                                                                            |

@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -198,11 +218,11 @@
 <p>Se devi assegnare lo stesso costo fisso a più attività, considera la possibilità di creare una risorsa di tipo costo e di assegnarla a quelle attività. Se il costo cambia in futuro, dovrai aggiornarlo in un solo punto.</p>
 </blockquote>
 <h2 id="costo-della-risorsa-di-tipo-lavoro">Costo della risorsa di tipo lavoro <a href="#costo-della-risorsa-di-tipo-lavoro" class="heading-anchor">#</a></h2>
-<p>Le risorse di tipo <strong>Work</strong> sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi <a href="/it/setting-up-project/project/#ore-per-giorno-giorni-per-settimana-giorni-per-mese">Ore per giorno, giorni per settimana, giorni per mese</a>).</p>
+<p>Le risorse di tipo <strong>lavoro</strong> sono l'unico tipo che ha un calendario, quindi il loro costo è specificato per ora, per giorno, per settimana o per mese (vedi <a href="/it/setting-up-project/project/#ore-per-giorno-giorni-per-settimana-giorni-per-mese">Ore per giorno, giorni per settimana, giorni per mese</a>).</p>
 <p>Ad esempio, quando assegni una risorsa di tipo lavoro con una <strong>Standard Rate</strong> di 100 $/ora a un'attività con una <strong>Duration</strong> di 5 ore, 500 $ vengono aggiunti al <strong>Cost</strong> dell'attività.</p>
 <p>Le risorse di tipo lavoro supportano anche una <strong>Overtime Rate</strong> per il lavoro oltre l'orario di calendario regolare. Il costo totale viene calcolato come:</p>
 <blockquote>
-<p><strong>Cost = Regular Work x Standard Rate + Overtime Work x Overtime Rate + Cost Per Use</strong></p>
+<p><strong>Cost = Regular Work × Standard Rate + Overtime Work × Overtime Rate + Cost Per Use</strong></p>
 </blockquote>
 <p>Quando una risorsa di tipo lavoro viene assegnata a un'attività, puoi specificare il valore delle <strong>Units</strong> come un numero diverso da quello predefinito. Questo influisce sui calcoli dei costi. Ad esempio, se le <strong>Units</strong> sono al 50%, il costo calcolato per la risorsa nell'attività è la metà di quello che sarebbe con le Units al 100%.</p>
 <h2 id="costo-della-risorsa-di-tipo-materiale">Costo della risorsa di tipo materiale <a href="#costo-della-risorsa-di-tipo-materiale" class="heading-anchor">#</a></h2>
@@ -212,7 +232,7 @@
 <li><strong>Fixed</strong> (predefinita) — Una quantità totale indipendente dalla durata dell'attività (ad es., 5 tonnellate di cemento)</li>
 <li><strong>Variable</strong> — Una tariffa per unità di tempo che scala con la durata dell'attività (ad es., 10 litri al giorno di carburante)</li>
 </ul>
-<p>Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa materiale &quot;carburante&quot; e specificare il costo per litro nella finestra <strong>Resource Properties</strong>. Poi, quando assegni la risorsa a un'attività, specifichi il numero di litri come <strong>Units</strong>, e Ingantt aggiunge il costo calcolato del carburante al <strong>Cost</strong> dell'attività.</p>
+<p>Ad esempio, se il carburante viene utilizzato nel tuo progetto, puoi aggiungere una risorsa di tipo materiale &quot;carburante&quot; e specificare il costo per gallone nella finestra <strong>Resource Properties</strong>. Poi, quando assegni la risorsa a un'attività, specifichi il numero di galloni come <strong>Units</strong>, e Ingantt aggiunge il costo calcolato del carburante al <strong>Cost</strong> dell'attività.</p>
 <h2 id="risorsa-di-tipo-costo">Risorsa di tipo costo <a href="#risorsa-di-tipo-costo" class="heading-anchor">#</a></h2>
 <p>Una risorsa di tipo <strong>costo</strong> è una spesa fissa che potresti voler assegnare a più attività. Le risorse di tipo costo supportano valori di costo per assegnazione — la stessa risorsa di tipo costo può avere importi diversi su assegnazioni di attività diverse (ad es., &quot;Viaggio&quot; = 800 $ sull'Attività A e 1.200 $ sull'Attività B).</p>
 <p>Usa questo tipo per spese fisse normalmente non specificate in unità di misura, come i costi di installazione. Se più attività hanno lo stesso costo fisso per la stessa ragione, crea una risorsa di tipo costo e assegnala a tutte queste attività anziché compilare il campo <strong>Fixed Cost</strong> per ogni attività separatamente.</p>

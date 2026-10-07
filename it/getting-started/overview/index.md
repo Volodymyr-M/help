@@ -15,7 +15,7 @@
 - **Siamo in linea con i tempi?** — confronta l'avanzamento attuale del cronogramma con il piano originale.
 - **Siamo in linea con il budget?** — confronta i costi effettivi con i costi pianificati utilizzando le metriche Earned Value.
 - **A che punto siamo davvero?** — percentuale di completamento complessiva del progetto, ponderata sulla durata delle attività, non su impressioni soggettive.
-- **Quanto è stato speso e quanto resta?** — costi effettivi rispetto a quelli residui, lavoro e durata.
+- **Quanto è stato speso e quanto resta?** — costo, lavoro e durata effettivi rispetto a quelli residui.
 
 Modifica la durata di un'attività o aggiungi una dipendenza, e l'intero cronogramma viene ricalcolato istantaneamente — ogni data, ogni carico di lavoro delle risorse, ogni costo.
 

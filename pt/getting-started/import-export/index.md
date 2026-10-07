@@ -20,9 +20,15 @@ O Ingantt pode abrir arquivos de projeto de diversos aplicativos de agendamento,
 - **Ingantt YAML** — YAML, YML
 - E mais (SDEF e outros formatos)
 
-Para importar um arquivo, clique no botão **+** na tela de Projetos ou use a opção **Import** no menu **File**. Se você fizer alterações em um arquivo importado, o Ingantt salva no formato XML.
+Para importar um arquivo, clique no botão **+** na tela de Projetos ou use a opção **Import** no menu **File**. Se você fizer alterações em um arquivo importado, o Ingantt as salva no formato XML.
 
 > Para abrir arquivos de projeto que não são XML, o Ingantt os envia por meio de uma conexão segura ao serviço web do Ingantt para conversão. Seus arquivos não ficam armazenados no serviço. É necessária uma conexão com a internet. Arquivos YAML são processados localmente.
+
+### Tamanho do arquivo
+
+Os arquivos que convertemos no nosso servidor são limitados a **30 MB**. Isso abrange MPP, MPT, MPX, XER, PMXML, GAN, PP, CDPX, FTS, POD, Planner, PPX, SDEF, SP e PEP. Arquivos XML e YAML são processados dentro do aplicativo e nunca são enviados, então o limite do servidor não se aplica a eles.
+
+**Arquivo grande demais?** No Microsoft Project, use **File → Save As** e escolha **Project XML (.xml)**. O Ingantt processa XML dentro do aplicativo, então o limite de 30 MB do servidor não se aplica, e a exportação mantém sua estrutura de tarefas, dependências e recursos.
 
 ## Exportando Seu Projeto
 

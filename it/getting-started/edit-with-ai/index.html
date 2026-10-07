@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/it/getting-started/overview/">Panoramica</a></li>
+    <li><a href="/it/getting-started/install/">Aprire Ingantt per Web</a></li>
     <li><a href="/it/getting-started/getting-started/">Per iniziare</a></li>
+    <li><a href="/it/getting-started/templates/">Modelli di progetto</a></li>
+    <li><a href="/it/getting-started/saving/">Salvare il progetto</a></li>
     <li><a href="/it/getting-started/create-with-ai/">Crea con l'IA</a></li>
     <li><a href="/it/getting-started/edit-with-ai/" class="active" aria-current="page">Modifica con l'IA</a></li>
     <li><a href="/it/getting-started/import-export/">Importazione ed esportazione</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/it/building-schedule/tasks/">Attività</a></li>
     <li><a href="/it/building-schedule/task-properties/">Proprietà delle attività</a></li>
+    <li><a href="/it/building-schedule/elapsed-durations/">Durate trascorse</a></li>
     <li><a href="/it/building-schedule/dependencies/">Dipendenze</a></li>
     <li><a href="/it/building-schedule/constraints/">Vincoli</a></li>
     <li><a href="/it/building-schedule/resources/">Risorse</a></li>
@@ -126,12 +130,13 @@
 <div class="theme-group">
   <button class="theme-header" aria-expanded="false">
     <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-    Analisi e ottimizzazione
+    Analisi e regolazione
   </button>
   <ul class="theme-pages">
     <li><a href="/it/adjusting-schedule/critical-path/">Percorso critico</a></li>
     <li><a href="/it/adjusting-schedule/leveling/">Livellamento delle risorse</a></li>
     <li><a href="/it/adjusting-schedule/custom-fields/">Campi personalizzati</a></li>
+    <li><a href="/it/adjusting-schedule/wbs-codes/">Codici WBS</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/it/ui/ui/">Aggiungere e selezionare</a></li>
     <li><a href="/it/ui/files/">Integrazione con Google Drive</a></li>
+    <li><a href="/it/ui/sharing/">Condividere un progetto</a></li>
+    <li><a href="/it/ui/offline-mode/">Lavorare offline</a></li>
+    <li><a href="/it/ui/version-history/">Cronologia delle versioni</a></li>
+    <li><a href="/it/ui/languages/">Lingue</a></li>
     <li><a href="/it/ui/shortcuts/">Scorciatoie da tastiera</a></li>
+    <li><a href="/it/ui/contact-support/">Contattare l'assistenza</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    Account e fatturazione
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/it/account/trial/">Prova gratuita</a></li>
+    <li><a href="/it/account/subscription/">Abbonamenti e pagamento</a></li>
   </ul>
 </div>
 
@@ -191,29 +211,29 @@
     </nav>
     <main id="main-content" class="content">
       <h1 id="modifica-con-lia">Modifica con l'IA <a href="#modifica-con-lia" class="heading-anchor">#</a></h1>
-<p>Collega il tuo progetto a un assistente di codifica IA come Claude Code, Codex o qualsiasi strumento con accesso HTTP, e lascia che apporti modifiche al tuo cronoprogramma in tempo reale. Mentre la sessione è attiva, l'IA può leggere il tuo progetto corrente, aggiungere o modificare attività, regolare le dipendenze, assegnare risorse e inviare aggiornamenti di ritorno — vedi ogni modifica nel diagramma di Gantt nel momento in cui viene applicata.</p>
+<p>Collega il tuo progetto a un assistente IA per la programmazione come Claude Code, Codex o qualsiasi strumento con accesso HTTP, e lascia che apporti modifiche al tuo cronogramma in tempo reale. Mentre la sessione è attiva, l'IA può leggere il tuo progetto corrente, aggiungere o modificare attività, regolare le dipendenze, assegnare risorse e rimandare gli aggiornamenti a Ingantt — vedi ogni modifica nel diagramma di Gantt nel momento in cui viene applicata.</p>
 <blockquote>
 <p><strong>Modifica con l'IA è attualmente in beta.</strong> La funzionalità è disponibile nella versione web di Ingantt.</p>
 </blockquote>
 <h2 id="avviare-una-sessione-di-modifica-ia">Avviare una sessione di modifica IA <a href="#avviare-una-sessione-di-modifica-ia" class="heading-anchor">#</a></h2>
 <ol>
 <li>Apri il progetto che desideri modificare.</li>
-<li>Fai clic sull'icona <strong>Modifica con l'IA</strong> (✨) nell'angolo in alto a destra, accanto al pulsante della cronologia delle versioni.</li>
+<li>Fai clic sull'icona <strong>Edit with AI</strong> (✨) nell'angolo in alto a destra, accanto al pulsante della cronologia delle versioni.</li>
 <li>La finestra di dialogo mostra una serie di istruzioni che descrivono come il tuo strumento IA deve leggere e scrivere il progetto.</li>
-<li>Fai clic su <strong>Copia istruzioni</strong>. Questo avvia la sessione di modifica e copia le istruzioni negli appunti.</li>
+<li>Fai clic su <strong>Copy instructions</strong>. Questo avvia la sessione di modifica e copia le istruzioni negli appunti.</li>
 <li>Incolla le istruzioni nel tuo strumento IA (ad esempio, come primo messaggio in una conversazione di Claude Code o Codex).</li>
 <li>Chiedi all'IA di apportare modifiche in linguaggio naturale — ad esempio, <em>&quot;aggiungi una fase di QA di due settimane dopo lo sviluppo&quot;</em> oppure <em>&quot;assegna Alex a tutte le attività di design&quot;</em>.</li>
 </ol>
-<p>L'IA segue le istruzioni per recuperare lo YAML corrente, modificarlo e inviare il risultato di ritorno a Ingantt. Ingantt convalida ogni modifica prima di accettarla.</p>
+<p>L'IA segue le istruzioni per recuperare lo YAML corrente, modificarlo e rimandare il risultato a Ingantt. Ingantt convalida ogni modifica prima di accettarla.</p>
 <h2 id="cosa-succede-durante-una-sessione">Cosa succede durante una sessione <a href="#cosa-succede-durante-una-sessione" class="heading-anchor">#</a></h2>
 <ul>
 <li><strong>Il punto verde</strong> accanto all'icona ✨ indica una sessione attiva. Il punto diventa ambra quando la connessione si sta ripristinando e rosso quando la sessione ha riscontrato un errore.</li>
 <li><strong>Ogni modifica dell'IA viene convalidata</strong> rispetto alle regole di progetto di Ingantt prima di essere applicata. Se l'IA invia dati non validi, Ingantt rifiuta la modifica e comunica all'IA cosa è andato storto in modo che possa auto-correggersi.</li>
 <li><strong>Anche le tue modifiche vengono inviate alla sessione.</strong> Se cambi qualcosa nell'interfaccia di Ingantt mentre la sessione è attiva, l'IA vedrà il tuo aggiornamento alla lettura successiva.</li>
-<li><strong>Lo scheduler rimane l'autorità.</strong> Quando l'IA imposta date o durate, Ingantt riesegue il Metodo del Percorso Critico per calcolare il cronoprogramma finale, che potrebbe spostare altre attività.</li>
+<li><strong>Il pianificatore ha sempre l'ultima parola.</strong> Quando l'IA imposta date o durate, Ingantt riesegue il metodo del percorso critico per calcolare il cronogramma finale, che potrebbe spostare altre attività.</li>
 </ul>
 <h2 id="interrompere-la-sessione">Interrompere la sessione <a href="#interrompere-la-sessione" class="heading-anchor">#</a></h2>
-<p>Fai clic sull'icona ✨ mentre una sessione è attiva e scegli <strong>Interrompi sessione</strong>. Puoi anche semplicemente chiudere la scheda del browser — la sessione termina automaticamente dopo un periodo di inattività.</p>
+<p>Fai clic sull'icona ✨ mentre una sessione è attiva e scegli <strong>Stop session</strong>. Puoi anche semplicemente chiudere la scheda del browser — la sessione termina automaticamente dopo un periodo di inattività.</p>
 <h2 id="strumenti-ia-supportati">Strumenti IA supportati <a href="#strumenti-ia-supportati" class="heading-anchor">#</a></h2>
 <p>Qualsiasi strumento IA in grado di effettuare richieste HTTP funziona con Modifica con l'IA. Le scelte più comuni includono:</p>
 <ul>
@@ -223,7 +243,7 @@
 </ul>
 <h2 id="suggerimenti">Suggerimenti <a href="#suggerimenti" class="heading-anchor">#</a></h2>
 <ul>
-<li>Mantieni la scheda di Ingantt aperta mentre la sessione è attiva. Se la scheda viene chiusa, l'IA riceverà un errore &quot;sessione non connessa&quot; alla successiva scrittura.</li>
+<li>Mantieni la scheda di Ingantt aperta mentre la sessione è attiva. Se la scheda viene chiusa, l'IA riceverà un errore &quot;session not connected&quot; alla successiva scrittura.</li>
 <li>Se l'IA invia YAML non valido, vedrai una notifica nell'interfaccia di Ingantt. L'IA riceve i dettagli dell'errore e di solito risolve il problema al tentativo successivo.</li>
 <li>Per progetti grandi, inizia con una richiesta mirata (<em>&quot;riorganizza la fase di test&quot;</em>) anziché con modifiche generalizzate — l'IA può iterare in piccoli passi con feedback immediato.</li>
 <li>L'IA non può vedere informazioni che non le vengono fornite. Se la tua richiesta dipende dal contesto — vincoli, scadenze o regole di business — includilo nel tuo prompt.</li>

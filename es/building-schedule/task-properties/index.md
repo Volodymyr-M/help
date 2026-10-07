@@ -80,13 +80,13 @@ En otras palabras, el **Tipo** le permite congelar una de las tres propiedades, 
 
 Puede agregar cualquier texto a su tarea completando el campo **Notas** en la pestaña **Notas** del diálogo **Propiedades de la tarea**. Úselo para descripciones de tareas, información de contacto, ideas o cualquier otro dato de texto.
 
-Si una tarea tiene el campo **Notas** completado, se muestra un icono especial para la tarea en la lista de tareas. En Windows, macOS y Web, al pasar el ratón sobre el icono se muestra la nota. En dispositivos móviles, abra el diálogo **Propiedades de la tarea** para ver la nota completa.
+Si una tarea tiene el campo **Notas** completado, se muestra un icono especial para la tarea en la lista de tareas. En Windows, macOS y Web, al pasar el puntero sobre el icono se muestra la nota. En dispositivos móviles, abra el diálogo **Propiedades de la tarea** para ver la nota completa.
 
 ## Hipervínculo
 
 Puede adjuntar una URL a su tarea usando el campo **Hipervínculo** en la pestaña **Notas** del diálogo **Propiedades de la tarea**. Las tareas con un hipervínculo muestran un icono de enlace en la lista de tareas. Al hacer clic en el icono del enlace se abre la URL en su navegador.
 
-## Ocultar barra y Acumulación
+## Ocultar barra y acumulación
 
 En la pestaña **Visual** del diálogo **Propiedades de la tarea**:
 

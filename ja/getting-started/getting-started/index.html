@@ -58,7 +58,7 @@
       <span class="site-title">Ingantt ヘルプ</span>
     </a>
     <div class="search-wrapper" role="search">
-      <input type="search" class="search-input" placeholder="検索..." aria-label="ドキュメントを検索">
+      <input type="search" class="search-input" placeholder="検索…" aria-label="ドキュメントを検索">
       <div class="search-results" data-loading="読み込み中…" hidden></div>
     </div>
     <div class="header-controls">
@@ -93,7 +93,10 @@
   </button>
   <ul class="theme-pages">
     <li><a href="/ja/getting-started/overview/">概要</a></li>
+    <li><a href="/ja/getting-started/install/">Ingantt for Webを開く</a></li>
     <li><a href="/ja/getting-started/getting-started/" class="active" aria-current="page">はじめに</a></li>
+    <li><a href="/ja/getting-started/templates/">プロジェクトテンプレート</a></li>
+    <li><a href="/ja/getting-started/saving/">プロジェクトの保存</a></li>
     <li><a href="/ja/getting-started/create-with-ai/">AIで作成</a></li>
     <li><a href="/ja/getting-started/edit-with-ai/">AIで編集</a></li>
     <li><a href="/ja/getting-started/import-export/">インポートとエクスポート</a></li>
@@ -117,6 +120,7 @@
   <ul class="theme-pages">
     <li><a href="/ja/building-schedule/tasks/">タスク</a></li>
     <li><a href="/ja/building-schedule/task-properties/">タスクのプロパティ</a></li>
+    <li><a href="/ja/building-schedule/elapsed-durations/">経過期間</a></li>
     <li><a href="/ja/building-schedule/dependencies/">依存関係</a></li>
     <li><a href="/ja/building-schedule/constraints/">制約</a></li>
     <li><a href="/ja/building-schedule/resources/">リソース</a></li>
@@ -132,6 +136,7 @@
     <li><a href="/ja/adjusting-schedule/critical-path/">クリティカルパス</a></li>
     <li><a href="/ja/adjusting-schedule/leveling/">リソースの平準化</a></li>
     <li><a href="/ja/adjusting-schedule/custom-fields/">カスタムフィールド</a></li>
+    <li><a href="/ja/adjusting-schedule/wbs-codes/">WBSコード</a></li>
   </ul>
 </div>
 <div class="theme-group">
@@ -176,7 +181,22 @@
   <ul class="theme-pages">
     <li><a href="/ja/ui/ui/">追加と選択</a></li>
     <li><a href="/ja/ui/files/">Google Driveとの連携</a></li>
+    <li><a href="/ja/ui/sharing/">プロジェクトの共有</a></li>
+    <li><a href="/ja/ui/offline-mode/">オフラインでの作業</a></li>
+    <li><a href="/ja/ui/version-history/">バージョン履歴</a></li>
+    <li><a href="/ja/ui/languages/">言語</a></li>
     <li><a href="/ja/ui/shortcuts/">キーボードショートカット</a></li>
+    <li><a href="/ja/ui/contact-support/">サポートへの問い合わせ</a></li>
+  </ul>
+</div>
+<div class="theme-group">
+  <button class="theme-header" aria-expanded="false">
+    <svg class="chevron" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4l4 4-4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    アカウントと請求
+  </button>
+  <ul class="theme-pages">
+    <li><a href="/ja/account/trial/">無料トライアル</a></li>
+    <li><a href="/ja/account/subscription/">サブスクリプションと支払い</a></li>
   </ul>
 </div>
 
@@ -197,7 +217,7 @@
 </blockquote>
 <h2 id="基本的なスケジュールの作成">基本的なスケジュールの作成 <a href="#基本的なスケジュールの作成" class="heading-anchor">#</a></h2>
 <p>2つのタスクがあり、1つが終わったら次に取りかかる、小規模な住宅リフォームプロジェクトを例にしましょう。</p>
-<p><strong>Create new</strong>をクリックすると、左側にタスクリスト、右側にガントチャートがある分割画面が表示されます。右下の大きな**+<strong>ボタンをクリックして、タスクを順番に追加します。<strong>Add Task</strong>ダイアログで、各タスクの</strong>Name<strong>と予測される</strong>Duration**を指定します。</p>
+<p><strong>Create new</strong>をクリックすると、左側にタスクリスト、右側にガントチャートがある分割画面が表示されます。右下の大きな<strong>+</strong>ボタンをクリックして、タスクを順番に追加します。<strong>Add Task</strong>ダイアログで、各タスクの<strong>Name</strong>と予測される<strong>Duration</strong>を指定します。</p>
 <p><img src="/images/getting-started/add_task.png" alt="タスクの追加" / data-dark-src="/images/getting-started/add_task_d.png"></p>
 <p>左側のリストで両方のタスクを選択し、ツールバーの<strong>Link tasks</strong>ボタンをクリックします。これでタスクがリンクされ、ガントチャートが更新されます。</p>
 <ul>
@@ -213,13 +233,13 @@
 <p><strong>Project Start Date</strong>フィールドで新しいプロジェクト開始日を設定し、ついでにプロジェクトの<strong>Name</strong>も変更しましょう。</p>
 <p><img src="/images/getting-started/project_name.png" alt="プロジェクト名" / data-dark-src="/images/getting-started/project_name_d.png"></p>
 <blockquote>
-<p>基本的なスケジュールのシンプルさで、ガントチャートを見ればプロジェクトがいつ終了する見込みかがすでにわかります。</p>
+<p>スケジュールがこのようにシンプルなうちから、ガントチャートを見るだけでプロジェクトの終了見込みがわかります。</p>
 </blockquote>
 <h2 id="リソースの追加と割り当て">リソースの追加と割り当て <a href="#リソースの追加と割り当て" class="heading-anchor">#</a></h2>
 <p>プロジェクトの各タスクをそれぞれ別の担当者が行う場合を考えましょう。</p>
 <p>ナビゲーションドロワーを開き、<strong>Resources</strong>ビューに切り替えます。</p>
 <p><img src="/images/getting-started/nav.png" alt="ナビゲーション" / data-dark-src="/images/getting-started/nav_d.png"></p>
-<p>大きな**+<strong>ボタンをクリックして</strong>Add Resource<strong>ダイアログを開き、リソースの</strong>Name**を入力して保存します。同じ手順を繰り返して、もう1つの稼働リソースを追加します。</p>
+<p>大きな<strong>+</strong>ボタンをクリックして<strong>Add Resource</strong>ダイアログを開き、リソースの<strong>Name</strong>を入力して保存します。同じ手順を繰り返して、もう1つの稼働リソースを追加します。</p>
 <p><img src="/images/getting-started/add_resource.png" alt="リソースの追加" / data-dark-src="/images/getting-started/add_resource_d.png"></p>
 <p><img src="/images/getting-started/resources.png" alt="リソース" / data-dark-src="/images/getting-started/resources_d.png"></p>
 <p>ナビゲーションドロワーを使って<strong>Tasks</strong>ビューに戻ります。リストまたはガントチャートで最初のタスクをダブルクリックして<strong>Task Properties</strong>ダイアログを開きます。</p>

@@ -22,23 +22,23 @@ Wenn eine Arbeitsressource einem Vorgang zugewiesen wird, können Sie den **Einh
 
 ## Materialressourcenkosten
 
-Für **Material**-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog **Ressourceneigenschaften** ein **Materialbezeichnung** festlegen, um die Einheit zu beschreiben.
+Für **Material**-Ressourcen werden die Kosten pro Einheit angegeben, je nachdem, wie Sie die Einheit definieren. Es kann eine Gewichtseinheit (z. B. Pfund, Kilogramm, Tonne), eine Längen- oder Volumeneinheit (z. B. Fuß, Meter, Meile, Gallone, Liter) oder eine andere Einheit (z. B. Container, Karton, Stück, Quadratmeter) sein. Sie können im Dialog **Ressourceneigenschaften** eine **Materialbezeichnung** festlegen, um die Einheit zu beschreiben.
 
 Materialressourcen unterstützen zwei Verbrauchsmodi:
 - **Fest** (Standard) — Eine Gesamtmenge unabhängig von der Vorgangsdauer (z. B. 5 Tonnen Zement)
 - **Variabel** — Ein Satz pro Zeiteinheit, der mit der Vorgangsdauer skaliert (z. B. 10 Liter Kraftstoff pro Tag)
 
-Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff"-Materialressource hinzufügen und die Kosten pro Gallone im Dialog **Ressourceneigenschaften** angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als **Einheiten** an, und Ingantt addiert die berechneten Kraftstoffkosten zu den **Kosten** des Vorgangs.
+Wenn zum Beispiel in Ihrem Projekt Kraftstoff verwendet wird, können Sie eine „Kraftstoff“-Materialressource hinzufügen und die Kosten pro Gallone im Dialog **Ressourceneigenschaften** angeben. Bei der Zuweisung der Ressource zu einem Vorgang geben Sie dann die Anzahl der Gallonen als **Einheiten** an, und Ingantt addiert die berechneten Kraftstoffkosten zu den **Kosten** des Vorgangs.
 
 ## Kostenressource
 
-Eine **Kosten**-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise" = 800 € bei Vorgang A und 1.200 € bei Vorgang B).
+Eine **Kosten**-Ressource ist ein fester Aufwand, den Sie möglicherweise mehreren Vorgängen zuweisen möchten. Kostenressourcen unterstützen zuweisungsbezogene Kostenwerte — dieselbe Kostenressource kann unterschiedliche Beträge bei verschiedenen Vorgangszuweisungen haben (z. B. „Reise“ = 800 € bei Vorgang A und 1.200 € bei Vorgang B).
 
 Verwenden Sie diesen Typ für feste Ausgaben, die normalerweise nicht in Maßeinheiten angegeben werden, wie Installationskosten. Wenn mehrere Vorgänge aus dem gleichen Grund die gleichen Fixkosten haben, erstellen Sie eine Kostenressource und weisen Sie sie all diesen Vorgängen zu, anstatt das Feld **Fixkosten** für jeden Vorgang einzeln auszufüllen.
 
 ## Kostensatztabellen
 
-Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Satzsätze für verschiedene Arbeitsarten zu pflegen.
+Jede Arbeits- und Materialressource unterstützt bis zu 5 Kostensatztabellen (A bis E), jede mit mehreren Zeilen, die zu unterschiedlichen Zeitpunkten in Kraft treten. Dies ermöglicht es Ihnen, Satzänderungen über die Zeit zu modellieren oder verschiedene Kostensatzgruppen für verschiedene Arbeitsarten zu pflegen.
 
 Kostensatztabellen werden auf dem Reiter **Kosten** des Dialogs **Ressourceneigenschaften** konfiguriert. Bei der Zuweisung einer Ressource zu einem Vorgang können Sie im Dialog **Ressourcenzuweisung bearbeiten** auswählen, welche Kostensatztabelle verwendet werden soll.
 
@@ -52,7 +52,7 @@ Die Einstellung **Kostenabgrenzung** steuert, wann Kosten als Ist-Kosten erfasst
 
 | Abgrenzung | Wann Kosten erfasst werden |
 |---------|--------------------------|
-| **Anfang** | Volle Kosten, sobald Fortschritt verzeichnet wird (% abgeschlossen > 0 %) |
+| **Anfang** | Volle Kosten, sobald Fortschritt verzeichnet wird (% Abgeschlossen > 0 %) |
 | **Anteilig** | Proportional zum Fertigstellungsgrad (z. B. 50 % abgeschlossen = 50 % der Kosten) |
 | **Ende** | Volle Kosten erst, wenn der Vorgang 100 % abgeschlossen erreicht |
 

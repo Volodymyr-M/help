@@ -49,7 +49,7 @@ Lors de la création d'une tâche récurrente, vous spécifiez :
 - **Recurrence pattern** — Un schéma quotidien, hebdomadaire, mensuel ou annuel avec une date de début et une condition de fin (pas de fin, fin à une date donnée, ou fin après N occurrences)
 - **Working days only** — Limite les occurrences aux jours ouvrés
 
-Les tâches récurrentes apparaissent sous forme de tâche récapitulative contenant les occurrences individuelles. Chaque occurrence peut être complétée indépendamment. La suppression d'une tâche récurrente vous invite à choisir entre supprimer la série entière ou uniquement l'occurrence sélectionnée.
+Les tâches récurrentes apparaissent sous forme de tâche récapitulative contenant les occurrences individuelles. Chaque occurrence peut être achevée indépendamment. La suppression d'une tâche récurrente vous invite à choisir entre supprimer la série entière ou uniquement l'occurrence sélectionnée.
 
 ## Tâches fractionnées
 
@@ -68,7 +68,7 @@ Les tâches inactives sont :
 
 - Exclues de la planification — elles n'affectent ni le chemin critique ni les autres tâches
 - Exclues des cumuls des tâches récapitulatives pour la durée, le travail, le coût et le % d'achèvement
-- Exclues de la détection de surallocation des ressources et du nivellement automatique
+- Exclues de la détection de surutilisation des ressources et du nivellement automatique
 - Exclues des calculs de Valeur acquise
 
 Les tâches inactives restent visibles dans la liste des tâches et le diagramme de Gantt, mais apparaissent avec une opacité réduite et un texte barré. Leurs dates sont conservées à titre de référence.

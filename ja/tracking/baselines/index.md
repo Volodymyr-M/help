@@ -23,10 +23,42 @@
 
 ## ベースラインと差異の列
 
-**Options**ダイアログを通じて、ベースライン列（**Start**、**Finish**、**Duration**、**Work**、**Cost**）および差異列（**Start Variance**、**Finish Variance**など）をタスクリストに追加できます。差異列は、現在のスケジュールと[アーンドバリューベースライン](/ja/tracking/earned-value/index.md#アーンドバリューベースライン)との差を表示します。
+**Options**ダイアログを通じて、ベースライン列と差異列をタスクリストに追加できます。合計で**55のベースライン列**と**5つの差異列**があります。
+
+### 55のベースライン列
+
+Inganttは**11のベースライン**を保存します：番号なしの**Baseline**と、**Baseline 1**から**Baseline 10**までです。それぞれに同じ5つのタスク列があります：
+
+- Baseline Start
+- Baseline Finish
+- Baseline Duration
+- Baseline Work
+- Baseline Cost
+
+11ベースライン × 5フィールド = **55のベースライン列**で、すべてタスクテーブルの列選択から利用できます。番号なしのセットは単純な名前（*Baseline Start*）で、番号付きのセットには番号が付きます（*Baseline 3 Start*）。
+
+### 5つの差異列
+
+差異列は計算値（現在のスケジュール − ベースライン）で、次の5つがあります：
+
+- Start Variance
+- Finish Variance
+- Duration Variance
+- Work Variance
+- Cost Variance
+
+5つの列は1セットのみで、ベースラインごとにセットがあるわけではありません。差異列は、現在のスケジュールを**1つ**のベースライン、つまり**Project → Earned Value Options**で[アーンドバリューベースライン](/ja/tracking/earned-value/index.md#アーンドバリューベースライン)として選択されているベースライン（デフォルトは番号なしのBaseline）と比較します。この設定を変更すると、すべての差異列が選択したベースラインに対して再計算されます。選択したベースラインが設定されていないタスクでは、差異はゼロではなく空欄になります。
+
+## ベースラインの保存場所
+
+ベースラインは別のファイルではなく、**プロジェクトファイルの内部**に保存されます。プロジェクトを保存すると、そのベースラインも保存されます。
+
+12個目のベースラインを設定しようとすると、Inganttは<em>All baseline slots are in use. Clear one in the Baselines dialog first.</em>と表示します。**Project → Baselines**を開いて、いずれかをクリアしてください。
+
+ベースラインは、ファイル自体の経時的な記録である[バージョン履歴](/ja/ui/version-history/index.md)とは異なります。以前の計画に戻すにはバージョン履歴を、現在の計画がどれだけずれたかを測定するにはベースラインを使用してください。
 
 ## 中間計画
 
-中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（**Start**と**Finish**の日付のみ）を保存します。Inganttは最大10の中間計画（`Interim Plan 1`から`Interim Plan 10`）を��ポートしています。
+中間計画は、完全なベースラインのオーバーヘッドなしに簡単に比較できる、軽量なスケジュールスナップショット（**Start**と**Finish**の日付のみ）を保存します。Inganttは最大10の中間計画（`Interim Plan 1`から`Interim Plan 10`）をサポートしています。
 
 中間計画の設定とクリアは、**Project**メニューの**Interim Plans**項目から行います。タスクリストに中間計画の日付を列として表示できます。
